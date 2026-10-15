@@ -1,0 +1,1 @@
+Extraia esta pasta e abra index.html no navegador. Inclui modo escuro, 2.091 questões históricas e seis leituras com 60 questões autorais comentadas. O progresso fica salvo no navegador; use exportar/importar para transferi-lo entre dispositivos. Fontes dos resumos estão na aba Leituras.

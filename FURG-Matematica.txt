@@ -1,0 +1,3263 @@
+FURG — MATEMÁTICA EM TEXTO
+180 questões do acervo histórico disponível, de 2000 a 2010.
+Enunciados, alternativas e textos de apoio em texto. As figuras estão preservadas no site e na pasta figures da versão offline.
+A cobertura do acervo não inclui todas as edições históricas. Projeto independente, sem vínculo com a FURG.
+Frações: (numerador)/(denominador). Matrizes: linhas separadas por ponto e vírgula. Gabaritos ao final.
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 21
+
+O domínio da função inversa f⁻¹(x) de f(x) = (3x + 1)/(2 − x) é
+
+
+A) {x ∈ ℝ / x ≠ 2}
+B) {x ∈ ℝ / x ≠ −1/3 e x ≠ 2}
+C) {x ∈ ℝ / x ≠ −1/3}
+D) {x ∈ ℝ / x ≠ −3}
+E) {x ∈ ℝ / x ≠ −3 e x ≠ −1/3}
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q21
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 22
+
+O sistema
+3x + 2y = 7
+6x + ay = b
+é indeterminado quando
+
+
+A) a = 4 e b ≠ 14
+B) a = 4 e b = 14
+C) a = 14 e b = 4
+D) a ≠ 4 e b = 14
+E) a ≠ 14 e b = 4
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q22
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 23
+
+Um corpo lançado a partir do ponto (1,0) descreve uma curva dada por f(x) = (5 − x)(x − 1). Podemos afirmar que o mesmo estará descendo quando
+
+
+A) {x ∈ ℝ / x < 5}
+B) {x ∈ ℝ / x < 1 ou x > 5}
+C) {x ∈ ℝ / x > 3}
+D) {x ∈ ℝ / x < 3}
+E) {x ∈ ℝ / 1 < x < 3}
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q23
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 24
+
+Em uma progressão aritmética de n termos, sendo n ímpar, o termo central é
+
+
+A) a diferença entre os termos extremos divididos por n.
+B) a média aritmética entre todos os termos multiplicada por dois.
+C) o dobro da soma dos termos dividido por n.
+D) a média aritmética de qualquer par de termos eqüidistantes dos extremos.
+E) a soma dos n termos dividida por 2.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q24
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 25
+
+Dada a progressão geométrica
+..., 1, (√3 − 1)/2, (2 − √3)/2, ...,
+o termo que precede 1 é
+
+
+A) (1 − √3)/2
+B) 1 − √3
+C) √3 − 1
+D) (1 + √3)/2
+E) 1 + √3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q25
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 26
+
+Se a, b e c são soluções da equação
+det [x  6; x  4x²] = det [3  x  0; 1  1  1; 1  1  0]
+e a = 1, então a + b + c vale
+
+
+A) −5
+B) 0
+C) 1/5
+D) 3/2
+E) 2.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q26
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 27
+
+O gráfico que melhor representa a função f: ℝ → ℝ tal que f(x) = a⁻ˣ, para o respectivo intervalo de a, é
+
+
+A) Gráfico A: 0 < a < 1.
+[Figura: Curva decrescente que passa pelo ponto de ordenada 1; indicação 0 < a < 1.]
+Arquivo: figures/furg-2000-matematica-q27-fig1.webp
+B) Gráfico B: a > 1.
+[Figura: Curva decrescente desenhada à direita do eixo y; indicação a > 1.]
+Arquivo: figures/furg-2000-matematica-q27-fig2.webp
+C) Gráfico C: a > 1.
+[Figura: Curva decrescente que passa pelo ponto de ordenada 1; indicação a > 1.]
+Arquivo: figures/furg-2000-matematica-q27-fig3.webp
+D) Gráfico D: a > 1.
+[Figura: Curva crescente que passa pelo ponto de ordenada 1; indicação a > 1.]
+Arquivo: figures/furg-2000-matematica-q27-fig4.webp
+E) Gráfico E: 0 < a < 1.
+[Figura: Curva crescente desenhada à direita do eixo y; indicação 0 < a < 1.]
+Arquivo: figures/furg-2000-matematica-q27-fig5.webp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q27
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 28
+
+Na figura abaixo, as retas r e s representam duas estradas que se cruzam em C, segundo um ângulo de 30°. Um automóvel estacionado em A dista 80 m de um outro estacionado em B. Sabendo que o ângulo BÂC é 90°, a distância mínima que o automóvel em A deve percorrer até atingir o ponto B seguindo por s e r é
+
+[Figura: Estradas r e s que se cruzam em C. B está em r e A em s; o segmento AB é perpendicular a AC.]
+Arquivo: figures/furg-2000-matematica-q28-fig1.webp
+
+A) 80 m
+B) 160 m
+C) 80(1 + √3) m
+D) 80(2 + √3) m
+E) 240√3 m
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q28
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 29
+
+Os valores de t para que tenhamos
+(cos α)t² − 2t + cos α = 0
+são
+
+
+A) sec α ± tg α
+B) sec² α ± 1
+C) 1 ± sen α
+D) sec α ± cotg α
+E) cossec² α ± 1
+
+Nota de transcrição: As alternativas aparecem com as letras F–J no PDF; foram transcritas na mesma ordem como A–E.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q29
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 30
+
+A expressão
+[cos(π/2 − x) · tg(π − x)]/[sen²(x) · cos(π + x)]
+é equivalente a
+
+
+A) −cos²(x)
+B) −sec²(x)
+C) cos²(x)
+D) sec²(x)
+E) −sen²(x)
+
+Nota de transcrição: As alternativas aparecem com as letras K–O no PDF; foram transcritas na mesma ordem como A–E.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q30
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 31
+
+Num estacionamento, há x viaturas de 2 rodas, y viaturas de 4 rodas e z viaturas de 6 rodas, totalizando 30 viaturas e 124 rodas. Sabendo-se que o número de viaturas de 4 rodas é o dobro do número de viaturas de 2 rodas, então temos que x + y − z vale
+
+
+A) 2
+B) 12
+C) 16
+D) 18
+E) 24
+
+Nota de transcrição: As alternativas aparecem com as letras P–T no PDF; foram transcritas na mesma ordem como A–E.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q31
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 32
+
+Sobre polinômios são feitas 5 afirmativas.
+
+II - A soma de um polinômio com o seu oposto é o polinômio identicamente nulo.
+
+III - A soma de dois polinômios de grau n é necessariamente um polinômio de grau n.
+
+IV - O produto de dois polinômios de grau n é um polinômio de grau 2n.
+
+V - O produto de um polinômio de grau m por um polinômio de grau n é um polinômio de grau m + n.
+
+VI - A soma de um polinômio de grau m com um polinômio de grau n é um polinômio de grau m + n.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas I, II e III.
+B) Apenas I, II e IV.
+C) Apenas I, II e V.
+D) Apenas I, III e IV.
+E) Apenas II, III e IV.
+
+Nota de transcrição: O PDF numera as cinco afirmativas de II a VI, mas as alternativas referem-se a I–V. Essa inconsistência do original foi preservada.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q32
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 33
+
+Um escultor dispõe de um bloco de pedra em forma de um prisma triangular regular, cuja aresta da base mede 4 cm e a altura mede 10√3 cm. Para esculpir uma pirâmide triangular maciça de base e altura iguais às do prisma, deverá retirar do bloco o volume correspondente a
+
+
+A) 40 cm³
+B) 80 cm³
+C) 120 cm³
+D) 160 cm³
+E) 180 cm³
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q33
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 34
+
+As retas (r) y = 2x − 1 e (s) y = ax + b são perpendiculares no ponto A(2,y). Os valores de a e b são:
+
+
+A) −1/2 e 2
+B) −1/2 e −4
+C) 2 e −1
+D) −1/2 e 4
+E) 1/2 e 2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q34
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 35
+
+Uma circunferência de raio 2 é tangente ao eixo Oy na origem e possui centro O(h, k) com h > 0. Então a equação da circunferência é
+
+
+A) x² + y² − 4y = 0
+B) x² + y² − 4x = 0
+C) x² − y² − 4y = 0
+D) x² − y² + 4y = 0
+E) x² + y² + 4x = 0
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q35
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 36
+
+Se u = 1 − 2i é um número complexo e ū, seu conjugado, então z = u² + 3ū é igual a
+
+
+A) −6 − 2i
+B) 2i
+C) −6
+D) 8 + 2i
+E) −6 + 2i
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q36
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 37
+
+O valor de A₅,₂ + C₆,₂ − P₃ é
+
+
+A) 29
+B) 35
+C) 69
+D) 120
+E) 134
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q37
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 38
+
+De cada um dos cantos de um retângulo de papelão de comprimento igual ao dobro da largura x, retiram-se pequenos quadrados de lado igual a 1/3 da largura e dobram-se as bordas para cima, de modo a formar uma caixa aberta, então a expressão do volume dessa caixa é
+
+
+A) (4/9)x³
+B) 4x³
+C) (2/3)x³
+D) 2x³
+E) (4/27)x³
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q38
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 39
+
+Indica-se por log x o logaritmo do número x na base 10. Sendo log 2 = a e log 3 = b, o valor de 9^(log₃ 5) + log₂ 12 é
+
+
+A) (25b + a)/b
+B) (27a + b)/a
+C) (3a + b)/b
+D) (3a + 2b)/b
+E) (3a + 2b)/(a + b)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q39
+
+========================================================================
+FURG 2000 — Matemática — Vestibular regular — Questão 40
+
+Sejam os polinômios f = (x + y + 2x²)², g = x²(x + y + x²) e h = (x + y)². Os números reais a e b que satisfazem f = a·g + b·h são respectivamente
+
+
+A) 1 e 1
+B) 1 e 2
+C) 1 e 4
+D) 2 e 1
+E) 4 e 1
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-matematica
+Identificador: furg-2000-matematica-q40
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 21
+
+Em uma pesquisa feita a 30 alunos sobre o tipo de revista que costumam ler, 14 responderam que lêem a revista X, cinco responderam que lêem a revista Y e sete responderam que lêem a revista Z. Sabendo-se que três lêem as revistas X e Y, dois lêem as revistas X e Z, dois lêem as revistas Y e Z e somente um lê as três revistas, o número dos que lêem pelo menos uma destas três revistas é
+
+
+A) 8
+B) 10
+C) 19
+D) 20
+E) 26
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q21
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 22
+
+Dadas as funções reais definidas por f(x) = x − 2 e g(x) = −x² + x − 12, podemos dizer que o domínio da função h(x) = √(f(x)/g(x)) é
+
+
+A) {x ∈ ℝ / x ≤ 2}
+B) {x ∈ ℝ / x < 2}
+C) {x ∈ ℝ / −2 ≤ x < 2}
+D) {x ∈ ℝ / x > 2}
+E) {x ∈ ℝ / x ≥ 2}
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q22
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 23
+
+Um jogador de futebol se encontra a uma distância de 20 m da trave do gol adversário, quando chuta uma bola que vai bater exatamente sobre essa trave, de altura 2 m. Se a equação da trajetória da bola em relação ao sistema de coordenadas indicado na figura é y = ax² + (1 − 2a)x, a altura máxima atingida pela bola é
+
+[Figura: Trajetória parabólica desde a origem até P(20,2), com marcações x = 20 e y = 2.]
+Arquivo: figures/furg-2001-matematica-q23-fig1.webp
+
+A) 6,00 m
+B) 6,01 m
+C) 6,05 m
+D) 6,10 m
+E) 6,50 m
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q23
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 24
+
+O gráfico que melhor representa a função f: ℝ − {3} → ℝ definida por 2|x − 3|/(x − 3) é
+
+
+A) Gráfico A.
+[Figura: Dois trechos horizontais: y = −3 à esquerda de x = 0 e y = 3 à direita; círculos abertos no eixo y.]
+Arquivo: figures/furg-2001-matematica-q24-fig1.webp
+B) Gráfico B.
+[Figura: Dois trechos horizontais: y = 2 para x < 3 e y = −2 para x > 3; círculos abertos em x = 3.]
+Arquivo: figures/furg-2001-matematica-q24-fig2.webp
+C) Gráfico C.
+[Figura: Dois trechos inclinados crescentes; círculos abertos em (3,−2) e (3,2).]
+Arquivo: figures/furg-2001-matematica-q24-fig3.webp
+D) Gráfico D.
+[Figura: Dois trechos horizontais: y = 3 à esquerda de x = 0 e y = −3 à direita; círculos abertos no eixo y.]
+Arquivo: figures/furg-2001-matematica-q24-fig4.webp
+E) Gráfico E.
+[Figura: Dois trechos horizontais: y = −2 para x < 3 e y = 2 para x > 3; círculos abertos em x = 3.]
+Arquivo: figures/furg-2001-matematica-q24-fig5.webp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q24
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 25
+
+Seja g uma função do tipo g(x) = ax + b, com x ∈ ℝ. Se g(−2) = −4 e 2g(3) = 12, os valores de a e b são, respectivamente,
+
+
+A) −1/2 e 0
+B) 0 e 1/2
+C) 0 e 2
+D) 1/2 e 0
+E) 2 e 0
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q25
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 26
+
+Sendo g: ℝ → ℝ, definido por g(x) = 2x + 3, então g(1) + g(2) + ... + g(30) é igual a
+
+
+A) 525
+B) 725
+C) 1020
+D) 1375
+E) 2040
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q26
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 27
+
+Um quadrado tem lado m. Unindo-se os pontos médios de seus lados, obtém-se um segundo quadrado e assim sucessivamente. Sabe-se que a área do décimo quadrado vale 1/8. Então o lado m do primeiro quadrado vale
+
+
+A) 4 cm
+B) 8 cm
+C) 4√2 cm
+D) 8√2 cm
+E) 16 cm
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q27
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 28
+
+O valor da expressão
+A = [2^(n + 3) + 2^(n + 2) − 2^(n − 1)]/[2^(n − 2) + 2ⁿ]
+é
+
+
+A) 23/5
+B) 46/10
+C) 11/2
+D) 46/5
+E) 115/8
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q28
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 29
+
+Sendo x a solução da equação 2^(log₃(log₂ x)) = 1/2, o valor de x³ é
+
+
+A) 1/2
+B) 1
+C) 2
+D) 4
+E) 8
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q29
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 30
+
+As relações sen x = √(1 + k)/2 e tan x = √(1 + k)/(k − 1) são satisfeitas para valores de k. O produto desses valores de k é
+
+
+A) −2
+B) −1
+C) 0
+D) 1
+E) 2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q30
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 31
+
+Existem cinco livros diferentes de Matemática, sete livros diferentes de Física e dez livros diferentes de Química. O número de maneiras que podemos escolher dois livros com a condição de que eles não sejam da mesma matéria é
+
+
+A) 35
+B) 50
+C) 70
+D) 155
+E) 350
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q31
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 32
+
+Se o polinômio p(x) = x⁴ + 2x³ + ax² + bx + c é divisível por q(x) = x² − x − 2, então a + b vale
+
+
+A) −11
+B) −1
+C) 0
+D) 1
+E) 11
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q32
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 33
+
+O sistema
+2x + ky + z = 0
+x + y + kz = 0
+x + ky + z = 0
+é
+
+
+A) determinado para k = 1.
+B) determinado para todo k ∈ ℝ.
+C) impossível para k = −1.
+D) indeterminado k ≠ 1.
+E) indeterminado para k = −1.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q33
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 34
+
+Os valores reais de x de modo que a parte real do número complexo z = (x − i)/(x + i) seja positiva é
+
+
+A) {x ∈ ℝ / x < −1 ou x > 1}
+B) {x ∈ ℝ / −1 < x < 1}
+C) {x ∈ ℝ / x < −1}
+D) {x ∈ ℝ / x > 1}
+E) {x ∈ ℝ / x > −1}
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q34
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 35
+
+O polinômio x³ − 7x² + 16x − 12 tem
+
+
+A) uma raiz real com multiplicidade 3.
+B) uma raiz real com multiplicidade 2.
+C) raízes reais e distintas.
+D) uma raiz complexa.
+E) duas raízes complexas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q35
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 36
+
+Considere o paralelogramo ABCD de área 120 m². O ponto E é o ponto médio do lado CD e F é a interseção da diagonal BD com o segmento AE.
+
+Qual das afirmações abaixo é FALSA?
+
+[Figura: Paralelogramo ABCD, E no lado DC, segmentos AE, BD e EB; F é a interseção de AE com BD.]
+Arquivo: figures/furg-2001-matematica-q36-fig1.webp
+
+A) A área de ADF é 20 m².
+B) A área de AEB é 60 m².
+C) A área de BEF é 30 m².
+D) A área de DEF é 10 m².
+E) A área de FECB é 50 m².
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q36
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 37
+
+Observe a figura.
+
+Nessa figura, as retas r, s e t são paralelas; a distância entre r e s é 1 cm; a distância entre s e t é 3 cm; EF = 3 cm e FG = 2 cm. A área do quadrilátero ABCD vale
+
+[Figura: Retas paralelas r, s e t. A e B pertencem a r, D e C a t; s intersecta AD em E, DB em F e BC em G.]
+Arquivo: figures/furg-2001-matematica-q37-fig1.webp
+
+A) 4 cm²
+B) 8 cm²
+C) 12 cm²
+D) 24 cm²
+E) 48 cm²
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q37
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 38
+
+Sabendo que é possível calcular a área de um triângulo ABC utilizando-se somente o perímetro p do triângulo e o raio r do seu círculo inscrito de centro O, julgue as afirmativas abaixo.
+
+I - Se D é o ponto de interseção entre o círculo inscrito e o lado AB, então o ângulo ODB é reto.
+
+II - A área do triângulo OAB é igual a 2πra, em que a é a medida do lado AB.
+
+III - A área do triângulo ABC é igual a rp/2.
+
+Quais afirmativas estão corretas?
+
+[Figura: Triângulo ABC com círculo inscrito de centro O. D está no contato com AB; OD tem comprimento r; segmentos tracejados unem O a A e B.]
+Arquivo: figures/furg-2001-matematica-q38-fig1.webp
+
+A) Apenas II.
+B) Apenas III.
+C) Apenas I e II.
+D) Apenas I e III.
+E) Apenas II e III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q38
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 39
+
+Uma esfera de metal é mergulhada num recipiente cilíndrico de 40 mm de raio que contém água. O nível da água do recipiente sobe 22,5 mm. Se V representa o volume da esfera em mm³, o valor numérico de V/(1000π) é
+
+
+A) 0,9 mm³
+B) 36 mm³
+C) 36π mm³
+D) 810 mm³
+E) 3600 mm³
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q39
+
+========================================================================
+FURG 2001 — Matemática — Vestibular regular — Questão 40
+
+Uma reta r contém o centro da circunferência x² + y² − 6x − 16 = 0 e é perpendicular à reta x − 2y + 3 = 0. A equação da reta r é
+
+
+A) x + y + 3 = 0
+B) x − 2y − 3 = 0
+C) x + 2y + 3 = 0
+D) 2x − y + 6 = 0
+E) 2x + y − 6 = 0
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-matematica
+Identificador: furg-2001-matematica-q40
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 21
+
+Reduzindo a expressão
+[2a/(a + b) − b/(b − a) + b²/(b² − a²)] ÷ [1/(a + b) + a/(a² − b²)], onde a ≠ b, obtemos:
+
+
+A) b
+B) a
+C) ab
+D) (a + b)(2a − b)
+E) 2a − b
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q21
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 22
+
+Os quatro elementos (0,2), (1,4), (1,5) e (2,6) do produto cartesiano M × N permitem determinar-se os conjuntos M e N. Então é correto afirmar-se que
+
+
+A) M ∩ N = ∅
+B) M tem 4 elementos.
+C) M ⊆ N
+D) N tem 5 elementos.
+E) M ∪ N tem 6 elementos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q22
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 23
+
+Numa feira industrial, um expositor apresentou um total de 2700 peças dos artigos A, B e C para serem comercializados. Durante o evento foram vendidas 1470 peças, que resultaram da venda da metade das peças de A, de um terço das peças de B e de dois terços das peças de C. Se o número de peças de C em exposição era igual à soma das peças de A e B, o número de peças de B vendidas foi:
+
+
+A) 315
+B) 420
+C) 630
+D) 210
+E) 490
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q23
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 24
+
+Sendo f(x) = (2 − 3x)/x e g(t) = √(f(t) + t), então o domínio de g(t) é:
+
+
+A) {t ∈ ℝ | 0 < t ≤ 1 ou t ≥ 2}
+B) {t ∈ ℝ | t < 0 ou t ≥ 2}
+C) {t ∈ ℝ | t ≠ 0}
+D) {t ∈ ℝ | 0 < t ≤ 2}
+E) {t ∈ ℝ | 1 ≤ t ≤ 2 ou t ≠ 0}
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q24
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 25
+
+Seja f: ℝ → ℝ uma função definida por f(x) = ax² + bx + c, onde a > 0 e c < 0.
+
+Quanto às suas raízes, podemos afirmar que
+
+
+A) não são reais.
+B) são reais e de mesmo sinal.
+C) são reais e de sinais diferentes.
+D) são nulas.
+E) são iguais e não-nulas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q25
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 26
+
+O produto de todas as raízes da equação |x² − 8| − 4 = 0 é
+
+
+A) 4
+B) −4
+C) −8
+D) −48
+E) 48
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q26
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 27
+
+Se x = −2 é uma raiz da equação
+x³ + 4x² − 11x − 30 = 0,
+então a soma das outras raízes é
+
+
+A) 5
+B) 3
+C) −2
+D) −1
+E) 4
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q27
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 28
+
+Se os números 1, a, b formam nessa ordem uma progressão aritmética, e se os números 1, 7, a + 46 formam nessa ordem uma progressão geométrica, então
+
+
+A) a + b = 6
+B) a + b = 8
+C) ab = 6
+D) ab = 7
+E) ab = 3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q28
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 29
+
+As imagens dos números complexos
+1 + 2i, −2 + i e −1 − 2i
+são vértices de um quadrado. O quarto vértice do quadrado corresponde ao número
+
+
+A) −2 − i
+B) −1 + 3i
+C) −3 − i
+D) 2 − i
+E) 1 − 2i
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q29
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 30
+
+A equação da reta r, distante 3 unidades da origem e representada no gráfico, é
+
+[Figura: Plano cartesiano xOy com reta r decrescente. O segmento da origem perpendicular à reta tem comprimento 3 e forma 30° com o semieixo positivo x; há uma marca de ângulo reto no encontro com a reta.]
+Arquivo: figures/furg-2002-matematica-q30-fig1.webp
+
+A) √3 x − 3y = 0
+B) √3 y + x − 6 = 0
+C) √3 x − y − 6 = 0
+D) 2√3 x + 2y − 3(√3 + 1) = 0
+E) √3 x + y − 6 = 0
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q30
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 31
+
+A expressão (1 + cos⁴ x − sen⁴ x)/(sen 2x) é igual a
+
+
+A) tan x
+B) cot x
+C) tan 2x
+D) cot 2x
+E) 0
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q31
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 32
+
+Considere a matriz A de ordem 2×2, tal que A(i,j) = cos θ se i = j e A(i,j) = sen θ se i ≠ j. Se o determinante da matriz A é nulo e 0 ≤ θ ≤ π, então é correto afirmar-se que
+
+
+A) θ = π/4 é o único valor que satisfaz o determinante.
+B) θ = π/3 e θ = 3π/4 satisfazem o determinante.
+C) θ = π/4 e θ = 3π/4 satisfazem o determinante.
+D) θ = π/3 é o único valor que satisfaz o determinante.
+E) θ = 3π/4 é o único valor que satisfaz o determinante.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q32
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 33
+
+Considerando as matrizes:
+A = [a b c; d e f; g h i],
+B = [a d g; b e h; c f i],
+C = [2a 2b 2c; 2d 2e 2f; 2g 2h 2i] e
+D = [−a b c; −g h i; −d e f],
+se det(A) = k ≠ 0, então: det(B) + det(C) + det(D) é:
+
+
+A) 10k
+B) 2k
+C) 4k
+D) 8k
+E) 11k
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q33
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 34
+
+Se x for solução da equação
+log₂(x − 5) + log₂(x + 2) = log₂ 8,
+então
+
+
+A) existem dois valores possíveis para x.
+B) existe um valor possível para x que é ímpar.
+C) existe um valor possível para x que é par.
+D) existe um valor possível para x que é primo.
+E) existe um valor possível para x que é irracional.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q34
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 35
+
+O número de arranjos de n elementos distintos tomados 3 a 3 é o dobro do número de combinações simples desses elementos tomados 4 a 4. O valor de n é
+
+
+A) 15
+B) 12
+C) 10
+D) 9
+E) 16
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q35
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 36
+
+A igualdade 6²ˣ + 6²ˣ⁻¹ = 7²ˣ se verifica quando x = k. A alternativa que apresenta o intervalo ao qual k pertence é
+
+
+A) 3 < k < 5
+B) 0 < k < 2
+C) −1 < k < 0
+D) −3 < k < −1
+E) 2 < k < 3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q36
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 37
+
+Uma corda da circunferência
+x² + y² + 6y − 16 = 0 tem A(2,1)
+como ponto médio. A equação da reta suporte dessa corda é
+
+
+A) x + y − 3 = 0
+B) 2x − y − 3 = 0
+C) x − y − 1 = 0
+D) x + 2y + 6 = 0
+E) x + 2y − 4 = 0
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q37
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 38
+
+Duas circunferências com centros em C₁ e C₂ e com raios r₁ = r e r₂ = 4r, respectivamente, tangenciam-se externamente. Se uma reta s é tangente às circunferências nos pontos M e N, a área do quadrilátero C₁C₂MN é:
+
+
+A) 10r²
+B) 5r²
+C) (5/2)r²
+D) 20r²
+E) (15/2)r²
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q38
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 39
+
+Se ABCDA₁B₁C₁D₁ representa um cubo de aresta a, então a pirâmide com vértice em D₁ e base ABCD tem área lateral igual a:
+
+
+A) a²√2
+B) a²(√2 − 1)
+C) a²(√3 + 1)
+D) a²(√2 + 1)
+E) a²(√3 − 1)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q39
+
+========================================================================
+FURG 2002 — Matemática — Vestibular regular — Questão 40
+
+De um recipiente em forma de um cilindro circular reto, com raio r = 1 m e altura h = 3 m, cheio com um líquido, foi retirado um volume de líquido correspondente a um cone de mesma base e altura do cilindro. O volume de líquido que permanece no cilindro é
+
+
+A) 2π m³
+B) (5/2)π m³
+C) 5π m³
+D) (1/2)π m³
+E) (1/3)π m³
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-matematica
+Identificador: furg-2002-matematica-q40
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 21
+
+Um banco empresta dinheiro aos seus clientes e cobra taxa de juros de 7% ao mês. Suponha que um cliente tome dinheiro emprestado nesse banco, mas não salde nem amortize essa dívida. Dado que log₁₀ 107 é aproximadamente 2.03, em torno de quantos meses, o cliente terá sua dívida multiplicada por 10?
+
+
+A) 12 meses
+B) 34 meses
+C) 24 meses
+D) 44 meses
+E) 6 meses
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q21
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 22
+
+Dada uma reta r cuja equação é y = −x + 4, seja s uma reta que não intercepta r e passa pelo ponto (3, −1). Então, a equação da reta s é dada por
+
+
+A) y = 2x − 7.
+B) y = x − 4.
+C) y = −2x + 5.
+D) y = −3x + 8.
+E) y = −x + 2.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q22
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 23
+
+As raízes da equação polinomial z³ − 1 = 0 determinam, no plano complexo, um triângulo. Qual a área desse triângulo?
+
+
+A) 3√3/4
+B) 3√3/2
+C) 3√3
+D) 3√5
+E) 1
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q23
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 24
+
+Dado o sistema
+2x + 3y = −1
+x + 2z = −3
+−z + 4y = −2.
+
+Sendo x,y,z a solução do sistema acima, então, 2x + 7y − z é igual a
+
+
+A) −7.
+B) 1.
+C) −3.
+D) 3.
+E) 7.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q24
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 25
+
+Stela, Ana Paula e Marcela decidiram comer pizza e, como tinham dinheiro suficiente apenas para uma única pizza, estabeleceram um critério solidário de divisão: a pizza seria dividida proporcionalmente ao tempo decorrido desde a última refeição de cada uma. Stela estava há oito horas sem fazer qualquer refeição. Ana Paula havia feito sua última refeição há seis horas, e Marcela, não se alimentava há quatro horas. A pizza tem forma circular, e o garçom a reparte em fatias que são setores circulares idênticos. Qual é o menor número de fatias em que o garçom deve dividir a pizza de tal forma que cada uma receba um número inteiro de fatias na proporção que lhe cabe?
+
+
+A) 18
+B) 9
+C) 36
+D) 3
+E) 12
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q25
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 26
+
+Qual o valor da constante a para que a reta x + y = a seja tangente à circunferência x² + y² = 1 em algum ponto do primeiro quadrante?
+
+
+A) a = 2
+B) a = −√2
+C) a = 1
+D) a = −1
+E) a = √2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q26
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 27
+
+O gráfico da função f(x) é mostrado na figura abaixo. Qual dos gráficos apresentados a seguir pode ser o gráfico de 1/f(x)?
+
+[Figura: Gráfico de f(x) no plano cartesiano. A curva toca o eixo x em −2 e 2 e passa pela origem. É negativa para x < 0, exceto no ponto −2, e positiva para x > 0, exceto no ponto 2.]
+Arquivo: figures/furg-2003-matematica-q27-fig1.webp
+
+A) Gráfico com assíntotas verticais em x = −2, x = 0 e x = 2, negativo para x < 0 e positivo para x > 0.
+[Figura: Gráfico com assíntotas verticais em x = −2, x = 0 e x = 2, negativo para x < 0 e positivo para x > 0.]
+Arquivo: figures/furg-2003-matematica-q27-opA.webp
+B) Gráfico com assíntotas verticais em x = −2, x = 0 e x = 2, positivo para x < 0 e negativo para x > 0.
+[Figura: Gráfico com assíntotas verticais em x = −2, x = 0 e x = 2, positivo para x < 0 e negativo para x > 0.]
+Arquivo: figures/furg-2003-matematica-q27-opB.webp
+C) Gráfico com assíntotas verticais em x = −2 e x = 2, negativo para x < 0 e positivo para x > 0, sem assíntota vertical em x = 0.
+[Figura: Gráfico com assíntotas verticais em x = −2 e x = 2, negativo para x < 0 e positivo para x > 0, sem assíntota vertical em x = 0.]
+Arquivo: figures/furg-2003-matematica-q27-opC.webp
+D) Gráfico com assíntotas verticais em x = −2, x = 0 e x = 2; negativo em x < −2 e em 0 < x < 2, positivo em −2 < x < 0 e em x > 2.
+[Figura: Gráfico com assíntotas verticais em x = −2, x = 0 e x = 2; negativo em x < −2 e em 0 < x < 2, positivo em −2 < x < 0 e em x > 2.]
+Arquivo: figures/furg-2003-matematica-q27-opD.webp
+E) Curva contínua que toca o eixo x em x = −2 e x = 2, passa pela origem, fica acima do eixo x para x < 0 e abaixo para x > 0.
+[Figura: Curva contínua que toca o eixo x em x = −2 e x = 2, passa pela origem, fica acima do eixo x para x < 0 e abaixo para x > 0.]
+Arquivo: figures/furg-2003-matematica-q27-opE.webp
+
+Nota de transcrição: As alternativas originais são gráficos; o texto de cada alternativa descreve a figura correspondente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q27
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 28
+
+No jogo da Mega Sena, o apostador escolhe 6 ou mais dezenas dentre 50 dezenas do cartão e ganha o prêmio máximo se acertar as seis dezenas que serão sorteadas. Se, ao apostar um cartão com 6 dezenas, o apostador tem uma determinada chance de ganhar o prêmio máximo, ao apostar um cartão com 7 dezenas, a chance de o jogador ganhar este prêmio fica multiplicada por quanto?
+
+
+A) 42
+B) 8
+C) 7
+D) 36
+E) 13
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q28
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 29
+
+O polinômio P(x) = ax³ + bx² + cx + d é de grau 3, tem como raízes x = −1, x = 1 e x = 2, e seu gráfico está indicado na figura abaixo. Assinale a alternativa que apresenta os coeficientes desse polinômio.
+
+[Figura: Gráfico de uma curva cúbica no plano cartesiano, com raízes em −1, 1 e 2 e interseção com o eixo y em 4. O eixo x mostra marcações de meio em meio e o eixo y marcações de uma em uma unidade.]
+Arquivo: figures/furg-2003-matematica-q29-fig1.webp
+
+A) a = 2, b = 4, c = −2, d = −4
+B) a = −2, b = −4, c = 2, d = 4
+C) a = 1, b = −2, c = −1, d = 2
+D) a = 2, b = −4, c = −2, d = 4
+E) a = 1, b = −2, c = 1, d = 2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q29
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 30
+
+Considere a função real de variável real f: I → J, onde J representa o conjunto imagem da função f. Se f é definida por f(x) = cos(x/2 − π), em qual dos seguintes intervalos a função f admite uma função inversa?
+
+
+A) I = {x ∈ ℝ: π ≤ x ≤ 3π}
+B) I = {x ∈ ℝ: −π ≤ x ≤ π}
+C) I = {x ∈ ℝ: −π/2 ≤ x ≤ π/2}
+D) I = {x ∈ ℝ: 2π ≤ x ≤ 4π}
+E) I = {x ∈ ℝ: 0 ≤ x ≤ 3π}
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q30
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 31
+
+Dados os pontos A(1,1), B o vértice da parábola cuja equação é dada por y = −x² + 8x − 15 e C o centro da circunferência cuja equação é dada por x² + y² − 2x − 10y + 22 = 0. Então, a área do triângulo ABC, em unidades de área, é igual a
+
+
+A) 12.
+B) 6.
+C) 8.
+D) 16.
+E) 4.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q31
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 32
+
+Em Geometria Espacial, é sempre correto afirmar que
+
+
+A) dois planos perpendiculares a uma mesma reta são perpendiculares entre si.
+B) duas retas pertencentes a planos paralelos distintos, são paralelas entre si.
+C) duas retas paralelas a um mesmo plano são paralelas entre si.
+D) uma reta paralela à interseção de dois planos é paralela a esses dois planos.
+E) dois planos distintos perpendiculares a um terceiro são paralelos entre si.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q32
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 33
+
+Seja A = [aᵢⱼ]₂ₓ₂ uma matriz 2 × 2, tal que
+aᵢⱼ = i² se i = j;
+aᵢⱼ = 3i se i ≠ j;
+então, o determinante da matriz inversa de A é igual a
+
+
+A) −1/14.
+B) 1/14.
+C) 14.
+D) 1/22.
+E) 22.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q33
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 34
+
+Quantas soluções contidas no intervalo [0, 2π] a equação sen 2x = sen x possui?
+
+
+A) 4
+B) 2
+C) 1
+D) 5
+E) π/3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q34
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 35
+
+Um quadrado de área 1 dm² é decomposto em polígonos regulares, conforme a figura abaixo. O centro do quadrado é o ponto O; M e N são pontos médios de dois lados do quadrado; OPMQ é um quadrado, e o segmento QR é paralelo ao lado DC. O perímetro (em dm) do triângulo APM e a área (em dm²) do trapézio MPRQ são, respectivamente,
+
+[Figura: Quadrado ABCD, com A e B na base, C e D no topo. As diagonais AC e DB cruzam-se em O. M está no lado AD, N no lado DC, P no segmento AO e Q no segmento DO. O segmento MN passa por Q; MP fecha o quadrado OPMQ. R está no segmento OC e QR é horizontal.]
+Arquivo: figures/furg-2003-matematica-q35-fig1.webp
+
+A) (1 + √2)/2 e 3/16.
+B) 1 + √2/2 e 3/16.
+C) 1/2 + √2 e 3/16.
+D) 1 + √2 e 3/16.
+E) (1 + √2)/2 e 1/16.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q35
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 36
+
+Com 9 pontos de uma reta e 15 pontos de uma outra reta paralela, que não coincide com a primeira, quantos triângulos distintos podem ser construídos?
+
+
+A) 2970
+B) 1485
+C) 135
+D) 6864
+E) 1144
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q36
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 37
+
+Sendo A uma matriz quadrada inversível e admitindo válida a identidade 4A² − 2A + 2I = 0, onde I representa a matriz identidade de mesma ordem que a matriz A, então A⁻¹ é
+
+
+A) −I.
+B) 2A − I.
+C) 4A − 2I.
+D) −2I.
+E) I − 2A.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q37
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 38
+
+Dada uma circunferência de raio r inscrita em um triângulo equilátero de lado L, consideremos a circunferência de raio R circunscrita ao mesmo triângulo. Então, a razão entre a área do círculo maior e a área do círculo menor é
+
+
+A) 1/2.
+B) 3.
+C) 2.
+D) 1/4.
+E) 4.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q38
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 39
+
+Um pote de mel possui a forma de um tronco de cone circular reto, conforme mostra a figura abaixo. O diâmetro da boca do pote mede 22 cm, o diâmetro da base mede 10 cm, e a altura do pote é de 12 cm. Suponha que o pote estava completamente cheio de mel e que, após um dia de consumo por uma família, o mel restante preenche o pote até uma altura de 10 cm, medida a partir da base menor. Considerando que a referida família consome a mesma quantidade diária, o pote cheio de mel ficará vazio durante o
+
+[Figura: Pote em forma de tronco de cone circular reto, com diâmetro superior de 22 cm, diâmetro inferior de 10 cm e altura de 12 cm.]
+Arquivo: figures/furg-2003-matematica-q39-fig1.webp
+
+A) segundo dia.
+B) terceiro dia.
+C) quarto dia.
+D) quinto dia.
+E) sexto dia.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q39
+
+========================================================================
+FURG 2003 — Matemática — Vestibular regular — Questão 40
+
+Um trabalhador deposita todos os meses, em uma caderneta de poupança, o correspondente a 20% do seu salário, a fim de garantir sua aposentadoria. Suponha que a caderneta de poupança tenha o rendimento de 1% ao mês, e que o trabalhador mantenha sempre o mesmo salário. Dado que (101/100)³⁶⁰ é aproximadamente igual a 36, quantos salários esse trabalhador terá acumulado em sua caderneta de poupança, após 30 anos de contribuição?
+
+
+A) Aproximadamente 360 salários.
+B) Aproximadamente 36 salários.
+C) Aproximadamente 72 salários.
+D) Aproximadamente 906 salários.
+E) Aproximadamente 700 salários.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-matematica
+Identificador: furg-2003-matematica-q40
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 16
+
+Um grupo de 20 jovens foi consultado sobre a preferência entre três estilos musicais: A, B e C. Nessa pesquisa, foram colhidos os resultados abaixo indicados:
+
+Estilos musicais — Número de jovens
+A — 10
+B — 9
+C — 7
+A e B — 4
+A e C — Nenhum
+
+O número de jovens que demonstra preferência por B e C, e o número de jovens que prefere somente B são, respectivamente,
+
+
+A) 2 e 3.
+B) 7 e 9.
+C) 9 e 4.
+D) 11 e 9.
+E) 16 e 9.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q16
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 17
+
+Sendo f uma função dada por f(x) = 5 + √(−(x − 2)²), o conjunto imagem de f é
+
+
+A) {0}.
+B) {2}.
+C) {2,5}.
+D) {5}.
+E) { }.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q17
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 18
+
+O gráfico da função f dada por f(x) = ax − x² intercepta a reta y = 4 − x no ponto de abscissa 1. O gráfico de f tem seu valor máximo quando
+
+
+A) x = 1.
+B) x = 2.
+C) x = 4.
+D) x = 5.
+E) x = 6.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q18
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 19
+
+Sendo log N = 3 + log 2 − log 3 − log 25, então 3N é igual a
+
+
+A) 1.
+B) 100/3.
+C) 80.
+D) 200/3.
+E) 100.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q19
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 20
+
+Qual o possível valor de x que satisfaz a equação abaixo?
+
+det [sen(2π)   cos x   sen x;
+     cos(π/2)  sen x   cos x;
+     1         sen π   cos(3π/2)] = 1
+
+
+A) 0.
+B) π/6.
+C) π/4.
+D) π/3.
+E) π/2.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q20
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 21
+
+Sejam as matrizes:
+
+A = [−3   8;
+      2  −5],
+B = [31;
+     12] e
+X = [a;
+     b].
+
+Considerando-se que A⁻¹ é a inversa de A e que A⁻¹X = B, então
+
+
+A) a + b = −2
+B) a + b = 0
+C) a + b = 2
+D) a + b = 4
+E) a + b = 5
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q21
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 22
+
+Em cada uma das n linhas foram colocados x pontos, de acordo com a figura
+
+Seguindo a seqüência de linhas e pontos, a linha que tem 332 pontos é
+
+[Figura: Quatro linhas horizontais com, de cima para baixo, 2, 5, 8 e 11 pontos igualmente espaçados.]
+Arquivo: figures/furg-2004-matematica-q22-fig1.webp
+
+A) 72.
+B) 103.
+C) 111.
+D) 113.
+E) 114.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q22
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 23
+
+Considerando que são usadas as letras A, B, C, D, E, para formar senhas, então o número de senhas formado com 3 letras distintas é igual a
+
+
+A) 10.
+B) 60.
+C) 72.
+D) 120.
+E) 360.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q23
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 24
+
+O complexo conjugado de 1/i é
+
+
+A) −i.
+B) −1.
+C) −1/i.
+D) 1.
+E) i.
+
+Nota de transcrição: As alternativas C e E foram mantidas como aparecem no PDF original, embora −1/i e i sejam expressões equivalentes.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q24
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 25
+
+Quanto aos gráficos de y = 3^(x − 1) e y = (1/9)^(x − 1), é correto afirmar que os mesmos
+
+
+A) se interceptam no ponto (a,b), onde a + b = 2.
+B) não se interceptam.
+C) se interceptam no ponto (a,b), onde a − b = 2.
+D) se interceptam no ponto (a,b), onde a + b = 1.
+E) se interceptam no ponto (a,b), onde a + b = 0.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q25
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 26
+
+Ao dividirmos um polinômio p(x) por (x − c), obtemos um quociente q(x) = x² + 1 e resto p(c) = 2. Sabendo que p(1) = −4, então p(2) é igual a
+
+
+A) −8.
+B) −5.
+C) 6.
+D) 5.
+E) −6.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q26
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 27
+
+O ponto (4,−1) em relação à circunferência x² + y² − 6x + 4y + 9 = 0 está
+
+
+A) na circunferência.
+B) no centro da circunferência.
+C) interno à circunferência e fora do centro.
+D) externo à circunferência, mas na reta y = −x/4.
+E) externo à circunferência, mas na reta y = −2x + 7.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q27
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 28
+
+Os números que expressam os ângulos internos de um quadrilátero estão em progressão geométrica de razão 1/2. A soma de dois ângulos desse quadrilátero é igual a
+
+
+A) 60°.
+B) 72°.
+C) 90°.
+D) 130°.
+E) 180°.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q28
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 29
+
+Para dividir a figura abaixo em duas partes de mesma área, foi usada uma reta perpendicular a AE. Para que essa divisão seja feita corretamente, a distância dessa reta ao ponto A, será igual a
+
+AE = 30 m
+EC = 8 m
+AB = 10 m
+
+[Figura: Figura formada pelo retângulo ABDE e pelo triângulo EDC. A, E e C estão alinhados verticalmente; B e D formam o lado direito. ED é tracejado e perpendicular a AC.]
+Arquivo: figures/furg-2004-matematica-q29-fig1.webp
+
+A) 10 m.
+B) 13 m.
+C) 15 m.
+D) 17 m.
+E) 22 m.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q29
+
+========================================================================
+FURG 2004 — Matemática — Vestibular regular — Questão 30
+
+Seja V₁ o volume de um cone reto de altura 3 cm e diâmetro da base 4 cm. Aumentando o diâmetro da base em 20% e mantendo a mesma altura, obtemos um cone de volume V₂; então
+
+
+A) V₂ = (49/25)π cm³.
+B) V₂ = (24/5)π cm³.
+C) V₂ = (81/16)π cm³.
+D) V₂ = (144/25)π cm³.
+E) V₂ = 484π cm³.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-matematica
+Identificador: furg-2004-matematica-q30
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 16
+
+Qual a razão de uma progressão aritmética, cujo primeiro termo é igual a 1, para que a soma de seus 10 primeiros termos seja igual a 10 vezes a sua razão?
+
+
+A) 1/3.
+B) 2/7.
+C) −2/7.
+D) −1/3.
+E) −1,3.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q16
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 17
+
+Dado um sólido com formato de um cubo com aresta a, onde a é um número inteiro positivo, considere um vértice B e os pontos médios M, S e N de cada aresta adjacente a esse vértice. Esses 4 pontos definem um tetraedro que é retirado do cubo, conforme ilustra a figura.
+
+Sabendo que o volume de uma pirâmide é um terço da área da base pela altura, então a razão do volume do cubo original e o volume do tetraedro definido pelos vértices M, S, B e N é dada por
+
+[Figura: Cubo com vértices A, B, C, D, A′, B′, C′ e D′. M, S e N são pontos médios das três arestas que chegam ao vértice B. O tetraedro MBSN aparece destacado ao lado do cubo.]
+Arquivo: figures/furg-2005-matematica-q17-fig1.webp
+
+A) 1/48.
+B) a/25.
+C) a²/25.
+D) a√2/50.
+E) 1/25.
+
+Nota de transcrição: O original pede a razão do volume do cubo para o volume do tetraedro. Essa redação foi preservada; ela parece estar invertida em relação às alternativas apresentadas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q17
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 18
+
+Um feirante estava com a balança defeituosa, medindo apenas quantidades acima de 3 quilogramas. Como o freguês não estava disposto a levar mais de 3 quilogramas de cada alimento, o feirante sugeriu pesar os produtos dois a dois. O freguês escolheu uma certa quantia de cebolas, outra de batatas e outra de tomates. As pesagens apontaram a seguinte situação: cebolas e tomates juntos pesaram 4,5 quilogramas; cebolas e batatas juntas pesaram 4 quilogramas e tomates e batatas juntos pesaram 4,5 quilogramas. Com base nesses dados é correto afirmar que o freguês levou para casa
+
+
+A) mais de 2,0 quilogramas de cebola.
+B) mais de 2,0 quilogramas de batata.
+C) 1,5 quilograma de cebola.
+D) 2,0 quilogramas de tomate.
+E) 2,0 quilogramas de batatas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q18
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 19
+
+Dada a matriz de números reais
+
+A = [a b c;
+     d e f;
+     g h i],
+
+cujo determinante det(A) é positivo, considere a matriz
+
+B = [a   b    c   0;
+     d   e    f   0;
+     g   h    i   0;
+     2  3/2   6  1/2].
+
+A partir desses dados é correto afirmar que
+
+
+A) det(B) = det(A).
+B) det(B) > det(A) e det(B) < 9 det(A).
+C) det(B) = 10 det(A).
+D) det(B) < det(A).
+E) det(B) = 9 det(A).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q19
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 20
+
+Os números complexos z = 0, u = 1 e w = a + 2ai, onde a é um número real positivo, definem um triângulo no plano complexo de área A₁. Os números z², u² e w² definem um segundo triângulo de área A₂. A razão A₂/A₁ é dada por
+
+
+A) 3a.
+B) a.
+C) 2a.
+D) a/2.
+E) 4a.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q20
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 21
+
+Dois atletas vão disputar uma corrida em uma pista com a forma ilustrada na figura a seguir.
+
+O percurso tracejado, a ser cumprido pelo atleta que corre na raia 1, inicia no ponto A e é formado pela semicircunferência de centro O e diâmetro AB, pelo segmento de reta BC, pela semicircunferência de diâmetro CD e centro O′ e, finalmente, pelo segmento de reta DA. O trajeto a ser percorrido pelo atleta que corre na raia 2 tem início no ponto P e é formado pelo arco PQ da circunferência com diâmetro QT e centro O, pelo segmento de reta QR, pela semicircunferência de diâmetro RS e centro O′ e, finalmente, pelo segmento de reta ST. A chegada para o corredor da raia 1 é o ponto A e, para o atleta da raia 2, é o ponto T. Sabendo que OA = O′D = 25 metros, OT = O′S = 30 metros e BC = DA = QR = ST, para que os atletas percorram a mesma distância, o comprimento do arco TP deve ser igual a
+
+[Figura: Pista oval com duas raias. Na raia interna, B e A são as extremidades esquerda e direita do diâmetro superior de centro O; C e D, do inferior de centro O′. Na externa, Q e T são as extremidades superiores, R e S as inferiores. P está no arco superior da raia externa, próximo a T.]
+Arquivo: figures/furg-2005-matematica-q21-fig1.webp
+
+A) 30π metros.
+B) 5π metros.
+C) 25π metros.
+D) 2π metros.
+E) 10π metros.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q21
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 22
+
+Em um certo país, os veículos são emplacados por meio de um código composto de 3 letras seguidas de 4 dígitos. As letras pertencem a um alfabeto com 26 letras, e os dígitos pertencem ao conjunto {0,1,2,3,4,5,6,7,8,9}. Se fosse mudado esse sistema para 4 letras seguidas de 3 dígitos e supondo que todas as possibilidades de códigos possam ser usadas como placas, o número de veículos a mais que podem ser emplacados neste novo sistema é
+
+
+A) 26 × 10³.
+B) 16 × 26³ × 10³.
+C) 16 × 10³.
+D) 16³ × 26³ × 10⁴.
+E) 26⁴ × 10⁴.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q22
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 23
+
+Considere uma circunferência de raio 1 centrada no ponto C = (3,1). O coeficiente angular de uma das retas que passa pela origem e é tangente a essa circunferência é igual a
+
+
+A) 2/3.
+B) 4/3.
+C) 1/2.
+D) 3/4.
+E) 1.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q23
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 24
+
+Dados os pontos A(2,3), B(4,6) e C(5,1), vértices de um triângulo ABC, considere as seguintes afirmações:
+
+I - A reta suporte do lado AB passa na origem.
+II - A área do triângulo ABC é igual a 7 unidades de área.
+III - O triângulo ABC é isósceles.
+
+Quais afirmações estão corretas?
+
+
+A) Apenas a I.
+B) Apenas a I e a III.
+C) Apenas a II.
+D) Apenas a III.
+E) Todas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q24
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 25
+
+Analise a ilustração e responda à questão abaixo.
+
+A área do triângulo é igual a
+
+[Figura: Triângulo com lado esquerdo medindo 2 cm e base medindo (1 + √3) cm. O ângulo no vértice superior é 75° e o ângulo da base à direita é 45°.]
+Arquivo: figures/furg-2005-matematica-q25-fig1.webp
+
+A) (3 + √3)/2 cm².
+B) (1 + √3)/2 cm².
+C) (2 + √3) cm².
+D) (3 + √3) cm².
+E) √3/2 cm².
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q25
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 26
+
+Observe a figura e marque a alternativa que responde à questão proposta.
+
+Sabendo que a figura representa o gráfico do polinômio p(x), então
+
+[Figura: Gráfico de uma curva polinomial no plano XY, passando pela origem O, com quatro mudanças de crescimento. O eixo X marca 1 e o eixo Y marca 2. A curva chega de cima à esquerda e desce à direita.]
+Arquivo: figures/furg-2005-matematica-q26-fig1.webp
+
+A) p(x) = x⁵ + 4x⁴ − 3x³ + x² + 3x + 1.
+B) p(x) = 12x⁵ − 44x⁴ + 39x³ + 8x² − 12x.
+C) p(x) = −12x⁵ + 44x⁴ − 39x³ − 8x² + 12x.
+D) p(x) = 6x⁴ + 3x³ + x² − 2x.
+E) p(x) = −6x⁴ − 3x³ − x² + 2x.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q26
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 27
+
+Dada a equação (log₍₁⁄₃₎ x)² = log₍₁⁄₃₎(x⁴) − 4, em que x representa um número real, é correto afirmar que essa equação
+
+
+A) tem mais que duas soluções.
+B) tem uma única solução entre 1 < x < 3.
+C) tem duas soluções.
+D) tem uma única solução entre 0 < x < 1.
+E) não tem solução.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q27
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 28
+
+Na figura abaixo está sombreada a região compreendida entre o segmento OP, a circunferência de raio 1, centrada na origem, e o quadrado circunscrito a essa circunferência. Os lados do quadrado são paralelos aos eixos OX e OY. Considere que o segmento OP forma um ângulo θ com o eixo OX. Quando 0 ≤ θ ≤ π/4 a área A(θ) está representada na figura a seguir.
+
+A área A(θ) da região sombreada em função do ângulo θ é dada por
+
+[Figura: Circunferência de centro O inscrita em um quadrado com lados paralelos aos eixos X e Y. P está no lado direito do quadrado, acima do eixo X. OP forma ângulo θ com OX. A região sombreada fica entre OP, a circunferência e o lado direito do quadrado.]
+Arquivo: figures/furg-2005-matematica-q28-fig1.webp
+
+A) A(θ) = (tg θ)/2 − θ/2.
+B) A(θ) = 1 − θ/2.
+C) A(θ) = (tg θ)/2 − θ.
+D) A(θ) = (2θ/π)(1 − θ/2).
+E) A(θ) = θ(4 − π).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q28
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 29
+
+Nesta questão, A denota uma matriz quadrada qualquer, A² denota a matriz A multiplicada por ela mesma e o símbolo 0 denota uma matriz cujas entradas são todas nulas. Considere as seguintes afirmações:
+
+I - Se A² = 0 então A = 0.
+II - Se a matriz A é inversível, então o determinante da matriz A é diferente de zero.
+III - Se o determinante da matriz A é diferente de zero, então A é inversível.
+
+Quais afirmações estão corretas?
+
+
+A) Apenas a II.
+B) Apenas a I.
+C) Todas.
+D) Apenas a III.
+E) Apenas a II e a III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q29
+
+========================================================================
+FURG 2005 — Matemática — Vestibular regular — Questão 30
+
+Um certo provedor de Internet cobra R$50,00 ao mês para oferecer serviço de acesso à Internet por tempo ilimitado. Considere que a companhia telefônica local possui um sistema de cobrança pelo uso da linha telefônica conforme apontado no gráfico abaixo, isto é, durante as primeiras 100 horas de uso o preço é de R$0,05 ao minuto; para os minutos seguintes consumidos na faixa subseqüente de 100 a 200 horas, o preço do minuto cai para R$0,04 e assim sucessivamente até que, a partir de 500 horas, o serviço de telefonia passa a ser gratuito, conforme demonstra o gráfico.
+
+Se o usuário ficar conectado durante todo o mês de janeiro de 2005, a soma das despesas com o provedor e com a companhia telefônica será de
+
+[Figura: Gráfico em degraus do preço por minuto em função das horas de consumo: R$0,05 até 100 h; R$0,04 de 100 a 200 h; R$0,03 de 200 a 300 h; R$0,02 de 300 a 400 h; R$0,01 de 400 a 500 h; zero após 500 h.]
+Arquivo: figures/furg-2005-matematica-q30-fig1.webp
+
+A) R$75,00.
+B) R$950,00.
+C) R$744,00.
+D) R$150,00.
+E) R$250,00.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-matematica
+Identificador: furg-2005-matematica-q30
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 16
+
+Na figura abaixo, as retas r e s são paralelas.
+
+A medida do ângulo y, em graus, é
+
+[Figura: Duas retas paralelas horizontais, s acima de r, cortadas por duas transversais que se encontram em s. O ângulo entre as transversais acima de s é x; abaixo de s, à direita da transversal mais inclinada, está 5x. Em r, o ângulo obtuso à direita da outra transversal mede 120°; o ângulo superior direito com a transversal mais inclinada é y.]
+Arquivo: figures/furg-2006-matematica-q16-fig1.webp
+
+A) 90°.
+B) 60°.
+C) 100°.
+D) 70°.
+E) 80°.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q16
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 17
+
+Considere a seguinte figura formada por duas circunferências de raio R. A área sombreada vale
+
+[Figura: Intersecção em forma de lente entre duas circunferências de mesmo raio R. Dois raios da circunferência à esquerda ligam seu centro aos pontos de intersecção e formam um ângulo reto. A lente à direita está sombreada.]
+Arquivo: figures/furg-2006-matematica-q17-fig1.webp
+
+A) (π − 1)R² u.a.
+B) (π/2 − 1)R² u.a.
+C) (π − 2)R² u.a.
+D) (1 − π/4)R² u.a.
+E) 2(1 − π/4)R² u.a.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q17
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 18
+
+O valor de x, na figura abaixo, é
+
+[Figura: Triângulo retângulo com hipotenusa horizontal de comprimento 26 e lado superior inclinado de comprimento 24. Dentro dele, um segmento vertical de comprimento x é perpendicular à hipotenusa; do pé desse segmento ao vértice direito da hipotenusa a distância é 12.]
+Arquivo: figures/furg-2006-matematica-q18-fig1.webp
+
+A) 24.
+B) 13.
+C) 5.
+D) 8.
+E) 10.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q18
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 19
+
+O resultado obtido pela divisão do volume de um cubo pela sua área total é 2. O valor de 1/(3π) do volume da esfera inscrita nesse cubo é
+
+
+A) 84.
+B) 64.
+C) 36.
+D) 100.
+E) 96.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q19
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 20
+
+A equação da mediatriz do segmento AB, sendo A(−2, 2) e B(4, −4), é
+
+
+A) x − y − 2 = 0.
+B) −x − y − 2 = 0.
+C) x + y = 0.
+D) x + y − 2 = 0.
+E) x − y + 2 = 0.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q20
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 21
+
+Para que a equação na variável x
+
+tg(x) = 10 − m²
+
+tenha soluções no intervalo [π/4, π/2), a condição sobre o valor real m é
+
+
+A) m = √10.
+B) −3 ≤ m ≤ 3.
+C) m < −3.
+D) m > 3.
+E) nenhuma resposta está correta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q21
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 22
+
+A figura abaixo mostra dois círculos que se tangenciam e duas semiretas que possuem o mesmo vértice P e que tangenciam ambos os círculos. Considere que essas semiretas formem entre si um ângulo medindo 60° e que o raio R do círculo maior meça uma unidade de comprimento. Nesse caso, o diâmetro do círculo menor vale
+
+[Figura: Dois círculos tangentes entre si e a duas semirretas com vértice comum P à direita. O círculo maior fica mais distante de P e tem raio R indicado; o menor fica entre ele e P.]
+Arquivo: figures/furg-2006-matematica-q22-fig1.webp
+
+A) 2/3 u.c.
+B) (2√3)/3 u.c.
+C) √2 u.c.
+D) √3 u.c.
+E) (2√2)/3 u.c.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q22
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 23
+
+Considere as afirmativas:
+
+I) π/3 e 8π/3 são arcos côngruos.
+II) cos(π) = tg(3π/4).
+III) O número de soluções da equação sen(x) = cos(x) no intervalo [0, 6π] é igual a 6.
+IV) Se A, B e C são ângulos de um triângulo qualquer, então sen(A + B) = sen(C).
+
+A alternativa correta é:
+
+
+A) As afirmações I e II são verdadeiras, enquanto III e IV são falsas.
+B) As afirmações II e III são verdadeiras, enquanto I e IV são falsas.
+C) As afirmações I e IV são verdadeiras, enquanto II e III são falsas.
+D) As afirmações II, III e IV são verdadeiras, enquanto I é falsa.
+E) A afirmação II é verdadeira, enquanto I, III e IV são falsas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q23
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 24
+
+Um paciente recebeu a prescrição de ingerir diariamente 40 mg da substância X e 240 mg da substância Y através dos compostos A e B; em cada 100 mg, o composto A contém 10 mg de X e 80 mg de Y, enquanto o composto B contém 20 mg de X e 60 mg de Y. Qual a combinação adequada dos compostos A e B que deve ser ingerida por dia pelo paciente?
+
+
+A) 220 mg de A e 100 mg de B.
+B) 200 mg de A e 90 mg de B.
+C) 240 mg de A e 80 mg de B.
+D) 220 mg de A e 120 mg de B.
+E) 180 mg de A e 120 mg de B.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q24
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 25
+
+Na figura abaixo, temos quatro círculos que se tangenciam mutuamente. Considerando que os três círculos menores têm o mesmo raio r = 3 u.c., podemos dizer que o diâmetro do círculo maior vale
+
+[Figura: Três círculos de mesmo raio, dois acima e um abaixo, tangentes entre si e internamente a um círculo maior que os envolve.]
+Arquivo: figures/furg-2006-matematica-q25-fig1.webp
+
+A) 18 u.c.
+B) (2√3 + 3) u.c.
+C) (4√3 + 3) u.c.
+D) (4√3 + 6) u.c.
+E) 9 u.c.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q25
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 26
+
+O comprimento do lado do polígono regular cujos vértices são dados pelas soluções complexas da equação z⁴ = 9 é igual a
+
+
+A) √6.
+B) √3.
+C) 2√3.
+D) 3√2.
+E) 2√6.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q26
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 27
+
+Um agricultor, todo ano, separa 10% de sua colheita de grãos para usar como semente na safra seguinte. Considerando que cada semente produz em média 20 grãos na colheita e admitindo que esse agricultor colheu 10 toneladas de grãos no ano de 2005, o ano em que sua safra de grãos deve superar as 500 toneladas será
+
+
+A) 2014.
+B) 2010.
+C) 2012.
+D) 2013.
+E) 2011.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q27
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 28
+
+Definimos a escala H para medida de temperatura por uma função do primeiro grau da escala Celsius junto com a condição de que 36 graus Celsius e 40 graus Celsius correspondem, respectivamente, a 0 grau H e 10 graus H. Nesse caso, as temperaturas de 34 graus Celsius e 37 graus Celsius correspondem, respectivamente, a
+
+
+A) 2 graus H e 5 graus H.
+B) −5 graus H e 2,0 graus H.
+C) −5,5 graus H e 2 graus H.
+D) −5 graus H e 2,5 graus H.
+E) 2,5 graus H e 5 graus H.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q28
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 29
+
+Considere as funções f: A → B e g: B → C definidas pelo seguinte diagrama:
+
+A composição g ∘ f associa os elementos x e w, respectivamente, a
+
+[Figura: Diagrama de funções com A = {x, y, z, w}, B = {p, q, r, s, t} e C = {t, u, v, w}. As setas de f são x → r, y → q, z → p e w → s. As setas de g são p → v, q → t, r → u, s → w e t → w.]
+Arquivo: figures/furg-2006-matematica-q29-fig1.webp
+
+A) t e w.
+B) u e w.
+C) u e v.
+D) v e w.
+E) t e u.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q29
+
+========================================================================
+FURG 2006 — Matemática — Vestibular regular — Questão 30
+
+Uma pizzaria permite que seus clientes escolham pizzas com 1, 2 ou 3 sabores diferentes dentre os 7 sabores que constam no cardápio. O número de pizzas diferentes oferecidas por essa pizzaria, considerando somente os tipos e número de sabores possíveis, é igual a
+
+
+A) 210.
+B) 269.
+C) 63.
+D) 70.
+E) 98.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-matematica
+Identificador: furg-2006-matematica-q30
+
+========================================================================
+FURG 2007 — Matemática — Processo seletivo UAB — Questão 1
+
+Num condomínio residencial, foi projetado um lago circular de 20m de diâmetro, circundado por um passeio de 2m de largura. A área do passeio representa que porcentagem da área do lago?
+
+
+A) 22%
+B) 10%
+C) 25%
+D) 33%
+E) 44%
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-matematica
+Identificador: furg-2007-1-semestre-matematica-q1
+
+========================================================================
+FURG 2007 — Matemática — Processo seletivo UAB — Questão 2
+
+A figura abaixo representa parte de uma escultura de metal e vidro colocada no jardim de entrada de um condomínio residencial. Ao analisá-la, percebemos se tratar de um cilindro circular do qual foi retirado um cone, conforme mostra a figura. O volume da parte do cilindro que permaneceu é:
+
+[Figura: Cilindro de raio R e altura 4R. Foi retirado um cone com vértice no centro da face superior e base circular a uma altura R acima da base do cilindro.]
+Arquivo: figures/furg-2007-1-semestre-matematica-q2-fig1.webp
+
+A) (3/4)πR³
+B) 3πR³
+C) πR³/3
+D) R³
+E) (2/3)πR³
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-matematica
+Identificador: furg-2007-1-semestre-matematica-q2
+
+========================================================================
+FURG 2007 — Matemática — Processo seletivo UAB — Questão 3
+
+A maquete de um condomínio residencial foi feita em escala 1:30. A altura de um dos prédios é de 90cm. Portanto, qual a altura real desse prédio?
+
+
+A) 27m
+B) 30m
+C) 3000cm
+D) 15m
+E) nenhuma das alternativas acima.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-matematica
+Identificador: furg-2007-1-semestre-matematica-q3
+
+========================================================================
+FURG 2007 — Matemática — Processo seletivo UAB — Questão 4
+
+Se a curva da figura abaixo representa o gráfico da função y = log(x), x > 0, o valor da área hachurada é:
+
+[Figura: Gráfico de y = log(x), com dois retângulos hachurados: um entre x = 2 e x = 3, de altura log(2), e outro entre x = 3 e x = 4, de altura log(3).]
+Arquivo: figures/furg-2007-1-semestre-matematica-q4-fig1.webp
+
+A) log(3)
+B) log(2)
+C) log(4)
+D) log(6)
+E) log(5)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-matematica
+Identificador: furg-2007-1-semestre-matematica-q4
+
+========================================================================
+FURG 2007 — Matemática — Processo seletivo UAB — Questão 5
+
+A reta do gráfico abaixo indica a quantidade de soro (em mililitros, ml) que uma pessoa deve tomar, em função de seu peso (dado em Kgf), num tratamento de imunização. Qual a quantidade de soro que um indivíduo de 80kgf deve receber para se tornar imune?
+
+[Figura: Reta da quantidade de soro em ml em função do peso em kgf. Estão assinalados os pontos (20, 10) e (50, 30), e o peso 80 no eixo horizontal.]
+Arquivo: figures/furg-2007-1-semestre-matematica-q5-fig1.webp
+
+A) 70 ml
+B) 100 ml
+C) 50 ml
+D) 80 ml
+E) 60 ml
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-matematica
+Identificador: furg-2007-1-semestre-matematica-q5
+
+========================================================================
+FURG 2007 — Matemática — Processo seletivo UAB — Questão 6
+
+Um pêndulo oscilando percorre sucessivas distâncias até o repouso. Estas distâncias percorridas formam uma progressão aritmética onde os primeiros termos são: 18cm, 15cm, 12cm, ... . A soma de todas as distâncias percorridas por este pêndulo é de:
+
+
+A) 63cm
+B) 45cm
+C) 90 cm
+D) 126 cm
+E) 75cm
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-matematica
+Identificador: furg-2007-1-semestre-matematica-q6
+
+========================================================================
+FURG 2007 — Matemática — Processo seletivo UAB — Questão 7
+
+O lucro de uma empresa é dado por L(x) = 100(10 − x)(x − 2), onde x é a quantidade vendida. Pode-se afirmar que o lucro é:
+
+
+A) positivo para x maior do que 10
+B) positivo para x menor que 2
+C) positivo para x entre 2 e 10
+D) máximo para x igual a 10
+E) máximo para x igual a 3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-matematica
+Identificador: furg-2007-1-semestre-matematica-q7
+
+========================================================================
+FURG 2007 — Matemática — Processo seletivo UAB — Questão 8
+
+O dono de um aviário cria galinhas num cercado retangular com dimensões 10mx20m. Ele pretende triplicar o número de galinhas criadas, mas por recomendações técnicas deve fazer isso de modo que a razão da área pelo número de galinhas não diminua. Se ele decide aumentar cada dimensão do cercado por um comprimento x, quanto deve medir esse comprimento de modo que a razão da área pelo número de galinhas permaneça invariável?
+
+
+A) x = 8
+B) x = 6
+C) x = 5
+D) x = 10
+E) x = 18
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-matematica
+Identificador: furg-2007-1-semestre-matematica-q8
+
+========================================================================
+FURG 2007 — Matemática — Processo seletivo UAB — Questão 9
+
+Na figura abaixo, r e s são retas que se cruzam no ponto A. Supondo que a medida do segmento AP é o triplo da medida do segmento AQ, determine a razão entre a medida do segmento BP e a medida do segmento QC, considerando que os triângulos ABP e ACQ são retângulos.
+
+[Figura: Retas r e s cruzam-se em A. Os pontos B, A e C estão nessa ordem na reta horizontal r; P, A e Q estão nessa ordem na reta inclinada s. P fica acima de B e Q abaixo de C.]
+Arquivo: figures/furg-2007-1-semestre-matematica-q9-fig1.webp
+
+A) 1/√3
+B) √3
+C) √2
+D) 1/2
+E) 3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-matematica
+Identificador: furg-2007-1-semestre-matematica-q9
+
+========================================================================
+FURG 2007 — Matemática — Processo seletivo UAB — Questão 10
+
+Seja a matriz A = (aᵢⱼ)₂ₓ₂ definida por
+
+aᵢⱼ = log₂(1 + i), para i < j;
+aᵢⱼ = i + j, para i = j;
+aᵢⱼ = √(2i), para i > j.
+
+O determinante da matriz A é:
+
+
+A) −6
+B) 6
+C) 0
+D) 4
+E) 8
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-matematica
+Identificador: furg-2007-1-semestre-matematica-q10
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 16
+
+As figuras abaixo representam diagramas de Venn de dois conjuntos arbitrários A e B. Assinale a alternativa que representa o diagrama de Venn no qual (A ∩ Bᶜ) está sombreado.
+
+
+A) Região externa aos dois conjuntos sombreada.
+[Figura: Diagrama A: sombreada a região externa aos círculos A e B.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q16-optionA.webp
+B) Somente a intersecção de A e B sombreada.
+[Figura: Diagrama B: sombreada apenas a intersecção entre A e B.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q16-optionB.webp
+C) Todo o conjunto A sombreado.
+[Figura: Diagrama C: sombreado todo o círculo A, inclusive a intersecção com B.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q16-optionC.webp
+D) Somente a parte de A exterior a B sombreada.
+[Figura: Diagrama D: sombreada a parte de A que fica fora de B.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q16-optionD.webp
+E) Toda a união dos conjuntos A e B sombreada.
+[Figura: Diagrama E: sombreados os círculos A e B, inclusive a intersecção.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q16-optionE.webp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q16
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 17
+
+Em uma determinada localidade, a empresa E₁ de táxi cobra R$2,00 a bandeirada e mais R$ 2,00 por quilômetro rodado. A empresa E₂ cobra R$ 3,00 por quilômetro rodado e não cobra bandeirada. O gráfico que representa as duas tarifas é
+
+
+A) E₁ parte de R$2 e E₂ parte da origem; as retas se encontram em (2 km, R$6).
+[Figura: Gráfico A: E₁ inicia em R$2, E₂ na origem, e ambas passam pelo ponto (2, 6).]
+Arquivo: figures/furg-2008-2-semestre-matematica-q17-optionA.webp
+B) E₁ parte de R$2 e encontra a reta horizontal E₂, de R$3, em 1 km.
+[Figura: Gráfico B: E₁ crescente, com intercepto 2; E₂ horizontal no valor 3. Intersecção em (1, 3).]
+Arquivo: figures/furg-2008-2-semestre-matematica-q17-optionB.webp
+C) E₁ parte da origem e encontra a reta horizontal E₂, de R$3, em 3 km.
+[Figura: Gráfico C: E₁ crescente a partir da origem; E₂ horizontal no valor 3. Intersecção em (3, 3).]
+Arquivo: figures/furg-2008-2-semestre-matematica-q17-optionC.webp
+D) E₁ e E₂ são horizontais, nos valores R$4 e R$3, respectivamente.
+[Figura: Gráfico D: E₁ e E₂ horizontais, nos valores 4 e 3.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q17-optionD.webp
+E) E₁ parte de R$2 e passa por (3 km, R$3); E₂ é a reta vertical em 3 km.
+[Figura: Gráfico E: E₁ crescente desde o valor 2; E₂ vertical na abscissa 3. Intersecção em (3, 3).]
+Arquivo: figures/furg-2008-2-semestre-matematica-q17-optionE.webp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q17
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 18
+
+Seja a matriz A = (aᵢⱼ), do tipo 3x3, tal que
+
+aᵢⱼ = i + j, se i > j;
+aᵢⱼ = i², se i = j;
+aᵢⱼ = 2i − j, se i < j;
+∀ i, j ∈ {1, 2, 3}.
+
+Podemos afirmar que
+
+
+A) a matriz A é triangular inferior.
+B) o traço da matriz A é igual a 7.
+C) o determinante da matriz A é igual a 32.
+D) a matriz A é simétrica.
+E) a matriz A é singular.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q18
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 19
+
+O logaritmo, em uma base x, do número y = 5 + x/2 é 2. Então, o valor de x é
+
+
+A) 3/2
+B) 5/2
+C) 2
+D) 5
+E) 4/3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q19
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 20
+
+O preço de uma certa mercadoria, comprada com cartão de crédito, é calculado dividindo o preço à vista por R$ 0,80. Logo, pode-se afirmar que o valor da mercadoria comprada com cartão de crédito, em relação ao preço à vista, apresenta
+
+
+A) um desconto de 25%.
+B) um acréscimo de 25%.
+C) um acréscimo de 80%.
+D) um desconto de 20%.
+E) um acréscimo de 20%.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q20
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 21
+
+Num painel fixo em uma parede, representado pela figura abaixo, um artista pinta de amarelo apenas 3 dos 9 quadradinhos. O número de maneiras distintas que esse artista poderá pintar é
+
+[Figura: Painel quadrado dividido em nove quadradinhos iguais, dispostos em três linhas e três colunas.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q21-fig1.webp
+
+A) 9
+B) 27
+C) 84
+D) 81
+E) 243
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q21
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 22
+
+Considerando que, em estatística, a moda é o valor mais freqüente de um grupo de valores observados, podemos dizer, de acordo com a tabela abaixo, que a moda das notas observadas em uma turma de 35 alunos é
+
+Nota — Nº de alunos que obtiveram a nota
+0 — 0
+1 — 0
+2 — 1
+3 — 4
+4 — 5
+5 — 5
+6 — 5
+7 — 8
+8 — 4
+9 — 2
+10 — 1
+
+
+A) 5
+B) 8
+C) 4
+D) 2
+E) 7
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q22
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 23
+
+Para que o polinômio x³ − 6x² + mx + n seja divisível por (x − 1)(x − 2), o produto m · n deve ser igual a
+
+
+A) −66
+B) 66
+C) 0
+D) 2
+E) −2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q23
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 24
+
+Um navegador vê do canal da barra do Rio Grande o topo do prédio da plataforma P-53, sob um ângulo de 30°. Aproximando-se 52m em direção à plataforma, o novo ângulo de visão é de 60°. Considerando que o navegador e a base da plataforma estão nivelados e que √3 ≅ 1,7, podemos concluir que a altura da plataforma é de, aproximadamente
+
+
+A) 55m
+B) 50m
+C) 26m
+D) 45m
+E) 40m
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q24
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 25
+
+Na figura DE é paralelo a BC e AO é bissetriz interna do triângulo ABC. Então, x + y é igual a
+
+[Figura: Triângulo ABC. D está em AB e E em AC, com DE paralelo a BC. O está em BC, e AO é bissetriz de A. As medidas indicadas são AD = 6, DB = 2, AE = x, EC = 5, BO = 6 e OC = y.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q25-fig1.webp
+
+A) 15
+B) 20
+C) 25
+D) 30
+E) 35
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q25
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 26
+
+Sabendo que o ângulo EÂB mede 120° e que AB é paralelo a DC, o valor de x e y na figura abaixo é
+
+[Figura: Polígono A B C D E, com AB e DC horizontais e paralelos. Ângulo interno em E de 110°. x é o ângulo interno em D; y é o ângulo externo em A, entre AE e o prolongamento de AB para a esquerda.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q26-fig1.webp
+
+A) x = 120° e y = 60°
+B) x = 130° e y = 60°
+C) x = 110° e y = 60°
+D) x = 120° e y = 110°
+E) x = 60° e y = 130°
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q26
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 27
+
+Uma esfera de raio 3 cm cai numa cavidade cônica, com abertura de 9 cm de raio e cuja profundidade tem 12 cm. A distância do vértice da cavidade ao centro da esfera é
+
+[Figura: Secção vertical de uma cavidade cônica, com uma esfera apoiada e tangente às duas paredes inclinadas.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q27-fig1.webp
+
+A) 8 cm
+B) 4 cm
+C) 20 cm
+D) 10 cm
+E) 5 cm
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q27
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 28
+
+O sólido gerado por um quadrado de lado 6, que gira em torno de sua diagonal, tem volume igual a
+
+
+A) 720
+B) 81π√2
+C) 36π√2
+D) 108π√2
+E) 27π√2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q28
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 29
+
+Na figura abaixo, a circunferência maior possui centro em A e raio 10cm; o triângulo ABC é retângulo em Â e a circunferência menor possui centro no ponto médio de BC. A medida da área da lua representada pela parte sombreada é
+
+[Figura: Triângulo ABC retângulo em A, com B acima de A e C à direita de A. M é o ponto médio de BC e centro da circunferência menor. O arco da circunferência maior, de centro A, liga B a C. Está sombreada a lua entre esse arco e a semicircunferência menor exterior ao triângulo.]
+Arquivo: figures/furg-2008-2-semestre-matematica-q29-fig1.webp
+
+A) 10π cm²
+B) 50π cm²
+C) 25π cm²
+D) 10 cm²
+E) 50 cm²
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q29
+
+========================================================================
+FURG 2008 — Matemática — Vestibular de inverno — Questão 30
+
+Os pontos (1,3), (2,7) e (4,k) do plano cartesiano estão alinhados se e somente se
+
+
+A) k = 15
+B) k = 11
+C) k = 14
+D) k = 12
+E) k = 13
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-matematica
+Identificador: furg-2008-2-semestre-matematica-q30
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 16
+
+O domínio da função real f(x) = √(x − 1)/√(−x² + 4) é:
+
+
+A) (1, 2)
+B) [1, 2)
+C) [1, 2]
+D) (−2, 2)
+E) [−2, 2]
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q16
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 17
+
+Num estacionamento para automóveis, o preço por dia de estacionamento é de R$20,00. A esse preço estacionam 50 automóveis por dia. Se o preço cobrado for de R$15,00 estacionarão 75 automóveis. Admitindo que a procura pelo estacionamento seja uma função do preço, do tipo afim, então, a função que a representa é:
+
+
+A) y = (1/5)x − 150
+B) y = 5x − 375
+C) y = −5x + 750
+D) y = −(1/5)x + 150
+E) y = −5x + 150
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q17
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 18
+
+O lucro de uma empresa localizada no pólo naval de Rio Grande é dado pela função L(x) = −x⁴ + 3x³ + 6x² − 8x para todo x ≥ 0. Sabe-se que os valores de x que tornam L(x) positiva proporcionam lucro à empresa e os valores de x que tornam L(x) negativa proporcionam prejuízo à mesma. Os valores de x que geram prejuízo pertencem ao intervalo
+
+
+A) (0, 1) ∪ (2, +∞)
+B) (0, 4) ∪ (4, +∞)
+C) (0, 2) ∪ (4, +∞)
+D) (0, 1) ∪ (4, +∞)
+E) (0, 4)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q18
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 19
+
+Um robô industrial possui dois elos de comprimentos a₁ = 20cm e a₂ = 30cm, elos estes que se movimentam em um plano vertical. Em um determinado instante, estes elos formam ângulos θ₁ = 30° e θ₂ = 45° com a direção vertical (eixo Y), conforme ilustrado na figura abaixo. A alternativa correta que expressa as coordenadas (X꜀, Y꜀) da posição da carga terminal do robô é:
+
+[Figura: Desenho esquemático de robô industrial no plano vertical. Eixo X positivo para a direita e Y positivo para baixo. Elo a₁ sai da origem fazendo θ₁ com Y. Elo a₂ segue para a direita e para baixo, fazendo θ₂ com a vertical. Carga terminal em (X꜀, Y꜀).]
+Arquivo: figures/furg-2008-1-semestre-matematica-q19-fig1.webp
+
+A) X꜀ = 10 − 15√2 e Y꜀ = 10√3 − 15√2
+B) X꜀ = 20√2 e Y꜀ = 15 + 10√2
+C) X꜀ = 10 + 15√2 e Y꜀ = 10√3 + 15√2
+D) X꜀ = 15√3 + 10√2 e Y꜀ = 15 + 10√2
+E) X꜀ = 15 + 10√2 e Y꜀ = 20√2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q19
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 20
+
+A idade dos alunos da 1ª série do ensino Fundamental da Escola Y varia de acordo com a tabela abaixo.
+
+Idade dos alunos — Número de alunos
+6 anos — 4
+7 anos — 9
+8 anos — 11
+9 anos — 8
+10 anos — 5
+
+Conforme os dados apresentados na tabela, a alternativa correta é:
+
+
+A) 24 alunos possuem a idade mínima de 8 anos.
+B) A idade modal é a idade de 6 anos.
+C) A freqüência relativa do número de alunos com idade de 10 anos é 5.
+D) 8 alunos possuem a idade entre 6 e 9 anos.
+E) A idade média dos alunos é 5 anos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q20
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 21
+
+A figura mostra um círculo de área igual a 16π cm² obtido pela secção de um plano α com uma esfera. Se a distância do centro da esfera até o plano α é igual a 3cm, então, o volume da esfera é
+
+[Figura: Esfera cortada por um plano α horizontal acima de seu centro, formando uma secção circular.]
+Arquivo: figures/furg-2008-1-semestre-matematica-q21-fig1.webp
+
+A) 480π/3 cm³
+B) 240π/3 cm³
+C) 256π/3 cm³
+D) 500π/3 cm³
+E) 625π/3 cm³
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q21
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 22
+
+Os telefones de Rio Grande têm seus números formados por 8 algarismos, sendo o primeiro igual a 3 e o segundo igual a 2. Dos 6 números restantes, os dois primeiros constituem o prefixo da central telefônica correspondente ao bairro. A quantidade máxima de números telefônicos que podem ser instalados nos bairros servidos pelas centrais de prefixos 31, 32, 33, 35 e 36 é
+
+
+A) 5 × 10⁴
+B) 10!
+C) 10!/5!
+D) 10⁴/5
+E) 5 × 10!
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q22
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 23
+
+O par de números (x, y), solução do sistema abaixo é
+
+7^(x − y) = 1/7
+log₃(√(x + y)) − log₃(√(x − 3)) = 1
+
+
+A) S = {(5, 4)}
+B) S = {(4, 5)}
+C) S = {(5, 6)}
+D) S = {(6, 7)}
+E) S = {(2, 3)}
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q23
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 24
+
+As coordenadas do ponto P pertencente à reta r, dada pela equação y = −2x, e eqüidistante dos pontos A (2,1) e B (4,3) são:
+
+
+A) (3, 2)
+B) (5, −10)
+C) (−5, 10)
+D) (−3, 6)
+E) (3, −6)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q24
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 25
+
+Se o determinante da matriz A é igual a 1/6 e sua matriz inversa é
+
+A⁻¹ = [3  1  −1;
+         0  x   1;
+         0  0   1],
+
+o valor de x é:
+
+
+A) 18
+B) 1/18
+C) −1/18
+D) −2
+E) 2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q25
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 26
+
+A função custo mensal de fabricação de certo produto é C(x) = 4x² − 8x + 32, onde x representa a quantidade de unidades produzidas. O preço de venda de cada unidade é P = 16 reais. Sabe-se que a receita R(x) é dada por R(x) = P · x e o lucro L(x) por L(x) = R(x) − C(x). A quantidade x que deve ser produzida e vendida deste produto mensalmente para dar o máximo lucro é:
+
+
+A) x = 5 unidades
+B) x = 4 unidades
+C) x = 2 unidades
+D) x = 3 unidades
+E) x = 6 unidades
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q26
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 27
+
+Sendo g(x) = sen(x) − cos(x), o valor de
+
+y = [g(π/2) − g(2π)]/[g(π/6) + g(0)]
+
+é:
+
+
+A) 2(1 − √3)
+B) 2(−1 + √3)
+C) (−1 + √3)
+D) (1 + √3)
+E) (−1 − √3)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q27
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 28
+
+O campeão Olímpico César Cielo seguiu um programa de treinamento para preparar-se para os Jogos Olímpicos de Pequim. No primeiro dia ele nadou 1000 metros, no segundo dia nadou 1100 metros, no terceiro dia ele nadou 1200 metros e assim sucessivamente. A distância que o atleta nadou no décimo dia de treinamento foi
+
+
+A) 1.700 metros
+B) 1.900 metros
+C) 11.100 metros
+D) 10.000 metros
+E) 2.700 metros
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q28
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 29
+
+A figura mostra um triângulo isóceles ABC de altura AD = 3 u.c. e base BC = 3 u.c., EF é o diâmetro de uma semicircunferência tangente a BC no ponto D. O valor do diâmetro EF vale:
+
+[Figura: Triângulo ABC com vértice A no alto e base BC horizontal. D é o pé da altura AD. E está em AB e F em AC. EF é horizontal e forma o diâmetro de uma semicircunferência voltada para baixo, tangente a BC em D.]
+Arquivo: figures/furg-2008-1-semestre-matematica-q29-fig1.webp
+
+A) 5 u.c.
+B) 1 u.c.
+C) 3 u.c.
+D) 4 u.c.
+E) 2 u.c.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q29
+
+========================================================================
+FURG 2009 — Matemática — Vestibular regular — Questão 30
+
+Dois candidatos, A e B, concorrem para o cargo de Reitor da Universidade X. A pesquisa com a comunidade universitária mostra que 45% dos eleitores votarão no candidato A e 30% votarão no candidato B. Os 1.500 eleitores restantes estão indecisos. Para o candidato A se eleger necessita de, pelo menos, 50% dos votos mais um. Então, o candidato A vencerá a eleição, se ele conquistar “k” votos (k ∈ ℕ*) entre os indecisos. O menor valor de “k” é:
+
+
+A) 151
+B) 201
+C) 301
+D) 401
+E) 101
+
+Nota de transcrição: O original imprime “45/%”; transcrito como 45%, conforme a porcentagem indicada no contexto.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-matematica
+Identificador: furg-2008-1-semestre-matematica-q30
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 31
+
+Em uma Instituição de Ensino Superior, um aluno do curso de Engenharia Metalúrgica anotou suas médias bimestrais nas disciplinas: Cálculo I (CI), Álgebra Linear (AL), Física I (FI) e Introdução à Computação (IC) e obteve a seguinte tabela:
+
+Disciplina — 1º bimestre — 2º bimestre — 3º bimestre — 4º bimestre
+CI — 4,0 — 6,0 — 8,0 — 9,0
+AL — 5,5 — 7,2 — 6,8 — 8,5
+FI — 9,5 — 8,3 — 7,2 — 5,5
+IC — 9,0 — 9,4 — 9,3 — 8,7
+
+Nessa Instituição, as notas dos dois primeiros bimestres têm peso 1 e dos dois últimos têm peso 2. Dessa forma, para determinar a média anual do aluno em cada matéria, basta fazer a média ponderada de suas notas bimestrais. Representado a tabela de notas acima pela matriz
+
+N = [4,0  6,0  8,0  9,0;
+     5,5  7,2  6,8  8,5;
+     9,5  8,3  7,2  5,5;
+     9,0  9,4  9,3  8,7],
+
+qual é a matriz X de modo que M = N · X corresponda à matriz das médias anuais desse aluno?
+
+
+A) [1/6; 1/6; 1/3; 1/3] (matriz coluna)
+B) [1/4  1/4  1/2  1/2] (matriz linha)
+C) [1/4; 1/4; 1/4; 1/4] (matriz coluna)
+D) [1/4; 1/4; 1/2; 1/2] (matriz coluna)
+E) [1/3  1/3  1/6  1/6] (matriz linha)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q31
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 32
+
+Desde o início do mês de dezembro está sendo realizada a campanha de arrecadação de brinquedos para serem distribuídos a crianças carentes na festa de Natal. Supondo que um posto de coleta recebeu 1 brinquedo no primeiro dia da campanha, 5, no segundo dia, 25, no terceiro dia e, assim por diante, seguindo uma progressão geométrica. Ao final de quantos dias, o posto terá arrecadado o total de 19.531 brinquedos?
+
+
+A) 7
+B) 5
+C) 13
+D) 11
+E) 9
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q32
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 33
+
+Ao sair de um quiosque (em A) na praia do Cassino, um turista avista um navio parado (em N), sob um ângulo de 30°. Ele caminha em linha reta pela praia, em direção aos Molhes da Barra e instala seu guarda-sol (em B) a 1.500m do quiosque. Nesse ponto, ele avista o mesmo navio sob um ângulo de 45°, conforme a figura abaixo. A distância do navio ao guarda-sol, em metros, é de:
+
+[Figura: Triângulo com quiosque em A à direita, guarda-sol em B à esquerda e navio em N, acima do segmento AB.]
+Arquivo: figures/furg-2010-matematica-q33-fig1.webp
+
+A) 1.500(√3 − 1)
+B) 750√2
+C) 750(√6 − √2)
+D) 375(√6 − √2)
+E) 1.500(√3 − √2)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q33
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 34
+
+O gráfico abaixo representa o levantamento estatístico do movimento, de quarta-feira a terça-feira, de uma exposição de artesanato realizada na cidade de Rio Grande.
+
+Considere as afirmações:
+
+I) De quarta-feira a sexta-feira, apenas 8.000 pessoas visitaram a exposição.
+II) Em relação ao movimento total da exposição, a porcentagem de visitantes da segunda-feira foi inferior a 4%.
+III) A média diária de visitantes nessa exposição foi superior a 3.200.
+
+Assinale a alternativa correta:
+
+[Figura: Gráfico de barras: quarta-feira, 3 mil visitantes; quinta-feira, 4 mil; sexta-feira, 5 mil; sábado, 6 mil; domingo, 1 mil; segunda-feira, 2 mil; terça-feira, 2 mil.]
+Arquivo: figures/furg-2010-matematica-q34-fig1.webp
+
+A) Apenas (II) está correta.
+B) Apenas (III) está correta.
+C) Apenas (I) está correta.
+D) Apenas (II) e (III) estão corretas.
+E) Apenas (I) e (III) estão corretas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q34
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 35
+
+Considere a sequência ((x − 2)/4, x/4, (x + 2)/4, ...). Para cada afirmação abaixo, associe V se a afirmação for verdadeira ou F, se for falsa.
+
+1. (  ) A razão da sequência é 2.
+2. (  ) O termo geral da sequência acima é x + 2n − 1.
+3. (  ) A soma dos seis primeiros termos dessa sequência é (3/2)(x + 3).
+
+A alternativa que contém a associação correta de V e F é:
+
+
+A) 1. ( F )  2. ( V )  3. ( V )
+B) 1. ( F )  2. ( F )  3. ( V )
+C) 1. ( F )  2. ( F )  3. ( F )
+D) 1. ( V )  2. ( F )  3. ( V )
+E) 1. ( V )  2. ( F )  3. ( F )
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q35
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 36
+
+O conjunto-solução da inequação |(x − 3)²/(x² − 1)| ≤ 1, no conjunto dos números reais, corresponde ao conjunto:
+
+
+A) [−√5, −√3] ∪ [2, ∞)
+B) [−√5, −√2) ∪ (2, √5]
+C) [5/3, ∞)
+D) [−3, −1) ∪ (1, 3]
+E) [4/3, ∞)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q36
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 37
+
+Um número muito grande de pessoas procurou, no fim de semana, o Hospital Universitário “Dr. Miguel Riet Correa Junior”, da FURG, em busca de informação e atendimento relativo à gripe A (H1N1). A direção do HU solicita que a população rio-grandina busque primeiramente atendimento nos postos de saúde. Assim, somente as pessoas realmente doentes serão encaminhadas pelos médicos dos postos ao hospital. (Jornal Agora, 21/07/2009, p. 5)
+
+Um vírus se espalha em uma cidade com determinada rapidez. Em geral, essa rapidez é diretamente proporcional ao número de pessoas infectadas e, também, ao número de pessoas não infectadas. Sendo R a rapidez de propagação desse vírus e x o número de pessoas infectadas, tem-se R(x) = 2x(250.000 − x). A máxima rapidez de propagação do vírus ocorrerá quando o número de pessoas infectadas for igual a:
+
+
+A) 312.500
+B) 31.250
+C) 62.500
+D) 250.000
+E) 125.000
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q37
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 38
+
+Estão sendo construídos novos prédios de salas de aula, na Universidade Federal do Rio Grande, no Campus Carreiros. Uma das etapas da construção é a implantação do contrapiso, que consiste de uma camada de 10 cm de altura de uma massa sobre a qual são assentados os revestimentos. Supondo que o custo dessa massa é de R$ 50,00 por metro cúbico e que o custo da mão-de-obra, para a realização do serviço, é de R$ 20,00 por metro cúbico, qual é o custo, em reais, de implantação do contrapiso, incluindo massa e mão-de-obra, de uma sala de aula retangular que possua 6 m de largura e diagonal de 10 m?
+
+
+A) 42.000,00
+B) 33.600,00
+C) 420,00
+D) 336,00
+E) 500,00
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q38
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 39
+
+Considere os números complexos z₁ = 5i − 5√3, z₂ = 5√3 e z₃ = x − yi, onde x e y são números reais. A alternativa correta é:
+
+
+A) O valor de z₂/z₁ é (3 + √3i)/2.
+B) O argumento de z₁ é π/6.
+C) Os valores de x e y para os quais a expressão z₁ − z₃ = z₂ é válida são, respectivamente, 0 e −5.
+D) O módulo de z₁ é 2√10.
+E) Os valores de x e y para os quais a expressão z₁ − z₃ = z₂ é válida são, respectivamente, −10√3 e −5.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q39
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 40
+
+Sabendo que cossec(x)/sec(x) + sec(x)/cossec(x) = 5, então o valor de (sen(x) + cos(x))² é:
+
+
+A) 7/5
+B) 7/2
+C) 2/5
+D) 1
+E) 2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q40
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 41
+
+Uma turma de formandos do Ensino Médio aplicou por sete meses a quantia de R$ 1.000,00 que foi arrecadada na Festa Junina. O saldo final da aplicação foi de R$ 1.126,16. A expressão que representa da taxa de juros compostos envolvida na operação é:
+
+
+A) 1 − ⁷√(1.000,00/1.126,16)
+B) ⁷√(1.000,00/1.126,16) − 1
+C) ⁷√(1.126,16/1.000,00) + 1
+D) ⁷√(1.000,00/1.126,16) + 1
+E) ⁷√(1.126,16/1.000,00) − 1
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q41
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 42
+
+Um casal de namorados marca um encontro. O rapaz sai de seu trabalho e segue a trajetória descrita pela equação 4x − 3y − 11 = 0. Já a menina parte da Universidade e seu percurso é descrito pela equação 2x − 3y − 1 = 0. Representando, no plano cartesiano, os percursos acima, pode-se afirmar que o ponto de encontro do casal se localiza:
+
+
+A) no terceiro quadrante.
+B) na origem.
+C) no segundo quadrante.
+D) no primeiro quadrante.
+E) no quarto quadrante.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q42
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 43
+
+O símbolo da Universidade Federal do Rio Grande (FURG), que completou 40 anos em 2009, está representado pela figura abaixo.
+
+Um estudante esboçou o símbolo usando um compasso com abertura R e inscreveu um quadrado de lado L nessa circunferência. Esse estudante realizará uma colagem em seu esboço. A expressão que representa a quantidade de papel, em cm², necessária para cobrir a região sombreada, em função de R, é:
+
+[Figura: Símbolo da FURG: linhas em U sobre uma circunferência.]
+Arquivo: figures/furg-2010-matematica-q43-fig1.webp
+[Figura: Circunferência de raio R com quadrado inscrito de lado L. As três regiões circulares externas ao quadrado à esquerda, à direita e abaixo estão sombreadas; a região acima do quadrado não está sombreada.]
+Arquivo: figures/furg-2010-matematica-q43-fig2.webp
+
+A) R²(π − 1)
+B) (3/4)R²(π − 1)
+C) (3/2)R²(π − 1)
+D) (3/4)R²(π − 2)
+E) 2R²(π − 2)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q43
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 44
+
+Um artesão produz velas natalinas na forma de árvore de Natal, conforme a figura abaixo. O sólido A corresponde a um cilindro equilátero e o sólido B é um cone cuja geratriz é igual ao diâmetro de sua base. Sabendo que as dimensões são dadas em centímetros e que o raio do cilindro, r, é a terça parte do raio do cone, R, o volume, em cm³, do molde desse enfeite, em função do R, é:
+
+[Figura: Cone B de raio de base R apoiado sobre o cilindro A de raio r, compondo uma árvore de Natal.]
+Arquivo: figures/furg-2010-matematica-q44-fig1.webp
+
+A) (π/27)R³(9√3 + 1)
+B) (20π/27)R³
+C) (π/27)R³(9√3 + 2)
+D) (10π/27)R³
+E) (11√3π/27)R³
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q44
+
+========================================================================
+FURG 2010 — Matemática — Vestibular regular — Questão 45
+
+A prova de Matemática do vestibular da Universidade Federal do Rio Grande (FURG) é composta por 15 questões de múltipla escolha, cada uma com 5 alternativas, sendo apenas 1 correta. A probabilidade de um candidato, respondendo a prova de forma aleatória, acertar todas as questões é:
+
+
+A) 0
+B) 1/(5¹⁵)
+C) 1/5
+D) 1/75
+E) 1/(15⁵)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-matematica
+Identificador: furg-2010-matematica-q45
+
+========================================================================
+GABARITOS
+
+FURG 2000 | Matemática | Vestibular regular | Questão 21: D
+FURG 2000 | Matemática | Vestibular regular | Questão 22: B
+FURG 2000 | Matemática | Vestibular regular | Questão 23: C
+FURG 2000 | Matemática | Vestibular regular | Questão 24: D
+FURG 2000 | Matemática | Vestibular regular | Questão 25: E
+FURG 2000 | Matemática | Vestibular regular | Questão 26: D
+FURG 2000 | Matemática | Vestibular regular | Questão 27: C
+FURG 2000 | Matemática | Vestibular regular | Questão 28: D
+FURG 2000 | Matemática | Vestibular regular | Questão 29: A
+FURG 2000 | Matemática | Vestibular regular | Questão 30: D
+FURG 2000 | Matemática | Vestibular regular | Questão 31: B
+FURG 2000 | Matemática | Vestibular regular | Questão 32: D
+FURG 2000 | Matemática | Vestibular regular | Questão 33: B
+FURG 2000 | Matemática | Vestibular regular | Questão 34: D
+FURG 2000 | Matemática | Vestibular regular | Questão 35: B
+FURG 2000 | Matemática | Vestibular regular | Questão 36: B
+FURG 2000 | Matemática | Vestibular regular | Questão 37: A
+FURG 2000 | Matemática | Vestibular regular | Questão 38: E
+FURG 2000 | Matemática | Vestibular regular | Questão 39: B
+FURG 2000 | Matemática | Vestibular regular | Questão 40: E
+FURG 2001 | Matemática | Vestibular regular | Questão 21: D
+FURG 2001 | Matemática | Vestibular regular | Questão 22: A
+FURG 2001 | Matemática | Vestibular regular | Questão 23: C
+FURG 2001 | Matemática | Vestibular regular | Questão 24: E
+FURG 2001 | Matemática | Vestibular regular | Questão 25: E
+FURG 2001 | Matemática | Vestibular regular | Questão 26: C
+FURG 2001 | Matemática | Vestibular regular | Questão 27: B
+FURG 2001 | Matemática | Vestibular regular | Questão 28: D
+FURG 2001 | Matemática | Vestibular regular | Questão 29: C
+FURG 2001 | Matemática | Vestibular regular | Questão 30: C
+FURG 2001 | Matemática | Vestibular regular | Questão 31: D
+FURG 2001 | Matemática | Vestibular regular | Questão 32: A
+FURG 2001 | Matemática | Vestibular regular | Questão 33: E
+FURG 2001 | Matemática | Vestibular regular | Questão 34: A
+FURG 2001 | Matemática | Vestibular regular | Questão 35: B
+FURG 2001 | Matemática | Vestibular regular | Questão 36: C
+FURG 2001 | Matemática | Vestibular regular | Questão 37: D
+FURG 2001 | Matemática | Vestibular regular | Questão 38: D
+FURG 2001 | Matemática | Vestibular regular | Questão 39: B
+FURG 2001 | Matemática | Vestibular regular | Questão 40: E
+FURG 2002 | Matemática | Vestibular regular | Questão 21: B
+FURG 2002 | Matemática | Vestibular regular | Questão 22: E
+FURG 2002 | Matemática | Vestibular regular | Questão 23: D
+FURG 2002 | Matemática | Vestibular regular | Questão 24: A
+FURG 2002 | Matemática | Vestibular regular | Questão 25: C
+FURG 2002 | Matemática | Vestibular regular | Questão 26: E
+FURG 2002 | Matemática | Vestibular regular | Questão 27: C
+FURG 2002 | Matemática | Vestibular regular | Questão 28: B
+FURG 2002 | Matemática | Vestibular regular | Questão 29: D
+FURG 2002 | Matemática | Vestibular regular | Questão 30: E
+FURG 2002 | Matemática | Vestibular regular | Questão 31: B
+FURG 2002 | Matemática | Vestibular regular | Questão 32: C
+FURG 2002 | Matemática | Vestibular regular | Questão 33: A
+FURG 2002 | Matemática | Vestibular regular | Questão 34: C
+FURG 2002 | Matemática | Vestibular regular | Questão 35: A
+FURG 2002 | Matemática | Vestibular regular | Questão 36: B
+FURG 2002 | Matemática | Vestibular regular | Questão 37: E
+FURG 2002 | Matemática | Vestibular regular | Questão 38: A
+FURG 2002 | Matemática | Vestibular regular | Questão 39: D
+FURG 2002 | Matemática | Vestibular regular | Questão 40: A
+FURG 2003 | Matemática | Vestibular regular | Questão 21: B
+FURG 2003 | Matemática | Vestibular regular | Questão 22: E
+FURG 2003 | Matemática | Vestibular regular | Questão 23: A
+FURG 2003 | Matemática | Vestibular regular | Questão 24: C
+FURG 2003 | Matemática | Vestibular regular | Questão 25: B
+FURG 2003 | Matemática | Vestibular regular | Questão 26: E
+FURG 2003 | Matemática | Vestibular regular | Questão 27: A
+FURG 2003 | Matemática | Vestibular regular | Questão 28: C
+FURG 2003 | Matemática | Vestibular regular | Questão 29: D
+FURG 2003 | Matemática | Vestibular regular | Questão 30: D
+FURG 2003 | Matemática | Vestibular regular | Questão 31: B
+FURG 2003 | Matemática | Vestibular regular | Questão 32: E
+FURG 2003 | Matemática | Vestibular regular | Questão 33: A
+FURG 2003 | Matemática | Vestibular regular | Questão 34: D
+FURG 2003 | Matemática | Vestibular regular | Questão 35: A
+FURG 2003 | Matemática | Vestibular regular | Questão 36: B
+FURG 2003 | Matemática | Vestibular regular | Questão 37: E
+FURG 2003 | Matemática | Vestibular regular | Questão 38: B
+FURG 2003 | Matemática | Vestibular regular | Questão 39: C
+FURG 2003 | Matemática | Vestibular regular | Questão 40: E
+FURG 2004 | Matemática | Vestibular regular | Questão 16: A
+FURG 2004 | Matemática | Vestibular regular | Questão 17: D
+FURG 2004 | Matemática | Vestibular regular | Questão 18: B
+FURG 2004 | Matemática | Vestibular regular | Questão 19: C
+FURG 2004 | Matemática | Vestibular regular | Questão 20: A
+FURG 2004 | Matemática | Vestibular regular | Questão 21: E
+FURG 2004 | Matemática | Vestibular regular | Questão 22: C
+FURG 2004 | Matemática | Vestibular regular | Questão 23: B
+FURG 2004 | Matemática | Vestibular regular | Questão 24: ANULADA
+FURG 2004 | Matemática | Vestibular regular | Questão 25: A
+FURG 2004 | Matemática | Vestibular regular | Questão 26: A
+FURG 2004 | Matemática | Vestibular regular | Questão 27: C
+FURG 2004 | Matemática | Vestibular regular | Questão 28: B
+FURG 2004 | Matemática | Vestibular regular | Questão 29: D
+FURG 2004 | Matemática | Vestibular regular | Questão 30: D
+FURG 2005 | Matemática | Vestibular regular | Questão 16: C
+FURG 2005 | Matemática | Vestibular regular | Questão 17: A
+FURG 2005 | Matemática | Vestibular regular | Questão 18: E
+FURG 2005 | Matemática | Vestibular regular | Questão 19: D
+FURG 2005 | Matemática | Vestibular regular | Questão 20: C
+FURG 2005 | Matemática | Vestibular regular | Questão 21: E
+FURG 2005 | Matemática | Vestibular regular | Questão 22: B
+FURG 2005 | Matemática | Vestibular regular | Questão 23: D
+FURG 2005 | Matemática | Vestibular regular | Questão 24: B
+FURG 2005 | Matemática | Vestibular regular | Questão 25: A
+FURG 2005 | Matemática | Vestibular regular | Questão 26: C
+FURG 2005 | Matemática | Vestibular regular | Questão 27: D
+FURG 2005 | Matemática | Vestibular regular | Questão 28: A
+FURG 2005 | Matemática | Vestibular regular | Questão 29: E
+FURG 2005 | Matemática | Vestibular regular | Questão 30: B
+FURG 2006 | Matemática | Vestibular regular | Questão 16: E
+FURG 2006 | Matemática | Vestibular regular | Questão 17: B
+FURG 2006 | Matemática | Vestibular regular | Questão 18: C
+FURG 2006 | Matemática | Vestibular regular | Questão 19: E
+FURG 2006 | Matemática | Vestibular regular | Questão 20: A
+FURG 2006 | Matemática | Vestibular regular | Questão 21: B
+FURG 2006 | Matemática | Vestibular regular | Questão 22: A
+FURG 2006 | Matemática | Vestibular regular | Questão 23: D
+FURG 2006 | Matemática | Vestibular regular | Questão 24: C
+FURG 2006 | Matemática | Vestibular regular | Questão 25: D
+FURG 2006 | Matemática | Vestibular regular | Questão 26: A
+FURG 2006 | Matemática | Vestibular regular | Questão 27: E
+FURG 2006 | Matemática | Vestibular regular | Questão 28: D
+FURG 2006 | Matemática | Vestibular regular | Questão 29: B
+FURG 2006 | Matemática | Vestibular regular | Questão 30: C
+FURG 2007 | Matemática | Processo seletivo UAB | Questão 1: E
+FURG 2007 | Matemática | Processo seletivo UAB | Questão 2: B
+FURG 2007 | Matemática | Processo seletivo UAB | Questão 3: A
+FURG 2007 | Matemática | Processo seletivo UAB | Questão 4: D
+FURG 2007 | Matemática | Processo seletivo UAB | Questão 5: C
+FURG 2007 | Matemática | Processo seletivo UAB | Questão 6: A
+FURG 2007 | Matemática | Processo seletivo UAB | Questão 7: C
+FURG 2007 | Matemática | Processo seletivo UAB | Questão 8: D
+FURG 2007 | Matemática | Processo seletivo UAB | Questão 9: E
+FURG 2007 | Matemática | Processo seletivo UAB | Questão 10: B
+FURG 2008 | Matemática | Vestibular de inverno | Questão 16: D
+FURG 2008 | Matemática | Vestibular de inverno | Questão 17: A
+FURG 2008 | Matemática | Vestibular de inverno | Questão 18: C
+FURG 2008 | Matemática | Vestibular de inverno | Questão 19: B
+FURG 2008 | Matemática | Vestibular de inverno | Questão 20: B
+FURG 2008 | Matemática | Vestibular de inverno | Questão 21: C
+FURG 2008 | Matemática | Vestibular de inverno | Questão 22: E
+FURG 2008 | Matemática | Vestibular de inverno | Questão 23: A
+FURG 2008 | Matemática | Vestibular de inverno | Questão 24: D
+FURG 2008 | Matemática | Vestibular de inverno | Questão 25: D
+FURG 2008 | Matemática | Vestibular de inverno | Questão 26: B
+FURG 2008 | Matemática | Vestibular de inverno | Questão 27: E
+FURG 2008 | Matemática | Vestibular de inverno | Questão 28: C
+FURG 2008 | Matemática | Vestibular de inverno | Questão 29: E
+FURG 2008 | Matemática | Vestibular de inverno | Questão 30: A
+FURG 2009 | Matemática | Vestibular regular | Questão 16: B
+FURG 2009 | Matemática | Vestibular regular | Questão 17: E
+FURG 2009 | Matemática | Vestibular regular | Questão 18: D
+FURG 2009 | Matemática | Vestibular regular | Questão 19: C
+FURG 2009 | Matemática | Vestibular regular | Questão 20: A
+FURG 2009 | Matemática | Vestibular regular | Questão 21: D
+FURG 2009 | Matemática | Vestibular regular | Questão 22: A
+FURG 2009 | Matemática | Vestibular regular | Questão 23: B
+FURG 2009 | Matemática | Vestibular regular | Questão 24: C
+FURG 2009 | Matemática | Vestibular regular | Questão 25: E
+FURG 2009 | Matemática | Vestibular regular | Questão 26: D
+FURG 2009 | Matemática | Vestibular regular | Questão 27: A
+FURG 2009 | Matemática | Vestibular regular | Questão 28: B
+FURG 2009 | Matemática | Vestibular regular | Questão 29: E
+FURG 2009 | Matemática | Vestibular regular | Questão 30: C
+FURG 2010 | Matemática | Vestibular regular | Questão 31: A
+FURG 2010 | Matemática | Vestibular regular | Questão 32: A
+FURG 2010 | Matemática | Vestibular regular | Questão 33: C
+FURG 2010 | Matemática | Vestibular regular | Questão 34: B
+FURG 2010 | Matemática | Vestibular regular | Questão 35: B
+FURG 2010 | Matemática | Vestibular regular | Questão 36: C
+FURG 2010 | Matemática | Vestibular regular | Questão 37: E
+FURG 2010 | Matemática | Vestibular regular | Questão 38: D
+FURG 2010 | Matemática | Vestibular regular | Questão 39: E
+FURG 2010 | Matemática | Vestibular regular | Questão 40: A
+FURG 2010 | Matemática | Vestibular regular | Questão 41: E
+FURG 2010 | Matemática | Vestibular regular | Questão 42: D
+FURG 2010 | Matemática | Vestibular regular | Questão 43: D
+FURG 2010 | Matemática | Vestibular regular | Questão 44: C
+FURG 2010 | Matemática | Vestibular regular | Questão 45: B
