@@ -12,10 +12,10 @@ class Element{
  set innerHTML(s){this._html=s;this.buttons=[...s.matchAll(/<button\b([^>]*)>/g)].map(x=>{const b=new Element();for(const[,name,val]of x[1].matchAll(/data-([a-z-]+)="([^"]*)"/g))b.dataset[name.replace(/-([a-z])/g,(_,l)=>l.toUpperCase())]=val;b.disabled=/\bdisabled\b/.test(x[1]);return b;});this.options=[...s.matchAll(/<option(?: value="([^"]*)")?[^>]*>([^<]*)<\/option>/g)].map(x=>({value:x[1]??x[2],textContent:x[2]}));}
  get innerHTML(){return this._html;}
  get selectedIndex(){return this.options.findIndex(o=>o.value===this.value);}
- querySelectorAll(sel){return sel==='button'?this.buttons||[]:[];}
+ querySelectorAll(sel){return sel==='button'?this.buttons||[]:sel==='details'?this.details||[]:[];}
  querySelector(sel){return this.buttons?.find(b=>sel.includes('"'+b.dataset.letter+'"'));}
  setAttribute(k,v){this.attrs[k]=v;} removeAttribute(k){delete this.attrs[k];} getAttribute(k){return this.attrs[k]??null;}
- addEventListener(type,fn){(events[this.id+':'+type]??=[]).push(fn);}replaceChildren(...items){this.children=items;}scrollIntoView(){}focus(){}click(){this.onclick?.();}showModal(){this.open=true;}close(){this.open=false;}
+ addEventListener(type,fn){(events[this.id+':'+type]??=[]).push(fn);}replaceChildren(...items){this.children=items;}scrollIntoView(){}focus(){document.activeElement=this;}click(){this.onclick?.();}showModal(){this.open=true;}close(){this.open=false;for(const fn of events[this.id+':close']||[])fn({target:this});}
 }
 const $=id=>{if(!els.has(id))els.set(id,new Element(id));return els.get(id);};ids.forEach($);$('loadError').hidden=true;
 for(const id of ['subject','year','edition','skill','search','archiveSearch','simSubject','simYear'])$(id).value='';
@@ -24,7 +24,7 @@ const radios={status:[],order:[]};for(const[group,values]of Object.entries({stat
 const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:{appendChild(){}},createElement:()=>new Element(),querySelectorAll(sel){if(sel==='.nav')return nav;if(sel==='.view')return views;if(sel==='[name=status],[name=order]')return [...radios.status,...radios.order];return [];},querySelector(sel){if(sel==='.view.active')return views.find(e=>e.classList.contains('active'));if(sel==='meta[name="theme-color"]')return $('meta');if(sel==='.simulation-builder')return $('builder');const name=sel.match(/name=(status|order)/)?.[1];if(name){const val=sel.match(/value=([a-z]+)/)?.[1];return val?radios[name].find(r=>r.value===val):radios[name].find(r=>r.checked);}return null;},addEventListener(type,fn){(events['document:'+type]??=[]).push(fn);}};
 const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
 const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco'},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
-for(const file of ['skills-data.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+for(const file of ['skills-data.js','flashcards-data.js','flashcards.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
 assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,570);assert.equal(model.skills.length,119);
@@ -47,6 +47,40 @@ const imported=vm.runInContext('validateProgress({version:1,answers:{},skills:{r
 const legacy=vm.runInContext('validateProgress({version:1,answers:{}})',ctx);assert.equal(Object.keys(legacy.skills.reviewed).length,0);
 ctx.FurgUI.setTheme('dark');assert.equal(document.documentElement.dataset.theme,'dark');
 vm.runInContext("setView('leituras');setView('desempenho');setView('acervo')",ctx);assert.equal(errors.length,0);
+function checkStudy(){
+  const cards=ctx.FURG_FLASHCARDS_DATA,books=ctx.FURG_READING_DATA;
+  assert.equal(Object.keys(cards).length,119);assert.equal(Object.values(cards).flat().length,595);
+  for(const skill of model.skills){
+    const list=cards[skill.id];assert.equal(list.length,5,skill.id);assert.equal(new Set(list.map(c=>c.question)).size,5,skill.id);
+    for(const card of list){assert(typeof card.question==='string'&&card.question.trim().length>=10,skill.id);assert(typeof card.answer==='string'&&card.answer.trim(),skill.id);assert(!/<\/?[a-z][^>]*>/i.test(card.question+card.answer),skill.id);}
+    skillClick('open',skill.id);assert($('skillsRoot').innerHTML.includes('5 flashcards'),skill.id);skillClick('flashcards',skill.id);
+    assert($('flashcardDialog').open);assert.equal($('flashcardTitle').textContent,skill.title);assert.equal($('flashcardQuestion').textContent,list[0].question);assert($('flashcardAnswer').hidden);
+    for(let i=0;i<5;i++){assert.equal($('flashcardQuestion').textContent,list[i].question);assert.equal($('flashcardCount').textContent,(i+1)+' de 5');assert($('flashcardAnswer').hidden);$('flashcardReveal').click();assert(!$('flashcardAnswer').hidden);assert.equal($('flashcardAnswerText').textContent,list[i].answer);assert.equal($('flashcardReveal').getAttribute('aria-expanded'),'true');$('flashcardNext').click();}
+    assert.equal($('flashcardCount').textContent,'1 de 5');assert($('flashcardAnswer').hidden);$('flashcardClose').click();assert(!$('flashcardDialog').open);
+  }
+  assert(!ctx.FurgFlashcards.open('unknown'));
+  const opener=new Element('return-focus');ctx.FurgFlashcards.open('matrizes',opener);$('flashcardReveal').click();$('flashcardReveal').click();assert($('flashcardAnswer').hidden);assert.equal($('flashcardReveal').getAttribute('aria-expanded'),'false');
+  let prevented=false;function key(key){for(const fn of events['document:keydown']||[])fn({key,target:{closest:()=>null},preventDefault(){prevented=true;}});}
+  vm.runInContext("setView('banco')",ctx);const bankIndex=vm.runInContext('index',ctx);key('ArrowRight');assert(prevented);assert.equal($('flashcardCount').textContent,'2 de 5');assert.equal(vm.runInContext('index',ctx),bankIndex,'Flashcard navigation moved the question bank');key('ArrowLeft');assert.equal($('flashcardCount').textContent,'1 de 5');
+  for(const fn of events['flashcardDots:click'])fn({target:{closest:()=>({dataset:{flashcardIndex:'4'}})}});assert.equal($('flashcardCount').textContent,'5 de 5');key('Escape');assert(!$('flashcardDialog').open);assert.equal(document.activeElement,opener);
+  ctx.FurgFlashcards.open('fis-newton');for(const fn of events['flashcardDialog:cancel'])fn({preventDefault(){}});assert(!$('flashcardDialog').open);
+  function readingClick(action,extra={}){const button={dataset:{reading:action,...extra},disabled:false,setAttribute(){}};for(const fn of events['readingRoot:click'])fn({target:{closest:()=>button}});return button;}
+  assert.equal(books.length,6);assert.equal(books.flatMap(b=>b.questions).length,60);
+  for(const book of books){
+    assert.equal(book.sections.length,6,book.id);assert(book.sections.every(s=>s.title&&s.paragraphs.length>=1&&s.paragraphs.every(p=>typeof p==='string'&&p.length>40)),book.id);assert.equal(book.excerpts.length,1,book.id);assert(book.readingLinks.length>=2,book.id);
+    for(const excerpt of book.excerpts){assert(excerpt.text.trim().split(/\s+/).length<=25,book.id);if(['ritos-passagem','utero-punho'].includes(book.id))assert(excerpt.text.length<=90,book.id);assert(excerpt.context&&excerpt.commentary&&excerpt.sourceTitle,book.id);assert(/^https:\/\//.test(excerpt.url),book.id);}
+    for(const link of book.readingLinks)assert(link.title&&link.access&&/^https:\/\//.test(link.url),book.id);
+    readingClick('open',{book:book.id});assert($('readingRoot').innerHTML.includes('Texto original'));assert($('readingPanel').innerHTML.includes('Leitura em camadas'));assert($('readingPanel').innerHTML.includes(book.sections[0].title));
+    $('summarySections').details=book.sections.map((_,i)=>{const e=new Element();e.open=i===0;return e;});const expand=readingClick('sections');assert($('summarySections').details.every(s=>s.open));assert.equal(expand.textContent,'Recolher tudo');readingClick('sections');assert($('summarySections').details.every(s=>!s.open));
+    readingClick('tab',{tab:'texto'});assert($('readingPanel').innerHTML.includes('<blockquote>'));assert($('readingPanel').innerHTML.includes(book.excerpts[0].sourceTitle));assert($('readingPanel').innerHTML.includes('Onde ler e consultar'));
+    readingClick('tab',{tab:'foco'});assert($('readingPanel').innerHTML.includes('Na hora de interpretar'));
+    readingClick('start');assert($('readingPanel').innerHTML.includes('Questão 1 de 10'));readingClick('choose',{choice:String(book.questions[0].answerIndex)});readingClick('confirm');assert.equal(vm.runInContext('state.reading.answers['+JSON.stringify(book.questions[0].id)+'].choice',ctx),book.questions[0].answerIndex);assert($('readingPanel').innerHTML.includes('Boa leitura!'));
+    readingClick('back');assert($('readingRoot').innerHTML.includes('books-grid'));
+  }
+  readingClick('open',{book:books[0].id});for(const fn of events['readingRoot:keydown'])fn({key:'ArrowRight',target:{getAttribute:()=> 'tab'},preventDefault(){}});assert($('readingPanel').innerHTML.includes('Onde ler e consultar'));
+  assert.equal(errors.length,0);
+}
+checkStudy();
 async function checkProfile(){
   const png='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aKq0AAAAASUVORK5CYII=';
   const clean=ctx.FurgProfile.validate({name:'  Ana   Maria  ',photo:png});assert.equal(clean.name,'Ana Maria');assert.equal(clean.photo,png);assert.equal(ctx.FurgProfile.initials('Ana Maria'),'AM');
@@ -60,6 +94,6 @@ async function checkProfile(){
   $('profileEdit').click();$('profileRemovePhoto').click();for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.photo',ctx),'');assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');
   $('profileEdit').click();$('profileName').value='Descartar';$('profileCancel').click();assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');
   const originalSetItem=ctx.localStorage.setItem;ctx.localStorage.setItem=()=>{throw Error('quota');};$('profileEdit').click();$('profileName').value='Não salvar';for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert($('profileMessage').textContent.includes('Não foi possível'));ctx.localStorage.setItem=originalSetItem;$('profileCancel').click();
-  console.log('PASS: existing site flows, 570 tagged questions, 119 paths; profile save, optional photo validation/removal, export/import round trip, legacy import preservation and cancelled edits.');
+  console.log('PASS: existing site flows, 570 tagged questions, 119 paths, 595 flashcards (reveal, navigation, restart, focus and keyboard isolation), 36 literary sections, 6 original excerpts and 60 reading questions; profile export/import and legacy progress preserved.');
 }
 checkProfile().catch(error=>{console.error(error);process.exitCode=1;});

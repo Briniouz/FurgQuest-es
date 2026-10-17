@@ -2,7 +2,7 @@
 
 Site de estudo: https://briniouz.github.io/FurgQuest-es/
 
-Banco com 2.091 questões históricas de 2000–2010, provas e gabaritos em PDF, texto selecionável, simulados, favoritos, anotações e progresso no navegador. A área Leituras contém seis resumos e 60 exercícios autorais comentados.
+Banco com 2.091 questões históricas de 2000–2010, provas e gabaritos em PDF, texto selecionável, simulados, favoritos, anotações e progresso no navegador. A área Leituras contém seis resumos ampliados, trechos originais comentados e 60 exercícios autorais. As trilhas incluem 595 flashcards básicos.
 
 ## Como atualizar sem enviar lotes de 100 arquivos
 
@@ -40,7 +40,17 @@ As 570 questões destas disciplinas (180 de Matemática, 195 de Física e 195 de
 
 O conteúdo editável é `skills-data.js`: `skills` contém objetivos, pré-requisitos e critérios de revisão; `questions` associa IDs existentes aos tópicos e habilidades. A lógica está em `skills.js` e a apresentação em `skills.css`. As marcações de revisão integram a exportação e importação do progresso. IDs antigos e a chave `furg-questoes-progress-v1` foram preservados.
 
+Cada um dos 119 assuntos oferece o botão **5 flashcards**, com uma pergunta inicial por cartão, resposta oculta, seleção de cartão, anterior, próximo e recomeço. As setas do teclado navegam e Esc fecha, devolvendo o foco ao botão de origem. Consultar um flashcard não marca um assunto como revisado. `flashcards-data.js` associa os mesmos IDs a cinco pares `question`/`answer`; `flashcards.js` controla a interação e `study.css` define a apresentação nos dois temas.
+
 Os pré-requisitos são uma organização didática independente, com consulta ao [programa oficial de 2027](https://coperse.furg.br/images/2026/Vestibular-2026/ProgramaProva.pdf), em 16/10/2026. Outras cônicas estão identificadas como conteúdo do acervo histórico, sem indicação explícita no programa atual. A frequência dos temas nas provas antigas não prevê a próxima prova.
+
+## Resumos e textos literários
+
+Em **Leituras → Resumo**, cada obra tem seis seções adicionais em **Leitura em camadas**, com estrutura, vozes, linguagem, situações concretas e orientações de interpretação. É possível expandir ou recolher todas. A aba **Texto original** apresenta um fragmento curto por obra com contexto, comentário próprio e fonte, além de opções de leitura com o tipo de acesso indicado.
+
+`Papéis avulsos` tem links para o texto integral em domínio público e para a edição de 1882 da Biblioteca Brasiliana/USP. Nas outras obras, os links apontam para manuscritos, amostras de editoras, seleções ou estudos que citam os textos. Uma página gratuita não é apresentada como permissão para republicar uma obra protegida. Não foram incluídas cópias integrais sem autorização.
+
+O conteúdo está em `readings-data.js`: os campos `summary`, `sections`, `excerpts`, `readingLinks` e `sources` alimentam as abas, sem alterar os IDs dos 60 exercícios existentes. A lógica permanece em `readings.js`; os avanços e respostas continuam no mesmo arquivo de exportação do progresso.
 
 ## Marca e autoria
 
@@ -54,7 +64,7 @@ O nome e a foto ficam no mesmo armazenamento local do progresso, sem cadastro ne
 
 ## Verificação
 
-Sem dependências de frontend. Para conferir caminhos de arquivos, inicialização, filtros, navegação, importação, respostas e trilhas:
+Sem dependências de frontend. Para conferir caminhos de arquivos, inicialização, filtros, navegação, importação, respostas, trilhas, os 595 cartões e as seis leituras:
 
 ```sh
 node scripts/check-site.cjs
