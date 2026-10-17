@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>FQ · Caminhos de estudo</title>
+  <circle cx="32" cy="32" r="29" fill="#182c42"/>
+  <path d="M14 17a25 25 0 0 1 40 14" stroke="#edaa45" stroke-width="5" stroke-linecap="round"/>
+  <path d="M53 41a25 25 0 0 1-39 6" stroke="#d57952" stroke-width="5" stroke-linecap="round"/>
+  <path d="M18 27c6-2 10-1 14 3 4-4 8-5 14-3v18c-6-2-10-1-14 2-4-3-8-4-14-2V27Z" fill="#f3f4ef"/>
+  <path d="M32 30v17" stroke="#182c42" stroke-width="2"/>
+  <path d="m24 20 8-8 8 8M32 13v11" stroke="#72b9b3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 34h5m-5 5h5m10-5h5m-5 5h5" stroke="#789494" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

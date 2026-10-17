@@ -34,13 +34,17 @@ Documentação: [clonar repositórios](https://docs.github.com/en/desktop/adding
 
 Os arquivos que já estavam na raiz foram preservados para não quebrar links externos. Não arraste os PDFs ou figuras para fora das pastas usadas pelo banco.
 
-## Habilidades e trilhas de Matemática
+## Habilidades e trilhas de Matemática, Física e Química
 
-As 180 questões de Matemática têm uma seção **O que preciso saber?**, com assunto, duas a quatro habilidades específicas e links para a sequência de estudo. O filtro **Assunto de Matemática** aparece em **Mais filtros**. Na aba **Trilhas**, escolha um dos 49 assuntos, consulte as bases, marque uma revisão e use **Praticar este assunto**.
+As 570 questões destas disciplinas (180 de Matemática, 195 de Física e 195 de Química) têm a seção **O que preciso saber?**, com assunto, duas a quatro habilidades específicas e links para a sequência de estudo. O filtro **Assunto** aparece em **Mais filtros** e acompanha a disciplina escolhida. Na aba **Trilhas**, alterne entre as três disciplinas e os 119 assuntos (49 de Matemática, 39 de Física e 31 de Química), consulte as bases, marque uma revisão e use **Praticar este assunto**. As sequências também ligam as ciências às bases de Matemática, sem duplicar o progresso. A classificação considera os textos de apoio disponíveis; as transcrições parciais antigas permanecem sinalizadas.
 
 O conteúdo editável é `skills-data.js`: `skills` contém objetivos, pré-requisitos e critérios de revisão; `questions` associa IDs existentes aos tópicos e habilidades. A lógica está em `skills.js` e a apresentação em `skills.css`. As marcações de revisão integram a exportação e importação do progresso. IDs antigos e a chave `furg-questoes-progress-v1` foram preservados.
 
 Os pré-requisitos são uma organização didática independente, com consulta ao [programa oficial de 2027](https://coperse.furg.br/images/2026/Vestibular-2026/ProgramaProva.pdf), em 16/10/2026. Outras cônicas estão identificadas como conteúdo do acervo histórico, sem indicação explícita no programa atual. A frequência dos temas nas provas antigas não prevê a próxima prova.
+
+## Marca e autoria
+
+A marca própria está em `brand-mark.svg`: um livro, uma seta e arcos circulares, usados também no favicon. O rodapé identifica o projeto de Daniel Carvalho e contém um link direto para [@briniouz](https://www.instagram.com/briniouz/). Os PDFs do acervo continuam com sua atribuição original.
 
 ## Verificação
 
