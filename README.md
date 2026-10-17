@@ -44,7 +44,13 @@ Os pré-requisitos são uma organização didática independente, com consulta a
 
 ## Marca e autoria
 
-A marca própria está em `brand-mark.svg`: um livro, uma seta e arcos circulares, usados também no favicon. O botão de perfil **D**, no cabeçalho, abre a opção **Instagram**, com link para [@briniouz](https://www.instagram.com/briniouz/). O balão mostra o nome Daniel Brinio; o rodapé mantém apenas o link social. Os PDFs do acervo continuam com sua atribuição original.
+A marca própria está em `brand-mark.svg`: um livro, uma seta e arcos circulares, usados também no favicon. O perfil no cabeçalho permite salvar um nome e uma foto opcional no navegador. A foto é recortada ao centro e reduzida para 256×256 antes de ser salva. O rodapé mantém o link do projeto para [@briniouz](https://www.instagram.com/briniouz/). Os PDFs do acervo continuam com sua atribuição original.
+
+## Perfil e cópia do progresso
+
+Abra o avatar → **Editar perfil** para alterar nome ou foto. São aceitos JPG, PNG e WebP de até 10 MB; a versão reduzida do avatar é incluída no JSON exportado junto ao progresso. **Cancelar** descarta as alterações do formulário.
+
+O nome e a foto ficam no mesmo armazenamento local do progresso, sem cadastro nem envio da imagem a um servidor. Ao importar um arquivo com perfil, ele substitui o nome e a foto atuais e combina os registros de estudo. Arquivos antigos sem perfil preservam o perfil atual. Arquivos exportados antes desta versão continuam compatíveis. A lógica do perfil está em `profile.js`.
 
 ## Verificação
 

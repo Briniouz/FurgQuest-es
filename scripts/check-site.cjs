@@ -1,7 +1,7 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const html=fs.readFileSync('index.html','utf8'),ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
 assert.equal(new Set(ids).size,ids.length,'Duplicate HTML ID');
-for(const[,file]of html.matchAll(/(?:src|href)="([^"#]+\.(?:js|css))"/g))assert(fs.existsSync(file),file);
+for(const[,file]of html.matchAll(/(?:src|href)="([^"?#]+\.(?:js|css))(?:\?[^"]*)?"/g))assert(fs.existsSync(file),file);
 const db=JSON.parse(fs.readFileSync('data.json','utf8')),refs=new Set();
 function assetRefs(o){if(typeof o==='string'&&/^(pdfs|figures)\//.test(o))refs.add(o);else if(o&&typeof o==='object')Object.values(o).forEach(assetRefs);}
 assetRefs(db);for(const ref of refs)assert(fs.existsSync(ref),'Missing active asset: '+ref);
@@ -22,8 +22,9 @@ for(const id of ['subject','year','edition','skill','search','archiveSearch','si
 const nav=['banco','simulados','desempenho','trilhas','leituras','acervo'].map(v=>{const e=new Element();e.dataset.view=v;return e;}),views=nav.map(n=>{const e=$(n.dataset.view);e.classList.toggle('active',e.id==='banco');return e;});
 const radios={status:[],order:[]};for(const[group,values]of Object.entries({status:['all','unanswered','answered','correct','wrong','favorites'],order:['recent','old','random']})){for(const value of values){const e=new Element();e.value=value;e.parentElement={textContent:value};e._checked=radios[group].length===0;Object.defineProperty(e,'checked',{get(){return this._checked;},set(v){if(v)radios[group].forEach(r=>r._checked=false);this._checked=v;}});radios[group].push(e);}}
 const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:{appendChild(){}},createElement:()=>new Element(),querySelectorAll(sel){if(sel==='.nav')return nav;if(sel==='.view')return views;if(sel==='[name=status],[name=order]')return [...radios.status,...radios.order];return [];},querySelector(sel){if(sel==='.view.active')return views.find(e=>e.classList.contains('active'));if(sel==='meta[name="theme-color"]')return $('meta');if(sel==='.simulation-builder')return $('builder');const name=sel.match(/name=(status|order)/)?.[1];if(name){const val=sel.match(/value=([a-z]+)/)?.[1];return val?radios[name].find(r=>r.value===val):radios[name].find(r=>r.checked);}return null;},addEventListener(type,fn){(events['document:'+type]??=[]).push(fn);}};
-const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco'},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL,Blob,Date,Map,Set,navigator:{}});
-for(const file of ['skills-data.js','skills.js','readings-data.js','readings.js','experience.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
+const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco'},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
+for(const file of ['skills-data.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
 assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,570);assert.equal(model.skills.length,119);
@@ -46,4 +47,19 @@ const imported=vm.runInContext('validateProgress({version:1,answers:{},skills:{r
 const legacy=vm.runInContext('validateProgress({version:1,answers:{}})',ctx);assert.equal(Object.keys(legacy.skills.reviewed).length,0);
 ctx.FurgUI.setTheme('dark');assert.equal(document.documentElement.dataset.theme,'dark');
 vm.runInContext("setView('leituras');setView('desempenho');setView('acervo')",ctx);assert.equal(errors.length,0);
-console.log('PASS: startup, 427 active PDF/figure paths, 570 tagged Math/Physics/Chemistry questions, 119 acyclic study paths, skill filters, practice navigation, saved review, answer correction, cross-subject prerequisites, legacy import, theme, Instagram credit, brand navigation and existing views.');
+async function checkProfile(){
+  const png='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aKq0AAAAASUVORK5CYII=';
+  const clean=ctx.FurgProfile.validate({name:'  Ana   Maria  ',photo:png});assert.equal(clean.name,'Ana Maria');assert.equal(clean.photo,png);assert.equal(ctx.FurgProfile.initials('Ana Maria'),'AM');
+  for(const photo of ['https://example.com/photo.png','javascript:alert(1)','data:image/svg+xml;base64,PHN2Zz4=','data:image/jpeg;base64,bm90LWFuLWltYWdl','data:image/jpeg;base64,/9j/'+ 'A'.repeat(200000)])assert.equal(ctx.FurgProfile.validate({photo}).photo,'');
+  await assert.rejects(ctx.FurgProfile.preparePhoto({type:'application/pdf',size:10}),/JPG/);await assert.rejects(ctx.FurgProfile.preparePhoto({type:'image/jpeg',size:11*1024*1024}),/10 MB/);
+  $('profileEdit').click();$('profileName').value='Ana Maria';for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert.equal(JSON.parse(storage.get('furg-questoes-progress-v1')).profile.name,'Ana Maria');assert.equal($('profileDisplayName').textContent,'Ana Maria');
+  vm.runInContext('state.profile='+JSON.stringify(clean),ctx);ctx.FurgProfile.refresh();$('exportProgress').click();const backup=JSON.parse(await exported.at(-1).text());assert.equal(backup.profile.photo,png);assert.equal(backup.profile.name,'Ana Maria');
+  async function importBackup(value){const text=JSON.stringify(value);await $('progressFile').onchange({target:{files:[{size:Buffer.byteLength(text),text:async()=>text}],value:'chosen.json'}});}
+  vm.runInContext("state.profile={name:'Outro nome',photo:''}",ctx);await importBackup(backup);assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert.equal(vm.runInContext('state.profile.photo',ctx),png);assert.equal($('profileDisplayName').textContent,'Ana Maria');
+  await importBackup({version:1,answers:{}});assert.equal(vm.runInContext('state.profile.photo',ctx),png);assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert(!Object.hasOwn(legacy,'profile'));
+  $('profileEdit').click();$('profileRemovePhoto').click();for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.photo',ctx),'');assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');
+  $('profileEdit').click();$('profileName').value='Descartar';$('profileCancel').click();assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');
+  const originalSetItem=ctx.localStorage.setItem;ctx.localStorage.setItem=()=>{throw Error('quota');};$('profileEdit').click();$('profileName').value='Não salvar';for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert($('profileMessage').textContent.includes('Não foi possível'));ctx.localStorage.setItem=originalSetItem;$('profileCancel').click();
+  console.log('PASS: existing site flows, 570 tagged questions, 119 paths; profile save, optional photo validation/removal, export/import round trip, legacy import preservation and cancelled edits.');
+}
+checkProfile().catch(error=>{console.error(error);process.exitCode=1;});
