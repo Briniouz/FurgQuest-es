@@ -1,0 +1,4213 @@
+FURG — ESPANHOL EM TEXTO
+186 questões do acervo histórico disponível, de 2000 a 2010.
+Enunciados, alternativas e textos de apoio em texto. As figuras estão preservadas no site e na pasta figures da versão offline.
+A cobertura do acervo não inclui todas as edições históricas. Projeto independente, sem vínculo com a FURG.
+Frações: (numerador)/(denominador). Matrizes: linhas separadas por ponto e vírgula. Gabaritos ao final.
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2000-espanhol-texto-1
+
+Instrução: as questões de números 1 a 10
+devem ser respondidas com base no
+texto A apresentado abaixo.
+
+Texto A
+
+¡Qué difícil es postular a un colegio!
+
+Los exámenes de capacidades
+intelectuales buscan evaluar al niño en funciones
+básicas como el lenguaje, motricidad fina,
+percepción, etc., y comparar su nivel con el
+[5] esperado para su edad. Cada colegio pondera
+estos ítems de acuerdo al perfil del estudiante
+que desean. Sin embargo, aunque a nivel clínico
+se puede evaluar a un niño con bastante
+precisión, ninguna prueba puede ser concluyente
+[10] respecto de su rendimiento futuro. Los menores
+tienen, por lo menos hasta los siete años, un
+desarrollo dispar en cada una de las áreas.
+En lo que respecta al lenguaje, éste
+aparece alrededor del año, cuando el niño
+[15] comienza a balbucear sus primeras sílabas,
+como da-da o ma-ma. En los exámenes de
+evaluación se mide por las estructuras de frases
+y la amplitud de vocabulario del niño. Para esto
+se utilizan cuentos, haciéndosele mencionar, por
+[20] ejemplo, todos los nombres de animales que
+conoce o todos los integrantes de su familia y la
+actividad que realiza cada uno de ellos.
+Por otra parte, la discriminación auditiva y
+visual se utiliza en algunos tests sicológicos como
+[25] una forma de prever futuros trastornos de
+aprendizaje, que estén relacionados con el
+desarrollo neurológico del niño. En la parte
+auditiva, se mide la capacidad de distinguir
+sonidos; en la parte visual, la distinción de figura y
+[30] fondo, de figuras distintas entre ellas, etc.
+La motricidad fina, a su vez, aparece
+alrededor de los 2 años de edad y se manifiesta
+en actividades como escribir y dibujar. Al evaluar
+a los menores se les hace dibujar, insertar
+[35] cuentas, armar torres con cubos, unir puntos con
+un lápiz o con hilo de bordar y encajar objetos.
+Por último, en el ámbito de las
+habilidades sociales, el juego en grupos que
+usualmente es aplicado a los menores que
+[40] postulan a los colegios tiene por objeto medir
+ciertas habilidades sociales, como la
+independencia, su capacidad de interactuar con
+los demás, de comer solos o de pedir claramente
+lo que desean.
+
+(Adaptado de Qué Pasa, 28 de marzo de 1998)
+
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 1
+
+Textos de apoio: furg-2000-espanhol-texto-1
+
+Según el texto, los exámenes de capacidades intelectuales sirven para
+
+
+A) evaluar funciones básicas tales como el lenguaje y la percepción.
+B) escoger a los mejores alumnos del año escolar.
+C) evaluar la percepción del lenguaje de los alumnos.
+D) determinar el perfil sicológico del alumno.
+E) evaluar objetivamente a los alumnos de cada año.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q1
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 2
+
+Textos de apoio: furg-2000-espanhol-texto-1
+
+En la línea 5 la palabra pondera significa
+
+
+A) pasa.
+B) acontece.
+C) mira.
+D) observa.
+E) mide.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q2
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 3
+
+Textos de apoio: furg-2000-espanhol-texto-1
+
+En la línea 7 aparece la forma verbal desean. Esta palabra concuerda gramaticalmente con
+
+
+A) la palabra niños, que es un sustantivo plural.
+B) la palabra colegio, que es un sustantivo colectivo.
+C) la palabra items, que es un sustantivo colectivo.
+D) la palabra capacidades, que es un sustantivo plural.
+E) la palabra funciones, que es un sustantivo colectivo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q3
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 4
+
+Textos de apoio: furg-2000-espanhol-texto-1
+
+La idea central del segundo párrafo es que
+
+
+A) lo importante es el desarrollo silábico del lenguaje.
+B) lo importante es la capacidad para contar frases.
+C) se presta atención a las sílabas da-da y ma-ma.
+D) se presta atención al nivel de sintaxis y vocabulario.
+E) se presta atención a la capacidad de balbucear en el primer año.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q4
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 5
+
+Textos de apoio: furg-2000-espanhol-texto-1
+
+En la palabra haciéndosele (línea 19) la forma le se refiere
+
+
+A) al vocabulario.
+B) al año.
+C) al niño.
+D) al nombre.
+E) al lenguaje.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q5
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 6
+
+Textos de apoio: furg-2000-espanhol-texto-1
+
+En los niños, un medio práctico para medir el desarrollo del lenguaje es:
+I - que cuenten cuentos infantiles que leyeron;
+II - que mencionen a los componentes de su familia;
+III - que mencionen nombres de aquellos animales que sepan;
+IV - que señalen a qué se dedican sus familiares;
+V - que mencionen las actividades de varios animales. ¿Cuáles están correctas?
+
+
+A) Sólo I, III y IV.
+B) Sólo I, III y V.
+C) Sólo I, IV y V.
+D) Sólo II, III y IV.
+E) Sólo II, IV y V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q6
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 7
+
+Textos de apoio: furg-2000-espanhol-texto-1
+
+Una idea importante del tercer párrafo es que
+
+
+A) se puede prever la inteligencia por la audición temprana.
+B) se puede pronosticar posibles trastornos del lenguaje.
+C) se puede detectar posibles problemas neurológicos.
+D) se puede prever futuros problemas visuales del niño.
+E) se pueden resolver los problemas neurológicos del niño.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q7
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 8
+
+Textos de apoio: furg-2000-espanhol-texto-1
+
+La expresión hilo de bordar (línea 36) significa
+
+
+A) un hilo fino para coser.
+B) un hilo para márgenes.
+C) un hilo especial para niñas.
+D) un hilo para niños.
+E) un hilo blanco.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q8
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 9
+
+Textos de apoio: furg-2000-espanhol-texto-1
+
+Marque la alternativa que identifica mejor al posible público-destinatario del texto:
+
+
+A) siquiatras clínicos que trabajan con niños.
+B) escolares que desean postular a un nuevo colegio.
+C) sicólogos y fonoaudiólogos educacionales.
+D) estudiantes de teoría de la educación.
+E) padres que buscan un colegio para sus hijos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q9
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 10
+
+Textos de apoio: furg-2000-espanhol-texto-1
+
+Una manera de evaluar la motricidad fina es
+
+
+A) describir y encajar objetos con la ayuda de un lápiz.
+B) hacer dibujos y unir puntos con un lápiz.
+C) insertar cuentas dibujadas con un lápiz.
+D) armar torres insertando cuentas en forma de cubos.
+E) escribir los nombres de animales y dibujarlos a lápiz.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q10
+
+========================================================================
+TEXTO DE APOIO: Texto B
+Identificador: furg-2000-espanhol-texto-2
+
+Instrução: as questões de números 11 a 20
+devem ser respondidas com base no
+texto B apresentado abaixo.
+
+Texto B
+
+Para casi 150 mil jóvenes chilenos, cada
+verano es sinónimo de dolores de cabeza. Porque
+más allá de elegir cuál es su vocación al terminar
+el colegio, deben escoger el lugar donde estudiar.
+[5] Sólo un 20% de ellos podrá acceder a uno de los
+45 mil cupos que ofrecen las 25 universidades
+tradicionales, y el resto deberá decidir entre una
+oferta cada vez más amplia de instituciones
+privadas.
+[10] Un estudio realizado en diciembre del 98
+por la empresa BBDO Investigación descubrió que
+la elección de una universidad privada siempre
+viene después de la imposibilidad de ingresar a
+las tradicionales.
+[15] La investigación estableció que en la
+elección se toman en cuenta factores tan variados
+como la imagen de cada universidad o atributos
+como ambiente más seguro y elitista, el respaldo
+económico, el perfil de sus estudiantes y las
+[20] actividades de extensión cultural.
+Según explica Mariela Roth, socióloga de
+BBDO Investigación, en la elección de una
+universidad privada intervienen los mismos
+factores que determinan que el consumidor se
+[25] incline por un producto como un automóvil, una
+tarjeta de crédito o una bebida. Entre ellos, el
+aspecto más racional es la imagen de marca o los
+atributos que se asocian con determinado
+producto.
+[30] Además, en la decisión por una u otra
+entidad influyen factores más inconscientes y
+menos racionales, como el perfil de los estudiantes
+y las necesidades que cada individuo pretende
+satisfacer, entre ellas, status, liderazgo, lealtad o
+[35] sencillez.
+Asimismo, se pidió a los padres y jóvenes
+que identificaran un set de fotografías de jóvenes
+de distintas tendencias y nivel socioeconómico con
+el perfil de estudiantes de las universidades
+[40] evaluadas para establecer otras razones por las
+que también se escoge una institución de esta
+naturaleza.
+Este estudio estableció el bajo perfil de
+algunas universidades privadas y los atributos con
+[45] los cuales se asocia a las otras para lograr este
+incipiente status.
+
+(Qué Pasa, 9 de enero de 1999)
+
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 11
+
+Textos de apoio: furg-2000-espanhol-texto-2
+
+En este contexto, la expresión dolores de cabeza (línea 2) NO puede ser sustituida por
+
+
+A) problemas.
+B) dificultades.
+C) jaquecas.
+D) incertezas.
+E) preocupaciones.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q11
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 12
+
+Textos de apoio: furg-2000-espanhol-texto-2
+
+La mejor traducción para la expresión más allá de (línea 3) es
+
+
+A) ao invés de
+B) mais além de
+C) muito além de
+D) longe de
+E) além de
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q12
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 13
+
+Textos de apoio: furg-2000-espanhol-texto-2
+
+Según el texto sólo una parte de los candidatos logra un lugar en la universidad tradicional, ya que
+
+
+A) el 20% de ellos postula a estas universidades.
+B) los cupos de estas universidades son limitados.
+C) la oferta de universidades privadas es grande.
+D) sólo hay 25 de estas universidades.
+E) hay muchas universidades privadas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q13
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 14
+
+Textos de apoio: furg-2000-espanhol-texto-2
+
+En este contexto la expresión tradicionales (línea 7) quiere decir
+
+
+A) comunes.
+B) abiertas.
+C) públicas.
+D) convencionales.
+E) clásicas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q14
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 15
+
+Textos de apoio: furg-2000-espanhol-texto-2
+
+Entre los factores que determinan la elección de una universidad privada se pueden mencionar:
+I - una universidad que brinde seguridad;
+II - la imagen que proyecta;
+III - el perfil elitista de la extensión cultural;
+IV - la solidez financiera que tenga.
+V - la imagen del perfil de los estudiantes; ¿Cuáles están correctas?
+
+
+A) Sólo I, II y IV.
+B) Sólo I, III y V.
+C) Sólo II, III y IV.
+D) Sólo II, III y V.
+E) Sólo III, V y IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q15
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 16
+
+Textos de apoio: furg-2000-espanhol-texto-2
+
+La idea central del cuarto párrafo es que
+
+
+A) hay factores privados que intervienen en la elección de una universidad como un bien de consumo.
+B) BBDO Investigación realizó un buen trabajo de investigación aplicada a la educación de nivel superior.
+C) da lo mismo comprar a crédito un automóvil que postular a una universidad privada.
+D) se puede apreciar que BBDO Investigación es una consultoría seria en cuestiones de actualidad.
+E) se elige una universidad privada por los mismos factores por los que se escogen productos de consumo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q16
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 17
+
+Textos de apoio: furg-2000-espanhol-texto-2
+
+La palabra además (línea 30) tiene un valor
+
+
+A) alternativo.
+B) anticipativo.
+C) adversativo.
+D) aditivo.
+E) afirmativo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q17
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 18
+
+Textos de apoio: furg-2000-espanhol-texto-2
+
+En la línea 31 la palabra entidad remite a
+
+
+A) universidad.
+B) tarjeta de crédito.
+C) imagen.
+D) investigación.
+E) bebida.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q18
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 19
+
+Textos de apoio: furg-2000-espanhol-texto-2
+
+La mejor traducción para las siguientes palabras: liderazgo (línea 34), sencillez (línea
+35) es
+
+
+A) poder, modéstia
+B) comando, modéstia
+C) liderança, simplicidade
+D) chefia, rusticidade
+E) liderança, sinceridade
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q19
+
+========================================================================
+FURG 2000 — Espanhol — Vestibular regular — Questão 20
+
+Textos de apoio: furg-2000-espanhol-texto-2
+
+El mejor título para el texto es
+
+
+A) Las nuevas universidades en Chile.
+B) Escogiendo una nueva imagen.
+C) La universidad y su nueva imagen.
+D) En qué liceo estudiar hoy en día.
+E) Escogiendo una universidad privada.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-espanhol
+Identificador: furg-2000-espanhol-q20
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2001-espanhol-texto-1
+
+Instrução: as questões de números 1 a 8 devem
+ser respondidas com base no texto A.
+
+Texto A
+
+Se edita en ciencia
+Crear con ciencia. Desde el porqué del
+color azul de los vaqueros, los grandes errores de
+la ciencia y la historia del microondas hasta el
+zigzagueante mundo del ADN, Crear y criar con
+[5] ciencia, el reciente libro de Patricia Linn presenta
+una diversidad de atractivos temas relacionados
+con la ciencia y la tecnología, accesibles para
+adultos y niños.
+
+A través de una recopilación de 23 textos
+[10] publicados anteriormente en el suplemento “El
+País Cultural” del diario El País, el libro incluye
+entre otros artículos, la historia del fósforo, las
+razones de la transparencia del vidrio, la
+desaparición de los dinosaurios, la clonación, los
+[15] alimentos transgénicos, las mujeres en la ciencia,
+los derrames de petróleo y la nueva concepción de
+los zoológicos sin jaulas. Asimismo, en los cinco
+capítulos en que está dividida la obra, se hace
+referencia a investigaciones científicas realizadas
+[20] por expertos uruguayos.
+
+“Crear y criar con ciencia”, Patricia
+Linn, Palacio del Libro Monteverde, 143
+páginas.
+
+(Búsqueda. Montevideo, 19-25 oct. 2000, p. 33).
+
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 1
+
+Textos de apoio: furg-2001-espanhol-texto-1
+
+El Se de Se edita (título) indica que quien edita es
+
+
+A) Patricia Linn.
+B) Búsqueda.
+C) alguien indefinido.
+D) el diario “El País”.
+E) “El País Cultural”.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q1
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 2
+
+Textos de apoio: furg-2001-espanhol-texto-1
+
+El texto es
+
+
+A) una explicación sobre aspectos curiosos de la ciencia.
+B) el comentario de un libro de ciencia publicado por uruguayos.
+C) una colección de curiosidades de la ciencia publicadas en un diario.
+D) un aviso publicitario de la editorial Palacio del Libro Monteverde.
+E) un artículo sobre un libro con temas afines a la ciencia.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q2
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 3
+
+Textos de apoio: furg-2001-espanhol-texto-1
+
+El texto fue tomado de
+
+
+A) un diario de Montevideo.
+B) la solapa del libro en cuestión.
+C) el catálogo del zoológico.
+D) una publicación semanal.
+E) un aviso publicitario.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q3
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 4
+
+Textos de apoio: furg-2001-espanhol-texto-1
+
+Entre los temas del libro (líneas 1-4) figuran
+
+
+A) los grandes errores cometidos por la ciencia.
+B) los grandes errores de la ciencia y la historia.
+C) las relaciones entre el ADN y las microondas.
+D) las causas por las que el ganado vacuno ve azules a los peones.
+E) los zigzagueos que provoca el ADN en el mundo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q4
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 5
+
+Textos de apoio: furg-2001-espanhol-texto-1
+
+De la lectura de las líneas 9 a 11 se deduce que el libro que se está comentando está formado por
+
+
+A) una recopilación de textos hasta ahora inéditos.
+B) 23 fascículos publicados en un diario como suplementos.
+C) textos publicados en un suplemento de “El País”.
+D) textos que serán publicados en “El País Cultural”.
+E) el suplemento de un diario que se publica como libro.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q5
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 6
+
+Textos de apoio: furg-2001-espanhol-texto-1
+
+De acuerdo al contexto, la palabra asimismo (línea 17) se puede traducir por
+
+
+A) mesmo assim.
+B) além disso.
+C) embora.
+D) todavia.
+E) nem mesmo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q6
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 7
+
+Textos de apoio: furg-2001-espanhol-texto-1
+
+La palabra Búsqueda (línea 24), puede ser traducida al portugués por
+I - bússola.
+II - procuração.
+III - procura.
+IV - procurar.
+V - busca. ¿Cuáles están correctas?
+
+
+A) Sólo I y V.
+B) Sólo II y IV.
+C) Sólo III y IV.
+D) Sólo III y V.
+E) Sólo IV y V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q7
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 8
+
+Textos de apoio: furg-2001-espanhol-texto-1
+
+En las líneas 17-20, se hace referencia a investigaciones científicas realizadas por expertos uruguayos
+
+
+A) en cinco capítulos dedicados al Uruguay.
+B) que son coautores del libro.
+C) en cinco de los capítulos del libro.
+D) en los cinco capítulos del libro.
+E) tanto en Uruguay como en el extranjero.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q8
+
+========================================================================
+TEXTO DE APOIO: Texto B — A CONTRAMANO / Palco móvil
+Identificador: furg-2001-espanhol-texto-2
+
+Instrução: as questões de números 9 a 20
+devem ser respondidas com base
+no texto B.
+
+Texto B
+
+A CONTRAMANO
+por Pablo Vierci
+
+Palco móvil
+
+El tamaño de una crisis puede medirse
+por los indicadores macroeconómicos, como el
+PBI, el índice de desocupación, la rotatividad
+de los hoteles alojamiento, o por las
+[5] paramétricas de la cultura callejera, que
+pueden expresarse a través del siguiente
+enunciado: la crisis es directamente
+proporcional a la calidad de las obras que se
+representan en las calles, y viceversa. Vale
+[10] decir, en tiempos de vacas gordas, los que
+‘pasan el sombrero’ en la calle o en los
+ómnibus no solo no producen ningún show ni
+divertimento, sino que simplemente solicitan
+una “ayudita” para paliar una coyuntura
+[15] desfavorable, y reciben el apoyo de un pueblo
+generoso, con mucho níquel que le pesa en el
+bolsillo. En tiempos de crisis, en cambio, el
+pedido ambulante se sofistica, ofrece más
+porque la competencia aumenta – incluso con
+[20] mano de obra desempleada de otros países de
+la región – y, ciñéndose a las normas ISO 181
+(la línea de ómnibus donde hay más gente
+pidiendo), ofrecen mejores servicios y
+productos con un precio cada vez más
+[25] competitivo.
+
+Hasta hace poco, para pasar el
+sombrero en el ómnibus, el demandante ofrecía
+apenas una pieza de retórica barroca, que
+comenzaba con el manido “damas y caballeros
+[30] que viajan en esta unidad del transporte
+colectivo de pasajeros, estoy autorizado por
+Grandes Tiendas Pajarito para entregar, en
+forma exclusiva... bla, bla”. Hoy las unidades de
+transporte se han convertido en filiales de la
+[35] RAI, o del teatro Colón de Buenos Aires,
+verdaderos palcos móviles, donde se interpreta
+lo mejor de la música folclórica, regional o
+culta, y donde se presentan, en una parada sí y
+en la otra también, barítonos privilegiados,
+
+[40] agraciados tenores, violinistas virtuosos,
+concertistas de salón y verdaderas orquestas de
+cámara (‘de ómnibus’, en verdad) que interpretan,
+con excelencia creciente, desde folclore
+cordillerano hasta la más compleja ópera de Verdi,
+[45] pasando por piezas mejoradas del cuartetero
+Rodrigo o el último hit de la “muñeca brava”
+Natalia Oreiro.
+
+En la calle sucede lo mismo. Ya no se
+pide, sino que se ‘venden’ servicios. Si hasta
+[50] ahora se ofrecía apenas el ‘lavado compulsivo del
+parabrisas’, donde, en los semáforos más
+demorados, antes que el conductor tuviera tiempo
+de reaccionar, ya le habían lavado con agua y
+jabón el parabrisas delantero, el trasero, los vidrios
+[55] laterales y hasta la manga del traje y el puño de la
+camisa que asomaban infortunadamente por la
+ventanilla, ahora la calle se ha convertido en un
+complejo polifuncional donde se ofrecen
+espectáculos circenses en varias pistas, con
+[60] malabaristas, magos que se tragan sables y
+escupen fuego, payasos en sus zancos; mimos;
+espectáculos teatrales completos, con monólogos
+dramáticos, interpretados por actores fulminantes,
+que entre la amarilla y la roja del semáforo se
+[65] recitan entero un pasaje de Molière, Verdaguer o
+Shakespeare.
+
+Hoy por hoy, Bulevar Artigas se parece,
+cada vez más, al Broadway neoyorquino.
+
+Cuando en ese escenario móvil veamos a
+[70] Liza Minelli, o el mismísimo Pavarotti, en vivo y en
+directo, nos cante ‘O Sole Mio’ en un semáforo,
+recorriendo la fila de coches al trotecito, antes de
+que llegue la roja, mientras se seca el copioso
+sudor que le corre por la frente con una pañoleta
+[75] florentina, y con una sonrisa beatífica pase el
+platito para los ‘honorarios’, habremos llegado al
+fondo del pozo. A partir de allí, como dicen los
+economistas, iniciaremos el despegue, la
+economía se reactivará, los artistas volverán a los
+[80] teatros y a las salas de conciertos, y a las calles
+regresarán los verdaderos indigentes, que
+volverán a pedir “a voluntá”, por simple caridad,
+mientras para ellos, los eternos rezagados, no
+llegan los tiempos mejores.
+
+(Posdata, 27 oct. 2000).
+
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 9
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+¿A qué público se dirige el siguiente texto?
+
+
+A) A cualquier lector.
+B) A escritores.
+C) A científicos.
+D) A artistas.
+E) A economistas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q9
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 10
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+Según el texto, cuanto mayor es la crisis,
+
+
+A) mejor es la calidad de los empleos.
+B) más níquel hay en el bolsillo.
+C) más disminuye la competencia.
+D) mejor es la calidad de las obras callejeras.
+E) peor es la calidad de las obras callejeras.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q10
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 11
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+En la línea 11, la expresión pasan el sombrero significa
+
+
+A) piden limosna.
+B) abandonan el sombrero.
+C) tiran el sombrero.
+D) atacan con el sombrero.
+E) interrumpen el discurso.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q11
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 12
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+En la línea 21, la palabra ciñéndose significa
+
+
+A) acercándose.
+B) explicándose.
+C) ajustándose.
+D) apretándose.
+E) arrimándose.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q12
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 13
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+La idea central del tercer párrafo es que en la calle
+
+
+A) no hay nadie.
+B) nadie vende nada.
+C) los mimos recitan.
+D) hay semáforos con los nombres de Molière, Verdaguer y Shakespeare.
+E) los espectáculos son cada vez mejores.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q13
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 14
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+En la última oración ellos (línea 83) refiere a
+
+
+A) los indigentes.
+B) los artistas callejeros.
+C) los saltimbanquis.
+D) los economistas.
+E) los conciertos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q14
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 15
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+En la línea 38, la forma verbal se presentan
+
+
+A) se refiere a la RAI y al teatro Colón.
+B) se refiere a los artistas callejeros.
+C) se refiere al teatro Colón y a Buenos Aires.
+D) se refiere a las Grandes Tiendas Pajarito.
+E) es impersonal.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q15
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 16
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+De acuerdo con el contexto, la mejor traducción para las siguientes palabras: competencia (línea 19) y zancos (línea 61), es
+
+
+A) sapiência - sapatos
+B) habilidade - galochas
+C) competência - meias
+D) equivalência - cavalos
+E) concorrência - pernas de pau
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q16
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 17
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+La opinión hoy por hoy (línea 67) significa
+
+
+A) recientemente.
+B) actualmente.
+C) hoy menos que ayer.
+D) hoy igual que ayer.
+E) hoy menos que mañana.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q17
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 18
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+El vocablo mientras (línea 73) significa
+
+
+A) cuando.
+B) al tiempo en que.
+C) si.
+D) nunca.
+E) siempre.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q18
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 19
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+La forma verbal veamos (línea 69) significa
+
+
+A) que podría ocurrir.
+B) que nunca ocurrirá.
+C) que ya ocurrió.
+D) que recién terminó.
+E) presente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q19
+
+========================================================================
+FURG 2001 — Espanhol — Vestibular regular — Questão 20
+
+Textos de apoio: furg-2001-espanhol-texto-2
+
+En el último párrafo la persona que es imaginada secándose el sudor de la frente es
+
+
+A) el autor del texto.
+B) un actor.
+C) Shakespeare.
+D) Liza Minelli.
+E) Pavarotti.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-espanhol
+Identificador: furg-2001-espanhol-q20
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2002-espanhol-texto-1
+
+Instrução: Responda às questões de números 1 a 20 com base no seguinte texto:
+
+DIARIO DE POESÍA
+57
+información
+creación
+ensayo
+Otoño de 2001
+Periódico trimestral.
+
+DIARIO DE POESÍA: RNPI Nº 235957.
+Distribuidora en Capital: Distrimachi S.R.L. Carlos Calvo 2426, Bs. As. Interior: DGP S.A., Alvarado 2118, Capital
+Federal. Impreso en Rosgal S.A., Mariano Moreno 2708, Montevideo, Uruguay. Tirada de esta edición: 5 000
+ejemplares. Es una publicación de la Asociación Civil Grupo Editor Diario de Poesía (e. f.).
+Circe Maia
+[1] Circe Maia (Montevideo, 1932) ha publicado siete libros (el último es De lo visible, Ed. de la Feria,
+[2] Montevideo, 1998); actualmente reside en Tacuarembó. Su obra ha sido traducida al sueco y al inglés.
+[3] Es columnista habitual de Diario de poesía, que, por otra parte, le dedicó el dossier de su n.º 43, de
+[4] septiembre de 1997; allí fueron publicadas algunas de las traducciones de Ritsos y William Carlos
+[5] Williams que menciona sobre el final de este reportaje.
+[6] – Recuerdo unas palabras tuyas: “No hay algo como el en sí de las cosas: vemos perfiles, todo
+[7] es muy fragmentario”. Naturalmente tus versos son fragmentos de tu visión del mundo; empero,
+[8] supongo que tales fragmentos aspiran a una unidad. ¿Es así?
+[9] – La busca de una unidad de sentido en el mundo es una tarea filosófica, aunque reconozco que
+[10] en el fondo también es tarea de la poesía. Lo que pasa es que nos hemos tornado más cautelosos,
+[11] andamos con pie de plomo – por lo menos ese es mi caso –, de modo que acabamos recorriendo un
+[12] terreno desigual y parcial, aunque quizás más accesible.
+[13] – ¿Cuáles serían, en tu poesía, los temas obsesivos, los que siempre te persiguen?
+[14] – Leí en algún sitio – ahora no recuerdo dónde – que el poeta no escribe “sobre” un tema sino “a
+[15] partir” de él, o sea a partir de una experiencia viva en la cual se ve inmerso. Ciertamente, vivir una
+[16] experiencia con intensidad no es garantía de la excelencia del poema: hay toda una tarea de pasaje del
+[17] plano no-lingüístico al lingüístico, en la cual se produce una suerte de presión sobre el lenguaje para
+[18] que las palabras, al organizarse de cierta manera, sean más reveladoras. Al leer un poema se hace el
+[19] camino de regreso de un plano al otro. El lenguaje poético, como todo lenguaje, sigue siendo un puente,
+[20] un medio a través del cual algo que no es él mismo se trasluce. Si no fuese así, si el lenguaje poético
+[21] fuera, como piensa Jakobson, “autoreferente”, no valdría la pena escribir ni leer. Amar las palabras en sí
+[22] mismas sería como si un músico estuviera enamorado de las notas en sí mismas. La música nos lleva
+[23] más allá de la música – no sabemos adónde –; lo mismo sucede con la poesía.
+[24] – ¿En qué estás trabajando ahora?
+[25] – Estoy preparando un nuevo libro y traduciendo a William Carlos Williams. Sus reflexiones
+[26] sobre el acto de escribir me resultan muy interesantes. Lo compara con el acto de respirar mientras se
+[27] camina, una acción en la que a veces hay que detenerse, cambiar la marcha, retomar un ritmo, todo
+[28] según las vicisitudes de la caminata. Sus poemas tienen esos “cambios de respiración” muy
+[29] perceptibles, muy atractivos. Me interesa también mucho la traducción de poesía neohelénica: Kavafis,
+[30] Seferis, Elytis, Ritsos. Hace muchos años descubrí el griego moderno, fonéticamente tan vecino al
+[31] castellano y el portugués.
+[32] (Entrevista de Floriano Martins)
+
+Sobre el llegar un poco tarde
+[33] No, ya no
+[34] pero hace un rato sí.
+[35] –¿Quedó algo?
+[36] –Sí, la ceniza, el humo, tal vez
+[37] un pequeño, pequeño resplandor.
+[38] –¿Y de la voz?
+[39] –También
+[40] algún eco quedó.
+[41] El hilo del sonido
+[42] en el fondo, apagándose.
+
+[43] ¿Cómo desenredarlo?
+[44] (Debías haber venido
+[45] un poco más temprano.)
+(inédito)
+
+Glossário
+Dossier: (Galicismo) Dossiê. Coleção de documentos referentes a certo processo, a determinado assunto, ou a certo indivíduo, etc.
+Humo: Fumaça.
+Inmerso: Mergulhado, afundado, submerso.
+Neohelénico: Pertencente ao grego moderno.
+Valdría: Valeria (do verbo Valer).
+Vicisitud: Vicissitude. Mudança ou variação de coisas que se sucedem; alternativa.
+
+[Figura: Fotografia de Circe Maia que acompanha o poema Sobre el llegar un poco tarde.]
+Arquivo: figures/furg-2002-espanhol-texto-1-fig1.webp
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 1
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+El texto intitulado “Circe Maia” fue extraído
+
+
+A) de un libro de poemas publicado en Montevideo.
+B) del libro de Circe Maia titulado De lo visible.
+C) de una publicación literaria editada por la Feria.
+D) de una publicación literaria impresa en Montevideo.
+E) del dossier n.º 43 dedicado a Circe Maia.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q1
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 2
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+Teniendo en cuenta la fuente, “Circe Maia” puede ser considerado como un texto
+
+
+A) jurídico.
+B) publicitario.
+C) periodístico.
+D) administrativo.
+E) científico.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q2
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 3
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+La mejor traducción para “No hay algo como el en sí de las cosas” (línea 6) sería
+
+
+A) não há nada como a essência das coisas.
+B) não tem nada como o sim das coisas.
+C) não há nada como o sim das coisas.
+D) não há alguma coisa positiva.
+E) não há como acertar as coisas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q3
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 4
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+La expresión “... andamos con pie de plomo...” (línea 11) equivale, en el contexto, a
+
+
+A) andamos con pie pesado.
+B) caminamos con plomadas.
+C) nos volvemos plomizos.
+D) andamos con cuidado.
+E) marchamos dando zancadas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q4
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 5
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+El pronombre personal “él” (línea 15) tiene como referente a la palabra
+
+
+A) poeta.
+B) sitio.
+C) tema.
+D) lector.
+E) poema.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q5
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 6
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+La palabra “fuera” (línea 21) está empleada para
+
+
+A) manifestar la certidumbre.
+B) expresar una posibilidad.
+C) localizar espacialmente.
+D) denotar desaprobación.
+E) indicar indiferencia.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q6
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 7
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+Sólo las palabras que están dispuestas a la izquierda aparecen en el texto. ¿Cuál de las siguientes alternativas NO tiene sentido de oposición?
+
+
+A) algo (líneas 6, 20 y 35) – nada
+B) algún (líneas 14 y 40) – ningún
+C) perfiles (línea 6) – frentes
+D) trasluce (línea 20) – esconde
+E) sucede (línea 23) – acontece
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q7
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 8
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+Donde dice “acabamos recorriendo un terreno” (líneas 11 y 12), la expresión subrayada puede ser sustituida por un pronombre. El resultado sería
+
+Trechos sublinhados: un terreno
+
+
+A) les acabamos recorriendo.
+B) acabamos le recorriendo.
+C) acabamos lo recorriendo.
+D) acabamos recorriéndolo.
+E) acabamos recorriéndola.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q8
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 9
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+La expresión “algún sitio” (línea 14) se refiere a
+
+
+A) un texto que no está definido..
+B) un lugar de descanso.
+C) un espacio cercado por enemigos.
+D) una biblioteca pública
+E) un texto de Jakobson.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q9
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 10
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+La expresión “... ese es mi caso...” (línea 11) se refiere a que la escritora
+
+
+A) propone que debe haber un pensamiento hegemónico.
+B) admite que el camino de la poesía es inaccesible.
+C) afirma que la tarea de la poesía no es filosófica.
+D) reconoce su busca de una trascendencia mística.
+E) manifiesta sus vacilaciones ante las tareas del poeta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q10
+
+========================================================================
+FURG 2002 — Espanhol — Vestibular regular — Questão 11
+
+Textos de apoio: furg-2002-espanhol-texto-1
+
+Las palabras del poema que aparecen dispuestas a la izquierda tienen su equivalente en portugués en las que están dispuestas a la derecha. Solo dos de las alternativas SON ADECUADAS.
+I. rato (línea 34) – rato
+II. ceniza (línea 36) – cinza
+III. no (línea 33) – no
+IV. hilo (línea 41) – fio Las alternativas son:
+
+
+A) I y II
+B) II y III
+C) II y IV
+D) III y IV
+E) I y III
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-espanhol
+Identificador: furg-2002-espanhol-q11
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2003-espanhol-texto-1
+
+As questões de 1 a 20 deverão ser respondidas com base no texto a seguir.
+
+[01] EL AGUA EN EL MUNDO
+
+[02] Un recurso escaso y contaminado
+
+[03] Según las Naciones Unidas, cerca de un tercio de la población mundial vive en países con carencia
+[04] moderada o grave de agua, la mayor parte en África y Asia. Si los actuales niveles de consumo
+[05] continúan, en 2025 dos de cada tres habitantes de la Tierra tendrán dificultades para abastecerse
+[06] de agua*.
+
+[07] Carlos Amorín**
+
+[08] Poca y contaminada. A la escasez creciente de agua dulce se agrega la contaminación incesante
+[09] de los ríos, lagos, corrientes subterráneas y cuencas hidrográficas. La causa principal de la
+[10] contaminación del agua es la descarga directa de desechos domésticos e industriales no
+[11] procesados en los cuerpos de agua superficial. Ello contamina no sólo los cuerpos de agua sino
+[12] también los acuíferos de agua subterránea adyacentes. Con la expansión de la industria, la minería
+[13] y el uso de agroquímicos, los ríos y acuíferos se contaminan con sólidos orgánicos, químicos
+[14] tóxicos y metales pesados.
+[15] La distribución geográfica de la contaminación del agua en América Latina, según el PNUMA,
+[16] “está dominada por los flujos desde las grandes áreas metropolitanas. Además de la concentración
+[17] de la población y la producción industrial que se da en estas metrópolis, intervienen otros factores
+[18] causales importantes: un crecimiento en los sistemas de alcantarillado convencionales que no se
+[19] ha acompañado de facilidades de tratamiento correspondientes; la intensificación en el uso agrícola
+[20] de la tierra cerca de las áreas metropolitanas; los cambios en la estructura económica, con un
+[21] creciente énfasis en la manufactura; la concentración de escorrentía proveniente de áreas
+[22] pavimentadas en las ciudades en desarrollo, y la necesidad de una regulación artificial de las
+[23] corrientes fluviales. Como resultado, la calidad de los cuerpos de agua cerca de las grandes áreas
+[24] metropolitanas se ha visto seriamente comprometida”. La misma fuente agrega que “de particular
+[25] importancia en la contaminación de aguas subterráneas es la lixiviación debida al uso y liberación
+[26] inadecuados de metales pesados, químicos sintéticos y desechos peligrosos. La cantidad de estos
+[27] compuestos que llega a las aguas subterráneas proveniente de basureros y otras fuentes no
+[28] puntuales (escorrentía, infiltración en zonas agrícolas) parece estar duplicándose cada quince años
+[29] en América Latina”.
+[30] Un informe del programa de las Naciones Unidas “Evaluación de los Recursos Mundiales de
+[31] Agua Dulce”, a modo de síntesis, afirma que “La escasez de agua y la contaminación de las
+[32] fuentes habituales están causando problemas de salud generalizados, limitando el desarrollo
+[33] económico y agrícola, y dañando un amplio espectro de ecosistemas. Esto podría poner en peligro
+[34] numerosas fuentes de abastecimiento de alimentos y provocar el estancamiento en las economías
+[35] de vastas áreas del planeta. El resultado final podrá ser, entonces, la explosión de crisis locales y
+[36] regionales vinculadas con el agua, cuyas implicancias llegarían a ser globales”.
+[37] En este contexto, las más poderosas trasnacionales presionan por doquier para apropiarse del
+[38] agua del mundo, cuya extracción y distribución se perfila como uno de los negocios potencialmente
+[39] más lucrativos del siglo XXI.
+
+[40] *Fuente: Global Environment Outlook 2000.
+[41] **Integrante de la redacción de BRECHA
+[42] Brecha. Montevideo, 26 de julio de 2002.
+
+Glossário
+Alcantarillado – Encanamento.
+Escorrentía – Água de chuva que escorrega pela superfície do solo.
+Lixiviación – Operação de separar de certas substâncias, por meio de lavagem com dissolvente
+adequado, os sais nelas contidos.
+PNUMA – Programa das Nações Unidas para o Meio Ambiente.
+
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 1
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+El texto “El agua en el mundo” tiene como objetivo
+
+
+A) denunciar a las organizaciones culpables por la escasez de agua;
+B) prevenir sobre los peligros de la falta de agua en Uruguay;
+C) informar acerca de la crisis del agua dulce;
+D) opinar sobre el problema del agua en el mundo;
+E) discutir las posibles soluciones al problema del agua.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q1
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 2
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+Considerando las estrategias comunicativas que predominan, se puede decir que el texto es
+
+
+A) narrativo;
+B) argumentativo;
+C) descriptivo;
+D) expositivo;
+E) dialogado.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q2
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 3
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+El texto “El agua en el mundo” fue tomado de
+
+
+A) una publicación de Montevideo;
+B) un manual de geografía;
+C) un sitio de Internet;
+D) un informe de Naciones Unidas;
+E) una publicación traducida del inglés.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q3
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 4
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+El texto fundamenta su estructura en
+
+
+A) el análisis;
+B) la síntesis;
+C) la definición;
+D) la comparación;
+E) la negación.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q4
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 5
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+El uso constante de la tercera persona indica que en el texto predomina
+
+
+A) la subjetividad;
+B) la referencia al lector;
+C) lo metalingüístico;
+D) la objetividad;
+E) lo ficcional.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q5
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 6
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+Las partes del texto presentadas con letra cursiva y entrecomillado indican
+
+
+A) que lo afirmado es importante;
+B) que la información, de tan conocida, es obvia;
+C) que el informe es de un organismo oficial;
+D) que se quiere producir un efecto estético.
+E) que se refiere lo dicho por otro texto;
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q6
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 7
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+En el texto predominan las formas verbales en
+
+
+A) futuro;
+B) pasado;
+C) subjuntivo;
+D) presente;
+E) condicional.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q7
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 8
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+El autor afirma que la causa principal de la contaminación del agua (líneas 9-10-11) se debe a
+
+
+A) la descarga de agua del retrete;
+B) la existencia de alcantarillados clandestinos;
+C) la falta de vigilancia ambiental;
+D) fallas en la educación ambiental;
+E) la falta de tratamiento de los residuos vertidos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q8
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 9
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+Según el contexto, la palabra “desechos” (línea
+10) se refiere a
+
+
+A) desperdicios;
+B) artículos del hogar;
+C) papeles para paredes;
+D) objetos manufacturados;
+E) cosas en uso.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q9
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 10
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+El vocablo “Ello” (línea 11) remite a
+
+
+A) los ríos, lagos y corrientes subterráneas;
+B) la descarga de desechos;
+C) los cuerpos de agua de la superficie;
+D) los dueños de las industrias;
+E) las dueñas de casa.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q10
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 11
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+Dado el contexto, las expresiones “no sólo... sino también” (líneas 11-12) permiten
+
+
+A) probar la falsedad de lo que se afirmó antes;
+B) referirse a situaciones hipotéticas;
+C) negar lo afirmado anteriormente;
+D) ratificar lo argumentado y agregar información;
+E) rectificar una información y agregar argumentos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q11
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 12
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+Los siguientes enunciados se refieren a algunos de los factores que inciden sobre la contaminación del agua en América Latina (líneas 18-23). I La presión de la demanda sobre un alcantarillado inapropiado. II El crecimiento de la renta de la población urbana. III El aumento del número de fábricas. IV Las aguas pluviales contaminadas. V La mejora de los hábitos de higiene. ¿Cuál de las alternativas es la adecuada?
+
+
+A) I, II y III
+B) I, II y IV
+C) I, III y IV
+D) I, III y V
+E) II, III y V
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q12
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 13
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+Las palabras “cerca” (líneas 20 y 23) y “basurero” (línea 27) se traducen al portugués como
+
+
+A) a cerca — vassoura
+B) a cerca — lixo
+C) perto — vassoura
+D) a cerca — lixão
+E) perto — lixão
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q13
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 14
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+El informe del programa de las Naciones Unidas (líneas 30-36)
+
+
+A) resta importancia a los pronósticos negativos sobre el agua;
+B) prevé futuros problemas provocados por la falta de agua;
+C) alerta sobre las aguas estancadas en vastas áreas del planeta;
+D) aconseja abastecerse de alimentos y de agua;
+E) defiende la necesidad de limitar el desarrollo agrícola.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q14
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 15
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+La palabra “Esto” (línea 33) remite
+
+
+A) a poner en peligro numerosas fuentes de abastecimiento de alimentos
+B) al daño de un amplio espectro de ecosistemas;
+C) a los recursos mundiales de agua dulce;
+D) al informe del programa de las Naciones Unidas;
+E) a la explosión de crisis laborales locales y regionales.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q15
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 16
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+La palabra “entonces” (línea 35), en ese contexto, fue usada para
+
+
+A) marcar hechos pasados;
+B) negar lo afirmado anteriormente;
+C) descartar las previsiones hechas;
+D) limitar los alcances de lo afirmado;
+E) agregar comentarios ampliatorios.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q16
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 17
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+Con la forma verbal “podrá ser” (línea 35), se expresa
+
+
+A) una comprobación;
+B) certidumbre;
+C) una interrogación;
+D) una predicción;
+E) finalidad.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q17
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 18
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+En la expresión “cuyas implicancias llegarían a ser globales” (línea 36), la palabra subrayada se interpreta como
+
+Trechos sublinhados: implicancias
+
+
+A) consecuencias;
+B) sobreentendidos;
+C) hipótesis
+D) disgustos;
+E) conflictos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q18
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 19
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+La expresión “por doquier” (línea 37) quiere decir
+
+
+A) por un lado en especial;
+B) por el lado que se quiere;
+C) por el lado que conviene;
+D) por el lado más débil;
+E) por cualquier lado.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q19
+
+========================================================================
+FURG 2003 — Espanhol — Vestibular regular — Questão 20
+
+Textos de apoio: furg-2003-espanhol-texto-1
+
+El autor afirma que las más poderosas trasnacionales (líneas 37-39)
+
+
+A) ya se están ocupando de la administración racional del agua;
+B) trabajarán a pérdida en el negocio de la distribución del agua;
+C) ya están en carrera para apoderarse de las fuentes de agua;
+D) presionan al poder público para solucionar la escasez de agua;
+E) quieren administran el agua del mundo con espíritu igualitario.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-espanhol
+Identificador: furg-2003-espanhol-q20
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2004-espanhol-texto-1
+
+As questões de 1 a 15 deverão ser respondidas com base no texto a seguir.
+
+[1] Guerras de religión
+
+[2] Juan José Millás (periodista y escritor español)
+
+[3] Pongo la radio con cuidado, por si estallara al encenderla, mientras la taza de café da
+[4] vueltas en el interior del microondas, y entre catástrofe y catástrofe mundial, un locutor nos
+[5] previene de que el dios Tráfico se ha levantado de mal humor. Quizá no se le ofrecieron suficientes
+[6] sacrificios durante la semana. El caso es que la M30 está cortada a la altura de Vallecas y en la M50
+[7] ha volcado un camión lleno de gallinas o de tripas de cerdo dejando absurda la vía de
+[8] circunvalación. La lluvia, por su parte, ha convertido las calles del centro en una ratonera. El locutor
+[9] insiste en que deje usted su coche donde está y use el transporte público.
+[10] Dios mío, me digo, esto no es una información, es un parte de guerra. Quizá no me he
+[11] despertado todavía. Protegiéndome los ojos con la mano izquierda, para que si el aparato revienta
+[12] no se me incrusten las esquirlas en los ojos, muevo la aguja de la radio en busca de una situación
+[13] real, soportable, medible, acogedora, y me entero involuntariamente de los atascos de la calle
+[14] Velázquez, de Serrano, del trombo de la Castellana, del infarto de la Gran Vía. Entonces, continúo
+[15] diciéndome, la gente no va a trabajar, sino a la guerra.
+[16] -Va a trabajar, pero tiene que pasar previamente por la guerra para satisfacer al dios
+[17] Tráfico, que suele despertarse muy colérico y no se calma hasta media mañana, después de haber
+[18] devorado a tres vírgenes y cuatro padres de familia, a ver si te enteras.
+[19] Me pongo la corbata y camino disciplinadamente hasta la primera parada del autobús. Bajo
+[20] la marquesina nos encontramos cuatro o cinco personas. Nadie, excepto yo, se ha dado cuenta de
+[21] que vamos a la guerra. La gente cree que va a la universidad o a ganarse la vida, o a dejar al niño
+[22] en casa de su madre. He dicho que estábamos bajo la marquesina cuatro o cinco personas, pero no
+[23] me he expresado bien: en realidad somos cuatro o cinco bultos. No hay entre nosotros mayor
+[24] relación que la que se podría establecer entre media docena de sacos de patatas abandonados en
+[25] la vía pública. Desvío la mirada hacia la acera de enfrente y veo más bultos caminando de acá para
+[26] allá sin orden ni concierto. Vienen de la guerra o van a ella, según.
+[27] [...] Dios mío, me digo, esto es la guerra y no me había dado cuenta hasta esta mañana, al
+[28] encender la radio y escuchar el parte que oigo todos los días. [...]
+
+[29] (Fragmento. Texto tomado de Internet:
+[30] www.clubcultura.com/clubliteratura/clubescritores/millas/articuento088.htm)
+
+GLOSSÁRIO
+Gran Vía (la) – Uma das ruas mais importantes que atravessam o centro da cidade de Madri.
+Izquierda – Que está do lado oposto ao direito.
+Aguja (la) – Qualquer haste ou ponta metálica.
+Acogedora – Que acolhe bem; hospitaleira.
+Ofrecieron – Apresentaram ou propuseram para que fosse aceito.
+Encender – Pôr em funcionamento um sistema elétrico de iluminação, um aparelho de rádio, um
+aparelho de tevê, um computador.
+Hasta – Indica um limite de tempo, no espaço ou nas ações.
+Parada (la) – Lugar onde os veículos coletivos param a fim de receber e/ou deixar passageiros.
+Nadie – Nenhuma pessoa.
+Después – Posteriormente, em seguida.
+
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 1
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+Dadas su temática y su organización, se puede afirmar que el texto es
+
+
+A) una crónica periodística.
+B) narrativo.
+C) una entrevista a un peatón.
+D) un poema en prosa.
+E) expositivo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q1
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 2
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+El tema del texto es
+
+
+A) las guerras religiosas actuales.
+B) los peligros del tráfico.
+C) el sensacionalismo de los boletines informativos.
+D) la soledad en las grandes ciudades.
+E) el anonimato de las multitudes.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q2
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 3
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+En el texto predomina
+
+
+A) la objetividad.
+B) la subjetividad.
+C) la polifonía de voces.
+D) el recurso a la autoridad.
+E) el discurso indirecto.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q3
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 4
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+Para hacer progresar su texto, el autor desarrolla varias ideas, entre otras, que
+I) las personas en guerra han invadido todos los puntos de la ciudad.
+II) los noticiarios parecen partes de guerra por lo violentos.
+III) ha habido nuevos accidentes de tránsito y atascos en la ciudad.
+IV) las catástrofes naturales se suman a las provocadas por la guerra.
+V) cuando van al trabajo las personas corren tanto peligro como en la guerra. Solo son verdaderas
+
+
+A) I, II, III.
+B) I, III, IV.
+C) II, III, V.
+D) II, III, IV.
+E) III, IV, V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q4
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 5
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+Dado el contexto, se puede interpretar que las expresiones “la M30” y la “M50” (línea 6) se refieren a
+
+
+A) armas de fuego.
+B) organismos de la policía.
+C) servicios de vigilancia.
+D) carreteras.
+E) dos ciudades españolas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q5
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 6
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+Para recrear la inseguridad de un clima de guerra, el autor usa las siguientes construcciones:
+I) Pongo la radio con cuidado por si estallara al encenderla (línea 3);
+II) La lluvia, por su parte, ha convertido las calles del centro en una ratonera (línea 8);
+III) Protegiéndome los ojos con la mano izquierda, para que si el aparato revienta no se me incrusten las esquirlas en los ojos... (líneas 11 y 12);
+IV) Me pongo la corbata y camino disciplinadamente hasta la primera parada del autobús (línea 19);
+V) Bajo la marquesina nos encontramos cuatro o cinco personas (líneas 19 y 20). Las construcciones que recrean el clima de guerra son
+
+
+A) III, IV, V.
+B) II, IV, V.
+C) II, III, IV.
+D) I, II, IV.
+E) I, II, III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q6
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 7
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+En el texto, la palabra “Tráfico” (líneas 5 y 17) se refiere a
+
+
+A) un jefe de oficina autoritario;
+B) una deidad antropófaga;
+C) alguien encargado del movimiento de personas y mercancías;
+D) una persona que hace negocios no lícitos;
+E) quien dirige la circulación de vehículos por calles y caminos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q7
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 8
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+Dado el contexto, se puede deducir que el contenido de los camiones volcados (línea 7) consistía en
+
+
+A) drogas.
+B) animales y armas.
+C) comestibles cárnicos.
+D) gallinas y seres humanos.
+E) basura.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q8
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 9
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+Cuando el autor dice “quizá no me he despertado todavía” (líneas 10 y 11), se interpreta que
+
+
+A) no sabe si es real lo que está oyendo.
+B) está durmiendo.
+C) es demasiado temprano.
+D) está soñando despierto.
+E) está soñando una pesadilla.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q9
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 10
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+Las formas verbales “deje usted” y “use” (línea 9) han sido usadas, en ese contexto, con la intención de
+
+
+A) expresar un deseo.
+B) persuadir.
+C) trasmitir una información.
+D) expresar una necesidad.
+E) trasmitir una instrucción.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q10
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 11
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+El autor presenta a las personas como “bultos” (líneas 21 a 26) para resaltar que
+
+
+A) solo importa su apariencia física.
+B) solo se ven sus rostros.
+C) usan ropas holgadas a causa de la lluvia.
+D) los seres humanos se han ido cosificando.
+E) son trabajadores.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q11
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 12
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+La palabra “todavía” (línea 11) se puede traducir al portugués como
+
+
+A) todavia.
+B) ainda que.
+C) embora.
+D) porém.
+E) ainda.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q12
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 13
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+La palabra “pero” (línea 22) se usa para
+
+
+A) corregir lo que se dijo antes.
+B) expresar duda.
+C) confirmar lo que se dijo antes.
+D) repetir lo dicho antes.
+E) expresar una convicción.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q13
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 14
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+Cuando el autor dice que “las calles se han convertido en una ratonera” (línea 8), está queriendo decir que
+
+
+A) los ratones morirán ahogados.
+B) los peatones morirán como ratones.
+C) el agua de la lluvia oculta los peligros de las calles.
+D) en la calle hay más ladrones que normalmente.
+E) los coches son más asaltados que en los días de sol.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q14
+
+========================================================================
+FURG 2004 — Espanhol — Vestibular regular — Questão 15
+
+Textos de apoio: furg-2004-espanhol-texto-1
+
+El autor dice que teme que el aparato reviente (líneas 11 a 13) porque
+
+
+A) puede caer una bomba en su casa.
+B) no está prestando atención a lo que hace.
+C) hay sobrecarga de tensión eléctrica.
+D) identifica al aparato de radio con una granada o similar.
+E) no usó un recipiente especial para microondas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-espanhol
+Identificador: furg-2004-espanhol-q15
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2005-espanhol-texto-1
+
+As questões de 1 a 15 deverão ser respondidas com base no texto a seguir.
+
+Mario Benedetti (escritor y periodista)
+
+[1] Hay países de América Latina donde la educación es gratuita, y ese hecho, sin duda
+[2] encomiable, es a veces esgrimido como dato confirmatorio del carácter masivo, popular, de un
+[3] sistema educativo. Es claro que tales países han alcanzado un sistema más justo y decantado que
+[4] aquellos otros donde la instrucción secundaria y universitaria deben ser rigurosamente pagada. Sin
+[5] embargo, un sistema de educación gratuita no es de ningún modo una inexpugnable garantía de
+[6] que la oportunidad de la cultura alcance a todos. Siempre será aplastantemente mayoritario el
+[7] número de estudiantes que provienen de la burguesía o de la alta clase media. Es así que la
+[8] gratuidad de la enseñanza, con ser un rasgo altamente positivo, por lo común no es aprovechado
+[9] por sectores sociales que, dada su precaria situación económica, no pueden permitirse el lujo de
+[10] estudiar.
+[11] Para ellos la cultura es un artículo tan suntuario como un yate, un caballo de carreras o un
+[12] abrigo de visón. La educación gratuita cumple su verdadera función sólo cuando se inscribe en un
+[13] sistema de justicia social; de lo contrario, cuando la gratuidad es un hecho aislado, un rasgo de
+[14] progreso que no funciona como regla sino como excepción, la principal consecuencia que trae
+[15] aparejada no es exactamente que los hijos de los pobres estudien, sino más bien que a los ricos no
+[16] les cuesta nada la educación de sus hijos.
+
+(Fragmento. Texto tomado del Diario “El País”, 14/III/1983)
+
+GLOSSÁRIO
+
+Abrigo – vestimenta que se põe sobre outras peças do vestuário e serve para proteger do frio.
+Aislado – alguém ou algo que está sozinho, separado ou afastado.
+Encomiable – elogiável, digno de elogio.
+Esgrimido – usado como meio ou arma para conseguir alcançar algum objetivo.
+Suntuario – pertencente ou relativo ao luxo.
+
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 1
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+En el texto, la idea de enseñanza gratuita, el autor la apoya en
+
+
+A) la urgencia de extender la educación por todos los países.
+B) la búsqueda de recursos monetarios para hacer posible la enseñanza.
+C) la necesidad de que la enseñanza se ubique en una sociedad justa.
+D) darles prioridad a los estudiantes pobres en los centros universitarios.
+E) limitar la entrada de alumnos burgueses y de las clases medias en los centros educacionales.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q1
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 2
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+El mejor título para el texto es
+
+
+A) Cultura, artículo suntuario
+B) Educación en América Latina
+C) Educando las élites
+D) La cultura al alcance de todos
+E) La educación gratuita garantiza la cultura
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q2
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 3
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+Dada la forma y tema del texto, puede decirse que el mismo es
+
+
+A) descriptivo.
+B) narrativo.
+C) argumentativo.
+D) poético.
+E) testimonial.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q3
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 4
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+La forma verbal hay (línea 01) indica
+
+
+A) una forma del futuro del verbo haber.
+B) una forma del presente del verbo hallar.
+C) una forma del futuro del verbo hallar.
+D) una forma del pasado del verbo haber.
+E) una forma del presente del verbo haber.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q4
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 5
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+En el texto, el nexo, Sin embargo (línea 04 e 05) tiene la misma significación que
+
+
+A) no obstante.
+B) de igual forma.
+C) por el contrario.
+D) conque.
+E) aunque.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q5
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 6
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+La expresión, de ningún modo, (línea 05) sin alterar su sentido y corrección gramatical del texto, se puede cambiar por
+I – de modo alguno.
+II – de una manera.
+III – de algún modo.
+IV – de ninguna manera.
+V – de un modo. Las alternativas son:
+
+
+A) II y V.
+B) II y III.
+C) II y V.
+D) I y IV.
+E) III y V.
+
+Nota de transcrição: As alternativas A e C são idênticas no PDF original; essa duplicação foi preservada.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q6
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 7
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+De acuerdo al contexto, la expresión Para ellos (línea 11) se refiere a
+
+
+A) los sectores sociales de bajos recursos económicos.
+B) los estudiantes pertenecientes a la burguesía.
+C) los estudiantes en general.
+D) los estudiantes que viven alejados de los centros de enseñanza.
+E) los alumnos de cultura limitada.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q7
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 8
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+En la expresión “cuando se inscribe”, la palabra cuando (línea 12), sin alterar su significado, puede ser sustituida por
+
+
+A) cuanto.
+B) después de.
+C) durante.
+D) antes de.
+E) si.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q8
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 9
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+Una idea importante del segundo párrafo es que
+
+
+A) la cultura es un derecho de todos.
+B) la cultura para los pobres es un artículo lujoso como lo pueden ser un yate, un caballo de carreras o un abrigo de visón.
+C) la cultura funciona bien donde la educación es gratuita.
+D) la educación aumenta la cultura de los pobres.
+E) la educación y la cultura marchan juntas en las sociedades de sistemas sociales justos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q9
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 10
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+En el texto predomina
+
+
+A) la subjetividad.
+B) el monólogo.
+C) el discurso directo.
+D) el recurso a la autoridad.
+E) la objetividad.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q10
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 11
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+La expresión aplastantemente (línea 06) puede ser traducida al portugués por
+
+
+A) esmagadoramente.
+B) aplastadamente.
+C) lentamente.
+D) rapidamente.
+E) achatadamente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q11
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 12
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+La expresión educación es gratuita, puede ser interpretada como
+I – educación con gratuidad.
+II – educación masiva.
+III – educación que no cuesta dinero alguno.
+IV – educación gratis.
+V – educación popular. Las alternativas son
+
+
+A) I, II y V.
+B) I, III y IV.
+C) II, IV y V.
+D) III, IV y II.
+E) II, III y I.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q12
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 13
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+En la frase “Para ellos, la cultura es un artículo tan suntuario como un yate, un caballo de carreras o un abrigo de visón”, el tan (...) como tiene el significado de
+
+
+A) menos (...) que.
+B) más (...) que.
+C) mejor (...) que.
+D) igual (...) que.
+E) mayor (...) que.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q13
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 14
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+En la línea 16 la forma les se refiere
+
+
+A) a los pobres.
+B) a los hijos.
+C) a los ricos.
+D) al hecho de que la educación no cuesta nada.
+E) al hecho de que los pobres estudien.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q14
+
+========================================================================
+FURG 2005 — Espanhol — Vestibular regular — Questão 15
+
+Textos de apoio: furg-2005-espanhol-texto-1
+
+De acuerdo con el texto la palabra aparejada (línea 15) se puede entender como
+
+
+A) aparcería.
+B) ensillada.
+C) enganchada.
+D) a la par.
+E) apartada.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-espanhol
+Identificador: furg-2005-espanhol-q15
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2006-espanhol-texto-1
+
+As questões de 1 a 15 deverão ser respondidas com base no texto a seguir.
+
+El continente joven
+
+Mario Benedetti
+
+[1] Los jóvenes casi nunca son pasivos, pero no siempre logran administrar con tino
+[2] sus energías. No es lo mismo que se movilicen en las “barras bravas” que circundan
+[3] los estadios de fútbol y las ruidosas multitudes rockeras, que los que militan en
+[4] arriesgadas ONG que acuden a asistir a pueblos en desgracia.
+[5] Lo más saludable para el normal desarrollo de un joven es mantenerse
+[6] espabilado, tanto mental como ideológicamente, no permitir que las vulgaridades
+[7] acaben vulgarizándolo a él. Y por ende, no ahogarse en un vaso de agua (ni de
+[8] cerveza). Tampoco hundirse en un pozo de fatigas. Y eso sí, indagar en el alrededor,
+tratando de comprender sus esplendores y sus miserias.
+[9] “ Contra el recuerdo no hay liberación”, sostuvo José Emilio Pacheco con su
+[10] tradicional sangre fría. Por eso mismo, no hay que olvidar que las peripecias y los
+[11] planes que se montan en la juventud pasan más tarde a convertirse en los recuerdos
+[12] de los que es imposible liberarse. Si las reminiscencias de la infancia se archivan
+[13] normalmente en el rincón de los juguetes, los recuerdos de juventud ingresan en
+[14] cambio en el escaparate de las aplicaciones resistentes, vigorosas.
+[15] De la juventud no quedan ruinas ni escombros. Queda, eso sí, una caudalosa
+[16] propuesta de cambio y hasta un amago de revolución.
+[17] Conviene dejar constancia de que los cambios fundamentales que registra la
+[18] compleja historia de América Latina fueron emprendidos por jóvenes. Desde Fidel
+[19] Castro al subcomandante
+[20] Marcos, ambos innegablemente jóvenes en el momento de su eclosión inaugural,
+[21] América Latina ha crecido en su noción de patria (o de una patria más o menos
+[22] federal). Por primera vez las poblaciones indígenas, que nunca dejaron de ser
+[23] jóvenes, irrumpieron en las respectivas sociedades, aparentemente consolidadas, de
+países como Nicaragua, Ecuador, México… y contagiaron de su impulso virgen las
+respectivas comunidades.
+[24] Por algo en Europa se le endosa a la América Latina el calificativo de “continente
+[25] joven”; aunque los Estados Unidos nos invadan, nos violen, nos empobrezcan, nos
+[26] descalabren y nos hagan cisco, América Latina sigue siendo joven, sigue rebelándose
+[27] y haciendo lo posible y lo imposible por construir su destino. Ya sea en Panamá como
+[28] en Colombia, los norteamericanos han ingresado a la inconmovible animadversión de
+los jóvenes.
+[29] En los países europeos el panorama no es el mismo. Así y todo, las riendas del
+[30] poder siempre están en manos de los veteranos, de los mayores, nunca de los
+[31] jóvenes. Los gobernantes se caracterizan por tirar la cultura por la borda. Les importa
+[32] un pepino. No obstante, cuando estalla alguna rebelión (verbigracia, contra la
+[33] absurda invasión a Irak) siempre es impulsada por los jóvenes, que abarrotan las
+plazas y las grandes avenidas.
+Fuente: A Plena Voz
+Revista Cultural de Venezuela, Nº 13, junio de 2005, pág. 33.
+
+Glossário
+
+Espabilado – estar lúcido, atento, experto com relação a alguma coisa ou pessoa.
+
+Reminiscencias – lembranças.
+Escaparate – vitrine, lugar onde ficamos expostos.
+Amago – indício de fazer alguma coisa.
+Animadversión – animadversão, aversão
+
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 1
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+Este texto puede interpretarse como
+
+
+A) una ofensa a la juventud.
+B) una defensa de la juventud.
+C) una réplica a la juventud.
+D) una información a la juventud.
+E) una queja contra la juventud.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q1
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 2
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+Según el texto, América Latina sigue siendo un continente joven porque
+
+
+A) su población tiene más jóvenes que viejos.
+B) es un continente alejado de Europa.
+C) su población no vive más de 40 años.
+D) está compuesta por países emergentes.
+E) su pueblo sigue siendo rebelde.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q2
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 3
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+En la línea 1 del texto, la palabra “tino” es equivalente a
+
+
+A) cordura.
+B) ambición.
+C) timidez.
+D) honestidad.
+E) calidad.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q3
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 4
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+En la línea 6, la expresión “a él” se refiere
+
+
+A) a la vulgaridad.
+B) a la vulgarización.
+C) al joven.
+D) a la mente.
+E) a la ideología.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q4
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 5
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+El verbo “hundirse” en la línea 7 equivale en portugués a
+
+
+A) hospedarse.
+B) homologarse.
+C) fundirse.
+D) afundarse.
+E) humilharse.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q5
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 6
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+En las líneas 6 y 7, la expresión “por ende” equivale a
+
+
+A) por lo tanto.
+B) contra eso.
+C) diferente.
+D) inversamente.
+E) por ti.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q6
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 7
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+La expresión (línea 7) “no ahogarse en un vaso de agua (ni de cerveza)”, se refiere a
+
+
+A) no tomar mucha agua ni cerveza.
+B) no dejarse vencer por la primera dificultad ni por el alcohol.
+C) no consumir más de un vaso de agua o de cerveza.
+D) no aceptar que la gente beba agua o cerveza.
+E) no dejarse vencer por la primera dificultad ni por la rutina.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q7
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 8
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+Cuando el autor cita, en la línea 9, la frase de José Emilio Pacheco “Contra el recuerdo no hay liberación”, la interpreta con el sentido de que
+
+
+A) los recuerdos son perecederos.
+B) es imposible deshacerse de los recuerdos.
+C) los recuerdos son contradictorios.
+D) hay que huir de los recuerdos.
+E) no hay que hablar de los recuerdos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q8
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 9
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+En la línea 16 la palabra “hasta” puede sustituirse por
+
+
+A) nunca.
+B) tal vez.
+C) incluso.
+D) mediante.
+E) siguiente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q9
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 10
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+En la línea 18, la forma verbal “fueron” indica
+
+
+A) una forma del futuro del verbo “formar”.
+B) una forma del presente del verbo “estar”.
+C) una forma del pasado del verbo “ir”.
+D) una forma del pasado del verbo “formar”.
+E) una forma del pasado del verbo “ser”.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q10
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 11
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+En las líneas 18 y 19 del texto, el autor dice que Fidel Castro y el subcomandante Marcos eran jóvenes
+
+
+A) cuando comenzaron sus estudios universitarios.
+B) cuando se casaron.
+C) cuando triunfaron.
+D) cuando se dieron a conocer.
+E) cuando fueron apresados.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q11
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 12
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+El posesivo “su” (línea 27) se refiere a
+
+
+A) Colombia y Panamá.
+B) los norteamericanos.
+C) América Latina.
+D) Europa.
+E) los jóvenes.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q12
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 13
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+Los cinco verbos con los que el autor condena la actitud de los Estados Unidos hacia América Latina en las líneas 25 y 26 se refieren a
+
+
+A) invadir, violar, empobrecer, descalabrar, hacer trizas.
+B) invadir, cambiar, empobrecer, descalabrar, hacer trizas.
+C) invadir, violar, empobrecer, descalabrar, hacer feliz.
+D) invadir, cambiar, empobrecer, descalabrar, hacer feliz.
+E) invadir, violar, empobrecer, labrar, hacer trizas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q13
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 14
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+En el último párrafo el autor dice que los gobernantes
+
+
+A) apoyan a la cultura.
+B) dinamizan la cultura.
+C) admiran la cultura.
+D) dan la espalda a la cultura.
+E) son esclavos de la cultura.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q14
+
+========================================================================
+FURG 2006 — Espanhol — Vestibular regular — Questão 15
+
+Textos de apoio: furg-2006-espanhol-texto-1
+
+En el último párrafo el autor dice que, ante la invasión de Irak los jóvenes
+
+
+A) se han conformado.
+B) se han rebelado.
+C) se han entusiasmado.
+D) se han callado.
+E) se han alistado.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-espanhol
+Identificador: furg-2006-espanhol-q15
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2007-1-semestre-espanhol-texto-1
+
+As questões de 21 a 30 deverão ser respondidas com base no texto a seguir.
+
+El derecho y el deber de equivocarnos
+
+Rosa Montero
+
+[1] Con todas estas emociones que estamos viviendo últimamente, ha vuelto a ponerse de
+[2] moda el viejo tema del compromiso. Siempre he creído que el verdadero compromiso de los
+[3] artistas, los intelectuales o los creadores de cualquier tipo reside en su trabajo, y en la obligación
+[4] de desempeñarlo de la manera más honesta, más rigurosa y más veraz. Lo otro, lo que la gente
+[5] suele entender por el “compromiso”, o sea, la toma de partido por esta o aquella opción política o
+[6] social, es inherente a su cualidad de ciudadanos y es algo a lo que todos estamos moralmente
+[7] obligados. No creo que un artista, por ejemplo, tenga una mayor obligación de participación
+[8] social que una cirujana, un carpintero, una administrativa, un obrero de la construcción; y muy a
+[9] menudo ni siquiera tiene una opinión más inteligente o mejor formada. Recuerdo aquel
+[10] experimento que organizó la revista The Economist en 1984, cuando pidió a miembros de cuatro
+[11] clases sociales (basureros, estudiantes de Oxford, ministros de Economía europeos y altos
+[12] directivos de multinacionales) que hicieran una serie de previsiones económicas para 1994. Pues
+[13] bien, los que más atinaron fueron los basureros, seguidos por los directores de multinacionales y,
+[14] a enorme distancia, por los estudiantes y los ministros de Economía, que sacaron, con mucho, el
+[15] peor puesto. Las opiniones sensatas no dependen necesariamente de los títulos, de la
+[16] popularidad o de la relevancia social.
+[17] De manera que, en una democracia, todos debemos participar, decidir, exigir,
+[18] reflexionar. Sin embargo, existe una suerte de mitificación del artista, del intelectual, del famoso
+[19] en general, que suele acarrear consecuencias funestas. Porque a cualquier escritor, a cualquier
+[20] periodista, a cualquier cantante, se le exige que pontifique sobre todos los temas de la Tierra. Y,
+[21] como la mayoría no somos unos genios (y ni siquiera un genio sería capaz de semejante proeza),
+[22] terminamos diciendo una ingente cantidad de tonterías. Lo hemos visto ahora, con motivo de
+[23] esta inadmisible guerra contra Irak; algunos de los actores y actrices, tipos que por otra parte me
+[24] caen bien y que son estupendos en lo suyo, han acabado soltando verdaderas sandeces a voz en
+[25] grito. Me reconozco en ello: yo también he berreado alguna vez cual energúmena. Cuanto menos
+[26] segura estoy de una idea, cuanto menos propio es el razonamiento que sostengo, más suelo
+[27] gritar, probablemente para convencerme a mí misma de la tontura.
+[28] Y con esto abordamos algo fundamental: la obligación moral de pensar las cosas por uno
+[29] mismo.
+
+Fuente: El País Semanal, Nº 1381, pág. 118.
+
+Glosario
+Recuerdo – del v. “recordar”, lembranças.
+Sandeces – plural de “sandez”, tolice.
+Ingente – muito, muita.
+Energúmena – louca.
+
+
+========================================================================
+FURG 2007 — Espanhol — Processo seletivo UAB — Questão 21
+
+Textos de apoio: furg-2007-1-semestre-espanhol-texto-1
+
+El discurso del texto es
+
+
+A) poético.
+B) científico.
+C) argumentativo.
+D) tecnológico.
+E) religioso.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-espanhol
+Identificador: furg-2007-1-semestre-espanhol-q21
+
+========================================================================
+FURG 2007 — Espanhol — Processo seletivo UAB — Questão 22
+
+Textos de apoio: furg-2007-1-semestre-espanhol-texto-1
+
+El texto reflexiona sobre la necesidad de que piensen con su propia cabeza
+
+
+A) sólo los artistas.
+B) sólo los basureros.
+C) sólo los ministros de Economía.
+D) sólo los directivos de multinacionales.
+E) todos los ciudadanos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-espanhol
+Identificador: furg-2007-1-semestre-espanhol-q22
+
+========================================================================
+FURG 2007 — Espanhol — Processo seletivo UAB — Questão 23
+
+Textos de apoio: furg-2007-1-semestre-espanhol-texto-1
+
+El texto sostiene que el verdadero compromiso de los intelectuales reside en
+
+
+A) su trabajo y en la forma de desempeñarlo de la forma más honesta posible.
+B) su posición política.
+C) su toma de partido.
+D) su opción social.
+E) ninguna de las opciones anteriores.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-espanhol
+Identificador: furg-2007-1-semestre-espanhol-q23
+
+========================================================================
+FURG 2007 — Espanhol — Processo seletivo UAB — Questão 24
+
+Textos de apoio: furg-2007-1-semestre-espanhol-texto-1
+
+La forma verbal “atinaron” usada en el texto (línea 13) es sinónimo de
+
+
+A) se equivocaron.
+B) acertaron.
+C) se alejaron.
+D) protestaron.
+E) aceptaron.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-espanhol
+Identificador: furg-2007-1-semestre-espanhol-q24
+
+========================================================================
+FURG 2007 — Espanhol — Processo seletivo UAB — Questão 25
+
+Textos de apoio: furg-2007-1-semestre-espanhol-texto-1
+
+La palabra española “basureros” (línea 11) equivale en portugués a
+
+
+A) lixeiros.
+B) lixeiras.
+C) liazo.
+D) doceiros.
+E) padeiros.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-espanhol
+Identificador: furg-2007-1-semestre-espanhol-q25
+
+========================================================================
+FURG 2007 — Espanhol — Processo seletivo UAB — Questão 26
+
+Textos de apoio: furg-2007-1-semestre-espanhol-texto-1
+
+La expresión “sin embargo” (línea 18) equivale en portugués a
+
+
+A) sem cobranza.
+B) sem contar que.
+C) sempre que.
+D) não obstante.
+E) sem entraves.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-espanhol
+Identificador: furg-2007-1-semestre-espanhol-q26
+
+========================================================================
+FURG 2007 — Espanhol — Processo seletivo UAB — Questão 27
+
+Textos de apoio: furg-2007-1-semestre-espanhol-texto-1
+
+En el texto el verbo conjugado “pontifique” (línea 20) se refiere a
+
+
+A) haga puentes.
+B) repase puentes.
+C) se oponga al sumo pontífice.
+D) se quede en un puente.
+E) presente como innegables, principios sujetos a examen.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-espanhol
+Identificador: furg-2007-1-semestre-espanhol-q27
+
+========================================================================
+FURG 2007 — Espanhol — Processo seletivo UAB — Questão 28
+
+Textos de apoio: furg-2007-1-semestre-espanhol-texto-1
+
+En la línea 22, la expresión “lo” se refiere
+
+
+A) a los artistas.
+B) al hecho de que los que no son genios terminan diciendo gran cantidad de tonterías.
+C) a los famosos en general.
+D) a los intelectuales.
+E) al hecho de que sólo los genios dicen tonterías.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-espanhol
+Identificador: furg-2007-1-semestre-espanhol-q28
+
+========================================================================
+FURG 2007 — Espanhol — Processo seletivo UAB — Questão 29
+
+Textos de apoio: furg-2007-1-semestre-espanhol-texto-1
+
+La expresión “me caen bien” (líneas 23 e 24) puede sustituirse por
+
+
+A) me caen mal.
+B) me caen pesado.
+C) me agradan.
+D) me adulan.
+E) se caen al piso.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-espanhol
+Identificador: furg-2007-1-semestre-espanhol-q29
+
+========================================================================
+FURG 2007 — Espanhol — Processo seletivo UAB — Questão 30
+
+Textos de apoio: furg-2007-1-semestre-espanhol-texto-1
+
+La palabra “suelo”, en la línea 26 del texto es
+
+
+A) un sustantivo.
+B) un adjetivo.
+C) un adverbio.
+D) una forma del verbo “soler”.
+E) una forma del verbo “sulfurar”.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-espanhol
+Identificador: furg-2007-1-semestre-espanhol-q30
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2007-2-semestre-espanhol-texto-1
+
+As questões de 1 a 15 deverão ser respondidas com base no texto a seguir.
+
+[1] Más del 50% no supo contestar quien fue Joaquín Torres García
+
+[2] Jamás fue al teatro la mitad de los habitantes de asentamientos capitalinos
+
+[3] La mitad de las personas que vive en asentamientos irregulares de Montevideo jamás
+[4] fue al teatro. Y el 68 por ciento “hace años” que no va al cine. Más de la mitad no leyó un
+[5] libro en el último año, pero el 96 por ciento mira televisión. Estos son algunos resultados que
+[6] arrojó una encuesta sobre el consumo y comportamiento cultural de los uruguayos que
+[7] habitan en la periferia de la ciudad.
+[8] El Observatorio Universitario de Políticas Culturales del Uruguay de la Facultad de
+[9] Humanidades y Ciencias de la Educación reveló ayer parte de los resultados de una encuesta
+[10] realizada en mayo pasado sobre consumo e imaginarios culturales en los asentamientos
+[11] irregulares de Montevideo.
+[12] “No sólo de pan vive el hombre, también de cultura”, manifestó ayer el director
+[13] municipal de Cultura, Mauricio Rosencof. Sin embargo, los resultados del estudio dejan
+[14] sentado que los habitantes mayores de 16 años de asentamientos no tienen acceso a las
+[15] diversas expresiones culturales.
+[16] Consultados acerca de la lectura, el 64 por ciento manifestó que lee libros, diarios o
+[17] revistas “siempre”, “casi siempre” o “a veces”. Quienes dijeron no leer nada, la mayoría es
+[18] porque no les gusta o no les interesa. La cifra es preocupante si se la compara con la
+[19] encuesta sobre imaginarios y consumo cultural que se realizó en 2002 en el país ya que en
+[20] esa oportunidad el 82,5 por ciento declaró leer diarios, revistas o libros siempre o a veces.
+[21] Tomando en cuenta sólo la lectura de libros, los números bajan. El 51 por ciento dijo
+[22] no haber leído un libro en el último año y sólo un 16 por ciento afirmó leer más de tres libros
+[23] por año. Sobre lectura de diarios, el 24 por ciento aseguró que los lee “una vez a la semana”,
+[24] pero sólo el 2 por ciento lo hace “todos los días”.
+[25] La asistencia al cine y teatro fue otra de las consultas que se realizó en la encuesta. El
+[26] 68 por ciento señaló que “hace años” que no va al cine y un 13 por ciento “nunca fue”. En
+[27] este punto también se reflejó una disminución con respecto a la encuesta nacional ya que un
+[28] 46 por ciento declaraba no ir al cine hace años. En esta oportunidad, los entrevistados
+[29] dijeron que no asisten porque las entradas son caras (37%) y por no tener tiempo (22%).
+
+Diario La República, Montevideo, 26 de julio de 2006.
+
+Glossário
+
+Joaquín Torres García - famoso pintor uruguaio.
+Ayer - ontem.
+Imaginarios – representações mentais.
+
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 1
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+El texto pretende:
+
+
+A) condenar a los excluidos en Uruguay.
+B) revelar la miseria material de esos excluidos.
+C) mostrar las formas de acceso a la cultura de los habitantes de los asentamientos en Uruguay.
+D) negar que haya exclusión en Montevideo.
+E) hacer propaganda de Montevideo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q1
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 2
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En el título, “contestar” significa:
+
+
+A) responder.
+B) probar.
+C) oponerse.
+D) discutir.
+E) aplicar.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q2
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 3
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En el título, la forma “supo” es del verbo:
+
+
+A) suponer.
+B) saber.
+C) sacar.
+D) saltar.
+E) satisfacer.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q3
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 4
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En el subtítulo, la expresión “asentamientos” corresponde en Brasil a:
+
+
+A) condomínios.
+B) cidades.
+C) bairros.
+D) casas.
+E) favelas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q4
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 5
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En la línea 4, la expresión “hace años” denota:
+
+
+A) cumpleaños.
+B) vejez.
+C) hace mucho tiempo.
+D) hace sufrir.
+E) hace frío.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q5
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 6
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En la línea 6, el verbo “arrojó” es sinónimo de:
+
+
+A) arribó.
+B) tiró.
+C) vomitó.
+D) arregló.
+E) mostró.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q6
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 7
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En la línea 7, la palabra “periferia” no lleva tilde gráfico en español debido a las reglas de acentuación de las palabras:
+
+
+A) graves.
+B) esdrújulas.
+C) sobresdrújulas.
+D) largas.
+E) agudas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q7
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 8
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En la línea 9, la palabra “encuesta” corresponde en Brasil a:
+
+
+A) encosta.
+B) em cima.
+C) entrevista.
+D) pesquisa.
+E) papel.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q8
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 9
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En la línea 13, la expresión “sin embargo” es un conectivo:
+
+
+A) adversativo.
+B) conjuntivo.
+C) disyuntivo.
+D) consecutivo.
+E) causativo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q9
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 10
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En las líneas 13 y 14, la expresión “dejan sentado” significa:
+
+
+A) ocultan.
+B) sientan.
+C) muestran.
+D) archivan.
+E) solucionan.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q10
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 11
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En la línea 16, la locución “acerca de” es, en relación a la misma locución en portugués, un:
+
+
+A) antónimo.
+B) oxímoron.
+C) hipónimo.
+D) sinónimo.
+E) hiperónimo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q11
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 12
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En la línea 17, “casi” es:
+
+
+A) un sustantivo.
+B) un verbo.
+C) un prefijo.
+D) una preposición.
+E) un adverbio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q12
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 13
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En la línea 17, “quienes” es el referente anafórico de:
+
+
+A) los encuestadores.
+B) los encuestados.
+C) las autoridades.
+D) los docentes.
+E) los alumnos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q13
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 14
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En la línea 17, la expresión “a veces” significa:
+
+
+A) frecuentemente.
+B) nunca.
+C) siempre.
+D) de vez en cuando.
+E) muchas veces.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q14
+
+========================================================================
+FURG 2007 — Espanhol — Vestibular regular — Questão 15
+
+Textos de apoio: furg-2007-2-semestre-espanhol-texto-1
+
+En la línea 18, en la expresión “no les gusta”, el pronombre complemento “les” se refiere:
+
+
+A) al 68 % de los entrevistados.
+B) al 64 % de los entrevistados.
+C) a las autoridades.
+D) al Director Municipal de Cultura.
+E) a la Facultad de Humanidades y Ciencias de la Educación.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-espanhol
+Identificador: furg-2007-2-semestre-espanhol-q15
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2008-2-semestre-espanhol-texto-1
+
+As questões de 1 a 15 deverão ser respondidas com base no texto a seguir.
+Los vigilantes del espacio
+Mónica Salomone
+
+[1] María Eugenia Sansaturio es soriana, de 43 años, matemática. Da clases de cálculo avanzado
+[2] en la Escuela de Ingenieros Industriales de la Universidad de Valladolid. Y aunque sus alumnos no lo
+[3] sospechen, María Eugenia es un personaje clave en la selecta comunidad mundial de vigilantes del
+[4] espacio, integrada por dos centenares de astrónomos profesionales y aficionados en todo el planeta.
+[5] Más conocida por Genny, su nombre de guerra en los mensajes electrónicos con que los vigilantes se
+[6] mantienen en perpetuo contacto, Sansaturio maneja el único programa que existe hoy para predecir
+[7] automáticamente posibles impactos de asteroides. Es decir, que si un asteroide fuera a chocar contra
+[8] la Tierra en las próximas décadas, el primer aviso provendría muy probablemente de sus máquinas. Es
+[9] fácil imaginar una película inspirada en su trabajo: un gran pedrusco se acerca sigilosamente, pero a
+[10] miles de kilómetros por hora, y es una modesta heroína en la sombra la que logra salvar al planeta.
+[11] Pero un final así sería poco realista. Si hoy pasara eso, lo más probable es que el desenlace fuera
+[12] dramático. “Estimamos que hay unos mil asteroides cercanos a la Tierra de más de un kilómetro de
+[13] diámetro, y un millón de más de 50 metros [los de menos tamaño se desintegran en la atmósfera]”,
+[14] informa en su página web David Morrison, uno de los responsables del programa de búsqueda de
+[15] asteroides de la NASA. El pasado enero, la cuenta de asteroides cercanos a la Tierra descubiertos
+[16] ascendía a 1.743, de los que 587 tienen más de un kilómetro de diámetro. Es decir, se ha descubierto,
+[17] sólo una pequeña parte de los que hay, y “en esta situación [de desconocimiento], lo más probable es
+[18] que si uno fuera a impactar nos enteraríamos demasiado tarde; la primera señal sería un destello
+[19] luminoso y el temblor de la tierra tras el impacto”, dice Morrison.
+[20] Sucede que el sistema solar no está tan ordenado como se le suele pintar. En torno al Sol giran
+[21] los nueve planetas, pero también un número desconocido de asteroides y cometas de múltiples
+[22] tamaños -el mayor asteroide es 2001 KX76, con unos 1.200 kilómetros de diámetro-. ¿Qué pasa si uno
+[23] de estos “asteroides cercanos a la Tierra” da en el blanco? Pues algunos ejemplos son el cráter de 200
+[24] kilómetros en Yucatán (México) y la extinción de los dinosaurios, fenómenos ambos causados por un
+[25] asteroide de 10 kilómetros de diámetro hace 65 millones de años; o los miles de kilómetros cuadrados
+[26] de bosque arrasados por el pedrusco de apenas 60 metros que explotó a 10 kilómetros de altura sobre
+[27] Tunguska, en Siberia, en 1908.
+
+Fuente:El País Semanal, Nº 1333, pág. 62.
+
+Glosario:
+
+Soriana – (línea 1) oriunda de la provincia de Soria (España).
+NASA – (línea 15) siglas de Nacional Aeronautics and Space Administration. Organismo fundado en 1958 en
+Estados Unidos; encargado de dirigir y coordinar las investigaciones aeronáuticas.
+Pedrusco – (líneas 09 y 26) m. coloq. trozo de piedra sin tallar.
+
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 1
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+El texto presentado es de
+
+
+A) ficción científica.
+B) literatura.
+C) divulgación científica.
+D) humor.
+E) biología.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q1
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 2
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+El público al que se dirige este texto es el de los
+
+
+A) químicos.
+B) lectores en general.
+C) bibliotecarios.
+D) biólogos.
+E) filósofos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q2
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 3
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+Los “vigilantes del espacio” a los que se refiere el título del artículo son los
+
+
+A) asteroides.
+B) astronautas.
+C) químicos.
+D) astrónomos.
+E) astrólogos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q3
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 4
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+María Eugenia Sansaturio como “vigilante del espacio” estudia
+
+
+A) los planetas.
+B) el Sol .
+C) la Tierra.
+D) los asteroides.
+E) los cometas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q4
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 5
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+En la primera línea la expresión “da clases” equivale en portugués a
+
+
+A) dá gorjetas.
+B) tem muita classe.
+C) sem classe.
+D) dá entrevistas.
+E) ministra aulas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q5
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 6
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+En la línea 2 el conectivo “aunque” es sinónimo de
+
+
+A) conjuntamente.
+B) nunca.
+C) a pesar de que.
+D) casi siempre.
+E) también.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q6
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 7
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+La palabra “aficionados”, en la línea 4, equivale en portugués a
+
+
+A) amadores.
+B) torcedores.
+C) especialistas.
+D) astronautas.
+E) aspirantes.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q7
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 8
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+En la línea 7 el vocablo “fuera” es en ese contexto
+
+
+A) una forma del verbo “ser”.
+B) un sinónimo del adjetivo “fútil”.
+C) un sinónimo del adverbio “afuera”.
+D) una forma del verbo “formar”.
+E) una forma del verbo “ir”.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q8
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 9
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+En la línea 11 “eso” se refiere a
+
+
+A) la aproximación de un asteroide.
+B) el rodaje de una película.
+C) la consagración de una modesta heroína.
+D) la salvación del planeta.
+E) la sombra del sol.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q9
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 10
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+La expresión “de los”, en la línea 17, se refiere a los
+
+
+A) planetas.
+B) telescopios.
+C) asteroides.
+D) astrónomos.
+E) números.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q10
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 11
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+En la línea 18 el vocablo “uno” corresponde en portugués a
+
+
+A) ao artigo indefinido “um”.
+B) ao numeral “um”.
+C) a gente.
+D) ao pronome indefinido “nenhum”.
+E) ao pronome indefinido “algum”.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q11
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 12
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+“Sucede”, en la línea 20, se traduciría al portugués por
+
+
+A) acontece.
+B) cede.
+C) seduz.
+D) acessa.
+E) tira.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q12
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 13
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+En el sintagma “se le suele”, en la línea 20, el vocablo “suele” es una forma del
+
+
+A) sustantivo “sueldo”.
+B) sustantivo “sol”.
+C) verbo “ser”.
+D) sustantivo “suelo”.
+E) verbo “soler”.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q13
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 14
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+La expresión “da en el blanco” de la línea 23 significa en portugués
+
+
+A) ficar em branco.
+B) bater no homem branco.
+C) virar o alvo de.
+D) acertar o alvo.
+E) dar esmola a.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q14
+
+========================================================================
+FURG 2008 — Espanhol — Vestibular de inverno — Questão 15
+
+Textos de apoio: furg-2008-2-semestre-espanhol-texto-1
+
+Elija entre las opciones propuestas, la que contenga dos palabras acentuadas en la penúltima sílaba
+
+
+A) “astrónomos” (línea 4) y “automáticamente” (línea 7).
+B) “Eugenia” (línea 1) y “avanzado” (línea 1).
+C) “atmósfera” (línea 13) y “búsqueda” (línea 14).
+D) “más” (línea 17) y “es” (línea 17).
+E) “extinción” (línea 24) y “hace” (línea 25).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-espanhol
+Identificador: furg-2008-2-semestre-espanhol-q15
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2008-1-semestre-espanhol-texto-1
+
+As questões de 1 a 15 deverão ser respondidas com base no texto a seguir.
+
+Rico universo de formas
+Pedro da Cruz
+
+[1] Las obras por las que el plástico uruguayo Gonzalo Fonseca (1922-1997) fue considerado
+[2] un artista de proyección internacional fueron sus esculturas en piedra, que comenzó a realizar
+[3] hacia 1970, luego de establecerse en Toscana en las cercanías de las míticas canteras de mármol
+[4] de Carrara. Fonseca arribó en 1968 a la localidad de Pietrasanta, lugar de encuentro de canteros
+[5] y escultores ya antes de que Miguel Ángel usara el mármol de la zona para realizar sus
+[6] esculturas. Allí, escultores de reconocida trayectoria como Jacques Lipchitz, Isamu Noguchi y
+[7] Henry Moore habían establecido sus talleres. Cerca de ese sitio, en el municipio de Seravezza,
+[8] adquirió el Loghetto, una vivienda-taller con cantera propia, que desde entonces sería uno de los
+[9] puntos de referencia – el otro fue Nueva York – de su actividad artística durante casi tres
+[10] décadas.
+[11] Las esculturas de Fonseca, la faceta de su obra con menos presencia en Uruguay, son
+[12] difíciles de clasificar. En los trabajos de menor formato el artista mantuvo por lo general el
+[13] carácter de bloque, picando y trabajando la piedra de distintas maneras para conformar
+[14] pequeñas superficies, planos inclinados y formas escalonadas, a las que luego agregaba
+[15] elementos – no sólo de piedra, sino también de madera, cuero o metal – que “habitaban” los
+[16] espacios y las formas.
+[17] Las obras de mayor formato, de dos o tres metros de altura, adquirieron un carácter de
+[18] muro, ya que fueron compuestas con varios bloques que al ser alineados conformaban una
+[19] superficie. Un rasgo común a las esculturas de ambos formatos es la íntima cercanía con la
+[20] arquitectura – aunque sin espacios interiores -, en la que la idea de construcción siempre está
+[21] presente.
+[22] Ciertos elementos formales, como nichos, rampas, desniveles, escalones, concavidades
+[23] prismáticas o esféricas, son recurrentes, así como las formas esféricas, prismáticas y figurativas
+[24] que el artista iba integrando en el conjunto. El resultado son construcciones que evocan restos de
+[25] civilizaciones arcaicas, arqueologías fantásticas, suma de elementos arquitectónicos – piazzas,
+[26] columnas, obeliscos, arcos, nichos – que recrean lugares destinados a celebraciones y cultos
+[27] sagrados, remembranzas de templos, monumentos, tumbas y altares. Este universo singular de
+[28] formas fue surgiendo paulatinamente a partir de una suma de experiencias vividas por el artista
+[29] durante diferentes etapas de su trayectoria.
+
+Fuente: El País Cultural, no980, p. 1, Montevideo, Uruguay, 22 de agosto de 2008
+
+GLOSARIO:
+
+Cantera – Sitio al aire libre de donde se saca piedra u otro material análogo para la construcción.
+Carrara – Ciudad de Italia, provincia de Massa-Carrara. Mármoles.
+Piazza – Voz italiana equivalente a la española ‘plaza’.
+Nichos – Concavidad para colocar una cosa (estatua, jarrón). Por extensión: en los cementerios, un
+cadáver.
+Rampas – Planos inclinados.
+
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 1
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+El texto trata sobre
+
+
+A) deporte.
+B) literatura.
+C) ficción.
+D) arte.
+E) ciencia.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q1
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 2
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+Según el texto, las esculturas de Fonseca constituyen una parte de su obra que en Uruguay son
+
+
+A) escasas.
+B) abundantes.
+C) muy abundantes.
+D) inexistentes.
+E) desconocidas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q2
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 3
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+Durante casi 30 años, Fonseca compuso su obra principalmente en
+
+
+A) Uruguay e Italia.
+B) Nueva York.
+C) Italia.
+D) Uruguay.
+E) Italia y Nueva York.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q3
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 4
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+Según el texto, el estilo de Fonseca surgió
+
+
+A) de repente, en una inspiración que tuvo en Uruguay.
+B) de a poco.
+C) de repente en una inspiración que tuvo en Nueva York.
+D) de repente en una inspiración que tuvo en Italia.
+E) de repente en una inspiración debido a Miguel Ángel.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q4
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 5
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+Según el texto, las esculturas más pequeñas de Fonseca son
+
+
+A) sólo de cuero.
+B) sólo de madera.
+C) de piedra pero con partes de madera, cuero o metal.
+D) sólo de metal.
+E) sólo de piedra.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q5
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 6
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+En el título del texto, la palabra “rico” significa
+
+
+A) adinerado.
+B) diverso.
+C) afortunado.
+D) poderoso.
+E) sabroso.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q6
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 7
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+En la línea 3 del texto, el vocablo “hacia”
+
+
+A) es una forma del pasado del verbo “asir”.
+B) significa “rumbo a”.
+C) significa “en dirección de”.
+D) es una forma del pasado del verbo “hacer”.
+E) significa “alrededor de”.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q7
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 8
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+En la línea 4 del texto “arribó” se puede cambiar por
+
+
+A) llegó.
+B) arrimó.
+C) arrumbó.
+D) arremetió.
+E) arrojó.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q8
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 9
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+En la línea 7 del texto, “talleres” se refiere a
+
+
+A) utensilios de pintura.
+B) utensilios de mesa.
+C) estudios de artistas.
+D) utensilios de arquitectura.
+E) utensilios de cocina.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q9
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 10
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+En la línea 9 del texto, la palabra “casi”
+
+
+A) es una palabra extranjera.
+B) es un sustantivo.
+C) es un verbo.
+D) es un adverbio de cantidad.
+E) es un neologismo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q10
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 11
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+En la línea 12, “mantuvo”, equivale en portugués a
+
+
+A) continuou.
+B) renunciou.
+C) trocou.
+D) escolheu.
+E) perdeu.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q11
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 12
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+En la línea 19 del texto la voz “rasgo”
+
+
+A) es una forma adverbial.
+B) equivale a “resto”.
+C) es una forma verbal.
+D) equivale a “trompo”.
+E) equivale a “característica”.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q12
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 13
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+En la línea 20 del texto, la construcción “en la que” se refiere a
+
+
+A) Italia.
+B) la cercanía con la arquitectura.
+C) la obra de Miguel Ángel.
+D) Toscana.
+E) la gimnasia.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q13
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 14
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+La palabra “escalones”, en la línea 22, equivale en portugués a
+
+
+A) esferas.
+B) arcos.
+C) retângulos.
+D) degraus.
+E) colunas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q14
+
+========================================================================
+FURG 2009 — Espanhol — Vestibular regular — Questão 15
+
+Textos de apoio: furg-2008-1-semestre-espanhol-texto-1
+
+Elija entre las opciones propuestas, la que contenga dos palabras acentuadas en la penúltima sílaba
+
+
+A) “décadas” (línea 10) y “esculturas” (línea 6).
+B) “obras” (línea 17) y “arribó” (línea 4).
+C) “piedra” (línea 15) y “mármol” (línea 5).
+D) “míticas” (línea 3) y “sitio” (línea 7).
+E) plástico (línea 1) y “fantásticas” (línea 25).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-espanhol
+Identificador: furg-2008-1-semestre-espanhol-q15
+
+========================================================================
+TEXTO DE APOIO: Texto-base
+Identificador: furg-2010-espanhol-texto-1
+
+As questões de 1 a 15 deverão ser respondidas com base no texto a seguir.
+
+El talento del lector
+Enrique Vila-Matas
+
+[1] Cuando despertaron del ensueño de las hipotecas y de aquel poderío económico que
+[2] habían creído eterno, cuando despertaron en pleno centro del torbellino que lo arrasaba todo, el
+[3] libro seguía ahí. Era asombroso, nada ni nadie había conseguido alterarlo, nadie lo había movido
+[4] del lugar de siempre. Miraron incrédulos, parecía mentira. Allí estaba, totalmente imperturbable.
+[5] Años de barbarie no habían podido con él, y ahora, a principios de aquel siglo que había
+[6] comenzado con la gran borrasca, el libro estaba allí para recordarles o simplemente informarles,
+[7] por si no lo sabían, que la literatura habla un lenguaje distinto, no opresor, muy diferente al resto
+[8] de los lenguajes perversos que nos esclavizan con sus tiranías cotidianas: el lenguaje económico,
+[9] político, religioso, familiar, televisivo.
+[10] Todo esto no ocurrió en otro tiempo, sino que está sucediendo ahora mismo, 23 de abril de
+[11] 2009. Parece como si el Cervantes que se entrega a Juan Marsé hubiera abierto horizontes y todos
+[12] ahora regresáramos a la vieja costumbre del buen libro y a recordar que ese gran libro siempre ha
+[13] estado ahí y es la distracción por excelencia, porque nos permite la ilusión de un dominio del
+[14] tiempo, más allá de las catástrofes y crisis. Esa ilusión nos sustrae al devenir implacable que
+[15] conduce a esa muerte que se esconde en los relojes en una novela de Laurence Sterne. Heredero
+[16] legítimo de Cervantes, Sterne renovó la relación del escritor con el lector, esa relación que
+[17] últimamente parece regresar a un primer plano, pues existe la impresión de que algo empieza a
+[18] moverse. En pleno ensueño de las hipotecas y del becerro de oro de la novela gótica, se forjó la
+[19] estúpida leyenda del lector pasivo. La caída del monstruo está dando paso a la reaparición del
+[20] lector con talento y se replantean los términos del contrato moral entre autor y público. Respiran
+[21] de nuevo los escritores que se desviven por un lector activo, por un lector lo suficientemente
+[22] abierto como para permitir en su mente el dibujo de una conciencia radicalmente diferente a la
+[23] suya propia.
+[24] Si se exige talento a un escritor, debe exigírsele también al lector. Porque no hay que
+[25] engañarse: el viaje de la lectura pasa muchas veces por terrenos difíciles que exigen tolerancia,
+[26] espíritu libre, capacidad de emoción inteligente, deseos de comprender al otro y de acercarse a un
+[27] lenguaje distinto al de nuestras tiranías cotidianas. Como dice Vilém Vok, no es tan sencillo sentir
+[28] el mundo como lo sintió Kafka, un mundo en el que se niega el movimiento y resulta imposible
+[29] siquiera ir de un poblado a otro. Las mismas habilidades que se necesitan para escribir se
+[30] necesitan para leer. Los escritores fallan a los lectores, pero también ocurre al revés y los lectores
+[31] les fallan a los escritores cuando sólo buscan en estos la confirmación de que el mundo es como lo
+[32] ven ellos. Los nuevos tiempos traen esa revisión y renovación del pacto exigente entre escritores y
+[33] lectores. Vuelve el lector con talento. Y hoy, además, premian a Juan Marsé. Sorprendente
+[34] felicidad doble en un mundo sin alegrías.
+
+Fuente:El País, 23/04/09, pág. 46.
+
+GLOSARIO:
+
+Juan Marsé – (líneas 11, y 33) escritor español (Barcelona, 1933).
+El Cervantes (Premio Miguel de Cervantes) – (línea 11) premio que se destina a galardonar, en su
+conjunto, la obra literaria de un autor en lengua española.
+Laurence Sterne – (línea 15) escritor británico (Clonmel, 1713 – Londres, 1768).
+Vilém Vok – (línea 27) checo de la familia noble bohemia Rosemberg muerto en 1592.
+Kafka – (línea 28) escritor checo en lengua alemana (Praga, 1883 – Viena, 1924).
+
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 16
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+El texto destaca, en especial, la importancia del
+
+
+A) escritor
+B) profesor
+C) alumno
+D) lector.
+E) editor
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q16
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 17
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+El texto sostiene que pueden fallar los
+
+
+A) escritores y lectores
+B) profesores y escritores
+C) alumnos y profesores
+D) lectores y editores
+E) escritores y alumnos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q17
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 18
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+El texto afirma que
+
+
+A) el libro se hunde con la crisis
+B) el poder económico hunde el libro
+C) las hipotecas acaban con el libro.
+D) el libro crea al poder económico
+E) el libro resiste al poderío económico
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q18
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 19
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+El texto plantea que el lenguaje de la literatura es
+
+
+A) igual al económico, pero distinto del religioso
+B) igual al religioso, pero distinto del político
+C) igual al político, pero distinto del económico
+D) igual al familiar y al televisivo
+E) distinto a todos los otros antes citados en las cuatro alternativas anteriores.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q19
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 20
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+El adverbio “imperturbable” (línea 4) no lleva acento gráfico porque en español no lo llevan las palabras
+
+
+A) llanas o graves terminadas en vocal a no ser que formen un hiato
+B) agudas terminadas en vocal
+C) sobresdrújulas
+D) esdrújulas
+E) esdrújulas terminadas en vocal.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q20
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 21
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+La expresión “por excelencia” en la línea 13 podría sustituirse en ese contexto
+
+
+A) por urgencia
+B) por casualidad
+C) por antonomásia
+D) por todos
+E) por siempre.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q21
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 22
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+El texto nos dice que
+
+
+A) Cervantes es posterior a Sterne
+B) Sterne es seguidor de Cervantes
+C) Sterne se contrapone a Cervantes
+D) Cervantes es imitador de Sterne
+E) Sterne es contemporáneo de Cervantes.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q22
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 23
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+El texto sostiene que el lector abierto tiene en su mente al dibujo de una visión
+
+
+A) poco distinta de la suya
+B) profundamente distinta de la suya
+C) nada distinta de la suya
+D) totalmente igual a la suya
+E) parcialmente igual a la suya.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q23
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 24
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+Según el texto el lector con talento, aparte de otras cualidades, debe tener
+
+
+A) tolerancia y deseo de dominar al otro
+B) orgullo y deseo de comprender al otro
+C) tolerancia y deseo de comprender al otro
+D) espíritu libre y espíritu dominador
+E) espíritu libre e intolerancia.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q24
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 25
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+Según el texto las habilidades necesarias para escribir son
+
+
+A) muchas
+B) las mismas que las necesarias para ser un buen lector
+C) propias de pocas personas
+D) contrarias a las necesarias para leer
+E) parcialmente similares a las necesarias para leer bien.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q25
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 26
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+Según el texto el buen lector
+
+
+A) busca en el escritor la confirmación de sus creencias
+B) se niega a leer entre líneas
+C) es un seguidor incondicional del escritor
+D) no busca encontrar en el escritor una visión igual a la de quien lee
+E) es un amigo del escritor.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q26
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 27
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+“… esa muerte que se esconde en los relojes…” (línea 15) independientemente de la novela de Laurence Sterne, alude en general al hecho de que
+
+
+A) el paso del tiempo nos acerca a la muerte
+B) muchas personas se han suicidado arrojándose de torres que tienen relojes
+C) muchos relojeros han sido asesinos
+D) el paso del tiempo nos aleja de la muerte
+E) algunos relojes funcionan con peligrosas pilas atómicas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q27
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 28
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+En la línea 21 del texto la forma verbal “se desviven por” equivale a
+
+
+A) se intimidan por
+B) se olvidan de
+C) se mofan de
+D) se preocupan con
+E) se cansan con.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q28
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 29
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+El texto afirma que el buen libro
+
+
+A) cambia con el tiempo
+B) desaparece con el tiempo
+C) se hace más raro con el paso del tiempo
+D) acaba con la ilusión de dominar al tiempo
+E) permite la ilusión de un dominio del tiempo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q29
+
+========================================================================
+FURG 2010 — Espanhol — Vestibular regular — Questão 30
+
+Textos de apoio: furg-2010-espanhol-texto-1
+
+La expresión “en pleno centro del torbellino” (línea 2) es equivalente en ese contexto a
+
+
+A) en el centro de la tierra
+B) en el corazón de la ciudad
+C) en el eje del planeta
+D) en el ojo del huracán
+E) en el centro del mar.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-espanhol
+Identificador: furg-2010-espanhol-q30
+
+========================================================================
+GABARITOS
+
+FURG 2000 | Espanhol | Vestibular regular | Questão 1: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 2: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 3: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 4: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 5: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 6: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 7: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 8: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 9: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 10: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 11: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 12: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 13: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 14: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 15: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 16: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 17: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 18: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 19: não disponível
+FURG 2000 | Espanhol | Vestibular regular | Questão 20: não disponível
+FURG 2001 | Espanhol | Vestibular regular | Questão 1: C
+FURG 2001 | Espanhol | Vestibular regular | Questão 2: E
+FURG 2001 | Espanhol | Vestibular regular | Questão 3: D
+FURG 2001 | Espanhol | Vestibular regular | Questão 4: A
+FURG 2001 | Espanhol | Vestibular regular | Questão 5: C
+FURG 2001 | Espanhol | Vestibular regular | Questão 6: B
+FURG 2001 | Espanhol | Vestibular regular | Questão 7: D
+FURG 2001 | Espanhol | Vestibular regular | Questão 8: D
+FURG 2001 | Espanhol | Vestibular regular | Questão 9: A
+FURG 2001 | Espanhol | Vestibular regular | Questão 10: D
+FURG 2001 | Espanhol | Vestibular regular | Questão 11: A
+FURG 2001 | Espanhol | Vestibular regular | Questão 12: C
+FURG 2001 | Espanhol | Vestibular regular | Questão 13: E
+FURG 2001 | Espanhol | Vestibular regular | Questão 14: A
+FURG 2001 | Espanhol | Vestibular regular | Questão 15: B
+FURG 2001 | Espanhol | Vestibular regular | Questão 16: E
+FURG 2001 | Espanhol | Vestibular regular | Questão 17: B
+FURG 2001 | Espanhol | Vestibular regular | Questão 18: B
+FURG 2001 | Espanhol | Vestibular regular | Questão 19: A
+FURG 2001 | Espanhol | Vestibular regular | Questão 20: E
+FURG 2002 | Espanhol | Vestibular regular | Questão 1: D
+FURG 2002 | Espanhol | Vestibular regular | Questão 2: C
+FURG 2002 | Espanhol | Vestibular regular | Questão 3: A
+FURG 2002 | Espanhol | Vestibular regular | Questão 4: D
+FURG 2002 | Espanhol | Vestibular regular | Questão 5: C
+FURG 2002 | Espanhol | Vestibular regular | Questão 6: B
+FURG 2002 | Espanhol | Vestibular regular | Questão 7: E
+FURG 2002 | Espanhol | Vestibular regular | Questão 8: D
+FURG 2002 | Espanhol | Vestibular regular | Questão 9: A
+FURG 2002 | Espanhol | Vestibular regular | Questão 10: E
+FURG 2002 | Espanhol | Vestibular regular | Questão 11: C
+FURG 2003 | Espanhol | Vestibular regular | Questão 1: C
+FURG 2003 | Espanhol | Vestibular regular | Questão 2: D
+FURG 2003 | Espanhol | Vestibular regular | Questão 3: A
+FURG 2003 | Espanhol | Vestibular regular | Questão 4: A
+FURG 2003 | Espanhol | Vestibular regular | Questão 5: D
+FURG 2003 | Espanhol | Vestibular regular | Questão 6: E
+FURG 2003 | Espanhol | Vestibular regular | Questão 7: D
+FURG 2003 | Espanhol | Vestibular regular | Questão 8: E
+FURG 2003 | Espanhol | Vestibular regular | Questão 9: A
+FURG 2003 | Espanhol | Vestibular regular | Questão 10: B
+FURG 2003 | Espanhol | Vestibular regular | Questão 11: D
+FURG 2003 | Espanhol | Vestibular regular | Questão 12: C
+FURG 2003 | Espanhol | Vestibular regular | Questão 13: E
+FURG 2003 | Espanhol | Vestibular regular | Questão 14: C
+FURG 2003 | Espanhol | Vestibular regular | Questão 15: B
+FURG 2003 | Espanhol | Vestibular regular | Questão 16: E
+FURG 2003 | Espanhol | Vestibular regular | Questão 17: D
+FURG 2003 | Espanhol | Vestibular regular | Questão 18: A
+FURG 2003 | Espanhol | Vestibular regular | Questão 19: E
+FURG 2003 | Espanhol | Vestibular regular | Questão 20: C
+FURG 2004 | Espanhol | Vestibular regular | Questão 1: A
+FURG 2004 | Espanhol | Vestibular regular | Questão 2: B
+FURG 2004 | Espanhol | Vestibular regular | Questão 3: B
+FURG 2004 | Espanhol | Vestibular regular | Questão 4: C
+FURG 2004 | Espanhol | Vestibular regular | Questão 5: D
+FURG 2004 | Espanhol | Vestibular regular | Questão 6: E
+FURG 2004 | Espanhol | Vestibular regular | Questão 7: B
+FURG 2004 | Espanhol | Vestibular regular | Questão 8: C
+FURG 2004 | Espanhol | Vestibular regular | Questão 9: A
+FURG 2004 | Espanhol | Vestibular regular | Questão 10: B
+FURG 2004 | Espanhol | Vestibular regular | Questão 11: D
+FURG 2004 | Espanhol | Vestibular regular | Questão 12: E
+FURG 2004 | Espanhol | Vestibular regular | Questão 13: A
+FURG 2004 | Espanhol | Vestibular regular | Questão 14: C
+FURG 2004 | Espanhol | Vestibular regular | Questão 15: D
+FURG 2005 | Espanhol | Vestibular regular | Questão 1: C
+FURG 2005 | Espanhol | Vestibular regular | Questão 2: B
+FURG 2005 | Espanhol | Vestibular regular | Questão 3: C
+FURG 2005 | Espanhol | Vestibular regular | Questão 4: E
+FURG 2005 | Espanhol | Vestibular regular | Questão 5: A
+FURG 2005 | Espanhol | Vestibular regular | Questão 6: D
+FURG 2005 | Espanhol | Vestibular regular | Questão 7: A
+FURG 2005 | Espanhol | Vestibular regular | Questão 8: E
+FURG 2005 | Espanhol | Vestibular regular | Questão 9: B
+FURG 2005 | Espanhol | Vestibular regular | Questão 10: E
+FURG 2005 | Espanhol | Vestibular regular | Questão 11: A
+FURG 2005 | Espanhol | Vestibular regular | Questão 12: B
+FURG 2005 | Espanhol | Vestibular regular | Questão 13: D
+FURG 2005 | Espanhol | Vestibular regular | Questão 14: C
+FURG 2005 | Espanhol | Vestibular regular | Questão 15: D
+FURG 2006 | Espanhol | Vestibular regular | Questão 1: B
+FURG 2006 | Espanhol | Vestibular regular | Questão 2: E
+FURG 2006 | Espanhol | Vestibular regular | Questão 3: A
+FURG 2006 | Espanhol | Vestibular regular | Questão 4: C
+FURG 2006 | Espanhol | Vestibular regular | Questão 5: D
+FURG 2006 | Espanhol | Vestibular regular | Questão 6: A
+FURG 2006 | Espanhol | Vestibular regular | Questão 7: E
+FURG 2006 | Espanhol | Vestibular regular | Questão 8: B
+FURG 2006 | Espanhol | Vestibular regular | Questão 9: C
+FURG 2006 | Espanhol | Vestibular regular | Questão 10: E
+FURG 2006 | Espanhol | Vestibular regular | Questão 11: D
+FURG 2006 | Espanhol | Vestibular regular | Questão 12: C
+FURG 2006 | Espanhol | Vestibular regular | Questão 13: A
+FURG 2006 | Espanhol | Vestibular regular | Questão 14: D
+FURG 2006 | Espanhol | Vestibular regular | Questão 15: B
+FURG 2007 | Espanhol | Processo seletivo UAB | Questão 21: C
+FURG 2007 | Espanhol | Processo seletivo UAB | Questão 22: E
+FURG 2007 | Espanhol | Processo seletivo UAB | Questão 23: A
+FURG 2007 | Espanhol | Processo seletivo UAB | Questão 24: B
+FURG 2007 | Espanhol | Processo seletivo UAB | Questão 25: A
+FURG 2007 | Espanhol | Processo seletivo UAB | Questão 26: D
+FURG 2007 | Espanhol | Processo seletivo UAB | Questão 27: E
+FURG 2007 | Espanhol | Processo seletivo UAB | Questão 28: B
+FURG 2007 | Espanhol | Processo seletivo UAB | Questão 29: C
+FURG 2007 | Espanhol | Processo seletivo UAB | Questão 30: D
+FURG 2007 | Espanhol | Vestibular regular | Questão 1: C
+FURG 2007 | Espanhol | Vestibular regular | Questão 2: A
+FURG 2007 | Espanhol | Vestibular regular | Questão 3: B
+FURG 2007 | Espanhol | Vestibular regular | Questão 4: E
+FURG 2007 | Espanhol | Vestibular regular | Questão 5: C
+FURG 2007 | Espanhol | Vestibular regular | Questão 6: E
+FURG 2007 | Espanhol | Vestibular regular | Questão 7: A
+FURG 2007 | Espanhol | Vestibular regular | Questão 8: D
+FURG 2007 | Espanhol | Vestibular regular | Questão 9: A
+FURG 2007 | Espanhol | Vestibular regular | Questão 10: C
+FURG 2007 | Espanhol | Vestibular regular | Questão 11: D
+FURG 2007 | Espanhol | Vestibular regular | Questão 12: E
+FURG 2007 | Espanhol | Vestibular regular | Questão 13: B
+FURG 2007 | Espanhol | Vestibular regular | Questão 14: D
+FURG 2007 | Espanhol | Vestibular regular | Questão 15: ANULADA
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 1: C
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 2: B
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 3: D
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 4: D
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 5: E
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 6: C
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 7: A
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 8: E
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 9: A
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 10: C
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 11: B
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 12: A
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 13: E
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 14: D
+FURG 2008 | Espanhol | Vestibular de inverno | Questão 15: B
+FURG 2009 | Espanhol | Vestibular regular | Questão 1: D
+FURG 2009 | Espanhol | Vestibular regular | Questão 2: A
+FURG 2009 | Espanhol | Vestibular regular | Questão 3: E
+FURG 2009 | Espanhol | Vestibular regular | Questão 4: B
+FURG 2009 | Espanhol | Vestibular regular | Questão 5: C
+FURG 2009 | Espanhol | Vestibular regular | Questão 6: B
+FURG 2009 | Espanhol | Vestibular regular | Questão 7: E
+FURG 2009 | Espanhol | Vestibular regular | Questão 8: A
+FURG 2009 | Espanhol | Vestibular regular | Questão 9: C
+FURG 2009 | Espanhol | Vestibular regular | Questão 10: D
+FURG 2009 | Espanhol | Vestibular regular | Questão 11: A
+FURG 2009 | Espanhol | Vestibular regular | Questão 12: E
+FURG 2009 | Espanhol | Vestibular regular | Questão 13: B
+FURG 2009 | Espanhol | Vestibular regular | Questão 14: D
+FURG 2009 | Espanhol | Vestibular regular | Questão 15: C
+FURG 2010 | Espanhol | Vestibular regular | Questão 16: D
+FURG 2010 | Espanhol | Vestibular regular | Questão 17: A
+FURG 2010 | Espanhol | Vestibular regular | Questão 18: E
+FURG 2010 | Espanhol | Vestibular regular | Questão 19: E
+FURG 2010 | Espanhol | Vestibular regular | Questão 20: A
+FURG 2010 | Espanhol | Vestibular regular | Questão 21: C
+FURG 2010 | Espanhol | Vestibular regular | Questão 22: B
+FURG 2010 | Espanhol | Vestibular regular | Questão 23: B
+FURG 2010 | Espanhol | Vestibular regular | Questão 24: C
+FURG 2010 | Espanhol | Vestibular regular | Questão 25: B
+FURG 2010 | Espanhol | Vestibular regular | Questão 26: D
+FURG 2010 | Espanhol | Vestibular regular | Questão 27: A
+FURG 2010 | Espanhol | Vestibular regular | Questão 28: D
+FURG 2010 | Espanhol | Vestibular regular | Questão 29: E
+FURG 2010 | Espanhol | Vestibular regular | Questão 30: D

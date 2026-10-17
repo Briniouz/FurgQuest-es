@@ -1,0 +1,3853 @@
+FURG — QUÍMICA EM TEXTO
+195 questões do acervo histórico disponível, de 2000 a 2010.
+Enunciados, alternativas e textos de apoio em texto. As figuras estão preservadas no site e na pasta figures da versão offline.
+A cobertura do acervo não inclui todas as edições históricas. Projeto independente, sem vínculo com a FURG.
+Frações: (numerador)/(denominador). Matrizes: linhas separadas por ponto e vírgula. Gabaritos ao final.
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 21
+
+A tabela abaixo mostra alguns valores do Produto Iônico da água a várias temperaturas. Temperatura (°C) | K𝑤 / (mol/dm³)² | −log √K𝑤
+10 | 2,91 × 10⁻¹⁵ | 7,27
+20 | 6,80 × 10⁻¹⁵ | 7,09
+25 | 1,00 × 10⁻¹⁴ | 7,00
+30 | 1,31 × 10⁻¹⁴ | 6,94
+40 | 1,46 × 10⁻¹⁴ | 6,92
+50 | 5,47 × 10⁻¹⁴ | 6,63
+
+(Costa & Albuquerque, Química Geral, 1978, p 364).
+
+No estado do Rio Grande do Sul, as temperaturas oscilam, em média, entre 10 °C e 30 °C. Portanto, a partir da análise da tabela, é correto concluir que um xampu neutro armazenado em cima de um armário, ao ambiente, na região sul do Brasil,
+
+
+A) pode ter pH = 7,00 num dia verão e pH = 5,47 num dia de inverno.
+B) não sofre variação de pH com a temperatura do meio ambiente.
+C) pode ter pH = 5,47 no verão e pH = 7,00 num rigoroso dia de inverno.
+D) pode ter pH = 7,27 num dia de inverno e pH = 6,94 no verão.
+E) por ser neutro, não pode ter pH diferente de 7,00.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q21
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 22
+
+Na Zero Hora do dia 14 de setembro de 1999, páginas 4 e 5, há uma reportagem com o título: “Nuvem tóxica aterroriza Tabaí – Carreta tombou com 22,4 mil litros de ácido clorídrico, causando danos à saúde e ao ambiente.” Num dos trechos da matéria, é respondida a pergunta: O que é ácido clorídrico? Entre as características do ácido clorídrico mencionadas, encontramos: No ecossistema, a substância modifica o pH (nível de concentração de oxigênio). Há, neste caso, um erro grave em relação ao significado de pH. Visando corrigir o equívoco cometido, possivelmente por um redator pouco familiarizado com conceitos químicos, poderíamos informar-lhe que, num sistema aquoso em baixas concentrações, o pH está diretamente relacionado com
+
+
+A) a concentração de íons OH⁻.
+B) a concentração de hidrogênio molecular (H₂).
+C) os átomos livres de hidrogênio (H).
+D) a concentração de íons H⁺ ou H₃O⁺.
+E) as moléculas de oxigênio gasoso (O₂).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q22
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 23
+
+Nos sistemas biológicos, uma função importante de determinadas biomoléculas é o transporte de elétrons. Uma das mais importantes biomoléculas é a nicotinamida adenina dinucleotídeo (NAD). A reação de óxido-redução que acontece na célula pode ser representada pelo seguinte equacionamento do equilíbrio: NAD⁺ + 2e⁻ + H⁺ ⇔ NADH Sobre essa reação, assinale a alternativa correta.
+
+
+A) O NADH pode aceitar elétrons.
+B) O NADH pode doar elétrons.
+C) O NAD⁺ é um redutor.
+D) O NADH é a forma oxidada da biomolécula.
+E) O NAD⁺ é doador de elétrons.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q23
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 24
+
+A fantástica proliferação dos telefones celulares provocou uma discussão quanto ao destino a ser dado para as baterias na hora do descarte. Constituídas pelos metais níquel e cádmio, o seu depósito em lixões causa contaminação ambiental. Hoje, o destino dessas baterias é de responsabilidade do fabricante e a ele devem ser devolvidas para reciclagem. A reação global de descarga de uma bateria de NiCd pode ser representada por: Cd + NiO₂ + 2 H₂O → Cd(OH)₂ + Ni(OH)₂ A partir da análise dessa reação é correto afirmar que
+
+
+A) o material do cátodo é constituído do metal cádmio.
+B) há transferência de elétrons do cádmio para o níquel.
+C) ocorre redução do cádmio durante a descarga.
+D) o óxido de níquel sofre uma oxidação anódica.
+E) a redução da água produz oxigênio gasoso.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q24
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 25
+
+O ar é uma mistura de gases. Mais de 78% desta mistura é de nitrogênio. O oxigênio representa cerca de 21%. O argônio 0,9% e o dióxido de carbono 0,03%. O restante é constituído de outros gases. O volume ocupado pelo oxigênio nessa mistura, em um ambiente de 10 L, é
+
+
+A) 2,1 L
+B) 4,7 L
+C) 10 L
+D) 17,7 L
+E) 22,4 L
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q25
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 26
+
+O estado do Rio Grande do Sul possui cerca de 90% das reservas do país em carvão mineral, um importante recurso energético disponível para geração de eletricidade em termelétricas como a de Candiota, na região de Bagé. Combustíveis fósseis como carvão e petróleo possuem enxofre como impureza, e sua queima libera, entre outros gases, dióxido de enxofre (SO₂), um dos responsáveis pela acidez das chuvas. Ao economizarmos energia elétrica, estamos contribuindo para a redução das emissões de dióxido de enxofre, que, na atmosfera, pode reagir com água, formando
+
+
+A) anidrido sulfúrico (SO₃).
+B) ácido sulfídrico (H₂S).
+C) ácido sulfuroso (H₂SO₃).
+D) anidrido sulfuroso (SO₂).
+E) bissulfito de sódio (NaHSO₃).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q26
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 27
+
+Assinale a alternativa correta para a seguinte pergunta: Um pedaço de magnésio ficará mais ou menos “pesado”, após sua queima?
+
+
+A) Mais, pois o metal sofre uma alteração que o deixa tal como “adormecido”.
+B) Menos, pois uma parte do metal é liberada numa combustão completa.
+C) Mais, pois o oxigênio é incorporado formando o óxido do metal.
+D) Menos, pois uma parte da massa se transforma em energia, segundo Einstein.
+E) Nem mais nem menos – a massa não sofre alteração numa transformação química, segundo Lavoisier.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q27
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 28
+
+Considere a transformação de um haleto orgânico em meio básico formando um álcool, conforme dados mostrados na tabela a seguir: Experimento | Concentração inicial de haleto (mol/L) | Concentração inicial de OH⁻ (mol/L) | Rapidez inicial de formação do álcool, ρ (mol/Ls)
+1 | 0,1 | 0,1 | 0,001
+2 | 0,2 | 0,1 | 0,002
+3 | 0,3 | 0,1 | 0,003
+4 | 0,1 | 0,2 | 0,004
+5 | 0,1 | 0,3 | 0,005
+
+A tabela permite inferir que a rapidez da reação:
+
+I - depende da concentração de base;
+
+II - depende apenas da concentração do haleto;
+
+III - depende da concentração de ambos os reagentes;
+
+IV - independe da concentração dos reagentes. Quais afirmativas estão corretas?
+
+
+A) Apenas I e
+
+II.
+B) Apenas I e
+
+III.
+C) Apenas II e
+
+III.
+D) Apenas II e
+
+IV.
+E) Apenas III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q28
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 29
+
+A quantidade de água produzida quando reagem 3 mol de hidróxido de alumínio com ácido sulfúrico em quantidade suficiente para completar a reação é
+
+
+A) 6 mol
+B) 7 mol
+C) 8 mol
+D) 9 mol
+E) 10 mol
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q29
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 30
+
+Quando quantidades equimolares de etanol e ácido acético reagem, são produzidos acetato de etila e água. Suponha que etanol e ácido acético tenham sido colocados em um recipiente para reagir, sendo este vedado a seguir, para evitar perdas de substâncias. Após uma semana, o frasco foi aberto e a análise de uma amostra da solução líquida detectou as seguintes substâncias: etanol, ácido acético, acetato de etila e água. O resultado do experimento indica que
+
+
+A) no instante em que foi aberto o frasco, as concentrações das quatro substâncias eram iguais.
+B) é preciso deixar os reagentes mais tempo reagindo para que sejam completamente consumidos.
+C) a rapidez de formação de reagentes e produtos é a mesma.
+D) a concentração dos produtos é necessariamente maior que a concentração de reagentes.
+E) foi colocado um excesso de reagentes, daí sua presença após uma semana.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q30
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 31
+
+É possível fazer flutuar uma fina agulha de costura manual num copo d’água. Então é correto afirmar que
+
+
+A) as moléculas da água são mais pesadas que os átomos do metal.
+B) as forças que atuam na interface água-agulha são as pontes de hidrogênio.
+C) as moléculas da agulha são maiores que as moléculas da água (“efeito peneira”).
+D) as forças intermoleculares na superfície da água impedem o afundamento da agulha.
+E) a agulha é mais leve que a água, pois sua densidade é menor.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q31
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 32
+
+Quando se dissolve em água 1 x 10⁻⁷ mol de cloreto de cálcio, quantos mols de íons se formam?
+
+
+A) 1 x 10⁻⁷
+B) 2 x 10⁻⁷
+C) 3 x 10⁻⁷
+D) 4 x 10⁻⁷
+E) 5 x 10⁻⁷
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q32
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 33
+
+O elemento químico hidrogênio apresenta três isótopos: ¹H, ²H e ³H. Seus átomos possuem, respectivamente, zero, um e dois nêutrons no núcleo. Muitos reatores nucleares utilizam a água “pesada” em seus processos. Considerando-se que ela seja constituída por moléculas de água formadas por átomos de oxigênio e deutério (²H), a utilização do termo “pesada” para esse tipo de água pode ser explicada devido
+
+
+A) ao fato de sua massa molar ser superior à da água comum.
+B) à utilização inadequada do conceito de massa molar.
+C) ao fato de a massa molar da água comum ser igual a 20 g·mol⁻¹.
+D) a seu número de nêutrons ser inferior ao da água comum.
+E) à inexistência de balanças adequadas para “pesar” moléculas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q33
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 34
+
+Um grave acidente envolvendo produtos químicos aconteceu próximo a Tóquio no final de setembro de 1999. A capa de uma revista denunciando os perigos de acidentes deste tipo usou o seguinte pictograma Esse pictograma está associado a substâncias
+
+[Figura: Pictograma apresentado na capa da revista.]
+Arquivo: figures/furg-2000-quimica-q34-fig1.webp
+
+A) explosivas.
+B) irritantes.
+C) oxidantes fortes.
+D) radioativas.
+E) inflamáveis.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q34
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 35
+
+Observe a tabela que contém dados sobre os níveis máximos de contaminação por íons metálicos em água potável:
+
+Íon metálico contaminante | Concentração máxima tolerada (mg/L)
+As⁺³ | 0,05
+Ba⁺² | 1,0
+Cd⁺² | 0,01
+Na⁺¹ | 160,0
+Hg⁺² | 0,002
+
+O íon metálico mais tóxico é
+
+
+A) As⁺³
+B) Ba⁺²
+C) Cd⁺²
+D) Na⁺¹
+E) Hg⁺²
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q35
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 36
+
+Considera-se que o limite máximo de “ingestão diária aceitável” (IDA) de ácido fosfórico, aditivo em alimentos, é de 5 mg/kg de peso corporal. Sabendo-se que um certo refrigerante contém H₃PO₄ na concentração de 6.10⁻⁴ g/mL, uma pessoa que beber 1 L do mesmo, em um dia, estará ingerindo uma quantidade de ácido aproximadamente igual a
+
+
+A) 6.10⁻³ mol
+B) 6.10⁻³ g
+C) 6.10⁻¹ mg
+D) 30 mg
+E) 30 g / kg
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q36
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 37
+
+Acetaminofeno é um antipirético de fórmula C₈H₉NO₂. Em função do nome comercial e da fórmula, pode-se afirmar que esta substância apresenta grupos funcionais ligados a sua cadeia carbônica aromática. Dois destes grupos funcionais são:
+
+
+A) -NHCOCH₃ e -OCH₃
+B) -NO₂ e -COCH₃
+C) -NO e -CH₂CH₃OH
+D) -NHCOCH₃ e -OH
+E) -NH₃ e -CH₂OH
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q37
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 38
+
+Quando uma criança está febril, é prática comum passar no corpo da criança um algodão umedecido em álcool. Esse procedimento funciona porque
+
+
+A) o álcool atua como antisséptico.
+B) ao evaporar, o álcool diminui a temperatura.
+C) para evaporar, o álcool precisa de energia.
+D) ao evaporar, o álcool aumenta a temperatura.
+E) a reação do álcool com a pele é exotérmica.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q38
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 39
+
+Há 4,5 bilhões de anos, a nuvem que deu origem ao Sistema Solar foi bombardeada por estranhos raios ultravioleta, que viajavam em espiral, a chamada radiação circular polarizada. Ao se chocar com aminoácidos existentes pelo caminho, esses raios eliminaram metade deles, justamente os aminoácidos destros. Alguns bilhões de anos depois, as moléculas restantes, que eram canhotas, deram origem aos organismos terrestres. (Superinteressante, out., 1998, p.85). A partir do texto conclui-se que, atualmente, existem na natureza APENAS aminoácidos
+
+
+A) dextrógiros.
+B) canhotos e destros.
+C) com carbono assimétrico.
+D) destros com carbono assimétrico.
+E) levógiros.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q39
+
+========================================================================
+FURG 2000 — Química — Vestibular regular — Questão 40
+
+Os brasileiros que vivem abaixo da linha de pobreza (renda inferior a R$ 149) somam 86,4 milhões, 54% da população. [...] Do total, 47,68 milhões são indigentes e vivem com menos de R$ 73 mensais [...]. R$ 73 é o valor necessário para garantir o consumo calórico (comida), mínimo mensal de uma pessoa recomendado pela Organização Mundial de Saúde [...]. (Zero Hora, 27 ago. 99, Caderno de Economia, p. 7). Os alimentos constituem-se na fonte de energia necessária para manter nossos processos vitais, a nossa temperatura corporal, etc. A oxidação de açúcares no corpo humano produz ao redor de 4,0 quilocalorias por grama de glicose oxidada. Deste modo, a quantidade de quilocalorias produzidas pela “queima” de um mol de glicose (C₆H₁₂O₆) é
+
+
+A) 72
+B) 144
+C) 288
+D) 720
+E) 1440
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-quimica
+Identificador: furg-2000-quimica-q40
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 21
+
+Os problemas de poluição ambiental tornam-se motivo de preocupação cada vez maior. Notícia recente sobre o buraco da camada de ozônio nos dá conta que este aumentou, abrangendo agora uma porção apreciável do território chileno. Sobre o ozônio, é correto afirmar que se trata de
+
+
+A) um buraco por onde passa a maior parte dos raios prejudiciais à saúde.
+B) uma camada em que a concentração de CFCs é acima do normal.
+C) uma camada atmosférica em que ocorrem a maioria das reações químicas gasosas.
+D) uma substância química formada por átomos de oxigênio.
+E) um produto resultante da ação dos CFCs liberados por aerossóis.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q21
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 22
+
+Os alimentos dietéticos ocupam cada vez mais espaço nas prateleiras dos supermercados. Uma determinada marca anunciou em seu refrigerante light: apenas uma caloria por litro. Sabe-se que 1 g de glicose (C₆H₁₂O₆) oxidado no corpo humano libera 4.000 calorias. Supondo que todo o conteúdo calórico deste refrigerante provém da glicose, o conteúdo em quantidade de matéria de glicose, em cada litro deste refrigerante, é
+
+
+A) 1/180.000 mol
+B) 1/720.000 mol
+C) 1/4.000 mol
+D) 1.000 mol
+E) 180.000 mol
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q22
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 23
+
+Nos lixões, a decomposição anaeróbica da matéria orgânica é comum e gera, entre outras coisas, o biogás, constituído principalmente por metano. Esse gás, acumulado sob o lixo, é excelente combustível. Em condições ideais e nas CNTP, pode-se dizer que 1 kg de gás metano – CH₄ – ocuparia um volume aproximado de
+
+
+A) 22,7 L
+B) 62,5 L
+C) 160 L
+D) 1120 L
+E) 1400 L
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q23
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 24
+
+A casca de ovo é constituída basicamente de carbonato de cálcio. Sua dissolução com ácido clorídrico está representada pela seguinte equação: 2HCl(aq) + CaCO₃(s) ⇒ CaCl₂(aq) + CO₂(g) + H₂O(l) Supondo que os reagentes estejam nas proporções estequiométricas, se a reação for completa, cada mol de HCl, nas CNTP, produzirá
+
+
+A) 2,24 L de CO₂.
+B) 22,4 L de CO₂.
+C) 1 molécula de H₂O.
+D) 55,5 g de CaCl₂.
+E) 111 g de CaCl₂.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q24
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 25
+
+A toxicidade de uma radiação pode ser expressa em dose letal, simbolizada por DL³⁰₅₀ ou (DL 50/30), que é a dose que mata 50% dos seres vivos expostos dentro de 30 dias. A tabela abaixo mostra o valor da dose letal de um certo tipo de radiação para alguns organismos, medida em Roentgens. Organismo | DL³⁰₅₀ (R)
+Protozoários | 3.000.000
+Algas | 8.000
+Macacos | 450
+Seres humanos | 400
+Coelhos | 300
+
+A partir da análise da tabela, é possível concluir que os seres vivos mais vulneráveis à radiação são os
+
+
+A) protozoários.
+B) algas.
+C) macacos.
+D) seres humanos.
+E) coelhos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q25
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 26
+
+Na formação dos compostos químicos, percebe-se que um número relativamente pequeno de elementos se unem para formar mais de um milhão de substâncias catalogadas. Nessa união, seja formando agregados iônicos ou moléculas, a estrutura eletrônica do átomo é o fator determinante no tipo de substância formada. Um dos modelos atômicos ainda muito útil nesse estudo é o chamado modelo de Rutherford-Bohr, que apresenta como característica marcante
+
+
+A) a existência de um núcleo central rodeado por elétrons em movimento.
+B) a concepção de um átomo maciço e indivisível.
+C) a descontinuidade da energia no núcleo.
+D) uma estrutura positiva maciça, incrustada de elétrons.
+E) a existência de orbitais, regiões prováveis de encontrar elétrons.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q26
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 27
+
+A tabela abaixo contém compostos de massas moleculares similares e pontos de ebulição crescentes. As interações ou forças intermoleculares, que unem as moléculas, explicam o aumento do ponto de ebulição. Composto | Estrutura | Ponto de ebulição (°C)
+1 — Propano | CH₃—CH₂—CH₃ | −42
+2 — Éter Metílico | CH₃—O—CH₃ | −24
+3 — Etanol | CH₃—CH₂—OH | 78
+
+As interações presentes nos compostos 1, 2 e 3 são, respectivamente,
+
+
+A) iônica, ponte de hidrogênio e dipolo-dipolo.
+B) van der Waals, dipolo-dipolo e ponte de hidrogênio.
+C) ponte de hidrogênio, van der Waals e dipolo-dipolo.
+D) van der Waals, covalente apolar e ponte de hidrogênio.
+E) covalente polar, iônica e ponte de hidrogênio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q27
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 28
+
+Por que choramos ao cortar cebola? Porque, dentro da cebola, há compostos voláteis de enxofre, liberados quando a cebola é cortada. Eles reagem com a água presente nos olhos, produzindo ácidos, entre eles o sulfúrico (H₂SO₄). Para livrar-se deles, nosso organismo ativa as glândulas lacrimais, que expulsam a acidez indesejada. (Superinteressante, nov. 2000, p. 30). Considerando o texto acima, são feitas quatro afirmativas.
+
+I - O organismo tenta se livrar dos ácidos devido ao poder anticorrosivo que apresentam.
+
+II - Entre os compostos voláteis e a água há uma interação química.
+
+III - A reação da lágrima com o ácido é uma reação de neutralização.
+
+IV - Molhar a cebola, ao cortá-la, favorece a formação dos ácidos nela e não nos olhos. Quais afirmativas estão corretas?
+
+
+A) Apenas
+
+I.
+B) Apenas I e
+
+III.
+C) Apenas II e
+
+IV.
+D) Apenas II, III e
+
+IV.
+E) I, II, III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q28
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 29
+
+Os antitranspirantes e antiperspirantes contêm em sua composição química um antibiótico, sais de zinco e cloridrato de alumínio. (Education in Chemistry, Jan. 1997). Em razão das valências dos átomos, uma fórmula possível para o cloridrato de alumínio é
+
+
+A) Al₂(OH)₅Cl
+B) Al(OH)Cl
+C) Al₂(OH)Cl₂
+D) Al(OH)Cl₃
+E) AlCl₂
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q29
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 30
+
+Observe as curvas de solubilidade de quatro sais, em função da temperatura T, mostradas na figura abaixo. A partir destas curvas, é correto concluir-se que
+
+[Figura: Curvas de solubilidade dos sais A,B,C e D em função da temperatura, em g de soluto/100 g de água.]
+Arquivo: figures/furg-2001-quimica-q30-fig1.webp
+
+A) o sal mais solúvel a 40 °C é o D.
+B) o sal menos solúvel a 40 °C é o B.
+C) nem todas os sais aumentam sua solubilidade com o aumento da temperatura.
+D) a quantidade mínima de A que conseguimos dissolver em H₂O a 40 °C é 30 g .
+E) é impossível somente com o gráfico determinar a solubilidade dos sais.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q30
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 31
+
+O rótulo de uma garrafa de 700 mL de vinho traz a sua graduação alcoólica: 10,8 % em volume. Isto indica que, com relação à quantidade de álcool neste vinho,
+
+
+A) cada litro contém 10,8 mL.
+B) cada garrafa contém 108,0 mL.
+C) cada garrafa contém menos de 10,8 mL.
+D) cada garrafa contém mais de 108,0 mL.
+E) cada litro contém 108,0 mL.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q31
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 32
+
+Sabemos que nas mudanças de estado físico há absorção ou liberação de energia, dependendo do processo. Os dados abaixo correspondem a variações de entalpias padrão para mudanças de estado físico da água: H₂O(s) ⇒ H₂O(l) ΔHº = + 7,3 kJ/mol H₂O(l) ⇒ H₂O(v) ΔHº = + 44 kJ/mol Sobre essas mudanças, são feitas quatro afirmativas.
+
+I - O valor de ΔHº para o processo H₂O(s) ⇒ H₂O(v) é 51,3 kJ/mol.
+
+II - Na formação das nuvens, a condensação do vapor d’água é exotérmica.
+
+III - A ruptura de ligações intermoleculares na água líquida é exotérmica.
+
+IV - Em nossa pele, vapor d’água queima mais que água líquida, ambos a 100 °C. Quais afirmativas estão corretas?
+
+
+A) Apenas
+
+I.
+B) Apenas I e
+
+II.
+C) Apenas III e
+
+IV.
+D) Apenas I, II e
+
+IV.
+E) I, II, III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q32
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 33
+
+As transformações químicas que ocorrem no estômago durante a ingestão de alimentos, assim como muitas reações na natureza, ocorrem através de enzimas, que são catalisadores biológicos. Sobre catalisadores, é correto afirmar que
+
+
+A) são consumidos à medida que a rapidez das reações aumenta.
+B) são adicionados a um substrato mas não participam das reações.
+C) participam das reações químicas, mas são regenerados ao final destas.
+D) participam, mas não reagem quimicamente com os reagentes.
+E) aumentam a rapidez das reações sem, no entanto, participarem destas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q33
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 34
+
+A hemoglobina (Hb) combina-se quimicamente com o oxigênio nos pulmões, formando a oxiemoglobina (Hb.O₂), que, através do sistema circulatório, é responsável pelo transporte do O₂ utilizado nos processos metabólicos vitais em nosso organismo. No organismo dos fumantes, o equilíbrio entre a oxiemoglobina, o monóxido de carbono e o oxigênio pode ser representado pela equação: Hb .O₂(aq) + CO(g) ⇔ Hb .CO(aq) + O₂(g) , sendo o valor da constante de equilíbrio K, em dada temperatura, igual a 210. Assim, em relação ao exposto acima, é correto afirmar que
+
+
+A) a maior concentração de monóxido de carbono não afeta o equilíbrio.
+B) o CO compete com O₂, diminuindo a disponibilidade de Hb.O₂ no organismo.
+C) um maior número de cigarros consumidos diminui a concentração de Hb.CO.
+D) o valor de K indica uma maior tendência do sistema em formar Hb .O₂.
+E) nos fumantes a presença do CO é pouco relevante.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q34
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 35
+
+A tabela abaixo mostra algumas informações contidas em um rótulo de água mineral (sem gás). Classificação: Água mineral alcalino-bicarbonatada e fluoretada
+
+Composição química provável (mg/L)
+Bicarbonato de sódio: 254,35
+Carbonato de sódio: 9,39
+Sulfato de cálcio: 5,72
+Cloreto de sódio: 2,43
+
+Características físico-químicas
+pH a 25°C: 8,0
+Condutividade elétrica a 25°C: 3,20 × 10⁻⁴ mhos/cm
+Temperatura da água na fonte: 21,4°C
+
+Analisando estas informações, pode-se dizer que, para essa água mineral,
+
+
+A) o CaSO₄ é o sal responsável pelo seu pH.
+B) a condutividade elétrica é determinada pelos íons H₃O⁺.
+C) a concentração de íons Na⁺ é em torno de 266 mg/L.
+D) a concentração de íons H₃O⁺ é influenciada pela presença de íons HCO₃⁻.
+E) a concentração de íons OH⁻ é igual a 10⁻⁸ mol/L.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q35
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 36
+
+A passagem de 96.500 coulombs através de uma solução aquosa de cloreto de sódio provoca a seguinte reação num dos eletrodos: 2 H₂O(l) + 2e⁻ → H₂ (g) + 2 OH⁻ Considerando que esta seja a única reação ocorrida no eletrodo, a quantidade de gás hidrogênio liberado será aproximadamente igual a
+
+
+A) 1 g
+B) 2 g
+C) 3 g
+D) 4 g
+E) 5 g
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q36
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 37
+
+O gás engarrafado no Brasil, usualmente consumido em fogões, é
+
+
+A) uma mistura de hidrocarbonetos derivados do petróleo.
+B) obtido na destilação fracionada da madeira.
+C) produzido pela reação entre hidrogênio e carbono.
+D) uma mistura de compostos orgânicos comburentes.
+E) uma substância pura.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q37
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 38
+
+Em relação aos compostos orgânicos, é correto afirmar que
+
+
+A) os hidrocarbonetos são compostos constituídos por cadeias carbonadas hidratadas.
+B) o grau de saturação de um hidrocarboneto aumenta com o número de hidrogênios na molécula.
+C) os compostos aromáticos existentes no cigarro apresentam cadeia linear alifática.
+D) as cadeias carbônicas ramificadas são as responsáveis pela formação de radicais livres que destroem a camada de ozônio.
+E) as ligações entre os átomos de carbono na cadeia carbonada são intermoleculares apolares.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q38
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 39
+
+Os testes de glicose no sangue são baseados na presença do grupo aldeído: R—C(=O)—H. Se o reagente utilizado é o reagente de Benedict que contém o íon cúprico, a glicose reduz este íon, produzindo o óxido cuproso. Neste processo, a glicose é
+
+
+A) oxidada a alceno (R₁=R₂).
+B) reduzida a álcool (R–OH).
+C) oxidada a álcool (R–OH).
+D) reduzida a ácido carboxílico (R–COOH).
+E) oxidada a ácido carboxílico (R–COOH).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q39
+
+========================================================================
+FURG 2001 — Química — Vestibular regular — Questão 40
+
+O poliestireno é uma das mais importantes borrachas sintéticas desenvolvidas durante a Segunda Guerra Mundial, em substituição à borracha natural, não-disponível. Atualmente é utilizada principalmente como isolante elétrico. A estrutura da molécula deste polímero é representada abaixo: O monômero que por polimerização origina o poliestireno é:
+
+[Figura: Estrutura do polímero mostrada no enunciado, com unidades de cadeia e anéis aromáticos.]
+Arquivo: figures/furg-2001-quimica-q40-fig1.webp
+
+A) C₆H₅—CH₂OH
+[Figura: Fórmula estrutural da alternativa A.]
+Arquivo: figures/furg-2001-quimica-q40-opt1.webp
+B) C₆H₅—C≡CH
+[Figura: Fórmula estrutural da alternativa B.]
+Arquivo: figures/furg-2001-quimica-q40-opt2.webp
+C) C₆H₅—CH=CH₂
+[Figura: Fórmula estrutural da alternativa C.]
+Arquivo: figures/furg-2001-quimica-q40-opt3.webp
+D) C₆H₅—COOH
+[Figura: Fórmula estrutural da alternativa D.]
+Arquivo: figures/furg-2001-quimica-q40-opt4.webp
+E) C₆H₅—CH₂COOH
+[Figura: Fórmula estrutural da alternativa E.]
+Arquivo: figures/furg-2001-quimica-q40-opt5.webp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-quimica
+Identificador: furg-2001-quimica-q40
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 21
+
+As ondas curtas de rádio percorrem longas distâncias entre a estação transmissora e sua recepção. Isso ocorre através de reflexões sucessivas entre a superfície da Terra e a ionosfera, parte da atmosfera formada pela ionização
+
+
+A) dos gases O₂, N₂ e outros
+B) dos isótopos O₂(g), O₃(g)
+C) dos elementos químicos O 2(g) e N₂(g)
+D) dos compostos O, N, Ar
+E) das moléculas O, N, Ar
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q21
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 22
+
+O alumínio utilizado em esquadrias, a água que bebemos e o O₂(g) do ar que respiramos são, respectivamente, constituídos por lig ações
+
+
+A) metálica, covalente polar e covalente polar.
+B) metálica, covalente polar e covalente apolar.
+C) metálica, iônica e covalente polar.
+D) iônica, covalente polar e covalente apolar.
+E) iônica, iônica e covalente polar.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q22
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 23
+
+Numere a 2ª coluna de acordo com a 1ª:
+
+1) LiOH
+2) FeTiO₃
+3) H₂SO₃
+4) TiO₂
+
+( ) ácido oxigenado
+( ) sal
+( ) óxido
+( ) base
+
+A alternativa que contém a seqüência correta de números, de cima para baixo, é:
+
+
+A) 1 – 2 – 3 – 4
+B) 1 – 3 – 2 – 4
+C) 3 – 4 – 2 – 1
+D) 3 – 2 – 4 – 1
+E) 3 – 1 – 4 – 3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q23
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 24
+
+Qual a quantidade de matéria em átomos de hidrogênio que está presente em um mol do composto benzoato de amônio (NH 4C₇H₅O₂)?
+
+
+A) 4 mol
+B) 5 mol
+C) 9 mol
+D) 5,4 x 10²⁴ mol
+E) 11 mol
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q24
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 25
+
+Quando um átomo neutro apresenta número atômico 29 e número de massa 61, esse átomo contém
+
+
+A) 29 elétrons.
+B) 90 nêutrons.
+C) 61 elétrons.
+D) 29 nêutrons.
+E) 61 prótons.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q25
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 26
+
+Um sólido incolor cristalino funde-se abaixo de 150 °C e dissolve-se em água à temperatura ambiente, produzindo uma solução não-condutora de eletricidade. Esse sólido é:
+
+
+A) sal de cozinha, NaCl.
+B) óxido de silício, SiO₂.
+C) sódio metálico, Na.
+D) glicose, C₆H₁₂O₆.
+E) propano, C₃H₈.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q26
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 27
+
+Em 1937, o dirigível Hindenburgh, utilizando gás hidrogênio, foi totalmente destruído por um incêndio, após viagem entre a Europa e os Estados Unidos, durante o pouso em Lakehurst, estado de New Jersey. Esse dirigível continha aproximadamente 232 060 m3 de hidrogênio puro, sob uma temperatura de 10 °C e pressão de 1 atm. Que massa de hidrogênio foi totalmente queimada durante essa tragédia? Dado: R = 0,082 atm.L.mol⁻¹.K-1
+
+
+A) 20,0 kg
+B) 10,0 x 10³ kg
+C) 10,0 x 10⁶ kg
+D) 20,0 x 10⁶ kg
+E) 20,0 x 10³ kg
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q27
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 28
+
+Uma bateria recarregável comercial de Ni-Cd é recarregada em 10 h por um carregador de 2,4 V que fornece 9 650 C. Suponha que nessa bateria ocorre a passagem do Cd 2+ a Cd₀. Qual a massa de Cd₀ que é produzida sob essas condições ? Dados: 1 Faraday (F) ≅ 96500 C Massa Molar do Cádmio = 112 g/mol
+
+
+A) 11,2 g
+B) 5,6 g
+C) 56,0 g
+D) 112,0 g
+E) 224,0 g
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q28
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 29
+
+No filme “Erin Brokovich”, do diretor Steven Sodenberg, a personagem principal, vivida por Julia Roberts, participa de uma causa jurídica envolvendo a contaminação de uma extensa área por cromo hexavalente. A semi-reação que descreve corretamente a oxidação do cromo trivalente em cromo hexavalente é
+
+
+A) Cr³⁺ + 3 e⁻ → Cr⁶⁺
+B) Cr⁶⁺ → Cr³⁺ + 3 e⁻
+C) Cr → Cr⁶⁺ + 6 e⁻
+D) Cr³⁺ → Cr⁶⁺ + 3 e⁻
+E) Cr³⁺ + 3 e⁻ → Cr
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q29
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 30
+
+As baterias de níquel-hidreto metálico (Ni-MH) podem ser consideradas como as sucessoras das baterias de níquel-cádmio, com a vantagem de não conterem metais pesados tóxicos em sua composição e de possuírem maior densidade de energia. Consultando uma tabela de potenciais -padrão de eletrodo, obtêm-se as seguintes informações:
+
+I. NiOOH + H₂O + e⁻ → Ni(OH)₂ + OH⁻   E° = 0,52 V
+
+II. M + H₂O + e⁻ → MH + OH⁻   E° = −0,83 V
+
+Qual das afirmativas abaixo é verdadeira ?
+
+
+A) A reação I ocorre no cátodo, a reação II no ânodo e o potencial-padrão dessa bateria é de 1,35
+
+V.
+B) A reação I ocorre no cátodo, a reação II no ânodo e o potencial-padrão dessa bateria é de 0,31
+
+V.
+C) A reação I ocorre no ânodo, a reação II no cátodo e o potencial-padrão dessa bateria é de 1,35
+
+V.
+D) A reação I ocorre no ânodo, a reação II no cátodo e o potencial-padrão dessa bateria é de 0,31
+
+V.
+E) A reação I ocorre no cátodo, a reação II no ânodo e o potencial padrão dessa bateria é de –1,35
+
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q30
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 31
+
+Leia atentamente o texto a seguir. A acidificação das chuvas é um problema ambiental bem conhecido em muitas partes do mundo, em particular nas regiões de maior concentração industrial. No Rio Grande do Sul, na região metropolitana de Porto Alegre, os valores médios de pH encontrados nas águas das chuvas ficaram em torno de 5,5. Enquanto isso, na cidade de Rio Grande, na parte inicial das chuvas os menores valores de pH registrados foram de 3,6. Fonte: Química Nova, v. 23, n. 5, 2000. De acordo com o texto acima, quantas vezes a concentração hidrogeniônica máxima das chuvas ácidas em Rio Grande foi maior do que a concentração hidrogeniônica média das chuvas da região metropolitana de Porto Alegre?
+
+
+A) 190,0 vezes
+B) 1,9 vezes
+C) 10¹˒⁹ vezes
+D) 19,0 vezes
+E) 1900,0 vezes
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q31
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 32
+
+Um técnico de laboratório necessita preparar urgentemente 500 mL de solução 0,5 mol/L de hidrogenofosfato de sódio. Como o estoque de água destilada do laboratório acabou, há a necessidade de preparar a solução a partir de duas outras soluções, I e II, das quais o laboratório tem 1 L de cada. A solução I de hidrogenofosfato de sódio apresenta uma concentração de 1 mol/L, e a solução II de hidrogenofosfato de sódio é de 0,25 mol/L. Qual o volume de cada uma das soluções que será utilizado ?
+
+
+A) 225 mL da solução I e 275 mL da solução
+
+II.
+B) 167 mL da solução I e 333 mL da solução
+
+II.
+C) 175 mL da solução I e 325 mL da solução II.
+D) 67 mL da solução I e 433 mL da solução
+
+II.
+E) 50 mL da solução I e 450 mL da solução
+
+II.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q32
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 33
+
+Complete o seguinte parágrafo: “A rapidez com que ocorre uma reação química em fase gasosa em um recipiente rígido fechado conforme aumentam a temperatura e a ________________”. Qual das alternativas abaixo contém a seqüência de complementos correta?
+
+
+A) diminui, pressão.
+B) aumenta, densidade.
+C) diminui, densidade.
+D) permanece constante, densidade.
+E) aumenta, pressão.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q33
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 34
+
+Responda a esta questão a partir da análise da tabela apresentada: Situação | Ácido acético (mol/L) | Etanol (mol/L) | Acetato de etila (mol/L) | Água (mol/L)
+Início | 0,10 | 1,00 | ZERO | ZERO
+Equilíbrio | ??? | ??? | 0,097 | ???
+
+Considerando a reação de esterificação do ácido acético com o etanol, de acordo com a tabela acima, é correto afirmar-se que
+
+
+A) todo o ácido reagiu.
+B) todo o álcool reagiu.
+C) há produto em excesso no equilíbrio.
+D) há álcool em excesso no início da reação.
+E) a concentração de água no equilíbrio é o dobro da concentração de éster.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q34
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 35
+
+Em 2001 começaram a surgir casos de aftosa no Rio Grande do Sul. Para impedir a propagação do vírus, foram construídas barreiras sanitárias, chamadas rodolúvios. Os veículos, ao atravessar os rodolúvios, mergulham suas rodas em uma solução aquosa, em que o vírus é oxidado por
+
+
+A) soda cáustica.
+B) carbonato de cálcio.
+C) iodo.
+D) ácido fluorídrico.
+E) gás mostarda.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q35
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 36
+
+A lista abaixo fornece os fatores aproximados da capacidade edulcorante de açúcares e adoçantes comparada à da sacarose, para a qual se atribui valor 1. Adoçante | Capacidade edulcorante relativa
+Sacarina | 300
+Aspartame | 200
+Frutose | 1,7
+Mel | 1,4
+Melado | 1,1
+
+Considerando que determinada bebida light tem somente a sacarose substituída por aspartame, podemos afirmar que, para um mesmo volume, nas mesmas condições de temperatura e pressão,
+
+
+A) a bebida light pesa menos que a bebida normal.
+B) a bebida normal tem a mesma densidade que a bebida light.
+C) a bebida normal tem densidade menor que a bebida light.
+D) a bebida light tem mais massa que a bebida normal.
+E) a bebida light pesa mais que a bebida normal.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q36
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 37
+
+Nos estudos arqueológicos feitos pela FURG para datação de objetos encontrados no Sobrado dos Azulejos pode ser usada a detecção de C₁₄, porque
+
+
+A) não decai ao longo do tempo.
+B) apresenta dose letal elevada.
+C) apresenta altas concentrações em objetos antigos.
+D) é um radioisótopo natural.
+E) tem uma meia-vida de menos de 1 segundo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q37
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 38
+
+Por que existem tantos compostos orgânicos ?
+
+
+A) Porque o carbono forma cadeias de diferentes tamanhos com diferentes elementos.
+B) Porque a quantidade de seres vivos é muito grande.
+C) Porque o carbono é o elemento químico mais abundante na crosta terrestre.
+D) Por causa do número de oxidação invariante do carbono.
+E) Porque o carbono é um não-metal de inúmeras formas alotrópicas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q38
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 39
+
+No município do Rio Grande é comum o transporte em motocicletas de dois ou mais botijões de 13 kg cheios de gás liquefeito de petróleo (GLP), também chamado de gás de cozinha. No caso de um acidente de trânsito, há a possibilidade de ocorrer uma violenta explosão desses botijões. Essa explosão pode ser justificada pela alta inflamabilidade do GLP, associada ao seu grande calor de combustão, devido ao fato de o propano e o butano, principais constituintes do GLP, apresentarem
+
+
+A) ligações duplas.
+B) ligações saturadas.
+C) ligações triplas.
+D) ligações duplas conjugadas.
+E) ligações covalentes polares.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q39
+
+========================================================================
+FURG 2002 — Química — Vestibular regular — Questão 40
+
+Complete o seguinte parágrafo:
+
+A butanodiona, ______________, é uma ______________ líquida, amarela e ______________, produzida por alguns microorganismos durante a produção do queijo.
+
+Qual das alternativas abaixo contém a seqüência de complementos correta?
+
+
+A) C₄H₆O₂, cetona, volátil.
+B) C₃H₆O, substância, não-volátil.
+C) C₅H₁₀O, amida, volátil.
+D) C₄H₁₁N, amina, volátil.
+E) C₄H₁₁N, proteína, não-volátil.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-quimica
+Identificador: furg-2002-quimica-q40
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 21
+
+Quando bebemos 180 g de água (aproximadamente 180 mL), admitindo ser desprezível a presença de impurezas, podemos considerar correto dizer que estamos ingerindo aproximadamente
+
+
+A) 60,2 x 10²³ átomos de hidrogênio.
+B) 30 mol de átomos.
+C) 6,02 x 10²³ moléculas de água.
+D) 12 x 10²³ átomos de oxigênio.
+E) 16 g de oxigênio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q21
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 22
+
+Podemos dizer que um gás ideal, do ponto de vista microscópico, “é aquele em que não existem interações intermoleculares, e as moléculas possuem tamanho nulo”, isto é, são consideradas como pontos sem dimensão. O termo ideal, portanto, justifica-se diante do fato de essa definição ser totalmente irreal. (Peruzzo, Tito M. & Canto, E. L. Química: na abordagem do cotidiano. São Paulo : Moderna, 1993, 1. ed., p. 386.) Contudo, quando trabalhamos com gases reais sob determinadas condições, seu comportamento pode aproximar-se muito do gás ideal. A respeito desse comportamento podemos afirmar:
+
+I — Altas pressões favorecem o comportamento ideal.
+
+II — Uma baixa pressão implica moléculas mais afastadas, dificultando interações intermoleculares.
+
+III — Uma baixa temperatura implica uma maior agitação das moléculas do gás.
+
+IV — As interações intermoleculares no gás são dificultadas pelo aumento da temperatura. Estão corretas as afirmativas:
+
+
+A) I e
+
+II.
+B) I, II e
+
+III.
+C) II e
+
+IV.
+D) III e
+
+IV.
+E) IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q22
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 23
+
+A lenda gaúcha do Boitatá (boi = cobra, atatá = fogo) é uma das versões mais populares do chamado “fogo-fátuo”, fenômeno visto em pântanos e cemitérios. Apesar das lendas, o fogo é real e tem uma explicação bastante simples no âmbito da Química: matéria orgânica apodrecendo. Trata-se, portanto, de um fenômeno natural em que uma mistura de hidrocarbonetos (principalmente metano) entra em combustão, num processo espontâneo, envolvendo o gás fosfina ( PH₃ ) e o oxigênio do ar. Assustador e belo ao mesmo tempo, esse fenômeno produz luzes de cores variáveis. (ZH – Caderno Eureka!, 16/09/02, p.3) A partir da interpretação das informações no texto acima, é correto afirmar-se que
+
+
+A) o “fogo-fátuo” é resultado da manifestação tangível de reações químicas.
+B) quando absorvem energia os elétrons afastam-se do núcleo e produzem luz.
+C) a decomposição de matéria orgânica produz principalmente o gás oxigênio.
+D) na combustão do metano rompem-se ligações apolares C-C nas moléculas desse gás.
+E) na queima de hidrocarbonetos há liberação de radioisótopos com luminescência.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q23
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 24
+
+Uma mistura de nitrogênio e hélio apresenta igual quantidade de matéria de cada um desses gases. Considerando essa informação, é correto afirmar que, no sistema constituído pela mistura dos dois gases,
+
+
+A) o número de átomos de nitrogênio é o mesmo que o número de átomos de hélio.
+B) a massa do gás nitrogênio é, aproximadamente, 7 vezes maior que a massa do gás hélio.
+C) em igualdade de condições, o volume de nitrogênio é o dobro do volume de hélio.
+D) a pressão parcial do hélio é a metade da pressão parcial do nitrogênio.
+E) ao dobrarmos a pressão no sistema, a quantidade de matéria fica reduzida à metade.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q24
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 25
+
+Os “rastros de fumaça”, como são geralmente chamados os trilhos deixados no céu pelos aviões nas grandes altitudes, são na verdade formados por cristais de gelo. A queima do combustível (geralmente querosene), gera gás carbônico e água. Expelida em forma de vapor pelas turbinas, a água condensa e se solidifica num curtíssimo espaço de tempo devido às temperaturas muito baixas. (ZH – Caderno Eureka!, 02/09/02, p.2) Em relação ao comportamento da água, mencionado no texto acima, podemos afirmar que
+
+
+A) a polaridade da água dificulta a formação de pontes de hidrogênio.
+B) as ligações covalentes apolares, responsáveis pela formação do gelo, acontecem entre moléculas de água.
+C) as pontes de hidrogênio são ligações responsáveis pela dificuldade do vapor d’água passar a líquido.
+D) a formação dos cristais de gelo é favorecida pela forte atração intermolecular.
+E) numa molécula de água, as ligações iônicas contribuem na formação do sólido molecular.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q25
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 26
+
+Fundeado a sete milhas do canal de acesso ao porto de Rio Grande, conforme exigência da Capitania dos Portos, o navio “Sea Lady”, de bandeira panamenha, foi impedido de atracar em um dos terminais. As condições do navio e a possibilidade de ele operar preocuparam as autoridades, que estão analisando o caso. O velho navio, de 24 anos, já sofreu cinco retenções em outros países e traz uma carga perigosa: 16 mil toneladas de ácido sulfúrico. (Jornal Agora, 03/10/02, p. 3) Qual, dentre as afirmativas abaixo a respeito do ácido sulfúrico, é a correta?
+
+
+A) As matérias-primas utilizadas na sua produção incluem enxofre mineral, oxigênio e água.
+B) Na sua forma pura, isto é, em ausência de água, é extremamente corrosivo aos metais.
+C) A partir da oxidação do enxofre obtemos o SO₄ que, em contato com água, forma o ácido.
+D) Entre os óxidos envolvidos nas reações de obtenção está o SO, que é o anidrido sulfeto.
+E) Por ser um ácido forte, a alta ionização em presença de água reduz sua ação corrosiva.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q26
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 27
+
+Durante a 2.a Guerra Mundial, os alemães utilizaram o míssil V₂, capaz de transportar 1 tonelada de explosivo a uma distância de até 360 km. Esse foguete usava como combustível álcool etílico hidratado a 75% em volume e, como comburente, oxigênio líquido. Os dois líquidos eram transportados até a câmara de combustão por duas bombas rotativas, impulsionadas por uma turbina que operava a 5000 rpm, usando a decomposição do peróxido de hidrogênio catalisada por uma solução aquosa de permanganato de sódio, como fonte de energia. http://www.v2rocket.com/start/makeup/design.html Com respeito ao texto, analise as afirmativas:
+
+I — As fórmulas das substâncias químicas mencionadas são: C₂H₅OH, H₂O, O₂, H₂O₂ e NaMnO₄.
+
+II — A equação química balanceada que descreve a decomposição do peróxido de hidrogênio é: H₂O₂(l) → H₂O + O₂(g).
+
+III — A equação química balanceada que descreve a combustão completa do álcool etílico é: 1C₂H₅OH(aq) + 3O₂(l) 2CO₂(g) + 3H₂O.
+
+IV — O NaMnO₄ acelera a decomposição do H₂O₂ propiciando um caminho de reação de maior energia de ativação. Estão corretas as afirmativas
+
+
+A) I, II, III e
+
+IV.
+B) II, III e
+
+IV.
+C) I e
+
+III.
+D) II e
+
+III.
+E) I e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q27
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 28
+
+Observe a estrutura dos compostos I e
+
+II. I — II É correto afirmar que os compostos I e II são:
+
+[Figura: Fórmulas estruturais dos compostos I e II com os anéis e ligações duplas indicados.]
+Arquivo: figures/furg-2003-quimica-q28-fig1.webp
+
+A) compostos diferentes.
+B) isômeros de posição.
+C) isômeros constitucionais.
+D) idênticos.
+E) isômeros geométricos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q28
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 29
+
+O suco de repolho roxo muda de cor conforme a acidez da solução à qual for adicionado. Quando a solução for muito ácida, o sumo tem a coloração vermelha. À medida que a solução fica menos ácida, a cor muda de vermelho para o violeta e depois para o amarelo. A respeito dessa situação, é correto afirmar:
+
+I — O suco de repolho roxo se comporta como um indicador ácido-base.
+
+II — A coloração amarela indica uma concentração alta de íons OH⁻.
+
+III — O pH de uma solução que torna vermelha a coloração do suco de repolho roxo é maior do que 7,0.
+
+IV — A seqüência de cores amarela, violeta e vermelha indica a seqüência crescente de pH. Estão corretas as afirmativas:
+
+
+A) I, II, III e IV
+B) II, III e IV
+C) II e IV
+D) I e II
+E) I e III
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q29
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 30
+
+Após uma longa partida de tênis, o cotovelo de Gustavo Kuerten está doendo. Seu fisioterapeuta recomenda o uso, nas primeiras 24 horas, de bolsas térmicas frias. Essas bolsas contêm o sal nitrato de amônio e a água em dois sacos separados. Quando o saco interno que contém água é rompido, o nitrato de amônio, que é muito solúvel em água, dissolve-se. A reação que descreve o processo, cujo ΔH° de dissolução = + 25,69 kJ/mol, é: NH₄NO₃(s) → NH₄⁺(aq) + NO₃⁻(aq) Com relação ao assunto é correto afirmar que
+
+
+A) o processo de dissolução do nitrato de amônio é exotérmico.
+B) o cotovelo de Gustavo Kuerten cederá calor para a dissolução do sal.
+C) a solubilidade do nitrato de amônio diminui conforme aumenta a temperatura.
+D) a ionização do nitrato de amônio é exotérmica em presença de água.
+E) a dissolução do nitrato de amônio é uma transformação isotérmica.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q30
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 31
+
+Um pedaço limpo de fio de cobre é colocado em uma solução incolor de nitrato de prata. Com o transcorrer do tempo, há o surgimento de cristais de prata metálica, e a solução aquosa torna-se azulada devido à presença de íons de cobre (II). A propósito do experimento é correto afirmar que
+
+
+A) o cátion cobre (II) reduz o cátion prata até prata metálica.
+B) o cobre metálico apresenta um potencial padrão de redução menor que o da prata metálica.
+C) o cobre metálico é o agente oxidante.
+D) a transferência de elétrons ocorre da prata metálica para o cátion cobre.
+E) a transferência de elétrons ocorre do cátion prata para o cátion cobre.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q31
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 32
+
+Analise o gráfico a seguir, para os ácidos fracos genéricos (“HA”, “HB”, “HC”) A respeito do gráfico acima avalie as afirmações:
+
+I — O ácido “HA” é um ácido mais fraco que o ácido “HC”.
+
+II — A constante de ionização de “HA” é maior do que a constante de ionização de “HC”.
+
+III — À diluição infinita, o grau de ionização dos ácidos “HA”, “HB” e “HC” é 100%.
+
+IV — Para a mesma quantidade de matéria de “HA” e “HC”, será necessário mais hidróxido de sódio para neutralizar “HA” do que “HC”. Estão corretas as afirmativas:
+
+[Figura: Gráfico do grau de ionização de HA,HB e HC em função da molaridade, à mesma temperatura.]
+Arquivo: figures/furg-2003-quimica-q32-fig1.webp
+
+A) I, II, III,
+
+IV.
+B) I, II,
+
+III.
+C) II,
+
+III.
+D) III,
+
+IV.
+E) I,
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q32
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 33
+
+Analise o gráfico abaixo que representa as concentrações molares das substâncias A e B para uma reação genérica: A → B. A respeito do gráfico acima, é correto afirmar que
+
+[Figura: Concentrações molares de A e B em função do tempo, em minutos.]
+Arquivo: figures/furg-2003-quimica-q33-fig1.webp
+
+A) após os 24 minutos, a reação alcança o equilíbrio.
+B) a concentração instantânea de B, no transcorrer de toda a reação, é duas vezes a concentração instantânea de A.
+C) a taxa de produção de B, ao longo do tempo, é constante.
+D) o gráfico representa o comportamento de uma reação reversível.
+E) a concentração molar de A aos 27 minutos é aproximadamente 9 vezes menor que a concentração de B.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q33
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 34
+
+Dê o nome oficial (IUPAC) para o hidrocarboneto abaixo.
+
+[Figura: Estrutura do hidrocarboneto com as ramificações indicadas.]
+Arquivo: figures/furg-2003-quimica-q34-fig1.webp
+
+A) 3-iso-butil-4,5-dimetilheptano.
+B) 5-etil-2,4,6-trimetiloctano.
+C) 4-etil-3,5,7-trimetiloctano.
+D) 5-butil-3,4-dimetilheptano.
+E) 2,4-dietil-3,5-dimetilheptano.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q34
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 35
+
+“No dia 20 de março passado, a esposa do presidente Clinton chamou a atenção nacional sobre o provável uso exagerado de estimulantes, comumente usados no tratamento de distúrbios neurológicos, como o Transtorno de Déficit de Atenção/Hiperatividade (TDAH), em crianças menores de 4 anos. Hillary Clinton revelou que o número de receitas de Ritalina (nome comercial do metilfenidato) havia duplicado ou triplicado em crianças em idade pré-escolar. Com isso semeou a dúvida sobre a possibilidade de essa substância estar sendo usado para aliviar sintomas próprios da infância em crianças que nada mais precisam que o carinho de seus pais” (Reportagem de Alejandra Matus, do jornal El Nuevo Herald, Miami, USA, em 03 de abril de 2000, baseada em entrevista com a Dra. Vera Joffe, psicóloga brasileira radicada nos Estados Unidos há 25 anos.)
+
+A Ritalina é administrada em sua forma racêmica, entretanto somente um dos isômeros ópticos possui atividade contra Transtorno de Déficit de Atenção/Hiperatividade (TDAH). Assinale a alternativa que corresponde ao número correto de carbonos assimétricos presentes na Ritalina em sua forma livre.
+
+[Figura: Estrutura da Ritalina em sua forma livre.]
+Arquivo: figures/furg-2003-quimica-q35-fig1.webp
+
+A) um
+B) três
+C) seis
+D) quatro
+E) dois
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q35
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 36
+
+Embora a água seja considerada um bom solvente, por si só não consegue remover certos tipos de sujeira, como, por exemplo, restos de óleo em um prato. O sabão, porém, exerce um papel importantíssimo na limpeza pois consegue dissolver substâncias de diferentes polaridades. 
+
+Analisando a estrutura química do sabão pode-se afirmar que:
+
+I — A estrutura do sabão apresenta somente ligações covalentes.
+
+II — A estrutura do sabão apresenta ligações covalentes e iônicas.
+
+III — A estrutura do sabão apresenta somente ligações iônicas.
+
+IV — A estrutura do sabão apresenta uma cadeia carbônica apolar e uma extremidade polar. Quais afirmativas são corretas?
+
+[Figura: Fórmula estrutural do sabão apresentado no enunciado.]
+Arquivo: figures/furg-2003-quimica-q36-fig1.webp
+
+A) Apenas I e
+
+II.
+B) Apenas II e
+
+III.
+C) Apenas II e
+
+IV.
+D) Apenas I, II e
+
+III.
+E) Apenas III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q36
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 37
+
+A maconha, denominada cientificamente Cannabis sativa, é uma das drogas ilegais mais difundidas. O principal componente ativo da maconha é o tetra-hidrocanabinol (THC), um composto orgânico que está presente na droga em concentração de 2-3% em massa.
+
+Na estrutura do tetra-hidrocanabinol (THC) estão presentes, dentre outras, as funções orgânicas:
+
+[Figura: Fórmula estrutural do tetra-hidrocanabinol (THC).]
+Arquivo: figures/furg-2003-quimica-q37-fig1.webp
+
+A) éster e cetona.
+B) éter e álcool.
+C) éster e fenol.
+D) aldeído e álcool.
+E) fenol e éter.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q37
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 38
+
+Analise o gráfico do ponto de ebulição de hidrocarbonetos de cadeia aberta normal e saturada, em função do número de carbonos presentes na molécula. Os estados físicos mostrados referem-se à temperatura de 25°C e pressão de 1atm. Assinale a alternativa correta para o estado físico dos hidrocarbonetos CH₃(CH₂)₄CH₃, CH₃(CH₂)₂CH₃ e CH₃(CH₂)₁₇CH₃, respectivamente, nas condições normais de temperatura e pressão.
+
+[Figura: Gráfico do ponto de ebulição dos hidrocarbonetos em função do número de carbonos, com regiões gasosa,líquida e sólida.]
+Arquivo: figures/furg-2003-quimica-q38-fig1.webp
+
+A) Sólido, gasoso, líquido.
+B) Gasoso, líquido, sólido.
+C) Líquido, líquido, sólido.
+D) Líquido, gasoso, sólido.
+E) Gasoso, gasoso, líquido.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q38
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 39
+
+Uma forma de utilizar o monóxido de carbono é através da reação desse composto com a água, produzindo o dióxido de carbono e o gás hidrogênio: CO(g) + H₂O(g) ⇌ CO₂(g) + H₂(g) Essa reação constitui a chamada reação de “Shift”. O hidrogênio produzido é passível de ser utilizado como combustível, ou na síntese de substâncias químicas hidrogenadas. Os calores-padrão de formação dos compostos envolvidos na reação de “Shift” são: ΔH₀ f do CO(g) = - 110,5 kJ.mol⁻¹ ΔH₀ f da H₂O(g) = - 241,8 kJ.mol⁻¹ ΔH₀ f do CO₂(g) = - 393,5 kJ.mol⁻¹ ΔH₀ f do H₂(g) = ZERO Com base nas informações acima, é correto afirmar que na reação de “Shift” em equilíbrio
+
+
+A) tanto a retirada de monóxido de carbono como o acréscimo de hidrogênio, deslocam o equilíbrio no sentido endotérmico.
+B) o acréscimo de monóxido de carbono e o acréscimo de água deslocam o equilíbrio no sentido endotérmico.
+C) o acréscimo de hidrogênio e o acréscimo de dióxido de carbono deslocam o equilíbrio no sentido exotérmico.
+D) tanto a retirada de monóxido de carbono como o acréscimo de dióxido de carbono deslocam o equilíbrio no sentido exotérmico.
+E) tanto a retirada de hidrogênio como o acréscimo de água deslocam o equilíbrio no sentido endotérmico.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q39
+
+========================================================================
+FURG 2003 — Química — Vestibular regular — Questão 40
+
+As cadeias carbônicas dos compostos orgânicos classificam-se quanto ao tipo de ligação entre carbonos, quanto à classificação dos carbonos, quanto à presença de heteroátomo entre dois carbonos, dentre outras classificações. Assim, é correto afirmar que as cadeias abertas ou acíclicas saturadas possuem
+
+
+A) ligações simples entre todos os átomos da molécula.
+B) pelo menos uma ligação dupla ou tripla entre carbonos.
+C) apenas ligações simples entre carbonos.
+D) apenas carbono primário e secundário.
+E) pelo menos duas extremidades e não possuem heteroátomo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-quimica
+Identificador: furg-2003-quimica-q40
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 31
+
+Numa aula de Ciências da 5ª série do Ensino Fundamental, a professora afirma para seus alunos: “Os peixes respiram o oxigênio da água”. Para a apropriação do significado dessa informação, é importante a clareza quanto a alguns conceitos fundamentais da Química. A respeito do assunto NÃO é correto afirmar que
+
+
+A) o gás oxigênio dissolvido na água é a substância que possibilita a respiração dos peixes.
+B) a água é uma substância composta, constituída pela mistura de duas outras substâncias: o hidrogênio e o oxigênio.
+C) os gases hidrogênio e oxigênio reagem entre si, sob determinadas condições, formando a substância água.
+D) a água decompõe-se por eletrólise, formando os gases oxigênio e hidrogênio.
+E) a molécula da água, uma substância composta, é constituída pelos elementos hidrogênio e oxigênio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q31
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 32
+
+Os fungos, bactérias e insetos que atacam as plantas não podem viver em um meio alcalino. Por isso, as árvores das praças são "pintadas" com determinada substância pouco solúvel em água, evitando-se o ataque de uma grande quantidade de pragas terrestres que não conseguem "escalar" o tronco. Essa substância pode ser
+
+
+A) Cloreto de Cálcio, CaCl₂.
+B) Hidróxido de Amônio, NH₄OH.
+C) Hidróxido de Cálcio, Ca(OH)₂.
+D) Hidrogenocarbonato de Sódio, NaHCO₃.
+E) Sulfato de Cálcio, CaSO₄. MI
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q32
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 33
+
+“Bagdá já viu muitos exércitos baterem à sua porta desde que a antiga capital da dinastia Abbasid foi fundada em 762 d.C. Mas nunca antes a herança arqueológica e cultural havia sido uma perda de guerra.” (ZH – Caderno Eureka, 21/04/2003, p. 3) As idades de algumas das relíquias arqueológicas que “desapareceram” durante a guerra do Iraque, dilapidando uma parte da História, foram determinadas através do carbono 14. É correto afirmar que o carbono 14
+
+
+A) possui um núcleo mais pesado que difere do carbono 12 em apenas 2 elétrons.
+B) é uma variedade alotrópica do elemento carbono, muito comum na antiguidade.
+C) é um elemento pouco reativo, devido à presença de 8 nêutrons no núcleo.
+D) constitui uma pequena porcentagem de todo o carbono existente na natureza.
+E) tem larga aplicação na produção do papiro, dando-lhe o aspecto envelhecido.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q33
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 34
+
+No mercado da reciclagem do lixo no Brasil, responsável pela sobrevivência de uma legião de catadores, vítimas da exclusão social, o alumínio é um dos materiais mais valorizados. A reciclagem desse metal representa a economia de enorme quantidade de energia que seria consumida se o processo de obtenção fosse a partir do minério. Em relação ao alumínio, é correto afirmar que
+
+
+A) na reação de redução para obtenção do metal, cada átomo perde 3 elétrons.
+B) seu cátion Al³⁺ possui um total de 10 elétrons distribuídos na eletrosfera.
+C) a energia para acrescentar-lhe 1 elétron é chamada de energia de ionização.
+D) a formação do cátion Al³⁺ aumenta sua massa atômica.
+E) no óxido Al₂O₃ a ligação metálica envolve, ao todo, 6 pares de elétrons.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q34
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 35
+
+Quando se acrescenta uma pitada de sal de cozinha (NaCl) à panela em que se cozinham tomates para fazer molho, o cozimento é
+
+
+A) acelerado, pois o ponto de ebulição da solução aumenta.
+B) retardado, pois o ponto de congelamento da água pura diminui.
+C) acelerado, pois o NaCl sofre hidrólise e ataca o tecido vegetal.
+D) retardado, já que o NaCl por osmose ingressa nas células vegetais.
+E) acelerado, pois o NaCl é volatilizado junto com a água do alimento.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q35
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 36
+
+Observe o gráfico a seguir e assinale a alternativa correta.
+
+[Figura: Concentração molar de A em função do tempo, em segundos.]
+Arquivo: figures/furg-2004-quimica-q36-fig1.webp
+
+A) A rapidez com que a substância “A” é consumida, é constante ao longo do tempo.
+B) A quantidade de matéria de “A” produzida no intervalo de 0 a 2000s é maior do que a quantidade de matéria de “A” produzida no intervalo de 6000s a 8000s.
+C) A concentração de “A” no tempo igual a 8000s é 25% da concentração de “A” no tempo inicial.
+D) A reação em que “A” é consumida é obrigatoriamente exotérmica.
+E) A partir dos 6000s a conversão de “A” em produtos alcança o equilíbrio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q36
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 37
+
+Observe o gráfico a seguir, que representa o pH (a 25°C), resultante da mistura de volumes iguais de várias soluções aquosas com concentrações diferentes de um mesmo ácido forte e várias soluções aquosas de um hidróxido forte. Todas as soluções alcalinas possuem exatamente a mesma concentração do hidróxido e têm o mesmo volume que as soluções do ácido. Analise as afirmações abaixo e assinale a
+
+I — NCOR RET A.
+
+[Figura: pH a 25°C em função da concentração do ácido, após mistura com a solução de hidróxido.]
+Arquivo: figures/furg-2004-quimica-q37-fig1.webp
+
+A) Na neutralização da solução ácida de concentração 0,075 mol/L há um excesso de 0,025 mol/L de ácido em relação ao hidróxido.
+B) A concentração das soluções do hidróxido é de 0,05 mol/L.
+C) A concentração hidrogeniônica em pH igual a 7 é igual à concentração de íons hidroxila.
+D) Um pequeno excesso da solução ácida, em relação à solução alcalina provoca uma grande variação no pH.
+E) No volume de 1L da solução de hidróxido, existem aproximadamente 30,1x10²³ íons hidroxila.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q37
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 38
+
+A hipoxia, ou "mal das alturas", é a deficiência de oxigênio nos tecidos do organismo humano, cujos sintomas são tontura, vômito e cansaço. O motivo é que em grandes altitudes a concentração de oxigênio na atmosfera é menor do que no nível do mar, e a concentração do oxigênio no sangue baixa. A hemoglobina oxigenada (HbO₂) tem a função de carregar o oxigênio até os tecidos. Considerando a reação reversível entre a hemoglobina (Hb) do sangue e o gás oxigênio como Hb(aq) + O₂(g) ⇌ HbO₂(aq) , é correto afirmar que uma forma de o organismo se adaptar a hipoxia é
+
+
+A) produzir mais hemoglobina, o que deslocará o equilíbrio no sentido do transporte do oxigênio para os tecidos.
+B) diminuir a concentração de hemoglobina no sangue, o que produzirá mais oxigênio gasoso disponível no sangue para absorção pelos tecidos.
+C) consumir menos oxigênio, o que produzirá mais hemoglobina oxigenada.
+D) produzir oxigênio através da combustão da glicose nas células dos tecidos.
+E) reduzir o oxigênio consumido, através do aumento do consumo da hemoglobina livre.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q38
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 39
+
+Com o título “Sancionada a lei do churrasco”, em 22 julho deste ano, uma matéria do jornal Zero Hora divulgou o reconhecimento, por lei, do churrasco como “prato típico” do Estado, e do chimarrão como “bebida símbolo”. Em relação à forma ideal de preparar a carne, ZH destaca a seguinte informação do texto da lei: “Entende-se por churrasco à gaúcha a carne temperada com sal grosso, levada a assar ao calor produzido por brasas de madeira carbonizada ou in natura, em espetos ou disposta em grelha, e sob controle manual.” (p. 33) Do ponto de vista da Química, em relação ao “calor produzido por brasas de madeira carbonizada”, se representado pela reação C(s) + O₂(g) → CO₂(g) ΔH° = -393,5 kJ /mol , é correto afirmar que
+
+
+A) cada grama de carbono absorve, da chama, aproximadamente 32,8 kJ de calor.
+B) cerca de 3279 kJ são liberados na combustão total de 100 g de carbono.
+C) o calor produzido a partir da queima de 3 kg de carvão é cerca de 98 kJ.
+D) a reação endotérmica libera cerca de 393,5 kJ para cada mol de carne assada.
+E) 120 g de carbono absorvem 3935 kJ em quantidade de calor.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q39
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 40
+
+Em uma residência, uma tubulação de água quente construída de cobre metálico foi fixada através de braçadeiras de um material metálico com características muito semelhantes ao ferro metálico. Consultando uma tabela de potenciais-padrão de redução, observam-se os seguintes dados: Cu²⁺(aq) + 2 elétrons ⇌ Cu⁰(s)   E° = +0,34 V
+Fe²⁺(aq) + 2 elétrons ⇌ Fe⁰(s)   E° = −0,44 V
+
+Assim, é correto afirmar que essa instalação de água quente
+
+
+A) não terá problemas de corrosão, pois o par galvânico Cobre/Ferro forma uma célula eletroquímica cuja reação não é espontânea.
+B) não terá problemas de corrosão, pois a célula eletroquímica formada tem potencial elétrico de – 0,10
+
+V.
+C) terá problemas de corrosão, e vazamento de água quente, pois o cobre metálico irá agir como ânodo da célula eletroquímica sendo solubilizado.
+D) terá problemas de corrosão, mas não haverá vazamento de água quente pois o cano de cobre será cátodo da célula eletroquímica.
+E) terá problemas de corrosão, e o potencial padrão da célula eletroquímica formada será de + 0,78V, em que o cobre será o ânodo da mesma.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q40
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 41
+
+O glutamato monossódico vem sendo usado há muito tempo para acentuar o sabor de uma série de produtos alimentícios. Esse sal orgânico é muito utilizado na cozinha japonesa e chinesa. Fórmula: NaOOC—CH₂—CH₂—CH(NH₂)—COOH (glutamato monossódico).
+
+A respeito do glutamato monossódico pode-se afirmar que
+
+I) sua estrutura apresenta ligações covalentes e iônicas.
+
+II) dentre outras, em sua estrutura aparecem as funções amina e álcool.
+
+III) possui somente átomos com cargas parciais positivas e negativas.
+
+IV) apresenta isomeria ótica.
+
+V) apresenta isomeria geométrica e átomos de carbono com hibridação sp². Assinale a alternativa que indica as afirmativas corretas.
+
+
+A) I , II e
+
+V.
+B) II, III e
+
+IV.
+C) III, IV e
+
+V.
+D) I e
+
+IV.
+E) I, III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q41
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 42
+
+Selecione a alternativa que classifica as moléculas de metanol, metanal e dióxido de carbono, respectivamente, de acordo com a hibridação dos átomos de carbono.
+
+
+A) sp², sp³, sp.
+B) sp², sp², sp.
+C) sp³, sp², sp.
+D) sp³, sp, sp².
+E) sp³, sp², sp².
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q42
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 43
+
+As seguintes fórmulas mostradas abaixo representam alguns dos ácidos carboxílicos mais abundantes em gorduras animais, óleos vegetais e membranas biológicas. Por terem sido isolados, pela primeira vez, de gorduras animais e vegetais, estes são chamados de ácidos graxos, cujas famílias mais importantes para a saúde humana são os ácidos Ômega-3, Ômega-6 e Ômega-9.
+
+I) CH₃(CH₂)₇CH=CH(CH₂)₇CO₂H, ácido oleico (Ômega 9)
+
+II) CH₃(CH₂)₄CH=CHCH₂CH=CH(CH₂)₇CO₂H, ácido linoleico (Ômega 6)
+
+III) CH₃CH₂(CH=CHCH₂)₃(CH₂)₆CO₂H, ácido linolênico (Ômega 3)
+
+IV) CH₃(CH₂)₃(CH₂CH=CH)₄(CH₂)₃CO₂H, ácido aracdônico (Ômega 6)
+
+Assinale a alternativa que mostra o número possível de isômeros geométricos para cada ácido graxo, de acordo com ordem acima.
+
+
+A) dois, quatro, dois, dois
+B) nove, seis, três, seis
+C) dois, quatro, seis, oito
+D) um, dois, três, quatro
+E) dois, seis, um, oito
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q43
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 44
+
+Dados levantados abrangendo cerca de 47.000 estudantes em 17 cidades do Brasil, de escolas públicas ou particulares, apontaram que as drogas mais utilizadas (exceto álcool e tabaco) são os solventes ou inalantes (17% ). Essas substâncias orgânicas voláteis como o tolueno e clorofórmio, entre outros, ao se evaporarem à temperatura ambiente, são inalados voluntariamente quando meninos de rua cheiram cola de sapateiro e loló, por exemplo. Deduzimos, então, que os inalantes podem ser a porta de entrada para o consumo de outras drogas entre nossos jovens. O tolueno e o clorofórmio também são conhecidos como
+
+
+A) xilol e diclorometano.
+B) metilbenzeno e éter etílico.
+C) toluol e tetracloreto de carbono.
+D) benzeno e triclorometano.
+E) metilbenzeno e triclorometano.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q44
+
+========================================================================
+FURG 2004 — Química — Vestibular regular — Questão 45
+
+O glicerol (1,2,3-propanotriol, glicerina), subproduto das reações de formação de sabão e biodiesel, é empregado na indústria como umectante, aditivo capaz de evitar o ressecamento de certos alimentos. Estrutura do glicerol: HO—CH₂—CH(OH)—CH₂—OH.
+
+Considerando-se a estrutura do glicerol, podemos concluir corretamente que sua capacidade de reter água está relacionada à
+
+
+A) formação de íons H⁺.
+B) formação de íons HO⁻.
+C) estrutura orgânica, de cadeia longa.
+D) sua alta volatilidade.
+E) formação de ligações de hidrogênio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-quimica
+Identificador: furg-2004-quimica-q45
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 31
+
+Ao borbulhar CO₂(g) em um becker contendo água pura, obtiveram-se os seguintes valores de pH da solução, relativamente ao tempo e a duas diferentes temperaturas.
+
+A equação considerada é representada por
+CO₂(g) + H₂O(l) ⇌ H₂CO₃(aq) ⇌ H⁺(aq) + HCO₃⁻(aq)
+
+T = 0°C | T = 25°C
+Tempo (min) | pH a 0°C | pH a 25°C
+0 | 7,0 | 7,0
+3 | 5,5 | 6,0
+5 | 3,6 | 4,1
+9 | 3,6 | 4,1
+14 | 3,6 | 4,1
+
+Considerando o equilíbrio acima, analise as afirmativas:
+
+I) A reação é endotérmica.
+
+II) A reação é exotérmica.
+
+III) A solução final é alcalina.
+
+IV) A adição de OH⁻ deslocará o equilíbrio para a esquerda.
+
+Assinale a alternativa que apresenta a(s) afirmativa(s) correta(s).
+
+
+A) Apenas
+
+I.
+B) II e
+
+IV.
+C) Apenas
+
+II.
+D) Apenas
+
+III.
+E) Apenas
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q31
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 32
+
+A cinética da reação: 2 A + 2 B → C foi estudada sendo determinada a velocidade inicial da produção de C para misturas de várias composições, como está indicado na tabela abaixo, a 25°C. Experimento | Concentração inicial [A] (mol L⁻¹) | Concentração inicial [B] (mol L⁻¹) | Velocidade inicial de formação de C (mol L⁻¹ h⁻¹)
+1 | 1 × 10⁻³ | 1 × 10⁻³ | 1 × 10⁻³
+2 | 2 × 10⁻³ | 1 × 10⁻³ | 4 × 10⁻³
+3 | 2 × 10⁻³ | 2 × 10⁻³ | 8 × 10⁻³
+
+Se a lei de velocidade é dada por v = k [A]ᵃ [B]ᵇ, então, os valores dos coeficientes “a” e “b” são, respectivamente:
+
+
+A) 2 e 1.
+B) 1 e 1.
+C) 2 e 2.
+D) -1 e 1.
+E) -1 e 2.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q32
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 33
+
+Considerando-se que o botijão de gás de cozinha de 13 kg seja constituído por propano, C₃H₈, pode-se afirmar que o volume correspondente do gás medido na CNTP será aproximadamente de
+
+
+A) 1300 L.
+B) 5412 L.
+C) 7354 L.
+D) 3500 L.
+E) 6618 L.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q33
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 34
+
+Na reação de neutralização entre um ácido forte e uma base forte, representada pela equação abaixo, são liberadas 13,8 kcal mol⁻¹. H⁺(aq) + OH⁻(aq) → H₂O(l) Quando 200 mL de ácido clorídrico 1 M forem misturados com 10 mL de hidróxido de sódio 3 M a 25°C, pode-se afirmar que o calor liberado pela reação de neutralização será aproximadamente de
+
+
+A) - 3,17 kcal.
+B) - 0,41 kcal.
+C) - 2,35 kcal.
+D) - 13,8 kcal.
+E) - 2,76 kcal.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q34
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 35
+
+Um grave problema ambiental ainda negligenciado pela sociedade refere-se à poluição causada pelo descarte nos lixões de pilhas usadas dos mais variados tipos. Um dos metais pesados encontrados nas pilhas secas (comuns) é o zinco metálico, ânodo desta fonte de energia e cuja reação de oxidação é: Zn → Zn²⁺ + 2 elétrons Quando uma pilha seca se descarrega durante 67 min fornecendo uma corrente elétrica de 0,24 A, o consumo de zinco, devido à reação anódica, será aproximadamente de (Dado: 1 Faraday = 96500 Coulomb)
+
+
+A) 0,66 g.
+B) 0,85 g.
+C) 1,96 g.
+D) 0,33 g.
+E) 0,16 g.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q35
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 36
+
+A efervescência de um produto antiácido em água ocorre devido à grande produção de gás carbônico gerado pela reação entre o bicarbonato de sódio e o ácido cítrico (C₆H₈O₇), um tri-ácido carboxílico, segundo a equação abaixo: 3 NaHCO₃(s) + 1 C₆H₈O₇(s) → 1 C₆H₅O₇Na₃(aq) + 3 CO₂(g) + 3 H₂O(l) (em H₂O)
+
+Dois produtos utilizados como antiácidos efervescentes apresentam a seguinte composição em termos de bicarbonato de sódio e ácido cítrico: Produto | Constituinte | Quantidade (g) | Quantidade (mol)
+A | Bicarbonato de sódio | 1,625 | 19,3 × 10⁻³
+A | Ácido cítrico | 0,965 | 5,0 × 10⁻³
+B | Bicarbonato de sódio | 2,310 | 27,5 × 10⁻³
+B | Ácido cítrico | 2,190 | 11,4 × 10⁻³
+
+Sobre esses dados são feitas as seguintes afirmações:
+
+I – Quando o produto A for adicionado à água, todo o bicarbonato presente será consumido.
+
+II – Quando o produto B for adicionado à água, todo o bicarbonato presente será consumido.
+
+III – Entre os produtos A e B, aquele que produzirá maior quantidade de CO₂, quando adicionado separadamente à água, será o produto B.
+
+IV – O produto A, quando adicionado à água, produzirá um volume total de CO₂, que, medido nas CNTP, será de 0,112 L. Marque a alternativa que apresenta todas as afirmativas corretas.
+
+
+A) I, II e
+
+IV.
+B) I e
+
+III.
+C) III e
+
+IV.
+D) II e
+
+III.
+E) I, III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q36
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 37
+
+Foi verificado que 5 cm³ de nitrogênio gasoso reagem com 10 cm³ de oxigênio gasoso, formando 10 cm³ de um único produto gasoso. Os volumes foram medidos nas mesmas condições de temperatura e pressão. Pode-se afirmar que a alternativa que melhor representa a reação em questão é:
+
+
+A) N²⁺ O₂ → 2 NO.
+B) 2 N²⁺ O₂ → 2 N₂O.
+C) N²⁺ 2 O₂ → 2 NO₂.
+D) 2 N²⁺ 5 O₂ → 2 N₂O₅.
+E) N²⁺ 2 O₂ → N₂O₄.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q37
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 38
+
+Abaixo são apresentados quatro elementos químicos com seus respectivos números atômicos. 1) Na (Z = 11); 2) S (Z = 16); 3) Al (Z = 13); 4) N (Z = 7). Analise as afirmativas abaixo:
+
+I – A ligação entre 1 e 2 será iônica.
+
+II – A ligação entre 4 e 4 será metálica.
+
+III – A ligação entre 3 e 3 será metálica.
+
+IV – A ligação entre 1 e 4 será covalente. Assinale a alternativa que apresenta as afirmações corretas.
+
+
+A) I e
+
+III.
+B) II e
+
+IV.
+C) I e
+
+IV.
+D) II e
+
+III.
+E) III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q38
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 39
+
+Os íons A²⁺, B¹⁻, C³⁺, D²⁻ e E¹⁺ são isoeletrônicos. A ordem crescente correta, em relação aos seus números atômicos, é
+
+
+A) C³⁺ < A²⁺ < E¹⁺ < B¹⁻ < D²⁻.
+B) D²⁻ < B¹⁻ < E¹⁺ < A²⁺ < C³⁺.
+C) D²⁻ < B¹⁻ < C³⁺ < A²⁺ < E¹⁺.
+D) B¹⁻ < D²⁻ < E¹⁺ < A²⁺ < C³⁺.
+E) D²⁻ < C³⁺ < A²⁺ < B¹⁻ < E¹⁺.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q39
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 40
+
+A estrutura a seguir representa o farnaseno, um trieno, terpeno encontrado no óleo de ervacidreira. Quando tratado com três moles de hidrogênio (H₂) em presença do catalisador paládio, tem-se a formação do alcano correspondente.
+
+O nome IUPAC do reagente e do produto são, respectivamente:
+
+[Figura: Fórmula estrutural do farnaseno apresentado no enunciado.]
+Arquivo: figures/furg-2005-quimica-q40-fig1.webp
+
+A) 2,6,10-trimetil-1,6,10-dodecatrieno e 2,6,10-trimetildecano.
+B) 3,7,11-trimetil-2,6,11-decatrieno e 3,7,11-trimetildecano.
+C) 3,7,11-trimetil-2,6,11-decatrieno e 2,6,11-trimetildecano.
+D) 3,7,11-trimetil-2,6,11-dodecatrieno e 3,7,11-trimetildodecano.
+E) 2,6,10-trimetil-1,6,10-dodecatrieno e 2,6,10-trimetildodecano.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q40
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 41
+
+De acordo com o tipo de orbital híbrido que participa na formação da ligação química, pode-se ter vários tipos de ligações covalentes. Com base nessa informação, assinale a alternativa correta.
+
+
+A) Todas as ligações sigma entre os átomos de carbono do 1,3 - butadieno são do tipo sp²-sp².
+B) As ligações entre os átomos de carbono e hidrogênio no benzeno são do tipo sigma sp-s.
+C) As ligações entre os átomos de carbono e hidrogênio no 1,3 - butadieno são do tipo sigma sp³-s e sp²-s.
+D) Na molécula do etino existem duas ligações entre os átomos de carbono do tipo sigma sp-sp.
+E) Na molécula do etino não existem ligações do tipo sigma entre os átomos de carbono, apenas duas ligações do tipo pi.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q41
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 42
+
+Muitos compostos orgânicos possuem atividade biológica e/ou farmacológica como, por exemplo, a tetraciclina, que é utilizada como antibiótico. Na maioria das vezes, esses compostos apresentam várias funções orgânicas na sua estrutura. Com base na estrutura da tetraciclina abaixo, assinale a alternativa que apresenta corretamente funções presentes nesta molécula.
+
+[Figura: Fórmula estrutural da tetraciclina.]
+Arquivo: figures/furg-2005-quimica-q42-fig1.webp
+
+A) fenol, cetona, amina, éter
+B) enol, amida, éster, amina
+C) álcool, cetona, enol, amina
+D) fenol, amina, amida, enol
+E) álcool, amina, éster, cetona
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q42
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 43
+
+A fórmula C₄H₈O pode representar dois isômeros funcionais como:
+
+
+A) metoxipropano e 1-butanol.
+B) butanona e butanal.
+C) 1-butanol e 2-butanol.
+D) 2-butanol e butanona.
+E) etoxietano e butanal.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q43
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 44
+
+Assinale a alternativa que apresenta os produtos corretos esperados na oxidação enérgica (solução ácida concentrada de KMnO₄ sob aquecimento), do 2,4-dimetil-1-penteno.
+
+
+A) ácido 2-metilpropanóico, gás carbônico e etanal
+B) 4-metil-2-pentanona e formaldeído
+C) 2-metil-4-pentanona e água
+D) propanona e ácido 2-metilpropanóico
+E) gás carbônico, 4-metil-2-pentanona e água
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q44
+
+========================================================================
+FURG 2005 — Química — Vestibular regular — Questão 45
+
+Assinale a alternativa que apresenta o número correto de isômeros opticamente ativos apresentados pela molécula de 1,2,3,4-tetrahidróxibutano.
+
+
+A) 0
+B) 4
+C) 3
+D) 2
+E) 1
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-quimica
+Identificador: furg-2005-quimica-q45
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 31
+
+Os isômeros do limoneno, representados pelas estruturas abaixo, possuem fragrâncias distintas. O isômero A ocorre no fruto dos pinheiros e tem odor semelhante ao da terebintina. O isômero B é responsável pelo odor característico das laranjas.
+
+Sobre as moléculas A e B é correto dizer que são
+
+[Figura: Estruturas dos isômeros A e B do limoneno com ligações estereoespecíficas.]
+Arquivo: figures/furg-2006-quimica-q31-fig1.webp
+
+A) Enantiômeros.
+B) Isômeros de posição.
+C) Isômeros geométricos.
+D) Isômeros de função.
+E) Diasteroisômeros.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q31
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 32
+
+A fórmula molecular dos éteres simples e dos álcoois, ambos de cadeia acíclica, é idêntica e pode ser representada genericamente por CₙH₂ₙ₊₂O. Entretanto os pontos de ebulição dos éteres são muito menores do que o dos álcoois correspondentes. Esse comportamento pode ser explicado devido à
+
+
+A) presença de pontes de hidrogênio nos éteres.
+B) maior reatividade dos álcoois.
+C) ausência de pontes de hidrogênio nos álcoois.
+D) maior reatividade dos éteres.
+E) ausência de pontes de hidrogênio nos éteres.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q32
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 33
+
+A borracha natural é um polímero de isopreno que possui a seguinte estrutura
+
+Existe um outro produto natural chamado guta-percha, o qual é um isômero geométrico da borracha natural, mas não tem uso como elastômero. A guta-percha é:
+
+[Figura: Estrutura do polímero de isopreno, com disposição das ligações duplas e grupos substituintes.]
+Arquivo: figures/furg-2006-quimica-q33-fig1.webp
+
+A) um enantiômero da borracha natural.
+B) um isômero trans da borracha natural.
+C) um isômero cis da borracha natural.
+D) um monômero.
+E) um isômero de posição da borracha natural.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q33
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 34
+
+O Biodiesel foi introduzido na matriz energética brasileira através da Lei n° 11.097 de 01/2005 a qual regulamenta sua incorporação ao diesel nos percentuais de 2% a partir de 2008 e de 5% a partir de 2013. O Biodiesel pode ser produzido através da seguinte reação:
+
+A alternativa que possui corretamente todos os reagentes e produtos da reação acima é
+
+[Figura: Esquema da reação de produção de biodiesel com reagentes e produtos estruturais.]
+Arquivo: figures/furg-2006-quimica-q34-fig1.webp
+
+A) glicerol, etanol, ácido graxo, carboidrato.
+B) glicerol, ácido graxo, etanol, triglicerídeo.
+C) ácido carboxílico, éster etílico, metanol, glicerol.
+D) triglicerídeo, álcool etílico, alcanoato de etila, glicerol.
+E) triglicerídeo, álcool metílico, éster etílico, carboidrato.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q34
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 35
+
+O 2-metil-butanoato de hexila, é um composto que possui odor de morango. A hidrólise ácida desse composto leva à formação de uma molécula de ácido carboxílico e uma molécula de álcool. O álcool formado é
+
+
+A) 2-hexanol.
+B) 2-metil-1-butanol.
+C) 1-hexanol.
+D) 2-metil-1-hexanol.
+E) 1-butanol.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q35
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 36
+
+A água, o sal de cozinha e o butano (principal componente do gás de cozinha) são substâncias químicas que utilizamos diariamente para o preparo de alimentos. Esses compostos têm suas estruturas constituídas, respectivamente, por ligações do tipo
+
+
+A) iônicas, iônicas e covalentes.
+B) covalentes, covalentes e iônicas.
+C) covalentes, covalentes e covalentes.
+D) iônicas, iônicas e iônicas.
+E) covalentes, iônicas e covalentes.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q36
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 37
+
+Considere o equilíbrio de dissociação, em solução aquosa, do indicador ácido representado genericamente como HIn, o qual é um ácido fraco de Brönsted-Lowry: HIn(aq) (Cor A) ⇌ H⁺(aq) + In⁻(aq) (Cor B)
+
+Quando essa solução for acidificada é correto afirmar que
+
+
+A) predomina a cor A, pois com adição de íons H⁺(aq) a dissociação é reprimida.
+B) predomina a cor B, pois com adição de íons H⁺(aq) a dissociação é favorecida.
+C) não haverá deslocamento do equilíbrio.
+D) predomina a cor A, pois com adição de íons H⁺(aq) a dissociação é favorecida.
+E) predomina a cor B, pois com adição de íons H⁺(aq) a concentração de In⁻(aq) aumenta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q37
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 38
+
+O hidróxido de sódio é preparado comercialmente pela reação de carbonato de sódio com hidróxido de cálcio, representada pela equação química abaixo, a qual não se encontra balanceada. Quantos gramas, aproximadamente, de hidróxido de sódio podem ser obtidos tratando-se 1 kg de carbonato de sódio com hidróxido de cálcio? Na₂CO₃ + Ca(OH)₂ → NaOH + CaCO₃
+
+
+A) 705 g.
+B) 75,5 g.
+C) 755 g.
+D) 0,755 g.
+E) 377,5 g.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q38
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 39
+
+Considere um balão muito flexível que contém um gás ideal. O volume inicial é 1,2 L, a pressão é 1 atm e a temperatura é 300 K. Esse balão é solto e atinge uma altura em que a temperatura é de 250 K e a pressão é de 3×10⁻³ atm. Qual é o volume final do balão, em L, quando se encontra nessas condições?
+
+
+A) 16,5 L.
+B) 3,3 L.
+C) 66,6 L.
+D) 333,3 L.
+E) 33,3 L.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q39
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 40
+
+Um estudante quer preparar 1,0 L de solução aquosa 0,2 mol/L de ácido clorídrico. Partindo de uma solução de HCl cuja concentração é 438 g/L, qual o volume aproximado em mL que deve ser medido pelo estudante para preparar a solução?
+
+
+A) 166 mL.
+B) 16,6 mL.
+C) 3,3 mL.
+D) 33 mL.
+E) 1,66 mL.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q40
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 41
+
+No gráfico a seguir, estão representadas as curvas correspondentes à variação da pressão de vapor em função da temperatura de três soluções aquosas diluídas de K₂SO₄, NaCl e Na₃PO₄, todas com a mesma concentração em mol/L. Sabendo que as propriedades coligativas dependem do número de partículas existentes na solução e considerando a dissociação completa dos sólidos iônicos em água, pode-se afirmar que as curvas I, II e III correspondem, respectivamente, às soluções aquosas de
+
+[Figura: Curvas I,II e III de pressão de vapor em função da temperatura.]
+Arquivo: figures/furg-2006-quimica-q41-fig1.webp
+
+A) K₂SO₄, Na₃PO₄ e NaCl.
+B) Na₃PO₄, K₂SO₄ e NaCl.
+C) NaCl, K₂SO₄ e Na₃PO₄.
+D) K₂SO₄, NaCl e Na₃PO₄.
+E) NaCl, Na₃PO₄ e K₂SO₄.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q41
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 42
+
+A inversão da sacarose à temperatura de 25 °C ocorre com uma velocidade (rapidez) de reação igual a “v” e depende do pH. Os dados obtidos nos instantes iniciais da reação, em dois experimentos, são mostrados na tabela abaixo: Experimento | pH | [sacarose] (mol L⁻¹) | Velocidade de reação (mol L⁻¹ s⁻¹)
+1 | 5 | 0,1 | v₁
+2 | 4 | 0,1 | v₂
+
+Sabe-se que a lei de velocidade para a reação é expressa por: v = k · [sacarose]¹ · [H⁺]¹ Onde k é a constante de velocidade e depende somente da temperatura. Com base nesses dados, o valor correto da razão v₁/v₂ é
+
+
+A) 0,02.
+B) 0,1.
+C) 1.
+D) 10.
+E) 0,01.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q42
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 43
+
+Uma pessoa toma no café da manhã aproximadamente 300 g de leite. Abaixo é mostrada a composição percentual em peso de alguns componentes do leite. Componente | Proteínas | Gorduras | Carboidratos
+% em peso | 3,0 | 4,0 | 5,0
+
+Sabendo-se que cada grama de carboidrato, gordura e proteína, ao serem oxidados no organismo liberam, respectivamente, 4 kcal, 9 kcal e 4 kcal, a alternativa que exprime a quantidade correta de kcal consumidas por esta pessoa, considerando apenas estes componentes, ao ingerir esta quantidade de leite é
+
+
+A) 237 kcal.
+B) 48 kcal.
+C) 198 kcal.
+D) 204 kcal.
+E) 170 kcal.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q43
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 44
+
+Faz-se passar nitrogênio e hidrogênio na relação molar de 1:3 por uma espiral de ferro submersa em um banho mantido à temperatura constante. A referida espiral é recoberta com ferro em pó finamente dividido, o qual atua como catalisador na reação de produção de amônia. Em relação ao equilíbrio representado pela equação abaixo, são feitas as seguintes afirmações:
+
+N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g)
+
+I) A presença do catalisador desloca o equilíbrio para direita, favorecendo a formação do produto.
+
+II) A presença do catalisador desloca o equilíbrio para esquerda, favorecendo os reagentes.
+
+III) A presença do catalisador não influencia na posição do equilíbrio.
+
+IV) A presença do catalisador faz com que o equilíbrio seja atingido mais rápido. Assinale a alternativa com a(s) afirmativa(s) correta(s).
+
+
+A) Somente
+
+III.
+B) I e
+
+IV.
+C) Somente
+
+II.
+D) Somente
+
+IV.
+E) III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q44
+
+========================================================================
+FURG 2006 — Química — Vestibular regular — Questão 45
+
+A equação abaixo mostra a reação de redução do orto-nitrofenol à orto-aminofenol através de eletrólise.
+
+orto-nitrofenol + 6 H⁺ + 6 e⁻ → orto-aminofenol + 2 H₂O
+
+Partindo-se de uma solução aquosa contendo 0,01 mol de orto-nitrofenol com massa molar de 139 g/mol e considerando-se as leis de Faraday, qual o tempo teórico aproximado para que ocorra a redução completa do orto-nitrofenol, com a aplicação de uma corrente de 3 A?
+
+[Figura: Equação estrutural da redução do orto-nitrofenol a orto-aminofenol.]
+Arquivo: figures/furg-2006-quimica-q45-fig1.webp
+
+A) 1930 s.
+B) 1600 s.
+C) 1895 s.
+D) 2400 s.
+E) 2015 s.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-quimica
+Identificador: furg-2006-quimica-q45
+
+========================================================================
+FURG 2007 — Química — Processo seletivo UAB — Questão 21
+
+A equação da reação de decomposição da nitroglicerina, não balanceada, é representada abaixo: C₃H₅(ONO₂)₃ (l) → CO₂ (g) + H₂O (g) + N₂ (g) + O₂ (g) Assinale a alternativa que indica a quantidade de matéria (número de mols) de O₂(g) formado na decomposição de 8 mol de C₃H₅(ONO₂)₃
+
+
+A) 2 mol
+B) 0,5 mol
+C) 0,25 mol
+D) 4 mol
+E) 8 mol
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-quimica
+Identificador: furg-2007-1-semestre-quimica-q21
+
+========================================================================
+FURG 2007 — Química — Processo seletivo UAB — Questão 22
+
+A massa de hidróxido de sódio necessária para preparar-se 200 mL de uma solução 1 M da base, supondo que o produto tenha 100% de pureza, é igual a
+
+
+A) 2 g
+B) 8 g
+C) 20 g
+D) 40 g
+E) 80 g
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-quimica
+Identificador: furg-2007-1-semestre-quimica-q22
+
+========================================================================
+FURG 2007 — Química — Processo seletivo UAB — Questão 23
+
+Considere a neutralização total nas reações propostas a seguir: HNO₃ + KOH →
+HCl + Ca(OH)₂ →
+H₂SO₄ + Mg(OH)₂ →
+H₃PO₄ + NaOH →
+
+ A alternativa que apresenta os sais obtidos em cada uma das reações, respectivamente, é
+
+
+A) Nitrato de potássio, hipoclorito de cálcio, sulfeto de magnésio, fosfato de sódio.
+B) Nitrito de potássio, cloreto de cálcio, sulfato de magnésio, hidrogeno fosfato de sódio.
+C) Nitrato de potássio, cloreto de cálcio, sulfato de magnésio, fosfato de sódio.
+D) Nitrito de potássio, perclorato de cálcio, sulfato de magnésio, fosfato de sódio.
+E) Nitrato de potássio, cloreto de cálcio, sulfito de magnésio, fosfito de sódio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-quimica
+Identificador: furg-2007-1-semestre-quimica-q23
+
+========================================================================
+FURG 2007 — Química — Processo seletivo UAB — Questão 24
+
+Um refrigerante contém água, gás carbônico, corantes, ácidos e diversas substâncias responsáveis pela aparência e pelo sabor. As pessoas costumam colocar uma colher no gargalo da garrafa com a intenção de evitar a perda de gás. Será que isso evita mesmo a perda de gás? José Atílio Vanin, do Instituto de Química da USP, responde: “Não evita!” Ele explica: “O gás do refrigerante é o gás carbônico. A 30 °C é possível dissolver cerca de 0,6 L desse gás em um litro de água pura; a 10 °C dissolve-se 1,2 L do gás por litro d’água; e 1,7 L a 0 °C. Assim, o que evita a perda do gás é o ato de colocar o refrigerante na geladeira. Não existe nenhum efeito físico-químico de superfície ligado à colher.” (Adaptado do livro “Interações e Transformações I” – GEPEQ / IQ-USP, 1998, p. 56). A compreensão do texto acima, em suas informações e significados do ponto de vista da Química, permite afirmar que:
+
+I – o refrigerante é, na verdade, uma solução aquosa resultante da mistura de várias substâncias.
+
+II – a introdução da colher no gargalo oferece uma superfície lisa que resiste à fuga do gás, aprisionando-o.
+
+III – fora da geladeira, quanto mais baixa a temperatura menor a perda do gás carbônico pelo gargalo da garrafa do refrigerante. Das afirmativas, somente está(ão) correta(s)
+
+
+A) I e
+
+II.
+B) II.
+C) III.
+D) I.
+E) I e
+
+III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-quimica
+Identificador: furg-2007-1-semestre-quimica-q24
+
+========================================================================
+FURG 2007 — Química — Processo seletivo UAB — Questão 25
+
+Em uma aula de laboratório, um estudante realizou queimas ao ar de três diferentes massas iniciais de “palhinhas de aço” (Fe). Algumas das massas, resultantes das queimas das “palhinhas”, ao final de cada experimento, foram reunidas na tabela a seguir. Experimento | Massa inicial (g) | Massa final (g)
+1 | 0,80 | 1,00
+2 | 0,95 | 1,16
+3 | 1,06 | 1,28
+
+Considerando os dados apresentados em relação aos experimentos, é correto afirmar que:
+
+
+A) a massa aumentou devido à incorporação do gás oxigênio ao produto final.
+B) o aumento da massa deve ser atribuído à sua transformação em energia.
+C) no experimento 1, a massa final deveria ser menor que 0,80 g.
+D) o ferro ficou mais pesado devido à perda de sua parte volátil (flogístico).
+E) houve erro na determinação da massa final, pois esta deveria ser igual à inicial.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-quimica
+Identificador: furg-2007-1-semestre-quimica-q25
+
+========================================================================
+FURG 2007 — Química — Processo seletivo UAB — Questão 26
+
+Uma substância sólida “A”, de alto ponto de fusão, é muito solúvel em um solvente “X”. O solvente “X” é imiscível com o CCl₄. Em relação a estas observações, podemos concluir que “A” e “X”, são, respectivamente, uma substância ________________ e um solvente _________________.
+
+
+A) molecular – apolar
+B) apolar – apolar
+C) iônica – polar
+D) iônica – apolar
+E) molecular - polar
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-quimica
+Identificador: furg-2007-1-semestre-quimica-q26
+
+========================================================================
+FURG 2007 — Química — Processo seletivo UAB — Questão 27
+
+O Biodiesel é um bio-combustível que será adicionado ao diesel de petróleo, visando à diminuição relativa nas emissões de gases relacionados ao efeito estufa. O Biodiesel pode ser obtido, em laboratório, através da reação representada pela seguinte equação:
+
+Triglicerídeo + 3 CH₃CH₂OH ⇌ 3 C₁₇H₃₅—C(=O)—O—CH₂CH₃ + Glicerol (catalisador H₂SO₄).
+
+Considerando a equação acima, analise as afirmativas.
+
+I. Essa é uma reação de substituição, e o ácido sulfúrico atua como catalisador.
+
+II. Essa é uma reação de adição, e o ácido sulfúrico atua como agente redutor.
+
+III. Obtém-se maior rendimento da reação direta aumentando-se a concentração do glicerol.
+
+IV. O triglicerídeo é um éster.
+
+A alternativa que apresenta as afirmativas corretas é
+
+[Figura: Esquema estrutural da reação entre triglicerídeo e etanol,com ácido sulfúrico,formando biodiesel e glicerol.]
+Arquivo: figures/furg-2007-1-semestre-quimica-q27-fig1.webp
+
+A) III e
+
+IV.
+B) I e
+
+IV.
+C) I e
+
+II.
+D) II e
+
+III.
+E) I e
+
+III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-quimica
+Identificador: furg-2007-1-semestre-quimica-q27
+
+========================================================================
+FURG 2007 — Química — Processo seletivo UAB — Questão 28
+
+Os produtos da adição de bromo ao 1-buteno e ao 2-buteno são respectivamente
+
+
+A) 2,3-dibromobuteno e 2,4-dibromobuteno.
+B) 1,2-dibromobuteno e 2,2-dibromobuteno.
+C) 1,3-dibromobutano e 1,2-dibromobutano.
+D) 1,2-dibromobutano e 2,3-dibromobutano.
+E) 1,1-dibromobutano e 3,3-dibromobutano.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-quimica
+Identificador: furg-2007-1-semestre-quimica-q28
+
+========================================================================
+FURG 2007 — Química — Processo seletivo UAB — Questão 29
+
+O resveratrol é uma fitoalaxina sintetizada por muitas plantas e é encontrado, em grande escala, nas cascas da uva. Muitos cientistas já publicaram trabalhos mostrando uma ligação entre o consumo de vinho tinto e a diminuição das doenças cardiovasculares – o chamado "French Paradox". Estes cientistas acreditam que o resveratrol pode elevar a concentração de HDL sanguíneo – o "bom colesterol". A estrutura química do resveratrol é mostrada abaixo.
+
+Sobre o resveratrol é correto afirmar que é
+
+[Figura: Fórmula estrutural do resveratrol apresentada no enunciado.]
+Arquivo: figures/furg-2007-1-semestre-quimica-q29-fig1.webp
+
+A) o isômero cis de um polifenol.
+B) o isômero trans de um poliálcool.
+C) um enol.
+D) um álcool.
+E) um polifenol.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-quimica
+Identificador: furg-2007-1-semestre-quimica-q29
+
+========================================================================
+FURG 2007 — Química — Processo seletivo UAB — Questão 30
+
+O alcatrão da hulha quando destilado produz frações que apresentam um grande número de compostos aromáticos. Assinale a alternativa que apresenta apenas compostos aromáticos.
+
+
+A) Heptano, xileno, ciclopropano e clorofórmio.
+B) Tetracloreto de carbono, etano, metano e propano.
+C) Tolueno, hexano, metano e tetracloreto de carbono.
+D) Naftaleno, naftol, tolueno e anilina.
+E) Fenantreno, hexeno, ciclohexano e benzeno.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-quimica
+Identificador: furg-2007-1-semestre-quimica-q30
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 31
+
+Dois elementos distintos A e B apresentam, respectivamente, as seguintes configurações eletrônicas da camada de valência: 4s² e 3s², 3p⁵ Assim, é correto afirmar que:
+
+
+A) a afinidade eletrônica de B, é maior que de A, assim A tende a perder dois elétrons para átomos de B formando um composto iônico de fórmula AB₂.
+B) o elemento A apresenta o maior potencial de ionização, pois seu orbital está completo.
+C) o elemento A tende a perder um elétron para completar o sub-nível p do átomo B, formando um composto iônico de fórmula AB, onde ambos apresentam octeto completo.
+D) estes dois elementos não podem reagir quimicamente, pois o elemento A já está completo, não recebendo nem cedendo elétrons para B.
+E) a eletronegatividade de A é semelhante a de B, assim eles formarão um composto covalente de fórmula AB₂.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q31
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 32
+
+Considere a seguinte reação não balanceada: Fe₂O₃(s) + CO(g) → Fe(s) + CO₂(g) Quando 5 mols de Fe₂O₃ reagem com 16 mols de CO com um rendimento de 100%, pode-se afirmar que o reagente limitante e o número de átomos de Fe formados, respectivamente, nesta reação, serão:
+
+
+A) CO, e são formados 90,30x10²³ átomos de Fe.
+B) Fe₂O₃, e são formados 6,02x10²³ átomos de Fe.
+C) Fe₂O₃, e são formados 60,24x10²³ átomos de Fe.
+D) CO, e são formados 72,24x10²³ átomos de Fe.
+E) Fe₂O₃, e são formados 24,08x10²³ átomos de Fe.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q32
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 33
+
+Leia as afirmativas a seguir:
+
+I. A primeira energia de ionização cresce da esquerda para a direita, para elementos de um mesmo período da tabela periódica, porque o aumento do número atômico acarreta maior atração dos elétrons pelo núcleo.
+
+II. A segunda energia de ionização, para um elemento químico, é menor que a primeira, porque a retirada do segundo elétron é favorecida após a primeira ionização.
+
+III. A energia de ionização corresponde à energia liberada quando um elétron é adicionado a um átomo na fase gasosa. Assinale a alternativa que contém a(s) afirmativa(s) correta(s):
+
+
+A) III.
+B) I.
+C) II.
+D) I, II e
+
+III.
+E) II e
+
+III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q33
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 34
+
+A alternativa que apresenta o número de oxidação correto para o cloro, nos compostos NaClO, KClO₄, HCl e HClO₃ é, respectivamente:
+
+
+A) -1, -3, +1, +2.
+B) -1, +7, -1, +5.
+C) +1, +3, -1, +2.
+D) +1, +7, -1, +5.
+E) +1, +3, -1, -2.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q34
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 35
+
+Quantos mililitros de água deverão ser adicionados a 100mL de uma solução de NaOH 0,2M, para que a solução tenha concentração resultante de 0,05M?
+
+
+A) 100mL.
+B) 400mL.
+C) 30mL.
+D) 40mL.
+E) 300mL.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q35
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 36
+
+O gás natural, utilizado como combustível, é uma das alternativas para a diminuição da poluição nos grandes centros urbanos. Seu principal constituinte é o gás metano, que pode ser obtido por fermentação anaeróbia de material orgânico encontrado no lixo (biogás). A combustão do metano, a 25°C e 1 atm, pode ser representada pela equação termoquímica: CH₄(g) + 2 O₂(g) → CO₂(g) + 2 H₂O(l), ΔH = - 890 kJ/mol Considerando essas informações, para as condições propostas está correto afirmar que:
+
+
+A) trata-se de uma reação endotérmica, pois a variação de energia no sistema é negativa.
+B) 32g de gás metano reagem com 128g de oxigênio gasoso, liberando 1780 kJ de energia.
+C) na combustão completa de 1 kg de metano, há liberação de cerca de 5600 kJ de energia.
+D) a entalpia dos produtos CO₂ e H₂O é maior que a entalpia dos reagentes CH₄ e O₂.
+E) 44g de gás carbônico e 18g de água são formados com absorção de 890 kJ de energia.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q36
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 37
+
+Uma célula vegetal normal, ao ser colocada em uma solução salina concentrada, começa a “murchar”. Sobre esse fenômeno, é correto afirmar que:
+
+
+A) há um fluxo de solvente do exterior para o interior da célula.
+B) a célula vegetal encontra-se em um meio hipotônico em relação à sua própria concentração salina.
+C) há um fluxo de solvente do interior da célula para a solução salina do meio.
+D) quanto maior for a concentração da solução salina externa, menor será o fluxo de solvente da célula para o meio.
+E) a célula vegetal possui uma membrana semipermeável que permite a entrada de sal, fazendo-a “murchar”.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q37
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 38
+
+O quadro abaixo contém informações a respeito do pH aproximado de algumas soluções cujas concentrações são iguais a 0,1 mol/L, a 25°C. Solução | pH
+HCl | 1,0
+NaOH | 13,0
+CH₃COOH | 3,0
+HCN | 5,0
+
+A respeito dessas soluções, nas condições descritas, são feitas as seguintes afirmativas:
+
+I. A solução de HCl é a que apresenta uma maior concentração de H⁺.
+
+II. 10 mL da solução de NaOH são suficientes para neutralizar 10 mL da solução de HCl.
+
+III. A solução de CH₃COOH apresenta menor concentração de H⁺ em relação à de HCN.
+
+IV. A concentração de íons OH⁻ na solução de NaOH é igual a 1x10⁻¹³ mol/L. Assinale a alternativa com as afirmativas corretas.
+
+
+A) I e
+
+II.
+B) I e
+
+IV.
+C) III e
+
+IV.
+D) I, II e
+
+III.
+E) II, III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q38
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 39
+
+Com base nos potenciais de oxidação apresentados na tabela abaixo, escolha a opção correta:
+
+Eletrodo | E° de oxidação (Volt)
+Zn ⇌ Zn²⁺ + 2 elétrons | 0,76
+Co ⇌ Co²⁺ + 2 elétrons | 0,28
+H₂ ⇌ 2 H⁺ + 2 elétrons | 0,00
+Cu ⇌ Cu²⁺ + 2 elétrons | −0,34
+Hg ⇌ Hg²⁺ + 2 elétrons | −0,85
+
+
+A) numa pilha formada por um eletrodo de cobalto e outro de mercúrio, o cobalto recebe elétrons do mercúrio.
+B) numa pilha formada por um eletrodo de zinco e outro de cobalto, o cobalto transfere elétrons para o zinco, pois seu potencial de oxidação é menor.
+C) o valor zero para o potencial de oxidação do hidrogênio não é uma convenção, é um valor real.
+D) na pilha de Daniell, o cobre fornecerá elétrons ao zinco.
+E) eletrodos com potenciais de oxidação positivos indicam maior tendência de perda de elétrons que a apresentada pelo eletrodo de hidrogênio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q39
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 40
+
+Abaixo é mostrada a equação de decomposição da água oxigenada: H₂O₂(l) → H₂O(l) + 1/2 O₂(g) A decomposição foi realizada em determinadas condições e mediu-se a massa de H₂O₂ remanescente a intervalos de tempos regulares. Com os dados obtidos, montou-se a tabela abaixo: Tempo (min) | 0 | 3 | 6 | 9 | 12
+m H₂O₂ (g) | 300 | 204 | 136 | 85 | 39
+
+A velocidade média de decomposição do H₂O₂ em mol/s, no intervalo de tempo entre 0 e 3 minutos, é de, aproximadamente:
+
+
+A) 0,320 mol/s.
+B) 0,032 mol/s.
+C) 0,160 mol/s.
+D) 0,016 mol/s.
+E) 0,023 mol/s.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q40
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 41
+
+O butano C₄H₁₀, o n-pentano C₅H₁₂ e o n-hexano C₆H₁₄ são alcanos que apresentam os respectivos pontos de ebulição, -0,5°C, 36,1°C e 68,7°C. O aumento do ponto de ebulição observado nestes compostos é devido ao aumento:
+
+
+A) do peso molecular e à diminuição da força de Van der Waals.
+B) do peso molecular e à formação de pontes de hidrogênio.
+C) do peso molecular e da força de Van der Waals.
+D) das ramificações e da força de Van der Waals.
+E) do número de hidrogênios e das interações por pontes de hidrogênio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q41
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 42
+
+Observe o esquema reacional abaixo:
+
+CH₃—CH=CH₂ → A (H₂O/H⁺)
+CH₃—CH=CH₂ → B (HCl)
+CH₃—CH=CH₂ → C (H₂/Pt)
+
+Sobre estes compostos, é correto afirmar que todas as reações são de:
+
+
+A) adição, sendo os produtos respectivamente: A=1-propanol; B=1-cloro-propano e C=propano.
+B) substituição, sendo os produtos respectivamente: A=1-butanol; B=2-cloropropano e C=propano.
+C) substituição, sendo os produtos respectivamente: A=1-hidróxi-2-propeno; B=2-cloro-1-propeno e C=propeno.
+D) adição, sendo os produtos respectivamente: A=1,2-propanodiol; B=1,2-dicloropropano e C=propano.
+E) adição, sendo os produtos respectivamente: A=2-propanol; B=2-cloro-propano e C=propano.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q42
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 43
+
+O fenol, substância de caráter ácido, tem a fórmula estrutural abaixo: C₆H₅—OH.
+
+Sobre o fenol, é correto afirmar que:
+
+[Figura: Estrutura do fenol: anel aromático com grupo OH.]
+Arquivo: figures/furg-2007-2-semestre-quimica-q43-fig1.webp
+
+A) sob a mesma pressão, o ponto de ebulição do fenol deve ser maior que o do benzeno.
+B) a solubilidade do fenol em solução de hidróxido de sódio é menor que em água, pois há formação do fenóxido de sódio.
+C) o benzeno apresenta uma maior solubilidade em água do que o fenol.
+D) uma solução 0,1 mol/L a 25°C tem pH 5,0 e seu Kₐ é 1,0 x 10⁻⁵.
+E) o fenol, com um pKₐ = 9,0 é um ácido mais forte que o ácido acético, com pKₐ = 4,75.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q43
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 44
+
+De acordo com o tipo de orbital híbrido que toma parte na formação do orbital molecular, podem-se ter diversos tipos de ligações covalentes sigma. Com base nessa informação, assinale a alternativa correta:
+
+
+A) na molécula do etino não existem ligações sigma, apenas pi.
+B) na molécula do propano, existem duas ligações entre os átomos de carbono do tipo σ sp³-sp³.
+C) todas as ligações entre os átomos de carbono e hidrogênio no etino são σ sp²-s.
+D) todas as ligações entre os átomos de carbono no 1,3-butadieno são σ sp-sp².
+E) no tetracloreto de carbono, todas as ligações entre os átomos de carbono e cloro são do tipo σ sp³-s.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q44
+
+========================================================================
+FURG 2007 — Química — Vestibular regular — Questão 45
+
+Assinale a alternativa que completa corretamente a seguinte afirmação: “Na oxidação enérgica dos álcoois com KMnO₄ ou K₂Cr₂O₇ em meio ácido, obtém-se diferentes produtos em função do carbono no qual está ligada a hidroxila. Assim, ao oxidar-se_________.”
+
+
+A) o 2,3-dimetil-2-butanol, obter-se⁻á dois moles de propanona.
+B) o 2-butanol, obter-se⁻á dois moles de ácido etanóico.
+C) um álcool terciário, obter-se⁻á o ácido correspondente.
+D) o etanol, obter-se⁻á o ácido acético.
+E) o etanol, obter-se⁻á o metanal.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-quimica
+Identificador: furg-2007-2-semestre-quimica-q45
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 31
+
+Com base nas seguintes configurações eletrônicas
+
+I) 1s² 2s² 2p⁶
+
+II) 1s² 2s² 2p⁶ 3s²
+
+III) 1s² 2s² 2p⁶ 3s² 3p⁶
+
+IV) 1s² 2s² 2p⁵
+
+V) 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹
+
+É correto afirmar que
+
+
+A) as configurações II e III representam estados fundamentais de não-metais.
+B) as configurações IV e V representam estados fundamentais de metais.
+C) as configurações I e III podem representar, respectivamente, estados fundamentais de cátions do terceiro e quarto períodos da tabela periódica.
+D) as configurações I e IV não apresentam elétrons desemparelhados.
+E) as configurações I, III, IV e V representam não-metais.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q31
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 32
+
+Assinale a alternativa em que todas as espécies, no estado gasoso, apresentam momento de dipolo elétrico.
+
+
+A) NF₃, H₂O e HCCl₃
+B) BeF₂, H₂O e HCCl₃
+C) NF₃, CO₂ e H₂O
+D) H₂O, CH₄ e BCl₃
+E) BeF₂, BCl₃ e HF
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q32
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 33
+
+Assinale a alternativa que apresenta a comparação correta, em relação aos raios de átomos e íons.
+
+
+A) raio do Mg²⁺ > raio do O²⁻
+B) raio do Na⁺ > raio do Na
+C) raio do Na⁺ > raio do F⁻
+D) raio do F-> raio do Mg²⁺
+E) raio do F⁻ > raio do O²⁻
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q33
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 34
+
+Adicionando 50 mL de água destilada a 100 mL de uma solução de ácido clorídrico 0,10 mol/L, pode-se afirmar que
+
+
+A) o número de íons H⁺ e Cl⁻ por cm³ diminui.
+B) o número de íons H⁺ e Cl⁻ por cm³ aumenta.
+C) o número total de íons diminui.
+D) o número total de íons aumenta.
+E) a condutividade elétrica do meio não é alterada.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q34
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 35
+
+Considere os seguintes óxidos:
+
+I) Na₂O
+
+II) CO₂
+
+III) CaO
+
+IV) SO₃ Assinale a alternativa que apresenta apenas óxidos que, quando dissolvidos em água, tornam o meio ácido:
+
+
+A) II e III
+B) II e IV
+C) III e IV
+D) I e II
+E) I e IV
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q35
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 36
+
+Dois frascos estão sem rótulo, em um laboratório de química, cada um contendo uma substância pura líquida e incolor. Assinale a alternativa correta que contém parâmetros que permitiriam a identificação desses líquidos.
+
+
+A) Densidade e pH.
+B) Ponto de ebulição e pH.
+C) Massa e pH.
+D) Temperatura e ponto de ebulição.
+E) Densidade e ponto de ebulição.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q36
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 37
+
+Considere o equilíbrio químico à temperatura de 25°C, representado pela equação: A(g) + 3 B(g) ⇌ C(g) + D(g) Dados de um experimento típico são mostrados na tabela abaixo: Quantidade | Reagente A | Reagente B | Produto C | Produto D
+n° de moles iniciais | 1 | 2 | 0 | 0
+n° de moles no equilíbrio | x | y | 0,5 | 0,5
+
+Assinale a alternativa correta que representa a soma de moles de A e B encontrada no equilíbrio
+
+
+A) x + y = 2
+B) x + y = 1
+C) x + y = 3
+D) x + y = 0,5
+E) x + y = 4
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q37
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 38
+
+A velocidade da reação de decomposição de uma substância A quadruplica, quando sua concentração é duplicada. Assinale a alternativa que contém a afirmação correta.
+
+
+A) A reação é de 3ª ordem com respeito à A.
+B) A reação é de 1ª ordem com respeito à A.
+C) A reação é de 2ª ordem com respeito à A.
+D) A reação é ordem indefinida com respeito à A.
+E) A reação é de ordem zero com respeito à A.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q38
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 39
+
+São feitas as seguintes afirmações:
+
+I) A água, como substância pura, ferve sempre a 100°C, independentemente da altitude do local em que se encontre.
+
+II) A uma certa temperatura T, um líquido “A” é mais volátil do que a água se a sua pressão de vapor for maior do que a pressão de vapor de água na temperatura T.
+
+III) Mediu-se a pressão de vapor de água em dois frascos A e B, evacuados e contendo respectivamente, 50 mL e 100mL de água pura. A pressão de vapor medida no frasco A é a metade daquela medida no frasco B. Assinale a alternativa com a(s) afirmativa(s) correta(s):
+
+
+A) I, II e III
+B) I e II
+C) II e III
+D) Apenas III
+E) Apenas II
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q39
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 40
+
+A ......................................... consiste na interação de ................................... atômicos, que se transformam, originando novos orbitais, em ........................................... número. Estes novos orbitais são denominados de orbitais............................ Os termos que completam, corretamente, as lacunas são respectivamente:
+
+
+A) hibridização, orbitais, diferente, híbridos.
+B) ligação, níveis, diferente, moleculares.
+C) hibridização, orbitais, igual, híbridos.
+D) ligação, orbitais, igual, híbridos.
+E) hibridização, orbitais, igual, moleculares.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q40
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 41
+
+Têm-se cinco compostos orgânicos para os quais os pontos de ebulição determinados experimentalmente foram 36,1°C, 68,7°C, 98°C, -0,5°C e 125°C. Sabendo-se que estes compostos são alcanos, podemos afirmar que os pontos de ebulição correspondem respectivamente ao:
+
+
+A) pentano, hexano, heptano, butano e octano.
+B) butano, pentano, hexano, heptano e octano.
+C) heptano, butano, octano, hexano e pentano.
+D) butano, hexano, pentano, heptano e octano.
+E) hexano, octano, heptano, butano e pentano.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q41
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 42
+
+Um composto orgânico possui fórmula mínima (CH₂)ₙ e a massa de 0,2 mol deste composto é 19,6 g. Sobre este composto são feitas as seguintes afirmações:
+
+I – O composto é um alcadieno e sua massa molar é de 98 g.
+
+II – Podem ocorrer isômeros de cadeia para esse composto.
+
+III – O composto possui uma insaturação e sua massa molar é de 49 g.
+
+IV – É um hidrocarboneto, formado apenas por C e H e sua fórmula molecular é C₇H₁₄. Assinale a alternativa que apresenta as afirmativas corretas.
+
+
+A) III e IV
+B) I e III
+C) II e III
+D) I e II
+E) II e IV
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q42
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 43
+
+Uma cadeia carbônica alifática, homogênea, saturada, apresenta, entre seu número total de carbonos, um átomo de carbono quaternário, dois átomos de carbono terciários e três átomos de carbono secundários. Essa cadeia apresenta
+
+
+A) 6 átomos de carbono.
+B) 9 átomos de carbono.
+C) 10 átomos de carbono.
+D) 12 átomos de carbono.
+E) 11 átomos de carbono.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q43
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 44
+
+Uma amina secundária é
+
+
+A) um composto orgânico com um grupo (-NH₂) ligado ao átomo de C, na posição 2 de uma cadeia.
+B) um composto orgânico, no qual dois átomos de hidrogênio do NH₃ foram substituídos por radicais alquilas ou arilas.
+C) um composto orgânico com dois grupos (-NH₂) na cadeia principal.
+D) um composto orgânico com dois átomos de carbono e um grupo (-NH₂) na cadeia principal.
+E) um composto orgânico, no qual um dos átomos de hidrogênio do NH₃ foi substituído por um radical alquila com carbono secundário.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q44
+
+========================================================================
+FURG 2008 — Química — Vestibular de inverno — Questão 45
+
+Deixou-se por um determinado tempo um fio de estanho e um fio de ferro mergulhados em uma solução aquosa de sulfato de cobre (CuSO₄). A respeito desse experimento pode-se afirmar que
+
+I – o fio de estanho aumentará de massa enquanto o fio de ferro não sofrerá alteração em sua massa.
+
+II – haverá deposição de cobre em ambos os fios.
+
+III – a solução terá a concentração aumentada em íons Sn⁺⁺ e Fe⁺⁺.
+
+IV – o fio de estanho aumentará de massa enquanto o fio de ferro terá sua massa reduzida. Dados eletroquímicos: Reação Eletródica | Potencial Padrão de Redução (ε°)
+Cu⁺⁺(aq) + 2e⁻ → Cu(s) | +0,34 V
+Sn⁺⁺(aq) + 2e⁻ → Sn(s) | −0,14 V
+Fe⁺⁺(aq) + 2e⁻ → Fe(s) | −0,44 V
+
+Com base no exposto acima, assinale a alternativa que apresenta a(s) afirmativa(s) correta(s).
+
+
+A) III e IV
+B) II e IV
+C) I e III
+D) II e III
+E) I
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-quimica
+Identificador: furg-2008-2-semestre-quimica-q45
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 31
+
+Analise as seguintes afirmativas a respeito da tabela periódica:
+
+I. Elementos situados num mesmo período apresentam o mesmo número de camadas eletrônicas.
+
+II. São exemplos de propriedades aperiódicas dos elementos: a massa atômica, o calor específico e o raio atômico.
+
+III. O raio atômico de um elemento é sempre maior que o raio do respectivo cátion.
+
+IV. A eletronegatividade dos elementos aumenta com o aumento do raio atômico. Assinale a alternativa que apresenta apenas a(s) afirmativa(s) correta(s):
+
+
+A) II e III
+B) I e IV
+C) I e III
+D) III e IV
+E) I
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q31
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 32
+
+A solubilidade de um sal a 25°C é 37g/100mL de água. Um estudante pesou 39 g desse sal e dissolveu completamente em 100 mL de água a 100°C. Quando a solução retornou aos 25°C, uma parte do sal precipitou. Com relação a esse experimento, assinale a alternativa correta.
+
+
+A) Se a solução final fosse novamente aquecida a 100°C, não haveria a dissolução do sal precipitado.
+B) A solução final é saturada, mas não é possível determinar a quantidade de sal precipitado.
+C) A solução final só seria super saturada, se mais de 5g do sal precipitassem.
+D) A solução final é insaturada, pois, com a precipitação do sal, diminuiu sua concentração em solução.
+E) A massa de sal precipitado é de 2g.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q32
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 33
+
+O cobre é um metal encontrado na natureza em diferentes minerais. Sua obtenção pode ocorrer pela reação da calcosita (Cu₂S) com a cuprita (Cu₂O) representada a seguir: Cu₂S + Cu₂O → Cu + SO₂ (reação não balanceada) Pretende-se realizar um experimento reagindo-se 1 mol de calcosita com 1 mol de cuprita. Assinale a alternativa em que é apresentada uma previsão correta a respeito desse experimento.
+
+
+A) Se o rendimento da reação for 100%, serão obtidos 190,5 g de cobre.
+B) Não existe reagente limitante, pois a reação será efetuada com 1 mol de cuprita e 1 mol de calcosita.
+C) Será produzido 1 mol de SO₂.
+D) Se forem obtidos 3 moles de cobre, o rendimento da reação será de 50%.
+E) Após concluída a reação, restará cuprita.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q33
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 34
+
+Assinale a alternativa que apresenta somente compostos iônicos:
+
+
+A) PCl₅, NaCl, KBr
+B) NaCl, HF, MgCl₂
+C) LiF, NH₃, CCl₄
+D) KBr, CaCl₂, LiCl
+E) AlCl₃, BF₃, NaI
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q34
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 35
+
+Um cilindro de aço de 2 litros, mantido a 27°C, contém uma mistura gasosa composta de 14 g de nitrogênio, 32 g de oxigênio, 32 g de metano e 4 g de hélio. Com relação à pressão parcial exercida por esses gases, é correto afirmar que:
+
+
+A) p(O₂) = p(CH₄)
+B) p(He) = 2 p(N₂)
+C) p(N₂) = 2 p(O₂)
+D) p(CH₄) = 4 p(He)
+E) p(He) = ½ p(N₂)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q35
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 36
+
+Quanto às duas fórmulas estruturais dos compostos mostrados na figura abaixo, pode-se afirmar que:
+
+[Figura: Duas fórmulas estruturais, com orientação das ligações ao carbono central.]
+Arquivo: figures/furg-2008-1-semestre-quimica-q36-fig1.webp
+
+A) Trata-se de um par de enantiômeros.
+B) Trata-se de um par de isômeros funcionais.
+C) Trata-se de um par de isômeros geométricos.
+D) Trata-se de um par de isômeros de posição.
+E) Não são isômeros óticos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q36
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 37
+
+A descoberta de petróleo na região do pré-sal nas bacias do Sul e Sudeste do Brasil representa um marco na história da Petrobras. A avaliação do potencial petrolífero desta área poderá colocá-la no grupo de empresas e países com grandes reservas de petróleo. O petróleo pode ser caracterizado como uma mistura de compostos orgânicos. De acordo com a numeração dada abaixo a alguns hidrocarbonetos presentes no petróleo, marque a resposta que apresenta os hidrocarbonetos em ordem CRESCENTE de ponto de ebulição: 1) heptano 2) propano 3) octano 4) butano
+
+
+A) 3, 1, 2 e 4
+B) 4, 3, 2 e 1
+C) 2, 4, 1 e 3
+D) 3, 1, 4 e 2
+E) 2, 1, 4 e 3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q37
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 38
+
+O composto abaixo, derivado do ácido aracdônico, que foi encontrado no tecido cerebral de mamíferos e no chocolate, mostrou fisiologicamente ser capaz de aliviar a ansiedade e induzir a uma situação de tranqüilidade e relaxamento. Assinale a alternativa correta que apresenta as funções presentes na estrutura química.
+
+[Figura: Fórmula estrutural do composto derivado do ácido aracdônico,com grupos e insaturações.]
+Arquivo: figures/furg-2008-1-semestre-quimica-q38-fig1.webp
+
+A) Cetona e amina
+B) Amida e álcool
+C) Álcool e ácido carboxílico
+D) Aminoácido e cetona
+E) Ácido carboxílico e amida
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q38
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 39
+
+Marque a alternativa que apresenta a nomenclatura correta para o seguinte composto:
+
+[Figura: Estrutura do composto com a cadeia e suas ramificações.]
+Arquivo: figures/furg-2008-1-semestre-quimica-q39-fig1.webp
+
+A) 5-etil-8-metil-decano
+B) 2-etil-5-butil-heptano
+C) 2,5-dietil-nonano
+D) 5,8-dietil-nonano
+E) 6-etil-3-metil-decano
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q39
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 40
+
+Assinale a alternativa que apresenta a hibridização correta para cada átomo de carbono presente nos compostos, H₂CO, CO₂ e CH₄, respectivamente.
+
+
+A) sp, sp e sp²
+B) sp², sp² e sp³
+C) sp, sp² e sp³
+D) sp², sp e sp³
+E) sp³, sp² e sp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q40
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 41
+
+A reação mostrada a seguir tem o valor numérico de 4 para sua constante de equilíbrio Kp a certa temperatura T A (g) + 3 B(g) ↔ 2 C (g) ..... ΔH<0 A esta temperatura, após 45 minutos de reação, determinou-se que as pressões parciais de A, B e C valiam respectivamente 1 atm, 1 atm e 2 atm. São feitas as seguintes afirmativas sobre esta reação:
+
+I) O equilíbrio foi atingido após 45 minutos de reação.
+
+II) Um aumento de temperatura desloca o equilíbrio no sentido da formação de A e de B.
+
+III) A presença de um catalisador não aumenta a quantidade de produto formada.
+
+IV) Um aumento de pressão desloca o equilíbrio no sentido da formação de A e de B. Assinale a alternativa que apresenta todas as afirmativas corretas.
+
+
+A) III e IV
+B) I, II e III
+C) II, III e IV
+D) II e IV
+E) I e III
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q41
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 42
+
+A quantidade média de cálcio encontrada em um tipo de leite foi de cerca de 3x10⁻² mol/L. Para afirmar-se que este leite não está adulterado com relação ao teor deste nutriente, a quantidade de cálcio encontrada em uma amostra de 100 mL do leite deveria ser de
+
+
+A) 120 mg
+B) 60 mg
+C) 150 mg
+D) 90 mg
+E) 40 mg
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q42
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 43
+
+Para niquelar eletroliticamente uma moeda de cobre, utiliza-se uma solução aquosa de um sal de níquel. No interior da solução, colocam-se 2 eletrodos constituídos de uma moeda que se deseja niquelar e um pedaço de níquel puro. Cada eletrodo é ligado a cada um dos pólos de uma fonte de corrente disponível. São feitas as seguintes afirmativas com respeito a esse processo de niquelação:
+
+I) A moeda deverá ser conectada ao pólo negativo e o pedaço de níquel ao pólo positivo.
+
+II) Nesse processo eletrolítico, a moeda não sofre alteração de massa.
+
+III) A oxidação e a redução irão ocorrer respectivamente na moeda e na peça de níquel puro. Assinale a alternativa que apresenta apenas a(s) afirmativa(s) correta(s).
+
+
+A) I, II e III
+B) I e III
+C) II e III
+D) I
+E) I e II
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q43
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 44
+
+Considere os seguintes dados a 25°C e 1 atm, para a reação A (g) + ½ B(g) ⇒ 2 C(s) É dado que, para as substâncias A, B e C, os valores de entalpias de formação (kcal/mol) são, respectivamente, de -150; 140 e 20. Quando 0,1 moles de A e 0,5 moles de B reagem, pode-se afirmar que serão
+
+
+A) absorvidas 6 kcal.
+B) liberadas 8 kcal.
+C) absorvidas 12 kcal.
+D) liberadas 10 kcal.
+E) absorvidas 10 kcal.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q44
+
+========================================================================
+FURG 2009 — Química — Vestibular regular — Questão 45
+
+A água oxigenada, uma solução aquosa de peróxido de hidrogênio (H₂O₂), é comercializada com sua concentração especificada em número de volumes. Um litro de água oxigenada 10 volumes produz 10 litros de gás oxigênio nas CNTP, quando ocorre a decomposição total do peróxido, conforme a equação: H₂O₂ (aq) → H₂O(L) + ½ O₂ (g) Portanto, a concentração do peróxido de hidrogênio em uma água oxigenada 20 volumes é, aproximadamente, de
+
+
+A) 0,3 mol/L.
+B) 0,9 mol/L.
+C) 0,4 mol/L.
+D) 2,0 mol/L.
+E) 1,8 mol/L.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-quimica
+Identificador: furg-2008-1-semestre-quimica-q45
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 46
+
+O NaCl, conhecido popularmente como sal de cozinha, é um dos componentes da água do mar, do soro fisiológico e de certa bebida isotônica, onde a concentração média de NaCl encontrada nestas três soluções é, respectivamente, de 3,0 g/L, 0,9 g/L e 0,12 g/L. Considerando-se apenas o teor de NaCl, pode-se afirmar que as soluções que apresentam a maior pressão de vapor de água a 25°C e o maior ponto de ebulição são respectivamente:
+
+
+A) soro fisiológico e água do mar.
+B) água do mar e soro fisiológico.
+C) bebida isotônica e soro fisiológico.
+D) água do mar e bebida isotônica.
+E) bebida isotônica e água do mar.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q46
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 47
+
+Um hidrocarboneto gasoso está contido em uma câmara de combustão a 25 °C e 1 atm. A combustão total de 6,72 L (nas CNTP) desse hidrocarboneto com excesso de oxigênio liberou 93,0 kcal na forma de calor. Sabendo-se que os valores das entalpias padrão de combustão para os seguintes hidrocarbonetos valem: Hidrocarboneto | ΔH°₂₅°C (kcal/mol)
+C₂H₆ | −372
+C₂H₄ | −336
+C₂H₂ | −310
+C₃H₈ | −530
+CH₄ | −212
+
+Então esse hidrocarboneto deve ser o:
+
+
+A) Propano.
+B) Etino.
+C) Etano.
+D) Eteno.
+E) Metano.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q47
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 48
+
+Para a reação 2 NO₂(g) ⇌ N₂O₄(g) o gráfico abaixo mostra a variação da sua constante de equilíbrio Kp com a temperatura absoluta. À temperatura de 293 K, encontrou-se que a pressão de equilíbrio do NO₂(g) era de 0,71 atm. Baseado nestas informações, pode-se afirmar que a reação considerada é.....................e o valor da pressão de equilíbrio do N₂O₄ (g) à 293 K vale aproximadamente............ A alternativa que completa, corretamente, os espaços tracejados é:
+
+[Figura: Gráfico de Kp em função da temperatura absoluta, com marcação em 293 K.]
+Arquivo: figures/furg-2010-quimica-q48-fig1.webp
+
+A) Endotérmica; 2 atm.
+B) Exotérmica; 2 atm.
+C) Endotérmica; 7 atm.
+D) Exotérmica; 7 atm.
+E) Exotérmica; 5 atm.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q48
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 49
+
+Pretende-se estudar a velocidade de reação entre o carbonato de cálcio (CaCO₃) e o HCl aquoso e, para tal, foram feitos 3 experimentos. Em cada experimento mediu-se a quantidade de gás carbônico (CO₂) produzida durante 30 segundos, contados, imediatamente, após a mistura dos reagentes. Nos experimentos, usou-se o mesmo volume de uma mesma solução de HCl e a mesma massa de CaCO₃ (10 g). O quadro abaixo mostra as condições de cada um dos experimentos realizados: Experimento | Temperatura | CaCO₃
+I | 30°C | sólido maciço
+II | 20°C | sólido maciço
+III | 30°C | sólido pulverizado
+
+A alternativa correta que apresenta os experimentos na ordem crescente de volume medido de gás carbônico é:
+
+
+A) I, III e
+
+II.
+B) II, III e
+
+I.
+C) I, II e
+
+III.
+D) III, I e
+
+II.
+E) II, I e
+
+III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q49
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 50
+
+É feita a eletrólise à 25°C de uma solução de AgNO₃ entre eletrodos de platina (cátodo) e prata (ânodo) que se encontram em compartimentos fisicamente separados, porém unidos eletricamente por uma ponte salina. No compartimento catódico(-) a solução é de AgNO₃ 0,1 M, enquanto que no anódico(+) a solução é de KCl 0,1 M, onde ocorrem respectivamente as reações de oxi-redução: 
+
+(−) Ag⁺ + e → Ag°
+(+) Ag° → Ag⁺ + e
+
+ O íon Ag⁺ produzido no ânodo irá precipitar instantaneamente como AgCl devido à reação 
+
+Ag⁺ + Cl⁻ → AgCl(s)
+
+ A eletrólise teve a duração de 10 min a uma intensidade de corrente de 0,8 A. Pode-se afirmar que, nessas condições, a quantidade de sal precipitado no ânodo foi de aproximadamente:
+
+
+A) 0,71 g.
+B) 0,54 g.
+C) 0,24 g.
+D) 1,10 g.
+E) 0,35 g.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q50
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 51
+
+O alcatrão da hulha, quando destilado, produz frações que apresentam um grande número de compostos aromáticos. Assinale a alternativa que apresenta apenas compostos aromáticos.
+
+
+A) Tolueno, hexano, metano e tetracloreto de carbono.
+B) Tetracloreto de carbono, etano, metano e propano.
+C) Naftaleno, naftol, tolueno e anilina.
+D) Heptano, xileno, ciclopropano e clorofórmio.
+E) Fenantreno, hexeno, ciclohexano e benzeno.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q51
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 52
+
+O tetra-hidrocanabinol (THC) é o principal ingrediente ativo da maconha, uma das drogas ilegais mais difundidas.
+
+De acordo com as estruturas acima, são feitas as afirmações:
+
+I. O THC apresenta carbonos com as hibridizações sp³, sp² e sp.
+
+II. O THC possui três carbonos quirais.
+
+III. As funções presentes na molécula deste composto são éter e fenol.
+
+IV. O THC é um composto aromático. Estão corretas:
+
+[Figura: Estrutura do tetra-hidrocanabinol (THC) apresentada no enunciado.]
+Arquivo: figures/furg-2010-quimica-q52-fig1.webp
+
+A) I, II e
+
+IV.
+B) III e
+
+IV.
+C) II e
+
+IV.
+D) I e
+
+III.
+E) II, III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q52
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 53
+
+A nomenclatura correta para o composto, cuja estrutura é representada abaixo, é:
+
+[Figura: Fórmula estrutural do hidrocarboneto com suas ramificações.]
+Arquivo: figures/furg-2010-quimica-q53-fig1.webp
+
+A) 2,4-dimetil-5-isopropil-5-propil-heptano.
+B) 2,4-dietil-4-isopropil-3-metil-heptano.
+C) 3,4-dimetil-5-etil-5-propil-octano.
+D) 3,4-dimetil-5-etil-5-isopropil-octano.
+E) 5,6-dimetil-4-etil-4-isopropil-octano.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q53
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 54
+
+Sobre os compostos orgânicos, são feitas as seguintes afirmações:
+
+I. Nos compostos orgânicos, o número de oxidação do carbono pode variar de +4 a -4.
+
+II. Todos os compostos de carbono são tetraédricos.
+
+III. Carbono secundário é aquele que se liga diretamente a três outros átomos de carbono.
+
+IV. Compostos orgânicos podem apresentar átomos de C com hibridização sp, cuja geometria é linear. Estão corretas:
+
+
+A) I e
+
+IV.
+B) I, II e
+
+III.
+C) III e
+
+IV.
+D) I e
+
+III.
+E) II, III e
+
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q54
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 55
+
+Um dos componentes odoríferos do jasmim é o acetato de benzila. Apesar de poder ser isolado das flores, este agente odorífero é sintetizado em laboratório. A alternativa que contém os reagentes corretos para a sua síntese é:
+
+
+A) acetato de metila e álcool benzílico.
+B) ácido benzóico e álcool etílico.
+C) acetato de metila e álcool metílico.
+D) ácido acético e álcool benzílico.
+E) ácido propanóico e álcool etílico.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q55
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 56
+
+Os sais são compostos que podem ser obtidos através de reações entre um ácido e uma base. Além de serem utilizados como medicamentos e, na agricultura, como fertilizantes; possuem também outras aplicações tecnológicas. Marque a alternativa que consta uma reação de neutralização devidamente balanceada em que ocorre a formação de um sal de hidrólise básica.
+
+
+A) HNO₂ + NH₄OH → NH₄NO₂ + H₂O.
+B) 2 H₃PO₄ + 3 Mg(OH)₂ → Mg₃(PO₄)₂ + 6 H₂O.
+C) H₃PO₄ + 3 NH₄OH → (NH₄)₃PO₄ + 3 H₂O.
+D) H₃PO₄ + Ca(OH)₂ → Ca₃(PO₄)₂ + H₂O.
+E) Zn(OH)₂ + 2 HIO₄ → Zn(IO₄)₂ + 2 H₂O.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q56
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 57
+
+A forma molecular e a distribuição eletrônica são pontos chaves para o descobrimento da geometria de novas moléculas. Marque a alternativa em que constam as seguintes geometrias moleculares, conforme a seqüência solicitada: Tetraédrica , angular, linear e octaédrica
+
+
+A) CH₄ | H₂S | Br₂ | H₂Se
+B) CF₄ | SF₆ | N₂ | SeF₆
+C) SiF₄ | H₂S | HCN | TeF₆
+D) PBr₃ | H₂O | NH₃ | SBr₆
+E) NF₃ | HCN | I₂ | HBrO₄
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q57
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 58
+
+Observe a configuração eletrônica da Camada de Valência abaixo e marque a alternativa correta. 4s² 4p⁴
+
+
+A) O elemento em questão possui 34 elétrons, encontra-se no bloco p, quarto período e é um não-metal.
+B) O elemento em questão possui 35 elétrons, encontra-se no bloco p, quarto período e possui 6 elétrons na camada de Valência.
+C) O elemento em questão possui 34 elétrons, encontra-se no bloco p, quarto período e é um metal.
+D) O elemento em questão possui 34 elétrons, encontra-se no bloco d, quarto período e possui 7 elétrons na camada de Valência.
+E) O elemento em questão possui 34 elétrons, encontra-se no bloco d, quinto período e possui 6 elétrons na camada de Valência.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q58
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 59
+
+O consumo de fertilizantes vem crescendo muito nos últimos anos, pois a demanda de alimentos também aumentou bastante. O íon nitrato encontra-se em inúmeras formulações de fertilizantes. As reações abaixo estão relacionadas com a produção comercial do ácido nítrico (HNO₃). No que se refere aos agentes oxidantes e agentes redutores das reações envolvidas na produção do HNO₃ , é correto dizer: 
+
+Reação 1: 4 NH₃(g) + 5 O₂(g) → 4 NO(g) + 6 H₂O(g)
+Reação 2: 2 NO(g) + O₂(g) → 2 NO₂(g)
+Reação 3: 3 NO₂(g) + H₂O(l) → 2 HNO₃(aq) + NO(g)
+
+
+A) Na reação 1, o átomo de nitrogênio é o agente redutor e o átomo de oxigênio atua como agente oxidante.
+B) Na reação 2, o átomo de nitrogênio é o agente oxidante e o átomo de oxigênio atua como agente redutor.
+C) Na reação 1, a molécula de O₂ atua como agente oxidante e, na reação 2, atua como agente redutor.
+D) Tanto na reação 1 como na reação 2, os átomos de nitrogênios atuam como agente oxidante.
+E) A reação 3 não é de oxidação-redução, pois não há alteração nos estados de oxidação das espécies envolvidas. Trata-se de uma reação de ionização.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q59
+
+========================================================================
+FURG 2010 — Química — Vestibular regular — Questão 60
+
+Complete as afirmações com V (verdadeiro) e F (Falso) e marque a alternativa correta. ( ) Na molécula do HF (ácido fluorídrico), há um deslocamento da densidade eletrônica do H para o F, gerando assim uma separação das cargas positivas e negativas. O átomo de hidrogênio constitui o pólo positivo (δ⁺) da molécula e o flúor é o pólo negativo (δ⁻). ( ) Na molécula IBr (brometo de iodo), não existe a formação de pólos positivos e negativos, pois essa molécula é formada por dois elementos do mesmo grupo da tabela periódica e com eletronegatividade muito próximas. ( ) Moléculas como O₂ e I₂ são exemplos de compostos covalentes apolares. ( ) O CCl₄ (tetracloreto de carbono) e o SCl₆ (hexacloreto de enxofre), embora sejam moléculas formadas por elementos com grande diferença de eletronegatividade, são moléculas apolares, pois possuem momento dipolar nulo.
+
+
+A) V, F, F, F .
+B) V, F, V, F.
+C) V, F, F,
+
+V.
+D) F, F, V,
+
+V.
+E) V, F, V,
+
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-quimica
+Identificador: furg-2010-quimica-q60
+
+========================================================================
+GABARITOS
+
+FURG 2000 | Química | Vestibular regular | Questão 21: D
+FURG 2000 | Química | Vestibular regular | Questão 22: D
+FURG 2000 | Química | Vestibular regular | Questão 23: B
+FURG 2000 | Química | Vestibular regular | Questão 24: B
+FURG 2000 | Química | Vestibular regular | Questão 25: C
+FURG 2000 | Química | Vestibular regular | Questão 26: C
+FURG 2000 | Química | Vestibular regular | Questão 27: C
+FURG 2000 | Química | Vestibular regular | Questão 28: B
+FURG 2000 | Química | Vestibular regular | Questão 29: D
+FURG 2000 | Química | Vestibular regular | Questão 30: C
+FURG 2000 | Química | Vestibular regular | Questão 31: D
+FURG 2000 | Química | Vestibular regular | Questão 32: C
+FURG 2000 | Química | Vestibular regular | Questão 33: A
+FURG 2000 | Química | Vestibular regular | Questão 34: D
+FURG 2000 | Química | Vestibular regular | Questão 35: E
+FURG 2000 | Química | Vestibular regular | Questão 36: A
+FURG 2000 | Química | Vestibular regular | Questão 37: D
+FURG 2000 | Química | Vestibular regular | Questão 38: C
+FURG 2000 | Química | Vestibular regular | Questão 39: E
+FURG 2000 | Química | Vestibular regular | Questão 40: D
+FURG 2001 | Química | Vestibular regular | Questão 21: D
+FURG 2001 | Química | Vestibular regular | Questão 22: B
+FURG 2001 | Química | Vestibular regular | Questão 23: E
+FURG 2001 | Química | Vestibular regular | Questão 24: D
+FURG 2001 | Química | Vestibular regular | Questão 25: E
+FURG 2001 | Química | Vestibular regular | Questão 26: A
+FURG 2001 | Química | Vestibular regular | Questão 27: B
+FURG 2001 | Química | Vestibular regular | Questão 28: C
+FURG 2001 | Química | Vestibular regular | Questão 29: A
+FURG 2001 | Química | Vestibular regular | Questão 30: C
+FURG 2001 | Química | Vestibular regular | Questão 31: E
+FURG 2001 | Química | Vestibular regular | Questão 32: D
+FURG 2001 | Química | Vestibular regular | Questão 33: C
+FURG 2001 | Química | Vestibular regular | Questão 34: B
+FURG 2001 | Química | Vestibular regular | Questão 35: D
+FURG 2001 | Química | Vestibular regular | Questão 36: A
+FURG 2001 | Química | Vestibular regular | Questão 37: A
+FURG 2001 | Química | Vestibular regular | Questão 38: B
+FURG 2001 | Química | Vestibular regular | Questão 39: E
+FURG 2001 | Química | Vestibular regular | Questão 40: C
+FURG 2002 | Química | Vestibular regular | Questão 21: A
+FURG 2002 | Química | Vestibular regular | Questão 22: B
+FURG 2002 | Química | Vestibular regular | Questão 23: D
+FURG 2002 | Química | Vestibular regular | Questão 24: C
+FURG 2002 | Química | Vestibular regular | Questão 25: A
+FURG 2002 | Química | Vestibular regular | Questão 26: D
+FURG 2002 | Química | Vestibular regular | Questão 27: E
+FURG 2002 | Química | Vestibular regular | Questão 28: B
+FURG 2002 | Química | Vestibular regular | Questão 29: D
+FURG 2002 | Química | Vestibular regular | Questão 30: A
+FURG 2002 | Química | Vestibular regular | Questão 31: C
+FURG 2002 | Química | Vestibular regular | Questão 32: B
+FURG 2002 | Química | Vestibular regular | Questão 33: E
+FURG 2002 | Química | Vestibular regular | Questão 34: D
+FURG 2002 | Química | Vestibular regular | Questão 35: C
+FURG 2002 | Química | Vestibular regular | Questão 36: A
+FURG 2002 | Química | Vestibular regular | Questão 37: D
+FURG 2002 | Química | Vestibular regular | Questão 38: A
+FURG 2002 | Química | Vestibular regular | Questão 39: B
+FURG 2002 | Química | Vestibular regular | Questão 40: A
+FURG 2003 | Química | Vestibular regular | Questão 21: B
+FURG 2003 | Química | Vestibular regular | Questão 22: C
+FURG 2003 | Química | Vestibular regular | Questão 23: A
+FURG 2003 | Química | Vestibular regular | Questão 24: B
+FURG 2003 | Química | Vestibular regular | Questão 25: D
+FURG 2003 | Química | Vestibular regular | Questão 26: A
+FURG 2003 | Química | Vestibular regular | Questão 27: C
+FURG 2003 | Química | Vestibular regular | Questão 28: D
+FURG 2003 | Química | Vestibular regular | Questão 29: D
+FURG 2003 | Química | Vestibular regular | Questão 30: B
+FURG 2003 | Química | Vestibular regular | Questão 31: B
+FURG 2003 | Química | Vestibular regular | Questão 32: C
+FURG 2003 | Química | Vestibular regular | Questão 33: E
+FURG 2003 | Química | Vestibular regular | Questão 34: B
+FURG 2003 | Química | Vestibular regular | Questão 35: E
+FURG 2003 | Química | Vestibular regular | Questão 36: C
+FURG 2003 | Química | Vestibular regular | Questão 37: E
+FURG 2003 | Química | Vestibular regular | Questão 38: D
+FURG 2003 | Química | Vestibular regular | Questão 39: A
+FURG 2003 | Química | Vestibular regular | Questão 40: C
+FURG 2004 | Química | Vestibular regular | Questão 31: B
+FURG 2004 | Química | Vestibular regular | Questão 32: C
+FURG 2004 | Química | Vestibular regular | Questão 33: D
+FURG 2004 | Química | Vestibular regular | Questão 34: B
+FURG 2004 | Química | Vestibular regular | Questão 35: não disponível
+FURG 2004 | Química | Vestibular regular | Questão 36: C
+FURG 2004 | Química | Vestibular regular | Questão 37: não disponível
+FURG 2004 | Química | Vestibular regular | Questão 38: A
+FURG 2004 | Química | Vestibular regular | Questão 39: B
+FURG 2004 | Química | Vestibular regular | Questão 40: D
+FURG 2004 | Química | Vestibular regular | Questão 41: D
+FURG 2004 | Química | Vestibular regular | Questão 42: C
+FURG 2004 | Química | Vestibular regular | Questão 43: não disponível
+FURG 2004 | Química | Vestibular regular | Questão 44: E
+FURG 2004 | Química | Vestibular regular | Questão 45: E
+FURG 2005 | Química | Vestibular regular | Questão 31: C
+FURG 2005 | Química | Vestibular regular | Questão 32: A
+FURG 2005 | Química | Vestibular regular | Questão 33: E
+FURG 2005 | Química | Vestibular regular | Questão 34: B
+FURG 2005 | Química | Vestibular regular | Questão 35: D
+FURG 2005 | Química | Vestibular regular | Questão 36: D
+FURG 2005 | Química | Vestibular regular | Questão 37: C
+FURG 2005 | Química | Vestibular regular | Questão 38: A
+FURG 2005 | Química | Vestibular regular | Questão 39: B
+FURG 2005 | Química | Vestibular regular | Questão 40: E
+FURG 2005 | Química | Vestibular regular | Questão 41: A
+FURG 2005 | Química | Vestibular regular | Questão 42: C
+FURG 2005 | Química | Vestibular regular | Questão 43: B
+FURG 2005 | Química | Vestibular regular | Questão 44: E
+FURG 2005 | Química | Vestibular regular | Questão 45: D
+FURG 2006 | Química | Vestibular regular | Questão 31: A
+FURG 2006 | Química | Vestibular regular | Questão 32: E
+FURG 2006 | Química | Vestibular regular | Questão 33: B
+FURG 2006 | Química | Vestibular regular | Questão 34: D
+FURG 2006 | Química | Vestibular regular | Questão 35: C
+FURG 2006 | Química | Vestibular regular | Questão 36: E
+FURG 2006 | Química | Vestibular regular | Questão 37: A
+FURG 2006 | Química | Vestibular regular | Questão 38: C
+FURG 2006 | Química | Vestibular regular | Questão 39: D
+FURG 2006 | Química | Vestibular regular | Questão 40: B
+FURG 2006 | Química | Vestibular regular | Questão 41: C
+FURG 2006 | Química | Vestibular regular | Questão 42: B
+FURG 2006 | Química | Vestibular regular | Questão 43: D
+FURG 2006 | Química | Vestibular regular | Questão 44: E
+FURG 2006 | Química | Vestibular regular | Questão 45: A
+FURG 2007 | Química | Processo seletivo UAB | Questão 21: A
+FURG 2007 | Química | Processo seletivo UAB | Questão 22: B
+FURG 2007 | Química | Processo seletivo UAB | Questão 23: C
+FURG 2007 | Química | Processo seletivo UAB | Questão 24: E
+FURG 2007 | Química | Processo seletivo UAB | Questão 25: A
+FURG 2007 | Química | Processo seletivo UAB | Questão 26: C
+FURG 2007 | Química | Processo seletivo UAB | Questão 27: B
+FURG 2007 | Química | Processo seletivo UAB | Questão 28: D
+FURG 2007 | Química | Processo seletivo UAB | Questão 29: E
+FURG 2007 | Química | Processo seletivo UAB | Questão 30: D
+FURG 2007 | Química | Vestibular regular | Questão 31: A
+FURG 2007 | Química | Vestibular regular | Questão 32: C
+FURG 2007 | Química | Vestibular regular | Questão 33: B
+FURG 2007 | Química | Vestibular regular | Questão 34: D
+FURG 2007 | Química | Vestibular regular | Questão 35: E
+FURG 2007 | Química | Vestibular regular | Questão 36: B
+FURG 2007 | Química | Vestibular regular | Questão 37: C
+FURG 2007 | Química | Vestibular regular | Questão 38: A
+FURG 2007 | Química | Vestibular regular | Questão 39: E
+FURG 2007 | Química | Vestibular regular | Questão 40: D
+FURG 2007 | Química | Vestibular regular | Questão 41: C
+FURG 2007 | Química | Vestibular regular | Questão 42: E
+FURG 2007 | Química | Vestibular regular | Questão 43: A
+FURG 2007 | Química | Vestibular regular | Questão 44: B
+FURG 2007 | Química | Vestibular regular | Questão 45: D
+FURG 2008 | Química | Vestibular de inverno | Questão 31: C
+FURG 2008 | Química | Vestibular de inverno | Questão 32: A
+FURG 2008 | Química | Vestibular de inverno | Questão 33: D
+FURG 2008 | Química | Vestibular de inverno | Questão 34: A
+FURG 2008 | Química | Vestibular de inverno | Questão 35: B
+FURG 2008 | Química | Vestibular de inverno | Questão 36: E
+FURG 2008 | Química | Vestibular de inverno | Questão 37: B
+FURG 2008 | Química | Vestibular de inverno | Questão 38: C
+FURG 2008 | Química | Vestibular de inverno | Questão 39: E
+FURG 2008 | Química | Vestibular de inverno | Questão 40: C
+FURG 2008 | Química | Vestibular de inverno | Questão 41: A
+FURG 2008 | Química | Vestibular de inverno | Questão 42: E
+FURG 2008 | Química | Vestibular de inverno | Questão 43: D
+FURG 2008 | Química | Vestibular de inverno | Questão 44: B
+FURG 2008 | Química | Vestibular de inverno | Questão 45: D
+FURG 2009 | Química | Vestibular regular | Questão 31: C
+FURG 2009 | Química | Vestibular regular | Questão 32: E
+FURG 2009 | Química | Vestibular regular | Questão 33: A
+FURG 2009 | Química | Vestibular regular | Questão 34: D
+FURG 2009 | Química | Vestibular regular | Questão 35: B
+FURG 2009 | Química | Vestibular regular | Questão 36: A
+FURG 2009 | Química | Vestibular regular | Questão 37: C
+FURG 2009 | Química | Vestibular regular | Questão 38: B
+FURG 2009 | Química | Vestibular regular | Questão 39: E
+FURG 2009 | Química | Vestibular regular | Questão 40: D
+FURG 2009 | Química | Vestibular regular | Questão 41: B
+FURG 2009 | Química | Vestibular regular | Questão 42: A
+FURG 2009 | Química | Vestibular regular | Questão 43: D
+FURG 2009 | Química | Vestibular regular | Questão 44: C
+FURG 2009 | Química | Vestibular regular | Questão 45: E
+FURG 2010 | Química | Vestibular regular | Questão 46: E
+FURG 2010 | Química | Vestibular regular | Questão 47: B
+FURG 2010 | Química | Vestibular regular | Questão 48: E
+FURG 2010 | Química | Vestibular regular | Questão 49: E
+FURG 2010 | Química | Vestibular regular | Questão 50: A
+FURG 2010 | Química | Vestibular regular | Questão 51: C
+FURG 2010 | Química | Vestibular regular | Questão 52: B
+FURG 2010 | Química | Vestibular regular | Questão 53: D
+FURG 2010 | Química | Vestibular regular | Questão 54: A
+FURG 2010 | Química | Vestibular regular | Questão 55: D
+FURG 2010 | Química | Vestibular regular | Questão 56: ANULADA
+FURG 2010 | Química | Vestibular regular | Questão 57: C
+FURG 2010 | Química | Vestibular regular | Questão 58: A
+FURG 2010 | Química | Vestibular regular | Questão 59: A
+FURG 2010 | Química | Vestibular regular | Questão 60: E

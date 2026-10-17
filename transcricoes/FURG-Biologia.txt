@@ -1,0 +1,4011 @@
+FURG — BIOLOGIA EM TEXTO
+195 questões do acervo histórico disponível, de 2000 a 2010.
+Enunciados, alternativas e textos de apoio em texto. As figuras estão preservadas no site e na pasta figures da versão offline.
+A cobertura do acervo não inclui todas as edições históricas. Projeto independente, sem vínculo com a FURG.
+Frações: (numerador)/(denominador). Matrizes: linhas separadas por ponto e vírgula. Gabaritos ao final.
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 41
+
+As figuras abaixo representam esquemas simplificados de duas células A e B.
+
+A partir da comparação destas figuras, é correto afirmar que
+
+[Figura: Esquemas das células A e B, com suas estruturas internas.]
+Arquivo: figures/furg-2000-biologia-q41-fig1.webp
+
+A) cada uma das células possui dois nucléolos.
+B) a célula A é anucleada, ao contrário da célula B.
+C) a capacidade de produção de energia é menor na célula A do que na célula B.
+D) a célula A representa uma célula animal e a célula B, uma célula vegetal.
+E) nenhuma das células apresenta complexo de Golgi.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q41
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 42
+
+Os leucócitos podem ser classificados em granulócitos ou agranulócitos, de acordo com a presença ou ausência de granulações citoplasmáticas.
+
+São considerados leucócitos granulócitos
+
+
+A) somente os neutrófilos.
+B) somente os eosinófilos.
+C) somente os monócitos.
+D) os neutrófilos, eosinófilos e basófilos.
+E) os neutrófilos, linfócitos e basófilos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q42
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 43
+
+O plasma sangüíneo é uma solução que se caracteriza por conter:
+
+I - principalmente água;
+
+II - até 10% de elementos celulares;
+
+III - grande quantidade de fibrina;
+
+IV - grande quantidade de células e plaquetas;
+
+V - fibrinogênio.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas
+III.
+B) Apenas I e
+III.
+C) Apenas I e
+V.
+D) Apenas II e
+V.
+E) Apenas III e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q43
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 44
+
+Sobre a fotossíntese, NÃO se pode afirmar que
+
+
+A) ocorre em duas fases, uma dependente da luz e outra independente da luz.
+B) durante a reação da fase escura ocorre o desprendimento de oxigênio.
+C) na fase clara ocorre a produção de ATP e NADPH2.
+D) durante a absorção da luz, os comprimentos de onda mais absorvidos correspondem ao azul e ao vermelho.
+E) na fase escura ocorre a redução do dióxido de carbono para a formação da glicose.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q44
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 45
+
+O reino vegetal caracteriza-se por diferentes níveis de organização. Observe as figuras dos vegetais abaixo e relacione-as aos grupos a que pertencem, citados na coluna 1.
+
+Coluna 1
+
+( ) algas ( ) briófitas ( ) pteridófitas ( ) gimnospermas ( ) angiospermas
+
+A alternativa que contém a associação correta da coluna 1, quando lida de cima para baixo, é
+
+[Figura: Cinco vegetais identificados pelos números1 a5.]
+Arquivo: figures/furg-2000-biologia-q45-fig1.webp
+
+A) 1, 2, 4, 3, 5.
+B) 1, 2, 5, 3, 4.
+C) 2, 1, 4, 5, 3.
+D) 2, 4, 1, 5, 3.
+E) 4, 1, 2, 5, 3.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q45
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 46
+
+Considere o ciclo reprodutivo abaixo.
+
+Sobre o ciclo é INCORRETO afirmar que
+
+[Figura: Ciclo vegetal com zigoto, esporófito, esporângio, esporo, gametófito e fases I a IV.]
+Arquivo: figures/furg-2000-biologia-q46-fig1.webp
+
+A) na fase I ocorrem mitoses sucessivas.
+B) a fase II apresenta indivíduo diplobionte, e é a fase mais desenvolvida e duradoura em pteridófitas.
+C) na fase III ocorre meiose em briófitas e pteridófitas.
+D) a fase IV apresenta indivíduo haplobionte e é a fase mais duradoura em briófitas.
+E) todas as fases indicadas são exclusivas de plantas vasculares.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q46
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 47
+
+Dicotiledôneas e monocotiledôneas são duas classes de angiospermas.
+
+O que caracteriza as monocotiledôneas é
+
+
+A) raiz fasciculada, folhas paralelinérvias, flores geralmente trímeras, fruto com um cotilédone.
+B) raiz fasciculada, folhas paralelinérvias, flores geralmente pentâmeras, sementes com dois cotilédones.
+C) raiz fasciculada, folhas peninérvias, flores geralmente tetrâmeras, fruto com um cotilédone.
+D) raiz axial, folhas peninérvias, flores somente pentâmeras, fruto com um cotilédone.
+E) raiz axial, folhas peninérvias, flores tetrâmeras e pentâmeras, sementes com dois cotilédones.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q47
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 48
+
+Células vegetais com núcleo grande, vacúolos pequenos e numerosos, alta atividade metabólica e mitoses sucessivas são características de
+
+
+A) floema.
+B) xilema.
+C) parênquima.
+D) colênquima.
+E) meristema.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q48
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 49
+
+Um animal apresenta apêndices articulados para locomoção (pernas) e antenas. Você o identifica como um artrópode. A determinação da classe a que ele pertence e a característica correta que permite a identificação dessa classe são:
+
+
+A) Insecta, se possuir quatro pares de pernas.
+B) Crustacea, se possuir dois pares de antenas.
+C) Arachnida, se possuir um par de antenas.
+D) Diplopoda, se possuir dois pares de antenas.
+E) Chilopoda, se possuir um par de quelíceras.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q49
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 50
+
+Assinale a alternativa que apresenta características comuns a todos os artrópodes.
+
+
+A) Exoesqueleto quitinoso com processo de muda ou ecdise para crescimento.
+B) Processo de muda ou ecdise; sistema circulatório fechado.
+C) Cordão nervoso dorsal e ganglionar; presença de antenas.
+D) Pernas articuladas e cordão nervoso dorsal e ganglionar.
+E) Sistema circulatório aberto e presença de mandíbulas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q50
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 51
+
+Com relação aos Cordados, são feitas quatro afirmativas.
+
+II - Os anfíbios foram os primeiros vertebrados a invadir o ambiente terrestre.
+
+III - A pele dos répteis não apresenta glândulas mucosas e é recoberta por escamas epidérmicas.
+
+IV - Os pêlos dos mamíferos formam uma camada protetora contra a perda de calor para o ambiente.
+
+V - As aves não são capazes de manter estável sua temperatura corporal, pois as penas, que recobrem o seu corpo, não são eficientes para tal função.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas I.
+B) Apenas II e
+III.
+C) Apenas I, II e
+III.
+D) Apenas I, III e
+IV.
+E) Apenas II, III e
+IV.
+
+Nota de transcrição: A numeração das quatro afirmativas foi mantida como aparece na prova original: II, III, IV e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q51
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 52
+
+Considere o quadro abaixo, onde são omitidos os itens I, II e
+III. Glândula | Hormônio | Função
+I | Testosterona | Estímulo da espermatogênese
+Neuro-hipófise | II | Produção de urina concentrada
+Córtex da supra-renal | Aldosterona | III
+
+A alternativa que completa corretamente o quadro acima para I, II e III, nessa ordem, é
+
+
+A) testículo, hormônio antidiurético e regulação da reabsorção de sódio no rim.
+B) hipófise, ocitocina e vasodilatação periférica.
+C) testículo, ocitocina e regulação da reabsorção de sódio no rim.
+D) testículo, prolactina e regulação do nível de atividade do organismo.
+E) hipófise, hormônio antidiurético e vasodilatação periférica.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q52
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 53
+
+Quanto ao ciclo de vida de vermes parasitas do homem, é correto afirmar que
+
+
+A) o nematódeo Ascaris lumbricoides, causador da ascaridíase, é adquirido pelo homem através da ingestão de carne de aves.
+B) o nematódeo Wuchereria bancrofti, causador da elefantíase, só é transmitido ao homem depois de passar pelo hospedeiro intermediário, que é um molusco.
+C) o nematódeo Ancylostoma duodenale, causador do amarelão, necessita do hospedeiro intermediário, que é um molusco, para depois ser transmitido ao homem.
+D) o trematoda Schistossoma mansoni, causador da barriga d’água, atinge o homem por penetração ativa das cercárias através da pele.
+E) o trematoda Taenia solium não tem hospedeiro intermediário.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q53
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 54
+
+Em um casal, ambos são heterozigotos para um gene recessivo do albinismo. A probabilidade de o casal ter gêmeos dizigóticos, com igual fenótipo de pigmentação, é
+
+
+A) 1/2.
+B) 1/4.
+C) 3/4.
+D) 5/8.
+E) 7/8.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q54
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 55
+
+Uma das fitas do ADN de um gene possui a seguinte seqüência de bases: 5' -CATGGCATC-3' . Qual é a seqüência de bases da fita de ADN complementar?
+
+
+A) 3' -CTACGGTAC-5'
+B) 3' -CATGGCATC-5'
+C) 3' -GUACCGUAG-5'
+D) 3' -GUUCCGAUC-5'
+E) 3' -GTACCGTAG-5'
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q55
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 56
+
+Um homem trabalhou numa seção de radioterapia por 20 anos. Seu primeiro filho (masculino) nasceu com daltonismo (forma verde-vermelho, herança recessiva ligada ao X). A doença não tinha sido detectada em nenhum membro de sua família ou de sua mulher. O trabalhador resolveu processar seu patrão por danos causados pela radiação. Qual seria seu testemunho no tribunal como perito em genética?
+
+
+A) O daltonismo é um distúrbio ligado ao cromossomo X; não pode ser transmitido de pai para filho e, portanto, a radiação não teve influência.
+B) A radiação pode ter causado uma mutação no gene ligado ao cromossomo X do pai e este ter sido transmitido para seu filho.
+C) A radiação não pode causar mutações nos genes dos gametas do homem.
+D) Pode ter ocorrido uma mutação nova no cromossomo X do homem.
+E) Durante a espermatogênese, o gene sofreu uma mutação causada pela radiação e foi transmitido para o filho, incorporando-se a seu cromossomo X.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q56
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 57
+
+Entre as relações ecológicas, a predação atua como um dos fatores que controlam o tamanho das populações em ambientes naturais. Sobre a relação predador-presa, considerando uma população predadora limitada pelo alimento e uma população presa limitada por predação, podemos dizer que:
+
+I - a redução no tamanho da população presa diminui a competição alimentar intraespecífica na população predadora.
+
+II - as interações entre duas populações levam a flutuações, mais ou menos cíclicas, no tamanho de ambas.
+
+III - o tamanho da população presa é determinado, em parte, pelo tamanho da população predadora, sendo menor em altas densidades de predadores.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas I.
+B) Apenas
+II.
+C) Apenas
+III.
+D) Apenas I,
+III.
+E) I, II e
+III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q57
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 58
+
+Um grupo de ecólogos estudou duas populações humanas (População 1 e População 2) durante um ano. Cada população foi dividida em cinco grupos de idade: A (0-14 anos); B (15-29 anos); C (30-44 anos); D (45-59 anos) e E (60 anos ou mais). Para apresentar os resultados num congresso, graficaram os dados sob a forma de pirâmides populacionais, onde cada "bloco" é proporcional à quantidade de pessoas que pertencem a cada grupo de idade específica.
+
+Em função da informação apresentada nos gráficos, pode-se concluir que:
+
+I - a taxa de natalidade na População 1 é maior do que na População 2.
+
+II - a mortalidade infantil é maior na População 1 do que na População 2.
+
+III - proporcionalmente, a População 1 tem mais pessoas idosas do que a População 2.
+
+Quais afirmativas estão corretas?
+
+[Figura: Pirâmides das populações1 e2 divididas nos grupos etários A a E.]
+Arquivo: figures/furg-2000-biologia-q58-fig1.webp
+
+A) Apenas I.
+B) Apenas I e
+II.
+C) Apenas I e
+III.
+D) Apenas II e
+III.
+E) I, II e
+III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q58
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 59
+
+A introdução de espécies exóticas (nãonativas) nos ecossistemas é motivo de grande preocupação entre os ambientalistas, embora ainda permaneçam desconhecidos muitos de seus efeitos. Sobre o tema, considere as afirmativas que seguem.
+
+I - Algumas espécies exóticas são altamente oportunistas, sendo capazes de tirar vantagem na competição por alimento e território sobre as comunidades nativas de plantas e animais.
+
+II - As espécies exóticas sempre encontram predadores naturais nos ambientes invadidos, o que as impede de aumentar muito sua população.
+
+III - As espécies exóticas podem ser introduzidas em um ambiente através do deslocamento de navios de carga entre portos de diferentes continentes.
+
+IV - Algumas espécies são intencionalmente introduzidas com a finalidade de controlar a densidade de populações que possam estar causando dano ao ambiente.
+
+Quais afirmativas estão corretas ?
+
+
+A) Apenas I.
+B) Apenas
+III.
+C) Apenas II e
+III.
+D) Apenas II e
+IV.
+E) Apenas I, III e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q59
+
+========================================================================
+FURG 2000 — Biologia — Vestibular regular — Questão 60
+
+Relacione os poluentes enumerados na coluna
+
+1 com os efeitos apresentados na coluna 2.
+
+Coluna 1
+
+1 - Detergentes sintéticos 2 - CFC (clorofluorocarbono) 3 - Pesticidas organoclorados 4 - Petróleo (derramamento)
+
+Coluna 2
+
+( ) afetam a camada de ozônio. ( ) acumulam-se no tecido adiposo. ( ) afetam o mecanismo de termorregulação nas aves aquáticas. ( ) não sofrem decomposição.
+
+A alternativa que contém a associação correta da coluna 2, quando lida de cima para baixo, é
+
+
+A) 1, 2, 3 e 4.
+B) 2, 3, 4 e 1.
+C) 3, 4, 1 e 2.
+D) 4, 1, 2 e 3.
+E) 2, 4, 3 e 1.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-biologia
+Identificador: furg-2000-biologia-q60
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 41
+
+Os organismos multicelulares apresentam o líquido extracelular separando suas unidades e, no processo evolutivo, desenvolveram eficientes mecanismos de comunicação intercelular. Os sistemas que desempenham essa função são:
+
+
+A) muscular e nervoso.
+B) nervoso e endócrino.
+C) excretório e muscular.
+D) digestivo e endócrino.
+E) excretório e respiratório.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q41
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 42
+
+Os animais ruminantes apresentam o estômago dividido em quatro compartimentos. Esta especialização tem por objetivo
+
+
+A) proteger o trato gastrointestinal do efeito nocivo de alguns vegetais.
+B) obter maior eficiência na digestão das proteínas.
+C) aumentar a capacidade de assimilar lipídios.
+D) permitir a digestão da celulose.
+E) produzir abundante secreção para favorecer a ruminação.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q42
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 43
+
+O tatu, Dsypus novencinctus, edentado americano, apresenta um fenômeno interessante: de um único ovo resultam quatro animais. O mesmo ocorre com insetos, resultando, nesse caso, centenas de indivíduos. Como se denomina este fenômeno?
+
+
+A) Autogamia.
+B) Poliembrionia.
+C) Segmentação.
+D) Ovulação.
+E) Monospermia.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q43
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 44
+
+Uma doença viral aguda que afeta os animais de casco fendido (bionculados), caracterizada por febre e aparecimento de vesículas na boca e patas, prejudicou a produção pecuária do Rio Grande do Sul recentemente. Essa doença é a
+
+
+A) febre aftosa.
+B) raiva bovina.
+C) hidatidose.
+D) leptospirose.
+E) febre amarela.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q44
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 45
+
+Relacione corretamente os grupos animais enumerados na Coluna 1 com os exemplos citados na Coluna 2.
+
+Coluna 1
+(1) Protozoário
+(2) Cnidário
+(3) Platielminto
+(4) Anelídeo
+(5) Artrópode
+
+Coluna 2
+( ) Tênia
+( ) Sanguessuga
+( ) Medusa
+( ) Ameba
+( ) Centopéia
+
+A alternativa que contém a seqüência correta da Coluna 2, quando lida de cima para baixo, é
+
+
+A) 1, 2, 3, 5 e 4.
+B) 1, 3, 2, 4 e 5.
+C) 2, 4, 3, 1 e 5.
+D) 3, 4, 2, 1 e 5.
+E) 3, 5, 2, 1 e 4.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q45
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 46
+
+Para iniciar uma pesquisa sobre um determinado grupo zoológico, você precisa consultar os arquivos de uma biblioteca ou a rede mundial de computadores (Internet). Para tanto, é necessário o uso de palavras-chave, ou seja, palavras que caracterizem o grupo com o qual você pretende trabalhar.
+
+Marque a alternativa que apresenta somente palavras-chave corretas para encontrar as informações sobre o grupo em questão.
+
+Grupo Palavras-chave
+
+
+A) Moluscos — metameria, concha calcária e corpo mole
+B) Equinodermos — endoesqueleto calcário, sistema ambulacral e espinhos epidérmicos
+C) Anfíbios — respiração branquial, ovos com casca calcária e girinos
+D) Mamíferos — glândulas mamárias, pecilotermia e pele recoberta por pêlos
+E) Anelídeos — exoesqueleto, clitelo, casulo e larva trocófora
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q46
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 47
+
+Analise o esquema de dobramento das paredes do corpo dos diferentes tipos morfológicos dos Poríferos. As superfícies recobertas por coanócitos são aquelas em que visualizamos os flagelos, e as flechas representam o sentido da corrente d’água proporcionada pela agitação desses flagelos.
+
+Sobre os tipos de esponjas são feitas quatro afirmativas.
+
+I - O tipo Asconóide impõe um limite no tamanho da esponja, pois um átrio muito grande, com um pequeno número de coanócitos, acarreta um baixo aproveitamento do alimento carreado com a água.
+
+II - As esponjas do tipo Siconóide podem alcançar maior tamanho que as dos outros tipos.
+
+III - As esponjas do tipo Leuconóide são as que apresentam maior capacidade de filtração e retenção dos alimentos trazidos com a corrente d’água.
+
+IV - As esponjas do tipo Leuconóide possuem maior número de coanócitos e menor átrio, se as compararmos com outras de tipos morfológicos diferentes mas de mesmo tamanho.
+
+Quais afirmativas estão corretas?
+
+[Figura: Tipos morfológicos Asconóide, Siconóide e Leuconóide com correntes de água e flagelos.]
+Arquivo: figures/furg-2001-biologia-q47-fig1.webp
+
+A) Apenas I e
+II.
+B) Apenas I, II e
+IV.
+C) Apenas I, III e
+IV.
+D) Apenas II, III e
+IV.
+E) I, II, III e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q47
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 48
+
+Observe o ciclo vital do platielminto parasita Fasciola hepatica, representado no desenho abaixo.
+
+Com base na ilustração, é correto afirmar que, nesse ciclo,
+
+[Figura: Ciclo de vida da Fasciola hepatica, com carneiro e caramujo.]
+Arquivo: figures/furg-2001-biologia-q48-fig1.webp
+
+A) há somente um hospedeiro, pois a ausência do caramujo não interfere na finalização do ciclo de vida.
+B) há sempre dois hospedeiros: o carneiro é denominado de intermediário, e o caramujo é o definitivo.
+C) há sempre dois hospedeiros, sendo o carneiro o hospedeiro definitivo, porque irá abrigar a forma adulta do parasita.
+D) a infestação do caramujo ocorre por penetração ativa do miracídio, e a do carneiro, pela penetração da cercária.
+E) os ovos necessitam ser fecundados no meio ambiente, pois a Fasciola hepatica é dióica.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q48
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 49
+
+A absorção da radiação ultravioleta pelo tecido epitelial é relacionada à formação
+
+
+A) da vitamina A.
+B) do complexo vitamínico B.
+C) da vitamina C.
+D) da vitamina D.
+E) da vitamina E.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q49
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 50
+
+Células com osmolaridade de 282 mosm/L foram colocadas em três recipientes com soluções de diferentes concentrações de cloreto de sódio, abaixo indicadas.
+
+Recipiente I: solução 282 mosm/L.
+Recipiente II: solução 350 mosm/L.
+Recipiente III: solução 150 mosm/L.
+
+Com relação à osmolaridade da célula, podemos afirmar que
+
+[Figura: Três recipientes com soluções de282,350 e150 mosm/L.]
+Arquivo: figures/furg-2001-biologia-q50-fig1.webp
+
+A) a solução do recipiente I é hiposmótica.
+B) a solução do recipiente II é hiposmótica.
+C) a solução do recipiente II é isosmótica.
+D) a solução do recipiente III é hiposmótica.
+E) a solução do recipiente III é hiperosmótica.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q50
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 51
+
+O cânhamo, a juta e o linho, de origem vegetal, são amplamente utilizados para fabricação de roupas, sacos, estopas, entre outros produtos, sendo, portanto, de grande importância econômica para homem.
+
+Qual o tecido vegetal que é beneficiado para a referida produção?
+
+
+A) Parênquima.
+B) Meristema.
+C) Colênquima.
+D) Floema.
+E) Esclerênquima.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q51
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 52
+
+Entre as várias adaptações dos vegetais ao meio terrestre, uma das mais importantes foi o desenvolvimento do tecido vascular especializado (xilema e floema), o que tornou possível o aparecimento de formas como as arbóreas.
+
+Essa adaptação evolutiva foi observada a partir do grupo
+
+
+A) das angiospermas.
+B) das gimnospermas.
+C) das pteridófitas.
+D) das clorofitas.
+E) dos fungos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q52
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 53
+
+Os organismos animais e vegetais mortos são gradualmente desintegrados, até que suas estruturas não possam mais ser reconhecidas, e suas moléculas orgânicas complexas sejam fragmentadas em dióxido de carbono, água e componentes minerais.
+
+O processo de mineralização é realizado
+
+
+A) somente por bactérias quimiotróficas.
+B) somente por protozoários autotróficos.
+C) somente por cianobactérias saprofíticas.
+D) por fungos e bactérias autotróficos.
+E) por fungos e bactérias saprofíticas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q53
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 54
+
+Foi feita uma salada com os seguintes ingredientes: batata-inglesa, cebola, cenoura, milho e ervilha. Qual das alternativas apresenta a identificação correta, na ordem em que aparecem, das estruturas morfológicas correspondentes aos ingredientes citados?
+
+
+A) Caule, caule, raiz, fruto e semente.
+B) Caule, caule, raiz, semente e fruto.
+C) Raiz, caule, raiz, semente e semente.
+D) Raiz, raiz, caule, fruto e fruto.
+E) Raiz, raiz, caule, fruto e semente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q54
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 55
+
+A fauna da região Neotropical (América do Sul) é muito rica, com vários animais característicos dessa região biogeográfica. São animais representativos dessa fauna:
+
+
+A) boi, tigre, ema, e lobo-guará.
+B) zebra, mico-leão-dourado, équidna e morcego frugívoro.
+C) onça, anta, ema e hipopótamo.
+D) rena, bisão, onça e macaco-prego.
+E) lobo-guará, mico-leão-dourado, ema e onça.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q55
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 56
+
+No Brasil, têm ocorrido, com freqüência, derramamentos de óleo. Embora as empresas responsáveis sejam multadas, são necessárias décadas para que os ambientes atingidos se recuperem. Considerando um ambiente aquático que sofra esse tipo de poluição, podemos afirmar que:
+
+I - pela densidade específica do óleo em relação à água, todo ele rapidamente precipita para o fundo, dificultando a detecção do problema de vazamento;
+
+II - o óleo pode aderir às brânquias de crustáceos (caranguejos e siris), impedindo as trocas respiratórias;
+
+III - a médio prazo, o óleo deposita-se no fundo e provoca a destruição de cadeias alimentares baseadas em detritos;
+
+IV - as cadeias alimentares não são afetadas, devido às adaptações evolutivas dos organismos aquáticos para utilização de energia.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas I e
+IV.
+B) Apenas II e
+III.
+C) Apenas III e
+IV.
+D) Apenas II, III e
+IV.
+E) I, II, III e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q56
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 57
+
+É sabido que a biodiversidade, nos últimos séculos, está diminuindo por ações antropogênicas. Tal processo tem como causas:
+
+I - o grande crescimento da população humana, associado ao uso crescente dos recursos planetários;
+
+II - a destruição de habitats de espécies endêmicas;
+
+III - o desmatamento, poluição e utilização de recursos naturais sem o manejo adequado;
+
+IV - a utilização da reciclagem de materiais e diminuição do uso de venenos agrícolas.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas I e
+IV.
+B) Apenas II e
+IV.
+C) Apenas III e
+IV.
+D) Apenas I, II e
+III.
+E) I, II, III e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q57
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 58
+
+De toda a água da biosfera, menos de 1% está localizada em rios e lagos, o que torna a água doce o mais importante recurso para ser administrado no futuro. Sobre esse recurso, são feitas cinco afirmativas.
+
+I - O maior volume de água na biosfera é salgado, porém a energia solar provoca a evaporação da água oceânica, que, em parte, é carregada pelos ventos em direção aos continentes, onde precipita, principalmente sob a forma de chuva e neve.
+
+II - A poluição hídrica nos continentes é provocada, principalmente, pelo lançamento de esgotos domésticos e substâncias químicas de indústrias.
+
+III - Ambientes terrestres pobres em disponibilidade de água são os que apresentam a maior biomassa vegetal para garantir o sucesso dos outros níveis tróficos.
+
+IV - A disponibilidade de ambientes aquáticos é importante para a manutenção da biodiversidade de répteis, pois na grande maioria das espécies deste grupo, os ovos não apresentam casca para evitar a perda de água durante o período de incubação.
+
+V - Ambientes aquáticos muito poluídos podem apresentar algas produtoras de toxinas, que podem ser venenosas para outros organismos aquáticos e, em alguns casos, para o próprio homem.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas I, II e
+V.
+B) Apenas II, III e
+IV.
+C) Apenas I, II, IV e
+V.
+D) Apenas II, III, IV e
+V.
+E) I, II, III, IV e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q58
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 59
+
+Ultimamente, criou-se grande polêmica sobre o estudo, cultivo e comercialização de organismos transgênicos, culminando, no Brasil, com a Lei de Biossegurança (8.974, de janeiro de 1995) e com a criação da Comissão Técnica Nacional de Biossegurança.
+
+O que são organismos transgênicos?
+
+
+A) Organismos derivados de uma célula, cujo genoma foi modificado pela adição de DNA exógeno.
+B) Organismos resultantes de células que se originaram da fusão de núcleos de espécies diferentes.
+C) Organismos resultantes da fusão de protoplastos.
+D) Organismos que possuem múltiplos do número monoplóide de cromossomos.
+E) Organismos resultantes de gametas não-fusionados.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q59
+
+========================================================================
+FURG 2001 — Biologia — Vestibular regular — Questão 60
+
+Sobre a Evolução por meio da Seleção Natural, proposta por Darwin, são feitas três afirmativas.
+
+I - Entre os indivíduos de uma população, existem variações na morfologia, na fisiologia e no comportamento.
+
+II - A prole se assemelha a seus genitores mais que a indivíduos não-aparentados.
+
+III - Algumas formas são mais bem-sucedidas em sobreviver e se reproduzir do que outras formas em um determinado ambiente.
+
+Quais das afirmativas estão corretas?
+
+
+A) Apenas I.
+B) Apenas
+II.
+C) Apenas
+III.
+D) Apenas I e
+III.
+E) I, II e
+III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-biologia
+Identificador: furg-2001-biologia-q60
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 41
+
+A pele e seus derivados constituem o sistema tegumentar, que forma a cobertura externa do corpo. Se o homem não possuísse tal sistema, o organismo poderia perder excessivo volume de líquido. Existem, na epiderme, células responsáveis por essa impermeabilidade à água, formando uma barreira constituída por
+
+
+A) melanócitos.
+B) granulócitos.
+C) glândulas mucosas.
+D) glândulas sudoríparas.
+E) queratinócitos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q41
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 42
+
+As seguintes afirmações referem-se aos dois tipos básicos de células: procariontes e eucariontes.
+
+I. Mitocôndrias e cloroplastos existem somente nas células eucariontes.
+II. Os organismos procariontes e eucariontes diferenciam-se pela sua organização celular.
+III. As células procariontes apresentam pouco material genético e por isto elas não têm núcleo.
+IV. Células procariontes não têm cloroplastos e portanto não têm condições de realizar a fotossíntese.
+V. A existência de células eucariontes pode ser explicada a partir da teoria simbionte, isto é, a ingestão de células procariontes por um organismo primitivo.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas I, II,
+III.
+B) Apenas I, II,
+V.
+C) Apenas II, III,
+IV.
+D) Apenas III, IV,
+V.
+E) Apenas I, IV,
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q42
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 43
+
+Sabe-se que alelos são genes que ocupam o mesmo loco em cromossomos homólogos e que duas ou mais formas alternativas de um alelo podem ocorrer em uma determinada população. Considerando um homem homozigoto para um determinado alelo, indique com (V) se as afirmativas abaixo forem VERDADEIRAS ou com (F) se forem FALSAS.
+
+( ) Seus pais eram necessariamente homozigotos para este alelo.
+
+( ) Cada uma de suas células somáticas possui duas cópias do alelo.
+
+( ) Cada um dos seus gametas contém uma cópia do alelo.
+
+( ) O casamento deste homem com uma mulher homozigota, para o mesmo alelo, dará origem somente a filhos homozigotos.
+
+( ) Todos os netos deste homem receberão este mesmo alelo através de seus filhos, independentemente do genótipo de sua esposa.
+
+Assinale a alternativa que contém a seqüência correta, quando lida de cima para baixo.
+
+
+A) F, F, V, V, F
+B) F, V, V, V, F
+C) V, F, F, F, V
+D) F, V, F, V, F
+E) V, F, V, F, V
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q43
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 44
+
+Nas ervilhas, a cor amarela das sementes é determinada por um gene dominante Y, e a cor verde, por seu alelo recessivo y; a forma lisa é determinada pelo alelo dominante L, enquanto que a forma rugosa é determinada pelo seu alelo recessivo l. Sabe-se que os dois locos segregam-se de maneira independente. Num determinado cruzamento entre plantas de ervilha obteve-se o seguinte resultado: 3/8 amarelas/lisas; 3/8 amarelas/rugosas; 1/8 verdes/lisas e 1/8 verdes/rugosas.
+
+Das alternativas abaixo, assinale a que melhor expressa o genótipo das plantas envolvidas nesse cruzamento.
+
+
+A) YyLL x Yyll
+B) YYLl x YYLl
+C) yyLl x Yyll
+D) YyLl x Yyll
+E) YyLL x YyLL
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q44
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 45
+
+Analise as duas afirmativas abaixo.
+
+− Os vegetais têm um importante papel na concentração de gases O2 e CO2 na atmosfera terrestre.
+
+− O efeito estufa em nosso planeta ocorre devido ao aumento da combustão e introdução de CO2 na atmosfera terrestre.
+
+Assinale a alternativa que contempla corretamente a relação expressa pelas afirmativas:
+
+
+A) O aumento da taxa fotossintética de plantas e fitoplâncton poderia compensar o efeito estufa.
+B) O efeito estufa resulta da respiração dos vegetais com produção de CO2.
+C) A fisiologia das plantas é irrelevante na problemática do efeito estufa.
+D) A produção de CO2 no processo de respiração dos vegetais e fitoplâncton está em equilíbrio com a formação de O2 no processo de fotossíntese.
+E) O efeito estufa resulta no aumento da produção agrícola.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q45
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 46
+
+Com o objetivo de suprir a demanda mundial de alimentos, tem surgido como promissora alternativa a utilização de organismos geneticamente modificados (OGMs) ou transgênicos. Entretanto, o consumo destes alimentos tem sido questionado judicialmente. Sobre os OGMs, podemos afirmar:
+
+I. Neles são inseridos genes de outros organismos (algumas vezes distantes, do ponto de vista evolutivo), pelo uso de técnicas modernas de Engenharia Genética.
+II. Apresentam modificações possíveis de serem obtidas com técnicas de cruzamento tradicionais.
+III. A obtenção de transgênicos baseia-se no uso de uma série de técnicas que foram sendo desenvolvidas com uma velocidade vertiginosa a partir do início da década de 70, quando pela primeira vez se obteve um organismo transgênico pela manipulação direta do DNA (uma bactéria com um gene de resistência a antibiótico de outra bactéria).
+
+Assinale a alternativa correta:
+
+
+A) Apenas I está correta.
+B) Apenas I e III estão corretas.
+C) Apenas III está correta.
+D) Apenas I e II estão corretas.
+E) Apenas II e III estão corretas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q46
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 47
+
+Os jornais de Rio Grande têm noticiado com freqüência a ocorrência de duas zoonoses associadas aos cães, também relevantes para a saúde humana. São as parasitoses por carrapatos e bicho-de-pé. A que grupos pertencem, respectivamente, estes animais?
+
+
+A) Acarina e Araneida.
+B) Aracnida e Miriapoda.
+C) Acarina e Insecta.
+D) Crustacea e Nematoda.
+E) Araneida e Insecta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q47
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 48
+
+A exploração de peixes para fins econômicos em áreas de corais do nordeste brasileiro é uma atividade controvertida. Assinale a alternativa que justifica as OPOSIÇÕES a esta prática.
+
+
+A) A alteração da biodiversidade dos corais afeta o delicado equilíbrio deste ecossistema.
+B) A biomassa de peixes nesses ecossistemas é pequena e portanto o seu valor econômico é questionável.
+C) A pesca é dificultada nesses ambientes devido à baixa profundidade dos corais.
+D) Os peixes de corais apresentam toxinas.
+E) Os corais apresentam uma pequena diversidade de espécies de peixes, a qual será comprometida pela pesca.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q48
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 49
+
+Relacione o tipo de nutrição apresentado na coluna 1 com os elementos apresentados na coluna 2. Os números podem ser repetidos.
+
+Coluna 1
+(1) nutrição exclusivamente heterotrófica
+(2) nutrição autotrófica
+(3) nutrição autotrófica e/ou heterotrófica
+
+Coluna 2
+( ) Fungi
+( ) Protista
+( ) Monera
+( ) Vegetal
+( ) Animal
+
+Assinale a alternativa que contém a seqüência correta da associação entre as duas colunas, quando lida de cima para baixo.
+
+
+A) 3, 2, 3, 1, 1
+B) 2, 1, 2, 3, 2
+C) 1, 3, 1, 2, 3
+D) 1, 3, 3, 2, 1
+E) 3, 2, 2, 3, 1
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q49
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 50
+
+Para iniciar uma pesquisa sobre um determinado grupo zoológico você precisa consultar os arquivos de uma biblioteca ou a rede mundial de computadores (Internet). Para tanto se faz necessário o uso de palavras-chaves, ou seja, palavras que caracterizem o grupo com o qual você quer trabalhar.
+
+Marque a alternativa em que todas as palavras-chaves sejam corretas para o grupo indicado. Assim, para encontrar informações sobre os
+
+
+A) Moluscos, posso usar as palavras metameria, concha calcária e corpo mole.
+B) Anfíbios, posso usar as palavras respiração branquial, ovos com casca calcária e girinos.
+C) Poríferos, posso usar as palavras porócito, espongiocela, coanócitos e rede espongina.
+D) Mamíferos, posso usar as palavras glândulas mamárias, pecilotermia, pele recoberta por pêlos.
+E) Anelídeos, posso usar as palavras pseudoceloma, clitelo, casulo e larva trocófora.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q50
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 51
+
+Assinale a alternativa em que a estrutura NÃO está relacionada com a função descrita.
+
+
+A) Os vasos liberianos ou floema são responsáveis pela condução da seiva bruta (água e sais absorvidos pelas raízes).
+B) O meristema primário é responsável pelo crescimento, pois suas células estão em contínua mitose.
+C) As raízes respiratórias em plantas de mangue garantem as trocas de gases.
+D) O súber é um tecido morto com a função impermeabilizante e térmica.
+E) Os estômatos nas folhas garantem as trocas gasosas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q51
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 52
+
+Os anfíbios apresentam o pulmão com alvéolos grandes e sua parte mais interna não dividida. Isto implica a falta de substrato para vasos sanguíneos. Portanto, sua capacidade respiratória pulmonar é reduzida. Para compensar esta deficiência, estes animais:
+
+I. Têm respiração cutânea acentuada, o que é possível pela presença de glândulas de muco na pele.
+II. Têm respiração gular, o que é possível pela rica vascularização e umidade da cavidade bucal.
+III. Têm respiração traqueal acessória.
+IV. Podem, em alguns casos, manter a respiração branquial.
+V. Têm respiração cutânea acentuada, o que é possível pela presença de queratina na pele.
+
+Quais as afirmativas estão corretas?
+
+
+A) Apenas I, III e
+IV.
+B) Apenas I, II e
+IV.
+C) Apenas II e
+III.
+D) Apenas III e
+V.
+E) Apenas IV e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q52
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 53
+
+Dada a equação abaixo, assinale a alternativa que relacione corretamente o processo e respectiva taxa referente à mesma.
+
+12 H2O + 6 CO2 → C6H12O6 + 6 O2 + 6 H2O
+
+
+A) Fotossíntese, cuja taxa depende da quantidade de carotenóides.
+B) Respiração, cuja taxa é maior no escuro do que na luz.
+C) Fotossíntese, cuja taxa depende de fatores abióticos.
+D) Respiração, cuja taxa depende da temperatura e atividade metabólica.
+E) Fermentação, cuja taxa depende de temperatura.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q53
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 54
+
+Relacione a segunda coluna com a primeira, no que diz respeito ao ciclo de vida dos organismos citados. Assinale a alternativa que contém a associação correta entre as duas colunas, quando lida de cima para baixo.
+
+Coluna 1
+(1) Briófita
+(2) Pteridófita
+(3) Gimnosperma
+(4) Angiosperma
+
+Coluna 2
+( ) O esporófito (2n), fase que prevalece na natureza, diferencia flores, frutos e sementes.
+( ) O esporófito (2n), fase não duradoura na natureza, diferencia esporângios.
+( ) O esporófito (2n), fase que prevalece na natureza diferencia conjunto de esporângios (soros).
+( ) O esporófito (2n), fase que prevalece na natureza, diferencia estróbilos e sementes.
+
+
+A) 1, 4, 3, 2
+B) 3, 1, 2, 4
+C) 4, 2, 1, 3
+D) 2, 3, 1, 4
+E) 4, 1, 2, 3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q54
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 55
+
+Considerando a proposição das teorias da evolução, marque a alternativa que completa corretamente a afirmativa a seguir: "Tanto Lamarck quanto Darwin desenvolveram suas teorias sobre a evolução admitindo................".
+
+
+A) a existência de uma seleção natural.
+B) as mutações gênicas.
+C) as recombinações gênicas.
+D) a modificação das espécies ao longo do tempo.
+E) as leis de Mendel.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q55
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 56
+
+Encontra-se epitélio ciliado nas seguintes estruturas do organismo humano:
+
+I. intestino delgado
+II. intestino grosso
+III. traquéia
+IV. brônquios
+V. trompas de Falópio
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas II, III e
+V.
+B) Apenas I, II e
+IV.
+C) Apenas I, II e
+III.
+D) Apenas III, IV e
+V.
+E) Apenas I, III e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q56
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 57
+
+O bacilo da tuberculose humana apresenta diversas características.
+
+I. Propaga-se, principalmente, por objetos manipulados pelos doentes.
+II. Indivíduos humanos são seu reservatório.
+III. É destruído pela exposição ao ar atmosférico.
+IV. A mucosa intestinal é sua principal via de penetração no organismo.
+V. Além dos pulmões, é capaz de provocar infecções em diversos órgãos.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas II, III e
+V.
+B) Apenas I, III e
+IV.
+C) Apenas II e
+V.
+D) Apenas I e
+IV.
+E) Apenas III e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q57
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 58
+
+Indique com (V) se forem VERDADEIRAS ou com (F) se forem FALSAS as afirmativas a seguir, referentes às relações evidenciadas no gráfico abaixo.
+
+( ) A área sobreposta indica coexistência das duas espécies com ausência de competição. ( ) As áreas não sobrepostas podem indicar especialização, o que tende a reduzir a competição. ( ) As espécies J e K não competem por recursos, pois ocupam nichos desiguais. ( ) As espécies J e K competem parcialmente por recursos. ( ) Para o recurso em questão, as espécies têm amplitudes distintas de aproveitamento.
+
+Assinale a alternativa que contempla a seqüência correta quando lida de cima para baixo.
+
+[Figura: Sobreposição dos nichos das espécies J e K, com intensidade de uso versus dimensão do nicho.]
+Arquivo: figures/furg-2002-biologia-q58-fig1.webp
+
+A) F, F, V, F, V
+B) F, V, F, V, V
+C) V, F, F, V, V
+D) F, V, F, V, F
+E) V, F, V, F, F
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q58
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 59
+
+Selecione a alternativa que contenha as palavras que completam corretamente o parágrafo abaixo.
+
+A deficiência alimentar de iodo perturba a síntese de ____________. Uma medida de saúde pública consiste em adicionar este nutriente ao ____________, para evitar a carência dele, que ocorre em comunidades situadas longe da ____________ e que pode causar transtornos graves na ____________.
+
+
+A) hormônios tireóideos – sal de cozinha – costa marítima – criança.
+B) hemoglobina – pão – serra – terceira idade.
+C) mielina – sal de cozinha – água – mulher grávida.
+D) pigmentos visuais – leite – costa marítima – adolescência.
+E) hormônios tireóideos – pão – água – criança.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q59
+
+========================================================================
+FURG 2002 — Biologia — Vestibular regular — Questão 60
+
+Numa rocha originariamente nua, começaram a aparecer líquenes. Mais tarde, desenvolveram-se musgos, seguidos por pequenas samambaias. Posteriormente apareceram gramíneas, seguidas de insetos e pássaros.
+
+Assinale a alternativa que indica o fenômeno que corresponde à descrição acima.
+
+
+A) alelobiose total.
+B) alelobiose parcial.
+C) sucessão secundária.
+D) comunidade convergente.
+E) sucessão primária.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-biologia
+Identificador: furg-2002-biologia-q60
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 41
+
+Analisando-se a composição dos nucleotídeos que compõem o ácido nucléico de dois diferentes organismos (X e Y), verificaram-se as seguintes proporções: organismo X – 21% adenina, 29% citosina, 21% timina e 29% guanina; organismo Y – 28% adenina, 36% uracila, 20% guanina e 16% citosina. Com base nestes resultados, escolha a alternativa correta.
+
+
+A) O organismo X possui RNA de fita simples, e o organismo Y também possui RNA de fita simples.
+B) O organismo X possui DNA de fita dupla, e o organismo Y possui RNA de fita simples.
+C) O organismo X possui DNA de fita dupla, e o organismo Y também possui DNA, porém de fita simples.
+D) O organismo X possui RNA de fita dupla, e o organismo Y possui DNA de fita simples.
+E) O organismo X possui DNA de fita simples, e o organismo Y possui RNA de fita simples.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q41
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 42
+
+O texto a seguir foi extraído da reportagem de uma revista de circulação nacional, no mês de setembro de 2002.
+
+“Guardar uma mostra do cordão umbilical logo após o nascimento pode ser um valioso plano de saúde. Em pouco mais de um ano, 320 casais no Rio de Janeiro e quase uma centena em São Paulo optaram pelo congelamento como precaução para tratar eventuais doenças futuras”.
+
+(Revista IstoÉ n° 1720)
+
+Essas células, extraídas de cordão umbilical e placenta, que sobram do parto e que possuem a potencialidade de formar diferentes tipos de tecidos, são conhecidas como
+
+
+A) células ganglionares.
+B) células germinativas.
+C) células secretoras.
+D) células-tronco
+E) células lábeis.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q42
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 43
+
+A fibrose cística é uma doença genética causada por um gene autossômico recessivo (f) que leva certas glândulas a produzirem secreções anormais. Selecione a alternativa que preenche corretamente as lacunas abaixo, supondo que um casal normal teve uma criança com fibrose cística
+
+Os genótipos da mãe e do pai da criança são, respectivamente, _______. O genótipo da criança é _______. A probabilidade de que, se o casal tiver um outro filho, este não tenha fibrose cística será de _______.
+
+
+A) FF e Ff --- ff --- 25%
+B) Ff e Ff --- Ff --- 75%
+C) Ff e Ff --- ff --- 75%
+D) Ff e Ff --- ff --- 50%
+E) Ff e FF --- ff --- 50%
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q43
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 44
+
+No reino animal há dois tipos de divisão celular:
+
+mitose, que é o processo pelo qual células somáticas se dividem, e meiose, que é o processo de divisão que produz gametas haplóides. Sobre a meiose é correto afirmar que
+
+I — esse processo pode ocorrer a partir de qualquer célula somática, exceto dos neurônios e células musculares.
+II — cada uma das quatro células resultantes da meiose contém apenas um representante de cada par de cromossomos.
+III — durante a prófase I ocorre pareamento entre cromossomos homólogos, podendo haver troca de material genético entre eles.
+IV — ocorrem duas divisões por ciclo, e o material genético (DNA) é replicado antes de cada uma dessas divisões.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas I, II e
+III.
+B) Apenas II e
+III.
+C) Apenas II e
+IV.
+D) Apenas II, III e
+IV.
+E) Apenas I, III e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q44
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 45
+
+Leia as afirmações abaixo:
+
+I — Antozoários são os maiores responsáveis pela formação de corais.
+II — Cnidoblastos são células especializadas para defesa e captura de alimentos.
+III — Cifomedusas freqüentemente provocam lesões em banhistas.
+IV — A metagênese é um processo reprodutivo comum entre os hidrozoários.
+
+Quais afirmativas estão corretas?
+
+
+A) Estão corretas apenas as afirmativas I, II e IV e são relativas ao filo Echinodermata.
+B) Estão corretas apenas as afirmativas II, III e IV e são relativas ao filo Porífera.
+C) Estão corretas apenas as afirmativas I, II e III e são relativas ao filo Cnidária.
+D) Todas as afirmativas estão corretas e são relativas ao filo Porífera.
+E) Todas as afirmativas estão corretas e são relativas ao filo Cnidária.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q45
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 46
+
+É correto afirmar que os processos assexuados observados ao longo do ciclo dos Trematoda são uma forma de
+
+
+A) diminuir as chances de dispersão das cercarias.
+B) diminuir as chances de alcançar novos hospedeiros.
+C) espoliar com mais eficiência os recursos do hospedeiro.
+D) aumentar as chances de alcançar novos hospedeiros.
+E) aumentar as chances de chegar à fase miracídio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q46
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 47
+
+Selecione a alternativa que contém a seqüência de palavras que completam corretamente o parágrafo abaixo.
+
+A bile atua na digestão humana por sua capacidade de _______ os _______, em razão de seu conteúdo de _______.
+
+
+A) emulsificar, lipídios, sais biliares
+B) hidrolisar, lipídios, lipase
+C) esterificar, ácidos graxos, colesterol
+D) hidrolisar, glicídios, enzimas
+E) hidrolisar, lipídios, sais biliares
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q47
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 48
+
+Quais das características citadas abaixo podem ser indicadas como adaptações que permitem aos insetos viver com sucesso em ambientes áridos?
+
+I — Brânquias externas.
+II — Traquéias internas.
+III — Impermeabilização do exoesqueleto quitinoso.
+IV — Aumento da fase pupal.
+
+Assinale a alternativa correta.
+
+
+A) Apenas I e
+III.
+B) Apenas II e
+III.
+C) Apenas III e
+IV.
+D) Apenas I e
+IV.
+E) Apenas II e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q48
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 49
+
+A família de peixes Sciaenidae é uma das mais diversificadas do litoral da América do Sul. O número de espécies e sua abundância variam consideravelmente entre a costa da Venezuela e o sul da Argentina. O litoral do Rio Grande do Sul é responsável pela maior parte das capturas de pescado pela frota industrial de arrasteiros. Considerando que as condições ambientais, especialmente as climáticas, têm papel fundamental na diversidade e abundância dos organismos, está correto afirmar que
+
+
+A) à medida que diminui a latitude, diminui a diversidade e o tamanho das populações.
+B) à medida que aumenta a latitude, diminui a diversidade e o tamanho das populações.
+C) à medida que aumenta a latitude, aumenta a diversidade e o tamanho das populações.
+D) à medida que aumenta a latitude, diminui a diversidade e aumenta o tamanho das populações.
+E) não há relação direta entre latitude, diversidade e tamanho das populações.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q49
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 50
+
+Quando um pequeno vaso sangüíneo é lesado, ocorre no local uma série de eventos, que termina na formação de um coágulo. Marque a opção na qual constam APENAS elementos necessários para o desenvolvimento desse processo.
+
+
+A) Leucócitos, fibrinogênio, albumina.
+B) Leucócitos, trombina, angiotensina.
+C) Plaquetas, fibrinogênio, protrombina.
+D) Plaquetas, albumina, protrombina.
+E) Plasmócitos, fibrinogênio, albumina.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q50
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 51
+
+O isolamento reprodutivo é um mecanismo fundamental no processo de especiação. Com relação a esse mecanismo, podemos afirmar:
+
+I — O isolamento mecânico é aquele no qual as estruturas reprodutoras externas diferem a ponto de impedir a cópula efetiva.
+II — Um exemplo de isolamento de hábitat é o dos vaga-lumes, no qual as fêmeas só respondem aos sinais luminosos dos machos da mesma espécie, para fins de cópula.
+III — Mesmo que a cópula ocorra, pode haver a esterilidade do híbrido, o que caracteriza um isolamento pós-zigótico.
+IV — O isolamento sazonal ocorre, por exemplo, quando a polinização de duas espécies de plantas do mesmo gênero, com hábitats sobrepostos, acontece em diferentes estações.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas I e
+II.
+B) Apenas I e
+III.
+C) Apenas II e
+IV.
+D) Apenas I, III e
+IV.
+E) Apenas II, III e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q51
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 52
+
+Relacione os agentes causadores enumerados na coluna 1 com as doenças sexualmente transmissíveis apresentadas na coluna 2
+
+Coluna 1
+(1) Vírus
+(2) Bactéria
+(3) Fungo
+(4) Protozoário
+
+Coluna 2
+( ) AIDS
+( ) Sífilis
+( ) Hepatite B
+( ) Tricomoníase
+( ) Candidíase
+( ) Gonorréia
+( ) Herpes genital
+
+A alternativa que contém a associação correta da coluna 2, quando lida de cima para baixo, é
+
+
+A) 1, 1, 2, 4, 1, 3 e 1
+B) 1, 2, 1, 4, 3, 2 e 1
+C) 2, 3, 1, 3, 4, 3 e 2
+D) 2, 4, 1, 3, 1, 4 e 2
+E) 1, 2, 4, 2, 2, 1 e 3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q52
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 53
+
+Selecione a alternativa que preenche corretamente as lacunas do texto abaixo.
+
+O Estuário da Lagoa dos Patos representa o limite entre dois ecossistemas, por isso pode ser considerado um _______. Nessa área de transição existe um grande número de _______, e as espécies que vivem aí devem apresentar _______ às variações ambientais.
+
+
+A) ecótono – nichos ecológicos – alta tolerância.
+B) nicho ecológico – ecótonos – baixa tolerância.
+C) clímax – ecótonos – baixa sensibilidade.
+D) ecótono – espécies limítrofes – alta sensibilidade.
+E) clímax – nichos ecológicos – alta tolerância.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q53
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 54
+
+Para os pesquisadores, intoxicações agudas ou exposições prolongadas aos organofosforados, deixam seqüelas neurocomportamentais que podem evoluir para um quadro de depressão. (Adaptado da Revista Galileu, nº 133, Agosto/2002)
+
+O uso indiscriminado de organofosforados também pode causar alterações no meio ambiente. Dentre as alternativas apresentadas qual a que NÃO está associada ao referido uso?
+
+
+A) A contaminação dos solos.
+B) A contaminação das águas.
+C) A destruição da camada de ozônio.
+D) O comprometimento de cadeias alimentares.
+E) O aumento na resistência das pragas a herbicidas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q54
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 55
+
+Observa-se a semelhança morfológica entre os caules de algumas espécies da família das cactáceas do sul dos Estados Unidos e outras da família das euforbiáceas da África. Esses vegetais habitam regiões áridas semelhantes. Pertencem, porém, a grupos diferentes, o que pode ser mostrado através da estrutura de suas flores. A aproximação morfológica entre vegetais ou animais que vivem em meios similares e que são submetidos às mesmas pressões ambientais é um processo evolutivo conhecido por
+
+
+A) homologia.
+B) irradiação adaptativa.
+C) oscilação genética.
+D) evolução divergente.
+E) evolução convergente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q55
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 56
+
+O esquema abaixo representa um ciclo de vida de uma pteridófita. Complete os parênteses com a ploidia (n,2n) das estruturas, fecundação (F!) e meiose (R!), iniciando pelo gametófito.
+
+Assinale a alternativa que apresenta a seqüência correta.
+
+[Figura: Ciclo da pteridófita com lacunas de ploidia e das etapas de fecundação e meiose.]
+Arquivo: figures/furg-2003-biologia-q56-fig1.webp
+
+A) 2n, n, F!, 2n, R!, 2n.
+B) 2n, 2n, R!, n, F!, 2n.
+C) n, 2n, R!, n, F!, n.
+D) n, n, F!, 2n, R!, n.
+E) n, n, R!, 2n, F!, n.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q56
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 57
+
+Uma espécie de determinada família do reino vegetal apresenta raiz axial tuberosa, caule volúvel, folhas pinadas, flores com cálice de 5 sépalas, corola de 5 pétalas, com androceu, gineceu e fruto do tipo drupa. De acordo com essas características podemos afirmar que
+
+I — a raiz apresenta eixo principal engrossado.
+II — as folhas são compostas.
+III — as flores são unissexuadas.
+IV — o fruto apresenta 1 (uma) semente.
+V — a família pertence à classe monocotiledônea da divisão angiosperma.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas as alternativas I, II,
+IV.
+B) Apenas as alternativas I, III,
+IV.
+C) Apenas as alternativas I, III,
+V.
+D) Apenas as alternativas I, II, IV,
+V.
+E) Apenas as alternativas II, III, IV,
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q57
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 58
+
+A perda de vapor d′água da folha, as trocas de dióxido de carbono e de oxigênio entre os espaços aéreos intercelulares e o ar circundante são regulados primariamente por diminutas estruturas. Essas estruturas que apresentam mecanismo de abertura e fechamento em determinadas condições, são denominadas
+
+
+A) estômatos.
+B) tubos crivados.
+C) hidatódios.
+D) esclereídeos.
+E) lenticelas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q58
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 59
+
+O cultivo de arroz irrigado por inundação representa, em âmbito global, uma das principais fontes antrópicas de metano (CH4). Esse gás é liberado para a atmosfera, principalmente por transporte difusivo, pelo aerênquima das plantas de arroz e também por difusão através da lâmina d'água. Experimentos mostram que a presença de plantas de arroz facilita o escape de metano para a atmosfera, por um fator de 7 a 10 vezes maior em relação aos solos inundados sem cultivo de arroz. (EMBRAPA, 2001)
+
+Com relação ao gás metano podemos afirmar que ele é um dos principais causadores de
+
+
+A) chuva ácida.
+B) efeito estufa.
+C) desertificação.
+D) aumento das calotas polares.
+E) aumento da irradiação de UV− B.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q59
+
+========================================================================
+FURG 2003 — Biologia — Vestibular regular — Questão 60
+
+O mesófilo foliar, considerado como principal fonte fotossintética da planta, é constituído de um tecido denominado
+
+
+A) esclerênquima.
+B) epiderme.
+C) colênquima.
+D) cutícula.
+E) parênquima.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-biologia
+Identificador: furg-2003-biologia-q60
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 31
+
+Uma adolescente engravidou ao ter uma relação sexual com o seu namorado, que, não pretendendo usar camisinha, propôs um coito interrompido. A garota disse que estava de acordo com a proposta, porque fazia o controle, também, pela tabelinha.
+
+O que deu errado, então, para que ocorresse a gravidez?
+
+I) Eles não consideraram que, mesmo antes da ejaculação, pode ocorrer a saída de espermatozóides e que, se ela se enganou na tabelinha, pode ter ocorrido a fecundação.
+
+II) Ela, que tinha um ciclo menstrual regular de
+
+28 dias, não via problemas em ter a relação pois já fazia 18 dias do início da menstruação e, assim, não estaria mais em período de ovulação.
+
+III) Eles não sabiam que, num ciclo menstrual de
+
+28 dias, mesmo sendo o 14º o dia provável da ovulação, o óvulo pode permanecer vivo por até seis dias.
+
+IV) Eles não consideraram que, mesmo a relação ocorrendo dois dias após o final da menstruação, os espermatozóides podem permanecer vivos no organismo feminino por cinco dias, alcançando, assim, a ovulação.
+
+V) Ela, que tinha a certeza de já ter ovulado uma vez no período em questão, o que foi constatado pela elevação da temperatura corporal e pela dosagem hormonal, não considerou que algumas mulheres podem ovular mais de uma vez no mesmo ciclo, sem nenhuma alteração hormonal.
+
+Marque a alternativa que apresenta respostas corretas à pergunta acima formulada.
+
+
+A) II, III e
+IV.
+B) I, II e
+V.
+C) I, III e
+V.
+D) I, III e
+IV.
+E) II, IV e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q31
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 32
+
+Um peixe que nadava por entre pedras incrustadas de corais que contenham uma grande quantidade de bactérias e vírus, sofreu um corte profundo na pele, que atingiu, inclusive, as camadas da derme e hipoderme, constituídas por tecido conjuntivo com intensa vascularização.
+
+Marque a(s) afirmativa(s) abaixo que corresponde(m) a uma outra forma correta de escrever o parágrafo acima, utilizando termos técnico-científicos e designativos de componentes teciduais.
+
+(01) Um linguado que nadava por entre pedras repletas de cnidários, sofreu um corte profundo na pele, o que possibilitou a invasão de uma grande quantidade de organismos procariontes, os quais provocaram uma reação imediata do tecido conjuntivo, com intensa proliferação celular, em especial fibroblastos e macrófagos para fazerem a cicatrização do tecido e fagocitose dos organismos invasores.
+
+(02) Um tubarão que nadava entre rochedos, sofreu um corte profundo na pele, tendo sido invadido por bacteriófagos (vírus das bactérias) constituídos de RNA e DNA, o que provocou uma reação imediata dos mastócitos do conjuntivo, que passaram a fabricar anticorpos contra as toxinas dos invasores.
+
+(04) Um golfinho que nadava entre pedras repletas de briozoários que continham vírus e organismos procariontes, sofreu um corte profundo na pele, que provocou, como reação imediata, uma intensa diapedese de neutrófilos do sangue para combater os agentes agressores que se alojaram no conjuntivo.
+
+(08) Uma corvina que nadava entre rochedos incrustados de antozoários, sofreu um corte profundo na superfície corporal que danificou o epitélio de revestimento, a derme e a hipoderme, provocando, inclusive, a ruptura de células adiposas e o alojamento de partículas virais e bactérias que passaram a se multiplicar abundantemente nas células epidérmicas e do conjuntivo, aumentando ainda mais a gravidade da lesão.
+
+Some o número de pontos, entre parênteses, da(s) assertiva(s) correta(s) e marque a única alternativa que corresponde ao número total de pontos.
+
+
+A) 09
+B) 03
+C) 14
+D) 01
+E) 10
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q32
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 33
+
+A hemofilia A e a hemofilia B resultam de defeitos no processo de coagulação sangüínea, decorrentes de genes defeituosos ligados ao cromossomo X, e com padrão de expressão recessivo. Os produtos gênicos alterados são os fatores VIII e IX, relacionados à hemofilia A e B, respectivamente. A administração, nos pacientes, de transfusões de concentrados do fator ausente era a única maneira de se tratar a doença. Muitas vezes, porém, os concentrados, ou não estavam disponíveis, ou eram caros demais para serem usados em hemofílicos de muitos países. Recentemente os genes que codificam os fatores VIII e IX foram isolados, e cada gene foi introduzido em células de mamíferos mantidas em cultura. Agora os fatores são obtidos por meio de purificados dessas células, estando disponíveis em quantidade ilimitada, sem a dependência de doadores de sangue.
+
+A mudança no processo de obtenção desses fatores para o tratamento da hemofilia somente foi possível por meio
+
+
+A) da mesma tecnologia que produziu a ovelha Dolly, que possibilitou a clonagem de um mamífero.
+B) dos avanços na área de transferência de embriões, que possibilitou o melhoramento animal.
+C) da tecnologia do DNA recombinante, que possibilitou a transferência de genes de um organismo para outro.
+D) da pesquisa em células totipotentes, como as células-tronco.
+E) do conhecimento sobre a herança dos grupos sangüíneos humanos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q33
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 34
+
+As variações que ocorrem em uma classe especial do DNA repetitivo, chamado de DNA minissatélite, são utilizadas para a geração de um padrão de bandas, ou fragmentos de DNA, para a identificação individual. Esse padrão pode ser comparado a uma impressão digital, existindo uma probabilidade muito baixa de que dois indivíduos apresentem o mesmo padrão de bandas, a não ser, é evidente, que eles sejam gêmeos idênticos ou organismos clonados. Essas impressões digitais de DNA são atualmente utilizadas para a investigação de paternidade, além de constituírem um instrumento forense poderoso. Sabendo que os padrões de bandas de dois genitores são passados para seus filhos de modo Mendeliano, em que a prole possui cromossomos homólogos de origem materna e paterna, relacione as colunas abaixo, de modo a responder qual a porcentagem aproximada de bandas de DNA, que são compartilhadas entre
+
+( ) um filho e seu pai. ( ) células epiteliais de um criminoso e o seu sangue obtido na cena do crime. ( ) o sangue de um criminoso e o seu esperma obtido da roupa da vítima. ( ) a ovelha Dolly e a ovelha Finn Dorset, que doou o núcleo celular para o processo de clonagem que lhe deu origem. ( ) a ovelha Dolly e a ovelha Blackface, que doou o ovócito enucleado para o processo de clonagem que lhe deu origem.
+
+(1) 0% (2) 50% (3) 100%
+
+A alternativa que contém a seqüência numérica correta, lida de cima para baixo, é
+
+
+A) 2, 3, 2, 1, 3.
+B) 2, 3, 2, 3, 1.
+C) 2, 3, 3, 3, 1.
+D) 1, 3, 3, 3, 1.
+E) 1, 2, 3, 1, 2.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q34
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 35
+
+Com relação às características gerais dos diferentes grupos animais, é correto afirmar que os
+
+
+A) Nematoda apresentam várias espécies que podem parasitar o homem, entre elas o Schistosoma mansoni.
+B) Cnidaria são diferenciados em três formas estruturais, pela complexidade de sua cavidade gástrica.
+C) Polychaeta apresentam cerdas inseridas nos parapódios e não possuem clitelo.
+D) Echinodermata podem apresentar representantes marinhos e de água doce, todos com placas calcárias embaixo da epiderme.
+E) Cephalochordata são representados pelo anfioxo, animal marinho fixo ao substrato e de hábito filtrador, sem notocorda no adulto.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q35
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 36
+
+Em um passeio pela Praia do Cassino poderão ser visualizados diferentes tipos de animais, como: água-viva, marisco, corvina, baratinha-do-mar, bolacha-do-mar, siri-azul, tatuíra e bagre. A que grupos animais eles pertencem, considerando a ordem em que foram citados?
+
+
+A) Scyphozoa, Mollusca, Pisces, Insecta, Asteroidea, Arthropoda, Nematoda e Chondrichthyes.
+B) Anthozoa, Pelecypoda, Chondrichthyes, Crustacea, Echinoidea, Insecta, Arthropoda e Pisces.
+C) Cnidaria, Gastropoda, Osteichthyes, Insecta, Asteroidea, Crustacea, Insecta e Cyclostomata.
+D) Cnidaria, Mollusca, Cyclostomata, Crustacea, Echinodermata, Chilopoda, Crustacea e Osteichthyes.
+E) Cnidaria, Mollusca, Osteichthyes, Crustacea, Echinodermata, Crustacea, Crustacea e Osteichthyes.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q36
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 37
+
+Relacione as divisões enumeradas na coluna 1 com as características apresentadas na coluna 2.
+
+Coluna 1
+(1) Divisão Pyrrophyta
+(2) Divisão Rhodophyta
+(3) Divisão Phaeophyta
+(4) Divisão Bryophyta
+(5) Divisão Pteridophyta
+
+Coluna 2
+( ) formadoras de marés vermelhas. ( ) formadoras de turfeiras utilizadas como combustível e aromatizantes do uísque escocês. ( ) extração de alginatos, utilizados como estabilizantes em dentifrícios e sorvetes, entre outros produtos. ( ) extração do ágar, utilizado como meio de cultura na microbiologia e alimentação. ( ) medicinais, tóxicos, alguns comestíveis e formadores do carvão de pedra.
+
+A alternativa que contém a seqüência numérica correta, lida de cima para baixo, é
+
+
+A) 2, 5, 4, 1 e 3.
+B) 1, 4, 3, 2 e 5.
+C) 3, 1, 2, 4 e 5.
+D) 1, 5, 3, 2 e 4.
+E) 2, 4, 5, 3 e 1.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q37
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 38
+
+O bem-sucedido processo de ocupação do ambiente terrestre pelas plantas deve-se a
+
+
+A) rizóides, caulóide e filóides.
+B) parênquima aerífero e lenticelas.
+C) estômatos, cutícula e tecido vascular.
+D) água como veículo fundamental para fecundação.
+E) nutrição auxotrófica.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q38
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 39
+
+A necessidade de produção de alimentos e o aproveitamento de produtos alternativos levam a novas tentativas na área nutricional. Tradicionalmente o amido utilizado na fabricação do pão é proveniente do trigo. Atualmente é testada a introdução do amido da mandioca.
+
+As partes da planta do trigo e da mandioca utilizadas na produção do amido são, respectivamente:
+
+
+A) parênquima de reserva do cotilédone e raiz axial tuberosa.
+B) endosperma do fruto seco deiscente e raízes fasciculadas tuberosas.
+C) endosperma do fruto seco indeiscente e raízes secundárias tuberosas.
+D) endosperma do fruto seco indeiscente e raiz axial tuberosa.
+E) endosperma do fruto seco deiscente e raízes secundárias tuberosas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q39
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 40
+
+Nos animais, após a fecundação, as células começam a se multiplicar, organizam-se em folhetos embrionários, diferenciam-se, especializam-se para o desempenho de uma determinada função e se agrupam para formar um novo ser constituído pelos quatro tecidos básicos.
+
+Com relação a essa seqüência ontogenética, é correto afirmar que
+
+I) ela ocorre em todos os vertebrados, desde peixes até mamíferos.
+II) a formação de folhetos embrionários e de quatro tecidos diferentes só ocorrem nos mamíferos.
+III) em todos os vertebrados ocorrem os processos de mitose e meiose.
+IV) unicamente os epitélios derivam dos três folhetos embrionários. V durante um ciclo celular, a duplicação do DNA ocorre na telófase.
+VI) todas as células animais apresentam um núcleo e um nucléolo.
+VII) a constituição básica das membranas plasmáticas das células animais é de lipídios e carboidratos.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas III, IV e
+VI.
+B) Apenas II, V e
+VII.
+C) Apenas I, III e
+VI.
+D) Apenas I, III e
+IV.
+E) Apenas I, V, VI e
+VII.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q40
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 41
+
+As drogas podem, de forma geral, ser classificadas em “depressoras”, “estimulantes” e “perturbadoras”, considerando especialmente seus efeitos sobre o sistema nervoso central. Qual das drogas abaixo elencadas é classificada como “depressora”?
+
+
+A) Cafeína.
+B) Álcool Etílico.
+C) Anfetamina.
+D) Cocaína.
+E) Nicotina.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q41
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 42
+
+Staphylococcus aureus é uma bactéria que causa infecções perigosas em humanos que estejam se recuperando de intervenções cirúrgicas, que sejam vítimas de queimaduras, ou que apresentem feridas pelo corpo. Em 1941, as pessoas infectadas por essa bactéria podiam ser tratadas com penicilina G, um antibiótico que inibe a síntese da parede celular bacteriana. Mas, em 1944, algumas linhagens de bactérias já eram resistentes à penicilina e a drogas relacionadas. A indústria farmacêutica começou, então, a sintetizar meticilina, que era eficiente no controle das infecções por S. aureus. Ocorre que, na década de 80, novas linhagens também já eram resistentes a esse antibiótico e a drogas estruturalmente similares, evidenciando modificação na estrutura de um elemento da sua parede celular, de modo que essas drogas não se ligavam mais à parede.
+
+Que processos evolutivos agiram sobre as populações de S. aureus?
+
+
+A) Herança de caracteres adquiridos e seleção.
+B) Mutação e deriva genética.
+C) A lei do uso e desuso e seleção.
+D) Mutação e herança dos caracteres adquiridos.
+E) Mutação e seleção.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q42
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 43
+
+A Laguna dos Patos é um complexo e rico ambiente aquático do sul do Brasil, que banha a cidade do Rio Grande e uma série de municípios gaúchos, estendendo-se até a Metade Norte do Estado e possibilitando a reprodução, a alimentação e o crescimento de uma grande quantidade de espécies animais e vegetais.
+
+Com relação a esse ecossistema, é correto afirmar que se trata de um um ambiente
+
+I) formado essencialmente por água salobra;
+II) que possibilita aos pescadores artesanais da região de Porto Alegre a subsistência pela pesca anual do camarão nas cercanias da cidade;
+III) no qual a maior produtividade biológica encontra-se em sua região estuarina;
+IV) onde predominam os organismos classificados como produtores e consumidores secundários;
+V) onde ocorre a entrada de alguns organismos marinhos, apesar das menores salinidades.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas III e V
+B) Apenas I, II e
+IV.
+C) Apenas I, III e
+IV.
+D) Apenas II, IV e
+V.
+E) Apenas II, III e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q43
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 44
+
+Algumas espécies de peixes são capazes de viver tanto em água doce como na água do mar, como é o caso de grande número das encontradas nos estuários. A sobrevivência em água doce exige uma série de adaptações, tais como, a capacidade de
+
+I) eliminar o excesso de água que entra no animal por osmose.
+II) eliminar grandes quantidades de ácido úrico.
+III) reter sais no corpo, que tendem a sair do animal por difusão.
+IV) retirar oxigênio da água por meio de brânquias.
+V) reproduzir-se com fecundação externa.
+
+Qual(is) afirmativa(s) está(ão) correta(s)?
+
+
+A) Apenas II e
+III.
+B) Apenas I.
+C) Apenas I e
+III.
+D) Apenas IV e
+V.
+E) I, II, III, IV e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q44
+
+========================================================================
+FURG 2004 — Biologia — Vestibular regular — Questão 45
+
+Com relação aos ciclos do oxigênio e do gás carbônico podemos afirmar que
+
+I) a manutenção das taxas de oxigênio e de gás carbônico no ambiente depende de dois processos: a fotossíntese e a respiração.
+II) o oxigênio é utilizado para a respiração das plantas e dos animais.
+III) a queima de combustíveis fósseis aumenta a taxa de gás carbônico no ar.
+IV) a ação dos microorganismos decompositores de animais mortos é a oxidação da matéria orgânica com liberação de oxigênio.
+V) o oxigênio é retirado do ar por meio da fotossíntese e devolvido a ele pela respiração.
+
+Quais afirmativas estão corretas?
+
+
+A) Apenas II, III e
+V.
+B) Apenas II e
+IV.
+C) Apenas I, II e
+III.
+D) Apenas I, III e
+IV.
+E) Apenas III, IV e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-biologia
+Identificador: furg-2004-biologia-q45
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 31
+
+Observe o quadro 1 abaixo. Os algarismos I, II e III correspondem às três Classes de Annelida, e os outros algarismos referem-se a características morfológicas enumeradas no quadro 2.
+
+Quadro 1
+Classe I: características3,4 e7.
+Classe II: características1,5 e8.
+Classe III: características2,3,4 e6.
+
+Quadro 2 1. cerdas numerosas 2. ausência de cerdas 3. presença de clitelo 4. hermafroditas 5. cabeça diferenciada do corpo 6. presença de ventosas 7. reduzido número de cerdas 8. presença de estágio larval
+
+Assim, I, II e III representam, respectivamente, as Classes
+
+
+A) Oligochaeta, Polychaeta e Hirudinea.
+B) Polychaeta, Hirudinea e Oligochaeta.
+C) Oligochaeta, Hirudinea e Polychaeta.
+D) Hirudinea, Oligochaeta e Polychaeta.
+E) Hirudinea, Polychaeta e Oligochaeta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q31
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 32
+
+Em um laboratório de histologia foram recebidos fragmentos de um organismo Cnidário Hidrozoário e de um Porífero. Durante o processo de identificação das lâminas histológicas já prontas, o laboratorista mistura o material e não lembra qual deles se refere ao Cnidário nem qual se refere ao Porífero. Que característica microscópica um biólogo poderia utilizar para diferenciar Cnidário de Porífero, respectivamente, e etiquetar corretamente as lâminas?
+
+
+A) porócitos e mesogléia.
+B) coanócitos e nematocistos.
+C) porócitos e quitinócitos.
+D) protonefrídeos e células-flama.
+E) nematocistos e coanócitos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q32
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 33
+
+Quando compramos vegetais na feira ou no supermercado, eles geralmente estão identificados como FRUTAS, VERDURAS e LEGUMES. Mas, se fossem utilizados conceitos de botânica, eles deveriam ser classificados de forma diferente. Assinale a alternativa que utiliza corretamente esses conceitos. Assim, para comprar
+
+
+A) monocotiledôneas, você escolherá amendoins e ervilhas.
+B) tubérculos, você escolherá batata-doce e alho.
+C) caule, você escolherá cogumelo.
+D) frutos carnosos, você escolherá cenouras e beterrabas.
+E) bagas, você escolherá uvas e tomates.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q33
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 34
+
+O fato de, em algumas flores, o androceu amadurecer antes do gineceu é uma adaptação que visa a garantir
+
+
+A) floração mais prolongada da espécie.
+B) menor produtividade de frutos.
+C) fecundação cruzada dos indivíduos.
+D) menor produção de sementes.
+E) menor tempo de floração.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q34
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 35
+
+As folhas de uma traqueófita são a sede principal das trocas gasosas entre a planta e o meio. Válvulas especiais denominadas estômatos abrem-se ou fecham-se regulando tais trocas por meio de movimentos hidroativos e fotoativos, ou seja, dependentes da água e da luz. Dessa forma, uma traqueófita em solo alagado e sob iluminação solar intensa apresenta os estômatos
+
+
+A) sem cloroplastos.
+B) inativos.
+C) fechados.
+D) abertos.
+E) com células túrgidas e o ostíolo fechado.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q35
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 36
+
+A cocaína é uma droga ilícita muito difundida por propiciar euforia, bem-estar e liberação crítica; entretanto, provoca quadros de epilepsia, paranóia, depressão, impotência sexual e morte súbita por infarto do miocárdio. Seu uso repetido gera um elevado grau de dependência e profunda síndrome de abstinência. Como a maioria das drogas, a cocaína atua no “circuito central da recompensa”, área cerebral onde atividades prazerosas como alimentação e reprodução são reconhecidas através de estímulos nervosos. O consumo repetido de drogas causa o mesmo efeito no cérebro, e este passa a responder como se a droga fosse indispensável. Assim, a cocaína atua nas sinapses do sistema nervoso central, potencializando a ação da ___________, que é um ___________ relacionado à sensação de bemestar, característica do consumo da droga.
+
+Assinale a alternativa em que as palavras apresentadas preenchem adequadamente as respectivas colunas.
+
+
+A) acetilcolina; hormônio.
+B) dopamina; neurotransmissor.
+C) aldosterona; neurohormônio.
+D) serotonina; receptor.
+E) adrenalina; receptor.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q36
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 37
+
+A Estação Ecológica do Taim é uma importante área de preservação ambiental no sul do Brasil, apresentando alta biodiversidade e expressiva beleza cênica. Entre seus organismos característicos podemos citar o aguapé, o ratãodo-banhado, o jacaré-do-papo-amarelo, a cruzeira (serpente urutu-cruzeiro) e a capivara. Nesse ecossistema, qual a forma de alimentação desses organismos, considerando-se a ordem em que foram citados?
+
+
+A) Herbívoro, produtor, carnívoro, carnívoro, herbívoro.
+B) Herbívoro, herbívoro, produtor, produtor, carnívoro.
+C) Produtor, herbívoro, carnívoro, carnívoro, herbívoro.
+D) Produtor, herbívoro, herbívoro, herbívoro, carnívoro.
+E) Produtor, carnívoro, produtor, carnívoro, herbívoro.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q37
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 38
+
+O Planeta Terra possui mais de 70% de sua superfície coberta de água, com somente 3% desse total constituído de água doce. Entretanto, apenas cerca de 0,2% dessa água está disponível para a manutenção dos ecossistemas e das atividades humanas. Nos últimos anos, o crescimento populacional provocou um aumento da demanda desse recurso. Além disso, com a degradação de muitos mananciais, várias regiões do mundo já enfrentam a “crise da água”, onde a mesma se encontra escassa ou ausente. Com relação à situação dos recursos hídricos no Brasil, é correto afirmar que
+
+I. nenhuma região apresenta deficiência hídrica, pois todos os rios e lagos estão distribuídos homogeneamente no território.
+
+II. a agricultura intensiva não representa risco algum de contaminação dos sistemas aquáticos.
+
+III. praticamente todos os sistemas aquáticos (rios, lagos e represas) próximos aos aglomerados urbanos apresentam contaminação por esgotos domésticos e/ou industriais.
+
+IV. grandes concentrações populacionais e aglomerados industriais estão localizados distantes das maiores bacias hidrográficas do país.
+
+V. são abundantes, bem preservados e, portanto, o país não enfrentará a “crise da água”.
+
+Assinale a alternativa em que todas as afirmativas estão corretas.
+
+
+A) III e
+IV.
+B) I, II, III, IV e
+V.
+C) I, II e
+III.
+D) II, III, IV e
+V.
+E) II, IV e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q38
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 39
+
+Uma população de drosófilas está sendo estudada quanto a duas características: cor de olho (vermelho ou púrpura) e tipo de asa (normal ou vestigial). Foi estimado que 45% dos espécimes apresentam “olho vermelho” e “asa normal”, enquanto 45% apresentam “olho cor púrpura” e “asa vestigial”. Os tipos “olho vermelho” e “asa vestigial”, assim como “olho cor púrpura” e “asa normal” são menos comuns, ocorrendo em uma porcentagem de 5% cada. Quanto aos genes que determinam essas características, é correto afirmar que são
+
+
+A) ligados e distam 5 unidades de recombinação um do outro.
+B) ligados e distam 10 unidades de recombinação um do outro.
+C) ligados e apresentam 50% de recombinação.
+D) não-ligados e distam 5 unidades de recombinação um do outro.
+E) não-ligados e apresentam 50% de recombinação.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q39
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 40
+
+O paradigma da biologia molecular é descrito no esquema abaixo:
+
+Os mecanismos responsáveis pela manutenção e expressão da informação genética de I para III são os seguintes:
+
+[Figura: DNA com etapa I de replicação; DNA→RNA na etapa II e RNA→cadeia polipeptídica na etapa III.]
+Arquivo: figures/furg-2005-biologia-q40-fig1.webp
+
+A) replicação, duplicação e transcrição.
+B) replicação, transcrição e tradução.
+C) replicação, transdução e tradução.
+D) tradução, transcrição e replicação.
+E) tradução, replicação e transdução.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q40
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 41
+
+O tuco-tuco, gênero Ctenomys, é um roedor subterrâneo endêmico da região Neotropical. No Rio Grande do Sul há quatro espécies de Ctenomys que habitam os campos arenosos internos e dunas e campos arenosos da planície costeira. Eles apresentam modificações nos membros locomotores, boca e forma do corpo, relacionadas ao seu modo de vida. Na América do Norte, os similares ecológicos dos tuco-tucos são os roedores subterrâneos dos gêneros Thomomys e Geomys, com os quais não têm relações de parentesco, mas compartilham as mesmas modificações. As similaridades morfológicas existentes entre esses organismos, relacionadas ao modo de vida subterrânea, são um exemplo de
+
+
+A) seleção artificial.
+B) radiação adaptativa.
+C) homologia e analogia.
+D) convergência adaptativa.
+E) uso e desuso.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q41
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 42
+
+Um gaúcho, ao preparar um chimarrão, derramou água quente sobre a mão, o que o fez soltar a cuia repentinamente. Com relação à orientação do impulso nervoso nos neurônios sensoriais e motores da situação acima, pode-se afirmar que ele se propagou
+
+
+A) do axônio para o corpo celular, e deste para o dendrito, em ambos os tipos de neurônio.
+B) do dendrito para o corpo celular, e deste para o axônio do neurônio sensorial, e ocorreu o inverso no neurônio motor.
+C) do dendrito para o corpo celular, e deste para o axônio, em ambos os tipos de neurônios.
+D) tanto do dendrito para o corpo celular como do corpo celular para o dendrito, em ambos os tipos de neurônio.
+E) do axônio para o dendrito e deste para o corpo celular, em ambos os tipos de neurônio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q42
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 43
+
+O ciclo celular está dividido em dois eventos principais que mantêm a integridade qualitativa e quantitativa das células de um organismo. Assim é correto afirmar que
+
+
+A) em células vegetais, os centríolos duplicados e polares auxiliam na separação das cromátidesirmãs.
+B) a intérfase é um período curto no qual não ocorre aumento de tamanho e de conteúdo celular ou replicação do material genético.
+C) o ciclo celular inicia na prófase e termina na intérfase, quando os cromossomos duplicados se encontram no máximo de condensação.
+D) a mitose resulta na geração de quatro célulasfilhas haplóides a partir de uma célula diplóide original.
+E) a mitose é um evento curto onde ocorre a divisão do material genético duplicado e do citoplasma eqüitativamente entre as duas células-filhas resultantes.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q43
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 44
+
+Tubarões e raias apresentam válvula espiral em seu sistema digestório. Assim se pode inferir que o intestino desses peixes seja
+
+
+A) pouco vascularizado.
+B) longo.
+C) dotado de inúmeros cecos.
+D) curto.
+E) enovelado.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q44
+
+========================================================================
+FURG 2005 — Biologia — Vestibular regular — Questão 45
+
+Sabendo-se que os répteis são ectotérmicos, assinale a alternativa em que o gráfico apresentado melhor descreve a riqueza de espécies esperada desse grupo, em função da latitude (expressa em graus).
+
+
+A) Gráfico A
+[Figura: GráficoA do número de espécies de répteis em função da latitude.]
+Arquivo: figures/furg-2005-biologia-q45-option1.webp
+B) Gráfico B
+[Figura: GráficoB do número de espécies de répteis em função da latitude.]
+Arquivo: figures/furg-2005-biologia-q45-option2.webp
+C) Gráfico C
+[Figura: GráficoC do número de espécies de répteis em função da latitude.]
+Arquivo: figures/furg-2005-biologia-q45-option3.webp
+D) Gráfico D
+[Figura: GráficoD do número de espécies de répteis em função da latitude.]
+Arquivo: figures/furg-2005-biologia-q45-option4.webp
+E) Gráfico E
+[Figura: GráficoE do número de espécies de répteis em função da latitude.]
+Arquivo: figures/furg-2005-biologia-q45-option5.webp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-biologia
+Identificador: furg-2005-biologia-q45
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 31
+
+Durante a espermiogênese humana as mitocôndrias são concentradas na peça intermediária, já o Complexo de Golgi sofre transformações para formar o acrossomo do espermatozóide. É correto afirmar que essas modificações da estrutura celular estão associadas, respectivamente, aos fenômenos de
+
+
+A) síntese enzimática e penetração das espermátides.
+B) deslocamento e penetração do espermatozóide.
+C) perfuração da zona pelúcida e síntese enzimática.
+D) movimento e reação acrossômica das espermátides.
+E) penetração e fecundação do óvulo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q31
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 32
+
+Selecione a alternativa que preenche corretamente as lacunas do texto abaixo.
+
+O processo de transporte ativo na membrana de células animais se caracteriza pelo gasto ___________, por meio da ação de um sistema do tipo “bomba de sódio e potássio”. Esse processo ativo se faz necessário, uma vez que realiza o transporte de íons de um meio _____________ para um meio ______________.
+
+
+A) energético; menos concentrado; mais concentrado.
+B) iônico; hipertônico; hipotônico.
+C) osmótico; hiperosmótico; hiposmótico.
+D) iônico; menos concentrado; mais concentrado.
+E) energético; hipertônico; hipotônico.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q32
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 33
+
+Durante o processo de digestão, cabe ao suco pancreático a função de
+
+
+A) alcalinizar o quimo.
+B) reduzir o pH no conteúdo intestinal.
+C) neutralizar o pH no estômago.
+D) ativar a pepsina.
+E) inativar a lipase
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q33
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 34
+
+Observe o gráfico abaixo.
+
+Pode-se afirmar que as linhas A e B fazem referência, respectivamente, a animais
+
+[Figura: Ingestão de alimentos (% peso corpóreo/dia) versus temperatura ambiental (°C), linhas A e B.]
+Arquivo: figures/furg-2006-biologia-q34-fig1.webp
+
+A) ectotérmicos e endotérmicos.
+B) carnívoros e omnívoros.
+C) endotérmicos e ectotérmicos.
+D) herbívoros e carnívoros.
+E) mesotérmicos e isotérmicos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q34
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 35
+
+Selecione a alternativa que preenche corretamente as lacunas do texto abaixo.
+
+As técnicas de laqueadura e a vasectomia são métodos com _______________ de gametas, ______________ eficiência anticoncepcional e ______________ contra as doenças sexualmente transmissíveis.
+
+
+A) comportamentais; produção normal; baixa; ineficiente.
+B) endócrinos; reabsorção; alta; eficiente.
+C) endócrinos; inibição da produção; baixa; com alta proteção.
+D) cirúrgicos; inibição da produção; alta; com baixa proteção.
+E) cirúrgicos; reabsorção; alta; ineficiente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q35
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 36
+
+Com relação às características do revestimento externo dos cordados pode-se afirmar que
+
+
+A) nas aves, a pele é rica em glândulas mucosas que são responsáveis pela hidratação e impermeabilização das penas.
+B) na maioria dos répteis, a pele é uma estrutura também utilizada para trocas gasosas.
+C) nos anfíbios, a pele não apresenta glândulas mucosas e atividade respiratória.
+D) nos répteis, a pele é seca, impermeável e recoberta por escamas ou placas ósseas.
+E) a pele dos mamíferos é recoberta por pêlos e a presença das glândulas sudoríparas garante a sua hidratação.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q36
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 37
+
+Considerando a diversidade dos animais, assinale a alternativa que apresenta, respectivamente, exemplos de ARTHROPODA,
+
+NEMATODA, PLATHYELMINTES, MOLLUSCA e ANNELIDA.
+
+
+A) Escorpião, lombriga, verme do amarelão, planária e lesma.
+B) Siri, tênia, esquistossomos, polvo e minhoca.
+C) Besouro, lombriga, planária, marisco e sanguessuga.
+D) Caranguejo, ancilóstomo, verme do amarelão, lesma e poliqueto.
+E) Caranguejo, tênia, planária, polvo e barbeiro.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q37
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 38
+
+Relacione os grupos de organismos enumerados na coluna 1 com suas respectivas características apresentadas na coluna 2.
+
+Coluna 1
+(1) Dinoflagelados
+(2) Algas vermelhas
+(3) Briófitas
+(4) Pteridófitas
+(5) Fungos
+
+Coluna 2
+( ) Formadores de turfeiras
+( ) Utilizados como fermento biológico
+( ) Produtores de agar
+( ) Formadores de carvão mineral
+( ) Formadores de maré vermelha
+
+A alternativa que contém a associação correta da coluna 2, quando lida de cima para baixo, é
+
+
+A) 1,4,3,5,2.
+B) 5,3,4,1,2.
+C) 4,5,2,3,1.
+D) 3,5,1,4,2.
+E) 3,5,2,4,1.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q38
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 39
+
+As Angiospermas são as plantas mais abundantes no ambiente terrestre, com cerca de 235.000 espécies, e dominam esse habitat há pelo menos 100 milhões de anos. Qual das alternativas abaixo aponta características exclusivas de Angiospermas?
+
+
+A) Presença de sementes e grãos de pólen.
+B) Presença de vasos lenhosos e liberianos.
+C) Gametófitos reduzidos produzindo gametas não flagelados.
+D) Presença de néctar e frutos.
+E) Ausência de fase haplóide no ciclo reprodutivo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q39
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 40
+
+O conhecimento tradicional de embrulhar bananas verdes em jornal para acelerar o amadurecimento está relacionado com o hormônio etileno. Esse processo ocorre porque
+
+
+A) o etileno diminui a ação da auxina e transforma carboidratos em ácidos orgânicos.
+B) a concentração de etileno aumenta devido à retenção deste hormônio pelo jornal.
+C) a concentração de etileno diminui devido à ausência de luz gerada pelo jornal.
+D) a concentração de etileno aumenta devido à ausência de luz gerada pelo jornal.
+E) o etileno é uma molécula grande com difícil difusão de célula a célula.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q40
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 41
+
+As ceras são dificilmente degradadas no processo digestivo. Uma interessante exceção ocorre no pássaro comedor de cera sul-africano, o “guia do mel”, que indica aos texugos ou aos homens a localização das colméias de abelhas selvagens. O pássaro espera o ninho ser saqueado e se aproveita dos resíduos – a cera. Esse tipo de relação trata- se de uma associação
+
+
+A) interespecífica de protocooperação.
+B) intra- específica de protocooperação.
+C) interespecífica de inquilinismo.
+D) intra- específica de comensalismo.
+E) interespecífica de amensalismo ou antibiose.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q41
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 42
+
+Selecione a alternativa que preenche corretamente as lacunas do texto abaixo.
+
+Em um dos lagos do Campus Carreiros da FURG ocorre, freqüentemente, crescimento excessivo de algas planctônicas. Paralelamente, são detectados altos teores de nitrogênio e fósforo orgânico dissolvidos na água. Alguns pesquisadores sugerem que essas características estão relacionadas à massiva presença de aves que repousam diariamente nas ilhas desse lago. Acredita- se que o guano (fezes e urina) eliminado pelas aves seria o principal responsável pelos altos teores de nitrogênio e fósforo dissolvidos e, conseqüentemente, pelo crescimento excessivo de algas. Esse enriquecimento nutricional dos corpos de água é conhecido como _________________ e tem como conseqüência ____________________.
+
+
+A) eutrofização; a diminuição do teor de N2 na água.
+B) desnitrificação; o aumento do teor de N2 na água.
+C) nitrificação; o aumento do teor de N2 na água.
+D) eutrofização; a diminuição do teor de O2 na água.
+E) nitrificação; a diminuição do teor de O2 na água.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q42
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 43
+
+A respeito do melanismo industrial, considerando a teoria sintética da evolução, pode-se afirmar que
+
+I. a população de mariposas da Manchester pré-industrial era variável quanto à coloração de seus indivíduos, existindo mariposas de asas claras e outra forma mutante, muito menos freqüente, com asas escuras.
+II. a industrialização da cidade de Manchester ocasionou a morte dos líquens que cobriam os troncos escuros das árvores. As mariposas com asas claras, anteriormente camufladas sobre os líquens, tornaram- se cada vez mais escuras para assemelharem- se com o novo meio.
+III. as mariposas com asas claras que ficavam camufladas nos troncos cobertos por líquens, com a industrialização na cidade, começaram a ser predadas por pássaros. As mariposas com asas escuras, por serem menos predadas, aumentaram em freqüência na população.
+IV. a mudança ambiental, causadora da morte dos líquens, induziu o aumento lento e gradual da cor nas asas das mariposas. A mudança adquirida era transmitida às gerações seguintes, perpetuando- se na população.
+V. após a morte dos líquens, as mariposas com asas escuras tinham uma maior probabilidade de sobrevivência, transmitindo seus genes para os descendentes. As mariposas com asas claras deixavam menos prole, e com o suceder de gerações representavam uma porcentagem muito pequena da população.
+
+Assinale a alternativa em que todas as afirmativas estão corretas.
+
+
+A) I, II e
+V.
+B) I, III e
+V.
+C) I, III e
+IV.
+D) II, III e
+V.
+E) II, III e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q43
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 44
+
+Um dos mecanismos que origina a variação genética é a mutação que pode ocorrer por deleção ou por inserção de bases nitrogenadas. Esses tipos de mutações podem ser especialmente nocivos quando causam uma mudança no módulo ou matriz de leitura do ribossomo durante a tradução do RNA mensageiro. Essa mudança de leitura ocorre quando
+
+I. 3 pares de bases são inseridos.
+II. 1 par de bases é deletado.
+III. 6 pares de bases são deletados.
+IV. 2 pares de bases são inseridos ou deletados.
+V. 1 par de bases é inserido.
+
+Quais afirmativas estão corretas?
+
+
+A) I, III e
+V.
+B) I, II e
+III.
+C) III e
+IV.
+D) I — e
+II.
+E) II, IV e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q44
+
+========================================================================
+FURG 2006 — Biologia — Vestibular regular — Questão 45
+
+Assinale a alternativa que apresenta todas as possibilidades de gametas, formados a partir de um indivíduo com o genótipo AaBbCc.
+
+
+A) Aa, Bb, Cc.
+B) ABC, abc.
+C) ABC, ABc, AbC, Abc, aBC, aBc, abC, abc.
+D) AB, AC, Ab, Ac, aB, aC, ab, ac.
+E) ABC, ABc, AbC, Abc.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-biologia
+Identificador: furg-2006-biologia-q45
+
+========================================================================
+FURG 2007 — Biologia — Processo seletivo UAB — Questão 51
+
+A pílula-do-dia-seguinte, também conhecida como método contraceptivo de emergência, é um composto hormonal utilizado para prevenir uma gravidez indesejada cuja função é impedir a
+
+
+A) motilidade espermática.
+B) migração do oócito fertilizado.
+C) nidação embrionária.
+D) formação do blastocisto.
+E) libido.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-biologia
+Identificador: furg-2007-1-semestre-biologia-q51
+
+========================================================================
+FURG 2007 — Biologia — Processo seletivo UAB — Questão 52
+
+Assinale a alternativa que corresponde à especialização das células do epitélio respiratório relacionada com a retirada das partículas sólidas que podem ser inaladas durante a respiração.
+
+
+A) Cílio.
+B) Hemidesmossomo.
+C) Flagelo.
+D) Microvilo.
+E) Desmossomo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-biologia
+Identificador: furg-2007-1-semestre-biologia-q52
+
+========================================================================
+FURG 2007 — Biologia — Processo seletivo UAB — Questão 53
+
+Uma pessoa com deficiência na produção de suco gástrico terá dificuldade para digerir, no estômago, alimentos ricos em
+
+
+A) amido.
+B) proteína.
+C) ácido graxo.
+D) carboidrato.
+E) lipídio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-biologia
+Identificador: furg-2007-1-semestre-biologia-q53
+
+========================================================================
+FURG 2007 — Biologia — Processo seletivo UAB — Questão 54
+
+“A Esquistossomose é uma doença endêmica das Américas, Ásia e África. A Organização Mundial de Saúde estima 200 milhões de pessoas em 74 países acometidas pela doença. No Brasil os estados do Nordeste e Minas Gerais foram as primeiras áreas endêmicas da doença, porém, recentemente, outros estados do Sudeste e do Sul apresentaram focos da doença”. Katz, N. & Almeida, K. apud Amabis & Martho (2004).
+
+Marque a alternativa que apresenta, nesta ordem, o nome do helminto causador da doença, seu hospedeiro intermediário, o principal órgão afetado e os principais sintomas da doença no ser humano.
+
+
+A) Taenia saginata – caramujo – fígado – hemorragia e anemia.
+B) Taenia solium – boi – intestino – diarréia, anemia e cansaço.
+C) Schistosoma mansoni – porco – fígado – obstrução intestinal e hepatomegalia.
+D) Taenia solium – porco – intestino – diarréia e hemorragia.
+E) Schistosoma mansoni – caramujos – fígado – hemorragia, hepatomegalia e cirrose.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-biologia
+Identificador: furg-2007-1-semestre-biologia-q54
+
+========================================================================
+FURG 2007 — Biologia — Processo seletivo UAB — Questão 55
+
+“Um gravatá estava fazendo fotossíntese em um campo da Reserva Ecológica do Taim. Veio uma preá, comeu pedaços das folhas do gravatá e escondeu-se sob suas folhas. A preá estava descansando, de barriga cheia, na sombra do gravatá, quando passou uma serpente com fome e alimentou-se da preá. A serpente saiu pelo campo e, ao atravessar uma estrada, um caminhão a atropelou. Restou na beira da estrada a serpente, em decomposição, pela ação de microorganismos”. No texto acima, o gravatá, a preá, a serpente e os microorganismos correspondem, respectivamente, aos seguintes níveis tróficos:
+
+
+A) produtor primário, consumidor secundário, consumidor terciário e decompositor.
+B) produtor, decompositor, consumidor primário e consumidor secundário.
+C) consumidor primário, decompositor, consumidor secundário e produtor.
+D) produtor, consumidor primário, consumidor secundário e decompositor.
+E) produtor, consumidor secundário, consumidor primário e decompositor.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-biologia
+Identificador: furg-2007-1-semestre-biologia-q55
+
+========================================================================
+FURG 2007 — Biologia — Processo seletivo UAB — Questão 56
+
+No preparo de uma salada de verduras frescas, vamos temperá-la com vinagre ou limão, sal e azeite. Após algum tempo, as verduras murcham porque as células vegetais estão expostas a um meio
+
+
+A) hipertônico e perdem água por osmose.
+B) hipotônico e perdem água por osmose.
+C) hipertônico e absorvem água por osmose.
+D) hipotônico e perdem água por difusão ativa.
+E) isotônico e absorvem água por transporte ativo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-biologia
+Identificador: furg-2007-1-semestre-biologia-q56
+
+========================================================================
+FURG 2007 — Biologia — Processo seletivo UAB — Questão 57
+
+Assinale a alternativa que indica o grupo vegetal que possui todas as estruturas a seguir: xilema, floema, estames, grãos de pólen, frutos e sementes.
+
+
+A) Algas.
+B) Gimnospermas.
+C) Pteridófitas.
+D) Briófitas.
+E) Angiospermas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-biologia
+Identificador: furg-2007-1-semestre-biologia-q57
+
+========================================================================
+FURG 2007 — Biologia — Processo seletivo UAB — Questão 58
+
+A Planície Costeira do Rio Grande do Sul apresenta diversidade de ambientes terrestres e aquáticos (água doce, salgada ou salobra). Em conseqüência, podemos observar uma fauna rica e diversificada. Com relação a isto, é correto afirmar que
+
+
+A) as capivaras são mamíferos de ambiente semiáquático e de hábito carnívoro.
+B) as emas são aves migratórias presentes em todos os campos limpos da planície e ectotérmicas.
+C) os poríferos são animais filtradores exclusivos de água salgada pela incapacidade de osmorregulação.
+D) os equinodermos são observados somente em água salgada pela incapacidade de osmorregulação.
+E) os jacarés são répteis característicos de água doce e endotérmicos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-biologia
+Identificador: furg-2007-1-semestre-biologia-q58
+
+========================================================================
+FURG 2007 — Biologia — Processo seletivo UAB — Questão 59
+
+Em uma primeira gestação, uma mulher deu à luz a uma criança saudável. Já em sua segunda gravidez, o seu filho nasceu com eritroblastose fetal.
+
+Assinale a alternativa que corresponde, respectivamente, ao fator Rh da mãe, do 1º filho e do 2º filho:
+
+
+A) Rh negativo, Rh negativo, Rh positivo.
+B) Rh positivo, Rh negativo, Rh negativo.
+C) Rh negativo, Rh positivo, Rh positivo.
+D) Rh negativo, Rh positivo, Rh negativo.
+E) Rh positivo, Rh positivo, Rh negativo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-biologia
+Identificador: furg-2007-1-semestre-biologia-q59
+
+========================================================================
+FURG 2007 — Biologia — Processo seletivo UAB — Questão 60
+
+Ao analisar a semelhança funcional entre as asas de mosquitos e de pássaros, concluímos que se tratam de estruturas ____________________, pois não possuem a mesma origem embriológica e caracterizam, portanto, um processo de________________________.
+
+Assinale a alternativa que completa corretamente as lacunas do texto acima.
+
+
+A) homólogas, irradiação adaptativa
+B) análogas, evolução convergente
+C) análogas, irradiação adaptativa
+D) homólogas, evolução convergente
+E) homólogas, evolução paralela
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-biologia
+Identificador: furg-2007-1-semestre-biologia-q60
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 31
+
+Quanto aos eventos relacionados com reprodução em mamíferos, pode-se afirmar que:
+
+I. a ocorrência de gêmeos dizigóticos pode ser devida à fertilização de um oócito por dois espermatozóides que, ao chegar no estágio de mórula se dividirá em dois.
+II. a ocorrência de gêmeos dizigóticos pode ser devida à fertilização de um oócito por um espermatozóide, que ao chegar no estágio de mórula, se dividirá em dois.
+III. a ocorrência de gêmeos dizigóticos pode ser devida à fertilização de dois oócitos por dois espermatozóides, seguida pela nidação dos embriões.
+
+Assinale a alternativa correta:
+
+
+A) II.
+B) III.
+C) II e
+III.
+D) I.
+E) I — e
+II.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q31
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 32
+
+Em uma visita aos Molhes da Barra de Rio Grande, podemos observar animais como: anêmonas-do-mar, cracas, mexilhões, baratinhasda-praia e golfinhos. Esses animais pertencem, respectivamente, aos grupos:
+
+
+A) Cnidaria, Crustacea, Mollusca, Crustacea, Mammalia.
+B) Porifera, Mollusca, Bivalvia, Crustacea, Cetacea.
+C) Echinodermata, Crustacea, Crustacea, Insecta, Pisces.
+D) Cnidaria, Porifera, Crustacea, Arthropoda, Mammalia.
+E) Echinodermata, Bivalvia, Gastropoda, Insecta, Osteichthyes.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q32
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 33
+
+Quanto aos componentes celulares, pode-se afirmar que:
+
+I. o retículo endoplasmático granuloso é uma rede de tubos e bolsas achatadas interligadas entre si, que apresentam ribossomos aderidos à sua superfície e que atuam na produção protéica.
+II. o citoesqueleto é constituído por uma complexa rede de tubos e filamentos lipídicos.
+III. um dos fatores que faz com que a membrana celular seja de fundamental importância para a célula é a sua permeabilidade seletiva, que permite a passagem de qualquer substância dissolvida.
+
+Assinale a alternativa correta:
+
+
+A) III.
+B) II.
+C) I.
+D) I — e
+II.
+E) II e
+III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q33
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 34
+
+A perda de parte da pele de um ser vivo expõe as suas células a _______________ bacterianos, promovendo assim o início da produção de ____________ pelos ___________.
+
+
+A) anticorpos, antígenos e plasmócitos.
+B) antígenos, linfócitos e anticorpos.
+C) macrófagos, anticorpos e antígenos.
+D) anticorpos, antígenos e linfócitos.
+E) antígenos, anticorpos e plasmócitos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q34
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 35
+
+Durante a queima de combustíveis fósseis, como na combustão do petróleo, a fumaça produzida pode levar à morte por asfixia. É correto afirmar que a asfixia é causada porque:
+
+
+A) a fumaça estimula a produção de oxihemoglobina, aumentando a afinidade do oxigênio pela hemoglobina e tornando-o indisponível para os tecidos.
+B) o ácido carbônico liberado inibe o centro respiratório, diminuindo a ventilação pulmonar.
+C) o dióxido de carbono liberado tem baixa afinidade pela hemoglobina, impedindo o transporte de oxigênio para os tecidos.
+D) o monóxido de carbono liberado tem alta afinidade pela hemoglobina, impedindo o transporte de oxigênio para os tecidos.
+E) o monóxido de carbono inibe a anidrase carbônica, impedindo a liberação de oxigênio pela hemoglobina.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q35
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 36
+
+Durante um típico dia de inverno riograndino, o seu corpo irá desencadear mecanismos específicos para controlar sua temperatura corporal. Podemos afirmar que os seguintes mecanismos específicos correspondem às adaptações do corpo humano ao frio:
+
+I. vasodilatação periférica.
+II. encolhimento do corpo como resposta comportamental.
+III. sudorese, para produzir uma camada líquida isolante térmica sobre a pele.
+IV. tremores provocados pela contração dos músculos esqueléticos para produção de calor.
+V. vasoconstrição periférica.
+VI. aumento da freqüência ventilatória.
+
+Assinale a alternativa correta:
+
+
+A) II, V e
+VI.
+B) I, II e
+III.
+C) II, IV e
+V.
+D) I, IV e
+VI.
+E) I, III e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q36
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 37
+
+Entre as doenças sexualmente transmissíveis, o HPV, causado pelo Papiloma Vírus Humano, tem recebido atenção dos órgãos de saúde por sua ocorrência estar associada com o desenvolvimento de alguns tipos de câncer. Sobre o HPV, é correto afirmar que:
+
+I. o vírus HPV infecta as células dos órgãos genitais provocando lesões papilares (verrucosas) ou ulcerativas.
+II. as lesões do HPV são observadas na vulva, períneo, vagina e colo do útero.
+III. as lesões do HPV são observadas na glande e no prepúcio.
+IV. o HPV não está associado ao desenvolvimento de câncer genital e anal em homens.
+V. os programas de vacinação que estão sendo desenvolvidos serão direcionados aos jovens adolescentes que já tenham iniciado sua vida sexual.
+
+Assinale a alternativa correta:
+
+
+A) I, II e
+III.
+B) I, III e
+V.
+C) I, II e
+IV.
+D) II, IV e
+V.
+E) I, III e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q37
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 38
+
+Assinale a alternativa que apresenta uma característica comum às plantas Pteridófitas e Gimnospermas:
+
+
+A) plantas com gametas masculinos flagelados.
+B) plantas produtoras de sementes.
+C) plantas avasculares.
+D) plantas com xilema e floema.
+E) plantas fanerógamas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q38
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 39
+
+Quanto às características gerais dos diferentes grupos animais, é correto afirmar que:
+
+
+A) os cnidários são animais pseudocelomados encontrados no ambiente marinho.
+B) os platielmintos são, exclusivamente, vermes de vida livre que apresentam o corpo achatado dorso-ventralmente.
+C) os poríferos são animais pluricelulares, com trato digestório completo.
+D) os nematelmintos são animais exclusivamente parasitas do trato digestório de vertebrados.
+E) os moluscos são invertebrados celomados encontrados na água doce, no mar e no ambiente terrestre.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q39
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 40
+
+Uma importante especialização das angiospermas é a produção de uma flor elaborada, constituída por diversas partes como sépalas, pétalas, estames e carpelos. Qual das alternativas abaixo relaciona corretamente a composição das partes florais com a sua respectiva função?
+
+
+A) O carpelo é composto por pétalas e sépalas e é responsável pela atração de polinizadores.
+B) O estame é composto por filete e antera e é responsável pela produção de grãos de pólen.
+C) O estame é composto por pétalas e sépalas e é responsável pela atração de polinizadores.
+D) O carpelo é composto por filete e antera e é responsável pela produção de grãos de pólen.
+E) O perianto é composto por pétalas e sépalas e é responsável pela produção de gametófitos masculinos e femininos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q40
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 41
+
+Segundo a teoria do efeito estufa, a Terra vem sofrendo uma elevação de temperatura causada, principalmente, pela emissão excessiva de alguns gases. O principal gás envolvido no efeito estufa é o gás carbônico, gerado principalmente pela queima de combustíveis fósseis. Com relação ao efeito estufa, quais das seguintes atividades contribuem para diminuí-lo?
+
+I. Recuperação de florestas naturais.
+II. Ampliação das usinas termoelétricas.
+III. Aumento da exploração de petróleo.
+IV. Cultivos em massa de microalgas.
+V. Conservação das áreas de turfeira.
+
+Assinale a alternativa que apresente somente as atividades que contribuem para diminuir o efeito estufa:
+
+
+A) I, IV e
+V.
+B) I, II e
+III.
+C) I, II e
+V.
+D) II, III e
+IV.
+E) III, IV e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q41
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 42
+
+Relacione os grupos animais enumerados na coluna 1 com as respectivas características da coluna 2:
+
+Coluna 1
+(1) Anfíbios
+(2) Répteis
+(3) Aves
+(4) Mamíferos
+
+Coluna 2
+( ) animais endotérmicos que excretam ácido úrico.
+( ) primeiro grupo de tetrápodos a invadir o ambiente terrestre.
+( ) animais com glândulas sebáceas e glândulas sudoríparas.
+( ) animais ectotérmicos que possuem ovos com âmnio, cório e alantóide.
+
+A alternativa que contém a seqüência numérica correta, lida de cima para baixo, é:
+
+
+A) 1, 3, 4, 2.
+B) 3, 2, 4, 1.
+C) 2, 3, 4, 1.
+D) 3, 1, 4, 2.
+E) 4,1,2,3.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q42
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 43
+
+Em alguns sistemas de classificação, os liquens são considerados como indivíduos independentes que podem ser identificados, inclusive, em nível de gênero e espécie. Essa interpretação está relacionada com o alto grau de dependência entre os organismos envolvidos nessa associação. Assinale a alternativa que corresponde, respectivamente, ao tipo de associação e aos organismos envolvidos na formação dos liquens:
+
+
+A) inquilinismo; algas e fungos.
+B) mutualismo; algas e protozoários.
+C) protocooperação; algas e fungos.
+D) protocooperação; algas e protozoários.
+E) mutualismo; algas e fungos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q43
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 44
+
+Utilize os conceitos enumerados para completar as afirmativas abaixo:
+
+(1) evolução (2) teoria sintética da evolução (3) lei da transmissão das características adquiridas (4) convergência adaptativa (5) seleção natural
+
+I. O mecanismo defendido por Darwin para explicar a adaptação dos organismos ao ambiente é conhecido como ( ).
+II. A idéia de que o desenvolvimento de um órgão pelo uso intensivo é herdado pela prole é conhecida como ( ).
+III. A idéia de que todos os organismos estão ligados por laços de ancestralidade e descendência com modificação é conhecida como ( ).
+IV. A idéia que considera o desenvolvimento de estruturas e formas corporais semelhantes por adaptação a ambientes parecidos é conhecida como ( ).
+V. A mutação, recombinação e seleção natural são os principais fatores evolutivos considerados pela ( ).
+
+Assinale a alternativa que apresenta a seqüência numérica, lida de cima para baixo, que completa corretamente as afirmativas:
+
+
+A) 5, 3, 4, 2 e 1
+B) 5, 3, 1, 4 e 2
+C) 1, 3, 4, 5 e 2
+D) 1, 4, 3, 5 e 2
+E) 2, 5, 1, 3 e 4
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q44
+
+========================================================================
+FURG 2007 — Biologia — Vestibular regular — Questão 45
+
+João e Maria são do tipo sangüíneo A e sua descendência, representada na genealogia abaixo, é composta de três filhos (1, 3 e 4) do tipo sangüíneo A e dois (2 e 5) do tipo O.
+
+A partir dessas informações, pode-se afirmar que:
+
+I. João e Maria são heterozigotos IAi e IAi.
+II. João e Maria possuem os tipos sangüíneos A e O, respectivamente.
+III. a chance de João e Maria terem um filho do sexo masculino e do tipo sangüíneo O é 1/8.
+IV. a chance de João e Maria terem um filho de qualquer sexo do tipo sangüíneo O é 1/2.
+V. cada vez que João e Maria tiverem um filho de qualquer sexo, a chance de ter um filho do tipo sangüíneo O será ¼.
+
+Quais afirmativas estão corretas?
+
+[Figura: Genealogia de João e Maria com os cinco descendentes, meninos e meninas.]
+Arquivo: figures/furg-2007-2-semestre-biologia-q45-fig1.webp
+
+A) II, III e
+IV.
+B) I, II e
+IV.
+C) I, III e
+V.
+D) I, IV e
+V.
+E) II, IV e
+V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-biologia
+Identificador: furg-2007-2-semestre-biologia-q45
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 31
+
+Analise as afirmativas abaixo onde são apresentadas estruturas celulares.
+
+I – O retículo endoplasmático granuloso é uma rede de tubos e bolsas achatadas com mitocôndrias aderidas à sua superfície, estas atuam produzindo proteínas. II – Os cílios são estruturas filamentosas móveis compostas de microtúbulos que são constituídos de moléculas de proteína (tubulina). III – Os cloroplastos são estruturas ovaladas (alongadas), delimitados por membranas lipoprotéicas, sendo internamente preenchidos por pequenas bolsas discoidais (achatadas) empilhadas.
+
+Com base nas afirmativas acima, podemos dizer que, apenas,
+
+
+A) I — e II estão corretas.
+B) II e III estão corretas.
+C) I — e III estão corretas.
+D) II está correta.
+E) I — está correta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q31
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 32
+
+Quanto aos processos de divisão celular em humanos, é correto afirmar que
+
+
+A) as células somáticas sofrem meiose, que é um processo pelo qual uma célula mãe (com 46 cromossomos) origina duas células filhas (com 23 cromossomos).
+B) as células da epiderme sofrem mitose, que é um processo pelo qual uma célula mãe (com 23 cromossomos) origina duas células filhas (com 46 cromossomos).
+C) as células reprodutivas sofrem meiose, que é um processo pelo qual uma célula mãe (com 46 cromossomos) origina quatro células filhas (com 23 cromossomos).
+D) os gametas são produzidos através de mitose, que é um processo pelo qual uma célula mãe (com 46 cromossomos) origina quatro células filhas (com 23 cromossomos).
+E) as células somáticas sofrem mitose, que é um processo pelo qual uma célula mãe (com 23 cromossomos) origina duas células filhas (com 46 cromossomos).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q32
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 33
+
+Considere um casal, ambos heterozigotos, para duas anomalias genéticas diferentes: polidactilia (autossômica dominante) e albinismo (autossômica recessiva). Qual a probabilidade de gerar o primeiro filho com as duas anomalias?
+
+
+A) 1/16
+B) 1/4
+C) 1/8
+D) 3/16
+E) 3/8
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q33
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 34
+
+A via biossintética abaixo mostra o “caminho” para a formação do pigmento antocianina que dá a coloração das flores em ervilhas com os seus respectivos genes. As enzimas C e P devem ser produzidas, para que haja o pigmento antocianina, do contrário as flores serão brancas.
+
+Assinale a alternativa que apresenta a relação entre os genes que produzem essas enzimas.
+
+[Figura: Via de produção da antocianina: gene C→enzima C e gene P→enzima P, precursor→intermediário→antocianina.]
+Arquivo: figures/furg-2008-2-semestre-biologia-q34-fig1.webp
+
+A) Recessividade.
+B) Dominânica.
+C) Epistasia.
+D) Co-dominância.
+E) Semi-dominância.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q34
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 35
+
+Ao ingerir cocaína, um indivíduo apresentou, como efeito imediato, batimento acelerado do coração, devido à potencialização, por essa substância, de um sistema nervoso periférico. O sistema nervoso periférico que aumenta a freqüência cardíaca e a substância química neurotransmissora liberada são, respectivamente,
+
+
+A) Autônomo simpático e noradrenalina.
+B) Voluntário e acetilcolina.
+C) Autônomo simpático e acetilcolina.
+D) Autônomo parassimpático e noradrenalina.
+E) Autônomo parassimpático e acetilcolina.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q35
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 36
+
+Durante o exercício intenso, a demanda de oxigênio é alta para a produção de energia. A alta demanda energética tem como conseqüência a elevada produção de gás carbônico. Uma das estratégias, para suprir esta demanda de oxigênio e eliminar o excesso de gás carbônico produzido, é o aumento da ventilação pulmonar, controlado, principalmente, pelos centros respiratórios localizados no tronco cerebral (bulbo). Qual dos fatores abaixo pode ser responsável pelo aumento da taxa de ventilação pulmonar?
+
+
+A) Níveis baixos de gás carbônico.
+B) Níveis elevados de oxigênio.
+C) Níveis elevados de nitrogênio.
+D) Níveis baixos de hidrogênio.
+E) Níveis elevados de gás carbônico.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q36
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 37
+
+Em muitos casos, a estrutura responsável pelas trocas gasosas está relacionada ao ambiente em que o animal vive. Assinale a alternativa que apresenta a correspondência correta entre a estrutura utilizada para realizar as trocas gasosas e o respectivo exemplo de animal:
+
+
+A) Traquéia: Gafanhoto; Pulmão: Peixe-boi; Tegumento: Minhoca; Brânquias: Siri.
+B) Traquéia: Barata; Pulmão: Tubarão; Tegumento: Rã; Brânquias: Baleia.
+C) Traquéia: Rã; Pulmão: Camundongo; Tegumento: Jacaré; Brânquias: Mexilhão.
+D) Traquéia: Aranha; Pulmão: Borboleta; Tegumento: Sapo; Brânquias: Pingüim.
+E) Traquéia: Minhoca; Pulmão: Golfinho; Tegumento: Planária; Brânquias: Tartaruga.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q37
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 38
+
+A FURG é uma Universidade voltada para o ecossistema costeiro. Recentemente, seus pesquisadores detectaram a presença do mexilhão dourado em ecossistemas aquáticos da região sul do Brasil. A invasão desse molusco exótico, de hábito alimentar filtrador, traz conseqüências para a estrutura da comunidade aquática e suas relações tróficas. Na figura abaixo, estão representadas as biomassas hipotéticas do mexilhão dourado, fitoplâncton, camarão e peixe, a partir do momento da invasão do molusco em um ecossistema aquático.
+
+A partir desse gráfico, pode-se dizer que as relações tróficas e a função do mexilhão dourado no ecossistema é
+
+[Figura: Biomassa percentual ao longo de10anos de mexilhão, fitoplâncton, camarão e peixe.]
+Arquivo: figures/furg-2008-2-semestre-biologia-q38-fig1.webp
+
+A) consumidor primário e secundário, que se alimenta de fitoplâncton, camarão e peixes.
+B) consumidor primário que reduz o fitoplâncton e, conseqüentemente, afeta toda a teia trófica no ecossistema.
+C) consumidor secundário que se alimenta de camarão e peixe, aumentando o zooplâncton e, conseqüentemente, reduzindo o fitoplâncton.
+D) consumidor de macroalgas submersas, sendo que a biomassa do mexilhão aumenta, devido à redução dos outros organismos.
+E) um organismo com biomassa controlada por peixes e camarões, que controlam o fitoplâncton.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q38
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 39
+
+No Ciclo do Carbono, os organismos vivos são responsáveis pela circulação deste elemento entre a matéria orgânica e inorgânica. Marque a alternativa que apresenta os processos de fixação e liberação do Carbono com seu respectivo exemplo.
+
+
+A) excreção (animais), transpiração (animais).
+B) respiração (vegetais), fermentação (bactérias).
+C) predação (animais), digestão (bactérias).
+D) nitrificação (bactérias), respiração (vegetais).
+E) fotossíntese (vegetais), respiração (animais).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q39
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 40
+
+No gráfico a seguir, pode-se observar as curvas que descrevem a taxa de fotossíntese como resposta da intensidade luminosa das espécies A e B e, também, que a taxa de respiração é similar para as duas espécies.
+
+É correto afirmar que
+
+[Figura: Taxa de fotossíntese das espécies A e B e taxa de respiração versus intensidade luminosa.]
+Arquivo: figures/furg-2008-2-semestre-biologia-q40-fig1.webp
+
+A) em baixa intensidade luminosa, a espécie B apresenta a taxa fotossintética mais alta do que a espécie A.
+B) a taxa de respiração aumenta, proporcionalmente, com o aumento luminoso.
+C) a espécie A é melhor adaptada para crescer em condições de sombra do que a espécie B.
+D) o ponto de saturação de luz da espécie A é maior do que na espécie B.
+E) o ponto de compensação das duas espécies é o mesmo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q40
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 41
+
+Quanto às características e propriedades de organismos protistas, pode-se afirmar que
+
+I – os ciliados apresentam citóstoma e numerosos flagelos longos. II – os rizópodes locomovem-se lentamente e capturam seu alimento por meio de pseudopódes. III – as diatomáceas apresentam parede celular rígida e são importantes produtores primários nos mares. IV – os organismos protistas são unicelulares procariontes de tamanho microscópico (<1 mm). V – o termo alga não tem valor taxonômico, pois congrega seres com características celulares distintas. Com base no exposto acima, é correto afirmar que apenas
+
+
+A) I – II – III estão corretas.
+B) I – III – IV estão corretas.
+C) III – IV – V estão corretas.
+D) II – III – V estão corretas.
+E) II – III – IV estão corretas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q41
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 42
+
+Estudando a reprodução em pinheiros Araucaria angustifolia (Gimnosperma), cuja população foi reduzida drasticamente (2%) no sul do Brasil, o pesquisador concentrou sua análise nos seguintes aspectos:
+
+
+A) tamanho das folhas.
+B) morfologia dos estróbilos e a formação do tubo polínico.
+C) quantidade de esporos eliminados das cápsulas com caliptra.
+D) número de flores formadas por cada planta.
+E) teor protéico dos esporos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q42
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 43
+
+A maior parte das espécies de moluscos bivalves (ostras, mexilhões e mariscos) sofreu uma modificação que permitiu o desenvolvimento de um outro modo de adquirirem alimento. Que modificação foi esta, e o que ela permite?
+
+
+A) Aumento da superfície das brânquias, permitindo a alimentação pela filtração de partículas da água.
+B) Desenvolvimento do pé, permitindo a escavação do substrato em busca de alimento enterrado.
+C) Desenvolvimento da rádula, permitindo a alimentação pela raspagem de algas na superfície das pedras.
+D) Desenvolvimento dos músculos adutores das conchas, permitindo a manutenção das conchas fechadas, aprisionando pequenos animais no seu interior.
+E) Desenvolvimento dos sifões, permitindo a exploração de tocas e galerias para a predação sobre anelídeos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q43
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 44
+
+Os insetos tiveram sucesso na colonização do ambiente terrestre. Para tanto, foi fundamental economizar água e ser capaz de captar o oxigênio do ar. Marque a alternativa que apresenta as estruturas de excreção e de trocas gasosas presentes nesses animais, e sua respectiva contribuição para a conquista desse ambiente.
+
+
+A) rins (economia de água por excreção de ácido úrico) e traquéias (levam o ar para os pulmões sem perda de água).
+B) rins (economia de água por excreção de uréia) e pulmões (trocam gases diretamente com o sangue).
+C) glândulas coxais (economia de água por excreção de amônia) e brânquias (permitem respiração em diversos ambientes).
+D) túbulos de Malpighi (economia de água por excreção de amônia) e pulmões foliáceos (permitem a troca gasosa na ausência de água).
+E) túbulos de Malpighi (economia de água por excreção de ácido úrico) e traquéias (levam o ar diretamente aos tecidos).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q44
+
+========================================================================
+FURG 2008 — Biologia — Vestibular de inverno — Questão 45
+
+Os cnidários são animais de estrutura corporal relativamente simples e de hábito predador. O cnidócito é a principal estrutura que reúne os organismos neste filo, e é utilizada no ataque e na defesa. Marque a alternativa que melhor define este tipo de célula.
+
+
+A) Célula com um tipo de rede que permite a filtração de partículas presentes na água.
+B) Célula capaz de disparar descargas elétricas nas presas.
+C) Célula que produz muco adesivo que permite a captura do alimento.
+D) Célula que contém uma cápsula cheia de líquido urticante e um filamento protáctil.
+E) Célula capaz de gerar calor que queima os tecidos da presa e permite a sua captura.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-biologia
+Identificador: furg-2008-2-semestre-biologia-q45
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 31
+
+Foram coletados dois animais, um rato (Calomys laucha) e um zorrilho (Conepathus chinga) nas dunas da praia do cassino, sendo logo após retiradas amostras teciduais para análises histológicas e moleculares. Analise as afirmativas.
+
+I – No Calomys laucha foram visualizadas células do tecido conjuntivo, epitelial e muscular. Apesar de os tecidos serem do mesmo animal, eles têm características diferentes, devido ao fato de o DNA de cada tecido ser diferente. II – Em ambos os animais, foram encontrados tecidos com as mesmas características histológicas, porém, com constituições genéticas diferentes. III – No Conepathus chinga, foi visualizado tecido epitelial no revestimento do sistema digestório. Este tecido tem como característica ter grande quantidade de substância intersticial (material extracelular), grande quantidade de fibras e vasos sanguíneos entre as células.
+
+Com base nas afirmativas acima, podemos dizer que, apenas,
+
+
+A) II e III estão corretas.
+B) I — e II estão corretas.
+C) II está correta.
+D) I — e III estão corretas.
+E) III está correta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q31
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 32
+
+As células executam várias funções. Como exemplos, podemos citar: a movimentação, produção de proteínas e lipídios, armazenamento e transporte de macromoléculas. Para que estas ações ocorram, é necessário energia. Quanto ao metabolismo energético, assinale a alternativa correta.
+
+
+A) A respiração aeróbica é o processo em que ocorre síntese de ATP e o aceptor final de elétrons na cadeia respiratória é o O2.
+B) A respiração anaeróbica somente ocorre em seres procariontes, e a respiração aeróbica, em seres eucariontes.
+C) A fotossíntese é realizada pelos seres clorofilados. Neste processo, o O2 e a H20 são utilizados para síntese de carboidratos, sendo formado ao final do processo CO2 que é liberado para o ambiente.
+D) A fermentação é o processo aeróbico de síntese de ATP, em que o O2 é utilizado como principal aceptor final de hidrogênios.
+E) A quimiossíntese ocorre nas ferrobactérias que utilizam a energia química proveniente da oxidação de amônia ou nitritos para a síntese de matéria orgânica.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q32
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 33
+
+Assinale a alternativa que contém a afirmação correta a respeito da evolução biológica.
+
+
+A) As mudanças no material genético que produzem a variabilidade nas espécies pode ser o resultado da competição.
+B) De acordo com a teoria da evolução, os mamíferos devem aparecer no registro fóssil em época posterior aos répteis.
+C) Quando organismos proximamente relacionados desenvolvem características similares, diz-se que ocorreu convergência evolutiva.
+D) A teoria da herança dos caracteres adquiridos foi brilhantemente enunciada por Charles Darwin.
+E) De acordo com a teoria da evolução, as diferenças entre as espécies é o resultado da ação de agentes mutagênicos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q33
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 34
+
+Numa determinada planta, os locos gênicos A, B e C estão ligados no mesmo cromossomo. Estes locos foram mapeados nas seguintes distâncias: A-B = 12 centimorgans; B-C = 8 centimorgans. Foi feito um cruzamento entre uma planta heterozigota AbC/aBc com outra de genótipo homozigoto recessivo para os três locos. Um dos genótipos resultantes foi ABC/abc. Escolha a alternativa que represente a freqüência esperada para este genótipo.
+
+
+A) 0,0096
+B) 0,012
+C) 0,024
+D) 0,08
+E) 0,0048
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q34
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 35
+
+Uma mulher normal, casada com um homem normal, é encaminhada a um médico geneticista, pois possui uma irmã com fibrose cística (doença autossômica recessiva). Por coincidência, seu marido teve um irmão, já falecido, que sofria de fibrose cística. O casal quer saber qual a probabilidade de terem uma criança com o mesmo problema. Com os dados apresentados, o geneticista chegou à conclusão de que a probabilidade de o casal ter uma criança com fibrose cística é de
+
+
+A) 1/4
+B) 1/8
+C) 1/6
+D) 1/9
+E) 1/2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q35
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 36
+
+O município de Rio Grande possui uma vegetação, em geral, associada a ambientes aquáticos. Entre estes, destacam-se os banhados, onde se desenvolvem plantas aquáticas, com as seguintes características:
+
+I – Epiderme dotada de cutícula espessa. II – Parênquima aerífero bem desenvolvido. III – Estômatos grandes e situados predominantemente na face inferior da epiderme da folha. IV – Tecido vascular extremamente desenvolvido. V – Tecido de sustentação (fibras esclerenquimáticas) pouco desenvolvido.
+
+Marque a alternativa que representa características comuns e adaptativas das plantas de ambientes aquáticos.
+
+
+A) III e V
+B) I — e II
+C) I — e III
+D) II e IV
+E) II e V
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q36
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 37
+
+Os fungos, durante muitos anos, foram classificados como plantas. Entretanto, por apresentarem características particulares que os diferem tanto das plantas quanto dos animais, atualmente constituem um reino particular: Reino Fungi.
+
+Em relação às seguintes características:
+
+I – Reprodução por esporos. II – Armazenamento de glicogênio. III – Tecido parenquimático clorofiliano. IV – Presença de tecidos condutores de seiva. V – Corpo constituído por hifas vegetativas e reprodutivas.
+
+Marque a alternativa que corresponde à(s) característica(s) que ocorrem no Reino Fungi.
+
+
+A) II, III e IV
+B) I, II e V
+C) II e IV
+D) I, III e IV
+E) I — e III
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q37
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 38
+
+Em relação às gimnospermas, pode-se afirmar que
+
+
+A) possui caule verdadeiro, porém, as raízes ainda caracterizam-se como rizóides.
+B) é o primeiro grupo, entre os vegetais, a apresentar o sistema de vasos condutores (xilema e floema).
+C) as sementes são o veículo de dispersão.
+D) os frutos são o meio de dispersão.
+E) apresentam um sistema reprodutivo desenvolvido, porém, somente reproduzem-se assexuadamente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q38
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 39
+
+No início de 2008, banhistas, em pelo menos cinco Estados brasileiros, passaram por uma experiência bastante desagradável: sofreram queimaduras causadas por águas-vivas (mãesd’água). Os incidentes foram amplamente divulgados pela mídia. Em um determinado noticiário, um jornalista fez as seguintes afirmações sobre as mães-d’água:
+
+I – as mães-d’água são involuntariamente arrastadas em direção às praias, pois, segundo os cientistas, são organismos planctônicos. II – a lesão ou queimadura na pele humana é causada pela ação de células presentes nos tentáculos das mães-d’água, chamadas de cnidoblastos. III – antes mesmo do surgimento da espécie humana, as mães-d’água já estavam presentes no planeta Terra. IV – todas as mães-d’água apresentam uma forma de reprodução curiosa conhecida por metagênese.
+
+Dentre as afirmações feitas pelo jornalista, podemos classificar como cientificamente corretas, apenas:
+
+
+A) II e
+IV.
+B) II, III e
+IV.
+C) I — e
+II.
+D) I, II e
+III.
+E) I, II e
+IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q39
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 40
+
+O tigre d´água, uma tartaruga verde que habita rios e banhados do Rio Grande do Sul, tem sido capturada e vendida como animal de estimação. Essa prática criminosa, tem causado um intenso declínio em suas populações naturais. Um grupo de biólogos está desenvolvendo um projeto para aumentar as populações ameaçadas do tigre d´água, entretanto, a população continua em redução. Alguns voluntários que participam do projeto formularam hipóteses para explicar esse fato. Baseado no modo de vida dos répteis, assinale a melhor hipótese apresentada:
+
+
+A) A população foi reduzida demasiadamente e o número de filhotes que atingem a fase adulta não está superando o número de mortes.
+B) Para efetuar a fecundação externa, elas necessitam de água cristalina, que é escassa nos rios da região do projeto.
+C) As fêmeas não estão conseguindo chocar seu ovos adequadamente.
+D) A água pode apresentar pouco oxigênio dissolvido, dificultando a respiração das tartarugas.
+E) Deve haver alguma doença causando a morte dos animais, uma vez que ela não apresenta predadores naturais.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q40
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 41
+
+Em uma região rural brasileira, um criador de galinhas estava tendo prejuízos, pois muitas aves de sua criação estavam sendo mortas por ataque de animais silvestres predadores. O produtor concluiu que o responsável pelos ataques era um animal conhecido por cachorro-do-mato, comum nas matas da região, e resolveu preparar armadilhas para afastar tal invasor. A prefeitura da cidade contratou biólogos, para avaliar se realmente o cachorro-do-mato era o responsável pelos ataques. O esquema a seguir resume os resultados obtidos pelos pesquisadores e mostra algumas das interações que existem entre organismos que habitam o local. Entre parênteses está a porcentagem que cada item representa na alimentação diária de um cachorro-do-mato.
+
+Os dados apresentados na figura permitem afirmar que
+
+[Figura: Teia alimentar do cachorro-do-mato com percentuais da dieta e setas das presas para o consumidor.]
+Arquivo: figures/furg-2008-1-semestre-biologia-q41-fig1.webp
+
+A) as galinhas são uma das principais fontes de proteína animal para o cachorro-do-mato.
+B) a eliminação do cachorro-do-mato pode causar um crescimento da população de roedores na região.
+C) com certeza, o cachorro-do-mato é responsável pelo ataque ao galinheiro em questão.
+D) os lagartos são imprescindíveis para a sobrevivência do cachorro-do-mato.
+E) o cachorro-do-mato ocupa o primeiro nível trófico de um ecossistema.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q41
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 42
+
+Os navios de carga podem contribuir para um tipo de desequilíbrio ecológico pouco conhecido pela maioria das pessoas: a introdução de espécies exóticas. Esses navios possuem tanques onde a água do mar é armazenada para atuar como água-de-lastro. Chegando em um determinado porto, essa água pode ser liberada para restabelecer o equilíbrio do navio após seu carregamento. Essa água liberada, em geral, foi retirada de uma região distante e pode possuir larvas de invertebrados, peixes e outros organismos que serão lançados em diferentes partes do mundo. Esses organismos podem agir como competidores, predadores ou até parasitas da fauna local, gerando distúrbios ambientais por vezes catastróficos. São exemplos desses organismos:
+
+Nome popular | Nome científico | Origem | Local do impacto ambiental
+Mexilhão-zebra | Dreissena polymorpha | Europa | Grandes Lagos ao norte dos Estados Unidos
+Estrela-do-mar | Asterias amurensis | China e do Japão | Nova Zelândia
+Mexilhão-dourado | Limnoperna fortunei | Ásia | Brasil
+Siri-do-Pacífico | Charybdis hellerii | Oceanos Índico e Pacífico | Brasil
+
+A respeito dos organismos listados acima, assinale a alternativa que contém informações corretas.
+
+
+A) Dreissena polymorpha, quando adulto, é transportado como parte do fitoplâncton.
+B) Limnoperna fortunei é um molusco facilmente transportado pela água-de-lastro, pois quando adulto não possui concha.
+C) Asterias amurensis deve causar pouco impacto, pois é um animal marinho filtrador.
+D) Charybdis hellerii é um animal que pode ter sido transportado na forma de larva, pois possui desenvolvimento indireto.
+E) Siri-do-Pacífico costuma viver preso (incrustado) no casco dos navios.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q42
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 43
+
+Considerando a anatomia e fisiologia de artrópodes, é correto afirmar:
+
+
+A) Os artrópodes possuem cordões nervosos ventrais.
+B) Em insetos adaptados ao ambiente terrestre, os túbulos de Malpighi são as estruturas responsáveis pelas trocas gasosas.
+C) Insetos ametábolos chegam à fase adulta sem a necessidade de passar pelo processo de ecdise (muda).
+D) Os olhos compostos, observados em muitos crustáceos, são formados por vários ocelos.
+E) Aracnídeos possuem sistema circulatório fechado e sistema digestório completo.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q43
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 44
+
+Considerando a fisiologia do sistema digestório de seres humanos, é correto afirmar:
+
+
+A) A absorção de nutrientes (aminoácidos e carboidratos) é realizada no intestino grosso.
+B) Os lipídeos ingeridos são totalmente digeridos por lipases secretadas no estômago.
+C) Carboidratos são digeridos somente por enzimas produzidas no pâncreas.
+D) A bile, que é produzida pelo fígado, possui sais biliares que digerem as gorduras.
+E) A digestão de proteínas é iniciada no estômago, após a conversão da pré-enzima pepsinogênio em pepsina.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q44
+
+========================================================================
+FURG 2009 — Biologia — Vestibular regular — Questão 45
+
+“A epidemia do crack – O Rio Grande do Sul foi assolado por uma epidemia de crack, a droga que escraviza em segundos, zomba das esperanças de recuperação, corrói famílias, mata mais do que qualquer outra e afunda os dependentes na degradação moral e no crime” (ClicRBS, 6/7/2008). O crack é uma droga estimulante que tem como princípio ativo a cocaína. Sobre os efeitos das drogas e seus danos à saúde, é correto afirmar:
+
+
+A) O efeito estimulante do crack é menos potente que o da cocaína.
+B) Embora o crack cause dependência física em pouco tempo, observa-se um alto índice de recuperação dos usuários de crack após a desintoxicação orgânica, pois esta droga não causa dependência psicológica.
+C) Poucos segundos após o uso, o crack causa, entre outros efeitos, a taquicardia, o aumento da pressão arterial e o aumento da sudorese.
+D) Diferente de outras drogas, não é observada a síndrome de abstinência em dependentes de crack.
+E) A dependência química gerada pelo crack e cocaína é resultado da ação da droga diretamente no sistema cardiovascular.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-biologia
+Identificador: furg-2008-1-semestre-biologia-q45
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 31
+
+Analise as afirmativas abaixo quanto às seguintes células animais:
+
+I – Os eritrócitos são importantes no transporte sanguíneo de CO2 e O2 dos animais.
+
+II – Os eusinófilos são leucócitos granulosos que atuam, principalmente, em alergias e parasitoses.
+
+III – Os linfócitos T são produzidos no timo, sofrendo processo de diferenciação na medula óssea.
+
+Com base nas afirmativas acima, podemos dizer que, apenas,
+
+
+A) I — e III estão corretas.
+B) II e III estão corretas.
+C) I — e II estão corretas.
+D) I — está correta.
+E) III está correta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q31
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 32
+
+Analise as afirmativas abaixo quanto ao desenvolvimento embrionário de mamíferos:
+
+I – Ocorre a formação da mórula e essa irá sofrer gastrulação, sendo que a gástrula se transformará em blástula. II – A segmentação é o período compreendido entre a primeira divisão, originando dois blastômeros, até a formação de um aglomerado de células com uma cavidade interna (blástula). III – Os blastômeros, no estágio de gástrula, diferenciam-se em três conjuntos de células, sendo denominados de endoderma, mesoderma e epiderme.
+
+Com base nas afirmativas acima, podemos dizer que, apenas,
+
+
+A) II está correta.
+B) I — está correta.
+C) III está correta.
+D) II e III estão corretas.
+E) I — e III estão corretas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q32
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 33
+
+Durante o ataque de um cão uma pessoa apresenta: aumento da frequência cardíaca, aumento da frequência respiratória e aumento do retorno venoso. Estas alterações fisiológicas são estimuladas pelo(s):
+
+
+A) Sistema Neuro-hipófise.
+B) Sistema Nervoso Parassimpático.
+C) Sistema Límbico.
+D) Sistema Nervoso Simpático.
+E) Reflexos Medulares.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q33
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 34
+
+Baseando-se no princípio da difusão do CO2 no corpo de mamíferos, elabore a seqüência dos locais de maior para menor pressão parcial do gás carbônico (PCO2) em mamíferos:
+
+I – Alvéolo II – Líquido intracelular (citosol) III –Porção venosa do capilar
+
+A sequência correta é:
+
+
+A) III, I e
+II.
+B) I, II e
+III.
+C) I, III e
+II.
+D) III, II e I.
+E) II, III e I.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q34
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 35
+
+A epidemiologia é a ciência que estuda o processo saúde-doença na comunidade, analisando a distribuição e os fatores determinantes das enfermidades e dos agravos à saúde coletiva, sugerindo medidas específicas de prevenção, de controle ou de erradicação. Nos últimos meses, esta área do conhecimento adquiriu amplo espaço de debates na mídia devido ao grande número de infectados pelo vírus Influenza A (H1N1). Em relação aos conceitos desta ciência:
+
+I – Epidemia é um surto de infecção em uma grande região que se alastra rapidamente e depois tende a se estabilizar.
+
+II – Endemia é uma doença que é característica de uma região ou habitat, sendo restrita a uma área e ocorre de forma constante ao longo do tempo.
+
+III – Pandemia é uma epidemia em grandes proporções que ocorre em nível continental ou global.
+
+Com base nos conceitos anteriores, é correto afirmar que:
+
+
+A) As três afirmativas estão corretas.
+B) Nenhuma das afirmativas está correta.
+C) Apenas as afirmativas I e II estão corretas.
+D) Apenas as afirmativas II e III estão corretas.
+E) Apenas as afirmativas I e III estão corretas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q35
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 36
+
+O Carbono é o elemento vital na constituição da matéria orgânica e é reciclado na biosfera através de vários processos. Sobre os caminhos do ciclo do carbono envolvendo diferentes organismos na biosfera, é correto afirmar que:
+
+
+A) Os decompositores utilizam o CO2 para sintetizar moléculas orgânicas complexas.
+B) Os produtores quebram moléculas orgânicas complexas para disponibilizar CO2 para os heterótrofos.
+C) Os consumidores obtêm carbono orgânico sintetizado pelos produtores a partir do CO2.
+D) As moléculas de CO2 são incorporadas pelos autótrofos no processo de respiração celular.
+E) Através da fotossíntese, os produtores fixam o O2 para formar moléculas complexas de carbono.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q36
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 37
+
+Os répteis constituem um grupo animal considerado como os verdadeiros colonizadores do ambiente terrestre. São exemplos de características que favoreceram esse processo evolutivo:
+
+
+A) pele seca, rica em glândulas e desenvolvimento indireto.
+B) pele úmida, respiração pulmonar e fecundação externa.
+C) pele seca, permeável, respiração pulmonar e reprodução sexuada.
+D) pele seca, impermeável, respiração pulmonar e fecundação interna.
+E) pele úmida, recoberta por escamas e respiração pulmonar.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q37
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 38
+
+Em sistemas aquáticos como rios, lagos e reservatórios que recebem grande quantidade de esgotos domésticos, podem ocorrer seguidas mortandades de peixes. Assinale a alternativa que melhor explica estas mortandades:
+
+
+A) Aumento de bactérias aeróbicas e diminuição do fitoplâncton.
+B) Aumento na quantidade de oxigênio dissolvido e diminuição de alimentos disponíveis.
+C) Diminuição na qualidade de alimento para os peixes.
+D) Diminuição da quantidade de oxigênio dissolvido, propiciando o desenvolvimento de bactérias anaeróbicas.
+E) Aumento de produtos em decomposição por atividade dos organismos do zooplâncton.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q38
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 39
+
+Imagine que, num canil, existem cães amarelos e cães brancos, todos da mesma raça. Com relação ao comportamento, alguns destes cães são ferozes e outros são dóceis, independente da cor. Suponhamos que a genética destes cães seja conhecida e que o amarelo seja determinado por um gene dominante ligado ao cromossomo X, enquanto que o branco é determinado pelo seu alelo recessivo. O comportamento dócil é determinado por um gene autossômico dominante e o feroz por seu alelo recessivo. Digamos que você receba a encomenda de um filhote macho branco e dócil. Se você tiver o cruzamento entre uma fêmea branca feroz com um macho amarelo e dócil, heterozigoto, a probabilidade de nascer um cão com o fenótipo encomendado será de:
+
+
+A) 75%
+B) 50%
+C) 25%
+D) 0%
+E) 100%
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q39
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 40
+
+Sabe-se que a teoria da evolução orgânica é apoiada por numerosas linhas de evidências. Abaixo são colocadas algumas afirmações que podem ou não apoiar a teoria da evolução orgânica.
+
+I – Existência de um padrão fundamental similar na estrutura de sistemas e de órgãos (homologia), verificado pelo estudo comparado da anatomia. II – As fases do desenvolvimento embrionário (ontogenia) repetem a seqüência de mudanças evolutivas da espécie (filogenia). III – As evidências fornecidas pelos fósseis são importantes no sentido de que esses descrevem, exatamente, as formas extintas de vida na sequência em que ocorreram. IV – São de grande importância as evidências que surgem do estudo da distribuição geográfica de plantas e animais.
+
+Com base nas afirmativas acima, podemos dizer que, apenas,
+
+
+A) III e IV estão corretas.
+B) I, III e IV estão corretas.
+C) I — e II estão corretas.
+D) I, II, III e IV estão corretas.
+E) I, II e III estão corretas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q40
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 41
+
+Durante uma aula prática de botânica, o professor tomou dois vasos, A e B, contendo plantas de pimentão em fase de floração, porém ainda não polinizadas. O vaso A permaneceu como controle e no vaso B foi pulverizada certa dosagem de hormônio AIA (auxina sintética) sobre suas flores. Ambos os vasos foram mantidos nas mesmas condições de luz e umidade. Decorridos alguns dias, foi realizada a avaliação do experimento pelos alunos, que levantaram várias possibilidades para os resultados obtidos no vaso B.
+
+Dentre essas possibilidades, apenas uma está correta, marque esta alternativa:
+
+
+A) A aplicação deste hormônio induziu o fechamento dos estômatos, principal via de captação de CO2 para o interior da planta, comprometendo a fotossíntese e, consequentemente, a formação de frutos.
+B) Este hormônio promoveu a abscisão de frutos, folhas e flores, de modo que a queda dos frutos ocorreu precocemente, antes mesmo da maturação.
+C) A aplicação deste hormônio estimulou a fecundação, culminando com o precoce desenvolvimento e amadurecimento dos frutos e com a liberação de outros hormônios que estimularam o desenvolvimento das sementes.
+D) Não houve diferença entre os frutos dos dois vasos, pois a resposta deste hormônio se manifesta, apenas, em condições de fotoperíodo curto.
+E) A aplicação deste hormônio antes da fecundação induziu o desenvolvimento do ovário, mas não determinou a formação da semente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q41
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 42
+
+Relacione os grupos de organismos enumerados na coluna 1 com suas características diagnósticas, apresentadas na coluna 2, respectivamente.
+
+Coluna 1
+(1) Liquens
+(2) Gimnospermas
+(3) Briófitas
+(4) Pteridófitas
+(5) Fungos
+(6) Algas
+(7) Angiospermas
+
+Coluna 2
+( ) Organismos uni ou pluricelulares, caracterizados por pigmentações diversas, alguns importantes fornecedores de agar.
+( ) Pequeno porte, talo com filóides, fase gametofítica mais visível e duradoura, reprodução por esporos.
+( ) Tamanho variado, fase esporofítica mais visível, duradoura e independente da gametofítica, reprodução por esporos, com folhas denominadas frondes.
+( ) Resultante de uma associação mutualística entre alga e fungo.
+( ) O aparecimento das sementes, protegidas apenas por brácteas, arranjadas em estruturas denominadas estróbilos.
+( ) O desenvolvimento do ovário proporcionou maior proteção ao(s) óvulo(s).
+( ) Aclorofilados e heterótrofos por absorção.
+
+A alternativa que contém a associação correta da coluna 1, quando lida de cima para baixo, é:
+
+
+A) 1, 6, 4, 5, 7, 2, 3.
+B) 6, 3, 4, 1, 2, 7, 5.
+C) 5, 3, 2, 6, 7, 4, 1.
+D) 6, 4, 3, 1, 7, 2, 5.
+E) 3, 6, 2, 5, 4, 7, 1.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q42
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 43
+
+Durante uma viagem para estudo da vegetação em diferentes ambientes do Rio Grande do Sul, o professor solicitou aos alunos que coletassem uma planta que contivesse características adaptativas para um desses ambientes visitados. As características morfológicas determinadas pelo professor para esta planta são as seguintes:
+
+I – Epiderme dotada de cutícula espessa. II – Corpo dotado de parênquima aquífero. III – Raízes bastante profundas e pivotantes. IV – Flores pentâmeras e frutos carnosos. V – Folhas reduzidas ou ausentes.
+
+Com base nestas informações assinale a alternativa correta, observando, respectivamente, o grupo taxonômico e o ambiente a que pertence esta planta.
+
+
+A) Briófita; plantas de ambientes sombrios apresentam estes aspectos morfológicos.
+B) Gimnosperma; ambientes arenosos apresentam plantas com estas características.
+C) Pteridófita; ambientes rochosos apresentam plantas com estes aspectos morfológicos.
+D) Angiosperma monocotiledônea; em ambientes aquáticos as plantas desenvolvem estas características.
+E) Angiosperma dicotiledônea; plantas de ambientes xerofíticos possuem estas características.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q43
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 44
+
+Em costões rochosos, podemos encontrar enorme diversidade de organismos marinhos. Um biólogo que estude esse ambiente poderia observar os seguintes eventos:
+
+
+A) bivalves abrindo suas conchas em dias úmidos para realizar trocas gasosas.
+B) ouriços alimentando-se de larvas de peixes.
+C) corais alimentando-se das rochas.
+D) anêmonas se deslocando a procura de alimento.
+E) estrelas-do-mar alimentando-se de bivalves.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q44
+
+========================================================================
+FURG 2010 — Biologia — Vestibular regular — Questão 45
+
+O filo Arthropoda é o mais diversificado do planeta, com mais de um milhão de espécies catalogadas e apresenta grupos com características morfológicas bem definidas. Com relação aos grupos apresentados abaixo, relacione as características correspondentes:
+
+1 – Crustacea (crustáceos) 2 – Arachnida (aracnídeos) 3 – Insecta (insetos) 4 – Chilopoda (quilópodes) 5 – Diplopoda (diplópodes)
+
+(__) Possuem cabeça, tórax e abdome, três pares de patas, um par de antenas, excreção por túbulos de Malpighi.
+
+(__) Possuem cefalotórax e abdome, geralmente cinco pares de patas, dois pares de antenas, excreção por glândulas verdes ou antenais.
+
+(__) Possuem cabeça e tronco, dois pares de patas por segmento, um par de antenas, excreção por túbulos de Malpighi.
+
+(__) Possuem cabeça e tronco, um par de patas por segmento, um par de antenas, excreção por túbulos de Malpighi.
+
+(__) Possuem cefalotórax e abdome, quatro pares de patas, antenas ausentes, excreção por túbulos de Malpighi e glândulas coxais.
+
+A seqüência correta, lida de cima para baixo, é:
+
+
+A) 3, 1, 5, 4 e 2.
+B) 3, 1, 4, 5 e 2.
+C) 2, 3, 4, 5 e 1.
+D) 4, 1, 5, 2 e 3.
+E) 5, 2, 3, 4 e 1.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-biologia
+Identificador: furg-2010-biologia-q45
+
+========================================================================
+GABARITOS
+
+FURG 2000 | Biologia | Vestibular regular | Questão 41: C
+FURG 2000 | Biologia | Vestibular regular | Questão 42: D
+FURG 2000 | Biologia | Vestibular regular | Questão 43: C
+FURG 2000 | Biologia | Vestibular regular | Questão 44: B
+FURG 2000 | Biologia | Vestibular regular | Questão 45: C
+FURG 2000 | Biologia | Vestibular regular | Questão 46: E
+FURG 2000 | Biologia | Vestibular regular | Questão 47: A
+FURG 2000 | Biologia | Vestibular regular | Questão 48: E
+FURG 2000 | Biologia | Vestibular regular | Questão 49: B
+FURG 2000 | Biologia | Vestibular regular | Questão 50: A
+FURG 2000 | Biologia | Vestibular regular | Questão 51: C
+FURG 2000 | Biologia | Vestibular regular | Questão 52: A
+FURG 2000 | Biologia | Vestibular regular | Questão 53: D
+FURG 2000 | Biologia | Vestibular regular | Questão 54: D
+FURG 2000 | Biologia | Vestibular regular | Questão 55: E
+FURG 2000 | Biologia | Vestibular regular | Questão 56: A
+FURG 2000 | Biologia | Vestibular regular | Questão 57: não disponível
+FURG 2000 | Biologia | Vestibular regular | Questão 58: B
+FURG 2000 | Biologia | Vestibular regular | Questão 59: E
+FURG 2000 | Biologia | Vestibular regular | Questão 60: B
+FURG 2001 | Biologia | Vestibular regular | Questão 41: B
+FURG 2001 | Biologia | Vestibular regular | Questão 42: D
+FURG 2001 | Biologia | Vestibular regular | Questão 43: B
+FURG 2001 | Biologia | Vestibular regular | Questão 44: A
+FURG 2001 | Biologia | Vestibular regular | Questão 45: D
+FURG 2001 | Biologia | Vestibular regular | Questão 46: B
+FURG 2001 | Biologia | Vestibular regular | Questão 47: C
+FURG 2001 | Biologia | Vestibular regular | Questão 48: C
+FURG 2001 | Biologia | Vestibular regular | Questão 49: D
+FURG 2001 | Biologia | Vestibular regular | Questão 50: D
+FURG 2001 | Biologia | Vestibular regular | Questão 51: E
+FURG 2001 | Biologia | Vestibular regular | Questão 52: C
+FURG 2001 | Biologia | Vestibular regular | Questão 53: E
+FURG 2001 | Biologia | Vestibular regular | Questão 54: A
+FURG 2001 | Biologia | Vestibular regular | Questão 55: E
+FURG 2001 | Biologia | Vestibular regular | Questão 56: B
+FURG 2001 | Biologia | Vestibular regular | Questão 57: D
+FURG 2001 | Biologia | Vestibular regular | Questão 58: A
+FURG 2001 | Biologia | Vestibular regular | Questão 59: A
+FURG 2001 | Biologia | Vestibular regular | Questão 60: E
+FURG 2002 | Biologia | Vestibular regular | Questão 41: E
+FURG 2002 | Biologia | Vestibular regular | Questão 42: B
+FURG 2002 | Biologia | Vestibular regular | Questão 43: B
+FURG 2002 | Biologia | Vestibular regular | Questão 44: D
+FURG 2002 | Biologia | Vestibular regular | Questão 45: A
+FURG 2002 | Biologia | Vestibular regular | Questão 46: B
+FURG 2002 | Biologia | Vestibular regular | Questão 47: C
+FURG 2002 | Biologia | Vestibular regular | Questão 48: A
+FURG 2002 | Biologia | Vestibular regular | Questão 49: D
+FURG 2002 | Biologia | Vestibular regular | Questão 50: C
+FURG 2002 | Biologia | Vestibular regular | Questão 51: A
+FURG 2002 | Biologia | Vestibular regular | Questão 52: B
+FURG 2002 | Biologia | Vestibular regular | Questão 53: C
+FURG 2002 | Biologia | Vestibular regular | Questão 54: E
+FURG 2002 | Biologia | Vestibular regular | Questão 55: D
+FURG 2002 | Biologia | Vestibular regular | Questão 56: não disponível
+FURG 2002 | Biologia | Vestibular regular | Questão 57: C
+FURG 2002 | Biologia | Vestibular regular | Questão 58: B
+FURG 2002 | Biologia | Vestibular regular | Questão 59: A
+FURG 2002 | Biologia | Vestibular regular | Questão 60: E
+FURG 2003 | Biologia | Vestibular regular | Questão 41: B
+FURG 2003 | Biologia | Vestibular regular | Questão 42: D
+FURG 2003 | Biologia | Vestibular regular | Questão 43: C
+FURG 2003 | Biologia | Vestibular regular | Questão 44: B
+FURG 2003 | Biologia | Vestibular regular | Questão 45: E
+FURG 2003 | Biologia | Vestibular regular | Questão 46: D
+FURG 2003 | Biologia | Vestibular regular | Questão 47: A
+FURG 2003 | Biologia | Vestibular regular | Questão 48: B
+FURG 2003 | Biologia | Vestibular regular | Questão 49: D
+FURG 2003 | Biologia | Vestibular regular | Questão 50: C
+FURG 2003 | Biologia | Vestibular regular | Questão 51: D
+FURG 2003 | Biologia | Vestibular regular | Questão 52: B
+FURG 2003 | Biologia | Vestibular regular | Questão 53: A
+FURG 2003 | Biologia | Vestibular regular | Questão 54: C
+FURG 2003 | Biologia | Vestibular regular | Questão 55: E
+FURG 2003 | Biologia | Vestibular regular | Questão 56: D
+FURG 2003 | Biologia | Vestibular regular | Questão 57: A
+FURG 2003 | Biologia | Vestibular regular | Questão 58: A
+FURG 2003 | Biologia | Vestibular regular | Questão 59: B
+FURG 2003 | Biologia | Vestibular regular | Questão 60: E
+FURG 2004 | Biologia | Vestibular regular | Questão 31: B
+FURG 2004 | Biologia | Vestibular regular | Questão 32: A
+FURG 2004 | Biologia | Vestibular regular | Questão 33: C
+FURG 2004 | Biologia | Vestibular regular | Questão 34: B
+FURG 2004 | Biologia | Vestibular regular | Questão 35: ANULADA
+FURG 2004 | Biologia | Vestibular regular | Questão 36: E
+FURG 2004 | Biologia | Vestibular regular | Questão 37: ANULADA
+FURG 2004 | Biologia | Vestibular regular | Questão 38: C
+FURG 2004 | Biologia | Vestibular regular | Questão 39: C
+FURG 2004 | Biologia | Vestibular regular | Questão 40: D
+FURG 2004 | Biologia | Vestibular regular | Questão 41: B
+FURG 2004 | Biologia | Vestibular regular | Questão 42: E
+FURG 2004 | Biologia | Vestibular regular | Questão 43: ANULADA
+FURG 2004 | Biologia | Vestibular regular | Questão 44: A
+FURG 2004 | Biologia | Vestibular regular | Questão 45: C
+FURG 2005 | Biologia | Vestibular regular | Questão 31: A
+FURG 2005 | Biologia | Vestibular regular | Questão 32: E
+FURG 2005 | Biologia | Vestibular regular | Questão 33: E
+FURG 2005 | Biologia | Vestibular regular | Questão 34: C
+FURG 2005 | Biologia | Vestibular regular | Questão 35: D
+FURG 2005 | Biologia | Vestibular regular | Questão 36: B
+FURG 2005 | Biologia | Vestibular regular | Questão 37: C
+FURG 2005 | Biologia | Vestibular regular | Questão 38: A
+FURG 2005 | Biologia | Vestibular regular | Questão 39: B
+FURG 2005 | Biologia | Vestibular regular | Questão 40: B
+FURG 2005 | Biologia | Vestibular regular | Questão 41: D
+FURG 2005 | Biologia | Vestibular regular | Questão 42: C
+FURG 2005 | Biologia | Vestibular regular | Questão 43: E
+FURG 2005 | Biologia | Vestibular regular | Questão 44: D
+FURG 2005 | Biologia | Vestibular regular | Questão 45: A
+FURG 2006 | Biologia | Vestibular regular | Questão 31: B
+FURG 2006 | Biologia | Vestibular regular | Questão 32: A
+FURG 2006 | Biologia | Vestibular regular | Questão 33: A
+FURG 2006 | Biologia | Vestibular regular | Questão 34: C
+FURG 2006 | Biologia | Vestibular regular | Questão 35: E
+FURG 2006 | Biologia | Vestibular regular | Questão 36: D
+FURG 2006 | Biologia | Vestibular regular | Questão 37: C
+FURG 2006 | Biologia | Vestibular regular | Questão 38: E
+FURG 2006 | Biologia | Vestibular regular | Questão 39: D
+FURG 2006 | Biologia | Vestibular regular | Questão 40: B
+FURG 2006 | Biologia | Vestibular regular | Questão 41: A
+FURG 2006 | Biologia | Vestibular regular | Questão 42: D
+FURG 2006 | Biologia | Vestibular regular | Questão 43: B
+FURG 2006 | Biologia | Vestibular regular | Questão 44: E
+FURG 2006 | Biologia | Vestibular regular | Questão 45: C
+FURG 2007 | Biologia | Processo seletivo UAB | Questão 51: C
+FURG 2007 | Biologia | Processo seletivo UAB | Questão 52: A
+FURG 2007 | Biologia | Processo seletivo UAB | Questão 53: B
+FURG 2007 | Biologia | Processo seletivo UAB | Questão 54: E
+FURG 2007 | Biologia | Processo seletivo UAB | Questão 55: D
+FURG 2007 | Biologia | Processo seletivo UAB | Questão 56: A
+FURG 2007 | Biologia | Processo seletivo UAB | Questão 57: E
+FURG 2007 | Biologia | Processo seletivo UAB | Questão 58: D
+FURG 2007 | Biologia | Processo seletivo UAB | Questão 59: C
+FURG 2007 | Biologia | Processo seletivo UAB | Questão 60: B
+FURG 2007 | Biologia | Vestibular regular | Questão 31: B
+FURG 2007 | Biologia | Vestibular regular | Questão 32: A
+FURG 2007 | Biologia | Vestibular regular | Questão 33: C
+FURG 2007 | Biologia | Vestibular regular | Questão 34: E
+FURG 2007 | Biologia | Vestibular regular | Questão 35: D
+FURG 2007 | Biologia | Vestibular regular | Questão 36: C
+FURG 2007 | Biologia | Vestibular regular | Questão 37: A
+FURG 2007 | Biologia | Vestibular regular | Questão 38: D
+FURG 2007 | Biologia | Vestibular regular | Questão 39: E
+FURG 2007 | Biologia | Vestibular regular | Questão 40: B
+FURG 2007 | Biologia | Vestibular regular | Questão 41: A
+FURG 2007 | Biologia | Vestibular regular | Questão 42: D
+FURG 2007 | Biologia | Vestibular regular | Questão 43: E
+FURG 2007 | Biologia | Vestibular regular | Questão 44: B
+FURG 2007 | Biologia | Vestibular regular | Questão 45: C
+FURG 2008 | Biologia | Vestibular de inverno | Questão 31: B
+FURG 2008 | Biologia | Vestibular de inverno | Questão 32: C
+FURG 2008 | Biologia | Vestibular de inverno | Questão 33: D
+FURG 2008 | Biologia | Vestibular de inverno | Questão 34: C
+FURG 2008 | Biologia | Vestibular de inverno | Questão 35: A
+FURG 2008 | Biologia | Vestibular de inverno | Questão 36: E
+FURG 2008 | Biologia | Vestibular de inverno | Questão 37: A
+FURG 2008 | Biologia | Vestibular de inverno | Questão 38: B
+FURG 2008 | Biologia | Vestibular de inverno | Questão 39: E
+FURG 2008 | Biologia | Vestibular de inverno | Questão 40: C
+FURG 2008 | Biologia | Vestibular de inverno | Questão 41: D
+FURG 2008 | Biologia | Vestibular de inverno | Questão 42: B
+FURG 2008 | Biologia | Vestibular de inverno | Questão 43: A
+FURG 2008 | Biologia | Vestibular de inverno | Questão 44: E
+FURG 2008 | Biologia | Vestibular de inverno | Questão 45: D
+FURG 2009 | Biologia | Vestibular regular | Questão 31: C
+FURG 2009 | Biologia | Vestibular regular | Questão 32: A
+FURG 2009 | Biologia | Vestibular regular | Questão 33: B
+FURG 2009 | Biologia | Vestibular regular | Questão 34: E
+FURG 2009 | Biologia | Vestibular regular | Questão 35: D
+FURG 2009 | Biologia | Vestibular regular | Questão 36: E
+FURG 2009 | Biologia | Vestibular regular | Questão 37: B
+FURG 2009 | Biologia | Vestibular regular | Questão 38: C
+FURG 2009 | Biologia | Vestibular regular | Questão 39: D
+FURG 2009 | Biologia | Vestibular regular | Questão 40: A
+FURG 2009 | Biologia | Vestibular regular | Questão 41: B
+FURG 2009 | Biologia | Vestibular regular | Questão 42: D
+FURG 2009 | Biologia | Vestibular regular | Questão 43: A
+FURG 2009 | Biologia | Vestibular regular | Questão 44: E
+FURG 2009 | Biologia | Vestibular regular | Questão 45: C
+FURG 2010 | Biologia | Vestibular regular | Questão 31: C
+FURG 2010 | Biologia | Vestibular regular | Questão 32: A
+FURG 2010 | Biologia | Vestibular regular | Questão 33: D
+FURG 2010 | Biologia | Vestibular regular | Questão 34: E
+FURG 2010 | Biologia | Vestibular regular | Questão 35: A
+FURG 2010 | Biologia | Vestibular regular | Questão 36: C
+FURG 2010 | Biologia | Vestibular regular | Questão 37: D
+FURG 2010 | Biologia | Vestibular regular | Questão 38: D
+FURG 2010 | Biologia | Vestibular regular | Questão 39: C
+FURG 2010 | Biologia | Vestibular regular | Questão 40: B
+FURG 2010 | Biologia | Vestibular regular | Questão 41: E
+FURG 2010 | Biologia | Vestibular regular | Questão 42: B
+FURG 2010 | Biologia | Vestibular regular | Questão 43: E
+FURG 2010 | Biologia | Vestibular regular | Questão 44: E
+FURG 2010 | Biologia | Vestibular regular | Questão 45: A

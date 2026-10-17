@@ -1,0 +1,3741 @@
+FURG — FÍSICA EM TEXTO
+195 questões do acervo histórico disponível, de 2000 a 2010.
+Enunciados, alternativas e textos de apoio em texto. As figuras estão preservadas no site e na pasta figures da versão offline.
+A cobertura do acervo não inclui todas as edições históricas. Projeto independente, sem vínculo com a FURG.
+Frações: (numerador)/(denominador). Matrizes: linhas separadas por ponto e vírgula. Gabaritos ao final.
+
+========================================================================
+TEXTO DE APOIO: Instrução da prova
+Identificador: fisica-2000-constantes
+
+Nos cálculos utilize g = 10 m/s².
+
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 21
+
+Textos de apoio: fisica-2000-constantes
+
+Associe as grandezas da coluna 1 com as características apontadas na coluna 2.
+Coluna 1 (1) Energia (2) Força
+Coluna 2 ( ) grandeza escalar ( ) medida em Joules ( ) possui módulo, direção e sentido ( ) medida com dinamômetro
+A alternativa que contém a associação correta da coluna 2, quando lida de cima para baixo, é
+
+
+A) 1 - 1 - 2 - 2
+B) 1 - 2 - 1 - 2
+C) 1 - 2 - 2 - 1
+D) 2 - 1 - 1 - 2
+E) 2 - 2 - 1 - 1
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q21
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 22
+
+Textos de apoio: fisica-2000-constantes
+
+Um bloco de massa m = 10 kg está inicialmente em repouso sobre uma superfície plana e sem atrito. Durante um intervalo de tempo t, é aplicada uma força constante no bloco. Sabendo que a velocidade máxima que o bloco atinge é de 2 m/s e que o bloco percorre uma distância de 1 m durante o intervalo de tempo em que a força esteve agindo sobre o bloco, podemos afirmar que a magnitude da força aplicada no bloco é igual a
+
+
+A) 2 N
+B) 5 N
+C) 10 N
+D) 20 N
+E) 40 N
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q22
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 23
+
+Textos de apoio: fisica-2000-constantes
+
+No instante t = 0 s, um corpo de massa 1 kg é largado, a partir do repouso, 80 m acima da superfície terrestre. Considere desprezíveis as forças de resistência do ar.
+Para esse movimento, são feitas três afirmativas.
+I - No instante t = 3 s, a velocidade do corpo é 30 m/s e está dirigida para baixo.
+II - Considerando a origem no solo, a equação horária do movimento é h = 80 – 5t².
+III - No instante t = 2 s, a aceleração do movimento vale 20 m/s².
+Quais afirmativas estão corretas?
+
+
+A) Apenas II.
+B) Apenas III.
+C) Apenas I e II.
+D) Apenas I e III.
+E) I, II e III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q23
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 24
+
+Textos de apoio: fisica-2000-constantes
+
+Suponha que Ganimedes, uma das grandes luas de Júpiter, efetua um movimento circular uniforme em torno desse planeta. Então, a força que mantém o satélite Ganimedes na trajetória circular está dirigida
+
+
+A) para o centro do Sol.
+B) para o centro de Júpiter.
+C) para o centro da Terra.
+D) para o centro de Ganimedes.
+E) tangente à trajetória.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q24
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 25
+
+Textos de apoio: fisica-2000-constantes
+
+A colisão de fragmentos do cometa Shoemaker-Levy com o planeta Júpiter foi bastante noticiada pela imprensa. Aqui na Terra, existem vários indícios de impactos com meteoros. No Brasil, inclusive, existe um meteorito conhecido como Bendegó que caiu no sertão da Bahia e atualmente está em exposição no Museu Nacional do Rio de Janeiro. Também a Lua apresenta registros bem claros da existência desses encontros no espaço: suas crateras.
+Para que o impacto de um fragmento de cometa (massa 5 x 10⁶ kg) contra a superfície da Terra dissipe uma energia equivalente àquela liberada pela bomba atômica que destruiu Nagasaki, durante a Segunda Guerra Mundial (4 x 10¹³ joules), a velocidade do fragmento deve ser de
+
+
+A) 4 km/s
+B) 16 km/s
+C) 4.000 km/s
+D) 8.000 km/s
+E) 16.000 km/s
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q25
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 26
+
+Textos de apoio: fisica-2000-constantes
+
+Um corpo de massa específica ρ desconhecida é colocado em um recipiente contendo um líquido com massa específica 10 g/cm³. Verificando que 1/4 do corpo fica submerso no líquido, podemos afirmar que a densidade volumétrica ρ vale, em g/cm³,
+
+
+A) 2,5
+B) 4
+C) 10
+D) 40
+E) 50
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q26
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 27
+
+Textos de apoio: fisica-2000-constantes
+
+Uma chapa metálica tem um orifício circular, como mostra a figura, e está a uma temperatura de 10 °C. A chapa é aquecida até uma temperatura de 50 °C.
+Enquanto ocorre o aquecimento, o diâmetro do orifício
+
+[Figura: Chapa metálica quadrada com um orifício circular central.]
+Arquivo: figures/furg-2000-fisica-q27-fig1.webp
+
+A) aumenta continuamente.
+B) diminui continuamente.
+C) permanece inalterado.
+D) aumenta e depois diminui.
+E) diminui e depois aumenta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q27
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 28
+
+Textos de apoio: fisica-2000-constantes
+
+A tabela a seguir mostra os pontos de ebulição e os calores de vaporização (à pressão de 1 atm) para 7 substâncias diferentes.
+
+Substância | Ponto de ebulição (°C) | Calor de vaporização (cal/g)
+Mercúrio | 357 | 65
+Iodo | 184 | 24
+Água | 100 | 540
+Álcool etílico | 78 | 200
+Bromo | 59 | 44
+Nitrogênio | −196 | 48
+Hélio | −269 | 6
+
+Analisando a tabela podemos concluir que
+
+
+A) o bromo passa de líquido para vapor em 44 °C.
+B) para passar para vapor, um grama de nitrogênio requer o dobro de calorias que um grama de iodo.
+C) para vaporizar 50 g de hélio, são necessárias 600 calorias.
+D) na temperatura em que a água ferve, o álcool etílico é líquido.
+E) na temperatura ambiente, o mercúrio é vapor.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q28
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 29
+
+Textos de apoio: fisica-2000-constantes
+
+As moléculas da água no estado cristalino (gelo) se organizam em estruturas hexagonais com grandes espaços vazios. Ao ocorrer a fusão, essas estruturas são rompidas e as moléculas se aproximam umas das outras, ocasionando redução no volume da substância. O aumento na densidade ocorre inclusive na fase líquida, de 0 a 4 °C.
+O texto acima explica o conceito de
+
+[Figura: Esquema da organização hexagonal das moléculas no gelo.]
+Arquivo: figures/furg-2000-fisica-q29-fig1.webp
+
+A) calor específico.
+B) evaporação.
+C) dilatação anômala.
+D) capacidade térmica.
+E) dilatação aparente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q29
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 30
+
+Textos de apoio: fisica-2000-constantes
+
+Selecione a alternativa que completa corretamente as frases abaixo.
+I - Quanto maior a altitude, menor é a pressão atmosférica e ................... é a temperatura de ebulição da água.
+II - Durante o dia a temperatura no deserto é muito elevada, e durante a noite sofre uma grande redução. Isso ocorre em virtude do ................... calor específico da areia.
+III - Uma roupa escura absorve ................... quantidade de radiação que uma roupa clara.
+IV - A transferência de calor do Sol para a Terra é feita pelo processo de ................... .
+A alternativa que completa corretamente as lacunas das frases é
+
+
+A) menor – grande – maior – convecção
+B) menor – pequeno – maior – radiação
+C) maior – pequeno – igual – convecção
+D) maior – pequeno – menor – radiação
+E) maior – grande – menor – convecção
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q30
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 31
+
+Textos de apoio: fisica-2000-constantes
+
+Analise cada uma das seguintes afirmativas relacionadas à segunda lei da termodinâmica e indique se são verdadeiras (V) ou falsas (F). ( ) Em uma máquina térmica, a transformação de energia térmica em trabalho nunca se dá totalmente. ( ) Calor flui espontaneamente de sistemas mais frios para sistemas mais quentes. ( ) Carnot idealizou um ciclo totalmente reversível com o qual se obteria o máximo rendimento possível.
+Quais são, respectivamente, as indicações corretas?
+
+
+A) F - F - V
+B) F - V - F
+C) F - V - V
+D) V - F - V
+E) V - V - F
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q31
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 32
+
+Textos de apoio: fisica-2000-constantes
+
+Uma certa quantidade de gás ideal, inicialmente a pressão P₀, volume V₀ e temperatura T₀, é submetida à seguinte seqüência de transformações:
+I - É aquecida a pressão constante até que sua temperatura atinja o valor 3T₀.
+II - É resfriada a volume constante até que a temperatura atinja o valor inicial T₀.
+III - É comprimida a temperatura constante até que atinja a pressão inicial P₀.
+Ao final destes três processos, podemos afirmar que o volume final do gás será igual a
+
+
+A) V₀/9
+B) V₀/3
+C) V₀
+D) 3V₀
+E) 9V₀
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q32
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 33
+
+Textos de apoio: fisica-2000-constantes
+
+A voz humana é produzida pelas vibrações de duas membranas - as cordas vocais - que entram em vibração quando o ar proveniente dos pulmões é forçado a passar pela fenda existente entre elas. As cordas vocais das mulheres vibram, em geral, com freqüência mais alta do que as dos homens, determinando que elas emitam sons agudos (voz “fina”), e eles, sons graves (voz “grossa”).
+A propriedade do som que nos permite distinguir um som agudo de um grave é denominada
+
+
+A) intensidade.
+B) amplitude.
+C) velocidade.
+D) timbre.
+E) altura.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q33
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 34
+
+Textos de apoio: fisica-2000-constantes
+
+Uma criança é colocada em frente a um grande espelho plano, a 40 cm dele. A imagem da criança que o espelho forma:
+I - é real;
+II - é maior do que a criança;
+III - encontra-se 40 cm atrás do espelho;
+IV - situa-se na superfície do espelho;
+V - é criada pela refração da luz.
+Quais afirmativas estão corretas?
+
+
+A) Apenas III.
+B) Apenas I e IV.
+C) Apenas IV e V.
+D) Apenas I, II e V.
+E) Apenas II, III e V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q34
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 35
+
+Textos de apoio: fisica-2000-constantes
+
+Três esferas metálicas podem ser carregadas eletricamente. Aproximando-se as esferas duas a duas, observa-se que, em todos os casos, ocorre uma atração elétrica entre elas.
+Para essa situação são apresentadas três hipóteses:
+I - Somente uma das esferas está carregada.
+II - Duas esferas estão carregadas.
+III - As três esferas estão carregadas.
+Quais das hipóteses explicam o fenômeno descrito?
+
+
+A) Apenas a hipótese I.
+B) Apenas a hipótese II.
+C) Apenas a hipótese III.
+D) Apenas as hipóteses II e III.
+E) Nenhuma das três hipóteses.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q35
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 36
+
+Textos de apoio: fisica-2000-constantes
+
+Verifica-se experimentalmente que, em condições normais, existe um campo elétrico de 100 N/C na atmosfera terrestre, dirigido verticalmente para baixo, criado por cargas elétricas na Terra.
+Em relação a esse campo elétrico terrestre, assinale a alternativa INCORRETA.
+
+
+A) Entre um ponto a 1 m de altura e a superfície da Terra existe uma voltagem de 100 V.
+B) Os íons positivos existentes no ar tendem a mover-se para baixo e os íons negativos tendem a mover-se para cima.
+C) Uma carga de 100 µC experimenta uma força de 0,01 N.
+D) Uma gota de chuva adquire polarização, ficando positiva a parte superior da gota.
+E) A carga da Terra é predominantemente negativa.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q36
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 37
+
+Textos de apoio: fisica-2000-constantes
+
+Duas resistências R₁ e R₂ são ligadas a uma bateria de resistência interna nula, conforme a figura.
+Aumentando-se o valor da resistência R₂, considere as seguintes afirmativas:
+I - A resistência total aumenta.
+II - A corrente em R₁ aumenta.
+III - A corrente que a bateria fornece diminui.
+Quais afirmativas estão corretas?
+
+[Figura: Circuito com R₁ e R₂ em paralelo ligados a uma bateria; R₂ é variável.]
+Arquivo: figures/furg-2000-fisica-q37-fig1.webp
+
+A) Nenhuma.
+B) Apenas I e II.
+C) Apenas I e III.
+D) Apenas II e III.
+E) I, II e III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q37
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 38
+
+Textos de apoio: fisica-2000-constantes
+
+Um fio condutor retilíneo e muito longo é percorrido por uma corrente elétrica constante, que cria um campo magnético em torno do fio. Podemos afirmar que esse campo magnético:
+
+
+A) tem o mesmo sentido da corrente elétrica.
+B) é uniforme.
+C) é paralelo ao fio.
+D) aponta para o fio.
+E) diminui à medida que a distância em relação ao condutor aumenta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q38
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 39
+
+Textos de apoio: fisica-2000-constantes
+
+As radiações infravermelhas são emitidas por qualquer objeto a uma determinada temperatura, sendo a emissão tanto mais intensa quanto mais aquecido estiver o objeto.
+Sobre as radiações infravermelhas é correto afirmar que
+
+
+A) são responsáveis pelo bronzeamento da pele exposta ao Sol.
+B) são ondas mecânicas longitudinais emitidas por corpos aquecidos.
+C) se deslocam à velocidade da luz.
+D) possuem freqüências maiores do que a da luz vermelha.
+E) são bloqueadas pela camada de ozônio presente na atmosfera.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q39
+
+========================================================================
+FURG 2000 — Física — Vestibular regular — Questão 40
+
+Textos de apoio: fisica-2000-constantes
+
+Trata-se de radiações eletromagnéticas de altíssima freqüência, liberadas quando o núcleo de uma substância radioativa se desintegra. Têm alto poder de penetração, o que as torna muito perigosas para o ser humano, porque podem causar câncer. Contudo, podem ser usadas para tratar pacientes cancerosos, porque, apesar de prejudiciais ao tecido sadio, causam danos ainda maiores ao tecido canceroso.
+A que o texto se refere?
+
+
+A) Partículas α.
+B) Partículas β.
+C) Microondas.
+D) Raios X.
+E) Raios γ.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2000-fisica
+Identificador: furg-2000-fisica-q40
+
+========================================================================
+TEXTO DE APOIO: Instrução da prova
+Identificador: fisica-2001-constantes
+
+Nos cálculos utilize g = 10 m/s².
+
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 21
+
+Textos de apoio: fisica-2001-constantes
+
+Um carro sai de Rio Grande às 7h em direção a Pelotas, passando por um ponto na metade do caminho às 7h30min e chegando a seu destino, em Pelotas, às 7h50min. De Rio Grande até esse ponto, a sua velocidade média foi v₁, e deste até Pelotas, a velocidade média foi v₂. A velocidade média de todo o percurso foi vₜ.
+Sobre essa situação são feitas três afirmativas.
+I - v₁ é maior que v₂.
+II - vₜ é maior que v₁ mas menor que v₂.
+III - A aceleração média na segunda metade é certamente maior que a aceleração média da primeira metade.
+Quais afirmativas estão corretas?
+
+
+A) Apenas I.
+B) Apenas II.
+C) Apenas III.
+D) Apenas I e II.
+E) Apenas II e III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q21
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 22
+
+Textos de apoio: fisica-2001-constantes
+
+Um bloco de massa m = 10 kg, inicialmente a uma altura de 2 m do solo, desliza em uma rampa de inclinação 30° com a horizontal. O bloco é seguro por uma corda paralela à rampa. Se desprezamos o atrito entre o bloco e a rampa, que força deve ser aplicada ao bloco para que ele desça com velocidade constante pela rampa? (Dados: sen 30° = 0,500, cos 30°
+= 0,866 e tan 30° = 0,577).
+
+
+A) 10 N
+B) 25 N
+C) 50 N
+D) 100 N
+E) 150 N
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q22
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 23
+
+Textos de apoio: fisica-2001-constantes
+
+A figura abaixo apresenta um gráfico da velocidade contra o tempo para um movimento retilíneo.
+De acordo com o gráfico, a aceleração e o módulo do deslocamento entre os instantes t = 1 s e t = 3 s são, respectivamente,
+
+[Figura: Gráfico v(t): reta de (0 s, 5 m/s) a (5 s, −15 m/s).]
+Arquivo: figures/furg-2001-fisica-q23-fig1.webp
+
+A) – 4 m/s² e 6 m
+B) – 4 m/s² e 5 m
+C) – 2 m/s² e 5 m
+D) 2 m/s² e 6 m
+E) 4 m/s² e 6 m
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q23
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 24
+
+Textos de apoio: fisica-2001-constantes
+
+Um corpo de massa m = 10 kg, inicialmente em repouso, é deslocado por uma distância de 10 m com uma força constante na direção horizontal, adquirindo, ao final destes 10 m, uma energia cinética de 500 J.
+A aceleração e o tempo gasto pelo corpo para percorrer os 10 m são, respectivamente,
+
+
+A) 5 m/s² e 1 s
+B) 5 m/s² e 2 s
+C) 50 m/s² e 1 s
+D) 50 m/s² e 2 s
+E) 50 m/s² e 10 s
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q24
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 25
+
+Textos de apoio: fisica-2001-constantes
+
+Um tubarão branco nada, normalmente, a uma velocidade de cerca de 3 km/h, mas pode atingir rapidamente uma velocidade em torno de 26 km/h ao atacar uma presa. Ao alterar a sua velocidade de 3 km/h para 26 km/h, a energia cinética do tubarão aumenta em aproximadamente
+
+
+A) 3 vezes.
+B) 9 vezes.
+C) 26 vezes.
+D) 50 vezes.
+E) 75 vezes.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q25
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 26
+
+Textos de apoio: fisica-2001-constantes
+
+Sobre um satélite mantido em órbita a uma distância R do centro da Terra (que possui massa M), é correto afirmar que
+
+
+A) a força com que a Terra atrai o satélite é ligeiramente menor do que a força com que o satélite atrai a Terra.
+B) o satélite é colocado em uma órbita em que a força gravitacional é zero.
+C) a velocidade tangencial ao quadrado do satélite é menor ou igual a GM/R.
+D) a velocidade tangencial ao quadrado do satélite é igual a GM/R.
+E) a velocidade tangencial ao quadrado do satélite é maior ou igual a GM/R.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q26
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 27
+
+Textos de apoio: fisica-2001-constantes
+
+Um cubo de gelo está parcialmente mergulhado em um copo contendo água. Nesta situação, é correto afirmar que o líquido exerce sobre o cubo de gelo
+
+
+A) pressão apenas na direção vertical.
+B) pressão apenas na direção horizontal.
+C) empuxo de valor igual ao peso do cubo.
+D) força resultante na direção vertical, de cima para baixo.
+E) força resultante na direção vertical, de baixo para cima.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q27
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 28
+
+Textos de apoio: fisica-2001-constantes
+
+Neste estado físico da matéria, as substâncias apresentam volume bem determinado e forma bem definida, sendo resistentes a deformações. Seus átomos ou moléculas encontram-se relativamente próximos uns dos outros, ligados por intensas forças elétricas, que os mantêm em posições bem definidas. Quando os átomos estão distribuídos de maneira organizada, em estruturas que se repetem, as substâncias são chamadas cristais. Por outro lado, quando a estrutura é desorganizada, são denominadas amorfas.
+A que estado físico o texto se refere?
+
+
+A) Sólido.
+B) Líquido.
+C) Gasoso.
+D) Vapor.
+E) Plasma.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q28
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 29
+
+Textos de apoio: fisica-2001-constantes
+
+Analise cada uma das seguintes afirmativas relacionadas à termodinâmica e indique se são verdadeiras (V) ou falsas (F). ( ) Átomos ou moléculas de um corpo, seja no estado sólido, líquido ou gasoso, estão em constante movimento. ( ) O limite inferior para a temperatura de um corpo, já obtido em laboratório, é de –273 °C (zero absoluto), situação em que os átomos cessam seus movimentos. ( ) Uma lâmina bimetálica, constituída de duas lâminas de metais diferentes, que é plana na temperatura ambiente, entorta ao ser aquecida. ( ) Quando dois corpos distintos são colocados em contato, isolados de influências externas, após um certo tempo eles atingem uma situação de mesma energia interna.
+Quais são, respectivamente, as indicações corretas?
+
+
+A) F - F - V - V
+B) F - V - F- V
+C) V - V - F - F
+D) V - F - V - F
+E) V - F - V - V
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q29
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 30
+
+Textos de apoio: fisica-2001-constantes
+
+Dois blocos de mesma massa, um de cobre e outro de chumbo, inicialmente a 20 °C, são aquecidos por chamas idênticas. Após um determinado tempo de aquecimento, constata-se que o bloco de cobre atinge a temperatura de 120 °C, enquanto o de chumbo chega a 320 °C.
+Essa diferença nas temperaturas finais ocorre porque o cobre apresenta maior
+
+
+A) calor específico.
+B) massa.
+C) densidade.
+D) temperatura inicial.
+E) coeficiente de dilatação.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q30
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 31
+
+Textos de apoio: fisica-2001-constantes
+
+Certa massa de gás ideal sofre as transformações AB e BC, representadas no gráfico p x V (pressão x volume) da figura abaixo.
+Sobre esse gás, é correto afirmar que
+
+[Figura: Diagrama p–V com A = (8 L, 6 atm), B = (8 L, 3 atm) e C = (16 L, 3 atm), percurso A→B→C.]
+Arquivo: figures/furg-2001-fisica-q31-fig1.webp
+
+A) a temperatura do gás em B é maior do que em A.
+B) a temperatura do gás em C é menor do que em B.
+C) a temperatura do gás em C é maior do que em A.
+D) a transformação AB é isotérmica.
+E) a transformação BC é isobárica.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q31
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 32
+
+Textos de apoio: fisica-2001-constantes
+
+O sonar de um navio emite um ultra-som de freqüência 50.000 Hz. A velocidade do som na água é 1.500 m/s. Se o ultra-som foi refletido por um cardume de peixes e a onda refletida é detectada no navio 0,2 s após sua emissão, então o comprimento de onda do ultra-som e a distância entre o navio e o cardume são, respectivamente,
+
+
+A) 300 cm - 300 m
+B) 30 cm - 300 m
+C) 3 cm - 150 m
+D) 1,5 cm - 68 m
+E) 0,03 cm - 34 m
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q32
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 33
+
+Textos de apoio: fisica-2001-constantes
+
+O índice de refração de um meio material é definido como a razão da velocidade da luz no vácuo e da velocidade da luz neste meio:
+
+n = c/v
+
+A tabela a seguir relaciona o índice de refração para seis meios materiais diferentes.
+
+Meio material | Índice de refração
+Ar | 1,0
+Água | 1,3
+Glicerina | 1,4
+Vidro | 1,5
+Zircônio | 1,9
+Diamante | 2,5
+
+Com base nessa tabela, é correto afirmar que
+
+
+A) o ar é o meio onde a luz apresenta a menor velocidade.
+B) a glicerina é o meio onde a luz tem a maior velocidade.
+C) a velocidade da luz no vidro é 200.000 km/s.
+D) no zircônio a luz viaja mais rápido do que na água.
+E) a velocidade da luz no diamante é 300.000 km/s.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q33
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 34
+
+Textos de apoio: fisica-2001-constantes
+
+Selecione a alternativa que completa corretamente as lacunas do parágrafo abaixo.
+Uma flor é colocada em frente a um espelho esférico. A imagem da flor produzida por este espelho é direta e maior que a flor. Portanto, trata-se de um espelho ................... e a flor está a uma distância do espelho ................... sua distância focal.
+A alternativa que completa corretamente as lacunas da frase é
+
+
+A) convexo - maior que
+B) convexo - menor que
+C) côncavo - igual a
+D) côncavo - menor que
+E) côncavo - maior que
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q34
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 35
+
+Textos de apoio: fisica-2001-constantes
+
+Quatro esferas metálicas idênticas estão isoladas uma das outras. As esferas A, B e C estão inicialmente neutras (sem carga), enquanto a esfera D está eletrizada com carga Q. A esfera D é colocada inicialmente em contato com a esfera A, depois é afastada e colocada em contato com a esfera B. Depois de ser afastada da esfera B, a esfera D é colocada em contato com a esfera C e afastada a seguir.
+Pode-se afirmar que ao final do processo as cargas das esferas C e D são, respectivamente,
+
+
+A) Q/8 e Q/8
+B) Q/8 e Q/4
+C) Q/4 e Q/8
+D) Q/2 e Q/2
+E) Q e −Q
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q35
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 36
+
+Textos de apoio: fisica-2001-constantes
+
+Quatro lâmpadas L idênticas, conectadas conforme mostra o circuito da figura, são alimentadas por uma fonte F, que mantém uma corrente i.
+Queimando uma das lâmpadas, qual será a nova corrente fornecida pela fonte? Desconsidere a resistência interna da fonte e trate as lâmpadas como resistores.
+
+[Figura: Circuito com duas associações paralelas de lâmpadas, em série entre si, alimentadas por F.]
+Arquivo: figures/furg-2001-fisica-q36-fig1.webp
+
+A) i/2
+B) 2i/3
+C) 3i/4
+D) i
+E) 3i/2
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q36
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 37
+
+Textos de apoio: fisica-2001-constantes
+
+Um tubo de vidro de massa m = 20 g está sobre uma balança, conforme mostra a figura. Na parte inferior do tubo está um ímã cilíndrico de massa M₁ = 50 g. Dois outros pequenos ímãs de massas M₂ = M₃ = 20 g estão colocados no tubo e ficam suspensos devido às forças magnéticas e aos seus pesos.
+
+Qual é a intensidade da resultante das forças magnéticas que agem sobre o ímã 2?
+
+[Figura: Tubo sobre balança com ímã M₁ na base, M₂ suspenso no meio e M₃ no alto; polos indicados.]
+Arquivo: figures/furg-2001-fisica-q37-fig1.webp
+
+A) zero
+B) 0,2 N
+C) 0,4 N
+D) 0,7 N
+E) 1,1 N
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q37
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 38
+
+Textos de apoio: fisica-2001-constantes
+
+Praticamente toda a energia elétrica que consumimos é gerada pela utilização do fenômeno da indução eletromagnética. Este fenômeno consiste no aparecimento de uma força eletromotriz entre os extremos de um fio condutor submetido a um
+
+
+A) campo elétrico.
+B) campo eletromagnético constante.
+C) campo magnético variável.
+D) fluxo magnético constante.
+E) fluxo magnético variável.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q38
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 39
+
+Textos de apoio: fisica-2001-constantes
+
+Selecione a alternativa que completa corretamente as lacunas do texto abaixo.
+Para descrever o espectro das radiações eletromagnéticas emitidas por um corpo a uma determinada temperatura, Max Planck introduziu a hipótese de que a luz tem valores de energia que obedecem a uma distribuição ................... , ou seja, a luz é constituída de um enorme número de .................., os quanta de luz, mais tarde denominados ................... .
+A alternativa que completa corretamente as lacunas do texto é
+
+
+A) quantizada - partículas - fótons
+B) quantizada - ondas - elétrons
+C) contínua - partículas - fótons
+D) contínua - ondas - fótons
+E) contínua - partículas - elétrons
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q39
+
+========================================================================
+FURG 2001 — Física — Vestibular regular — Questão 40
+
+Textos de apoio: fisica-2001-constantes
+
+Sobre os núcleos atômicos e seus constituintes, são feitas quatro afirmativas.
+I - Os núcleos atômicos são constituídos por prótons, nêutrons e elétrons.
+II - O próton é uma partícula idêntica ao elétron, porém de carga positiva.
+III - Nos núcleos atômicos está concentrada a quase totalidade da massa do átomo.
+IV - As forças nucleares são as responsáveis por manter unidas as partículas que compõem os núcleos atômicos.
+Quais afirmativas estão corretas?
+
+
+A) Apenas II.
+B) Apenas I e III.
+C) Apenas III e IV.
+D) Apenas I, II e IV.
+E) I, II, III e IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2001-fisica
+Identificador: furg-2001-fisica-q40
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 21
+
+Um comboio de vagões é puxado por uma locomotiva com velocidade de 36 km/h. Esta composição ferroviária tem um comprimento total de 210 m e é ultrapassada por um automóvel que se desloca com velocidade de 15 m/s. Quanto tempo decorre desde o instante em que o automóvel alcança o último vagão da composição até o instante em que ultrapassa a locomotiva? Considere as dimensões do automóvel desprezíveis comparativamente com as dimensões do comboio.
+
+
+A) 4,2 s
+B) 8,4 s
+C) 14 s
+D) 21 s
+E) 42 s
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q21
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 22
+
+Um ponto material de massa 2 kg encontra-se em repouso sobre uma superfície plana, horizontal e sem atrito. Em determinado instante, uma força horizontal passa a atuar sobre ele. Esta força mantém sempre a mesma direção. Se o gráfico da figura representa a intensidade desta força em função da posição “d” do ponto material, qual o valor da sua velocidade quando d = 4m?
+
+[Figura: Gráfico F(d): F cresce linearmente de 10 N em d = 0 a 18 N em d = 2 m, e permanece 18 N até d = 4 m.]
+Arquivo: figures/furg-2002-fisica-q22-fig1.webp
+
+A) 8 m/s
+B) 10 m/s
+C) 18 m/s
+D) 64 m/s
+E) 72 m/s
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q22
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 23
+
+Um menino deixa cair uma bola de borracha sobre o solo horizontal. Admitindo elástica a colisão da bola com o solo, o gráfico que melhor representa sua velocidade em função do tempo, no movimento de descida e subida, é:
+
+
+A) Gráfico A.
+[Figura: Gráfico velocidade × tempo da alternativa A.]
+Arquivo: figures/furg-2002-fisica-q23-fig1.webp
+B) Gráfico B.
+[Figura: Gráfico velocidade × tempo da alternativa B.]
+Arquivo: figures/furg-2002-fisica-q23-fig2.webp
+C) Gráfico C.
+[Figura: Gráfico velocidade × tempo da alternativa C.]
+Arquivo: figures/furg-2002-fisica-q23-fig3.webp
+D) Gráfico D.
+[Figura: Gráfico velocidade × tempo da alternativa D.]
+Arquivo: figures/furg-2002-fisica-q23-fig4.webp
+E) Gráfico E.
+[Figura: Gráfico velocidade × tempo da alternativa E.]
+Arquivo: figures/furg-2002-fisica-q23-fig5.webp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q23
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 24
+
+A figura mostra um corpo de massa “m” suspenso por um fio de massa desprezível, formando um pêndulo simples. Se você desejasse determinar a velocidade do corpo ao passar pela posição mais baixa de sua trajetória, você recorreria ao princípio de conservação da
+
+[Figura: Pêndulo simples, com corpo deslocado a uma altura h acima do ponto mais baixo.]
+Arquivo: figures/furg-2002-fisica-q24-fig1.webp
+
+A) velocidade.
+B) energia mecânica.
+C) massa.
+D) energia cinética.
+E) quantidade de movimento.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q24
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 25
+
+A figura mostra uma barra de massa desprezível apoiada no ponto “o”. Na extremidade esquerda da barra existe um corpo suspenso de massa m = 15 kg, enquanto a extremidade direita está presa a uma mola distendida de “x”, cuja constante elástica vale 1500 N/m. Se a barra está em equilíbrio na posição indicada, qual é então o valor da distensão “x” da mola?
+Considere a aceleração da gravidade g = 10 m/s².
+
+[Figura: Barra apoiada em O: corpo de 15 kg a 30 cm à esquerda e mola a 60 cm à direita.]
+Arquivo: figures/furg-2002-fisica-q25-fig1.webp
+
+A) 20 cm
+B) 15 cm
+C) 7,5 cm
+D) 5,0 cm
+E) 2,5 cm
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q25
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 26
+
+A figura mostra um plano inclinado, sobre o qual um corpo de massa 20 kg desliza para baixo com velocidade constante. Se o ângulo de inclinação é α, tal que sen α = 0,60 e cos α = 0,80, então podemos afirmar que o coeficiente de atrito cinético entre as superfícies do corpo e do plano vale:
+
+[Figura: Bloco descendo um plano inclinado de ângulo α.]
+Arquivo: figures/furg-2002-fisica-q26-fig1.webp
+
+A) 0,40
+B) 0,60
+C) 0,75
+D) 0,80
+E) 1,00
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q26
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 27
+
+A velocidade de rotação das pás de um ventilador é 600 rotações por minuto. O diâmetro formado pelo giro das pás é 40 cm. Qual o valor da aceleração centrípeta dos pontos na periferia ?
+
+
+A) 60 π² m/s²
+B) 80 π² m/s²
+C) 600 π² m/s²
+D) 700 π² m/s²
+E) 800 π² m/s²
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q27
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 28
+
+O sonar é um aparelho capaz de emitir ondas sonoras na água e captar seus ecos (ondas refletidas), permitindo, com isso, a localização de objetos sob a água. Sabendo-se que o sonar de um submarino recebe as ondas refletidas pelo casco de um navio 6 segundos após a emissão das mesmas e que a velocidade de propagação do som na água do mar é 1520 m/s, determine a distância entre o submarino e o navio. As velocidades do navio e do submarino são desprezíveis se comparadas à velocidade do som.
+
+
+A) 1520 m
+B) 3040 m
+C) 4560 m
+D) 6080 m
+E) 9120 m
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q28
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 29
+
+Em um experimento de Física, um corpo disforme foi suspenso em um dinamômetro, que registrou 35 N. Em seguida, o corpo, ainda suspenso no dinamômetro, foi completamente mergulhado no líquido contido em um recipiente graduado em cm³ (centímetros cúbicos), e observou-se que o nível do líquido se elevou da marca de 4500 cm³ para 5500 cm³, enquanto a leitura no dinamômetro diminuiu para 26 N. Considere g = 10 m/s².
+De posse desses dados e da tabela abaixo, extraída de um livro de Física, verifica-se que o líquido contido no recipiente do experimento é:
+Tabela: massas específicas (g / cm³)
+Água 1,00
+Álcool etílico 0,79
+Benzeno 0,90
+Gasolina 0,68
+Glicerina 1,26
+
+
+A) glicerina
+B) água
+C) gasolina
+D) álcool etílico
+E) benzeno
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q29
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 30
+
+O gráfico representa a temperatura de um corpo em função do tempo, ao ser aquecido por uma fonte que fornece calor a uma potência constante de 180 cal/min. Se a massa do corpo é 200 g, então o seu calor específico vale:
+
+[Figura: Gráfico T(t): temperatura cresce linearmente de 20 °C em 0 min a 120 °C em 10 min.]
+Arquivo: figures/furg-2002-fisica-q30-fig1.webp
+
+A) 0,180 cal/(g·°C)
+B) 0,150 cal/(g·°C)
+C) 0,120 cal/(g·°C)
+D) 0,090 cal/(g·°C)
+E) 0,075 cal/(g·°C)
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q30
+
+========================================================================
+TEXTO DE APOIO: Dados para as questões 31 e 32
+Identificador: fisica-2002-gas
+
+O diagrama P–V da figura se refere às questões 31 e 32.
+O sistema constitui-se de oxigênio (O₂), cuja massa molecular é 32 g/mol. O mesmo está sofrendo transformação no sentido indicado pela seta. Considere que o oxigênio se comporta como gás ideal (gás perfeito).
+Dado: R = 0,082 atm·litro/(mol·K) = 8,31 Joule/(mol·K).
+
+[Figura: Diagrama p–V: A tem p = 4,1 atm e V = 2,0 L; curva decrescente até B, de coordenadas V e p.]
+Arquivo: figures/furg-2002-fisica-q31-fig1.webp
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 31
+
+Textos de apoio: fisica-2002-gas
+
+No diagrama da figura, se a temperatura do gás no estado “A” é 200 K, que massa de oxigênio está sofrendo transformação?
+
+
+A) 2 g
+B) 8 g
+C) 16 g
+D) 32 g
+E) 64 g
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q31
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 32
+
+Textos de apoio: fisica-2002-gas
+
+Que tipo de transformação o gás está sofrendo?
+
+
+A) Transformação isovolumétrica.
+B) Expansão isobárica.
+C) Compressão isobárica.
+D) Compressão isotérmica.
+E) Nada se pode dizer com os dados disponíveis.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q32
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 33
+
+Três cargas elétricas são mantidas fixas conforme a figura.
+
+Qual das alternativas expressa corretamente a direção e sentido da força elétrica total sobre a carga A?
+
+[Figura: Carga −1 C à esquerda da carga A de +1 C; uma terceira carga +1 C está abaixo de A.]
+Arquivo: figures/furg-2002-fisica-q33-fig1.webp
+
+A) Diagonal para baixo e para a esquerda.
+B) Horizontal para a esquerda.
+C) Diagonal para cima e para a esquerda.
+D) Vertical para cima.
+E) Horizontal para a direita.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q33
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 34
+
+Dois fios paralelos e próximos A e B têm correntes i e 3i de mesmo sentido. Com relação às forças que cada fio exerce um sobre outro, podemos afirmar que
+
+[Figura: Fios paralelos A e B percorridos por correntes i e 3 i no mesmo sentido.]
+Arquivo: figures/furg-2002-fisica-q34-fig1.webp
+
+A) os fios exercem forças repulsivas de igual magnitude um sobre o outro.
+B) os fios exercem forças atrativas de igual magnitude um sobre o outro.
+C) os fios não exercem forças um sobre o outro.
+D) o fio A exerce uma força maior sobre o fio B do que o fio B exerce sobre o A.
+E) o fio B exerce uma força maior sobre o fio A do que o fio A exerce sobre o B.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q34
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 35
+
+O custo da energia elétrica para um consumidor residencial vale R$ 0,25 por kWh. Quanto custa por mês (30 dias) manter acesas durante cinco horas, todos os dias, quatro lâmpadas de 100 W?
+
+
+A) R$ 72,00
+B) R$ 30,00
+C) R$ 18,00
+D) R$ 15,00
+E) R$ 3,75
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q35
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 36
+
+Numa aula experimental de física, o professor utilizou como material duas pilhas de 1,5 V cada uma, duas lâmpadas idênticas, um amperímetro e um conjunto de fios. Para efeito dos cálculos, sugeriu que se desprezasse a resistência interna das pilhas e a resistência dos fios. Quando uma das lâmpadas foi ligada às duas pilhas em série, calculou-se uma potência de consumo de 0,45 W. A seguir, ele pediu a um aluno que montasse uma ligação qualquer e concluísse seus resultados. O aluno então fez a ligação mostrada abaixo. Qual das alternativas é a conclusão correta?
+
+[Figura: Duas pilhas em série alimentam duas lâmpadas em paralelo; amperímetro em série com a fonte.]
+Arquivo: figures/furg-2002-fisica-q36-fig1.webp
+
+A) Amperímetro 0,300 A, cada lâmpada 0,300 A.
+B) Amperímetro 0,300 A, cada lâmpada 0,150 A.
+C) Amperímetro 0,150 A, cada lâmpada 0,150 A.
+D) Amperímetro 0,150 A, cada lâmpada 0,075 A.
+E) Amperímetro 0,075 A, cada lâmpada 0,075 A.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q36
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 37
+
+Uma fonte de força eletromotriz variável é conectada a uma bobina e a um amperímetro. Uma segunda bobina é conectada a um voltímetro e aproximada da primeira, conforme figura.
+O gráfico acima corresponde às leituras do amperímetro em função do tempo.
+Qual dos gráficos abaixo melhor representa as leituras do voltímetro?
+
+[Figura: Duas bobinas próximas: primeira ligada a fonte e amperímetro, segunda a voltímetro. Gráfico da corrente com subida linear, patamar, descida linear e patamar positivo.]
+Arquivo: figures/furg-2002-fisica-q37-fig1.webp
+
+A) Gráfico A.
+[Figura: Gráfico tensão × tempo da alternativa A.]
+Arquivo: figures/furg-2002-fisica-q37-fig2.webp
+B) Gráfico B.
+[Figura: Gráfico tensão × tempo da alternativa B.]
+Arquivo: figures/furg-2002-fisica-q37-fig3.webp
+C) Gráfico C.
+[Figura: Gráfico tensão × tempo da alternativa C.]
+Arquivo: figures/furg-2002-fisica-q37-fig4.webp
+D) Gráfico D.
+[Figura: Gráfico tensão × tempo da alternativa D.]
+Arquivo: figures/furg-2002-fisica-q37-fig5.webp
+E) Gráfico E.
+[Figura: Gráfico tensão × tempo da alternativa E.]
+Arquivo: figures/furg-2002-fisica-q37-fig6.webp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q37
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 38
+
+A figura mostra o esquema óptico de um projetor de slides. Ressalte-se que a figura é apenas ilustrativa, sem compromisso de escala com os dados do problema.
+O slide AB projeta uma imagem ampliada A´B´ de 20 vezes na tela. A lente objetiva tem uma distância focal de 10 cm. A distância da lente objetiva até a imagem na tela é
+
+[Figura: Esquema óptico do projetor: objeto AB, lente com focos F₀ e F₁, imagem invertida A′B′.]
+Arquivo: figures/furg-2002-fisica-q38-fig1.webp
+
+A) 10,0 cm.
+B) 10,5 cm.
+C) 20,0 cm.
+D) 21,0 cm.
+E) 210 cm.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q38
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 39
+
+Considere as afirmações referentes à origem da radioatividade e suas aplicações.
+I. Os aparelhos de raios-X só emitem radiação quando estão ligados, isto é, em operação.
+II. Um objeto ou o próprio corpo, quando irradiado (exposto à radiação) por uma fonte radiativa, não fica radioativo.
+III. A radioatividade é um fenômeno estritamente artificial e portanto não ocorre espontaneamente na natureza.
+Podemos afirmar que
+
+
+A) são corretas as afirmativas I e II.
+B) são corretas as afirmativas I e III.
+C) são corretas as afirmativas II e III.
+D) são corretas as afirmativas I, II, e III.
+E) nenhuma das afirmativas está correta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q39
+
+========================================================================
+FURG 2002 — Física — Vestibular regular — Questão 40
+
+A figura mostra a montagem da experiência de Young sobre o fenômeno da interferência da luz. Um feixe de luz monocromático incide perpendicularmente sobre a parede opaca da esquerda, que tem duas fendas F₁ e F₂, próximas entre si. A luz, após passar pelas fendas, forma uma figura de interferência no anteparo da direita. O ponto C é a posição da primeira franja escura, contada a partir da franja clara central. A diferença de percurso entre as luzes provenientes das fendas é 2,4x10⁻⁷ m.
+Cor | Comprimento de onda
+Vermelha | 6,5 × 10⁻⁷ m
+Amarela | 5,7 × 10⁻⁷ m
+Verde | 5,4 × 10⁻⁷ m
+Azul | 4,8 × 10⁻⁷ m
+Violeta | 4,5 × 10⁻⁷ m
+De acordo com a tabela dada, identifique qual é a cor da luz do experimento.
+
+[Figura: Experiência de Young com fendas F₁ e F₂, anteparo, ponto C e linha de referência da franja central.]
+Arquivo: figures/furg-2002-fisica-q40-fig1.webp
+
+A) Vermelha
+B) Amarela
+C) Verde
+D) Azul
+E) Violeta
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2002-fisica
+Identificador: furg-2002-fisica-q40
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 21
+
+O gráfico representa o módulo das velocidades de dois automóveis como função do tempo. Com relação à área hachurada, podemos dizer que ela representa
+
+[Figura: Gráfico v(t) com v₀ comum: velocidade de A aumenta linearmente, a de B é constante, área hachurada entre as curvas.]
+Arquivo: figures/furg-2003-fisica-q21-fig1.webp
+
+A) a diferença entre as acelerações dos dois automóveis.
+B) a diferença entre as distâncias percorridas pelos dois automóveis.
+C) a aceleração do automóvel A em relação ao automóvel B.
+D) a diferença entre as velocidades dos dois automóveis.
+E) uma grandeza sem qualquer significado físico.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q21
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 22
+
+A equação horária de um movimento retilíneo é, em unidades SI, x = 5 + 10t + 3t². Com relação a esse movimento, podemos dizer que
+
+
+A) sua aceleração é 6 m/s².
+B) sua velocidade inicial é 5 m/s.
+C) sua posição inicial é 10 m.
+D) sua aceleração e 3m/s².
+E) se trata de um Movimento Retilíneo Uniforme.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q22
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 23
+
+Um corpo de massa “m” move-se em linha reta e com velocidade constante sobre uma superfície sem atrito. No instante t = 0, uma força F, representada no gráfico, passa a atuar sobre o corpo, na mesma direção e sentido do seu movimento. Em relação à velocidade do corpo, podemos afirmar que ela
+
+[Figura: Força F constante de 0 a t₁, depois decresce linearmente até zero em t₂.]
+Arquivo: figures/furg-2003-fisica-q23-fig1.webp
+
+A) permanece constante no intervalo 0 a t₁ e o movimento inverte a partir de t₁.
+B) permanece constante no intervalo 0 a t₁ e diminui no intervalo t₁ a t₂.
+C) permanece constante no intervalo 0 a t₁ e cresce no intervalo t₁ a t₂.
+D) cresce no intervalo 0 a t₁, mas decresce no intervalo seguinte, chegando ao repouso no instante t₂.
+E) cresce no intervalo 0 a t₁ e continua a crescer no intervalo t₁ a t₂.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q23
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 24
+
+Um vagão de trem encontra-se em repouso sobre uma ferrovia. Um segundo vagão, animado com velocidade V, colide com o primeiro, e os dois permanecem engatados após o choque. A lei da física que você aplicaria para determinar a velocidade do conjunto após a colisão, é a
+
+
+A) da Conservação das Forças de Colisão.
+B) da Conservação da Energia Mecânica.
+C) da Inércia.
+D) da Conservação da Quantidade de Movimento.
+E) da Conservação da Energia Cinética.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q24
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 25
+
+Um bloco de 5 kg move-se em linha reta sobre uma superfície horizontal, sem atrito, sob a influência de uma força que varia conforme a posição, como mostrado na figura. Se a velocidade da partícula, ao passar pela origem, era 4,0 m/s, com que velocidade ela passará pelo ponto x = 8,0 m?
+
+[Figura: Gráfico F(x): (0,0), (2 m,10 N), (4 m,10 N), (6 m,0), (8 m,−10 N).]
+Arquivo: figures/furg-2003-fisica-q25-fig1.webp
+
+A) √28 m/s
+B) √27 m/s
+C) √26 m/s
+D) √25 m/s
+E) √24 m/s
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q25
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 26
+
+Um carro faz uma curva de 80 m de raio, com velocidade de módulo constante igual a 72 km/h. Podemos afirmar que sua aceleração é
+
+
+A) Zero m/s²
+B) 0,5 m/s²
+C) 0,9 m/s²
+D) 4 m/s²
+E) 5 m/s²
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q26
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 27
+
+Um vagão ferroviário de 10.000 kg movimentase sobre trilhos horizontais a 0,4 m/s, com atrito desprezível. No final dos trilhos, o vagão atinge um pára-choque de mola, cuja constante elástica vale 4 x 10⁴ N/m, e entra, momentaneamente, em repouso. Admitindo que somente a força conservativa da mola exerce trabalho sobre o vagão, podemos afirmar que a mola sofre uma compressão de
+
+
+A) 5 cm
+B) 10 cm
+C) 12 cm
+D) 15 cm
+E) 20 cm
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q27
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 28
+
+Analise cada uma das seguintes afirmações relacionadas com fluidos e indique se é verdadeira (V) ou falsa (F).
+I É possível tomar chimarrão com a bomba, porque a sucção gera uma redução de pressão no seu interior, e a pressão atmosférica, atuando na superfície do líquido, faz com que ele suba pela bomba.
+II Para que um navio flutue no mar, o valor do empuxo deve ser maior do que seu peso.
+III No alto de uma montanha, a pressão atmosférica é menor do que no nível do mar.
+Quais são, pela ordem, as indicações corretas?
+
+
+A) V, V, V
+B) V, V, F
+C) V, F, V
+D) F, F, V
+E) F, F, F
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q28
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 29
+
+Duas cargas puntuais iguais estão separadas por uma distância d. O módulo da força de repulsão mútua é F. Metade da carga é retirada de uma delas e colocada na outra, mantendo-se a distância d. A nova força, em termos da força F original, é
+
+
+A) F/2
+B) F
+C) 5F/4
+D) F/4
+E) 3F/4
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q29
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 30
+
+Na prensa hidráulica, no elevador (macaco) hidráulico dos postos de serviços automotivos e na cadeira do dentista, encontramos exemplos de aplicação de um importante conceito de Física. Qual?
+
+
+A) Princípio de Arquimedes
+B) Princípio de Pascal
+C) Lei de Coulomb
+D) Lei de Hooke
+E) Lei de Kepler
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q30
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 31
+
+Três capacitores de capacitância C₁ = 20 μF, C₂ = 40 μF e C₃ = 40 μF estão associados em série. Esta associação é ligada a uma fonte de fem ε, conforme a figura. Sabendo-se que a carga em uma das placas do capacitor C₁ é q = 30 μC, a fem ε tem o valor de
+
+[Figura: C₁, C₂ e C₃ em série, ligados a uma fonte de força eletromotriz ε; carga q em C₁.]
+Arquivo: figures/furg-2003-fisica-q31-fig1.webp
+
+A) 24 V
+B) 12 V
+C) 6,0 V
+D) 4,5 V
+E) 3,0 V
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q31
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 32
+
+As especificações de um chuveiro são 220 V e
+4.000 W. Se esse chuveiro for ligado em uma rede de 110 V, ele dissipa uma potência de
+
+
+A) 1.000 W
+B) 1.100 W
+C) 2.200 W
+D) 4.000 W
+E) 8.000 W
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q32
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 33
+
+Uma carga positiva q é lançada com velocidade v numa região onde existe campo magnético uniforme B, conforme mostra a figura. As linhas tracejadas são as possíveis trajetórias desta carga. A trajetória correta é a
+
+[Figura: Campo B orientado para a direita, carga q positiva lançada para a direita e cinco possíveis trajetórias numeradas.]
+Arquivo: figures/furg-2003-fisica-q33-fig1.webp
+
+A) 1.
+B) 2.
+C) 3.
+D) 4.
+E) 5.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q33
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 34
+
+Na segunda década do século XX, Louis de
+Broglie apresentou um trabalho, no qual associava a todo corpo um comprimento de onda proporcional à quantidade de movimento do corpo, através da fórmula λ = h/p , onde p é a quantidade de movimento do corpo, h uma constante denominada constante de Planck e λ, o comprimento de onda associado. Com isso, podemos concluir que, para uma partícula de massa m, o comprimento de onda associado será
+
+
+A) proporcional à energia da partícula.
+B) inversamente proporcional à energia da partícula.
+C) proporcional à raiz quadrada da energia da partícula.
+D) inversamente proporcional à raiz quadrada da energia da partícula.
+E) não-dependente da energia da partícula.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q34
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 35
+
+Uma corrente constante i passa em cada um dos três fios retilíneos longos, situados nos vértices de um triângulo eqüilátero. Os fios são normais em relação ao plano que contém o triângulo, conforme mostra a figura.
+
+Desconsiderando o campo magnético terrestre, a orientação de uma bússola colocada no ponto P é
+
+[Figura: Três fios nos vértices do triângulo: corrente saindo do plano no vértice superior e entrando nos dois inferiores; ponto P no centro.]
+Arquivo: figures/furg-2003-fisica-q35-fig1.webp
+
+A) N para cima; S para baixo.
+B) N na diagonal para cima e para a direita; S na direção oposta.
+C) N para a direita; S para a esquerda.
+D) N na diagonal para baixo e para a direita; S na direção oposta.
+E) N para baixo; S para cima.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q35
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 36
+
+Considere a frase abaixo
+Um objeto colocado a uma distância de 10 cm de um espelho curvo, gera uma imagem virtual ampliada em 2 vezes, sendo o tipo do espelho _______ com distância focal de _______ cm.
+A melhor opção para preencher as lacunas é
+
+
+A) côncavo, 20/3.
+B) côncavo, 20.
+C) convexo, 20/3
+D) convexo, 20.
+E) plano, 10.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q36
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 37
+
+Um gás ideal, inicialmente no estado 1, com pressão P₁, volume V₁ e temperatura T₁, sofre uma compressão isotérmica e, posteriormente, uma expansão isobárica até atingir um volume igual ao inicial. Ao final desse processo, a pressão P𝒇 e a temperatura T𝒇 serão, respectivamente
+
+
+A) P𝒇 = P₁ e T𝒇 = T₁.
+B) P𝒇 = P₁ e T𝒇 > T₁.
+C) P𝒇 > P₁ e T𝒇 = T₁.
+D) P𝒇 > P₁ e T𝒇 > T₁.
+E) P𝒇 > P₁ e T𝒇 < T₁.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q37
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 38
+
+Considere um termômetro baseado na expansão linear de um certo material. Sabendo que a uma temperatura de 10 °C, o comprimento do material é de 1 cm, e, a 40 °C, o comprimento é de 1,5 cm, podemos afirmar que o coeficiente de dilatação linear desse material é
+
+
+A) 1,0 × 10⁻² / °C.
+B) 1,3 × 10⁻² / °C.
+C) 1,5 × 10⁻² / °C.
+D) 1,7 × 10⁻² / °C.
+E) 1,9 × 10⁻² / °C.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q38
+
+========================================================================
+TEXTO DE APOIO: Dados para as questões 39 e 40
+Identificador: fisica-2003-calor
+
+Nas questões 39 e 40 utilizar, quando necessário, calor específico da água 1 cal/(g·°C); calor latente de vaporização da água 540 cal/g; calor latente de fusão da água 80 cal/g e 1 cal = 4,18 J. Exceto quando explicitamente especificado, a pressão externa é sempre de uma atmosfera.
+
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 39
+
+Textos de apoio: fisica-2003-calor
+
+Em nutrição utiliza-se o termo Caloria para quantificar o valor energético dos alimentos; no entanto, esse termo corresponde a 1000 vezes o valor da unidade caloria utilizada em física, em unidades do Sistema Internacional. Uma dieta ideal recomendada corresponde ao consumo de alimentos que totalize 2500 calorias por dia. Com essa quantidade de energia consumida, podemos elevar por 1 grau Celsius uma massa de água de
+
+
+A) 2500 g.
+B) 2500 kg.
+C) 2500 toneladas.
+D) 4180 g.
+E) 4180 kg.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q39
+
+========================================================================
+FURG 2003 — Física — Vestibular regular — Questão 40
+
+Textos de apoio: fisica-2003-calor
+
+Um recipiente contém inicialmente um volume de água de 10 litros, a uma temperatura de 10 °C. Nesse recipiente é colocado um objeto com temperatura inicial de 140 °C e massa de 10 kg. Sabendo que, ao entrar em equilíbrio, o volume final de água é de apenas 5 litros (sendo desprezível a quantidade de água perdida por evaporação), o calor específico do objeto é
+
+
+A) 5 cal/(g °C).
+B) 8 cal/(g °C).
+C) 9 cal/(g °C).
+D) 11cal/(g °C).
+E) 12 cal/(g °C).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2003-fisica
+Identificador: furg-2003-fisica-q40
+
+========================================================================
+TEXTO DE APOIO: Dados da prova
+Identificador: fisica-2004-constantes
+
+Consulte os dados abaixo, quando se fizer necessário.
+Aceleração da gravidade: [símbolo ilegível no PDF original] =10 [unidade ilegível no PDF original].
+Massa específica da água: ρágua =1 [unidade ilegível no PDF original].
+Calor específico da água: [símbolo ilegível no PDF original] =1 [unidade ilegível no PDF original] =4200 [unidade ilegível no PDF original].
+Calor latente de vaporização da água: [símbolo ilegível no PDF original] =540 [unidade ilegível no PDF original] =2,3 × 10⁶ [unidade ilegível no PDF original].
+1 cal =4,2 J.
+sen 30° =1/2; sen 45° =√2/2; sen 60° =√3/2.
+
+Nota de transcrição: A fonte original apresenta quadrados no lugar de alguns símbolos e unidades.
+
+[Figura: Tabela de constantes da prova2004, com alguns símbolos e unidades ilegíveis.]
+Arquivo: figures/furg-2004-fisica-q16-fig2.webp
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 16
+
+Textos de apoio: fisica-2004-constantes
+
+O gráfico representa a velocidade em função do tempo, para duas partículas que descrevem movimentos retilíneos, com os movimentos iniciando em t=0 s. Se até o instante T, a partícula “A” havia percorrido 40 m, podemos dizer que a distância percorrida pela partícula “B” até o mesmo instante, foi
+
+[Figura: Gráfico v(t): A sai de v = 0 e B de v = 8 m/s; ambas chegam a v = 16 m/s no instante T.]
+Arquivo: figures/furg-2004-fisica-q16-fig1.webp
+
+A) 45 m.
+B) 48 m.
+C) 56 m.
+D) 60 m.
+E) 64 m.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q16
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 17
+
+Textos de apoio: fisica-2004-constantes
+
+Na figura, o bloco de massa m sobe o plano inclinado com velocidade constante, sob a ação da força F. Considere que existe atrito entre o bloco e o plano inclinado. Nessas condições, a força normal e a força tangencial (força de atrito cinético) do plano inclinado sobre o bloco valem, respectivamente:
+
+[Figura: Bloco m subindo um plano de ângulo α, empurrado por uma força horizontal F.]
+Arquivo: figures/furg-2004-fisica-q17-fig1.webp
+
+A) [símbolos ilegíveis no PDF original]
+[Figura: Expressões com símbolos ilegíveis no PDF original da alternativa A.]
+Arquivo: figures/furg-2004-fisica-q17-fig2.webp
+B) [símbolos ilegíveis no PDF original]
+[Figura: Expressões com símbolos ilegíveis no PDF original da alternativa B.]
+Arquivo: figures/furg-2004-fisica-q17-fig3.webp
+C) [símbolos ilegíveis no PDF original]
+[Figura: Expressões com símbolos ilegíveis no PDF original da alternativa C.]
+Arquivo: figures/furg-2004-fisica-q17-fig4.webp
+D) [símbolos ilegíveis no PDF original]
+[Figura: Expressões com símbolos ilegíveis no PDF original da alternativa D.]
+Arquivo: figures/furg-2004-fisica-q17-fig5.webp
+E) [símbolos ilegíveis no PDF original]
+[Figura: Expressões com símbolos ilegíveis no PDF original da alternativa E.]
+Arquivo: figures/furg-2004-fisica-q17-fig6.webp
+
+Nota de transcrição: A fonte contém caracteres substituídos por quadrados nas fórmulas das alternativas. Não foi possível confirmar uma transcrição fiel das expressões.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q17
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 18
+
+Textos de apoio: fisica-2004-constantes
+
+O gráfico abaixo refere-se ao movimento de uma partícula. Nele está representada a variação de uma determinada grandeza “G” do movimento como função do tempo.
+Se a tangente do ângulo alfa ([símbolos ilegíveis no PDF original] α) representa a velocidade instantânea da partícula, então podemos dizer que “G” representa
+
+[Figura: Curva G(t) crescente com uma tangente formando ângulo α com a horizontal.]
+Arquivo: figures/furg-2004-fisica-q18-fig1.webp
+
+A) a velocidade da partícula.
+B) a aceleração da partícula.
+C) a força resultante sobre a partícula.
+D) a energia cinética da partícula.
+E) a posição da partícula.
+
+Nota de transcrição: Na expressão da tangente, as letras antes de α são substituídas por quadrados no PDF de origem.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q18
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 19
+
+Textos de apoio: fisica-2004-constantes
+
+Um bloco de madeira de 2 kg está suspenso do teto por um fio de massa desprezível. Uma arma dispara um projétil de 15 g, e este atinge o bloco com uma velocidade de 740 m/s e fica encravado no mesmo. Considerando o sistema formado pelo projétil e bloco, assinale a alternativa correta.
+I) A Energia Mecânica do sistema imediatamente anterior ao choque é igual à Energia Mecânica do sistema imediatamente posterior ao choque.
+II) A Quantidade de Movimento do sistema imediatamente anterior ao choque é igual à Quantidade de Movimento do sistema imediatamente posterior ao choque.
+III) A Energia Cinética do sistema imediatamente anterior ao choque é igual à Energia Cinética do sistema imediatamente posterior ao choque.
+IV) O aumento na Quantidade de Movimento do bloco é igual à diminuição da Quantidade de Movimento do projétil.
+Assinale a alternativa que apresenta as respostas corretas.
+
+
+A) I e II.
+B) II e IV.
+C) III e IV.
+D) II e III.
+E) I e III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q19
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 20
+
+Textos de apoio: fisica-2004-constantes
+
+As duas figuras abaixo referem-se a dois movimentos distintos. Nelas, “F” significa força; “x”, posição e “t”, tempo.
+As áreas “A”, abaixo dos gráficos, representam, respectivamente:
+
+[Figura: Dois gráficos com áreas A: força × posição (x₁ a x₂) e força × tempo (t₁ a t₂).]
+Arquivo: figures/furg-2004-fisica-q20-fig1.webp
+
+A) Trabalho e Impulso.
+B) Potência e Impulso.
+C) Potência e Trabalho.
+D) Trabalho e Energia Potencial.
+E) Trabalho e Energia Cinética.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q20
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 21
+
+Textos de apoio: fisica-2004-constantes
+
+Se duas ondas sonoras, uma de freqüência [símbolo ilegível no PDF original] =15.000 [unidade ilegível no PDF original] e outra de freqüência [símbolo ilegível no PDF original] =150 [unidade ilegível no PDF original], propagam-se no ar, então a relação entre seus comprimentos de onda λ₁ e λ₂ é
+
+
+A) λ₁ = λ₂.
+B) λ₁ = 150λ₂.
+C) λ₁ = λ₂/150.
+D) λ₁ = 100λ₂.
+E) λ₁ = λ₂/100.
+
+Nota de transcrição: Os símbolos das freqüências e suas unidades estão ilegíveis no PDF de origem; os valores numéricos são 15.000 e 150.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q21
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 22
+
+Textos de apoio: fisica-2004-constantes
+
+No último mês, paguei R$ 80,00 pelo consumo de 200 kWh de energia elétrica. Para calcular o gasto específico com o chuveiro elétrico de 3000 W de potência, supondo uso diário de 30 minutos, durante 30 dias, a despesa com a utilização do chuveiro foi de
+
+
+A) R$ 4,50.
+B) R$ 9,00.
+C) R$ 18,00.
+D) R$ 32,00.
+E) R$ 64,00.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q22
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 23
+
+Textos de apoio: fisica-2004-constantes
+
+Quando uma corrente i passa pelos resistores R₁, R₂ e R₃ da figura, as tensões nos seus terminais são, respectivamente, V₁, V₂ e V₃. Sabendo-se que V₁ = 6,0 V; R₂ = 3,0 Ω; V₃ = 3,0 V; e R₃ = 2,0 Ω, os valores de R₁ e V₂ são, respectivamente:
+
+[Figura: Resistores R₁, R₂ e R₃ em série, corrente i para a direita e tensões V₁, V₂ e V₃.]
+Arquivo: figures/furg-2004-fisica-q23-fig1.webp
+
+A) 4,0 Ω e 4,5 V.
+B) 4,5 Ω e 5,0 V.
+C) 5,0 Ω e 5,5 V.
+D) 5,5 Ω e 6,0 V.
+E) 6,5 Ω e 7,0 V.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q23
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 24
+
+Textos de apoio: fisica-2004-constantes
+
+O fio de cobre, contido no plano do papel, transporta uma corrente elétrica i. Uma carga +q é lançada paralelamente e no mesmo sentido da corrente, com velocidade v em relação ao fio.
+Desconsiderando a aceleração da gravidade, é correto afirmar que a carga +q
+
+[Figura: Fio horizontal com corrente i para a direita; carga +q abaixo do fio movendo-se também para a direita.]
+Arquivo: figures/furg-2004-fisica-q24-fig1.webp
+
+A) continua a se mover paralelamente ao fio, com velocidade constante v.
+B) continua a se mover paralelamente ao fio, com movimento acelerado.
+C) continua a se mover paralelamente ao fio, com movimento retardado.
+D) é atraída pelo fio.
+E) é repelida pelo fio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q24
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 25
+
+Textos de apoio: fisica-2004-constantes
+
+Um anel de cobre cai devido ao seu peso e passa por uma região do espaço onde existe campo magnético estacionário B. Com base na ilustração abaixo, assinale a afirmação correta em relação à corrente elétrica [símbolo ilegível no PDF original] no anel.
+
+[Figura: Anel acima de uma região de campo magnético B entrando no plano do papel, indicado por cruzes.]
+Arquivo: figures/furg-2004-fisica-q25-fig1.webp
+
+A) Existe uma corrente [símbolo ilegível no PDF original] durante toda a queda do anel, devido a sua proximidade com o campo B.
+B) Existe uma corrente [símbolo ilegível no PDF original] durante toda a queda do anel, devido à variação na sua posição em relação ao campo B.
+C) Existe uma corrente [símbolo ilegível no PDF original] somente durante o tempo em que todo o anel está imerso no campo B.
+D) Existe uma corrente [símbolo ilegível no PDF original] somente quando o anel está entrando ou saindo da região onde existe o campo B.
+E) Não existe corrente [símbolo ilegível no PDF original] em nenhum momento da queda, porque não existe uma bateria inserida neste anel.
+
+Nota de transcrição: O símbolo que designa a corrente elétrica é ilegível no PDF de origem; o texto das alternativas foi preservado.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q25
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 26
+
+Textos de apoio: fisica-2004-constantes
+
+Um objeto de massa m, com temperatura de 20 °C, é lançado verticalmente com velocidade inicial v, atingindo uma altura máxima de 50 m e uma temperatura de 21 °C. Caso não existisse o atrito com o ar, a altura alcançada seria de 100m, e sua temperatura permaneceria constante. Assumindo que a energia desprendida no atrito é totalmente absorvida pelo objeto, então, o calor específico desse objeto é
+
+
+A) 300 J/(kg·°C).
+B) 400 J/(kg·°C).
+C) 500 J/(kg·°C).
+D) 600 J/(kg·°C).
+E) 1000 J/(kg·°C).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q26
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 27
+
+Textos de apoio: fisica-2004-constantes
+
+Um termômetro mal calibrado indica 10° para a temperatura de fusão do gelo e 90°, para a temperatura de ebulição da água. A leitura nesse termômetro, para a temperatura de 50 °C é
+
+
+A) 44.
+B) 45.
+C) 48.
+D) 50.
+E) 52.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q27
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 28
+
+Textos de apoio: fisica-2004-constantes
+
+Ao ser colocado diante de um espelho, um objeto fica com sua imagem invertida e reduzida. Nesse caso, podemos afirmar que o espelho é
+
+
+A) côncavo, e o objeto está entre ele e o foco.
+B) côncavo, e a imagem é formada entre o foco e o centro de curvatura.
+C) plano.
+D) convexo, e a imagem é formada no foco.
+E) côncavo, e o objeto está exatamente no centro de curvatura.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q28
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 29
+
+Textos de apoio: fisica-2004-constantes
+
+Um raio de luz passa de um meio de índice de refração n₁, para outro meio de índice de refração n₂. O ângulo de incidência é de 30°, e o ângulo de refração, de 60°. A razão n₁/n₂ vale
+
+
+A) √3.
+B) 1/√3.
+C) √2/√3.
+D) √3/2.
+E) 2/√3.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q29
+
+========================================================================
+FURG 2004 — Física — Vestibular regular — Questão 30
+
+Textos de apoio: fisica-2004-constantes
+
+Na teoria da relatividade restrita, a luz assume um papel crucial, sendo considerada uma constante física com velocidade aproximada de 300.000 km/s no vácuo, para qualquer observador inercial. Considerando que a luz é um fenômeno eletromagnético, caracterizado pelo seu comprimento de onda, podemos afirmar que, no vácuo, o comprimento de onda da luz é
+
+
+A) variável, mas a sua freqüência é constante.
+B) menor, quanto menor for a freqüência.
+C) constante, mas a sua freqüência é variável.
+D) independente da freqüência e da velocidade.
+E) maior, quanto menor for a freqüência.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2004-fisica
+Identificador: furg-2004-fisica-q30
+
+========================================================================
+TEXTO DE APOIO: Dados da prova
+Identificador: fisica-2005-constantes
+
+Consulte os dados abaixo, quando se fizer necessário.
+Aceleração da gravidade: g = 10 m/s².
+Massa específica da água: ρ = 1 g/cm³.
+
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 16
+
+Textos de apoio: fisica-2005-constantes
+
+Uma partícula efetua um movimento retilíneo, cuja aceleração é mostrada no gráfico como função do tempo. Sabendo-se que no instante t = 0 s ela se encontrava em repouso na origem do sistema de referência, qual sua posição e velocidade, respectivamente, no instante t = 8 s?
+
+[Figura: Gráfico a(t): 2 m/s² de 0 a 2 s; 0 de 2 a 4 s; −1 m/s² de 4 a 6 s; 0 de 6 a 8 s.]
+Arquivo: figures/furg-2005-fisica-q16-fig1.webp
+
+A) 0 m e 0 m/s.
+B) 2 m e 1 m/s.
+C) 12 m e 0 m/s.
+D) 16 m e –1 m/s.
+E) 22 m e 2m/s.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q16
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 17
+
+Textos de apoio: fisica-2005-constantes
+
+Uma pedra é lançada verticalmente para cima com velocidade inicial de 30 m/s. Indique a afirmativa INCORRETA. (Desprezar a resistência do ar).
+
+
+A) No ponto mais alto a velocidade é nula.
+B) No ponto mais alto a aceleração é nula.
+C) A altura atingida pela pedra é de 45 m.
+D) A pedra retorna ao ponto de partida após 6,0 s.
+E) A pedra retorna ao ponto de partida com velocidade de 30 m/s.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q17
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 18
+
+Textos de apoio: fisica-2005-constantes
+
+Um barco a motor, usando toda sua potência, consegue subir um rio a 18 km/h em relação à margem. Em seguida, desce o rio nas mesmas condições e consegue fazê-lo a 44 km/h, também em relação à margem. Dessa forma, é possível afirmar que a velocidade da água em relação à margem é
+
+
+A) 31 km/h.
+B) 26 km/h.
+C) 22 km/h.
+D) 13 km/h.
+E) 9 km/h.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q18
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 19
+
+Textos de apoio: fisica-2005-constantes
+
+Uma força tem sua intensidade variando no tempo de acordo com o gráfico mostrado.
+Sabendo-se que a referida força age sobre uma partícula de 1,50 kg, cuja velocidade no instante t = 1,0 s era zero, qual sua energia cinética no instante t = 4,0 s?
+
+[Figura: Gráfico F(t): zero em t = 1 s, cresce até 3 N em 2 s, mantém 3 N até 3 s, cai a zero em 4 s.]
+Arquivo: figures/furg-2005-fisica-q19-fig1.webp
+
+A) 4 J.
+B) 8 J.
+C) 12 J.
+D) 16 J.
+E) 20 J.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q19
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 20
+
+Textos de apoio: fisica-2005-constantes
+
+A figura mostra um projétil que se desloca com velocidade vₚ e atinge um bloco de madeira, ficando encravado no mesmo. Em seguida, o bloco empurra uma mola de constante elástica K, comprimindo-a de X. Não existe atrito entre o bloco e a superfície horizontal.
+Considere os seguintes eventos, nesta ordem:
+1º Colisão (choque) do projétil com o bloco;
+2º O bloco, agora em movimento, comprime a mola.
+O objetivo é determinar a velocidade vₚ do projétil. Assim, para equacionar os eventos na ordem dada, devem-se empregar, respectivamente, os seguintes princípios:
+
+[Figura: Projétil com velocidade vₚ atinge bloco que comprime a mola em X.]
+Arquivo: figures/furg-2005-fisica-q20-fig1.webp
+
+A) Conservação da Energia Mecânica e Conservação da Quantidade de Movimento.
+B) Conservação da Quantidade de Movimento e Conservação da Energia Potencial.
+C) Conservação da Energia Potencial e Conservação da Energia Cinética.
+D) Conservação da Energia Cinética e Conservação da Energia Mecânica.
+E) Conservação da Quantidade de Movimento e Conservação da Energia Mecânica.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q20
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 21
+
+Textos de apoio: fisica-2005-constantes
+
+Um recipiente de vidro, que pesa 8 N, contém 23 N de água e está sobre o prato de uma balança de mola (dinamômetro). Um corpo com volume de 100 cm³, constituído de um material cuja massa específica é 6 g/cm³, é suspenso em um dinamômetro e, a seguir, completamente mergulhado na água. Quais as indicações, em Newtons, no dinamômetro e na balança de mola, antes e depois de mergulhar o corpo na água, respectivamente?
+
+[Figura: Corpo suspenso em dinamômetro e mergulhado na água; recipiente apoiado numa balança de mola.]
+Arquivo: figures/furg-2005-fisica-q21-fig1.webp
+
+A) 6 ; 31 ; 5 ; 32.
+B) 6 ; 31 ; 5 ; 31.
+C) 6 ; 23 ; 6 ; 31.
+D) 3 ; 23 ; 5 ; 32.
+E) 3 ; 31 ; 6 ; 32.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q21
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 22
+
+Textos de apoio: fisica-2005-constantes
+
+O gráfico representa a temperatura de 10 g de um líquido, inicialmente a 0 °C, em função do calor absorvido por ele. Quais são, respectivamente, os valores do calor específico, calor de vaporização e temperatura de ebulição do líquido?
+
+[Figura: Gráfico T(Q): de (0 cal,0 °C) a (300 cal,60 °C); patamar até 900 cal; depois sobe a 90 °C em 1200 cal.]
+Arquivo: figures/furg-2005-fisica-q22-fig1.webp
+
+A) 0,2 cal/(g·°C), 60 cal/g e 90 °C.
+B) 0,5 cal/(g·°C), 300 cal/g e 90 °C.
+C) 0,5 cal/(g·°C), 60 cal/g e 60 °C.
+D) 5,0 cal/(g·°C), 300 cal/g e 60 °C.
+E) 10,0 cal/(g·°C), 600 cal/g e 60 °C.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q22
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 23
+
+Textos de apoio: fisica-2005-constantes
+
+A figura mostra uma sala quadrada ABCD de lado L. Nela, podemos observar, também, um espelho plano EE’, colocado no canto BCD, de modo a encobrir o canto C. Para um observador colocado em O, mostrado na figura, é possível enxergar as imagens do(s) canto(s):
+
+[Figura: Sala quadrada ABCD de lado L: espelho une os pontos médios E e E′ dos lados BC e CD; observador O no lado AD, a L/4 de A.]
+Arquivo: figures/furg-2005-fisica-q23-fig1.webp
+
+A) A.
+B) B.
+C) D.
+D) A e B.
+E) A e D.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q23
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 24
+
+Textos de apoio: fisica-2005-constantes
+
+Na figura são representadas, esquematicamente, duas ondas transversais que se propagam em um mesmo meio.
+Considerando que a onda 1 possui freqüência f₁ e amplitude A₁, e a onda 2 possui freqüência f₂ e amplitude A₂, assinale a alternativa correta.
+
+[Figura: Duas ondas transversais com mesmo comprimento de onda e amplitudes diferentes, propagando-se para a direita.]
+Arquivo: figures/furg-2005-fisica-q24-fig1.webp
+
+A) f₁ > f₂ e A₁ < A₂.
+B) f₁ < f₂ e A₁ < A₂.
+C) f₁ > f₂ e A₁ = A₂.
+D) f₁ = f₂ e A₁ > A₂.
+E) f₁ = f₂ e A₁ < A₂.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q24
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 25
+
+Textos de apoio: fisica-2005-constantes
+
+Duas partículas estão fixas nas posições indicadas na figura, com cargas q₁ e q₂ = – 16 q₁, e estão separadas por uma distância d. O campo elétrico resultante devido a essas duas cargas poderá ser nulo em qual ponto ?
+
+[Figura: q₁ na origem e q₂ no eixo X positivo; A à esquerda de q₁, B entre as cargas, C à direita de q₂, D acima de B e E abaixo de B.]
+Arquivo: figures/furg-2005-fisica-q25-fig1.webp
+
+A) A.
+B) B.
+C) C.
+D) D.
+E) E.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q25
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 26
+
+Textos de apoio: fisica-2005-constantes
+
+A figura mostra uma carga q localizada em cada um dos vértices de um triângulo eqüilátero de lado a.
+
+O módulo do campo elétrico E em P, ponto médio do lado inferior do triângulo, é
+
+[Figura: Triângulo equilátero com carga q em cada vértice e ponto P no meio do lado inferior.]
+Arquivo: figures/furg-2005-fisica-q26-fig1.webp
+
+A) k₀q/a².
+B) 2k₀q/a².
+C) 3k₀q/a².
+D) (4k₀/3)·(q/a²).
+E) (3k₀/4)·(q/a²).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q26
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 27
+
+Textos de apoio: fisica-2005-constantes
+
+A figura mostra uma fonte ideal de fem ε = 10 V, ligada ao capacitor de capacitância C = 4,0 μF. Depois de totalmente carregado o capacitor, a chave é colocada na posição 2 e permanece nessa posição por um tempo indeterminado, descarregando totalmente o capacitor.
+
+Nessas condições, a energia total dissipada no resistor de resistência R = 3,0 MΩ é
+
+[Figura: Chave S na posição 1 liga capacitor C à fonte ε; na posição 2 liga C ao resistor R.]
+Arquivo: figures/furg-2005-fisica-q27-fig1.webp
+
+A) 0,20 mJ.
+B) 3,33 mJ .
+C) 33,3 mJ .
+D) 120 J .
+E) 18 MJ.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q27
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 28
+
+Textos de apoio: fisica-2005-constantes
+
+A figura mostra uma região do espaço onde existe um campo elétrico uniforme E e um campo magnético uniforme B, perpendiculares entre si, estando E apontando verticalmente para baixo, e B entrando perpendicularmente ao plano desta folha. Uma carga positiva q está se movendo nessa região, com velocidade v, horizontalmente e no plano da folha, como indica a figura.
+
+Sendo Fₑ e Fᵦ as forças elétrica e magnética sobre a carga, a direção e o sentido desses vetores, bem como os seus módulos, são
+
+[Figura: Campo elétrico E para baixo; campo magnético B entrando no plano da folha; carga q positiva com velocidade v para a direita.]
+Arquivo: figures/furg-2005-fisica-q28-fig1.webp
+
+A) Fₑ para baixo; Fᵦ para cima; Fₑ = qvB e Fᵦ = qvE.
+B) Fₑ para cima; Fᵦ para baixo; Fₑ = qE e Fᵦ = qvB.
+C) Fₑ para a direita; Fᵦ para cima; Fₑ = qE e Fᵦ = qvB.
+D) Fₑ para baixo; Fᵦ para cima; Fₑ = qE e Fᵦ = qvB.
+E) Fₑ para baixo; Fᵦ para baixo; Fₑ = qvE e Fᵦ = qvB.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q28
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 29
+
+Textos de apoio: fisica-2005-constantes
+
+A figura mostra um circuito e uma espira contidos no plano da folha. O circuito contém uma fonte de tensão, de fem ε , e um resistor de resistência R . A resistência deste circuito está sendo diminuída pelo deslocamento descendente do cursor S .
+Quanto à corrente na espira, assinale a afirmação correta.
+
+[Figura: Circuito com fonte ε e resistor variável R, cursor S; espira retangular ao lado direito.]
+Arquivo: figures/furg-2005-fisica-q29-fig1.webp
+
+A) A corrente é nula porque não existe contato físico entre os dois circuitos.
+B) Existe uma corrente no sentido horário.
+C) Existe uma corrente no sentido anti-horário.
+D) Aparecerá uma corrente somente quando o cursor parar o seu movimento descendente sobre o resistor R .
+E) A corrente é nula porque não existe nenhuma fonte de fem nessa espira.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q29
+
+========================================================================
+FURG 2005 — Física — Vestibular regular — Questão 30
+
+Textos de apoio: fisica-2005-constantes
+
+O físico Chester Carlson, fundador da empresa Xerox, baseou-se no efeito fotoelétrico para criar a fotocopiadora. O efeito fotoelétrico é o ingrediente principal no processo de transferência de uma figura desenhada num papel transparente para uma placa de metal polarizada positivamente. O papel desenhado é colocado sobre a placa e, a seguir, ilumina-se o conjunto papel + placa. O desenho impede a passagem da luz através do papel e, devido ao efeito fotoelétrico, as partes da placa atingidas pela luz são despolarizadas. Retira-se, então, o papel transparente e borrifa-se um pó colorido ionizado sobre a placa; esse pó só se fixará nas partes da placa que ainda permanecem polarizadas, formando, assim, o desenho. Além dessa aplicação, o efeito fotoelétrico é utilizado nas células solares, que são a principal fonte de energia em satélites, e também no sistema de leitura da trilha sonora impressa nos filmes de cinema.
+A respeito do efeito fotoelétrico pode-se afirmar:
+
+
+A) Ele é o mesmo efeito físico através do qual se produz luz nas lâmpadas incandescentes com filamentos metálicos.
+B) O efeito consiste na incidência da luz sobre uma superfície metálica arrancando elétrons dessa superfície.
+C) A energia luminosa da luz incidente sobre uma placa metálica transforma-se na energia potencial dos elétrons do metal.
+D) É por meio do efeito fotoelétrico que o Sol produz luz.
+E) É por meio do efeito fotoelétrico que os elétrons são produzidos dentro de uma lâmpada fluorescente.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2005-fisica
+Identificador: furg-2005-fisica-q30
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 16
+
+Um atleta encontra- se na posição 80 metros de um sistema de referência, quando um cronômetro é zerado. A partir desse instante o atleta desenvolve uma velocidade constante de 4 m/s. O atleta se desloca no sentido positivo do sistema de referência durante toda a prova. Ao final de 2 minutos de prova o atleta estará junto à posição ___________, e atingirá a posição 500 m ao final de __________.
+Assinale a alternativa em que as palavras apresentadas preenchem adequadamente as respectivas colunas
+
+
+A) 160 m – 6 min e 15 s.
+B) 480 m – 2 min e 5 s.
+C) 480 m – 2 min e 25 s.
+D) 560 m – 1 min e 45 s.
+E) 560 m – 2 min e 40 s.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q16
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 17
+
+No mesmo instante em que um carro, parado em uma sinaleira, parte do repouso com aceleração de 2,5 m/s², passa por ele um ônibus à velocidade constante de 54 km/h. A distância percorrida pelo carro até alcançar o ônibus e a velocidade nesse instante são, respectivamente:
+
+
+A) 180 m e 30 m/s.
+B) 45 m e 15 m/s.
+C) 120 m e 20 m/s.
+D) 30 m e 40 m/s.
+E) 215 m e 25 m/s.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q17
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 18
+
+Uma criança com massa M (quilogramas) está sentada junto à borda de um carrossel que tem um diâmetro D (metros). Um observador, situado em um sistema de referência inercial, percebe que o carrossel demora T (segundos) para dar uma volta completa. A partir das informações, considere as seguintes afirmações:
+I) Se a criança estivesse sentada em uma posição que corresponde à metade do raio do carrossel, o módulo da sua velocidade angular não seria o mesmo.
+II) Se a criança estivesse sentada em uma posição que corresponde à metade do raio do carrossel, o módulo da sua velocidade linear não seria o mesmo.
+III) A força centrípeta exercida sobre a criança independe do tempo que o carrossel demora para completar uma volta.
+IV) A resultante das forças exercidas sobre a criança aponta, tangencialmente, no sentido do movimento.
+Quais afirmativas estão corretas sob o ponto de vista do observador inercial?
+
+
+A) Apenas I.
+B) Apenas II.
+C) II e IV.
+D) I, II e III.
+E) I, II, III e IV.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q18
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 19
+
+Um jogador A lança uma bola de tênis a
+25 m/s no sentido do jogador B. O jogador B rebate a bola no sentido oposto a 30 m/s. Qual é a variação de quantidade de movimento da bola, em módulo, em kg.m/s, se a massa da mesma é de 250 gramas?
+
+
+A) 1,25.
+B) 2,50.
+C) 1250.
+D) 137,5.
+E) 13,75.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q19
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 20
+
+Uma caixa de 2 kg é solta de forma acidental do alto de uma residência que tem 2 m de altura. Considere a aceleração da gravidade de 10 m/s², a energia potencial igual a zero no nível do solo e as seguintes afirmativas:
+I) Antes do início da queda da caixa a sua energia cinética era nula.
+II) A energia potencial da caixa a 1 m de altura do solo é 20 J.
+III) A velocidade da caixa a 1,5 m de altura é √30 m/s.
+São verdadeiras as afirmativas:
+
+
+A) Apenas I.
+B) Apenas II.
+C) I e II.
+D) I e III.
+E) I, II e III.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q20
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 21
+
+Uma caixa de 250 N é mantida em repouso, sustentada pelos cabos C₁ e C₂ de uma grua. Quais são as tensões T₁ e T₂ nos cabos para que haja equilíbrio da caixa, sendo o ângulo α igual a 45°?
+
+[Figura: Grua sustenta caixa de 250 N com dois cabos simétricos C₁ e C₂, ambos a 45° da horizontal.]
+Arquivo: figures/furg-2006-fisica-q21-fig1.webp
+
+A) T₁ = T₂ = √250 N.
+B) T₁ = T₂ = 125 N.
+C) T₁ = T₂ = 250 N.
+D) T₁ = T₂ = 250/√2 N.
+E) T₁ = T₂ = 250/√3 N.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q21
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 22
+
+Uma bomba de encher pneus de bicicleta é acionada rapidamente, tendo a extremidade de saída do ar vedada. Conseqüentemente, o ar é comprimido. Nessas condições, assinale qual das alternativas abaixo expressa corretamente o gráfico da variação da pressão com o volume desse gás.
+
+
+A) Gráfico A.
+[Figura: Diagrama pressão × volume da alternativa A.]
+Arquivo: figures/furg-2006-fisica-q22-fig1.webp
+B) Gráfico B.
+[Figura: Diagrama pressão × volume da alternativa B.]
+Arquivo: figures/furg-2006-fisica-q22-fig2.webp
+C) Gráfico C.
+[Figura: Diagrama pressão × volume da alternativa C.]
+Arquivo: figures/furg-2006-fisica-q22-fig3.webp
+D) Gráfico D.
+[Figura: Diagrama pressão × volume da alternativa D.]
+Arquivo: figures/furg-2006-fisica-q22-fig4.webp
+E) Gráfico E.
+[Figura: Diagrama pressão × volume da alternativa E.]
+Arquivo: figures/furg-2006-fisica-q22-fig5.webp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q22
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 23
+
+O funcionamento dos refrigeradores se baseia no seguinte fato:
+
+
+A) A densidade do gelo é menor do que a da água líquida.
+B) A compressão de vapor liberta calor.
+C) Ar quente é mais rarefeito que o ar frio sob a mesma pressão.
+D) O calor de fusão do gelo é 80 cal/g.
+E) A vaporização exige calor.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q23
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 24
+
+Ondas acústicas podem sofrer amortecimento à medida que se propagam em um certo meio. Por exemplo, quanto mais distante a fonte sonora, mais difícil torna- se para ouvir o som emitido. O amortecimento de uma onda é caracterizado por uma variação
+
+
+A) na freqüência da onda.
+B) na amplitude da onda.
+C) na velocidade de propagação da onda.
+D) no comprimento da onda.
+E) na temperatura do ar.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q24
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 25
+
+A distância focal de uma lente convergente de um projetor de slides é de 5 cm. A imagem deve ser projetada numa tela a uma distância de 5 metros da lente. Se a figura no slide mede 2 cm, o tamanho da figura na tela será
+
+
+A) 50 cm.
+B) 100 m.
+C) 150 cm.
+D) 198 cm.
+E) 200 cm.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q25
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 26
+
+A imagem que um olho míope forma de um objeto próximo está
+
+
+A) entre a retina e o cristalino.
+B) na retina.
+C) atrás da retina.
+D) no ponto cego.
+E) na frente do cristalino.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q26
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 27
+
+Dois pequenos objetos fixos, cada um com uma carga +Q e separados por uma distância D, exercem um sobre o outro uma força de magnitude F.
+Substituímos um dos objetos por outro cuja carga é +4Q, mantendo a mesma distância de separação.
+A magnitude da força no objeto cuja carga é +Q vale agora
+
+[Figura: Duas cargas +Q separadas por distância D, com forças repulsivas F.]
+Arquivo: figures/furg-2006-fisica-q27-fig1.webp
+[Figura: Após substituição, cargas +Q e +4 Q à mesma distância D.]
+Arquivo: figures/furg-2006-fisica-q27-fig2.webp
+
+A) 16F.
+B) 4F.
+C) F.
+D) F/4.
+E) F/16.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q27
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 28
+
+As lâmpadas de uma casa, ligadas a uma tensão de 110V, queimam com muita freqüência. A dona da casa pensa em adquirir lâmpadas de 130V ao invés de 110V como é habitual, porque acredita que estas terão maior durabilidade. Esse procedimento será
+
+
+A) válido, porém as lâmpadas terão luminosidade reduzida.
+B) impossível, pois as lâmpadas queimarão imediatamente.
+C) perigoso, pois sobrecarregará a rede elétrica.
+D) inútil, pois as lâmpadas não vão acender.
+E) vantajoso, pois as lâmpadas terão maior luminosidade.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q28
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 29
+
+Uma fonte de potência variável é conectada a uma bobina e um amperímetro conforme a figura abaixo. Uma outra bobina é ligada a um voltímetro.
+A leitura do amperímetro em função do tempo é mostrada no gráfico.
+Qual dos seguintes gráficos mostra a leitura correta do voltímetro em função do tempo?
+
+[Figura: Duas bobinas próximas; a primeira ligada a fonte de potência e amperímetro, segunda a voltímetro.]
+Arquivo: figures/furg-2006-fisica-q29-fig1.webp
+[Figura: Leitura no amperímetro × tempo: subida linear, patamar, descida linear e patamar positivo.]
+Arquivo: figures/furg-2006-fisica-q29-fig2.webp
+
+A) Gráfico A.
+[Figura: Leitura no voltímetro × tempo da alternativa A.]
+Arquivo: figures/furg-2006-fisica-q29-fig3.webp
+B) Gráfico B.
+[Figura: Leitura no voltímetro × tempo da alternativa B.]
+Arquivo: figures/furg-2006-fisica-q29-fig4.webp
+C) Gráfico C.
+[Figura: Leitura no voltímetro × tempo da alternativa C.]
+Arquivo: figures/furg-2006-fisica-q29-fig5.webp
+D) Gráfico D.
+[Figura: Leitura no voltímetro × tempo da alternativa D.]
+Arquivo: figures/furg-2006-fisica-q29-fig6.webp
+E) Gráfico E.
+[Figura: Leitura no voltímetro × tempo da alternativa E.]
+Arquivo: figures/furg-2006-fisica-q29-fig7.webp
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q29
+
+========================================================================
+FURG 2006 — Física — Vestibular regular — Questão 30
+
+Num reator nuclear, núcleos de U²³⁵ capturam nêutrons e então sofrem um processo de fragmentação em núcleos mais leves, liberam energia e emitem nêutrons. Esse processo é conhecido como
+
+
+A) fusão.
+B) aniquilação.
+C) espalhamento.
+D) reação termonuclear.
+E) fissão.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2006-fisica
+Identificador: furg-2006-fisica-q30
+
+========================================================================
+TEXTO DE APOIO: Dados da prova UAB 2007
+Identificador: fisica-uab-2007-constantes
+
+Utilize os seguintes dados para resolver algumas das questões desta prova:
+g = 10 m/s²;
+1 cal = 4,18 Joules;
+calor específico da água = 1 cal/(g·°C).
+Os referenciais utilizados são sempre inerciais.
+
+
+========================================================================
+FURG 2007 — Física — Processo seletivo UAB — Questão 11
+
+Textos de apoio: fisica-uab-2007-constantes
+
+Um carro está em movimento retilíneo e uniforme com velocidade V₁. Ao passar por um ponto A no instante t=0, um segundo carro – que está em repouso em A – parte com aceleração constante, alcançando o primeiro carro após percorrer uma distância de S a partir do ponto A. Com esses dados, podemos concluir que a velocidade final V₂ do segundo carro no ponto de encontro será (desconsidere qualquer atrito)
+
+
+A) a metade do valor de V₁
+B) igual ao valor de V₁
+C) duas vezes o valor de V₁
+D) três vezes o valor de V₁
+E) dependente da distância percorrida
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-fisica
+Identificador: furg-2007-1-semestre-fisica-q11
+
+========================================================================
+FURG 2007 — Física — Processo seletivo UAB — Questão 12
+
+Textos de apoio: fisica-uab-2007-constantes
+
+Um bloco de massa M=1kg é empurrado através de uma rampa com inclinação de 45° em relação a horizontal, até uma altura de 5 metros em relação ao nível inicial. Desprezando o atrito, o trabalho realizado será
+
+
+A) 5 Joules
+B) 15 Joules
+C) 25 Joules
+D) 50 Joules
+E) 60 Joules
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-fisica
+Identificador: furg-2007-1-semestre-fisica-q12
+
+========================================================================
+FURG 2007 — Física — Processo seletivo UAB — Questão 13
+
+Textos de apoio: fisica-uab-2007-constantes
+
+Dois objetos, um com massa M₁ e outro com massa M₂, são lançados verticalmente com velocidade v=20 m/s. Sabendo que ambos atingem a altura máxima de 5 metros, podemos afirmar com certeza que
+
+
+A) a energia cinética inicial de M₁ é igual a de M₂
+B) a massa M₁ é maior do que M₂
+C) a massa M₁ é menor do que M₂
+D) a energia mecânica perdida em ambos os casos é igual
+E) a energia mecânica perdida por M₁ é diferente da energia mecânica perdida por M₂
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-fisica
+Identificador: furg-2007-1-semestre-fisica-q13
+
+========================================================================
+FURG 2007 — Física — Processo seletivo UAB — Questão 14
+
+Textos de apoio: fisica-uab-2007-constantes
+
+Um corpo de forma esférica com massa M e volume V, ao ser colocado em um líquido, afunda somente a metade do seu volume. Com isso, podemos dizer com certeza que
+
+
+A) o líquido tem densidade igual à do corpo
+B) o líquido tem densidade maior que a do corpo
+C) o líquido tem densidade menor que a do corpo
+D) a massa do líquido contido no recipiente é maior que a massa do corpo
+E) a massa do líquido contido no recipiente é menor que a massa do corpo
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-fisica
+Identificador: furg-2007-1-semestre-fisica-q14
+
+========================================================================
+FURG 2007 — Física — Processo seletivo UAB — Questão 15
+
+Textos de apoio: fisica-uab-2007-constantes
+
+Uma panela contém inicialmente 2 litros de água a uma temperatura T=25 °C, quando é colocada para aquecer. Assumindo que 80% do calor fornecido é utilizado para aquecer a água e que, ao final de 2 minutos, a temperatura da água atinge T=75 °C, podemos afirmar que o calor fornecido por minuto foi de
+
+
+A) 20000 cal
+B) 15000 cal
+C) 12500 cal
+D) 62500 cal
+E) 50000 cal
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-fisica
+Identificador: furg-2007-1-semestre-fisica-q15
+
+========================================================================
+FURG 2007 — Física — Processo seletivo UAB — Questão 16
+
+Textos de apoio: fisica-uab-2007-constantes
+
+Duas esferas condutoras idênticas – a primeira com uma carga de 4 C e a segunda com uma carga de −4 C – são colocadas em contato. Depois de separadas, podemos afirmar que as cargas nas duas esferas será
+
+
+A) zero para ambas as esferas.
+B) 4 C para ambas as esferas.
+C) −4 C para ambas as esferas.
+D) 8 C para ambas as esferas.
+E) 4 C para uma esfera e −4 C para a outra esfera.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-fisica
+Identificador: furg-2007-1-semestre-fisica-q16
+
+========================================================================
+FURG 2007 — Física — Processo seletivo UAB — Questão 17
+
+Textos de apoio: fisica-uab-2007-constantes
+
+Quais os condutores utilizados para se instalar uma tomada?
+
+
+A) Fase e retorno.
+B) Fase e neutro.
+C) Neutro e terra.
+D) Neutro e retorno.
+E) Retorno e terra.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-fisica
+Identificador: furg-2007-1-semestre-fisica-q17
+
+========================================================================
+FURG 2007 — Física — Processo seletivo UAB — Questão 18
+
+Textos de apoio: fisica-uab-2007-constantes
+
+Uma televisão preto-e-branco funciona com uma potência de 100 W. Se a eletricidade custa 50 centavos por kWh, quanto custa assistir TV 4 horas por dia durante trinta dias?
+
+
+A) R$ 25,00
+B) R$ 12,00
+C) R$ 6,00
+D) R$ 3,00
+E) R$ 2,00
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-fisica
+Identificador: furg-2007-1-semestre-fisica-q18
+
+========================================================================
+FURG 2007 — Física — Processo seletivo UAB — Questão 19
+
+Textos de apoio: fisica-uab-2007-constantes
+
+Assinale a afirmativa que descreve corretamente um fenômeno magnético.
+
+
+A) O campo magnético da Terra é nulo.
+B) A dilatação dos corpos é proporcional ao aumento da temperatura.
+C) Nos condutores, a corrente é linearmente proporcional à intensidade do campo magnético.
+D) Pólos magnéticos de mesma natureza se atraem.
+E) A agulha de uma bússola tende a orientar-se na direção do campo magnético da Terra.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-fisica
+Identificador: furg-2007-1-semestre-fisica-q19
+
+========================================================================
+FURG 2007 — Física — Processo seletivo UAB — Questão 20
+
+Textos de apoio: fisica-uab-2007-constantes
+
+Os átomos são elementos fundamentais que constituem a matéria. Assinale a afirmativa que descreve corretamente as dimensões atômicas.
+
+
+A) A dimensão de um átomo é maior do que a de um próton.
+B) Um átomo é elementar e por isso não tem dimensão.
+C) A dimensão de um átomo é maior do que a de uma molécula.
+D) Os átomos são puntiformes.
+E) Os átomos não existem.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-1-semestre-fisica
+Identificador: furg-2007-1-semestre-fisica-q20
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 16
+
+Uma pedra é solta de um penhasco e leva
+Δt₁ segundos para chegar no solo. Se Δt₂ é o tempo necessário para a pedra percorrer a primeira metade do percurso, então podemos afirmar que a razão entre Δt₁ e Δt₂ vale:
+
+
+A) 1.
+B) 1/√2.
+C) 2.
+D) 1/2.
+E) √2.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q16
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 17
+
+A segunda lei de Newton é aplicada à Força Peso, que é a força através da qual os objetos são atraídos pela Terra. A lei da gravitação universal é uma força pela qual dois objetos sofrem atração de campo e obedece à lei do inverso do quadrado da distância. Considerando que a Força Peso de um objeto pode ser igualada à força gravitacional, podemos determinar a aceleração da gravidade conhecendo a massa do planeta Terra e a distância do seu centro ao ponto de interesse. De um modo geral, utilizamos o raio médio terrestre para obter g (médio). Entretanto, nosso planeta é achatado nos pólos em relação ao Equador. Assim sendo, podemos afirmar, quanto ao valor de g, que:
+
+
+A) g (médio) > g (pólos) > g (Equador).
+B) g (pólos) > g (médio) > g (Equador).
+C) g (Equador) > g (médio) > g (pólos).
+D) g (pólos) > g (Equador) > g (médio).
+E) g (Equador) > g (pólos) > g (médio).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q17
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 18
+
+Um aventureiro planeja saltar do alto de uma ponte amarrado em um cabo elástico (um esporte radical conhecido por bungee jumping). A outra extremidade do cabo fica amarrada na ponte. No início, o movimento do saltador é uma queda livre. A partir do ponto em que o cabo é esticado, o saltador começa a desacelerar até uma determinada posição, onde pára. Deste momento em diante, o cabo começa a puxar o saltador para cima. Esta posição, onde o saltador inverte o sentido de queda, marca o seu maior deslocamento vertical D com relação à ponte. Naturalmente que a altura da ponte deve ser maior do que D. Considere agora a situação hipotética de um saltador de massa 80 kg utilizando um cabo elástico de 20 m de comprimento. A constante elástica do cabo é 160 N/m. Calcule o valor de D. Observação: a massa do cabo pode ser desprezada em relação à massa do saltador. Para aceleração da gravidade, utilize o valor 10 m/s²:
+
+
+A) 20 m.
+B) 25 m.
+C) 40 m.
+D) 36 m.
+E) 10 m.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q18
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 19
+
+Duas maçãs caem simultaneamente do galho de uma árvore. Ambas estão à 2 m do solo. Uma tem massa de 80 g, e a outra, massa de 100 g. Quando as maçãs estão no meio do percurso, ou seja, a um metro do solo, podemos afirmar que:
+
+
+A) suas velocidades são iguais, mas suas energias cinéticas são diferentes.
+B) suas velocidades são diferentes, mas suas energias cinéticas são iguais.
+C) suas velocidades são iguais, e suas energias cinéticas também são iguais.
+D) suas velocidades são diferentes, e suas energias cinéticas também são diferentes.
+E) suas velocidades são iguais, mas suas energias cinéticas são nulas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q19
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 20
+
+O Princípio de Pascal serve de base para entendermos como funciona uma alavanca hidráulica, cujo esquema é mostrado na figura abaixo. No lado esquerdo é aplicada uma força sobre o pistão de área a. No lado direito, o líquido incompressível produz uma força sobre o pistão de área A.
+Podemos afirmar que o trabalho no lado direito é em relação ao trabalho no lado esquerdo, e a força no lado direito é em relação à força no lado esquerdo, respectivamente:
+
+[Figura: Alavanca hidráulica com pistão pequeno de área a à esquerda e pistão grande de área A à direita, unidos por líquido incompressível.]
+Arquivo: figures/furg-2007-2-semestre-fisica-q20-fig1.webp
+
+A) maior e igual.
+B) igual e menor.
+C) maior e menor.
+D) igual e maior.
+E) menor e maior.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q20
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 21
+
+A força de empuxo é:
+
+
+A) a força que o peso do objeto submerso em um fluido exerce em relação ao centro da Terra.
+B) uma força fictícia.
+C) a pressão atmosférica que atua sobre o objeto.
+D) o peso do fluido que o objeto desloca.
+E) a força que o peso do objeto submerso em um fluido exerce em relação à superfície da Terra.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q21
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 22
+
+Um bloco de gelo inicialmente com 40 kg desliza a 5 m/s horizontalmente em uma superfície, até que chega ao repouso devido ao atrito. Assuma que todo o calor gerado no atrito é utilizado para derreter o gelo. Quanto de gelo é derretido? O calor latente de fusão do gelo vale 330 kJ/kg, e o calor específico do gelo vale
+2220 J/(kg·K).
+
+
+A) 1,5 kg.
+B) 30 g.
+C) 1,5 g.
+D) 5 kg.
+E) 40 kg.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q22
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 23
+
+Considere as seguintes afirmativas:
+I. Um processo isotérmico ocorre à temperatura constante.
+II. Um processo adiabático é aquele onde não ocorre transferência de calor para dentro ou para fora do sistema.
+III. Um processo isobárico sempre ocorre à pressão constante.
+São verdadeiras as afirmativas:
+
+
+A) I e II.
+B) I, II e III.
+C) I e III.
+D) I.
+E) nenhuma das afirmativas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q23
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 24
+
+Uma usina geradora de eletricidade produz 60 MW. O vapor entra na turbina a 527 °C e sai a 127 °C. A eficiência da usina corresponde a 60% de uma máquina de Carnot ideal. Quanto vale a taxa de consumo de calor?
+
+
+A) 400 MW.
+B) 120 MW.
+C) 100 MW.
+D) 14.400 MW.
+E) 200 MW.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q24
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 25
+
+Na figura, as cargas estão fixas nos vértices de um triângulo eqüilátero de lado a.
+
+Em relação ao infinito, o potencial elétrico dessa distribuição no ponto P vale:
+
+[Figura: Triângulo equilátero de lado a com +q nos vértices superior e inferior esquerdo e −q no inferior direito; P no meio do lado inferior.]
+Arquivo: figures/furg-2007-2-semestre-fisica-q25-fig1.webp
+
+A) (2√3/3)·(1/(4πε₀))·(q/a).
+B) (√3/3)·(1/(4πε₀))·(q/a).
+C) (4√3/3)·(1/(4πε₀))·(q/a).
+D) (3√3/3)·(1/(4πε₀))·(q/a).
+E) (5√3/3)·(1/(4πε₀))·(q/a).
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q25
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 26
+
+Na figura abaixo, são mostrados dois circuitos. Em ambos, ε = 100 V e R = 10 kΩ. As potências elétricas fornecidas pela fonte de f.e.m. nestes dois circuitos valem, respectivamente:
+
+[Figura: Dois circuitos: à esquerda dois resistores R em série ligados à fonte ε; à direita dois resistores R em paralelo ligados à fonte ε.]
+Arquivo: figures/furg-2007-2-semestre-fisica-q26-fig1.webp
+
+A) 1 W e 2 W.
+B) 1 W e 1 W.
+C) 0,5 W e 2 W.
+D) 2 W e 0,5 W.
+E) 2 W e 1 W.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q26
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 27
+
+A capacitância de placas planas e paralelas é C = ε₀A/d, onde ε₀ é a permissividade elétrica do vácuo, A é a área das placas planas e paralelas, e d é a distância entre as placas. Uma chapa plana condutora, isolada e de espessura desprezível, foi introduzida bem no meio, entre as placas do capacitor, como mostra a figura.
+
+A nova capacitância vale:
+
+[Figura: Capacitor de placas paralelas com chapa condutora de espessura desprezível no meio das placas.]
+Arquivo: figures/furg-2007-2-semestre-fisica-q27-fig1.webp
+
+A) C/3.
+B) C.
+C) 2C.
+D) C/2.
+E) 3C.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q27
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 28
+
+Raios são descargas elétricas naturais produzidas quando ocorre uma diferença de potencial suficientemente elevada entre duas nuvens ou entre uma nuvem e o solo. Num raio entre uma nuvem e o solo, valores típicos de tensão são da ordem de 20.000.000 de volts. A descarga é extremamente rápida, com uma duração da ordem de 1 ms. Neste período, a corrente é avaliada em 180.000 ampéres. Calcule durante quantos meses a energia elétrica liberada na produção deste raio poderia suprir uma residência cujo consumo mensal é de 250 kWh.
+
+
+A) 4.
+B) 2.
+C) 1.
+D) 80.
+E) 40.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q28
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 29
+
+Dois fios condutores, retilíneos, de comprimento infinito e paralelos entre si, estão no plano desta página. Os fios transportam correntes de mesmo valor i para a direita.
+O campo magnético resultante dos dois fios é nulo na seguinte região:
+
+[Figura: Dois fios horizontais paralelos com correntes i iguais para a direita.]
+Arquivo: figures/furg-2007-2-semestre-fisica-q29-fig1.webp
+
+A) na linha reta perpendicular ao plano da página e localizada abaixo dos dois fios.
+B) na linha reta paralela aos dois fios e localizada acima dos dois fios.
+C) na linha reta paralela aos dois fios e localizada abaixo dos dois fios.
+D) na linha reta perpendicular ao plano da página e localizada acima dos dois fios.
+E) na linha reta paralela aos dois fios e localizada no meio, entre os fios.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q29
+
+========================================================================
+FURG 2007 — Física — Vestibular regular — Questão 30
+
+Uma lente convergente com distância focal de 8 cm é colocada a 20 cm de um objeto. Podemos afirmar que a imagem formada é:
+
+
+A) reduzida e não invertida.
+B) ampliada e não invertida.
+C) ampliada e invertida.
+D) reduzida e invertida.
+E) nem ampliada, nem reduzida.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2007-2-semestre-fisica
+Identificador: furg-2007-2-semestre-fisica-q30
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 16
+
+Um lançamento de projétil é a composição de dois movimentos: um, analisado horizontalmente, e o outro, verticalmente. Analise os gráficos abaixo:
+Pode-se dizer que:
+I) o gráfico I pode representar o módulo da velocidade horizontal, em função do tempo.
+II) o gráfico II pode representar o módulo da velocidade vertical, em função do tempo.
+III) o gráfico III pode representar a altura do projétil,em função do tempo.
+Estão corretas as afirmativas:
+
+[Figura: Gráficos I, II e III: I mostra v crescente linearmente; II mostra v em V, nula em t =5 s; III mostra h crescendo até máximo em t =5 s e decrescendo, com curva pontuda.]
+Arquivo: figures/furg-2008-2-semestre-fisica-q16-fig1.webp
+
+A) Apenas II
+B) I e II
+C) I e III
+D) Apenas III
+E) II e III
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q16
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 17
+
+A duração de um ano é de aproximadamente 3X10⁷ segundos. A luz viaja a uma velocidade de 3x10⁸ metros por segundo. Com base nisso, pode-se dizer que 1 ano-luz equivale a
+
+
+A) 6 × 10¹⁵ m.
+B) 9 × 10¹⁵ m/s.
+C) 9 × 10¹⁵ m.
+D) 6 × 10¹⁵ m/s.
+E) 6 × 10¹ m.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q17
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 18
+
+Um bloco com massa M = 3 kg, encontra-se disposto sobre um plano inclinado de 30º com a horizontal, conforme mostra a figura. Considere g=10m/s² e que o coeficiente de atrito estático entre o bloco e o piso é igual a 0,75. Podemos dizer que
+
+[Figura: Bloco sobre um plano inclinado a 30° da horizontal.]
+Arquivo: figures/furg-2008-2-semestre-fisica-q18-fig1.webp
+
+A) o bloco fica parado e a força de atrito é maior que a componente da força peso ao longo do plano.
+B) o bloco fica parado e a força de atrito é igual a componente da força peso paralela ao plano.
+C) o bloco fica parado e a força de atrito é menor que a componente da força peso ao longo do plano.
+D) o bloco desce o plano inclinado e a força de atrito é menor que a componente da força peso paralela ao plano.
+E) o bloco desce o plano inclinado e a força de atrito é maior que a componente da força peso paralela ao plano.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q18
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 19
+
+Quanto às características das ondas eletromagnéticas e ondas sonoras, podemos afirmar que
+
+
+A) ambas apresentam a característica de dualidade onda-partícula.
+B) viajam no vácuo com a velocidade da luz.
+C) viajam em qualquer meio, inclusive no vácuo, sofrendo reflexão, refração e dispersão.
+D) propagam-se como ondas transversais e longitudinais, respectivamente.
+E) ambas resultam de interferência destrutiva da combinação de outros tipos de ondas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q19
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 20
+
+Um objeto flutua parcialmente imerso numa piscina. Este fato se dá porque
+
+
+A) a pressão é maior na superfície do que em outras profundidades.
+B) a densidade da água é menor do que a densidade do objeto.
+C) o peso do volume de água deslocada é igual ao peso do objeto.
+D) a força de tensão superficial do líquido é a mesma do objeto.
+E) segundo o princípio de Pascal, as forças de empuxo e peso do objeto estão em equilíbrio.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q20
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 21
+
+O efeito Doppler é caracterizado por
+
+
+A) um deslocamento na freqüência detectada, devido ao movimento da fonte vibratória que se aproxima ou se afasta do receptor.
+B) um deslocamento na freqüência detectada, apenas quando a fonte vibratória se aproxima do receptor.
+C) um deslocamento na freqüência detectada, apenas quando a fonte vibratória se afasta do receptor.
+D) um deslocamento na velocidade detectada, devido ao movimento da fonte vibratória que se aproxima ou se afasta do receptor.
+E) uma freqüência constante detectada, devido ao movimento da fonte vibratória que se aproxima ou se afasta do receptor.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q21
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 22
+
+Para aquecer certa massa de água de 10 °C a 30 °C, foi gasta uma quantidade Q₁ de calor. Para aquecer a metade desta massa de 28 °C a 38 °C, seria necessária uma quantidade de calor igual a
+
+
+A) 4Q₁
+B) Q₁/4
+C) Q₁/2
+D) 2Q₁
+E) Q₁
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q22
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 23
+
+Quando resfriamos uma determinada quantidade de água de 4 °C até 0 °C, ocorre que
+
+
+A) o volume aumenta e a densidade diminui.
+B) o volume diminui e a densidade aumenta.
+C) o volume e a densidade diminuem.
+D) o volume permanece constante e a densidade diminui.
+E) o volume e a densidade aumentam.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q23
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 24
+
+Dos seguintes objetos, qual deles é visível em uma sala perfeitamente escura?
+
+
+A) um gato preto.
+B) um espelho.
+C) uma lâmpada desligada.
+D) qualquer superfície da cor clara.
+E) um fio aquecido ao rubro.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q24
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 25
+
+Em 1886 e 1887, Heinrich Hertz realizou experiências que confirmaram a existência de ondas eletromagnéticas e a teoria de Maxwell sobre a propagação da luz. Hertz descobriu, ainda, que uma descarga elétrica entre dois eletrodos ocorre mais facilmente quando se faz incidir sobre um deles luz ultravioleta. Este efeito é conhecido como efeito fotoelétrico, que consiste do fato de a luz arrancar
+
+
+A) prótons.
+B) elétrons.
+C) nêutrons.
+D) átomos da estrutura atômica.
+E) quarks.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q25
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 26
+
+No experimento de Rutherford, concluiu-se que deveria haver núcleo atômico devido ao fato de que algumas partículas alfa
+
+
+A) não sofriam nenhum desvio.
+B) sofriam pequenos desvios.
+C) sofriam grandes desvios, sem inverter o sentido do movimento.
+D) retornavam na direção do feixe incidente.
+E) eram espalhadas de um ângulo de 90º.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q26
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 27
+
+Um dipolo elétrico é constituído de duas cargas de mesmo módulo q e de sinais opostos, separados por uma distância d, como mostra a figura abaixo.
+
+Sendo k = 9,0 × 10⁹ N·m²/C², o campo elétrico no ponto médio P entre estas cargas tem módulo E igual a
+
+[Figura: Dipolo com carga −q à esquerda e +q à direita, distância d; P no ponto médio.]
+Arquivo: figures/furg-2008-2-semestre-fisica-q27-fig1.webp
+
+A) 8kq/d²
+B) 12kq/d²
+C) zero
+D) kq/d²
+E) 2kq/d²
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q27
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 28
+
+Três capacitores idênticos, cada um de capacitância C , são associados em série. Podemos dizer que a capacitância equivalente da associação vale:
+
+
+A) C/2
+B) 3C
+C) 2C
+D) C
+E) C/3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q28
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 29
+
+Numa circunferência de raio r =1,0 m estão fixas as cargas q₁= -1 µC, q₂= +2 µC, q₃= -3 µC e q₄= +4 µC
+O potencial devido a essas cargas no centro da circunferência, em relação ao potencial de referência igual a zero no infinito, é
+
+[Figura: Circunferência com q₁ no alto, q₂ à direita, q₃ embaixo e q₄ à esquerda.]
+Arquivo: figures/furg-2008-2-semestre-fisica-q29-fig1.webp
+
+A) 1000 V
+B) 9000 V
+C) 3000 V
+D) 18000 V
+E) 500 V
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q29
+
+========================================================================
+FURG 2008 — Física — Vestibular de inverno — Questão 30
+
+Um chuveiro elétrico residencial de 110V indica uma potência de 5400W para inverno e
+3200W para verão. Assim sendo, as resistências correspondentes ao inverno e verão são, respectivamente,
+
+
+A) (110/5400) Ω e (110/3200) Ω
+B) (121/32) Ω e (121/54) Ω
+C) (121/54) Ω e (121/32) Ω
+D) (5400/110) Ω e (3200/110) Ω
+E) (5400²/110) Ω e (3200²/110) Ω
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-2-semestre-fisica
+Identificador: furg-2008-2-semestre-fisica-q30
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 16
+
+Numa tempestade, ouve-se o trovão 7,0 segundos após a visualização do relâmpago. Sabendo que a velocidade da luz é de 3,0x10⁸m/s e que a velocidade do som é de 3,4x10²m/s, é possível afirmar que a distância entre o local onde ocorreu o relâmpago e onde ele foi visto é de
+
+
+A) 6,2 × 10⁶ metros.
+B) 4,8 × 10¹ metros.
+C) 2,4 × 10³ metros.
+D) 2,1 × 10⁹ metros.
+E) 4,3 × 10⁶ metros.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q16
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 17
+
+Para deformar uma mola em 10 cm, é empregada uma força de 40 N. Se a mesma mola for deformada em 20 cm, qual a diferença na energia potencial da mola em relação à situação anterior?
+
+
+A) 2 J
+B) 6 J
+C) 8 J
+D) 10 J
+E) Zero
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q17
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 18
+
+Quanto à refração e reflexão de ondas, pode-se afirmar que uma propriedade comum a ambas as situações é que:
+
+
+A) A fase não pode variar porque a velocidade não varia.
+B) O comprimento de onda sempre diminui.
+C) A fase pode variar devido à variação da freqüência.
+D) O comprimento de onda se mantém constante.
+E) A freqüência da onda se mantém constante.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q18
+
+========================================================================
+TEXTO DE APOIO: Enunciado para as questões 19 e 20
+Identificador: fisica-2009-rampa
+
+O enunciado a seguir refere-se às questões 19 e 20.
+Um objeto de massa m = 1 kg, ao passar pelo ponto 1 de uma rampa, livre de atrito, tem energia cinética igual a 2 Joules. O ponto 1 está a uma altura de h = 20 cm em relação ao ponto 2, situado na base da rampa. Considerando g = 10 m/s²:
+
+[Figura: Rampa com ponto1 elevado à esquerda e ponto2 na base horizontal.]
+Arquivo: figures/furg-2008-1-semestre-fisica-q19-fig1.webp
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 19
+
+Textos de apoio: fisica-2009-rampa
+
+Qual a velocidade do objeto ao passar pelo ponto 2?
+
+
+A) 2√2 m/s
+B) 8 m/s
+C) √2 m/s
+D) 2 m/s
+E) 20 m/s
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q19
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 20
+
+Textos de apoio: fisica-2009-rampa
+
+Após passar pelo ponto 2, a superfície se mantém livre de atrito por dois metros; após os dois metros, a superfície apresenta coeficiente de atrito de 0,4 com o objeto em questão. O que acontece com o objeto depois de passar no ponto 2?
+
+
+A) Ele diminui a velocidade até parar, desde o ponto 2.
+B) Ele se move com velocidade constante nos primeiros dois metros e depois segue em movimento retilíneo uniformemente variado, com aceleração positiva até que sua velocidade seja igual à do ponto 1.
+C) Ele segue com velocidade constante em todo percurso.
+D) Ele se move com velocidade constante nos primeiros dois metros e depois segue em movimento retilíneo uniformemente variado, com aceleração negativa até parar.
+E) Ele pára imediatamente, após passar o ponto 2.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q20
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 21
+
+Colocam-se, em um mesmo recipiente com água, três termômetros com escalas diferentes: um com escala em graus Celsius, um com escala em graus Farenheit e outro com escala em Kelvin. Aquece-se a água até que a variação da leitura fornecida pelo termômetro com escala em graus Celsius seja de 35 ºC. Quais as variações de leitura obtida pelos outros termômetros?
+
+
+A) 63 K e 35 ºF
+B) 35 K e 35 ºF
+C) 61 K e 63 ºF
+D) 308 K e 63 ºF
+E) 35 K e 63 ºF
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q21
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 22
+
+Se numa sala perfeitamente escura iluminarmos a bandeira brasileira com luz amarela, iremos vê-la:
+
+
+A) Amarela e preta
+B) Totalmente amarela
+C) Verde, amarela, azul e branca
+D) Verde e preta
+E) Branca, azul e preta
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q22
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 23
+
+Para mostrarmos que a luz é formada por ondas transversais, devemos usar o fenômeno da:
+
+
+A) Reflexão
+B) Difração
+C) Polarização
+D) Refração
+E) Interferência
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q23
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 24
+
+Segundo Einstein, a energia carregada pelos quanta de luz, mais tarde denominados fótons, é:
+
+
+A) E = kx²/2, onde k é a constante de elasticidade e x é o deslocamento.
+B) E = eV, onde e é a carga do elétron e V é o potencial elétrico.
+C) E = mc², onde m é a massa e c é a velocidade da luz.
+D) E = hf, onde h é a constante de Planck e f é a freqüência.
+E) E = mv, onde m é a massa e v é a velocidade.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q24
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 25
+
+Rutherford foi uma das primeiras pessoas a obter evidências experimentais da estrutura do átomo. Para isso, que tipo de partículas ele lançava sob uma fina lâmina metálica?
+
+
+A) Beta
+B) Alfa
+C) Nêutrons
+D) Elétrons
+E) Prótons
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q25
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 26
+
+Duas partículas, uma com massa m₁ e carga q₁ e outra com massa m² e carga q₂, descrevem trajetórias circulares de mesmo raio em uma região com campo magnético constante e uniforme, sendo uma trajetória no sentido horário e outra no sentido anti-horário. Considere as afirmativas:
+I) m₁=m² , |q₁|=|q₂|
+II) q₁ X q₂ > 0
+III) q₁ X q₂ < 0
+Com base na situação acima, podemos dizer que apenas
+
+
+A) I está correta.
+B) II está correta.
+C) III está correta.
+D) I e II estão corretas.
+E) I e III estão corretas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q26
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 27
+
+Um resistor é utilizado para aquecer um litro de água, sendo fornecida uma corrente contínua de 1 ampère. Sabendo que o tempo necessário para elevar a temperatura da água de 25 °C para 80 °C é de 7 minutos nesse aparelho, e considerando que toda potência dissipada por R é utilizada para aquecer a água, o resistor possui resistência de:
+
+
+A) 420 ohms
+B) 550 ohms
+C) 70 ohms
+D) 55 ohms
+E) 720 ohms
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q27
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 28
+
+Considere três resistores R₁, R₂ e R₃, sendo que dois possuem a mesma resistência e o terceiro uma resistência igual ao valor de quando os outros dois resistores são ligados em série. Seja R o menor valor da resistência entre R₁, R₂ e R₃. Os três resistores são combinados formando um resistor com resistência equivalente Rₑq, que é ligado como uma carga de saída de um gerador. Sabendo que Rₑq é configurado para exigir a menor corrente do gerador, a razão Rₑq/R será
+
+
+A) 3/4
+B) 1/3
+C) 3
+D) 4
+E) 4/3
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q28
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 29
+
+Considere um gerador constituído de uma fonte de força eletromotriz ε e uma resistência interna r. Ao medirmos a tensão e a corrente nos terminais do gerador, é obtido o gráfico onde U é a tensão no terminal do gerador e i a corrente fornecida pelo gerador. Neste caso, a força eletromotriz e a resistência interna serão respectivamente
+
+[Figura: Gráfico U(i): reta de U = 20 V em i = 0 a U = 0 em i = 10 A.]
+Arquivo: figures/furg-2008-1-semestre-fisica-q29-fig1.webp
+
+A) 20V e 2 ohms
+B) 10V e 20 ohms
+C) 20 V e 10 ohms
+D) 10 V e 2 ohms
+E) 1 V e 2 ohms
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q29
+
+========================================================================
+FURG 2009 — Física — Vestibular regular — Questão 30
+
+Considere duas espiras circulares concêntricas e contidas em um mesmo plano, uma com raio R₁ e outra com raio R₂. Na espira de raio R₁ circula uma corrente constante i₁ no sentido horário, e na espira de raio R₂ circula uma corrente constante i₂. Sabendo que o campo magnético no centro comum das espiras é zero, podemos afirmar que
+
+
+A) i₁ = i₂
+B) i₁ x R₁ = - i₂ x R₂, com i₂ no sentido antihorário
+C) i₁ x R₂ = i₂ x R₁, com i₂ no sentido horário
+D) i₁ x R₁ = i₂ x R₂, com i₂ no sentido horário
+E) i₁ x R₂ = - i₂ x R₁, com i₂ no sentido antihorário
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2008-1-semestre-fisica
+Identificador: furg-2008-1-semestre-fisica-q30
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 16
+
+A onda verde, ou sincronização de semáforos, é uma medida adotada em diversas cidades de modo a melhorar o tráfego de veículos por ruas e avenidas muito movimentadas. Numa determinada rua da cidade, existem três semáforos sincronizados: o primeiro, localizado na esquina da rua A, é temporizado para que o sinal dure 1 minuto (tanto o verde quanto o vermelho); o segundo, localizado 200 m adiante, tem mesma temporização, mas um atraso de 8 s em relação ao primeiro; e o terceiro, localizado 400 m além do segundo semáforo, tem uma temporização de 42 s e um atraso de 48 s em relação ao primeiro. Considerando que um carro passa pelo primeiro semáforo quando este ativa o sinal verde, a velocidade mínima, em km/h, que se pode desenvolver para aproveitar uma onda verde, isto é, os três sinais verdes, em sequência, vale:
+
+
+A) 51
+B) 24
+C) 45
+D) 22
+E) 40
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q16
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 17
+
+Considere uma bomba de massa M, inicialmente em repouso. Ao explodir, parte-se em três pedaços iguais que desenvolvem a mesma velocidade. Qual deve ser o menor ângulo, em graus, formado entre as trajetórias de dois pedaços?
+
+
+A) 90
+B) 60
+C) 120
+D) 45
+E) 135
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q17
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 18
+
+Um pêndulo simples é construído por uma bolinha de massa m presa na extremidade de um fio de comprimento L, preso a um ponto fixo. Ele é colocado para oscilar em torno da posição de equilíbrio deslocando a bolinha para a direita e abandonando-a a partir do repouso. Desprezando a resistência do ar, as forças que atuam sobre a bolinha são
+
+
+A) o peso da bolinha, a tração do fio e a reação normal.
+B) apenas o peso da bolinha e a tração do fio.
+C) o peso da bolinha e a força centrífuga.
+D) o peso da bolinha, a tração do fio e a força centrífuga.
+E) apenas a força centrífuga.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q18
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 19
+
+Um corpo celeste percorre uma órbita em torno do Sol, cuja distância média ao Sol é 16 vezes maior do que a distância média Terra-Sol. Qual é o intervalo de tempo, em anos terrestres, necessário para este corpo percorrer uma volta completa em torno do Sol?
+
+
+A) 16 anos.
+B) 32 anos.
+C) 8 anos.
+D) 64 anos.
+E) 12 anos.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q19
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 20
+
+No dia 7 de agosto de 2005, foram resgatados os sete tripulantes do minissubmarino russo AS-28 que se encontrava encalhado na costa russa do Oceano Pacífico, a 190 m de profundidade. A operação de resgate foi feita pelo robô britânico Super Scorpio, cuja área aproximada é 6 m². Considerando a água do mar com densidade igual a 1,03 g/ cm³ e a aceleração da gravidade sendo g=10 m/s², determine a força total atuando sobre o robô. Despreze a pressão atmosférica.
+
+
+A) 11,74 × 10⁶ N.
+B) 12,35 × 10⁶ N.
+C) 19,57 × 10⁵ N.
+D) 20,58 × 10⁵ N.
+E) 1,01 × 10⁶ N.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q20
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 21
+
+A energia interna de um gás ideal depende:
+
+
+A) da natureza do gás.
+B) da pressão.
+C) do volume.
+D) da temperatura.
+E) da energia potencial de suas moléculas.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q21
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 22
+
+Um corpo de 1 kg cai, a partir do repouso, de uma altura de 10 m em relação ao solo. Admitindo que toda energia da queda, após o choque totalmente inelástico com o solo, seja convertida em calor, e que 30% dela seja absorvida pelo corpo, determine a variação de temperatura desse corpo. (Dados: calor específico do corpo = 0,05 cal/(g·°C); 1 cal=4,18 J, g=10 m/s².)
+
+
+A) 3 K.
+B) 1,4 K.
+C) 0,30 °C.
+D) 3 °C.
+E) 0,14 K.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q22
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 23
+
+Um tipo de usina hidrelétrica pouco comum no Brasil é a chamada usina de montanha, onde aproveita-se uma queda d'água para gerar energia elétrica. Vamos supor que fosse possível aproveitar a Cascata do Caracol, em Canela, com sua queda d'água de 125 m, para este tipo de usina. A energia produzida serviria para alimentar um conjunto de lâmpadas cuja potência total soma 3000 W. Considere a aceleração da gravidade sendo g=10 m/s². Quantos quilogramas de água devem ser colhidos pela turbina para manter este conjunto de lâmpadas funcionando por um minuto ?
+
+
+A) 132
+B) 22
+C) 180
+D) 144
+E) 12
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q23
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 24
+
+Uma carga elétrica entra numa região onde tem um campo magnético perpendicular a sua velocidade. Neste caso, podemos dizer que o movimento da carga nesta região é:
+
+
+A) movimento retilíneo uniforme.
+B) movimento circular uniforme.
+C) movimento retilíneo uniformemente variado.
+D) movimento circular uniformemente variado.
+E) movimento helicoidal.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q24
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 25
+
+A respeito do espectro eletromagnético podemos afirmar que:
+
+
+A) a frequência da luz visível é da ordem de 97,1 MHz.
+B) os raios gama possuem a menor frequência.
+C) as ondas curtas possuem o maior comprimento de onda.
+D) as ondas curtas possuem a maior frequência.
+E) os raios gama possuem a maior frequência.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q25
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 26
+
+O fenômeno do arco-íris ocorre devido à
+
+
+A) dispersão luminosa.
+B) junção luminosa.
+C) refração atmosférica.
+D) reflexão atmosférica.
+E) luz se mover em linha reta.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q26
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 27
+
+Para que um gato na margem de um lago possa pegar um peixe, ele deve se jogar:
+
+
+A) em uma posição abaixo daquela em que vê o peixe.
+B) em uma posição abaixo da posição real do peixe.
+C) em uma posição acima da posição real do peixe.
+D) diretamente na posição em que vê o peixe.
+E) em uma posição acima daquela em que vê o peixe.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q27
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 28
+
+Um dos resultados da teoria da Relatividade é:
+
+
+A) a dilatação do espaço.
+B) a contração do tempo.
+C) a dilatação do tempo.
+D) o valor da velocidade da luz depende do observador.
+E) dois eventos simultâneos para um observador são simultâneos para todos os outros.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q28
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 29
+
+Do experimento de bombardeamento de partículas alfa em uma lâmina de ouro, Ernest Rutherford postulou a existência
+
+
+A) dos elétrons.
+B) do núcleo atômico.
+C) dos múons.
+D) do neutrino.
+E) do neutron.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q29
+
+========================================================================
+FURG 2010 — Física — Vestibular regular — Questão 30
+
+A força que mantém os prótons dentro do núcleo é:
+
+
+A) força gravitacional.
+B) força nuclear forte.
+C) força nuclear fraca.
+D) força elétrica.
+E) força magnética.
+
+Fonte: https://www.acheprovas.com.br/provas-da-furg-anos-anteriores/furg-2010-fisica
+Identificador: furg-2010-fisica-q30
+
+========================================================================
+GABARITOS
+
+FURG 2000 | Física | Vestibular regular | Questão 21: A
+FURG 2000 | Física | Vestibular regular | Questão 22: D
+FURG 2000 | Física | Vestibular regular | Questão 23: C
+FURG 2000 | Física | Vestibular regular | Questão 24: B
+FURG 2000 | Física | Vestibular regular | Questão 25: A
+FURG 2000 | Física | Vestibular regular | Questão 26: A
+FURG 2000 | Física | Vestibular regular | Questão 27: A
+FURG 2000 | Física | Vestibular regular | Questão 28: B
+FURG 2000 | Física | Vestibular regular | Questão 29: C
+FURG 2000 | Física | Vestibular regular | Questão 30: B
+FURG 2000 | Física | Vestibular regular | Questão 31: D
+FURG 2000 | Física | Vestibular regular | Questão 32: C
+FURG 2000 | Física | Vestibular regular | Questão 33: E
+FURG 2000 | Física | Vestibular regular | Questão 34: A
+FURG 2000 | Física | Vestibular regular | Questão 35: B
+FURG 2000 | Física | Vestibular regular | Questão 36: D
+FURG 2000 | Física | Vestibular regular | Questão 37: C
+FURG 2000 | Física | Vestibular regular | Questão 38: E
+FURG 2000 | Física | Vestibular regular | Questão 39: C
+FURG 2000 | Física | Vestibular regular | Questão 40: E
+FURG 2001 | Física | Vestibular regular | Questão 21: B
+FURG 2001 | Física | Vestibular regular | Questão 22: C
+FURG 2001 | Física | Vestibular regular | Questão 23: A
+FURG 2001 | Física | Vestibular regular | Questão 24: B
+FURG 2001 | Física | Vestibular regular | Questão 25: E
+FURG 2001 | Física | Vestibular regular | Questão 26: D
+FURG 2001 | Física | Vestibular regular | Questão 27: não disponível
+FURG 2001 | Física | Vestibular regular | Questão 28: A
+FURG 2001 | Física | Vestibular regular | Questão 29: D
+FURG 2001 | Física | Vestibular regular | Questão 30: A
+FURG 2001 | Física | Vestibular regular | Questão 31: E
+FURG 2001 | Física | Vestibular regular | Questão 32: C
+FURG 2001 | Física | Vestibular regular | Questão 33: C
+FURG 2001 | Física | Vestibular regular | Questão 34: D
+FURG 2001 | Física | Vestibular regular | Questão 35: A
+FURG 2001 | Física | Vestibular regular | Questão 36: B
+FURG 2001 | Física | Vestibular regular | Questão 37: B
+FURG 2001 | Física | Vestibular regular | Questão 38: E
+FURG 2001 | Física | Vestibular regular | Questão 39: A
+FURG 2001 | Física | Vestibular regular | Questão 40: C
+FURG 2002 | Física | Vestibular regular | Questão 21: E
+FURG 2002 | Física | Vestibular regular | Questão 22: A
+FURG 2002 | Física | Vestibular regular | Questão 23: A
+FURG 2002 | Física | Vestibular regular | Questão 24: B
+FURG 2002 | Física | Vestibular regular | Questão 25: D
+FURG 2002 | Física | Vestibular regular | Questão 26: C
+FURG 2002 | Física | Vestibular regular | Questão 27: B
+FURG 2002 | Física | Vestibular regular | Questão 28: C
+FURG 2002 | Física | Vestibular regular | Questão 29: E
+FURG 2002 | Física | Vestibular regular | Questão 30: D
+FURG 2002 | Física | Vestibular regular | Questão 31: C
+FURG 2002 | Física | Vestibular regular | Questão 32: não disponível
+FURG 2002 | Física | Vestibular regular | Questão 33: C
+FURG 2002 | Física | Vestibular regular | Questão 34: B
+FURG 2002 | Física | Vestibular regular | Questão 35: D
+FURG 2002 | Física | Vestibular regular | Questão 36: B
+FURG 2002 | Física | Vestibular regular | Questão 37: A
+FURG 2002 | Física | Vestibular regular | Questão 38: E
+FURG 2002 | Física | Vestibular regular | Questão 39: A
+FURG 2002 | Física | Vestibular regular | Questão 40: D
+FURG 2003 | Física | Vestibular regular | Questão 21: B
+FURG 2003 | Física | Vestibular regular | Questão 22: A
+FURG 2003 | Física | Vestibular regular | Questão 23: E
+FURG 2003 | Física | Vestibular regular | Questão 24: D
+FURG 2003 | Física | Vestibular regular | Questão 25: A
+FURG 2003 | Física | Vestibular regular | Questão 26: E
+FURG 2003 | Física | Vestibular regular | Questão 27: E
+FURG 2003 | Física | Vestibular regular | Questão 28: C
+FURG 2003 | Física | Vestibular regular | Questão 29: E
+FURG 2003 | Física | Vestibular regular | Questão 30: B
+FURG 2003 | Física | Vestibular regular | Questão 31: E
+FURG 2003 | Física | Vestibular regular | Questão 32: A
+FURG 2003 | Física | Vestibular regular | Questão 33: C
+FURG 2003 | Física | Vestibular regular | Questão 34: D
+FURG 2003 | Física | Vestibular regular | Questão 35: C
+FURG 2003 | Física | Vestibular regular | Questão 36: B
+FURG 2003 | Física | Vestibular regular | Questão 37: D
+FURG 2003 | Física | Vestibular regular | Questão 38: B
+FURG 2003 | Física | Vestibular regular | Questão 39: B
+FURG 2003 | Física | Vestibular regular | Questão 40: C
+FURG 2004 | Física | Vestibular regular | Questão 16: D
+FURG 2004 | Física | Vestibular regular | Questão 17: A
+FURG 2004 | Física | Vestibular regular | Questão 18: E
+FURG 2004 | Física | Vestibular regular | Questão 19: B
+FURG 2004 | Física | Vestibular regular | Questão 20: A
+FURG 2004 | Física | Vestibular regular | Questão 21: E
+FURG 2004 | Física | Vestibular regular | Questão 22: C
+FURG 2004 | Física | Vestibular regular | Questão 23: A
+FURG 2004 | Física | Vestibular regular | Questão 24: D
+FURG 2004 | Física | Vestibular regular | Questão 25: D
+FURG 2004 | Física | Vestibular regular | Questão 26: C
+FURG 2004 | Física | Vestibular regular | Questão 27: D
+FURG 2004 | Física | Vestibular regular | Questão 28: B
+FURG 2004 | Física | Vestibular regular | Questão 29: A
+FURG 2004 | Física | Vestibular regular | Questão 30: E
+FURG 2005 | Física | Vestibular regular | Questão 16: E
+FURG 2005 | Física | Vestibular regular | Questão 17: B
+FURG 2005 | Física | Vestibular regular | Questão 18: D
+FURG 2005 | Física | Vestibular regular | Questão 19: C
+FURG 2005 | Física | Vestibular regular | Questão 20: E
+FURG 2005 | Física | Vestibular regular | Questão 21: A
+FURG 2005 | Física | Vestibular regular | Questão 22: C
+FURG 2005 | Física | Vestibular regular | Questão 23: A
+FURG 2005 | Física | Vestibular regular | Questão 24: E
+FURG 2005 | Física | Vestibular regular | Questão 25: A
+FURG 2005 | Física | Vestibular regular | Questão 26: D
+FURG 2005 | Física | Vestibular regular | Questão 27: A
+FURG 2005 | Física | Vestibular regular | Questão 28: D
+FURG 2005 | Física | Vestibular regular | Questão 29: B
+FURG 2005 | Física | Vestibular regular | Questão 30: B
+FURG 2006 | Física | Vestibular regular | Questão 16: D
+FURG 2006 | Física | Vestibular regular | Questão 17: A
+FURG 2006 | Física | Vestibular regular | Questão 18: B
+FURG 2006 | Física | Vestibular regular | Questão 19: E
+FURG 2006 | Física | Vestibular regular | Questão 20: C
+FURG 2006 | Física | Vestibular regular | Questão 21: D
+FURG 2006 | Física | Vestibular regular | Questão 22: C
+FURG 2006 | Física | Vestibular regular | Questão 23: E
+FURG 2006 | Física | Vestibular regular | Questão 24: B
+FURG 2006 | Física | Vestibular regular | Questão 25: D
+FURG 2006 | Física | Vestibular regular | Questão 26: A
+FURG 2006 | Física | Vestibular regular | Questão 27: B
+FURG 2006 | Física | Vestibular regular | Questão 28: A
+FURG 2006 | Física | Vestibular regular | Questão 29: C
+FURG 2006 | Física | Vestibular regular | Questão 30: E
+FURG 2007 | Física | Processo seletivo UAB | Questão 11: C
+FURG 2007 | Física | Processo seletivo UAB | Questão 12: D
+FURG 2007 | Física | Processo seletivo UAB | Questão 13: E
+FURG 2007 | Física | Processo seletivo UAB | Questão 14: B
+FURG 2007 | Física | Processo seletivo UAB | Questão 15: D
+FURG 2007 | Física | Processo seletivo UAB | Questão 16: A
+FURG 2007 | Física | Processo seletivo UAB | Questão 17: B
+FURG 2007 | Física | Processo seletivo UAB | Questão 18: C
+FURG 2007 | Física | Processo seletivo UAB | Questão 19: E
+FURG 2007 | Física | Processo seletivo UAB | Questão 20: A
+FURG 2007 | Física | Vestibular regular | Questão 16: E
+FURG 2007 | Física | Vestibular regular | Questão 17: B
+FURG 2007 | Física | Vestibular regular | Questão 18: C
+FURG 2007 | Física | Vestibular regular | Questão 19: A
+FURG 2007 | Física | Vestibular regular | Questão 20: D
+FURG 2007 | Física | Vestibular regular | Questão 21: D
+FURG 2007 | Física | Vestibular regular | Questão 22: C
+FURG 2007 | Física | Vestibular regular | Questão 23: B
+FURG 2007 | Física | Vestibular regular | Questão 24: E
+FURG 2007 | Física | Vestibular regular | Questão 25: A
+FURG 2007 | Física | Vestibular regular | Questão 26: C
+FURG 2007 | Física | Vestibular regular | Questão 27: B
+FURG 2007 | Física | Vestibular regular | Questão 28: A
+FURG 2007 | Física | Vestibular regular | Questão 29: E
+FURG 2007 | Física | Vestibular regular | Questão 30: D
+FURG 2008 | Física | Vestibular de inverno | Questão 16: E
+FURG 2008 | Física | Vestibular de inverno | Questão 17: C
+FURG 2008 | Física | Vestibular de inverno | Questão 18: B
+FURG 2008 | Física | Vestibular de inverno | Questão 19: D
+FURG 2008 | Física | Vestibular de inverno | Questão 20: C
+FURG 2008 | Física | Vestibular de inverno | Questão 21: A
+FURG 2008 | Física | Vestibular de inverno | Questão 22: B
+FURG 2008 | Física | Vestibular de inverno | Questão 23: A
+FURG 2008 | Física | Vestibular de inverno | Questão 24: E
+FURG 2008 | Física | Vestibular de inverno | Questão 25: B
+FURG 2008 | Física | Vestibular de inverno | Questão 26: D
+FURG 2008 | Física | Vestibular de inverno | Questão 27: A
+FURG 2008 | Física | Vestibular de inverno | Questão 28: E
+FURG 2008 | Física | Vestibular de inverno | Questão 29: D
+FURG 2008 | Física | Vestibular de inverno | Questão 30: C
+FURG 2009 | Física | Vestibular regular | Questão 16: C
+FURG 2009 | Física | Vestibular regular | Questão 17: B
+FURG 2009 | Física | Vestibular regular | Questão 18: E
+FURG 2009 | Física | Vestibular regular | Questão 19: A
+FURG 2009 | Física | Vestibular regular | Questão 20: D
+FURG 2009 | Física | Vestibular regular | Questão 21: E
+FURG 2009 | Física | Vestibular regular | Questão 22: A
+FURG 2009 | Física | Vestibular regular | Questão 23: C
+FURG 2009 | Física | Vestibular regular | Questão 24: D
+FURG 2009 | Física | Vestibular regular | Questão 25: B
+FURG 2009 | Física | Vestibular regular | Questão 26: C
+FURG 2009 | Física | Vestibular regular | Questão 27: B
+FURG 2009 | Física | Vestibular regular | Questão 28: D
+FURG 2009 | Física | Vestibular regular | Questão 29: A
+FURG 2009 | Física | Vestibular regular | Questão 30: E
+FURG 2010 | Física | Vestibular regular | Questão 16: B
+FURG 2010 | Física | Vestibular regular | Questão 17: C
+FURG 2010 | Física | Vestibular regular | Questão 18: B
+FURG 2010 | Física | Vestibular regular | Questão 19: D
+FURG 2010 | Física | Vestibular regular | Questão 20: A
+FURG 2010 | Física | Vestibular regular | Questão 21: D
+FURG 2010 | Física | Vestibular regular | Questão 22: E
+FURG 2010 | Física | Vestibular regular | Questão 23: D
+FURG 2010 | Física | Vestibular regular | Questão 24: B
+FURG 2010 | Física | Vestibular regular | Questão 25: E
+FURG 2010 | Física | Vestibular regular | Questão 26: A
+FURG 2010 | Física | Vestibular regular | Questão 27: A
+FURG 2010 | Física | Vestibular regular | Questão 28: C
+FURG 2010 | Física | Vestibular regular | Questão 29: B
+FURG 2010 | Física | Vestibular regular | Questão 30: B
