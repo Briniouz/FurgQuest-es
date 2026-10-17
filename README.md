@@ -44,7 +44,7 @@ Os pré-requisitos são uma organização didática independente, com consulta a
 
 ## Marca e autoria
 
-A marca própria está em `brand-mark.svg`: um livro, uma seta e arcos circulares, usados também no favicon. O rodapé identifica o projeto de Daniel Carvalho e contém um link direto para [@briniouz](https://www.instagram.com/briniouz/). Os PDFs do acervo continuam com sua atribuição original.
+A marca própria está em `brand-mark.svg`: um livro, uma seta e arcos circulares, usados também no favicon. O botão de perfil **D**, no cabeçalho, abre a opção **Abrir Instagram**, com link para [@briniouz](https://www.instagram.com/briniouz/). O rodapé também identifica o projeto de Daniel Carvalho. Os PDFs do acervo continuam com sua atribuição original.
 
 ## Verificação
 
