@@ -1,6 +1,8 @@
 # FURG Questões
 
-Site de estudo: https://briniouz.github.io/FurgQuest-es/
+Site publicado: https://briniouz.github.io/FurgQuest-es/
+
+O site inclui o **acervo completo do ENEM regular de 1998 a 2025**, com 3.833 itens, e simulados anuais de 2010 a 2025. O arquivo de prévia para download usa uma amostra; o banco publicado usa todas as questões.
 
 Banco com 2.091 questões históricas de 2000–2010, provas e gabaritos em PDF, texto selecionável, simulados, favoritos, anotações e progresso no navegador. A área Leituras contém seis resumos ampliados, trechos originais comentados e 60 exercícios autorais. As trilhas incluem 595 flashcards básicos.
 
@@ -71,3 +73,35 @@ node scripts/check-site.cjs
 ```
 
 O teste usa um modelo de DOM para validar os fluxos JavaScript. Ele não substitui a conferência visual no navegador. A publicação e os links públicos de amostra também são conferidos no GitHub Pages. Os 2.170 recortes legados de páginas não foram enviados originalmente ao repositório; todas as 2.091 questões usam transcrições, com suas figuras e PDFs originais restaurados.
+
+## Seção ENEM · prévia de 19/10/2026
+
+Abra `index.html` e escolha **ENEM**. O pacote contém as provas regulares de 1998–2025, com enunciados e alternativas selecionáveis, figuras locais e os PDFs de prova e gabarito. Inglês e espanhol são duas escolhas de idioma do mesmo exame: de 2010 em diante há 185 itens por ano no banco, embora o participante responda a 180. Cadernos de cores diferentes não repetem questões no banco.
+
+A cobertura exata fica em **Cobertura e fontes do acervo**, no fim da seção, e em `enem/coverage.json`. Reaplicações/PPL, versões digitais e aplicações específicas ainda não integram esta prévia. Questões anuladas permanecem disponíveis para estudo e não entram na taxa de acertos. A conferência dos gabaritos corrige divergências da transcrição base; consulte `enem/provenance/keys-answer-corrections.json`.
+
+É possível buscar no texto, escolher ano e área, alternar o idioma, sortear questões, favoritar, anotar o raciocínio e refazer questões. A taxa de acertos usa a primeira tentativa e não representa a TRI. As respostas, os favoritos e as anotações do ENEM acompanham o JSON de progresso e são combinados na importação. Arquivos antigos continuam aceitos.
+
+`enem-data.js` carrega o banco sem depender de um servidor; `enem-data.json` oferece o mesmo conteúdo estruturado. `enem.js` contém a interação e `enem.css` acompanha os temas claro e escuro. `ENEM-Todas-Questoes.txt` exporta o acervo para leitura. Fontes, espelhos e hashes dos PDFs ficam em `enem/sources.json`. Recortes originais podem ser abertos em cada questão para comparação.
+
+`Previa-ENEM.html`, entregue junto do ZIP, é uma amostra interativa em um único arquivo. Ela inclui as próprias imagens e usa uma chave separada de progresso, para proteger o treino do banco completo. Seus links de PDF abrem os originais online.
+
+A verificação pode ser aplicada também à amostra:
+
+```sh
+node scripts/check-site.cjs /caminho/Previa-ENEM.html
+```
+
+O teste executa os scripts do próprio HTML e verifica respostas, filtros, imagens embutidas e preservação dos fluxos existentes. Não houve conferência visual desta versão em um navegador automatizado.
+
+## Simulados anuais do ENEM · 2010–2025
+
+Em **Simulados**, escolha o ano, o primeiro dia, o segundo dia ou a objetiva completa. Cada dia tem 90 itens; a prova completa tem 180, usando apenas o idioma escolhido. Os itens seguem a ordem do caderno azul. A divisão das áreas acompanha a edição: até 2016, Humanas e Natureza no primeiro dia e Linguagens/Matemática no segundo; de 2017 em diante, Linguagens/Humanas no primeiro e Natureza/Matemática no segundo.
+
+O tempo sugerido acompanha a capa dos cadernos originais: 270/330 minutos em 2010–2016, 330/270 em 2017 e 330/300 de 2018 em diante. É possível ajustar o tempo de treino. A objetiva completa soma as duas durações em uma sessão; o exame real ocorre em dias separados. O tempo do dia com redação inclui essa atividade. A proposta pode ser consultada no PDF, mas o site não corrige redações.
+
+As respostas e marcações para revisão são salvas imediatamente. O cronômetro continua ao trocar de aba ou fechar o navegador, até ser pausado explicitamente. A prova pode ser retomada, inclusive por exportação/importação do progresso. Ao esgotar o tempo, ela é encerrada e corrigida. Finalizar manualmente exige confirmar, mostrando quantos itens estão em branco.
+
+O resultado informa acertos, erros, itens em branco e anulados por área, sem estimar TRI. Os gabaritos são revelados somente no resultado, com revisão de todos os itens ou apenas erros e questões em branco. As respostas finalizadas também entram no progresso do ENEM, preservando a primeira tentativa já registrada. O histórico fica na seção de simulados e acompanha o backup.
+
+`enem-sim.js` e `enem-sim.css` implementam o recurso. A amostra `Previa-ENEM.html` inclui 2025 inteiro para testar as duas línguas e os dois dias; o pacote completo oferece todos os 16 anos. O simulado personalizado da FURG continua disponível. As mudanças integram a versão publicada do site.

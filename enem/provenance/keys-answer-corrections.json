@@ -1,0 +1,233 @@
+[
+  {
+    "id": "enem-2009-120",
+    "oldAnswer": "D",
+    "newAnswer": "C",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2010-112",
+    "oldAnswer": "A",
+    "newAnswer": "C",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2010-138",
+    "oldAnswer": "E",
+    "newAnswer": "D",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2010-139",
+    "oldAnswer": "A",
+    "newAnswer": "B",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2011-81",
+    "oldAnswer": "B",
+    "newAnswer": "D",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2012-165",
+    "oldAnswer": "E",
+    "newAnswer": "C",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2018-15",
+    "oldAnswer": "C",
+    "newAnswer": "D",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2018-163",
+    "oldAnswer": "A",
+    "newAnswer": null,
+    "oldCanceled": false,
+    "newCanceled": true
+  },
+  {
+    "id": "enem-2020-135",
+    "oldAnswer": "A",
+    "newAnswer": null,
+    "oldCanceled": false,
+    "newCanceled": true
+  },
+  {
+    "id": "enem-2020-157",
+    "oldAnswer": "B",
+    "newAnswer": null,
+    "oldCanceled": false,
+    "newCanceled": true
+  },
+  {
+    "id": "enem-2021-15",
+    "oldAnswer": "E",
+    "newAnswer": "D",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2021-25",
+    "oldAnswer": "E",
+    "newAnswer": "B",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2021-38",
+    "oldAnswer": "A",
+    "newAnswer": "C",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2021-53",
+    "oldAnswer": "A",
+    "newAnswer": "B",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2021-138",
+    "oldAnswer": "A",
+    "newAnswer": null,
+    "oldCanceled": false,
+    "newCanceled": true
+  },
+  {
+    "id": "enem-2021-139",
+    "oldAnswer": "A",
+    "newAnswer": "E",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2021-145",
+    "oldAnswer": "A",
+    "newAnswer": "C",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2021-152",
+    "oldAnswer": "D",
+    "newAnswer": "E",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2022-143",
+    "oldAnswer": "A",
+    "newAnswer": "D",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2022-157",
+    "oldAnswer": "E",
+    "newAnswer": null,
+    "oldCanceled": false,
+    "newCanceled": true
+  },
+  {
+    "id": "enem-2023-164",
+    "oldAnswer": "D",
+    "newAnswer": null,
+    "oldCanceled": false,
+    "newCanceled": true
+  },
+  {
+    "id": "enem-2024-2-espanhol",
+    "oldAnswer": "A",
+    "newAnswer": "D",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2024-3-espanhol",
+    "oldAnswer": "A",
+    "newAnswer": "D",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2024-4-espanhol",
+    "oldAnswer": "A",
+    "newAnswer": "D",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2024-5-espanhol",
+    "oldAnswer": "E",
+    "newAnswer": "A",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2024-129",
+    "oldAnswer": null,
+    "newAnswer": null,
+    "oldCanceled": false,
+    "newCanceled": true
+  },
+  {
+    "id": "enem-2025-1-espanhol",
+    "oldAnswer": "D",
+    "newAnswer": "B",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2025-2-espanhol",
+    "oldAnswer": "D",
+    "newAnswer": "A",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2025-4-espanhol",
+    "oldAnswer": "E",
+    "newAnswer": "D",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2025-5-espanhol",
+    "oldAnswer": "A",
+    "newAnswer": "C",
+    "oldCanceled": false,
+    "newCanceled": false
+  },
+  {
+    "id": "enem-2025-123",
+    "oldAnswer": null,
+    "newAnswer": null,
+    "oldCanceled": false,
+    "newCanceled": true
+  },
+  {
+    "id": "enem-2025-132",
+    "oldAnswer": null,
+    "newAnswer": null,
+    "oldCanceled": false,
+    "newCanceled": true
+  },
+  {
+    "id": "enem-2025-174",
+    "oldAnswer": null,
+    "newAnswer": null,
+    "oldCanceled": false,
+    "newCanceled": true
+  }
+]

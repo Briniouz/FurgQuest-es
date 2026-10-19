@@ -1,0 +1,40 @@
+{
+  "regularYears": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "pdfFiles": 68,
+  "pdfBytes": 108632258,
+  "answers": 3140,
+  "sourcePatches": 29,
+  "answerCorrections": 33,
+  "missingQuestionRestorations": 13,
+  "incompleteOptionListRestorations": 7,
+  "additionalGraphOptionsRestoration": "enem-2023-132",
+  "figureItemsVerified": 8,
+  "canceledCount": 11,
+  "validation": [
+    "34 cadernos regulares azuis e 34 gabaritos são PDFs válidos.",
+    "3.140 IDs de gabarito únicos: 180 itens em 2009 e 185 por ano de 2010 a 2025, incluindo inglês e espanhol.",
+    "Todas as alternativas restauradas contêm cinco opções utilizáveis.",
+    "Todos os arquivos referenciados nos patches existem em keys/enem ou modern/enem.",
+    "Recortes de figuras conferidos visualmente.",
+    "Cadernos de 2011 substituídos por cópias SEMGAB sem respostas marcadas.",
+    "Em 2010 o Inep publica cadernos com gabarito marcado; as 185 marcações vetoriais foram extraídas e vinculadas às alternativas A–E."
+  ]
+}

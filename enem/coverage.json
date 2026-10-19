@@ -1,0 +1,291 @@
+{
+  "total": 3833,
+  "coverage": [
+    {
+      "year": 1998,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 1999,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2000,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2001,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2002,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2003,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2004,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2005,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2006,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2007,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2008,
+      "application": "regular",
+      "label": "Regular",
+      "count": 63,
+      "expected": 63,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2009,
+      "application": "regular",
+      "label": "Regular",
+      "count": 180,
+      "expected": 180,
+      "blocked": 0,
+      "canceled": 1,
+      "note": "Gabaritos conferidos · 1 anulada(s)"
+    },
+    {
+      "year": 2010,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2011,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2012,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2013,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2014,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2015,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2016,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2017,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2018,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 1,
+      "note": "Gabaritos conferidos · 1 anulada(s)"
+    },
+    {
+      "year": 2019,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 0,
+      "note": "Gabaritos conferidos"
+    },
+    {
+      "year": 2020,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 2,
+      "note": "Gabaritos conferidos · 2 anulada(s)"
+    },
+    {
+      "year": 2021,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 1,
+      "note": "Gabaritos conferidos · 1 anulada(s)"
+    },
+    {
+      "year": 2022,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 1,
+      "note": "Gabaritos conferidos · 1 anulada(s)"
+    },
+    {
+      "year": 2023,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 1,
+      "note": "Gabaritos conferidos · 1 anulada(s)"
+    },
+    {
+      "year": 2024,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 1,
+      "note": "Gabaritos conferidos · 1 anulada(s)"
+    },
+    {
+      "year": 2025,
+      "application": "regular",
+      "label": "Regular",
+      "count": 185,
+      "expected": 185,
+      "blocked": 0,
+      "canceled": 3,
+      "note": "Gabaritos conferidos · 3 anulada(s)"
+    }
+  ],
+  "canceled": 11,
+  "blocked": 0,
+  "sha256": "fd0b9eef41162b96248c1c5c7c39573dc371a3f87ba03ebb04ab20e2d1f85081",
+  "missingAssets": [],
+  "incomplete": [],
+  "unverifiedKeys": []
+}

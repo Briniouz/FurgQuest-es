@@ -1,5 +1,5 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
-const html=fs.readFileSync('index.html','utf8'),ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
+const previewFile=process.argv[2],progressKey=previewFile?'furg-questoes-enem-preview-v1':'furg-questoes-progress-v1',html=fs.readFileSync(previewFile||'index.html','utf8'),markup=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g,''),ids=[...markup.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
 assert.equal(new Set(ids).size,ids.length,'Duplicate HTML ID');
 for(const[,file]of html.matchAll(/(?:src|href)="([^"?#]+\.(?:js|css))(?:\?[^"]*)?"/g))assert(fs.existsSync(file),file);
 const db=JSON.parse(fs.readFileSync('data.json','utf8')),refs=new Set();
@@ -19,12 +19,13 @@ class Element{
 }
 const $=id=>{if(!els.has(id))els.set(id,new Element(id));return els.get(id);};ids.forEach($);$('loadError').hidden=true;
 for(const id of ['subject','year','edition','skill','search','archiveSearch','simSubject','simYear'])$(id).value='';
-const nav=['banco','simulados','desempenho','trilhas','leituras','acervo'].map(v=>{const e=new Element();e.dataset.view=v;return e;}),views=nav.map(n=>{const e=$(n.dataset.view);e.classList.toggle('active',e.id==='banco');return e;});
+const nav=['banco','enem','simulados','desempenho','trilhas','leituras','acervo'].map(v=>{const e=new Element();e.dataset.view=v;return e;}),views=nav.map(n=>{const e=$(n.dataset.view);e.classList.toggle('active',e.id==='banco');return e;});
 const radios={status:[],order:[]};for(const[group,values]of Object.entries({status:['all','unanswered','answered','correct','wrong','favorites'],order:['recent','old','random']})){for(const value of values){const e=new Element();e.value=value;e.parentElement={textContent:value};e._checked=radios[group].length===0;Object.defineProperty(e,'checked',{get(){return this._checked;},set(v){if(v)radios[group].forEach(r=>r._checked=false);this._checked=v;}});radios[group].push(e);}}
 const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:{appendChild(){}},createElement:()=>new Element(),querySelectorAll(sel){if(sel==='.nav')return nav;if(sel==='.view')return views;if(sel==='[name=status],[name=order]')return [...radios.status,...radios.order];return [];},querySelector(sel){if(sel==='.view.active')return views.find(e=>e.classList.contains('active'));if(sel==='meta[name="theme-color"]')return $('meta');if(sel==='.simulation-builder')return $('builder');const name=sel.match(/name=(status|order)/)?.[1];if(name){const val=sel.match(/value=([a-z]+)/)?.[1];return val?radios[name].find(r=>r.value===val):radios[name].find(r=>r.checked);}return null;},addEventListener(type,fn){(events['document:'+type]??=[]).push(fn);}};
 const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
 const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco'},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
-for(const file of ['skills-data.js','flashcards-data.js','flashcards.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+if(previewFile){for(const [i,match]of [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].entries())vm.runInContext(match[1],ctx,{filename:'preview-inline-'+i});}
+else for(const file of ['skills-data.js','flashcards-data.js','flashcards.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','enem.js','enem-sim.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
 assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,570);assert.equal(model.skills.length,119);
@@ -35,7 +36,7 @@ $('skill').value='logaritmos';vm.runInContext('applyFilters()',ctx);const select
 vm.runInContext('clearFilters()',ctx);assert.equal($('skill').value,'');assert.equal(vm.runInContext('filtered.length',ctx),2091);
 function skillClick(action,id){const b={dataset:{skillAction:action,skill:id,subject:id},disabled:false};for(const fn of events['document:click']||[])fn({target:{closest:s=>s.includes('data-skill-action')?b:null}});}
 skillClick('open','matrizes');assert.equal(vm.runInContext('view',ctx),'trilhas');assert($('skillsRoot').innerHTML.includes('Matrizes'));
-skillClick('review','matrizes');assert(vm.runInContext('state.skills.reviewed.matrizes',ctx));assert(JSON.parse(storage.get('furg-questoes-progress-v1')).skills.reviewed.matrizes);
+skillClick('review','matrizes');assert(vm.runInContext('state.skills.reviewed.matrizes',ctx));assert(JSON.parse(storage.get(progressKey)).skills.reviewed.matrizes);
 skillClick('practice','logaritmos');assert.equal(vm.runInContext('view',ctx),'banco');assert.equal($('skill').value,'logaritmos');assert.equal($('subject').value,'Matemática');
 const first=vm.runInContext('filtered[0]',ctx);$('answerOptions').querySelectorAll('button')[0].click();$('confirmAnswer').click();assert.equal(vm.runInContext('state.answers[filtered[0].id].choice',ctx),'A');assert.equal(vm.runInContext('state.answers[filtered[0].id].firstChoice',ctx),'A');assert(!$('feedback').hidden);
 for(const [subject,topic] of [['Física','fis-newton'],['Química','qui-estequiometria']]){skillClick('subject',subject);assert($('skillsRoot').innerHTML.includes(subject));skillClick('open',topic);assert($('skillsRoot').innerHTML.includes('BASE · Matemática'));skillClick('practice',topic);assert.equal($('subject').value,subject);assert.equal($('skill').value,topic);const subset=vm.runInContext('filtered.map(q=>({id:q.id,subject:q.subject}))',ctx);assert(subset.length>0);assert(subset.every(q=>q.subject===subject&&model.questions[q.id].topics.includes(topic)));skillClick('review',topic);assert(vm.runInContext('state.skills.reviewed['+JSON.stringify(topic)+']',ctx));}
@@ -81,19 +82,81 @@ function checkStudy(){
   assert.equal(errors.length,0);
 }
 checkStudy();
+function checkEnem(){
+  const enem=ctx.FURG_ENEM_DATA,byId=new Map(enem.questions.map(q=>[q.id,q]));
+  assert(enem.questions.length>=(previewFile?20:3140));assert.equal(byId.size,enem.questions.length);
+  const tuples=enem.questions.map(q=>[q.year,q.application,q.index,q.language||''].join('/'));assert.equal(new Set(tuples).size,tuples.length);
+  for(const q of enem.questions){
+    assert.equal(q.alternatives.length,5,q.id);assert.equal(new Set(q.alternatives.map(a=>a.letter)).size,5,q.id);
+    assert(q.canceled||/^[A-E]$/.test(q.answer),q.id);assert(q.alternatives.every(a=>a.text||a.file),q.id);
+    assert(!q.quality?.blocked,q.id+' is still in review');
+    const paths=new Set(JSON.stringify(q).match(/enem\/(?:figures|images|restored|pdfs)\/[a-zA-Z0-9_./%-]+\.(?:png|jpe?g|webp|svg|pdf)/g)||[]);
+    for(const path of paths){assert(fs.existsSync(path),q.id+' missing '+path);if(!path.endsWith('.pdf')){const expected=previewFile?ctx.FURG_PREVIEW_IMAGES[path]:path;assert(expected,q.id+' missing embedded image');assert(ctx.FurgEnem.markdown('![]('+path+')').includes('src="'+expected+'"'),q.id+' figure not rendered: '+path);}}
+  }
+  for(const row of enem.coverage)assert.equal(row.count,row.expected,JSON.stringify(row));
+  if(!previewFile){assert.equal(byId.get('enem-2009-1').area,'ciencias-natureza');assert.equal(byId.get('enem-2009-46').area,'ciencias-humanas');}
+  if(!previewFile&&byId.has('enem-1998-1')){
+    assert.equal(byId.get('enem-1998-1').context,byId.get('enem-1998-2').context);assert(byId.get('enem-1998-1').files.length>0);
+    assert.equal(byId.get('enem-1998-4').context,byId.get('enem-1998-5').context);
+    for(const id of ['enem-2002-20','enem-2002-22','enem-2006-10']){const alts=byId.get(id).alternatives;assert(alts.every(a=>a.file),id+' needs five visual alternatives');assert.equal(new Set(alts.map(a=>a.file)).size,5);}
+    assert.equal(byId.get('enem-1999-2').alternatives[4].text,'5');assert(!JSON.stringify(byId.get('enem-2005-46').alternatives).includes('AMARELA'));
+  }
+  const unsafe=ctx.FurgEnem.markdown('<script>alert(1)</script> ![x](javascript:alert(1)) <sup>2</sup> <img src=x onerror=x>');assert(!unsafe.includes('<script>'));assert(!unsafe.includes('<img'));assert(unsafe.includes('<sup>2</sup>'));
+  vm.runInContext("setView('enem')",ctx);assert.equal(vm.runInContext('view',ctx),'enem');assert($('enemRoot').innerHTML.includes('Texto + figuras'));
+  function click(action,extra={}){const button={dataset:{enem:action,...extra},disabled:false};for(const fn of events['enemRoot:click']||[])fn({target:{closest:()=>button}});}
+  function current(){const id=$('enemQuestionRoot').innerHTML.match(/data-question-id="([^"]+)"/)?.[1];assert(id,'No visible ENEM question');return byId.get(id);}
+  $('enemYear').value='2025';$('enemYear').onchange();click('area',{area:'matematica'});let q=current();assert.equal(q.year,2025);assert.equal(q.area,'matematica');
+  const wrong=q.answer==='A'?'B':'A';click('choose',{letter:wrong});click('confirm');assert($('enemQuestionRoot').innerHTML.includes('A resposta correta é '+q.answer));assert.equal(ctx.FurgEnem.metrics().correct,0);assert.equal(ctx.FurgEnem.metrics().answered,1);
+  click('favorite');$('enemNote').value='Rever a proporção e as unidades.';$('enemNote').oninput();assert.equal(JSON.parse(storage.get(progressKey)).enem.notes[q.id],'Rever a proporção e as unidades.');
+  $('enemStatus').value='wrong';$('enemStatus').onchange();assert.equal(current().id,q.id);
+  click('retry');click('choose',{letter:q.answer});click('confirm');assert($('enemQuestionRoot').innerHTML.includes('Tu acertou!'));assert.equal(ctx.FurgEnem.metrics().correct,0,'Retry rewrote the first attempt');assert.equal(vm.runInContext('state.enem.answers['+JSON.stringify(q.id)+'].attempts',ctx),2);
+  $('enemStatus').value='favorites';$('enemStatus').onchange();assert.equal(current().id,q.id);
+  click('clear');$('enemYear').value='2025';$('enemLanguage').value='ingles';$('enemYear').onchange();click('area',{area:'linguagens'});assert.equal(current().language,'ingles');
+  $('enemLanguage').value='espanhol';$('enemLanguage').onchange();assert.equal(current().language,'espanhol');
+  $('enemSearch').value='zzzz-sem-correspondencia-928';$('enemSearch').onkeydown({key:'Enter'});assert($('enemQuestionRoot').innerHTML.includes('Nenhuma questão'));
+  click('clear');q=current();const before=ctx.FurgEnem.metrics().answered;click('show');assert($('enemQuestionRoot').innerHTML.includes('Gabarito: alternativa '+q.answer));assert.equal(ctx.FurgEnem.metrics().answered,before,'Viewing counted as answering');
+  const bankIndex=vm.runInContext('index',ctx),oldId=current().id;let prevented=false;for(const fn of events['document:keydown']||[])fn({key:'ArrowRight',target:{closest:()=>null},preventDefault(){prevented=true;}});assert(prevented);assert.notEqual(current().id,oldId);assert.equal(vm.runInContext('index',ctx),bankIndex,'ENEM keyboard moved the FURG bank');
+  const canceled=enem.questions.find(q=>q.canceled&&q.year===2025&&q.area==='matematica');assert(canceled);click('clear');$('enemYear').value='2025';$('enemSearch').value=(canceled.context||canceled.stem).split('\n')[0];$('enemYear').onchange();assert.equal(current().id,canceled.id);const countBefore=ctx.FurgEnem.metrics().answered;click('choose',{letter:'A'});click('confirm');assert.equal(ctx.FurgEnem.metrics().answered,countBefore);assert($('enemQuestionRoot').innerHTML.includes('Questão anulada no gabarito oficial'));
+  const cleaned=ctx.FurgEnem.validate({answers:{[q.id]:{choice:'A',firstChoice:'Z',attempts:Infinity},unknown:{choice:'B'}},notes:{[q.id]:'x'.repeat(21000),unknown:'discard'},favorites:{unknown:true,[q.id]:true}});assert.equal(Object.keys(cleaned.answers).length,1);assert.equal(cleaned.answers[q.id].firstChoice,'A');assert.equal(cleaned.answers[q.id].attempts,100000);assert.equal(cleaned.notes[q.id].length,20000);assert(!cleaned.favorites.unknown);
+  vm.runInContext("setView('desempenho')",ctx);assert($('enemStats').textContent.includes('ENEM: 1/'));assert.equal(errors.length,0);
+  console.log('PASS: ENEM coverage, local figures/PDFs, filters, answers, annulled grading, first attempt, notes, favorites, keyboard isolation and safe rendering ('+enem.questions.length+' questions).');
+}
+checkEnem();
 async function checkProfile(){
   const png='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aKq0AAAAASUVORK5CYII=';
   const clean=ctx.FurgProfile.validate({name:'  Ana   Maria  ',photo:png});assert.equal(clean.name,'Ana Maria');assert.equal(clean.photo,png);assert.equal(ctx.FurgProfile.initials('Ana Maria'),'AM');
   for(const photo of ['https://example.com/photo.png','javascript:alert(1)','data:image/svg+xml;base64,PHN2Zz4=','data:image/jpeg;base64,bm90LWFuLWltYWdl','data:image/jpeg;base64,/9j/'+ 'A'.repeat(200000)])assert.equal(ctx.FurgProfile.validate({photo}).photo,'');
   await assert.rejects(ctx.FurgProfile.preparePhoto({type:'application/pdf',size:10}),/JPG/);await assert.rejects(ctx.FurgProfile.preparePhoto({type:'image/jpeg',size:11*1024*1024}),/10 MB/);
-  $('profileEdit').click();$('profileName').value='Ana Maria';for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert.equal(JSON.parse(storage.get('furg-questoes-progress-v1')).profile.name,'Ana Maria');assert.equal($('profileDisplayName').textContent,'Ana Maria');
-  vm.runInContext('state.profile='+JSON.stringify(clean),ctx);ctx.FurgProfile.refresh();$('exportProgress').click();const backup=JSON.parse(await exported.at(-1).text());assert.equal(backup.profile.photo,png);assert.equal(backup.profile.name,'Ana Maria');
+  $('profileEdit').click();$('profileName').value='Ana Maria';for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert.equal(JSON.parse(storage.get(progressKey)).profile.name,'Ana Maria');assert.equal($('profileDisplayName').textContent,'Ana Maria');
+  vm.runInContext('state.profile='+JSON.stringify(clean),ctx);ctx.FurgProfile.refresh();$('exportProgress').click();const backup=JSON.parse(await exported.at(-1).text());assert.equal(backup.profile.photo,png);assert.equal(backup.profile.name,'Ana Maria');assert.equal(Object.keys(backup.enem.answers).length,2);
   async function importBackup(value){const text=JSON.stringify(value);await $('progressFile').onchange({target:{files:[{size:Buffer.byteLength(text),text:async()=>text}],value:'chosen.json'}});}
   vm.runInContext("state.profile={name:'Outro nome',photo:''}",ctx);await importBackup(backup);assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert.equal(vm.runInContext('state.profile.photo',ctx),png);assert.equal($('profileDisplayName').textContent,'Ana Maria');
-  await importBackup({version:1,answers:{}});assert.equal(vm.runInContext('state.profile.photo',ctx),png);assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert(!Object.hasOwn(legacy,'profile'));
+  await importBackup({version:1,answers:{}});assert.equal(vm.runInContext('state.profile.photo',ctx),png);assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert(!Object.hasOwn(legacy,'profile'));assert.equal(vm.runInContext('Object.keys(state.enem.answers).length',ctx),2);assert.equal(Object.keys(legacy.enem.answers).length,0);
   $('profileEdit').click();$('profileRemovePhoto').click();for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.photo',ctx),'');assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');
   $('profileEdit').click();$('profileName').value='Descartar';$('profileCancel').click();assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');
   const originalSetItem=ctx.localStorage.setItem;ctx.localStorage.setItem=()=>{throw Error('quota');};$('profileEdit').click();$('profileName').value='Não salvar';for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert($('profileMessage').textContent.includes('Não foi possível'));ctx.localStorage.setItem=originalSetItem;$('profileCancel').click();
   console.log('PASS: existing site flows, 570 tagged questions, 119 paths, 595 flashcards (reveal, navigation, restart, focus and keyboard isolation), 36 literary sections, 6 original excerpts and 60 reading questions; profile export/import and legacy progress preserved.');
 }
-checkProfile().catch(error=>{console.error(error);process.exitCode=1;});
+async function checkEnemSimulations(){
+  const sim=ctx.FurgEnemSim,snapshot=vm.runInContext('JSON.stringify(state)',ctx);
+  assert(sim.years.length>0);assert(sim.years.every(y=>y>=2010));assert(!sim.years.includes(2009));if(!previewFile)assert.equal(sim.years.length,16);
+  for(const year of sim.years)for(const day of ['1','2','all'])for(const language of ['ingles','espanhol']){const q=sim.exam(year,day,language);assert.equal(q.length,day==='all'?180:90);assert.equal(new Set(q.map(q=>q.index)).size,q.length);assert(q.every(q=>!q.language||q.language===language));for(let i=1;i<q.length;i++)assert(q[i].index>q[i-1].index);}
+  if(!previewFile){assert(sim.exam(2016,'1').every(q=>['ciencias-humanas','ciencias-natureza'].includes(q.area)));assert(sim.exam(2016,'2').every(q=>['linguagens','matematica'].includes(q.area)));assert.equal(sim.minutes(2016,'1'),270);assert.equal(sim.minutes(2016,'2'),330);}
+  assert.equal(sim.minutes(2017,'2'),270);assert.equal(sim.minutes(2018,'2'),300);
+  vm.runInContext("setView('simulados')",ctx);assert($('enemSimRoot').innerHTML.includes('A prova daquele ano'));
+  function click(action,extra={}){for(const fn of events['enemSimRoot:click']||[])fn({target:{closest:()=>({dataset:{enemSim:action,...extra},disabled:false})}});}
+  $('enemExamYear').value='2025';$('enemExamDay').value='2';$('enemExamLanguage').value='ingles';$('enemExamMinutes').value='1';click('start');
+  let active=vm.runInContext('state.enemSim.active',ctx);assert.equal(active.ids.length,90);assert.equal(active.ids[0],'enem-2025-91');assert(!$('enemSimRoot').innerHTML.includes('Gabarito:'));assert($('furgSimSection').hidden);
+  const ids=[...active.ids],byId=new Map(ctx.FURG_ENEM_DATA.questions.map(q=>[q.id,q])),right=byId.get(ids[0]).answer,second=byId.get(ids[1]);
+  click('choose',{letter:right});click('mark');click('next');click('choose',{letter:second.answer==='A'?'B':'A'});click('blank');assert(!vm.runInContext('state.enemSim.active.answers['+JSON.stringify(ids[1])+']',ctx));click('choose',{letter:second.answer==='A'?'B':'A'});
+  click('pause');assert(vm.runInContext('state.enemSim.active.paused',ctx));const pausedRemaining=vm.runInContext('state.enemSim.active.remainingMs',ctx);assert(!sim.handleKey('A'));sim.tick();assert.equal(vm.runInContext('state.enemSim.active.remainingMs',ctx),pausedRemaining);
+  vm.runInContext('globalThis.FurgEnemSim.init({getState:()=>state,save,toast})',ctx);assert(vm.runInContext('state.enemSim.active.marked['+JSON.stringify(ids[0])+']',ctx));assert.equal(vm.runInContext('state.enemSim.active.answers['+JSON.stringify(ids[0])+']',ctx),right);
+  $('exportProgress').click();let backup=JSON.parse(await exported.at(-1).text());assert.equal(backup.enemSim.active.ids.length,90);const imported=vm.runInContext('validateProgress('+JSON.stringify(backup)+')',ctx);assert.equal(imported.enemSim.active.language,'ingles');assert(sim.merge(imported.enemSim,{active:null,history:[]}).active);
+  click('pause');click('finish');assert(vm.runInContext('state.enemSim.active',ctx));click('continue');assert(!$('enemSimRoot').innerHTML.includes('Finalizar e conferir?'));click('finish');click('finish-confirm');
+  assert.equal(vm.runInContext('state.enemSim.active',ctx),null);let history=vm.runInContext('state.enemSim.history',ctx);assert.equal(history.length,1);const score=sim.score(history[0]);assert.equal(score.correct,1);assert.equal(score.wrong,1);assert.equal(score.annulled,3);assert.equal(score.correct+score.wrong+score.blank,score.graded);assert($('enemSimRoot').innerHTML.includes('Gabarito:'));assert(!$('furgSimSection').hidden);
+  click('review-filter');assert($('enemSimRoot').innerHTML.includes(ids[1]));click('new');$('enemExamYear').value='2025';$('enemExamDay').value='1';$('enemExamLanguage').value='espanhol';$('enemExamMinutes').value='1';click('start');assert(vm.runInContext('state.enemSim.active.ids[0]',ctx).endsWith('-espanhol'));vm.runInContext('state.enemSim.active.endsAt=Date.now()-1',ctx);sim.tick();assert.equal(vm.runInContext('state.enemSim.active',ctx),null);assert(vm.runInContext('state.enemSim.history.at(-1).expired',ctx));
+  $('exportProgress').click();backup=JSON.parse(await exported.at(-1).text());assert.equal(sim.validate(backup.enemSim).history.length,2);assert.equal(sim.merge(backup.enemSim,backup.enemSim).history.length,2);assert.equal(sim.validate({active:{year:2009},history:[{year:2009}]}).active,null);
+  vm.runInContext('state='+snapshot,ctx);vm.runInContext('globalThis.FurgEnemSim.init({getState:()=>state,save,toast})',ctx);
+  assert.equal(errors.length,0);console.log('PASS: annual ENEM simulations 2010+, both days/languages, original order, hidden keys, pause/resume, persisted answers, export/import, completion, annulments, review and time expiry.');
+}
+checkProfile().then(checkEnemSimulations).catch(error=>{console.error(error);process.exitCode=1;});
