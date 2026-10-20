@@ -113,3 +113,5 @@ A aba **Level Up** (`#evolucao`) tem 30 questões autorais em 10 níveis. Começ
 Cada questão oferece dica e explicação. Resolver as três questões da etapa libera a seguinte. O XP é calculado pelas conquistas únicas (10 por questão e 20 por etapa, até 500), sem duplicar em revisões. O progresso fica no navegador e acompanha o JSON de exportação/importação existente. Arquivos antigos continuam compatíveis.
 
 Fuvest, EsPCEx, ITA e IME são etapas futuras; nenhuma questão dessas provas foi importada para o protótipo.
+
+As 49 trilhas de Matemática incluem explicação breve e exemplo autoral resolvido em três passos, com resultado e tabelas para matrizes. O exemplo fica aberto inicialmente e pode ser recolhido.

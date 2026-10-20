@@ -25,7 +25,7 @@ const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:
 const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
 const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco'},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
 if(previewFile){for(const [i,match]of [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].entries())vm.runInContext(match[1],ctx,{filename:'preview-inline-'+i});}
-else for(const file of ['skills-data.js','flashcards-data.js','flashcards.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','enem.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+else for(const file of ['skills-data.js','flashcards-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','enem.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
 assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,570);assert.equal(model.skills.length,119);
@@ -82,6 +82,15 @@ function checkStudy(){
   assert.equal(errors.length,0);
 }
 checkStudy();
+function checkMathLessons(){
+  const lessons=ctx.FURG_MATH_LESSONS,subjects=model.skills.filter(s=>s.subject==='Matemática');
+  assert.equal(Object.keys(lessons).length,49);assert.equal(subjects.length,49);
+  for(const skill of subjects){const lesson=lessons[skill.id];assert(lesson,skill.id);assert(lesson.explanation.length>60,skill.id);assert(lesson.prompt.length>5,skill.id);assert.equal(lesson.steps.length,3,skill.id);assert(lesson.steps.every(s=>typeof s==='string'&&s.length>5),skill.id);assert(lesson.result.length>10,skill.id);skillClick('open',skill.id);const html=$('skillsRoot').innerHTML;assert(html.includes('Em poucas palavras'),skill.id);assert(html.includes('Exemplo resolvido'),skill.id);assert(html.includes(vm.runInContext('esc('+JSON.stringify(lesson.result)+')',ctx)),skill.id);assert(html.includes('<details class="skill-worked" open>'),skill.id);}
+  for(const matrix of lessons.matrizes.matrices){assert.equal(matrix.rows.length,2);assert(matrix.rows.every(row=>row.length===2));}assert.equal(lessons.matrizes.matrices[1].rows[1][0],6);
+  skillClick('open','fis-newton');assert(!$('skillsRoot').innerHTML.includes('skill-lesson'));skillClick('open','qui-estequiometria');assert(!$('skillsRoot').innerHTML.includes('skill-lesson'));
+  console.log('PASS: all 49 mathematics paths have a short explanation, three worked steps, result and accessible matrix tables; physics and chemistry preserved.');
+}
+if(!previewFile)checkMathLessons();
 function checkEnem(){
   const enem=ctx.FURG_ENEM_DATA,byId=new Map(enem.questions.map(q=>[q.id,q]));
   assert(enem.questions.length>=(previewFile?20:3140));assert.equal(byId.size,enem.questions.length);
