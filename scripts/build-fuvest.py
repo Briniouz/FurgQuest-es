@@ -224,3 +224,7 @@ if not a.year:
     for stale in images.glob('*.webp'):
         if stale.relative_to(ROOT).as_posix() not in active:stale.unlink()
     print('TOTAL',len(all_q),'questions',sum(p.stat().st_size for p in images.glob('*.webp')),'image bytes')
+
+if not a.year:
+    import subprocess,sys
+    subprocess.run([sys.executable,str(ROOT/"scripts/prepare-fuvest-study.py")],check=True)

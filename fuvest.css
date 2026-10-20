@@ -1,4 +1,4 @@
-.fuvest-filters{grid-template-columns:minmax(200px,2fr) minmax(120px,1fr) minmax(160px,1fr)}
+.fuvest-filters{grid-template-columns:repeat(4,minmax(0,1fr))}.fuvest-filters .enem-search{grid-column:1/-1}
 .fuvest-originals{display:grid;gap:16px;margin:22px 0;overflow:hidden}
 .fuvest-originals .enem-figure{display:block;width:auto;max-width:100%;height:auto;max-height:none;margin:0 auto;background:#fff;border-radius:8px;border:1px solid var(--line);padding:8px;box-sizing:border-box}
 .fuvest-transcription{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:20px 0}
@@ -8,3 +8,5 @@
 .fuvest-options .enem-option{justify-content:center;padding:14px 8px;min-height:58px}
 .fuvest-options .enem-option span{display:none}
 @media(max-width:650px){.fuvest-filters{grid-template-columns:1fr 1fr}.fuvest-filters .enem-search{grid-column:1/-1}.fuvest-options{gap:6px}.fuvest-originals .enem-figure{padding:3px;border-radius:5px}}
+
+.fuvest-reading{font-size:17px;line-height:1.85;margin:24px 0;user-select:text}.fuvest-text-options{grid-template-columns:1fr}.fuvest-text-options .enem-option{align-items:flex-start}.fuvest-text-options .enem-option span{min-width:0;user-select:text}.fuvest-source-original{margin-top:22px}

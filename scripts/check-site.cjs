@@ -25,12 +25,12 @@ const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:
 const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
 const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco'},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
 if(previewFile){for(const [i,match]of [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].entries())vm.runInContext(match[1],ctx,{filename:'preview-inline-'+i});}
-else for(const file of ['skills-data.js','flashcards-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','enem.js','fuvest-data.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+else for(const file of ['skills-data.js','flashcards-data.js','biology-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','enem.js','fuvest-data.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
-assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,570);assert.equal(model.skills.length,119);
-for(const q of db.questions.filter(q=>['Matemática','Física','Química'].includes(q.subject))){const t=model.questions[q.id];assert(t&&t.topics.length&&t.needs.length>=2,q.id);assert(ctx.FurgSkills.forQuestion(q).includes('O que preciso saber?'));}
-assert.equal(ctx.FurgSkills.forQuestion(db.questions.find(q=>q.subject==='Biologia')),'');
+assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,765);assert.equal(model.skills.length,144);
+for(const q of db.questions.filter(q=>['Matemática','Física','Química','Biologia'].includes(q.subject))){const t=model.questions[q.id];assert(t&&t.topics.length&&t.needs.length>=2,q.id);assert(ctx.FurgSkills.forQuestion(q).includes('O que preciso saber?'));}
+assert.equal(ctx.FurgSkills.forQuestion(db.questions.find(q=>q.subject==='História')),'');
 for(const skill of model.skills){const path=ctx.FurgSkills.pathway(skill.id),pos=new Map(path.map((s,i)=>[s.id,i]));assert.equal(path.at(-1).id,skill.id);for(const s of path)for(const p of s.prerequisites)assert(pos.get(p)<pos.get(s.id),s.id);}
 $('skill').value='logaritmos';vm.runInContext('applyFilters()',ctx);const selected=vm.runInContext('filtered.map(q=>q.id)',ctx);assert(selected.length>0);assert(selected.every(id=>model.questions[id].topics.includes('logaritmos')));
 vm.runInContext('clearFilters()',ctx);assert.equal($('skill').value,'');assert.equal(vm.runInContext('filtered.length',ctx),2091);
@@ -40,7 +40,7 @@ skillClick('review','matrizes');assert(vm.runInContext('state.skills.reviewed.ma
 skillClick('practice','logaritmos');assert.equal(vm.runInContext('view',ctx),'banco');assert.equal($('skill').value,'logaritmos');assert.equal($('subject').value,'Matemática');
 const first=vm.runInContext('filtered[0]',ctx);$('answerOptions').querySelectorAll('button')[0].click();$('confirmAnswer').click();assert.equal(vm.runInContext('state.answers[filtered[0].id].choice',ctx),'A');assert.equal(vm.runInContext('state.answers[filtered[0].id].firstChoice',ctx),'A');assert(!$('feedback').hidden);
 for(const [subject,topic] of [['Física','fis-newton'],['Química','qui-estequiometria']]){skillClick('subject',subject);assert($('skillsRoot').innerHTML.includes(subject));skillClick('open',topic);assert($('skillsRoot').innerHTML.includes('BASE · Matemática'));skillClick('practice',topic);assert.equal($('subject').value,subject);assert.equal($('skill').value,topic);const subset=vm.runInContext('filtered.map(q=>({id:q.id,subject:q.subject}))',ctx);assert(subset.length>0);assert(subset.every(q=>q.subject===subject&&model.questions[q.id].topics.includes(topic)));skillClick('review',topic);assert(vm.runInContext('state.skills.reviewed['+JSON.stringify(topic)+']',ctx));}
-$('subject').value='Biologia';vm.runInContext('applyFilters()',ctx);assert.equal($('skill').value,'');assert($('skill').disabled);assert.equal(vm.runInContext('filtered.every(q=>q.subject===\'Biologia\')',ctx),true);
+$('subject').value='Biologia';vm.runInContext('applyFilters()',ctx);assert.equal($('skill').value,'');assert(!$('skill').disabled);assert.equal(vm.runInContext('filtered.every(q=>q.subject===\'Biologia\')',ctx),true);
 $('subject').value='';vm.runInContext('clearFilters()',ctx);assert(!$('skill').disabled);
 $('brandHome').onclick({preventDefault(){}});assert.equal(vm.runInContext('view',ctx),'banco');
 assert(html.includes('https://www.instagram.com/briniouz/'));assert(fs.existsSync('brand-mark.svg'));
@@ -50,7 +50,7 @@ ctx.FurgUI.setTheme('dark');assert.equal(document.documentElement.dataset.theme,
 vm.runInContext("setView('leituras');setView('desempenho');setView('acervo')",ctx);assert.equal(errors.length,0);
 function checkStudy(){
   const cards=ctx.FURG_FLASHCARDS_DATA,books=ctx.FURG_READING_DATA;
-  assert.equal(Object.keys(cards).length,119);assert.equal(Object.values(cards).flat().length,595);
+  assert.equal(Object.keys(cards).length,144);assert.equal(Object.values(cards).flat().length,720);
   for(const skill of model.skills){
     const list=cards[skill.id];assert.equal(list.length,5,skill.id);assert.equal(new Set(list.map(c=>c.question)).size,5,skill.id);
     for(const card of list){assert(typeof card.question==='string'&&card.question.trim().length>=10,skill.id);assert(typeof card.answer==='string'&&card.answer.trim(),skill.id);assert(!/<\/?[a-z][^>]*>/i.test(card.question+card.answer),skill.id);}
@@ -149,7 +149,7 @@ async function checkProfile(){
   $('profileEdit').click();$('profileRemovePhoto').click();for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.photo',ctx),'');assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');
   $('profileEdit').click();$('profileName').value='Descartar';$('profileCancel').click();assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');
   const originalSetItem=ctx.localStorage.setItem;ctx.localStorage.setItem=()=>{throw Error('quota');};$('profileEdit').click();$('profileName').value='Não salvar';for(const fn of events['profileForm:submit'])fn({preventDefault(){}});assert.equal(vm.runInContext('state.profile.name',ctx),'Ana Maria');assert($('profileMessage').textContent.includes('Não foi possível'));ctx.localStorage.setItem=originalSetItem;$('profileCancel').click();
-  console.log('PASS: existing site flows, 570 tagged questions, 119 paths, 595 flashcards (reveal, navigation, restart, focus and keyboard isolation), 36 literary sections, 6 original excerpts and 60 reading questions; profile export/import and legacy progress preserved.');
+  console.log('PASS: existing site flows, 765 tagged questions, 144 paths, 720 flashcards (reveal, navigation, restart, focus and keyboard isolation), 36 literary sections, 6 original excerpts and 60 reading questions; profile export/import and legacy progress preserved.');
 }
 async function checkEnemSimulations(){
   const sim=ctx.FurgEnemSim,snapshot=vm.runInContext('JSON.stringify(state)',ctx);
@@ -173,7 +173,7 @@ async function checkEnemSimulations(){
   vm.runInContext('state='+snapshot,ctx);vm.runInContext('globalThis.FurgEnemSim.init({getState:()=>state,save,toast})',ctx);
   assert.equal(errors.length,0);console.log('PASS: annual ENEM simulations 2010+, both days/languages, original order, hidden keys, pause/resume, persisted answers, export/import, completion, annulments, review and time expiry.');
 }
-checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).catch(error=>{console.error(error);process.exitCode=1;});
+checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).catch(error=>{console.error(error);process.exitCode=1;});
 
 async function checkLevelUp(){
   const up=ctx.FurgLevelUp,stages=ctx.FURG_LEVELUP_DATA,snapshot=vm.runInContext('JSON.stringify(state)',ctx);
@@ -224,7 +224,7 @@ function checkFuvest(){
  vm.runInContext("setView('fuvest')",ctx);assert($('fuvestRoot').innerHTML.includes('1.530'));assert($('coverage').innerHTML.includes('FUVEST'));
  function click(action,extra={}){const button={dataset:{fuvest:action,...extra},disabled:false};for(const fn of events['fuvestRoot:click']||[])fn({target:{closest:()=>button}});}
  function current(){const id=$('fuvestQuestionRoot').innerHTML.match(/data-question-id="([^"]+)"/)?.[1];assert(id);return byId.get(id);}
- $('fuvestYear').value='2024';$('fuvestYear').onchange();let q=current();assert.equal(q.year,2024);assert($('fuvestQuestionRoot').innerHTML.includes('Texto selecionável'));assert(!$('fuvestQuestionRoot').innerHTML.includes('Gabarito: alternativa'));
+ $('fuvestYear').value='2024';$('fuvestYear').onchange();let q=current();assert.equal(q.year,2024);assert($('fuvestQuestionRoot').innerHTML.includes('Transcrição complementar')||$('fuvestQuestionRoot').innerHTML.includes('Conferir o original com figuras'));assert(!$('fuvestQuestionRoot').innerHTML.includes('Gabarito: alternativa'));
  click('choose',{letter:q.answer});click('confirm');assert.equal(ctx.FurgFuvest.metrics().answered,1);assert.equal(ctx.FurgFuvest.metrics().correct,1);assert($('fuvestQuestionRoot').innerHTML.includes('Tu acertou!'));
  click('favorite');$('fuvestNote').value='Revisar o texto de apoio.';$('fuvestNote').oninput();assert.equal(JSON.parse(storage.get(progressKey)).fuvest.notes[q.id],'Revisar o texto de apoio.');
  $('fuvestStatus').value='favorites';$('fuvestStatus').onchange();assert.equal(current().id,q.id);
@@ -237,4 +237,18 @@ function checkFuvest(){
  const restored=JSON.parse(fs.readFileSync('enem/provenance/context-restorations-20261020.json','utf8'));assert.equal(restored.length,124);const eb=new Map(ctx.FURG_ENEM_DATA.questions.map(q=>[q.id,q]));for(const p of restored){const q=eb.get(p.id);for(const key of ['context','stem'])if(key in p)assert.equal(q[key],p[key]);assert.equal(q.quality.contextRestored,'2026-10-20');}
  assert(eb.get('enem-2013-175').context.includes('Nos últimos anos'));assert(eb.get('enem-2016-61').context.includes('Um pesquisador'));assert.equal(errors.length,0);
  console.log('PASS: FUVEST 2010–2026, 1530 unique official questions, all originals/keys, shared stimuli, corrected 2024 key, annulments, filters, first attempt, favorites, notes, keyboard and progress export; 124 audited ENEM context restorations.');
+}
+
+function checkBiologyAndSubjects(){
+ const bio=model.skills.filter(s=>s.subject==='Biologia');assert.equal(bio.length,25);assert.equal(db.questions.filter(q=>q.subject==='Biologia').length,195);
+ for(const skill of bio){const lesson=ctx.FURG_BIOLOGY_LESSONS[skill.id];assert(lesson.explanation.length>70);assert.equal(lesson.steps.length,3);assert(lesson.result.length>10);skillClick('open',skill.id);assert($('skillsRoot').innerHTML.includes('Em poucas palavras'));assert($('skillsRoot').innerHTML.includes('5 flashcards'));}
+ skillClick('practice','bio-celulas');assert.equal($('subject').value,'Biologia');assert(vm.runInContext('filtered.length>0',ctx));skillClick('review','bio-celulas');assert(JSON.parse(storage.get(progressKey)).skills.reviewed['bio-celulas']);
+ vm.runInContext("setView('fuvest')",ctx);const data=ctx.FURG_FUVEST_DATA;assert.equal(data.questions.length,1530);assert.equal(Object.keys(data.subjects).length,11);assert(data.readingCoverage.text>250);
+ assert.equal(data.readingCoverage.text,data.questions.filter(q=>q.quality.textReady).length);
+ for(const q of data.questions){assert(q.subjects.length);assert(q.subjects.every(id=>data.subjects[id]));if(q.quality.textReady){assert(q.alternatives.every(a=>a.text));assert(!/[\u0530-\u1fff\ufffd]/.test((q.context||'')+q.stem+q.alternatives.map(a=>a.text).join('')));}}
+ for(const subject of Object.keys(data.subjects)){$('fuvestSubject').value=subject;$('fuvestSubject').onchange();const id=$('fuvestQuestionRoot').innerHTML.match(/data-question-id="([^"]+)"/)[1];assert(data.questions.find(q=>q.id===id).subjects.includes(subject));}
+ $('fuvestSubject').value='matematica';$('fuvestYear').value='2013';$('fuvestYear').onchange();assert($('fuvestCount').textContent.startsWith('11 '));
+ $('fuvestSubject').value='';$('fuvestYear').value='';$('fuvestFormat').value='text';$('fuvestFormat').onchange();assert($('fuvestQuestionRoot').innerHTML.includes('data-reading-mode="text"'));assert($('fuvestQuestionRoot').innerHTML.includes('fuvest-text-options'));assert($('fuvestQuestionRoot').innerHTML.includes('Conferir o original com figuras'));assert.equal(parseInt($('fuvestCount').textContent.replace(/\./g,'')),data.readingCoverage.text);
+ $('fuvestFormat').value='original';$('fuvestFormat').onchange();assert($('fuvestQuestionRoot').innerHTML.includes('data-reading-mode="original"'));assert($('fuvestQuestionRoot').innerHTML.includes('fuvest-originals'));assert($('fuvestQuestionRoot').innerHTML.includes('Transcrição complementar'));
+ console.log('PASS: 25 Biology paths with prerequisites, 125 flashcards, explanations/examples, classified practice and saved review; all 1530 Fuvest items filter by subject; text/original views and combined year/subject filters.');
 }
