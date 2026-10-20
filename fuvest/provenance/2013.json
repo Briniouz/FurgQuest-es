@@ -1,0 +1,1086 @@
+{
+  "year": 2013,
+  "widePages": [
+    2,
+    16,
+    17,
+    18
+  ],
+  "supportGroups": [
+    {
+      "p": 19,
+      "col": 0,
+      "x": 153.7895050048828,
+      "y": 73.19429016113281,
+      "targets": [
+        68,
+        69,
+        70
+      ],
+      "heading": "Texto para as questões de 68 a 70"
+    },
+    {
+      "p": 19,
+      "col": 1,
+      "x": 486.39190673828125,
+      "y": 392.1455993652344,
+      "targets": [
+        71,
+        72,
+        73
+      ],
+      "heading": "Texto para as questões de 71 a 73"
+    },
+    {
+      "p": 20,
+      "col": 0,
+      "x": 153.7899932861328,
+      "y": 314.0124206542969,
+      "targets": [
+        74,
+        75,
+        76,
+        77
+      ],
+      "heading": "Texto para as questões de 74 a 77"
+    },
+    {
+      "p": 21,
+      "col": 0,
+      "x": 162.77650451660156,
+      "y": 73.19429016113281,
+      "targets": [
+        79,
+        80
+      ],
+      "heading": "Texto para as questões 79 e 80"
+    },
+    {
+      "p": 22,
+      "col": 0,
+      "x": 162.77650451660156,
+      "y": 73.19429016113281,
+      "targets": [
+        84,
+        85
+      ],
+      "heading": "Texto para as questões 84 e 85"
+    },
+    {
+      "p": 23,
+      "col": 0,
+      "x": 153.7895050048828,
+      "y": 73.19429016113281,
+      "targets": [
+        86,
+        87,
+        88
+      ],
+      "heading": "Texto para as questões de 86 a 88"
+    },
+    {
+      "p": 23,
+      "col": 1,
+      "x": 495.3768310546875,
+      "y": 73.19966125488281,
+      "targets": [
+        89,
+        90
+      ],
+      "heading": "Texto para as questões 89 e 90"
+    }
+  ],
+  "regions": [
+    {
+      "path": "fuvest/images/fuvest-2013-p02-48fe4ccd11.webp",
+      "page": 2,
+      "rect": [
+        25,
+        72.4796142578125,
+        819.0,
+        455.50872802734375
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p02-72af17f01a.webp",
+      "page": 2,
+      "rect": [
+        25,
+        455.50872802734375,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p02-02ef8f190d.webp",
+      "page": 2,
+      "rect": [
+        423.5,
+        455.50872802734375,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p03-f6e41a1a5f.webp",
+      "page": 3,
+      "rect": [
+        25,
+        72.4796142578125,
+        419.5,
+        565.4330444335938
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p03-0321cfe377.webp",
+      "page": 3,
+      "rect": [
+        25,
+        565.4330444335938,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p03-00f3fbc9d9.webp",
+      "page": 3,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        600.2992553710938
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p03-ad765408e2.webp",
+      "page": 3,
+      "rect": [
+        423.5,
+        600.2992553710938,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p04-8cdc682923.webp",
+      "page": 4,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        802.090576171875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p04-acd102ada5.webp",
+      "page": 4,
+      "rect": [
+        25,
+        802.090576171875,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p04-3251178ce8.webp",
+      "page": 4,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p05-34f770dd7e.webp",
+      "page": 5,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        705.5635375976562
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p05-a9cf91cc08.webp",
+      "page": 5,
+      "rect": [
+        25,
+        705.5635375976562,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p05-15384a0f24.webp",
+      "page": 5,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        597.96923828125
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p05-8173ca9054.webp",
+      "page": 5,
+      "rect": [
+        423.5,
+        597.96923828125,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p06-ae989a7b28.webp",
+      "page": 6,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p06-960d4ddf2b.webp",
+      "page": 6,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        274.9366455078125
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p06-97f054bd3a.webp",
+      "page": 6,
+      "rect": [
+        423.5,
+        274.9366455078125,
+        819.0,
+        504.43792724609375
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p06-2dc1da76a7.webp",
+      "page": 6,
+      "rect": [
+        423.5,
+        504.43792724609375,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p07-829a4f130c.webp",
+      "page": 7,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        479.3076171875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p07-7aa8465986.webp",
+      "page": 7,
+      "rect": [
+        25,
+        479.3076171875,
+        419.5,
+        783.7005615234375
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p07-df8f5afb13.webp",
+      "page": 7,
+      "rect": [
+        25,
+        783.7005615234375,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p07-675deef09f.webp",
+      "page": 7,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        616.6089477539062
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p07-2861a92991.webp",
+      "page": 7,
+      "rect": [
+        423.5,
+        616.6089477539062,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p08-a10107ae72.webp",
+      "page": 8,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        303.64501953125
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p08-90a665891d.webp",
+      "page": 8,
+      "rect": [
+        25,
+        303.64501953125,
+        419.5,
+        551.2035522460938
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p08-fef25911ab.webp",
+      "page": 8,
+      "rect": [
+        25,
+        551.2035522460938,
+        419.5,
+        765.060791015625
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p08-63b882fb2d.webp",
+      "page": 8,
+      "rect": [
+        25,
+        765.060791015625,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p08-a9a47ed3cc.webp",
+      "page": 8,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        470.65350341796875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p08-f8eeb4f02f.webp",
+      "page": 8,
+      "rect": [
+        423.5,
+        470.65350341796875,
+        819.0,
+        744.5072021484375
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p08-992e8df536.webp",
+      "page": 8,
+      "rect": [
+        423.5,
+        744.5072021484375,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p09-d5ff9bfac9.webp",
+      "page": 9,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        562.603759765625
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p09-462a11b03b.webp",
+      "page": 9,
+      "rect": [
+        25,
+        562.603759765625,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p09-0530d3c67f.webp",
+      "page": 9,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        362.80950927734375
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p09-7944d22990.webp",
+      "page": 9,
+      "rect": [
+        423.5,
+        362.80950927734375,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p10-bcc630e151.webp",
+      "page": 10,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        597.1371459960938
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p10-a0e0eff565.webp",
+      "page": 10,
+      "rect": [
+        25,
+        597.1371459960938,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p10-3dc7112d82.webp",
+      "page": 10,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        588.4830322265625
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p10-5b6c3bd897.webp",
+      "page": 10,
+      "rect": [
+        423.5,
+        588.4830322265625,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p11-6e99f01b2c.webp",
+      "page": 11,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        801.1752319335938
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p11-bf7808bb10.webp",
+      "page": 11,
+      "rect": [
+        25,
+        801.1752319335938,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p11-760473f1f5.webp",
+      "page": 11,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        694.912353515625
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p11-6976d40b9d.webp",
+      "page": 11,
+      "rect": [
+        423.5,
+        694.912353515625,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p12-31372f4e3b.webp",
+      "page": 12,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        346.74945068359375
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p12-941a51895e.webp",
+      "page": 12,
+      "rect": [
+        25,
+        346.74945068359375,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p12-7e98a0850b.webp",
+      "page": 12,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p13-927444d88f.webp",
+      "page": 13,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        279.76300048828125
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p13-b140e3f755.webp",
+      "page": 13,
+      "rect": [
+        25,
+        279.76300048828125,
+        419.5,
+        707.1446533203125
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p13-564f663411.webp",
+      "page": 13,
+      "rect": [
+        25,
+        707.1446533203125,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p13-9e3488ae15.webp",
+      "page": 13,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        613.0307006835938
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p13-3936bbc1c0.webp",
+      "page": 13,
+      "rect": [
+        423.5,
+        613.0307006835938,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p14-cc6d85859c.webp",
+      "page": 14,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        361.06201171875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p14-b99a1f7023.webp",
+      "page": 14,
+      "rect": [
+        25,
+        361.06201171875,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p14-4bc831e793.webp",
+      "page": 14,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p15-1add87fe2f.webp",
+      "page": 15,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        606.7066040039062
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p15-85eeefa92e.webp",
+      "page": 15,
+      "rect": [
+        25,
+        606.7066040039062,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p15-48f6ecf8d2.webp",
+      "page": 15,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p16-e1534cca3d.webp",
+      "page": 16,
+      "rect": [
+        25,
+        85.211181640625,
+        819.0,
+        561.7716064453125
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p16-787083eeb6.webp",
+      "page": 16,
+      "rect": [
+        25,
+        561.7716064453125,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p16-a6aad429ca.webp",
+      "page": 16,
+      "rect": [
+        423.5,
+        561.7716064453125,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p17-67d2edd51b.webp",
+      "page": 17,
+      "rect": [
+        25,
+        32,
+        419.5,
+        74.0606689453125
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p17-b92f68d27f.webp",
+      "page": 17,
+      "rect": [
+        25,
+        74.0606689453125,
+        819.0,
+        503.0233154296875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p17-f3a53c9597.webp",
+      "page": 17,
+      "rect": [
+        25,
+        503.0233154296875,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p17-fbf8df39f2.webp",
+      "page": 17,
+      "rect": [
+        423.5,
+        503.0233154296875,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p18-6fcd975bf0.webp",
+      "page": 18,
+      "rect": [
+        25,
+        70.8153076171875,
+        819.0,
+        790.6904296875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p18-d3e141d2fd.webp",
+      "page": 18,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        790.6904296875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p18-69b8ec6d8a.webp",
+      "page": 18,
+      "rect": [
+        25,
+        31,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p19-5aadf11977.webp",
+      "page": 19,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p19-c82ef2a092.webp",
+      "page": 19,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p20-dff58af767.webp",
+      "page": 20,
+      "rect": [
+        25,
+        70.19429016113281,
+        419.5,
+        715.1331176757812
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p20-4a17905fcf.webp",
+      "page": 20,
+      "rect": [
+        25,
+        715.1331176757812,
+        419.5,
+        890.5458984375
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p20-15654cb120.webp",
+      "page": 20,
+      "rect": [
+        25,
+        890.5458984375,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p20-f9820d9c09.webp",
+      "page": 20,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        389.1455993652344
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p20-9fae5a7ab4.webp",
+      "page": 20,
+      "rect": [
+        423.5,
+        389.1455993652344,
+        819.0,
+        660.8782348632812
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p20-ca87a9c99f.webp",
+      "page": 20,
+      "rect": [
+        423.5,
+        660.8782348632812,
+        819.0,
+        922.41650390625
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p20-ec11021343.webp",
+      "page": 20,
+      "rect": [
+        423.5,
+        922.41650390625,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p21-8e2383429b.webp",
+      "page": 21,
+      "rect": [
+        25,
+        70.8153076171875,
+        419.5,
+        311.0124206542969
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p21-af1f350865.webp",
+      "page": 21,
+      "rect": [
+        25,
+        311.0124206542969,
+        419.5,
+        753.4110107421875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p21-2be209b434.webp",
+      "page": 21,
+      "rect": [
+        25,
+        753.4110107421875,
+        419.5,
+        893.7080078125
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p21-848dc2c990.webp",
+      "page": 21,
+      "rect": [
+        25,
+        893.7080078125,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p21-e4b13a2ace.webp",
+      "page": 21,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        415.31695556640625
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p21-c722dc8f5d.webp",
+      "page": 21,
+      "rect": [
+        423.5,
+        415.31695556640625,
+        819.0,
+        705.5635375976562
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p21-ca46f51859.webp",
+      "page": 21,
+      "rect": [
+        423.5,
+        705.5635375976562,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p22-f57fe80bd5.webp",
+      "page": 22,
+      "rect": [
+        25,
+        70.19429016113281,
+        419.5,
+        576.4171142578125
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p22-1d26ed238d.webp",
+      "page": 22,
+      "rect": [
+        25,
+        576.4171142578125,
+        419.5,
+        809.2469482421875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p22-237cf97998.webp",
+      "page": 22,
+      "rect": [
+        25,
+        809.2469482421875,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p22-66d376226d.webp",
+      "page": 22,
+      "rect": [
+        423.5,
+        70.8153076171875,
+        819.0,
+        402.5853271484375
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p22-ed47134f23.webp",
+      "page": 22,
+      "rect": [
+        423.5,
+        402.5853271484375,
+        819.0,
+        778.9573974609375
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p22-043c3fb61a.webp",
+      "page": 22,
+      "rect": [
+        423.5,
+        778.9573974609375,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p23-9936c514dc.webp",
+      "page": 23,
+      "rect": [
+        25,
+        70.19429016113281,
+        419.5,
+        420.06005859375
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p23-1a77f3a3e4.webp",
+      "page": 23,
+      "rect": [
+        25,
+        420.06005859375,
+        419.5,
+        852.26806640625
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p23-6b71b52caa.webp",
+      "page": 23,
+      "rect": [
+        25,
+        852.26806640625,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p23-330855ccb7.webp",
+      "page": 23,
+      "rect": [
+        423.5,
+        32,
+        819.0,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p24-3984a90eaf.webp",
+      "page": 24,
+      "rect": [
+        25,
+        70.19429016113281,
+        419.5,
+        693.164794921875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p24-5b6272d9c5.webp",
+      "page": 24,
+      "rect": [
+        25,
+        693.164794921875,
+        419.5,
+        822.3113403320312
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p24-909a54aa37.webp",
+      "page": 24,
+      "rect": [
+        25,
+        822.3113403320312,
+        419.5,
+        980.24951171875
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p24-fc8192d5f4.webp",
+      "page": 24,
+      "rect": [
+        25,
+        980.24951171875,
+        419.5,
+        1160.0
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p24-ca0c9a7f7d.webp",
+      "page": 24,
+      "rect": [
+        423.5,
+        70.19966125488281,
+        819.0,
+        488.71075439453125
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p24-ff52acd587.webp",
+      "page": 24,
+      "rect": [
+        423.5,
+        488.71075439453125,
+        819.0,
+        735.8531494140625
+      ]
+    },
+    {
+      "path": "fuvest/images/fuvest-2013-p24-f7369a7abe.webp",
+      "page": 24,
+      "rect": [
+        423.5,
+        735.8531494140625,
+        819.0,
+        1157.0
+      ]
+    }
+  ],
+  "count": 90
+}

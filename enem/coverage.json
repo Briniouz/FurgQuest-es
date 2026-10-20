@@ -284,8 +284,13 @@
   ],
   "canceled": 11,
   "blocked": 0,
-  "sha256": "fd0b9eef41162b96248c1c5c7c39573dc371a3f87ba03ebb04ab20e2d1f85081",
+  "sha256": "4f57ead39e8fb2eacf2d613e3ef38f236a3192503e0c6e23880070274ccdc80f",
   "missingAssets": [],
   "incomplete": [],
-  "unverifiedKeys": []
+  "unverifiedKeys": [],
+  "contextRestorations": {
+    "date": "2026-10-20",
+    "count": 124,
+    "manifest": "enem/provenance/context-restorations-20261020.json"
+  }
 }

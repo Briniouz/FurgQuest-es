@@ -19,13 +19,13 @@ class Element{
 }
 const $=id=>{if(!els.has(id))els.set(id,new Element(id));return els.get(id);};ids.forEach($);$('loadError').hidden=true;
 for(const id of ['subject','year','edition','skill','search','archiveSearch','simSubject','simYear'])$(id).value='';
-const nav=['banco','enem','evolucao','simulados','desempenho','trilhas','leituras','acervo'].map(v=>{const e=new Element();e.dataset.view=v;return e;}),views=nav.map(n=>{const e=$(n.dataset.view);e.classList.toggle('active',e.id==='banco');return e;});
+const nav=['banco','enem','fuvest','evolucao','simulados','desempenho','trilhas','leituras','acervo'].map(v=>{const e=new Element();e.dataset.view=v;return e;}),views=nav.map(n=>{const e=$(n.dataset.view);e.classList.toggle('active',e.id==='banco');return e;});
 const radios={status:[],order:[]};for(const[group,values]of Object.entries({status:['all','unanswered','answered','correct','wrong','favorites'],order:['recent','old','random']})){for(const value of values){const e=new Element();e.value=value;e.parentElement={textContent:value};e._checked=radios[group].length===0;Object.defineProperty(e,'checked',{get(){return this._checked;},set(v){if(v)radios[group].forEach(r=>r._checked=false);this._checked=v;}});radios[group].push(e);}}
 const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:{appendChild(){}},createElement:()=>new Element(),querySelectorAll(sel){if(sel==='.nav')return nav;if(sel==='.view')return views;if(sel==='[name=status],[name=order]')return [...radios.status,...radios.order];return [];},querySelector(sel){if(sel==='.view.active')return views.find(e=>e.classList.contains('active'));if(sel==='meta[name="theme-color"]')return $('meta');if(sel==='.simulation-builder')return $('builder');const name=sel.match(/name=(status|order)/)?.[1];if(name){const val=sel.match(/value=([a-z]+)/)?.[1];return val?radios[name].find(r=>r.value===val):radios[name].find(r=>r.checked);}return null;},addEventListener(type,fn){(events['document:'+type]??=[]).push(fn);}};
 const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
 const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco'},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
 if(previewFile){for(const [i,match]of [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].entries())vm.runInContext(match[1],ctx,{filename:'preview-inline-'+i});}
-else for(const file of ['skills-data.js','flashcards-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','enem.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+else for(const file of ['skills-data.js','flashcards-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','enem.js','fuvest-data.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
 assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,570);assert.equal(model.skills.length,119);
@@ -173,7 +173,7 @@ async function checkEnemSimulations(){
   vm.runInContext('state='+snapshot,ctx);vm.runInContext('globalThis.FurgEnemSim.init({getState:()=>state,save,toast})',ctx);
   assert.equal(errors.length,0);console.log('PASS: annual ENEM simulations 2010+, both days/languages, original order, hidden keys, pause/resume, persisted answers, export/import, completion, annulments, review and time expiry.');
 }
-checkProfile().then(checkEnemSimulations).then(checkLevelUp).catch(error=>{console.error(error);process.exitCode=1;});
+checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).catch(error=>{console.error(error);process.exitCode=1;});
 
 async function checkLevelUp(){
   const up=ctx.FurgLevelUp,stages=ctx.FURG_LEVELUP_DATA,snapshot=vm.runInContext('JSON.stringify(state)',ctx);
@@ -210,4 +210,31 @@ async function checkLevelUp(){
   $('exportProgress').click();backup=JSON.parse(await exported.at(-1).text());assert.equal(up.metrics(up.validate(backup.levelup)).xp,500);assert(storage.get(progressKey).includes('up-desafio-3'));
   vm.runInContext('state='+snapshot,ctx);up.refresh();assert.equal(errors.length,0);
   console.log('PASS: Level Up: 30 original questions, locked stages, hint/retry, first choice, unique XP, all 10 unlocks, storage rollback, keyboard isolation, export/import, legacy backups and forged progress validation.');
+}
+
+function checkFuvest(){
+ if(previewFile)return;
+ const data=ctx.FURG_FUVEST_DATA,qs=data.questions,byId=new Map(qs.map(q=>[q.id,q])),keys=JSON.parse(fs.readFileSync('fuvest/provenance/official-keys.json','utf8'));
+ assert.equal(qs.length,1530);assert.equal(byId.size,1530);assert.equal(data.coverage.length,17);
+ assert.equal(new Set(qs.map(q=>q.year+'/'+q.index)).size,1530);
+ for(let year=2010;year<=2026;year++){const subset=qs.filter(q=>q.year===year);assert.equal(subset.length,90);assert.deepEqual(Array.from(subset,q=>q.index),Array.from({length:90},(_,i)=>i+1));}
+ for(const q of qs){const key=keys[q.year][q.index];assert.equal(q.answer,key.answer,q.id);assert.equal(q.canceled,key.canceled,q.id);assert.equal(q.alternatives.length,5);assert.deepEqual(Array.from(q.alternatives,a=>a.letter),['A','B','C','D','E']);assert(q.source.images.length,q.id);for(const path of [...q.source.images,q.source.pdf,q.source.answerPdf])assert(fs.existsSync(path),q.id+' missing '+path);assert(q.source.images.every(p=>ctx.FurgFuvest.markdown('![]('+p+')').includes('src="'+p+'"')));}
+ assert.equal(qs.filter(q=>q.canceled).length,3);assert.equal(byId.get('fuvest-2024-48').answer,'E');
+ for(const [year,numbers] of [[2010,[20,21]],[2014,[69,70]],[2015,[25,26,27,28]],[2026,[1,2]]]){const a=byId.get('fuvest-'+year+'-'+numbers[0]);for(const n of numbers){const q=byId.get('fuvest-'+year+'-'+n);assert(q.source.images.includes(a.source.images[0]),q.id+' lost shared stimulus');}}
+ vm.runInContext("setView('fuvest')",ctx);assert($('fuvestRoot').innerHTML.includes('1.530'));assert($('coverage').innerHTML.includes('FUVEST'));
+ function click(action,extra={}){const button={dataset:{fuvest:action,...extra},disabled:false};for(const fn of events['fuvestRoot:click']||[])fn({target:{closest:()=>button}});}
+ function current(){const id=$('fuvestQuestionRoot').innerHTML.match(/data-question-id="([^"]+)"/)?.[1];assert(id);return byId.get(id);}
+ $('fuvestYear').value='2024';$('fuvestYear').onchange();let q=current();assert.equal(q.year,2024);assert($('fuvestQuestionRoot').innerHTML.includes('Texto selecionável'));assert(!$('fuvestQuestionRoot').innerHTML.includes('Gabarito: alternativa'));
+ click('choose',{letter:q.answer});click('confirm');assert.equal(ctx.FurgFuvest.metrics().answered,1);assert.equal(ctx.FurgFuvest.metrics().correct,1);assert($('fuvestQuestionRoot').innerHTML.includes('Tu acertou!'));
+ click('favorite');$('fuvestNote').value='Revisar o texto de apoio.';$('fuvestNote').oninput();assert.equal(JSON.parse(storage.get(progressKey)).fuvest.notes[q.id],'Revisar o texto de apoio.');
+ $('fuvestStatus').value='favorites';$('fuvestStatus').onchange();assert.equal(current().id,q.id);
+ click('retry');click('choose',{letter:q.answer==='A'?'B':'A'});click('confirm');assert.equal(ctx.FurgFuvest.metrics().correct,1,'Fuvest retry changed first attempt');
+ click('clear');const old=current().id,bankIndex=vm.runInContext('index',ctx);let prevented=false;for(const fn of events['document:keydown']||[])fn({key:'ArrowRight',target:{closest:()=>null},preventDefault(){prevented=true;}});assert(prevented);assert.notEqual(current().id,old);assert.equal(vm.runInContext('index',ctx),bankIndex);
+ $('fuvestSearch').value='zzzz-sem-correspondencia-989';$('fuvestSearch').onkeydown({key:'Enter'});assert($('fuvestQuestionRoot').innerHTML.includes('Nenhuma questão'));click('clear');click('jump',{index:'2'});assert(current().canceled);const before=ctx.FurgFuvest.metrics().answered;click('choose',{letter:'A'});click('confirm');assert.equal(ctx.FurgFuvest.metrics().answered,before);assert($('fuvestQuestionRoot').innerHTML.includes('Questão anulada'));
+ const clean=vm.runInContext('validateProgress(state)',ctx);assert.equal(clean.fuvest.notes[q.id],'Revisar o texto de apoio.');assert.equal(Object.keys(vm.runInContext('validateProgress({version:1,answers:{}})',ctx).fuvest.answers).length,0);
+ const exported=vm.runInContext('JSON.stringify(state)',ctx);assert.equal(JSON.parse(exported).fuvest.answers[q.id].firstChoice,q.answer);
+ vm.runInContext("setView('desempenho')",ctx);assert($('fuvestStats').textContent.includes('Fuvest: 1/1530'));
+ const restored=JSON.parse(fs.readFileSync('enem/provenance/context-restorations-20261020.json','utf8'));assert.equal(restored.length,124);const eb=new Map(ctx.FURG_ENEM_DATA.questions.map(q=>[q.id,q]));for(const p of restored){const q=eb.get(p.id);for(const key of ['context','stem'])if(key in p)assert.equal(q[key],p[key]);assert.equal(q.quality.contextRestored,'2026-10-20');}
+ assert(eb.get('enem-2013-175').context.includes('Nos últimos anos'));assert(eb.get('enem-2016-61').context.includes('Um pesquisador'));assert.equal(errors.length,0);
+ console.log('PASS: FUVEST 2010–2026, 1530 unique official questions, all originals/keys, shared stimuli, corrected 2024 key, annulments, filters, first attempt, favorites, notes, keyboard and progress export; 124 audited ENEM context restorations.');
 }

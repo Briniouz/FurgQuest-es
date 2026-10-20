@@ -1,0 +1,62 @@
+{
+  "scope": "ENEM regular, 2017–2025, ambos os idiomas: 1.665 registros confrontados com o texto dos PDFs locais (context + stem).",
+  "patchFile": "exam-work/restored-2017-2025.json",
+  "patchCount": 16,
+  "counts": {
+    "missingIntro2017": 5,
+    "otherMissingOrReplacedText": 10,
+    "readingOrderRepair": 1
+  },
+  "patchedIds": [
+    "enem-2017-163",
+    "enem-2017-165",
+    "enem-2017-171",
+    "enem-2017-174",
+    "enem-2017-177",
+    "enem-2020-52",
+    "enem-2021-20",
+    "enem-2021-21",
+    "enem-2021-23",
+    "enem-2021-25",
+    "enem-2022-58",
+    "enem-2022-152",
+    "enem-2023-30",
+    "enem-2023-99",
+    "enem-2024-175",
+    "enem-2019-177"
+  ],
+  "method": "Auditoria inicial de diferença de palavras, revisão das 139 entradas iniciadas por imagem, comparação por sequências de palavras e segunda extração com recuperação de glifos para 2017, 2018 e 2021. Conferência visual das páginas usadas nos patches e de imagens potencialmente contendo prosa. Texto de cartazes, tirinhas, tabelas, diagramas e equações já presente nas imagens não foi tratado como trecho ausente.",
+  "checks": [
+    "JSON válido; IDs existentes e únicos.",
+    "Referências e ordem relativa das imagens atuais preservadas; uma nova figura recuperada em 2021/20.",
+    "Nenhuma alternativa nem gabarito alterado.",
+    "Não foi inserido texto cifrado extraído de fontes defeituosas."
+  ],
+  "pending": [
+    {
+      "id": "enem-2021-16",
+      "reason": "Existe um pequeno corte em uma citação de letra musical no texto-base. Não incluído no JSON de restauração para não ampliar a reprodução de letra de música. O PDF original local contém a versão integral.",
+      "source": {
+        "pdf": "enem/pdfs/2021_PV_D1_AZUL.pdf",
+        "page": 10
+      }
+    },
+    {
+      "id": "enem-2021-20",
+      "reason": "Figura extraída e já referenciada no patch; o responsável deve copiar o asset para o destino no repositório.",
+      "asset": "exam-work/restoration-2017-2025/enem-2021-20-figure.png",
+      "source": {
+        "pdf": "enem/pdfs/2021_PV_D1_AZUL.pdf",
+        "page": 12
+      },
+      "target": "enem/restored/enem-2021-20-figure.png"
+    }
+  ],
+  "falsePositiveExamples": [
+    "2019/103: o texto entre equações e a fonte estão na segunda imagem.",
+    "2019/116: a frase sobre as bicamadas I–V está na imagem.",
+    "2020/37: rótulos do diagrama de saúde estão na imagem.",
+    "2024/180: diferença vinha da notação das alternativas e dos rodapés."
+  ],
+  "uncertainty": "A checagem textual cobre os registros existentes, não verifica presença de todos os pixels/figuras de cada PDF. Conteúdo interno de imagens foi revisado quando necessário para diferenciar prosa faltante de texto já visível."
+}

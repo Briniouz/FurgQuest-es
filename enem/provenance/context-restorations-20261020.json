@@ -1,0 +1,1491 @@
+[
+  {
+    "id": "enem-2009-12",
+    "context": "Sabões são sais de ácidos carboxílicos de cadeia longa utilizados com a finalidade de facilitar, durante processos de lavagem, a remoção de substâncias de baixa solubilidade em água, por exemplo, óleos e gorduras. A figura a seguir representa a estrutura de uma molécula de sabão.\n\n![](enem/figures/233eafdb-167e-4978-a815-54aad9e6bee2.jpg)\n\nEm solução, os ânions do sabão podem hidrolisar a água e, desse modo, formar o ácido carboxílico correspondente. Por exemplo, para o estearato de sódio, é estabelecido o seguinte equilíbrio:\n\n![](enem/figures/63593c90-04b4-48ea-b9c5-1205f73bef95.jpg)\n\nUma vez que o ácido carboxílico formado é pouco solúvel em água e menos eficiente na remoção de gorduras, o pH do meio deve ser controlado de maneira a evitar que o equilíbrio acima seja deslocado para a direita.",
+    "source": {
+      "pdf": "enem/pdfs/2009_PV_D1_AZUL.pdf",
+      "page": 5
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2009-19",
+    "context": "A instalação elétrica de uma casa envolve várias etapas, desde a alocação dos dispositivos, instrumentos e aparelhos elétricos, até a escolha dos materiais que a compõem, passando pelo dimensionamento da potência requerida, da fiação necessária, dos eletrodutos*, entre outras. Para cada aparelho elétrico existe um valor de potência associado. Valores típicos de potências para alguns aparelhos elétricos são apresentados no quadro seguinte:\n\n![](enem/figures/ce14eccd-b5dd-4dde-a5a6-2e163d72fec9.png)\n\nA escolha das lâmpadas é essencial para obtenção de uma boa iluminação. A potência da lâmpada deverá estar de acordo com o tamanho do cômodo a ser iluminado. O quadro a seguir mostra a relação entre as áreas dos cômodos (em m²) e as potências das lâmpadas (em W), e foi utilizado como referência para o primeiro pavimento de uma residência.\n\n![](enem/figures/9747c953-2a43-411f-b7ee-49a4e4fd6429.png)",
+    "source": {
+      "pdf": "enem/pdfs/2009_PV_D1_AZUL.pdf",
+      "page": 7
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2009-131",
+    "context": "Compare os textos I e II a seguir, que tratam de aspectos ligados a variedades da língua portuguesa no mundo e no Brasil.\n\n**Texto I**  \nAcompanhando os navegadores, colonizadores e comerciantes portugueses em todas as suas incríveis viagens, a partir do século XV, o português se transformou na língua de um império. Nesse processo, entrou em contato — forçado, o mais das vezes; amigável, em alguns casos — com as mais diversas línguas, passando por processos de variação e de mudança linguística. Assim, contar a história do português do Brasil é mergulhar na sua história colonial e de país independente, já que as línguas não são mecanismos desgarrados dos povos que as utilizam. Nesse cenário, são muitos os aspectos da estrutura linguística que não só expressam a diferença entre Portugal e Brasil como também definem, no Brasil, diferenças regionais e sociais.\n\nPAGOTTO, E. P. **Línguas do Brasil.** Disponível em: http://cienciaecultura.bvs.br.  \nAcesso em: 5 jul. 2009 (adaptado).\n\n**Texto II**  \nBarbarismo é vício que se comete na escritura de cada uma das partes da construção ou na pronunciação. E em nenhuma parte da Terra se comete mais essa figura da pronunciação que nestes reinos, por causa das muitas nações que trouxemos ao jugo do nosso serviço. Porque bem como os Gregos e Romanos haviam por _bárbaras_ todas as outras nações estranhas a eles, por não poderem formar sua linguagem, assim nós podemos dizer que as nações de África, Guiné, Ásia, Brasil barbarizam quando querem imitar a nossa.\n\nBARROS, J. **Gramática da língua portuguesa.** Porto: Porto Editora, 1957 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2009_PV_D2_AZUL.pdf",
+      "page": 18
+    },
+    "restoration": {
+      "reason": "Trecho do enunciado/texto-base ausente na transcrição existente.",
+      "method": "Conferência da página do caderno oficial; OCR revisado nos trechos de fonte sem mapeamento Unicode. Figuras e conteúdo existente preservados."
+    }
+  },
+  {
+    "id": "enem-2010-36",
+    "context": "A chegada da televisão\n\nA caixa de pandora tecnológica penetra nos lares e libera suas cabeças falantes, astros, novelas, noticiários e as fabulosas, irresistíveis garotas-propaganda, versões modernizadas do tradicional homem-sanduíche.\n\nSEVCENKO, N. (Org). História da Vida Privada no Brasil 3.  \nRepública: da Belle Époque à Era do Rádio.  \nSão Paulo: Cia das Letras, 1998.",
+    "source": {
+      "pdf": "enem/pdfs/2010_PV_D1_AZUL.pdf",
+      "page": 11
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2010-42",
+    "context": "Judiciário contribuiu com ditadura no Chile, diz Juiz Guzmán Tapia\n\nAs cortes de apelação rejeitaram mais de 10 mil habeas corpus nos casos das pessoas desaparecidas. Nos tribunais militares, todas as causas foram concluídas com suspensões temporárias ou definitivas, e os desaparecimentos políticos tiveram apenas trâmite formal na Justiça. Assim, o Poder Judiciário contribuiu para que os agentes estatais ficassem impunes.\n\nDisponível em: http://www.cartamaior.com.br.  \nAcesso em: 20 jul. 2010 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2010_PV_D1_AZUL.pdf",
+      "page": 12
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2010-54",
+    "context": "Júpiter, conhecido como o gigante gasoso, perdeu uma das suas listras mais proeminentes, deixando o seu hemisfério sul estranhamente vazio. Observe a região em que a faixa sumiu, destacada pela seta.\n\n![](enem/figures/c147e274-c7fa-4112-b084-aacf05f6b016.png)\n\nA aparência de Júpiter é tipicamente marcada por duas faixas escuras em sua atmosfera – uma no hemisfério norte e outra no hemisfério sul. Como o gás está constantemente em movimento, o desaparecimento da faixa no planeta relaciona-se ao movimento das diversas camadas de nuvens em sua atmosfera. A luz do Sol, refletida nessas nuvens, gera a imagem que é captada pelos telescópios, no espaço ou na Terra.",
+    "source": {
+      "pdf": "enem/pdfs/2010_PV_D1_AZUL.pdf",
+      "page": 16
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2010-126",
+    "stem": "No Editorial, o autor defende a tese de que “as políticas sociais que procuram evitar a entrada dos jovens no tráfico não terão chance de sucesso enquanto a remuneração oferecida pelos traficantes for tão mais compensatória que aquela oferecida pelos programas do governo”. Para comprovar sua tese, o autor apresenta",
+    "source": {
+      "pdf": "enem/pdfs/2010_PV_D2_AZUL.pdf",
+      "page": 17
+    },
+    "restoration": {
+      "reason": "Trecho do enunciado/texto-base ausente na transcrição existente.",
+      "method": "Conferência da página do caderno oficial; OCR revisado nos trechos de fonte sem mapeamento Unicode. Figuras e conteúdo existente preservados."
+    }
+  },
+  {
+    "id": "enem-2010-136",
+    "context": "Um professor dividiu a lousa da sala de aula em quatro partes iguais. Em seguida, preencheu 75% dela com conceitos e explicações, conforme a figura seguinte.\n\n![](enem/figures/47193c33-4847-4a88-be44-8155d78d2e2f.png)\n\nAlgum tempo depois, o professor apagou a lousa por completo e, adotando um procedimento semelhante ao anterior, voltou a preenchê-la, mas, dessa vez, utilizando 40% do espaço dela.",
+    "source": {
+      "pdf": "enem/pdfs/2010_PV_D2_AZUL.pdf",
+      "page": 21
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2010-151",
+    "context": "Dona Maria, diarista na casa da família Teixeira, precisa fazer café para servir as vinte pessoas que se encontram numa reunião na sala. Para fazer o café, Dona Maria dispõe de uma leiteira cilíndrica e copinhos plásticos, também cilíndricos.\n\n![](enem/figures/87ef13a2-eec3-4dfb-9324-6f25f45690e7.png)\n\nCom o objetivo de não desperdiçar café, a diarista deseja colocar a quantidade mínima de água na leiteira para encher os vinte copinhos pela metade.",
+    "source": {
+      "pdf": "enem/pdfs/2010_PV_D2_AZUL.pdf",
+      "page": 25
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2010-152",
+    "context": "Um satélite de telecomunicações, t minutos após ter atingido sua órbita, está a r quilômetros de distância do centro da Terra. Quando r assume seus valores máximo e mínimo, diz-se que o satélite atingiu o apogeu e o perigeu, respectivamente. Suponha que, para esse satélite, o valor de r em função de t seja dado por\n\n![](enem/figures/3b16b42f-5856-499b-a7f7-6512f1c1c219.png)\n\nUm cientista monitora o movimento desse satélite para controlar o seu afastamento do centro da Terra. Para isso, ele precisa calcular a soma dos valores de r, no apogeu e no perigeu, representada por S.",
+    "source": {
+      "pdf": "enem/pdfs/2010_PV_D2_AZUL.pdf",
+      "page": 25
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2010-156",
+    "context": "A figura a seguir é a representação de uma região por meio de curvas de nível, que são curvas fechadas representando a altitude da região, com relação ao nível do mar. As coordenadas estão expressas em graus de acordo com a longitude, no eixo horizontal, e a latitude, no eixo vertical. A escala em tons de cinza desenhada à direita está associada à altitude da região.\n\n![](enem/figures/52ff9fbe-ace4-4e81-b2b0-5fa55642f382.jpg)\n\nUm pequeno helicóptero usado para reconhecimento sobrevoa a região a partir do ponto X = (20; 60). O helicóptero segue o percurso:\n\n0,8°L→0,5°N→0,2°O→0,1°S→0,4°N→0,3°L\n\nAo final, desce verticalmente até pousar no solo.",
+    "source": {
+      "pdf": "enem/pdfs/2010_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2010-158",
+    "context": "No manejo sustentável de florestas, é preciso muitas vezes obter o volume da tora que pode ser obtida a partir de uma árvore. Para isso, existe um método prático, em que se mede a circunferência da árvore à altura do peito de um homem (1,30 m), conforme indicado na figura. A essa medida denomina-se “rodo” da árvore. O quadro a seguir indica a fórmula para se cubar, ou seja, obter o volume da tora em m³ a partir da medida do rodo e da altura da árvore.\n\n![](enem/figures/20a4e763-d72c-4908-8b20-59443e8b7e9f.jpg)\n\nUm técnico em manejo florestal recebeu a missão de cubar, abater e transportar cinco toras de madeira, de  \nduas espécies diferentes, sendo\n\n• 3 toras da espécie I, com 3 m de rodo, 12 m de comprimento e densidade 0,77 toneladas/m³;  \n• 2 toras da espécie II, com 4 m de rodo, 10 m de comprimento e densidade 0,78 toneladas/m³.",
+    "source": {
+      "pdf": "enem/pdfs/2010_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2011-22",
+    "context": "Até que ponto, a partir de posturas e interesses diversos, as oligarquias paulista e mineira dominaram a cena política nacional na Primeira República? A união de ambas foi um traço fundamental, mas que não conta toda a história do período. A união foi feita com a preponderância de uma ou de outra das duas frações. Com o tempo, surgiram as discussões e um grande desacerto final.\n\nFAUSTO, B. História do Brasil. São Paulo: EdUSP, 2004 (adaptado).\n\nA imagem de um bem-sucedido acordo café com leite entre São Paulo e Minas, um acordo de alternância de presidência entre os dois estados, não passa de uma idealização de um processo muito mais caótico e cheio de conflitos. Profundas divergências políticas colocavam-nos em confronto por causa de diferentes graus de envolvimento no comércio exterior.\n\nTOPIK, S. A presença do estado na economia política do Brasil de 1889 a 1930. Rio de Janeiro: Record, 1989 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D1_AZUL.pdf",
+      "page": 8
+    },
+    "restoration": {
+      "reason": "Segundo texto-base (Topik) integralmente ausente; o comando menciona os textos no plural.",
+      "method": "OCR da página oficial e conferência com o PDF; primeiro texto e comando preservados."
+    }
+  },
+  {
+    "id": "enem-2011-30",
+    "stem": "O texto apresenta três tipos de poder que podem ser identificados em momentos históricos distintos. Identifique o período em que a obediência esteve associada predominantemente ao poder carismático:",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D1_AZUL.pdf",
+      "page": 11
+    },
+    "restoration": {
+      "reason": "Comando correto ausente; o stem repetia de forma truncada o início do texto-base.",
+      "method": "OCR e conferência da página do caderno oficial; texto-base preservado."
+    }
+  },
+  {
+    "id": "enem-2011-60",
+    "context": "Em um manual de um chuveiro elétrico são encontradas informações sobre algumas características técnicas, ilustradas no quadro, como a tensão de alimentação, a potência dissipada, o dimensionamento do disjuntor ou fusível, e a área da seção transversal dos condutores utilizados.\n\n![](enem/figures/4d540a4d-d54f-4c26-836a-710921f4cbbd.png)\n\nUma pessoa adquiriu um chuveiro do modelo A e, ao ler o manual, verificou que precisava ligá-lo a um disjuntor de 50 amperes. No entanto, intrigou-se com o fato de que o disjuntor a ser utilizado para uma correte instalação de um chuveiro do modelo B devia possuir amperagem 40% menor.",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D1_AZUL.pdf",
+      "page": 20
+    },
+    "restoration": {
+      "reason": "Texto-base introdutório ausente antes da figura/tabela/fórmula ou da continuação.",
+      "method": "OCR da página do caderno oficial e transcrição conferida; preservação das figuras existentes."
+    }
+  },
+  {
+    "id": "enem-2011-136",
+    "context": "O dono de uma oficina mecânica precisa de um pistão das partes de um motor, de 68 mm de diâmetro, para o conserto de um carro. Para conseguir um, esse dono vai até um ferro velho e lá encontra pistões com diâmetros iguais a 68,21 mm; 68,102 mm; 68,001 mm; 68,02 mm e 68,012 mm.\n\nPara colocar o pistão no motor que está sendo consertado, o dono da oficina terá de adquirir aquele que tenha o diâmetro mais próximo do que precisa.",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D2_AZUL.pdf",
+      "page": 21
+    },
+    "restoration": {
+      "reason": "Texto-base introdutório ausente antes da figura/tabela/fórmula ou da continuação.",
+      "method": "OCR da página do caderno oficial e transcrição conferida; preservação das figuras existentes."
+    }
+  },
+  {
+    "id": "enem-2011-137",
+    "context": "A Escala de Magnitude de Momento (abreviada como MMS e denotada como Mw), introduzida em 1979 por Thomas Haks e Hiroo Kanamori, substituiu a Escala de Richter para medir a magnitude dos terremotos em termos de energia liberada. Menos conhecida pelo público, a MMS é, no entanto, a escala usada para estimar as magnitudes de todos os grandes terremotos da atualidade. Assim como a escala Richter, a MMS é uma escala logarítmica. Mw e M₀ se relacionam pela fórmula:\n\n![](enem/figures/71b536bf-1542-490f-96b7-6da5a37e0c08.png)\n\nOnde M0 é o momento sísmico (usualmente estimado a partir dos registros de movimento da superfície, através dos sismogramas), cuja unidade é o dina⋅cm. O terremoto de Kobe, acontecido no dia 17 de janeiro de 1995, foi um dos terremotos que causaram maior impacto no Japão e na comunidade científica internacional. Teve magnitude MW = 7,3.\n\n**U.S. GEOLOGICAL SURVEY**. Historic Earthquakes.  \nDisponível em: http://earthquake.usgs.gov. Acesso em: 1 maio 2010 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D2_AZUL.pdf",
+      "page": 21
+    },
+    "restoration": {
+      "reason": "Texto-base introdutório ausente antes da figura/tabela/fórmula ou da continuação.",
+      "method": "OCR da página do caderno oficial e transcrição conferida; preservação das figuras existentes."
+    }
+  },
+  {
+    "id": "enem-2011-139",
+    "context": "O medidor de energia elétrica de uma residência, conhecido por “relógio de luz”, é constituído de quatro pequenos relógios, cujos sentidos de rotação estão indicados conforme a figura:\n\n![](enem/figures/4b2c1448-7e79-415c-bd68-55a615705b89.png)\n\nA medida é expressa em kWh. O número obtido na leitura é composto por 4 algarismos. Cada posição do número é formada pelo último algarismo ultrapassado pelo ponteiro.",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D2_AZUL.pdf",
+      "page": 21
+    },
+    "restoration": {
+      "reason": "Texto-base introdutório ausente antes da figura/tabela/fórmula ou da continuação.",
+      "method": "OCR da página do caderno oficial e transcrição conferida; preservação das figuras existentes."
+    }
+  },
+  {
+    "id": "enem-2011-141",
+    "context": "Você pode adaptar as atividades do seu dia a dia de uma forma que possa queimar mais calorias do que as gastas normalmente, conforme a relação seguinte:\n\n– Enquanto você fala ao telefone, faça agachamentos: 100 calorias gastas em 20 minutos.  \n– Meia hora de supermercado: 100 calorias.  \n– Cuidar do jardim por 30 minutos: 200 calorias.  \n– Passear com o cachorro: 200 calorias em 30 minutos.  \n– Tirar o pó dos móveis: 150 calorias em 30 minutos.  \n– Lavar roupas por 30 minutos: 200 calorias.\n\nDisponível em: http://cyberdiet.terra.com.br. Acesso em: 27 abr. 2010 (adaptado).\n\nUma pessoa deseja executar essas atividades, porém, ajustando o tempo para que, em cada uma, gaste igualmente 200 calorias.",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D2_AZUL.pdf",
+      "page": 22
+    },
+    "restoration": {
+      "reason": "Trecho do enunciado/texto-base ausente na transcrição existente.",
+      "method": "Conferência da página do caderno oficial; OCR revisado nos trechos de fonte sem mapeamento Unicode. Figuras e conteúdo existente preservados."
+    }
+  },
+  {
+    "id": "enem-2011-144",
+    "context": "Uma indústria fabrica brindes promocionais em forma de pirâmide. A pirâmide é obtida a partir de quatro cortes em um sólido que tem a forma de um cubo. No esquema, estão indicados o sólido original (cubo) e a pirâmide obtida a partir dele.\n\n![](enem/figures/d0e4d3d7-dfa0-48c0-81a7-03193a5dfea2.png)\n\nOs pontos A, B, C, D e O do cubo e da pirâmide são os mesmos. O ponto O é central na face superior do cubo. Os quatro cortes saem de O em direção às arestas _AD_, _BC_, _AB_ e _CD_, nessa ordem. Após os cortes, são descartados quatro sólidos.",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D2_AZUL.pdf",
+      "page": 23
+    },
+    "restoration": {
+      "reason": "Texto-base introdutório ausente antes da figura/tabela/fórmula ou da continuação.",
+      "method": "OCR da página do caderno oficial e transcrição conferida; preservação das figuras existentes."
+    }
+  },
+  {
+    "id": "enem-2011-155",
+    "context": "Para determinar a distância de um barco até a praia, um navegante utilizou o seguinte procedimento: a partir de um ponto A, mediu o ângulo visual α fazendo mira em um ponto fixo P da praia. Mantendo o barco no mesmo sentido, ele seguiu até um ponto B de modo que fosse possível ver o mesmo ponto P da praia, no entanto sob um ângulo visual 2α. A figura ilustra essa situação:\n\n![](enem/figures/815b3733-1da7-4631-adc8-21e12190790b.png)\n\nSuponha que o navegante tenha medido o ângulo α = 30°  e, ao chegar ao ponto B, verificou que o barco havia percorrido a distância AB = 2 000 m.",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Texto-base introdutório ausente antes da figura/tabela/fórmula ou da continuação.",
+      "method": "OCR da página do caderno oficial e transcrição conferida; preservação das figuras existentes."
+    }
+  },
+  {
+    "id": "enem-2011-156",
+    "context": "O saldo de contratações no mercado formal no setor varejista da região metropolitana de São Paulo registrou alta. Comparando as contratações deste setor no mês de fevereiro com as de janeiro deste ano, houve incremento de 4 300 vagas no setor, totalizando 880 605 trabalhadores com carteira assinada.\n\nDisponível em: http://www.folha.uol.com.br. Acesso em: 26 abr. 2010 (adaptado).\n\nSuponha que o incremento de trabalhadores no setor varejista seja sempre o mesmo nos seis primeiros meses do ano.",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Trecho do enunciado/texto-base ausente na transcrição existente.",
+      "method": "Conferência da página do caderno oficial; OCR revisado nos trechos de fonte sem mapeamento Unicode. Figuras e conteúdo existente preservados."
+    }
+  },
+  {
+    "id": "enem-2011-158",
+    "context": "A tabela compara o consumo mensal, em kWh, dos consumidores residenciais e dos de baixa renda, antes e depois da redução da tarifa de energia no estado de Pernambuco.\n\n![](enem/figures/1780f953-427b-4344-9cc8-3fc8908f62b0.png)\n\nConsidere dois consumidores: um que é de baixa renda e gastou 100 kWh e outro do tipo residencial que gastou 185 kWh.",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Texto-base introdutório ausente antes da figura/tabela/fórmula ou da continuação.",
+      "method": "OCR da página do caderno oficial e transcrição conferida; preservação das figuras existentes."
+    }
+  },
+  {
+    "id": "enem-2011-169",
+    "context": "A figura apresenta informações biométricas de um homem (Duílio) e de uma mulher (Sandra) que estão buscando alcançar seu peso ideal a partir das atividades físicas (corrida). Para se verificar a escala de obesidade, foi desenvolvida a fórmula que permite verificar o Índice de Massa Corporal (IMC). Esta fórmula é apresentada como IMC = m/h², onde m é a massa em quilogramas e h é altura em metros.\n\n![](enem/figures/138c3e55-cb8f-43d0-8303-23e8a9f9686f.png)\n\nNo quadro é apresentada a Escala de Índice de Massa Corporal com as respectivas categorias relacionadas aos pesos.\n\n![](enem/figures/4546f26f-0929-46e6-9960-fe66371e66a7.png)",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D2_AZUL.pdf",
+      "page": 29
+    },
+    "restoration": {
+      "reason": "Texto-base introdutório ausente antes da figura/tabela/fórmula ou da continuação.",
+      "method": "OCR da página do caderno oficial e transcrição conferida; preservação das figuras existentes."
+    }
+  },
+  {
+    "id": "enem-2011-173",
+    "context": "O termo agronegócio não se refere apenas à agricultura e à pecuária, pois as atividades ligadas a essa produção incluem fornecedores de equipamentos, serviços para a zona rural, industrialização e comercialização dos produtos.\n\nO gráfico seguinte mostra a participação percentual do agronegócio no PIB brasileiro:\n\n![](enem/figures/2001a836-e42e-40a0-9858-00d6ac482132.png)\n\nEsse gráfico foi usado em uma palestra na qual o orador ressaltou uma queda da participação do agronegócio no PIB brasileiro e a posterior recuperação dessa participação, em termos percentuais.",
+    "source": {
+      "pdf": "enem/pdfs/2011_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Texto-base introdutório ausente antes da figura/tabela/fórmula ou da continuação.",
+      "method": "OCR da página do caderno oficial e transcrição conferida; preservação das figuras existentes."
+    }
+  },
+  {
+    "id": "enem-2012-84",
+    "context": "A falta de conhecimento em relação ao que vem a ser um material radioativo e quais os efeitos, consequências e usos da irradiação pode gerar o medo e a tomada de decisões equivocadas, como a apresentada no exemplo a seguir.\n\n“Uma companhia aérea negou-se a transportar material médico por este portar um certificado de esterilização por irradiação.”\n\nFísica na Escola, v. 8, n. 2, 2007 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D1_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-137",
+    "context": "O losango representado na Figura 1 foi formado pela união dos centros das quatro circunferências tangentes, de raios de mesma medida.\n\n![](enem/figures/5720ed4d-1330-4139-8e45-4161901d1ed3.png)\n\nDobrando-se o raio de duas das circunferências centradas em vértices opostos do losango e ainda mantendo-se a configuração das tangências, obtém-se uma situação conforme ilustrada pela Figura 2.\n\n![](enem/figures/232bcbe6-caaa-44af-a96a-317187b14850.png)",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 20
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-139",
+    "context": "Em um blog de variedades, músicas, mantras e informações diversas, foram postados “Contos de Halloween”. Após a leitura, os visitantes poderiam opinar, assinalando suas reações em: “Divertido”, “Assustador” ou “Chato”. Ao final de uma semana, o blog registrou que 500 visitantes distintos acessaram esta postagem.\n\nO gráfico a seguir apresenta o resultado da enquete.\n\n![](enem/figures/d676f9b1-2c82-461a-9863-f38aacafed80.png)\n\nO administrador do _blog_ irá sortear um livro entre os visitantes que opinaram na postagem “Contos de Halloween”.",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 20
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-146",
+    "context": "Em um jogo há duas urnas com 10 bolas de mesmo tamanho em cada urna. A tabela a seguir indica as quantidades de bolas de cada cor em cada urna.\n\n![](enem/figures/f3712744-381c-4ed8-8f20-86b3e9a52be9.png)\n\nUma jogada consiste em:\n\n1º) o jogador apresenta um palpite sobre a cor da bola que será retirada por ele da urna 2;\n\n2º) ele retira, aleatoriamente, uma bola da urna 1 e a coloca na urna 2, misturando-a com as que lá estão;\n\n3º) em seguida ele retira, também aleatoriamente, uma bola da urna 2;\n\n4º) se a cor da última bola retirada for a mesma do palpite inicial, ele ganha o jogo.",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 22
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-153",
+    "context": "O globo da morte é uma atração muito usada em circos. Ele consiste em uma espécie de jaula em forma de uma superfície esférica feita de aço, onde motoqueiros andam com suas motos por dentro. A seguir, tem-se, na Figura 1, uma foto de um globo da morte e, na Figura 2, uma esfera que ilustra um globo da morte.\n\n![](enem/figures/fa4fd7b5-9f57-4575-b0d7-efd5da168ad2.png)\n\nNa Figura 2, o ponto A está no plano do chão onde está colocado o globo da morte e o segmento AB passa pelo centro da esfera e é perpendicular ao plano do chão. Suponha que há um foco de luz direcionado para o chão colocado no ponto B e que um motoqueiro faça um trajeto dentro da esfera, percorrendo uma circunferência que passa pelos pontos A e B.",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 24
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-160",
+    "context": "Para decorar a fachada de um edifício, um arquiteto projetou a colocação de vitrais compostos de quadrados de lado medindo 1 m, conforme a figura a seguir.\n\n![](enem/figures/c6742e65-6a0c-4579-b559-5327fa9d1a4c.png)\n\nNesta figura, os pontos A, B, C e D são pontos médios dos lados do quadrado e os segmentos AP e QC medem 1/4 da medida do lado do quadrado. Para confeccionar um vitral, são usados dois tipos de materiais: um para a parte sombreada da figura, que custa R$ 30,00 o m², e outro para a parte mais clara (regiões ABPDA e BCDQB), que custa R$ 50,00 o m².",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-162",
+    "context": "O gráfico fornece os valores das ações da empresa XPN, no período das 10 às 17 horas, num dia em que elas oscilaram acentuadamente em curtos intervalos de tempo.\n\n![](enem/figures/bd217549-d00a-441a-8605-f2ae4d33bd87.png)\n\nNeste dia, cinco investidores compraram e venderam o mesmo volume de ações, porém em horários diferentes, de acordo com a seguinte tabela.\n\n![](enem/figures/669dd1ca-6db2-4e87-a39c-808c517fc32e.png)",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 27
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-163",
+    "context": "A figura a seguir apresenta dois gráficos com informações sobre as reclamações diárias recebidas e resolvidas pelo Setor de Atendimento ao Cliente (SAC) de uma empresa, em uma dada semana. O gráfico de linha tracejada informa o número de reclamações recebidas no dia, o de linha contínua é o número de reclamações resolvidas no dia. As reclamações podem ser resolvidas no mesmo dia ou demorarem mais de um dia para serem resolvidas.\n\n![](enem/figures/75b75570-0067-4c97-98b4-9742aaccb113.png)\n\nO gerente de atendimento deseja identificar os dias da semana em que o nível de eficiência pode ser considerado muito bom, ou seja, os dias em que o número de reclamações resolvidas excede o número de reclamações recebidas.\n\n_Disponível em: http://blog.bibliotecaunix.org. Acesso em: 21 jan. 2012 (adaptado)._",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 27
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-165",
+    "context": "João propôs um desafio a Bruno, seu colega de classe: ele iria descrever um deslocamento pela pirâmide a seguir e Bruno deveria desenhar a projeção desse deslocamento no plano da base da pirâmide.\n\n![](enem/figures/3fbde9b0-ee25-43f8-8514-0b3b42bd2adc.png)\n\nO deslocamento descrito por João foi: mova-se pela pirâmide, sempre em linha reta, do ponto A ao ponto E, a seguir do ponto E ao ponto M, e depois de M a C.",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 28
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-166",
+    "context": "As curvas de oferta e de demanda de um produto representam, respectivamente, as quantidades que vendedores e consumidores estão dispostos a comercializar em função do preço do produto. Em alguns casos, essas curvas podem ser representadas por retas. Suponha que as quantidades de oferta e de demanda de um produto sejam, respectivamente, representadas pelas equações:\n\nQO = −20 + 4P\n\nQD = 46 − 2P\n\n![](enem/figures/acff0d62-4e1d-4eb6-b58a-a91804ba997c.png)\n\nem que QO é quantidade de oferta, QD é a quantidade de demanda e P é o preço do produto.\n\nA partir dessas equações, de oferta e de demanda, os economistas encontram o preço de equilíbrio de mercado, ou seja, quando QO e QD se igualam.",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 28
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-174",
+    "context": "A tabela a seguir mostra a evolução da receita bruta anual nos três últimos anos de cinco microempresas (ME) que se encontram à venda.\n\n![](enem/figures/c9dc1c65-f17e-44ce-85fc-f4a36584a37f.png)\n\nUm investidor deseja comprar duas das empresas listadas na tabela. Para tal, ele calcula a média da receita bruta anual dos últimos três anos (de 2009 até 2011) e escolhe as duas empresas de maior média anual.",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2012-175",
+    "context": "Um laboratório realiza exames em que é possível observar a taxa de glicose de uma pessoa. Os resultados são analisados de acordo com o quadro a seguir.\n\n![](enem/figures/8362025d-b302-483a-93b8-d628c12c46ae.png)\n\nUm paciente fez um exame de glicose nesse laboratório e comprovou que estava com hiperglicemia. Sua taxa de glicose era de 300 mg/dL. Seu médico prescreveu um tratamento em duas etapas. Na primeira etapa ele conseguiu reduzir sua taxa em 30% e na segunda etapa em 10%.",
+    "source": {
+      "pdf": "enem/pdfs/2012_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-65",
+    "context": "Uma manifestação comum das torcidas em estádios de futebol é a ola mexicana. Os espectadores de uma linha, sem sair do lugar e sem se deslocarem lateralmente, ficam de pé e se sentam, sincronizados com os da linha adjacente. O efeito coletivo se propaga pelos espectadores do estádio, formando uma onda progressiva, conforme ilustração.\n\n![](enem/figures/bae12c44-190a-4788-bdaa-922272848928.png)\n\nCalcula-se que a velocidade de propagação dessa “onda humana” é 45 km/h, e que cada período de oscilação contém 16 pessoas, que se levantam e sentam organizadamente e distanciadas entre si por 80 cm.\n\nDisponível em: www.ufsm.br. Acesso em: 7 dez. 2012 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D1_AZUL.pdf",
+      "page": 21
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-71",
+    "context": "A varfarina é um fármaco que diminui a agregação plaquetária, e por isso é utilizada como anticoagulante, desde que esteja presente no plasma, com uma concentração superior a 1,0 mg/L. Entretanto, concentrações plasmáticas superiores a 4,0 mg/L podem desencadear hemorragias. As moléculas desse fármaco ficam retidas no espaço intravascular e dissolvidas exclusivamente no plasma, que representa aproximadamente 60% do sangue em volume. Em um medicamento, a varfarina é administrada por via intravenosa na forma de solução aquosa, com concentração de 3,0 mg/mL. Um indivíduo adulto, com volume sanguíneo total de 5,0 L, será submetido a um tratamento com solução injetável desse medicamento.\n\nQual é o máximo volume da solução do medicamento que pode ser administrado a esse indivíduo, pela via intravenosa, de maneira que não ocorram hemorragias causadas pelo anticoagulante?",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D1_AZUL.pdf",
+      "page": 23
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-152",
+    "context": "A parte interior de uma taça foi gerada pela rotação de uma parábola em torno de um eixo z, conforme mostra a figura.\n\n![](enem/figures/71519410-35b4-4dde-b1af-d908a8fa58cf.png)\n\nA função real que expressa a parábola, no plano cartesiano da figura, é dada pela lei ![](enem/figures/85174ec3-b696-45a5-afb4-1ad4fe440d34.png) onde C é a medida da altura do líquido contido na taça,  em centímetros. Sabe-se que o ponto V, na figura, representa o vértice da parábola, localizado sobre o eixo x.",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D2_AZUL.pdf",
+      "page": 24
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-154",
+    "context": "A Lei da Gravitação Universal, de Isaac Newton, estabelece a intensidade da força de atração entre duas massas. Ela é representada pela expressão:\n\n![](enem/figures/38290d8c-ee46-47f1-aaed-8518bc60fe1a.png)\n\nonde m1 e m2 correspondem às massas dos corpos, _d_ à distância entre eles, _G_ à constante universal da gravitação e _F_ à força que um corpo exerce sobre o outro.\n\nO esquema representa as trajetórias circulares de cinco satélites, de mesma massa, orbitando a Terra.\n\n![](enem/figures/e34b89e1-90df-47ef-bc5d-2eea3ebb4e65.png)",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D2_AZUL.pdf",
+      "page": 24
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-157",
+    "context": "Num parque aquático existe uma piscina infantil na forma de um cilindro circular reto, de 1 m de profundidade e volume igual a 12 m³, cuja base tem raio R e centro O. Deseja-se construir uma ilha de lazer seca no interior dessa piscina, também na forma de um cilindro circular reto, cuja base estará no fundo da piscina e com centro da base coincidindo com o centro do fundo da piscina, conforme a figura. O raio da ilha de lazer será r. Deseja-se que após a construção dessa ilha, o espaço destinado à água na piscina tenha um volume de, no mínimo, 4 m³.\n\n![](enem/figures/05b2dd08-a2a1-45ea-a618-540da89c4bd3.png)\n\nConsidere 3 como valor aproximado para π",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D2_AZUL.pdf",
+      "page": 25
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-161",
+    "context": "Deseja-se postar cartas não comerciais, sendo duas de 100 g, três de 200 g e uma de 350 g. O gráfico mostra o custo para enviar uma carta não comercial pelos Correios:\n\n![](enem/figures/71e7f83b-c1a9-4a5f-af6f-5060240c73b6.png)\n\nDisponível em: www.correios.com.br. Acesso em: 2 ago. 2012 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-166",
+    "context": "Em setembro de 1987, Goiânia foi palco do maior acidente radioativo ocorrido no Brasil, quando uma amostra de césio-137, removida de um aparelho de radioterapia abandonado, foi manipulada inadvertidamente por parte da população. A meia-vida de um material radioativo é o tempo necessário para que a massa desse material se reduza à metade. A meia-vida do césio-137 é 30 anos e a quantidade restante de massa de um material radioativo, após t anos, é calculada pela expressão M(t) = A · (2,7)ᵏᵗ, onde A é a massa inicial e k é uma constante negativa.\n\nConsidere 0,3 como aproximação para log10 2.",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D2_AZUL.pdf",
+      "page": 27
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-167",
+    "context": "A cerâmica constitui-se em um artefato bastante presente na história da humanidade. Uma de suas várias propriedades é a retração (contração), que consiste na evaporação da água existente em um conjunto ou bloco cerâmico quando submetido a uma determinada temperatura elevada. Essa elevação de temperatura, que ocorre durante o processo de cozimento, causa uma redução de até 20% nas dimensões lineares de uma peça.\n\nDisponível em: www.arq.ufsc.br. Acesso em: 3 mar. 2012.\n\nSuponha que uma peça, quando moldada em argila, possuía uma base retangular cujos lados mediam 30 cm e 15 cm. Após o cozimento, esses lados foram reduzidos em 20%.",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D2_AZUL.pdf",
+      "page": 28
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-169",
+    "context": "Considere o seguinte jogo de apostas: Numa cartela com 60 números disponíveis, um apostador escolhe de 6 a 10 números. Dentre os números disponíveis, serão sorteados apenas 6. O apostador será premiado caso os 6 números sorteados estejam entre os números escolhidos por ele numa mesma cartela. O quadro apresenta o preço de cada cartela, de acordo com a quantidade de números escolhidos.\n\n![](enem/figures/4edf5f0f-1c12-4b0b-a004-77d4d4835645.png)\n\nCinco apostadores, cada um com R$ 500,00 para apostar, fizeram as seguintes opções:\n\nArthur: 250 cartelas com 6 números escolhidos;\n\nBruno: 41 cartelas com 7 números escolhidos e 4 cartelas com 6 números escolhidos;\n\nCaio: 12 cartelas com 8 números escolhidos e 10 cartelas com 6 números escolhidos;\n\nDouglas: 4 cartelas com 9 números escolhidos;\n\nEduardo: 2 cartelas com 10 números escolhidos.",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D2_AZUL.pdf",
+      "page": 28
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-174",
+    "context": "A figura apresenta dois mapas, em que o estado do Rio de Janeiro é visto em diferentes escalas.\n\n![](enem/figures/058b1a19-673e-41e2-864f-585fb4405de3.png)\n\nHá interesse em estimar o número de vezes que foi ampliada a área correspondente a esse estado no mapa do Brasil.",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D2_AZUL.pdf",
+      "page": 29
+    },
+    "restoration": {
+      "reason": "Trecho do enunciado/texto-base ausente na transcrição existente.",
+      "method": "Conferência da página do caderno oficial; OCR revisado nos trechos de fonte sem mapeamento Unicode. Figuras e conteúdo existente preservados."
+    }
+  },
+  {
+    "id": "enem-2013-175",
+    "context": "Nos últimos anos, a televisão tem passado por uma verdadeira revolução, em termos de qualidade de imagem, som e interatividade com o telespectador. Essa transformação se deve à conversão do sinal analógico para o sinal digital. Entretanto, muitas cidades ainda não contam com essa nova tecnologia. Buscando levar esses benefícios a três cidades, uma emissora de televisão pretende construir uma nova torre de transmissão, que envie sinal às antenas A, B e C, já existentes nessas cidades. As localizações das antenas estão representadas no plano cartesiano:\n\n![](enem/figures/eb855bec-d0a6-4b05-b8d8-fcff4deae0a7.png)\n\nA torre deve estar situada em um local equidistante das três antenas.",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2013-176",
+    "context": "Uma cozinheira, especialista em fazer bolos, utiliza uma forma no formato representado na figura:\n\n![](enem/figures/38cb8424-5409-40d1-bed1-ccff111fb5ea.png)\n\nNela identifica-se a representação de duas figuras geométricas tridimensionais.",
+    "source": {
+      "pdf": "enem/pdfs/2013_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Trecho do enunciado/texto-base ausente na transcrição existente.",
+      "method": "Conferência da página do caderno oficial; OCR revisado nos trechos de fonte sem mapeamento Unicode. Figuras e conteúdo existente preservados."
+    }
+  },
+  {
+    "id": "enem-2014-48",
+    "context": "A liberação dos gases clorofluorcarbonos (CFCs) na atmosfera pode provocar depleção de ozônio (O3) na estratosfera. O ozônio estratosférico é responsável por absorver parte da radiação ultravioleta emitida pelo Sol, a qual é nociva aos seres vivos. Esse processo, na camada de ozônio, é ilustrado simplificadamente na figura.\n\n![](enem/figures/4b2624ac-087f-43e1-8654-e47e9593c1e0.png)",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D1_AZUL.pdf",
+      "page": 16
+    },
+    "restoration": {
+      "reason": "Trecho do enunciado/texto-base ausente na transcrição existente.",
+      "method": "Conferência da página do caderno oficial; OCR revisado nos trechos de fonte sem mapeamento Unicode. Figuras e conteúdo existente preservados."
+    }
+  },
+  {
+    "id": "enem-2014-90",
+    "context": "As lentes fotocromáticas escurecem quando expostas à luz solar por causa de reações químicas reversíveis entre uma espécie incolor e outra colorida. Diversas reações podem ser utilizadas, e a escolha do melhor reagente para esse fim se baseia em três principais aspectos: (i) o quanto escurece a lente; (ii) o tempo de escurecimento quando exposta à luz solar; e (iii) o tempo de esmaecimento em ambiente sem forte luz solar. A transmitância indica a razão entre a quantidade de luz que atravessa o meio e a quantidade de luz que incide sobre ele.\n\nDurante um teste de controle para o desenvolvimento de novas lentes fotocromáticas, foram analisadas cinco amostras, que utilizam reagentes químicos diferentes. No quadro, são apresentados os resultados.\n\n![](enem/figures/6f80414f-5fcb-4eac-8dac-2c6c829c91fe.png)",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D1_AZUL.pdf",
+      "page": 31
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-136",
+    "context": "O gráfico apresenta as taxas de desemprego durante o ano de 2011 e o primeiro semestre de 2012 na região metropolitana de São Paulo. A taxa de desemprego total é a soma das taxas de desemprego aberto e oculto.\n\n![](enem/figures/48b68b51-310d-4654-b637-5fece87a050f.png)\n\nSuponha que a taxa de desemprego oculto do mês de dezembro de 2012 tenha sido a metade da mesma taxa em junho de 2012 e que a taxa de desemprego total em dezembro de 2012 seja igual a essa taxa em dezembro de 2011.\n\nDisponível em: dieese.org.br. Acesso em: 1 ago. 2012 (fragmento).",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 19
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-137",
+    "context": "A taxa de fecundidade é um indicador que expressa a condição reprodutiva média das mulheres de uma região, e é importante para uma análise da dinâmica demográfica dessa região. A tabela apresenta os dados obtidos pelos Censos de 2000 e 2010, feitos pelo IBGE, com relação à taxa de fecundidade no Brasil.\n\n![](enem/figures/40cf73c4-388a-4323-84f9-62bdaccf835b.png)\n\nSuponha que a variação percentual relativa na taxa de fecundidade no período de 2000 a 2010 se repita no período de 2010 a 2020.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 19
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-138",
+    "context": "O Ministério da Saúde e as unidades federadas promovem frequentemente campanhas nacionais e locais de incentivo à doação voluntária de sangue, em regiões com menor número de doadores por habitante, com o intuito de manter a regularidade de estoques nos serviços hemoterápicos. Em 2010, foram recolhidos dados sobre o número de doadores e o número de habitantes de cada região conforme o quadro seguinte.\n\n![](enem/figures/3fe2669a-4174-4db9-a85e-cee6c877f765.png)\n\nOs resultados obtidos permitiram que estados, municípios e o governo federal estabelecessem as regiões prioritárias do país para a intensificação das campanhas de doação de sangue.\n\nA campanha deveria ser intensificada nas regiões em que o percentual de doadores por habitantes fosse menor ou igual ao do país.\n\nDisponível em: http://bvsms.saude.gov.br. Acesso em: 2 ago. 2013 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 19
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-142",
+    "context": "Na alimentação de gado de corte, o processo de cortar a forragem, colocá-la no solo, compactá-la e protegê-la com uma vedação denomina-se silagem. Os silos mais comuns são os horizontais, cuja forma é a de um prisma reto trapezoidal, conforme mostrado na figura.\n\n![](enem/figures/3a321f8b-9e36-433f-9664-4f989a797ed8.png)\n\nConsidere um silo de 2 m de altura, 6 m de largura de topo e 20 m de comprimento. Para cada metro de altura do silo, a largura do topo tem 0,5 m a mais do que a largura do fundo. Após a silagem, 1 tonelada de forragem ocupa 2 m3 desse tipo de silo.\n\nEMBRAPA. **Gado de corte**. Disponível em: www.cnpgc.embrapa.br. Acesso em: 1 ago. 2012 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 20
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-143",
+    "context": "Para comemorar o aniversário de uma cidade, um artista projetou uma escultura transparente e oca, cujo formato foi inspirado em uma ampulheta. Ela é formada por três partes de mesma altura: duas são troncos de cone iguais e a outra é um cilindro. A figura é a vista frontal dessa escultura.\n\n![](enem/figures/7bcb5fac-8918-4e78-8ef7-d6e64ee5a6a4.png)\n\nNo topo da escultura foi ligada uma torneira que verte água, para dentro dela, com vazão constante.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 21
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-148",
+    "context": "A figura mostra uma criança brincando em um balanço no parque. A corda que prende o assento do balanço ao topo do suporte mede 2 metros. A criança toma cuidado para não sofrer um acidente, então se balança de modo que a corda não chegue a alcançar a posição horizontal.\n\n![](enem/figures/925f6a93-dd23-47d0-9176-6aa8754c38dd.png)\n\nNa figura, considere o plano cartesiano que contém a trajetória do assento do balanço, no qual a origem está localizada no topo do suporte do balanço, o eixo _X_ é paralelo ao chão do parque, e o eixo _Y_ tem orientação positiva para cima.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 22
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-151",
+    "context": "Uma lata de tinta, com a forma de um paralelepípedo retangular reto, tem as dimensões, em centímetros, mostradas na figura.\n\n![](enem/figures/f01eefec-e89d-4de0-881e-3bf1249199ff.png)\n\nSerá produzida uma nova lata, com os mesmos formato e volume, de tal modo que as dimensões de sua base sejam 25% maiores que as da lata atual.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 23
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-157",
+    "context": "Uma loja que vende sapatos recebeu diversas reclamações de seus clientes relacionadas à venda de sapatos de cor branca ou preta. Os donos da loja anotaram as numerações dos sapatos com defeito e fizeram um estudo estatístico com o intuito de reclamar com o fabricante. A tabela contém a média, a mediana e a moda desses dados anotados pelos donos.\n\n![](enem/figures/0036f173-2e12-4c90-9b1b-9eb2fb4de45b.png)\n\nPara quantificar os sapatos pela cor, os donos representaram a cor branca pelo número 0 e a cor preta pelo número 1. Sabe-se que a média da distribuição desses zeros e uns é igual a 0,45.\n\nOs donos da loja decidiram que a numeração dos sapatos com maior número de reclamações e a cor com maior número de reclamações não serão mais vendidas.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 25
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-158",
+    "context": "Para analisar o desempenho de um método diagnóstico, realizam-se estudos em populações contendo pacientes sadios e doentes. Quatro situações distintas podem acontecer nesse contexto de teste: 1) Paciente TEM a doença e o resultado do teste é POSITIVO. 2) Paciente TEM a doença e o resultado do teste é NEGATIVO. 3) Paciente NÃO TEM a doença e o resultado do teste é POSITIVO. 4) Paciente NÃO TEM a doença e o resultado do teste é NEGATIVO. Um índice de desempenho para avaliação de um teste diagnóstico é a sensibilidade, definida como a probabilidade de o resultado do teste ser POSITIVO se o paciente estiver com a doença. O quadro refere-se a um teste diagnóstico para a doença A, aplicado em uma amostra composta por duzentos indivíduos.\n\n![](enem/figures/f3fb8087-ffc9-4624-9550-cb84254ac99f.png)\n\nBENSEÑOR, I. M.; LOTUFO, P. A. **Epidemologia**: abordagem prática.\n\nSão Paulo: Sarvier, 2011 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 25
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-162",
+    "context": "Em uma cidade, o valor total da conta de energia elétrica é obtido pelo produto entre o consumo (em kWh) e o valor da tarifa do kWh (com tributos), adicionado à Cosip (contribuição para custeio da iluminação pública), conforme a expressão:\n\n_Valor do kWh (com tributos)_ x _consumo (em kWh) + Cosip_\n\nO valor da Cosip é fixo em cada faixa de consumo.  O quadro mostra o valor cobrado para algumas faixas.\n\n![](enem/figures/9f6d3bb3-95ac-44b3-88c3-7b0fe6d9d2f6.png)\n\nSuponha que, em uma residência, todo mês o consumo seja de 150 kWh, e o valor do kWh (com tributos) seja de R$ 0,50. O morador dessa residência pretende diminuir seu consumo mensal de energia elétrica com o objetivo de reduzir o custo total da conta em pelo menos 10%.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-165",
+    "context": "A Companhia de Engenharia de Tráfego (CET) de São Paulo testou em 2013 novos radares que permitem o cálculo da velocidade média desenvolvida por um veículo em um trecho da via.\n\n![](enem/figures/b6b29eae-3d2d-447e-8ebf-a7e7c23b4e8f.png)\n\nAs medições de velocidade deixariam de ocorrer de maneira instantânea, ao se passar pelo radar, e seriam feitas a partir da velocidade média no trecho, considerando o tempo gasto no percurso entre um radar e outro. Sabe-se que a velocidade média é calculada como sendo a razão entre a distância percorrida e o tempo gasto para percorrê-la. O teste realizado mostrou que o tempo que permite uma condução segura de deslocamento no percurso entre os dois radares deveria ser de, no mínimo, 1 minuto e 24 segundos. Com isso, a CET precisa instalar uma placa antes do primeiro radar informando a velocidade média máxima permitida nesse trecho da via. O valor a ser exibido na placa deve ser o maior possível, entre os que atendem às condições de condução segura observadas.\n\nDisponível em: www1.folha.uol.com.br. Acesso em: 11 jan. 2014 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 27
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-166",
+    "context": "No Brasil há várias operadoras e planos de telefonia celular. Uma pessoa recebeu 5 propostas (A, B, C, D e E) de planos telefônicos. O valor mensal de cada plano está em função do tempo mensal das chamadas, conforme o gráfico.\n\n![](enem/figures/9eb6c121-ac40-452b-b439-1b2261d6e950.png)\n\nEssa pessoa pretende gastar exatamente R$ 30,00 por mês com telefone.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 28
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-167",
+    "context": "Uma empresa farmacêutica produz medicamentos em pílulas, cada uma na forma de um cilindro com uma semiesfera com o mesmo raio do cilindro em cada uma de suas extremidades. Essas pílulas são moldadas por uma máquina programada para que os cilindros tenham sempre 10 mm de comprimento, adequando o raio de acordo com o volume desejado. Um medicamento é produzido em pílulas com 5 mm de raio. Para facilitar a deglutição, deseja-se produzir esse medicamento diminuindo o raio para 4 mm, e, por consequência, seu volume. Isso exige a reprogramação da máquina que produz essas pílulas.\n\nUse 3 como valor aproximado para π.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 28
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-169",
+    "context": "A Figura 1 representa uma gravura retangular com 8 m de comprimento e 6 m de altura.\n\n![](enem/figures/b44d9617-dc63-4685-b986-350085211e6d.png)\n\nDeseja-se reproduzi-la numa folha de papel retangular com 42 cm de comprimento e 30 cm de altura, deixando livres 3 cm em cada margem, conforme a Figura 2.\n\n![](enem/figures/763670f1-6c10-4db7-bc89-5871441c12b6.png)\n\nA reprodução da gravura deve ocupar o máximo possível da região disponível, mantendo-se as proporções da Figura 1\n\nPRADO, A. C. **Superinteressante**, ed. 301, fev. 2012 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 29
+    },
+    "restoration": {
+      "reason": "Trecho do enunciado/texto-base ausente na transcrição existente.",
+      "method": "Conferência da página do caderno oficial; OCR revisado nos trechos de fonte sem mapeamento Unicode. Figuras e conteúdo existente preservados."
+    }
+  },
+  {
+    "id": "enem-2014-170",
+    "context": "Uma empresa que organiza eventos de formatura confecciona canudos de diplomas a partir de folhas de papel quadradas. Para que todos os canudos fiquem idênticos, cada folha é enrolada em torno de um cilindro de madeira de diâmetro d em centímetros, sem folga, dando-se 5 voltas completas em torno de tal cilindro. Ao final, amarra-se um cordão no meio do diploma, bem ajustado, para que não ocorra o desenrolamento, como ilustrado na figura.\n\n![](enem/figures/3ce1ab6e-11a1-45d0-a43f-cf84e9fc4e79.png)\n\nEm seguida, retira-se o cilindro de madeira do meio do papel enrolado, finalizando a confecção do diploma. Considere que a espessura da folha de papel original seja desprezível.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 29
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-172",
+    "context": "Os incas desenvolveram uma maneira de registrar quantidades e representar números utilizando um sistema de numeração decimal posicional: um conjunto de cordas com nós denominado quipus. O quipus era feito de uma corda matriz, ou principal (mais grossa que as demais), na qual eram penduradas outras cordas, mais finas, de diferentes tamanhos e cores (cordas pendentes). De acordo com a sua posição, os nós significavam unidades, dezenas, centenas e milhares. Na Figura 1, o quipus representa o número decimal 2 453. Para representar o “zero” em qualquer posição, não se coloca nenhum nó.\n\n![](enem/figures/d8842865-9aae-47ac-87d3-7eb78f57f384.png)\n\nDisponível em: www.culturaperuana.com.br. Acesse em: 13 dez. 2012.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2014-174",
+    "context": "Durante uma epidemia de uma gripe viral, o secretário de saúde de um município comprou 16 galões de álcool em gel, com 4 litros de capacidade cada um, para distribuir igualmente em recipientes para 10 escolas públicas do município. O fornecedor dispõe à venda diversos tipos de recipientes, com suas respectivas capacidades listadas: • Recipiente I: 0,125 litro • Recipiente II: 0,250 litro • Recipiente III: 0,320 litro • Recipiente IV: 0,500 litro • Recipiente V: 0,800 litro\n\nO secretário de saúde comprará recipientes de um mesmo tipo, de modo a instalar 20 deles em cada escola, abastecidos com álcool em gel na sua capacidade máxima, de forma a utilizar todo o gel dos galões de uma só vez.",
+    "source": {
+      "pdf": "enem/pdfs/2014_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-49",
+    "context": "Um carro solar é um veículo que utiliza apenas a energia solar para a sua locomoção. Tipicamente, o carro contém um painel fotovoltaico que converte a energia do Sol em energia elétrica que, por sua vez, alimenta um motor elétrico. A imagem mostra o carro solar Tokai Challenger, desenvolvido na Universidade de Tokai, no Japão, e que venceu o World Solar Challenge de 2009, uma corrida internacional de carros solares, tendo atingido uma velocidade média acima de 100 km/h.\n\n![](enem/figures/8e90f92f-f8c7-4383-a642-b48dfef28550.png)\n\nConsidere uma região plana onde a insolação (energia solar por unidade de tempo e de área que chega à superfície da Terra) seja de 1 000 W/m² , que o carro solar possua massa de 200 kg e seja construído de forma que o painel fotovoltaico em seu topo tenha uma área de 9,0 m² e rendimento de 30%.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D1_AZUL.pdf",
+      "page": 17
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-50",
+    "context": "A radiação ultravioleta (UV) é dividida, de acordo com três faixas de frequência, em UV-A, UV-B e UV-C, conforme a figura.\n\n![](enem/figures/8fe7b2bf-2b9e-45ce-b602-02f97af15325.png)\n\nPara selecionar um filtro solar que apresente absorção máxima na faixa UV-B, uma pessoa analisou os espectros de absorção da radiação UV de cinco filtros solares:\n\n![](enem/figures/e0f1ee0e-3b76-4274-b048-49cd8c8fc7ca.png)\n\nConsidere: velocidade da luz = 3,0×108 m/s e 1 nm = 1,0×10\\-9 m.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D1_AZUL.pdf",
+      "page": 18
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-65",
+    "context": "Uma garrafa térmica tem como função evitar a troca de calor entre o líquido nela contido e o ambiente, mantendo a temperatura de seu conteúdo constante. Uma forma de orientar os consumidores na compra de uma garrafa térmica seria criar um selo de qualidade, como se faz atualmente para informar o consumo de energia de eletrodomésticos. O selo identificaria cinco categorias e informaria a variação de temperatura do conteúdo da garrafa, depois de decorridas seis horas de seu fechamento, por meio de uma porcentagem do valor inicial da temperatura de equilíbrio do líquido na garrafa. O quadro apresenta as categorias e os intervalos de variação percentual da temperatura.\n\n![](enem/figures/55ff38f3-4de4-4f06-9fe0-224c35d485f0.png)\n\nPara atribuir uma categoria a um modelo de garrafa térmica, são preparadas e misturadas, em uma garrafa, duas amostras de água, uma a 10°C e outra a 40°C, na proporção de um terço de água fria para dois terços de água quente. A garrafa é fechada. Seis horas depois, abre-se a garrafa e mede-se a temperatura da água, obtendo-se 16°C.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D1_AZUL.pdf",
+      "page": 23
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-68",
+    "context": "Um estudante, precisando instalar um computador, um monitor e uma lâmpada em seu quarto, verificou que precisaria fazer a instalação de duas tomadas e um interruptor na rede elétrica. Decidiu esboçar com antecedência o esquema elétrico.\n\n“O circuito deve ser tal que as tomadas e a lâmpada devem estar submetidas à tensão nominal da rede elétrica e a lâmpada deve poder ser ligada ou desligada por um interruptor sem afetar os outros dispositivos” – pensou.\n\nSímbolos adotados:\n\n![](enem/figures/4f4ca8f0-ec3a-4332-9567-1633095f1fe6.png)",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D1_AZUL.pdf",
+      "page": 24
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-76",
+    "context": "Para proteger estruturas de aço da corrosão, a indústria utiliza uma técnica chamada galvanização. Um metal bastante utilizado nesse processo é o zinco, que pode ser obtido a partir de um minério denominado esfalerita (ZnS), de pureza 75%. Considere que a conversão do minério em zinco metálico tem rendimento de 80% nesta sequência de equações químicas: \n\n2 ZnS + 3 O₂ → 2 ZnO + 2 SO₂\n\nZnO + CO → Zn + CO₂\n\nConsidere as massas molares: ZnS (97 g/mol); O2 (32 g/mol); ZnO (81 g/mol); SO2 (64 g/mol); CO (28 g/mol); CO2 (44 g/mol); e Zn (65 g/mol).",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D1_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-137",
+    "context": "O tampo de vidro de uma mesa quebrou-se e deverá ser substituído por outro que tenha a forma de círculo. O suporte de apoio da mesa tem o formato de um prisma reto, de base em forma de triângulo equilátero com lados medindo 30 cm. Uma loja comercializa cinco tipos de tampos de vidro circulares com cortes já padronizados, cujos raios medem 18 cm, 26 cm, 30 cm, 35 cm e 60 cm. O proprietário da mesa deseja adquirir nessa loja o tampo de menor diâmetro que seja suficiente para cobrir a base superior do suporte da mesa.\n\nConsidere 1,7 como aproximação para √3.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 19
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-140",
+    "context": "Uma pesquisa de mercado foi realizada entre os consumidores das classes sociais A, B, C e D que costumam participar de promoções tipo sorteio ou concurso. Os dados comparativos, expressos no gráfico, revelam a participação desses consumidores em cinco categorias: via Correios (juntando embalagens ou recortando códigos de barra), via internet (cadastrando-se no site da empresa/marca promotora), via mídias sociais (redes sociais), via SMS (mensagem por celular) ou via rádio/TV.\n\n![](enem/figures/b83a0d54-9959-4218-96b9-3b44ec7d745e.png)\n\nUma empresa vai lançar uma promoção utilizando apenas uma categoria nas classes A e B (A/B) e uma categoria nas classes C e D (C/D).",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 20
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-144",
+    "context": "O Esquema I mostra a configuração de uma quadra de basquete. Os trapézios em cinza, chamados de garrafões, correspondem a áreas restritivas.\n\n![](enem/figures/4b656609-56fc-45a4-8e34-a4c7e0bb8513.png)\n\nVisando atender as orientações do Comitê Central da Federação Internacional de Basquete (Fiba) em 2010, que unificou as marcações das diversas ligas, foi prevista uma modificação nos garrafões das quadras, que passariam a ser retângulos, como mostra o Esquema II.\n\n![](enem/figures/c4aff79b-17b7-4a0e-86ce-a00808954ddc.png)",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 21
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-148",
+    "context": "Uma carga de 100 contêineres, idênticos ao modelo apresentado na Figura 1, deverá ser descarregada no porto de uma cidade. Para isso, uma área retangular de 10 m por 32 m foi cedida para o empilhamento desses contêineres (Figura 2).\n\n![](enem/figures/971eb9cd-abf9-48be-994d-d1e0f2bdcc60.png)\n\nDe acordo com as normas desse porto, os contêineres deverão ser empilhados de forma a não sobrarem espaços nem ultrapassarem a área delimitada",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 22
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-150",
+    "context": "Uma padaria vende, em média, 100 pães especiais por dia e arrecada com essas vendas, em média, R$ 300,00. Constatou-se que a quantidade de pães especiais vendidos diariamente aumenta, caso o preço seja reduzido, de acordo com a equação\n\nq = 400 – 100_p_,\n\nna qual _q_ representa a quantidade de pães especiais vendidos diariamente e _p_, o seu preço em reais.\n\nA fim de aumentar o fluxo de clientes, o gerente da padaria decidiu fazer uma promoção. Para tanto, modificará o preço do pão especial de modo que a quantidade a ser vendida diariamente seja a maior possível, sem diminuir a média de arrecadação diária na venda desse produto.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 23
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-151",
+    "context": "O HPV é uma doença sexualmente transmissível. Uma vacina com eficácia de 98% foi criada com o objetivo de prevenir a infecção por HPV e, dessa forma, reduzir o número de pessoas que venham a desenvolver câncer de colo de útero. Uma campanha de vacinação foi lançada em 2014 pelo SUS, para um público-alvo de meninas de 11 a 13 anos de idade. Considera-se que, em uma população não vacinada, o HPV acomete 50% desse público ao longo de suas vidas. Em certo município, a equipe coordenadora da campanha decidiu vacinar meninas entre 11 e 13 anos de idade em quantidade suficiente para que a probabilidade de uma menina nessa faixa etária, escolhida ao acaso, vir a desenvolver essa doença seja, no máximo, de 5,9%. Houve cinco propostas de cobertura, de modo a atingir essa meta: Proposta I: vacinação de 90% do público-alvo. Proposta II: vacinação de 55,8% do público-alvo. Proposta III: vacinação de 88,2% do público-alvo. Proposta IV: vacinação de 49% do público-alvo. Proposta V: vacinação de 95,9% do público-alvo.\n\nPara diminuir os custos, a proposta escolhida deveria ser também aquela que vacinasse a menor quantidade possível de pessoas.\n\nDisponível em: www.virushpv.com.br. Acesso em: 30 ago. 2014 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 23
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-154",
+    "context": "Um engenheiro projetou um automóvel cujos vidros das portas dianteiras foram desenhados de forma que suas bordas superiores fossem representadas pela curva de equação y = log (x), conforme a figura.\n\n![](enem/figures/65c7dd7a-2e17-4352-a584-ed42ea5b0559.png)\n\nA forma do vidro foi concebida de modo que o eixo _x_ sempre divida ao meio a altura _h_ do vidro e a base do vidro seja paralela ao eixo _x_. Obedecendo a essas condições, o engenheiro determinou uma expressão que fornece a altura h do vidro em função da medida _n_ de sua base, em metros.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 24
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-155",
+    "context": "Uma empresa de telefonia celular possui duas antenas que serão substituídas por uma nova, mais potente. As áreas de cobertura das antenas que serão substituídas são círculos de raio 2 km, cujas circunferências se tangenciam no ponto O, como mostra a figura.\n\n![](enem/figures/b5b18afc-ec22-42af-9b29-474d822405e7.png)\n\nO ponto _O_ indica a posição da nova antena, e sua região de cobertura será um círculo cuja circunferência tangenciará externamente as circunferências das áreas de cobertura menores.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 25
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-158",
+    "context": "A expressão “Fórmula de Young” é utilizada para calcular a dose infantil de um medicamento, dada a dose do adulto:\n\n![](enem/figures/502bd419-a7b2-413c-92e6-01c5fee8ad38.png)\n\nUma enfermeira deve administrar um medicamento X a uma criança inconsciente, cuja dosagem de adulto é de 60 mg. A enfermeira não consegue descobrir onde está registrada a idade da criança no prontuário, mas identifica que, algumas horas antes, foi administrada a ela uma dose de 14 mg de um medicamento Y, cuja dosagem de adulto é 42 mg. Sabe-se que a dose da medicação Y administrada à criança estava correta.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 25
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-161",
+    "context": "Uma indústria produz malhas de proteção solar para serem aplicadas em vidros, de modo a diminuir a passagem de luz, a partir de fitas plásticas entrelaçadas perpendicularmente. Nas direções vertical e horizontal, são aplicadas fitas de 1 milímetro de largura, tal que a distância entre elas é de (d − 1) milímetros, conforme a figura. O material utilizado não permite a passagem da luz, ou seja, somente o raio de luz que atingir as lacunas deixadas pelo entrelaçamento consegue transpor essa proteção. A taxa de cobertura do vidro é o percentual da área da região coberta pelas fitas da malha, que são colocadas paralelamente às bordas do vidro.\n\n![](enem/figures/f840c071-3522-4f1a-986f-6456acba44c9.png)\n\nEssa indústria recebeu a encomenda de uma malha de proteção solar para ser aplicada em um vidro retangular de 5 m de largura por 9 m de comprimento.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-163",
+    "context": "A insulina é utilizada no tratamento de pacientes com diabetes para o controle glicêmico. Para facilitar sua aplicação, foi desenvolvida uma “caneta” na qual pode ser inserido um refil contendo 3 mL de insulina, como mostra a imagem.\n\n![](enem/figures/eb67eda1-2354-45e8-a0a6-d6834a7bcf73.png)\n\nPara controle das aplicações, definiu-se a unidade de insulina como 0,01 mL. Antes de cada aplicação, é necessário descartar 2 unidades de insulina, de forma a retirar possíveis bolhas de ar.\n\nA um paciente foram prescritas duas aplicações diárias: 10 unidades de insulina pela manhã e 10 à noite.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-164",
+    "context": "Uma família composta por sete pessoas adultas, após decidir o itinerário de sua viagem, consultou o site de uma empresa aérea e constatou que o voo para a data escolhida estava quase lotado. Na figura, disponibilizada pelo site, as poltronas ocupadas estão marcadas com X e as únicas poltronas disponíveis são as mostradas em branco.\n\n![](enem/figures/143503ba-442f-4e6e-b47f-56b581a76e04.png)\n\nDisponível em: www.gebh.net. Acesso em: 30 out. 2013 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 27
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-165",
+    "context": "O proprietário de um parque aquático deseja construir uma piscina em suas dependências. A figura representa a vista superior dessa piscina, que é formada por três setores circulares idênticos, com ângulo central igual a 60°. O raio R deve ser um número natural.\n\n![](enem/figures/0cf3eb67-f1f6-4a40-89fc-106ba00c5769.png)\n\nO parque aquático já conta com uma piscina em formato retangular com dimensões 50 m x 24 m.\n\nO proprietário quer que a área ocupada pela nova piscina seja menor que a ocupada pela piscina já existente.\n\nConsidere 3,0 como aproximação para π.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 27
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-167",
+    "context": "Uma família fez uma festa de aniversário e enfeitou o local da festa com bandeirinhas de papel. Essas bandeirinhas foram feitas da seguinte maneira: inicialmente, recortaram as folhas de papel em forma de quadrado, como mostra a Figura 1. Em seguida, dobraram as folhas quadradas ao meio sobrepondo os lados BC e AD, de modo que C e D coincidam, e o mesmo ocorra com A e B, conforme ilustrado na Figura 2. Marcaram os pontos médios O e N, dos lados FG e AF, respectivamente, e o ponto M do lado AD, de modo que AM seja igual a um quarto de AD. A seguir, fizeram cortes sobre as linhas pontilhadas ao longo da folha dobrada.\n\n![](enem/figures/2268b8ec-e5a5-4ef4-a721-38486fd4acf2.png)\n\nApós os cortes, a folha é aberta e a bandeirinha está pronta.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 28
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-171",
+    "context": "O índice pluviométrico é utilizado para mensurar a precipitação da água da chuva, em milímetros, em determinado período de tempo. Seu cálculo é feito de acordo com o nível de água da chuva acumulada em 1 m², ou seja, se o índice for de 10 mm, significa que a altura do nível de água acumulada em um tanque aberto, em formato de um cubo com 1 m² de área de base, é de 10 mm. Em uma região, após um forte temporal, verificou-se que a quantidade de chuva acumulada em uma lata de formato cilíndrico, com raio 300 mm e altura 1 200 mm, era de um terço da sua capacidade.\n\nUtilize 3,0 como aproximação para π.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 29
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-172",
+    "context": "Devido ao aumento do fluxo de passageiros, uma empresa de transporte coletivo urbano está fazendo estudos para a implantação de um novo ponto de parada em uma determinada rota. A figura mostra o percurso, indicado pelas setas, realizado por um ônibus nessa rota e a localização de dois de seus atuais pontos de parada, representados por P e Q.\n\n![](enem/figures/d163cf5f-97a0-47e9-a6ab-c11c84e0e5c9.png)\n\nOs estudos indicam que o novo ponto _T_ deverá ser instalado, nesse percurso, entre as paradas já existentes _P_ e _Q_, de modo que as distâncias percorridas pelo ônibus entre os pontos _P_ e _T_ e entre os pontos _T_ e _Q_ sejam iguais.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 29
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-175",
+    "context": "A figura representa a vista superior de uma bola de futebol americano, cuja forma é um elipsoide obtido pela rotação de uma elipse em torno do eixo das abscissas. Os valores a e b são, respectivamente, a metade do seu comprimento horizontal e a metade do seu comprimento vertical. Para essa bola, a diferença entre os comprimentos horizontal e vertical é igual à metade do comprimento vertical.\n\n![](enem/figures/6b6ae3c5-95b1-4a21-94b8-59bf5c0c470d.png)\n\nConsidere que o volume aproximado dessa bola é dado por _V_ = 4_ab_².",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2015-180",
+    "context": "Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), produtos sazonais são aqueles que apresentam ciclos bem definidos de produção, consumo e preço. Resumidamente, existem épocas do ano em que a sua disponibilidade nos mercados varejistas ora é escassa, com preços elevados, ora é abundante, com preços mais baixos, o que ocorre no mês de produção máxima da safra. A partir de uma série histórica, observou-se que o preço P, em reais, do quilograma de um certo produto sazonal pode ser descrito pela função\n\n![](enem/figures/0718a550-0f5e-4d3b-bdf2-13c39ca515af.png)\n\nonde _x_ representa o mês do ano, sendo _x_ = 1 associado ao mês de janeiro, _x_ = 2 ao mês de fevereiro, e assim sucessivamente, até _x_ = 12 associado ao mês de dezembro.",
+    "source": {
+      "pdf": "enem/pdfs/2015_PV_D2_AZUL.pdf",
+      "page": 31
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-48",
+    "context": "A coleta das fezes dos animais domésticos em sacolas plásticas e o seu descarte em lixeiras convencionais podem criar condições de degradação que geram produtos prejudiciais ao meio ambiente (Figura 1).\n\n![](enem/figures/ce6bddea-21d4-44b9-9683-36234b25cc12.jpg)\n\nA Figura 2 ilustra o Projeto Park Spark, desenvolvido em Cambridge, MA (EUA), em que as fezes dos animais domésticos são recolhidas em sacolas biodegradáveis e jogadas em um biodigestor instalado em parques públicos; e os produtos são utilizados em equipamentos no próprio parque.\n\n![](enem/figures/29c36443-64d1-4747-85cb-c057dd8d39ed.jpg)",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D1_AZUL.pdf",
+      "page": 16
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-52",
+    "context": "Os feromônios são substâncias utilizadas na comunicação entre indivíduos de uma espécie. O primeiro feromônio isolado de um inseto foi o bombicol, substância produzida pela mariposa do bicho-da-seda.\n\n![](enem/figures/420bf048-0e4c-44bb-919d-ac9b6cba9a0b.png)\n\nO uso de feromônios em ações de controle de insetos-praga está de acordo com o modelo preconizado para a agricultura do futuro. São agentes altamente específicos e seus compostos químicos podem ser empregados em determinados cultivos, conforme ilustrado no quadro.\n\n![](enem/figures/bda784c1-e142-4cdc-84dc-5ebc4a507431.png)",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D1_AZUL.pdf",
+      "page": 18
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-58",
+    "context": "A minimização do tempo e custo de uma reação química, bem como o aumento na sua taxa de conversão, caracterizam a eficiência de um processo químico. Como consequência, produtos podem chegar ao consumidor mais baratos. Um dos parâmetros que mede a eficiência de uma reação química é o seu rendimento molar (R, em %), definido como\n\n![](enem/figures/99a5812b-100d-4591-a496-2762c9cac26f.png)\n\nem que n corresponde ao número de mols. O metanol pode ser obtido pela reação entre brometo de metila e hidróxido de sódio, conforme a equação química:\n\n![](enem/figures/e7997a8a-16ac-40aa-8909-dbbd285ffade.png)",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D1_AZUL.pdf",
+      "page": 20
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-61",
+    "context": "Um pesquisador investigou o papel da predação por peixes na densidade e tamanho das presas, como possível controle de populações de espécies exóticas em costões rochosos. No experimento colocou uma tela sobre uma área da comunidade, impedindo o acesso dos peixes ao alimento, e comparou o resultado com uma área adjacente na qual os peixes tinham acesso livre. O quadro apresenta os resultados encontrados após 15 dias de experimento.\n\n![](enem/figures/0ebdcee7-9e70-490b-90de-f5702770667f.jpg)\n\nO pesquisador concluiu corretamente que os peixes controlam a densidade dos(as)",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D1_AZUL.pdf",
+      "page": 22
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-144",
+    "context": "Preocupada com seus resultados, uma empresa fez um balanço dos lucros obtidos nos últimos sete meses, conforme dados do quadro.\n\n![](enem/figures/3c5cca0b-8c29-4ca2-9a1f-eba9121870b2.png)\n\nAvaliando os resultados, o conselho diretor da empresa decidiu comprar, nos dois meses subsequentes, a mesma quantidade de matéria-prima comprada no mês em que o lucro mais se aproximou da média dos lucros mensais dessa empresa nesse período de sete meses.",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 19
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-145",
+    "context": "O setor de recursos humanos de uma empresa pretende fazer contratações para adequar-se ao artigo 93 da Lei n° 8.213/91, que dispõe\n\n_Art. 93. A empresa com 100 (cem) ou mais empregados está obrigada a preencher de 2% (dois por cento) a 5% (cinco por cento) dos seus cargos com beneficiários reabilitados ou pessoas com deficiência, habilitadas, na seguinte proporção:_  \n_I. até 200 empregados……………….. 2%;_  \n_II. de 201 a 500 empregados…………… 3%;_  \n_III. de 501 a 1 000 empregados………… 4%;_  \n_IV. de 1 001 em diante………………. 5%._\n\nDisponível em: www.planalto.gov.br. Acesso em: 3 fev. 2015.\n\nConstatou-se que a empresa possui 1 200 funcionários, dos quais 10 são reabilitados ou com deficiência, habilitados.\n\nPara adequar-se à referida lei, a empresa contratará apenas empregados que atendem ao perfil indicado no artigo 93.",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 20
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-149",
+    "context": "Para uma feira de ciências, dois projéteis de foguetes, A e B, estão sendo construídos para serem lançados. O planejamento é que eles sejam lançados juntos, com o objetivo de o projétil B interceptar o A quando esse alcançar sua altura máxima. Para que isso aconteça, um dos projéteis descreverá uma trajetória parabólica, enquanto o outro irá descrever uma trajetória supostamente retilínea. O gráfico mostra as alturas alcançadas por esses projéteis em função do tempo, nas simulações realizadas.\n\n![](enem/figures/555013c9-a224-4e98-8e48-a30e33d02321.png)\n\nCom base nessas simulações, observou-se que a trajetória do projétil B deveria ser alterada para que o objetivo fosse alcançado.",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 21
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-151",
+    "context": "A fim de acompanhar o crescimento de crianças, foram criadas pela Organização Mundial da Saúde (OMS) tabelas de altura, também adotadas pelo Ministério da Saúde do Brasil. Além de informar os dados referentes ao índice de crescimento, a tabela traz gráficos com curvas, apresentando padrões de crescimento estipulados pela OMS. O gráfico apresenta o crescimento de meninas, cuja análise se dá pelo ponto de intersecção entre o comprimento, em centímetro, e a idade, em mês completo e ano, da criança.\n\n![](enem/figures/b9e723b5-a63c-4c11-b026-d686e0c3c807.png)\n\nUma menina aos 3 anos de idade tinha altura de 85 centímetros e aos 4 anos e 4 meses sua altura chegou a um valor que corresponde a um ponto exatamente sobre a curva p50.",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 21
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-152",
+    "context": "Um adolescente vai a um parque de diversões tendo, prioritariamente, o desejo de ir a um brinquedo que se encontra na área IV, dentre as áreas I, II, III, IV e V existentes. O esquema ilustra o mapa do parque, com a localização da entrada, das cinco áreas com os brinquedos disponíveis e dos possíveis caminhos para se chegar a cada área. O adolescente não tem conhecimento do mapa do parque e decide ir caminhando da entrada até chegar à área IV.\n\n![](enem/figures/b9f02657-5528-4c2c-8687-9a8db0f4a232.png)\n\nSuponha que relativamente a cada ramificação, as opções existentes de percurso pelos caminhos apresentem iguais probabilidades de escolha, que a caminhada foi feita escolhendo ao acaso os caminhos existentes e que, ao tomar um caminho que chegue a uma área distinta da IV, o adolescente necessariamente passa por ela ou retorna.",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 22
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-153",
+    "context": "Em uma cidade, o número de casos de dengue confirmados aumentou consideravelmente nos últimos dias. A prefeitura resolveu desenvolver uma ação contratando funcionários para ajudar no combate à doença, os quais orientarão os moradores a eliminarem criadouros do mosquito Aedes aegypti, transmissor da dengue. A tabela apresenta o número atual de casos confirmados, por região da cidade.\n\n![](enem/figures/5ba13490-30b2-456d-9bd4-754e04e288c3.png)\n\nA prefeitura optou pela seguinte distribuição dos funcionários a serem contratados:\n\nI. 10 funcionários para cada região da cidade cujo número de casos seja maior que a média dos casos confirmados.  \nII. 7 funcionários para cada região da cidade cujo número de casos seja menor ou igual à média dos casos confirmados.",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 22
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-154",
+    "context": "Cinco marcas de pão integral apresentam as seguintes concentrações de fibras (massa de fibra por massa de pão):\n\n• Marca A: 2 g de fibras a cada 50 g de pão;  \n• Marca B: 5 g de fibras a cada 40 g de pão;  \n• Marca C: 5 g de fibras a cada 100 g de pão;  \n• Marca D: 6 g de fibras a cada 90 g de pão;  \n• Marca E: 7 g de fibras a cada 70 g de pão.\n\nRecomenda-se a ingestão do pão que possui a maior concentração de fibras.\n\nDisponível em: www.blog.saude.gov.br. Acesso em: 25 fev. 2013.",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 22
+    },
+    "restoration": {
+      "reason": "Trecho do enunciado/texto-base ausente na transcrição existente.",
+      "method": "Conferência da página do caderno oficial; OCR revisado nos trechos de fonte sem mapeamento Unicode. Figuras e conteúdo existente preservados."
+    }
+  },
+  {
+    "id": "enem-2016-164",
+    "context": "No tanque de um certo carro de passeio cabem até 50 L de combustível, e o rendimento médio deste carro na estrada é de 15 km/L de combustível. Ao sair para uma viagem de 600 km o motorista observou que o marcador de combustível estava exatamente sobre uma das marcas da escala divisória do medidor, conforme figura a seguir.\n\n![](enem/figures/6be55162-4edb-4b05-9826-2502c11e4f14.png)\n\nComo o motorista conhece o percurso, sabe que existem, até a chegada a seu destino, cinco postos de abastecimento de combustível, localizados a 150 km, 187 km, 450 km, 500 km e 570 km do ponto de partida.",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-166",
+    "context": "Em uma cidade será construída uma galeria subterrânea que receberá uma rede de canos para o transporte de água de uma fonte (F) até o reservatório de um novo bairro (B). Após avaliações, foram apresentados dois projetos para o trajeto de construção da galeria: um segmento de reta que atravessaria outros bairros ou uma semicircunferência que contornaria esses bairros, conforme ilustrado no sistema de coordenadas xOy da figura, em que a unidade de medida nos eixos é o quilômetro.\n\n![](enem/figures/353d7220-13cd-44e2-b88b-a63acba081cd.png)\n\nEstudos de viabilidade técnica mostraram que, pelas características do solo, a construção de 1 m de galeria via segmento de reta demora 1,0 h, enquanto que 1 m de construção de galeria via semicircunferência demora 0,6 h. Há urgência em disponibilizar água para esse bairro.\n\nUse 3 como aproximação para π e 1,4 como aproximação para √2 .",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-169",
+    "context": "A distribuição de salários pagos em uma empresa pode ser analisada destacando-se a parcela do total da massa salarial que é paga aos 10% que recebem os maiores salários. Isso pode ser representado na forma de um gráfico formado por dois segmentos de reta, unidos em um ponto P, cuja abscissa tem valor igual a 90, como ilustrado na figura. No eixo horizontal do gráfico tem-se o percentual de funcionários, ordenados de forma crescente pelos valores de seus salários, e no eixo vertical tem-se o percentual do total da massa salarial de todos os funcionários.\n\n![](enem/figures/2a3b1883-983c-4974-9c15-d43c42742ae4.png)\n\nO Índice de Gini, que mede o grau de concentração de renda de um determinado grupo, pode ser calculado pela razão A/(A + B) em que A e B são as medidas das áreas indicadas no gráfico.\n\nA empresa tem como meta tornar seu Índice de Gini igual ao do país, que é 0,3. Para tanto, precisa ajustar os salários de modo a alterar o percentual que representa a parcela recebida pelos 10% dos funcionários de maior salário em relação ao total da massa salarial.\n\nDisponível em: www.ipea.gov.br. Acesso em: 4 maio 2016 (adaptado)",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 27
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-173",
+    "context": "Em um exame, foi feito o monitoramento dos níveis de duas substâncias presentes (A e B) na corrente sanguínea de uma pessoa, durante um período de 24 h, conforme o resultado apresentado na figura. Um nutricionista, no intuito de prescrever uma dieta para essa pessoa, analisou os níveis dessas substâncias, determinando que, para uma dieta semanal eficaz, deverá ser estabelecido um parâmetro cujo valor será dado pelo número de vezes em que os níveis de A e de B forem iguais, porém, maiores que o nível mínimo da substância A durante o período de duração da dieta.\n\n![](enem/figures/fdf8c101-992d-4af6-8a5a-fa7bb406d400.png)\n\nConsidere que o padrão apresentado no resultado do exame, no período analisado, se repita para os dias subsequentes.",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 29
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2016-177",
+    "context": "O LIRAa, Levantamento Rápido do Índice de Infestação por Aedes aegypti, consiste num mapeamento da infestação do mosquito Aedes aegypti. O LIRAa é dado pelo percentual do número de imóveis com focos do mosquito, entre os escolhidos de uma região em avaliação.\n\nO serviço de vigilância sanitária de um município, no mês de outubro do ano corrente, analisou o LIRAa de cinco bairros que apresentaram o maior índice de infestação no ano anterior. Os dados obtidos para cada bairro foram:\n\nI. 14 imóveis com focos de mosquito em 400 imóveis no bairro;  \nII. 6 imóveis com focos de mosquito em 500 imóveis no bairro;  \nIII. 13 imóveis com focos de mosquito em 520 imóveis no bairro;  \nIV. 9 imóveis com focos de mosquito em 360 imóveis no bairro;  \nV. 15 imóveis com focos de mosquito em 500 imóveis no bairro.\n\nO setor de dedetização do município definiu que o direcionamento das ações de controle iniciarão pelo bairro que apresentou o maior índice do LIRAa.\n\nDisponível em: http://bvsms.saude.gov.br. Acesso em: 28 out. 2015",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Trecho do enunciado/texto-base ausente na transcrição existente.",
+      "method": "Conferência da página do caderno oficial; OCR revisado nos trechos de fonte sem mapeamento Unicode. Figuras e conteúdo existente preservados."
+    }
+  },
+  {
+    "id": "enem-2016-180",
+    "context": "Em 2011, um terremoto de magnitude 9,0 na escala Richter causou um devastador tsunami no Japão, provocando um alerta na usina nuclear de Fukushima. Em 2013, outro terremoto, de magnitude 7,0 na mesma escala, sacudiu Sichuan (sudoeste da China), deixando centenas de mortos e milhares de feridos. A magnitude de um terremoto na escala Richter pode ser calculada por\n\n![](enem/figures/903f1104-77ad-4319-a940-e7e2ab5d498b.png)\n\nsendo E a energia, em kWh, liberada pelo terremoto e E0 uma constante real positiva. Considere que E1 e E2 representam as energias liberadas nos terremotos ocorridos no Japão e na China, respectivamente.",
+    "source": {
+      "pdf": "enem/pdfs/2016_PV_D2_AZUL.pdf",
+      "page": 31
+    },
+    "restoration": {
+      "reason": "Parágrafo inicial/texto-base ausente antes da figura, tabela ou continuação do enunciado.",
+      "method": "Conferência do texto do caderno oficial; recuperação de glifos CID quando necessária, preservando as imagens e a continuação existentes."
+    }
+  },
+  {
+    "id": "enem-2017-163",
+    "context": "Em um parque há dois mirantes de alturas distintas que são acessados por elevador panorâmico. O topo do mirante 1 é acessado pelo elevador 1, enquanto que o topo do mirante 2 é acessado pelo elevador 2. Eles encontram-se a uma distância possível de ser percorrida a pé, e entre os mirantes há um teleférico que os liga que pode ou não ser utilizado pelo visitante.\n\n![](enem/figures/b4c6dcfc-5f86-46af-9f78-dd94358a2301.png)\n\nO acesso aos elevadores tem os seguintes custos:  \n• Subir pelo elevador 1: R$ 0,15;  \n• Subir pelo elevador 2: R$ 1,80;  \n• Descer pelo elevador 1: R$ 0,10;  \n• Descer pelo elevador 2: R$ 2,30.\n\nO custo da passagem do teleférico partindo do topo do mirante 1 para o topo do mirante 2 é de R$ 2,00, e do topo do mirante 2 para o topo do mirante 1 é de R$ 2,50.",
+    "source": {
+      "pdf": "enem/pdfs/2017_PV_D2_AZUL.pdf",
+      "page": 25
+    },
+    "restoration": {
+      "reason": "Parágrafo introdutório ausente antes da primeira figura; o banco começava na imagem e conservava apenas o texto posterior.",
+      "method": "Transcrição do PDF original e conferência visual da página renderizada sem anotações; texto legível, acentos e pontuação conferidos. Figuras e texto existente preservados."
+    }
+  },
+  {
+    "id": "enem-2017-165",
+    "context": "O resultado de uma pesquisa eleitoral, sobre a preferência dos eleitores em relação a dois candidatos, foi representado por meio do Gráfico 1.\n\n![](enem/figures/c4d1bd98-124e-4136-9db8-7df0ddc7fdde.png)\n\nAo ser divulgado esse resultado em jornal, o Gráfico 1 foi cortado durante a diagramação, como mostra o Gráfico 2.\n\n![](enem/figures/6200b8f9-1e5e-46a5-8516-7e24a6a79bd8.png)\n\nApesar de os valores apresentados estarem corretos e a largura das colunas ser a mesma, muitos leitores criticaram o formato do Gráfico 2 impresso no jornal, alegando que houve prejuízo visual para o candidato B.",
+    "source": {
+      "pdf": "enem/pdfs/2017_PV_D2_AZUL.pdf",
+      "page": 26
+    },
+    "restoration": {
+      "reason": "Parágrafo introdutório ausente antes da primeira figura; o banco começava na imagem e conservava apenas o texto posterior.",
+      "method": "Transcrição do PDF original e conferência visual da página renderizada sem anotações; texto legível, acentos e pontuação conferidos. Figuras e texto existente preservados."
+    }
+  },
+  {
+    "id": "enem-2017-171",
+    "context": "Pivô central é um sistema de irrigação muito usado na agricultura, em que uma área circular é projetada para receber uma estrutura suspensa. No centro dessa área, há uma tubulação vertical que transmite água através de um cano horizontal longo, apoiado em torres de sustentação, as quais giram, sobre rodas, em torno do centro do pivô, também chamado de base, conforme mostram as figuras. Cada torre move-se com velocidade constante.\n\n![](enem/figures/3bb8824e-3a19-4855-a081-9cc594573f03.png)\n\nUm pivô de três torres (T1, T2 e T3) será instalado em uma fazenda, sendo que as distâncias entre torres consecutivas bem como da base à torre T1 são iguais a 50 m. O fazendeiro pretende ajustar as velocidades das torres, de tal forma que o pivô efetue uma volta completa em 25 horas. Use 3 como aproximação para π.",
+    "source": {
+      "pdf": "enem/pdfs/2017_PV_D2_AZUL.pdf",
+      "page": 28
+    },
+    "restoration": {
+      "reason": "Parágrafo introdutório ausente antes da primeira figura; o banco começava na imagem e conservava apenas o texto posterior.",
+      "method": "Transcrição do PDF original e conferência visual da página renderizada sem anotações; texto legível, acentos e pontuação conferidos. Figuras e texto existente preservados."
+    }
+  },
+  {
+    "id": "enem-2017-174",
+    "context": "O gráfico apresenta a taxa de desemprego (em %) para o período de março de 2008 a abril de 2009, obtida com base nos dados observados nas regiões metropolitanas de Recife, Salvador, Belo Horizonte, Rio de Janeiro, São Paulo e Porto Alegre.\n\n![](enem/figures/8da9e00a-e25a-4467-8f2f-53488edb0a1f.png)\n\nIBGE. Pesquisa mensal de emprego. Disponível em: www.ibge.gov.br. Acesso em: 30 jul. 2012 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2017_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Parágrafo introdutório ausente antes da primeira figura; o banco começava na imagem e conservava apenas o texto posterior.",
+      "method": "Transcrição do PDF original e conferência visual da página renderizada sem anotações; texto legível, acentos e pontuação conferidos. Figuras e texto existente preservados."
+    }
+  },
+  {
+    "id": "enem-2017-177",
+    "context": "Uma empresa construirá sua página na internet e espera atrair um público de aproximadamente um milhão de clientes. Para acessar essa página, será necessária uma senha com formato a ser definido pela empresa. Existem cinco opções de formato oferecidas pelo programador, descritas no quadro, em que “L” e “D” representam, respectivamente, letra maiúscula e dígito.\n\n![](enem/figures/56a01150-592b-4611-8550-81876ca345ec.png)\n\nAs letras do alfabeto, entre as 26 possíveis, bem como os dígitos, entre os 10 possíveis, podem se repetir em qualquer das opções.  \nA empresa quer escolher uma opção de formato cujo número de senhas distintas possíveis seja superior ao número esperado de clientes, mas que esse número não seja superior ao dobro do número esperado de clientes.",
+    "source": {
+      "pdf": "enem/pdfs/2017_PV_D2_AZUL.pdf",
+      "page": 31
+    },
+    "restoration": {
+      "reason": "Parágrafo introdutório ausente antes da primeira figura; o banco começava na imagem e conservava apenas o texto posterior.",
+      "method": "Transcrição do PDF original e conferência visual da página renderizada sem anotações; texto legível, acentos e pontuação conferidos. Figuras e texto existente preservados."
+    }
+  },
+  {
+    "id": "enem-2020-52",
+    "context": "Dois grandes eventos históricos tornaram possível um caso como o de Menocchio: a invenção da imprensa e a Reforma. A imprensa lhe permitiu confrontar os livros com a tradição oral em que havia crescido e lhe forneceu as palavras para organizar o amontoado de ideias e fantasias que nele conviviam. A Reforma lhe deu audácia para comunicar o que pensava ao padre do vilarejo, conterrâneos, inquisidores — mesmo não tendo conseguido dizer tudo diante do papa, dos cardeais e dos príncipes, como queria.\n\nGINZBURG, C. **O queijo e os vermes**: o cotidiano e as ideias de um moleiro perseguido pela Inquisição. São Paulo: Cia. das Letras, 2006.",
+    "source": {
+      "pdf": "enem/pdfs/2020_PV_D1_AZUL.pdf",
+      "page": 22
+    },
+    "restoration": {
+      "reason": "Trecho interno do texto-base havia sido suprimido.",
+      "method": "Comparação com a página do PDF original, extração textual e conferência visual; imagens atuais preservadas."
+    }
+  },
+  {
+    "id": "enem-2021-20",
+    "context": "**Que tal transformar a internet em palco para a dança?**\n\n![](enem/restored/enem-2021-20-figure.png)\n\nO coreógrafo e bailarino Didier Mulleras se destaca como um dos criadores que descobriram a dança de outro ponto de vista. _Mini@tures_ é uma experiência emblemática entre movimento, computador, internet e vídeo. Com os recursos da computação gráfica, a dança das miniaturas pode caber na palma da mão. Pelo fato de usar a internet como palco, o processo de criação das miniaturas de dança levou em consideração os limites de tempo de download e o tamanho do arquivo, para que um número maios de “espectadores” pudesse assistir. A graça das miniaturas está justamente na contaminação entre mídias: corpo/dança/computação gráfica/internet. De fato, é a rede que faz a maior diferença nesse grupo. _Mini@tures_ explora uma nova dimensão que descobre o espaço-tempo da web e conquista um novo território para a dança contemporânea. A qualquer hora, dança on-line.\n\nSPANGHERO, M. **A dança dos encéfalos acesos.**  \nSão Paulo: Itaú Cultural, 2003 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2021_PV_D1_AZUL.pdf",
+      "page": 12
+    },
+    "restoration": {
+      "reason": "Título e grade de imagens da dança estavam ausentes; texto-base restante preservado.",
+      "method": "Título conferido visualmente e figura recuperada do PDF original, sem anotações; asset referenciado em enem/restored/enem-2021-20-figure.png."
+    }
+  },
+  {
+    "id": "enem-2021-21",
+    "context": "**Texto I**\n\n**O mito da estiagem em São Paulo**\n\nOs estoques de água doce são inesgotáveis, na medida em que são alimentados principalmente pelos oceanos, infinitos via evaporação e precipitação, ou seja, pelo ciclo hidrológico, que depende de forças físicas as quais o homem nunca poderá interromper. Enquanto existirem, o ciclo funcionará e os estoques de água doce nos continentes serão repostos indefinidamente.  \nObviamente que a água não se distribui equitativamente pelo planeta. Há regiões com muita água, normalmente na zona tropical, na qual a evaporação é maior, e regiões áridas, onde, por razões específicas da dinâmica climática, as taxas de evaporação são maiores do que a precipitação, gerando déficit de reposição de estoques de água doce.\n\nDisponível em: www.cartanaescola.com.br. Acesso em: 17 jan. 2015 (adaptado)\n\n**Texto II**\n\nO processo de sedimentação no fundo do lago de reservatório é um processo lento. Os sedimentos vão formando argila, que é uma rocha impermeável. Então, a água daquele lago não vai alimentar os aquíferos. Mesmo tendo muita quantidade de água superficial, ela não consegue penetrar no solo para alimentar os aquíferos. Se não for usada no consumo, ela vai simplesmente evaporar e vai cair em outro lugar, levada pelas correntes aéreas. Isso é outro motivo pelo qual os aquíferos não conseguem recuperar seu nível, porque não recebem água.\n\nDisponível em: www.jornalopcao.com.br. Acesso em: 17 jan. 2015 (adaptado)",
+    "source": {
+      "pdf": "enem/pdfs/2021_PV_D1_AZUL.pdf",
+      "page": 12
+    },
+    "restoration": {
+      "reason": "Trecho interno do Texto II havia sido suprimido, quebrando a ligação entre as orações.",
+      "method": "Comparação com a página do PDF original, extração textual e conferência visual; imagens atuais preservadas."
+    }
+  },
+  {
+    "id": "enem-2021-23",
+    "context": "O solo A morte do cisne, criado em 1905 pelo russo Mikhail Fokine a partir da música do compositor francês Camille Saint-Saens, retrata o último voo de um cisne antes de morrer. Na versão original, uma bailarina com figurino impecavelmente branco e na ponta dos pés interpreta toda a agonia da ave se debatendo até desfalecer.\n\nEm 2012, John Lennon da Silva, de 20 anos, morador do bairro de São Mateus, na Zona Leste de São Paulo, elaborou um novo jeito de dançar a coreografia imortalizada pela bailarina Anna Pavlova. No lugar de um colã e das sapatilhas, vestiu calça jeans, camiseta e tênis. Em vez de balé, trouxe o estilo _popping da street dance_. Sua apresentação inovadora de A morte do cisne, que foi ao ar no programa _Se ela dança, eu danço_, virou hit no Youtube\n\nDisponível em: www.correiobrazilliense.com.br. Acesso em: 18 jun. 2019 (adaptado).",
+    "source": {
+      "pdf": "enem/pdfs/2021_PV_D1_AZUL.pdf",
+      "page": 13
+    },
+    "restoration": {
+      "reason": "Trecho descritivo interno do primeiro parágrafo havia sido suprimido.",
+      "method": "Comparação com a página do PDF original, extração textual e conferência visual; imagens atuais preservadas."
+    }
+  },
+  {
+    "id": "enem-2021-25",
+    "context": "– O senhor pensa que só porque o deixaram morar neste país pode logo ir fazendo o que quer? Nunca ouviu falar num troço chamado autoridades constituídas? Não sabe que tem de conhecer as leis do país? Não sabe que existe uma coisa chamada Exército Brasileiro, que o senhor tem de respeitar? Que negócio é esse? {…\\] Eu ensino o senhor a cumprir a lei, ali no duro: “dura lex”! Seus filhos são uns moleques e outra vez que eu souber que andaram incomodando o General, vai tudo em cana. Morou? Sei como tratar gringos feito o senhor. \\[…\\] Foi então que a mulher do vizinho do General interveio:  \n– Era tudo que o senhor tinha a dizer a meu marido? Odelegado apenas olhou-a, espantado com o atrevimento.  \n– Pois então fique sabendo que eu também sei tratar tipos como o senhor. Meu marido não é gringo nem meus filhos são moleques. Se por acaso importunaram o General, ele que viesse falar comigo, pois o senhor também está nos importunando. E fique sabendo que sou brasileira, sou prima de um Major do Exército, sobrinha de um Coronel, e filha de um General! Morou? Estarrecido, o delegado só teve força para engolir em seco e balbuciar humildemente: – Da ativa, minha senhora?.\n\nSABINO, F. A mulher do vizinho. In: **Os melhores contos**. Rio de Janeiro: Record, 1986.",
+    "source": {
+      "pdf": "enem/pdfs/2021_PV_D1_AZUL.pdf",
+      "page": 13
+    },
+    "restoration": {
+      "reason": "Duas orações do texto-base haviam sido cortadas no meio de uma fala.",
+      "method": "Comparação com a página do PDF original, extração textual e conferência visual; imagens atuais preservadas."
+    }
+  },
+  {
+    "id": "enem-2022-58",
+    "context": "**TEXTO I**  \nEm março de 1889, quando apareceram as primeiras romarias atraídas pelos milagres da beata Maria de Araújo, Juazeiro inseriu-se no rol da fundação do espaço religioso. Construía-se mais um centro, como Aparecida do Norte, Canindé ou Lourdes.\n\n**RAMOS, F. R. L. O meio do mundo: território sagrado em Juazeiro do Padre Cícero. Fortaleza: Imprensa Universitária, 2014.**\n\n**TEXTO II**  \nNão sabemos ao certo quantas pessoas estavam presentes na capela no momento em que a hóstia sangrou na boca de Maria de Araújo. O Padre Cícero nos conta que o fato surpreendeu não só aos presentes, mas a própria beata parecia atordoada com o ocorrido. O fenômeno continuou acontecendo todas as quartas e sextas na Capela de Nossa Senhora das Dores a partir daquele dia. Os paninhos manchados do sangue que escorria da hóstia e da boca da beata, a princípio ficaram sob a guarda do Padre Cícero, mas logo foram expostos à visitação pública e, além disso, o sangramento foi proclamado como milagre sem o conhecimento e sem a autorização do bispo diocesano.\n\n**NOBRE, E. Incêndios da alma. Rio de Janeiro. Multifoco. 2016 (Adaptado).**",
+    "source": {
+      "pdf": "enem/pdfs/2022_PV_D1_AZUL.pdf",
+      "page": 24
+    },
+    "restoration": {
+      "reason": "Oração inteira do Texto II havia sido suprimida.",
+      "method": "Comparação com a página do PDF original, extração textual e conferência visual; imagens atuais preservadas."
+    }
+  },
+  {
+    "id": "enem-2022-152",
+    "context": "Em uma sala de cinema, para garantir que os espectadores vejam toda a imagem projetada na tela, a disposição das poltronas deve obedecer à norma técnica da Associação Brasileira de Normas Técnicas (ABNT), que faz as seguintes indicações:  \n• Distância mínima (Dmín) entre a tela de projeção e o encosto da poltrona da primeira fileira deve ser de, pelo menos, 60% da largura (L) da tela.  \n• Distância máxima (Dmáx) entre a tela de projeção e o encosto da poltrona da última fileira deve ser o dobro da largura (L) da tela, sendo aceitável uma distância de até 2,9 vezes a largura (L) da tela.  \nPara o espaçamento entre as fileiras de poltronas, é considerada a distância de 1 metro entre os encostos de poltronas em duas fileiras consecutivas.\n\nDisponível em: www.ctav.gov.br. Acesso em: 14 nov. 2013.\n\nUma sala de cinema, cuja largura da tela mede 12 m, está montada em conformidade com as normas da ABNT e tem suas dimensões especificadas na figura.\n\n![](enem/figures/f182fb95-a05f-4d8d-bd7d-bbf7adf3d95b.png)\n\nPretende-se ampliar essa sala, mantendo-se na mesma posição a tela e todas as poltronas já instaladas,  \nampliando-se ao máximo a sala para os fundos (área de instalação de novas poltronas), respeitando-se o limite aceitável da norma da ABNT. A intenção é aumentar, ao máximo, a quantidade de poltronas da sala, instalando-se novas unidades, iguais às já instaladas.",
+    "source": {
+      "pdf": "enem/pdfs/2022_PV_D2_AZUL.pdf",
+      "page": 22
+    },
+    "restoration": {
+      "reason": "Parágrafo antes da figura estava ausente, inclusive o dado essencial de 12 m para a largura da tela; havia uma citação duplicada no lugar.",
+      "method": "Transcrição e conferência visual do PDF original. Citação duplicada removida; figura e restante do enunciado preservados."
+    }
+  },
+  {
+    "id": "enem-2023-30",
+    "stem": "Enquanto estivemos entretidos com os urubus outras coisas andaram acontecendo na cidade. A Companhia baixou novas proibições, umas inteiramente bobocas, só pelo prazer de proibir (ninguém podia cuspir pra cima, nem carregar água em jacá, nem tapar o sol com peneira, como se todo mundo estivesse abusando dessas esquisitices); mas outras bem irritantes, como a de pular muro pra cortar caminho, tática que quase todo mundo que não sofria de reumatismo vinha adotando ultimamente, principalmente os meninos. E não confiando na proibição só, nem na força dos castigos, que eram rigorosos, a Companhia ainda mandou fincar cacos de garrafa nos muros. Achei isso um exagero, e comentei o assunto com mamãe. Meu pai ouviu lá do quarto e veio explicar. Disse que em épocas normais bastava uma coisa ou outra; mas agora a Companhia não podia admitir nenhuma brecha em suas ordens; se alguém desobedecesse à proibição podia se cortar nos cacos; se alguém conseguisse pular um muro quebrando o corte de alguns cacos, ou jogando um couro por cima, era apanhado pela proibição, nhoc – e fez o gesto de quem torce o pescoço de um frango.\nVEIGA, J. J. Sombras de reis barbudos. Rio de Janeiro: Civilização Brasileira, 1978.\nSob a perspectiva do menino que narra, os fatos ficcionais oferecem um esboço do momento político vigente na década de 1970, aqui representado pelo",
+    "source": {
+      "pdf": "enem/pdfs/2023_PV_D1_AZUL.pdf",
+      "page": 14
+    },
+    "restoration": {
+      "reason": "Trecho interno do texto-base havia sido suprimido.",
+      "method": "Comparação com a página do PDF original, extração textual e conferência visual; imagens atuais preservadas."
+    }
+  },
+  {
+    "id": "enem-2023-99",
+    "context": "A leishmaniose visceral é uma zoonose causada por um protozoário do gênero Leishmania que é encontrado em diversos tecidos. Ela é transmitida ao homem de forma indireta, por vetores do ambiente doméstico. O cão é considerado um importante hospedeiro desse protozoário, podendo ou não apresentar os sintomas da doença, como perda de peso, anemia, ferimentos na pele, diarreia, conjuntivite e insuficiência renal. Em uma região que sofre com alta incidência dessa doença, uma campanha do centro de zoonoses buscou verificar a presença desse protozoário nos cães para tentar controlar a doença.",
+    "stem": "Em qual material biológico dos cães a presença desse protozoário representa risco de transmissão dessa zoonose?",
+    "source": {
+      "pdf": "enem/pdfs/2023_PV_D2_AZUL.pdf",
+      "page": 3
+    },
+    "restoration": {
+      "reason": "O comando final inteiro da questão estava ausente; apenas o texto-base constava no campo stem.",
+      "method": "Transcrição e conferência visual do PDF original; texto-base preservado no campo context, comando restaurado no campo stem."
+    }
+  },
+  {
+    "id": "enem-2024-175",
+    "context": "![](enem/figures/44ac6afa-e604-4a90-9d23-b98d7da9ed5b.png)\n\nUma indústria faz uma parceria com uma distribuidora de sucos para lançar no mercado dois tipos de embalagens. Para a fabricação dessas embalagens, a indústria dispõe de folhas de alumínio retangulares, de dimensões 10 cm por 20 cm. Cada uma dessas folhas é utilizada para formar a superfície lateral da embalagem, em formato de cilindro circular reto, que posteriormente recebe fundo e tampa circulares. A figura ilustra, dependendo de qual das duas extensões será utilizada como altura, as duas opções para formar a possível embalagem.",
+    "source": {
+      "pdf": "enem/pdfs/2024_PV_D2_AZUL.pdf",
+      "page": 30
+    },
+    "restoration": {
+      "reason": "Frase original que introduz a figura havia sido substituída por uma descrição editorial; restaurada a redação da prova.",
+      "method": "Comparação com a página do PDF original, extração textual e conferência visual; imagens atuais preservadas."
+    }
+  },
+  {
+    "id": "enem-2019-177",
+    "context": "Um grupo de engenheiros está projetando um motor cujo esquema de deslocamento vertical do pistão dentro da câmara de combustão esta representado na figura.\n\n![](enem/figures/000e6ab5-5267-4411-a21d-3c05d89f2832.png)\n\ndescreve como varia a altura h, medida em centímetro, da parte superior do pistão dentro da câmara de combustão, em função do tempo t, medido em segundo. Nas figuras estão indicadas as alturas do pistão em dois instantes distintos.\n\nO valor do parâmetro β, que é dado por um número inteiro positivo, está relacionado com a velocidade de deslocamento do pistão. Para que o motor tenha uma boa potência, é necessário e suficiente que, em menos de 4 segundos após o início do funcionamento (instante t = 0), a altura da base do pistão alcance por três vezes o valor de 6 cm.\n\nPara os cálculos, utilize 3 como aproximação para π.",
+    "source": {
+      "pdf": "enem/pdfs/2019_PV_D2_AZUL.pdf",
+      "page": 29
+    },
+    "restoration": {
+      "reason": "A imagem que contém a função matemática estava deslocada para o fim do texto. O parágrafo começava por “descreve como varia” sem apresentar antes a função.",
+      "method": "Imagem existente reposicionada entre a apresentação do problema e a continuação da frase, seguindo a ordem do PDF. Nenhum conteúdo novo inventado e nenhuma imagem alterada."
+    }
+  }
+]

@@ -1,0 +1,10 @@
+.fuvest-filters{grid-template-columns:minmax(200px,2fr) minmax(120px,1fr) minmax(160px,1fr)}
+.fuvest-originals{display:grid;gap:16px;margin:22px 0;overflow:hidden}
+.fuvest-originals .enem-figure{display:block;width:auto;max-width:100%;height:auto;max-height:none;margin:0 auto;background:#fff;border-radius:8px;border:1px solid var(--line);padding:8px;box-sizing:border-box}
+.fuvest-transcription{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:20px 0}
+.fuvest-transcription summary{cursor:pointer;font-weight:650;display:flex;justify-content:space-between;gap:16px}
+.fuvest-transcription .enem-text{user-select:text}
+.fuvest-options{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.fuvest-options .enem-option{justify-content:center;padding:14px 8px;min-height:58px}
+.fuvest-options .enem-option span{display:none}
+@media(max-width:650px){.fuvest-filters{grid-template-columns:1fr 1fr}.fuvest-filters .enem-search{grid-column:1/-1}.fuvest-options{gap:6px}.fuvest-originals .enem-figure{padding:3px;border-radius:5px}}
