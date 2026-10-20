@@ -1,0 +1,9 @@
+/* Keep every destination reachable when the header runs out of room. */
+.header-nav{display:flex;align-items:center;gap:5px;flex:1 1 0;min-width:0;max-width:100%}
+.header .header-nav nav{display:flex;flex:1 1 0;min-width:0;width:auto;height:60px;align-items:center;justify-content:flex-start;flex-wrap:nowrap;gap:5px;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:var(--line) transparent;scroll-padding-inline:5px;padding:3px 2px 7px;-webkit-overflow-scrolling:touch}
+.header-nav nav::-webkit-scrollbar{height:4px}.header-nav nav::-webkit-scrollbar-track{background:transparent}.header-nav nav::-webkit-scrollbar-thumb{background:var(--line);border-radius:9px}
+.header-nav .nav{flex:0 0 auto;white-space:nowrap}
+.nav-scroll{display:grid;place-items:center;flex:0 0 27px;width:27px;height:34px;padding:0;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--blue);font-size:21px;line-height:1}
+.nav-scroll:hover:not(:disabled){background:var(--surface-3);border-color:var(--blue)}.nav-scroll:disabled{opacity:.3}
+@media(max-width:1120px){.header{height:auto;min-height:0;flex-direction:row;flex-wrap:wrap;align-items:center;gap:9px 15px;padding:13px 20px 5px}.header-tools{position:static;margin-left:auto}.header-nav{order:3;flex:1 1 100%;width:100%}.header .header-nav nav{height:49px;gap:5px}.header-nav .nav{height:36px;font-size:11px;padding:0 11px}.nav-scroll{height:30px}}
+@media(max-width:520px){.header{padding:12px 14px 4px;gap:9px}.header-nav{gap:4px}.header-nav .nav{font-size:10px;padding:0 9px}.nav-scroll{flex-basis:24px;width:24px;border-radius:7px}.header .header-nav nav{height:46px}.brand{font-size:14px}.brand-mark{width:34px;height:34px}}
