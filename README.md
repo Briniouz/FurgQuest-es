@@ -105,3 +105,11 @@ As respostas e marcações para revisão são salvas imediatamente. O cronômetr
 O resultado informa acertos, erros, itens em branco e anulados por área, sem estimar TRI. Os gabaritos são revelados somente no resultado, com revisão de todos os itens ou apenas erros e questões em branco. As respostas finalizadas também entram no progresso do ENEM, preservando a primeira tentativa já registrada. O histórico fica na seção de simulados e acompanha o backup.
 
 `enem-sim.js` e `enem-sim.css` implementam o recurso. A amostra `Previa-ENEM.html` inclui 2025 inteiro para testar as duas línguas e os dois dias; o pacote completo oferece todos os 16 anos. O simulado personalizado da FURG continua disponível. As mudanças integram a versão publicada do site.
+
+## Level Up · protótipo de matemática
+
+A aba **Level Up** (`#evolucao`) tem 30 questões autorais em 10 níveis. Começa com uma soma extremamente simples e avança por operações, frações, proporção, porcentagem, equações, geometria, potências/logaritmos, funções e desafios de integração. A classificação é pedagógica, sem equivalência oficial com provas.
+
+Cada questão oferece dica e explicação. Resolver as três questões da etapa libera a seguinte. O XP é calculado pelas conquistas únicas (10 por questão e 20 por etapa, até 500), sem duplicar em revisões. O progresso fica no navegador e acompanha o JSON de exportação/importação existente. Arquivos antigos continuam compatíveis.
+
+Fuvest, EsPCEx, ITA e IME são etapas futuras; nenhuma questão dessas provas foi importada para o protótipo.

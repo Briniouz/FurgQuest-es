@@ -19,13 +19,13 @@ class Element{
 }
 const $=id=>{if(!els.has(id))els.set(id,new Element(id));return els.get(id);};ids.forEach($);$('loadError').hidden=true;
 for(const id of ['subject','year','edition','skill','search','archiveSearch','simSubject','simYear'])$(id).value='';
-const nav=['banco','enem','simulados','desempenho','trilhas','leituras','acervo'].map(v=>{const e=new Element();e.dataset.view=v;return e;}),views=nav.map(n=>{const e=$(n.dataset.view);e.classList.toggle('active',e.id==='banco');return e;});
+const nav=['banco','enem','evolucao','simulados','desempenho','trilhas','leituras','acervo'].map(v=>{const e=new Element();e.dataset.view=v;return e;}),views=nav.map(n=>{const e=$(n.dataset.view);e.classList.toggle('active',e.id==='banco');return e;});
 const radios={status:[],order:[]};for(const[group,values]of Object.entries({status:['all','unanswered','answered','correct','wrong','favorites'],order:['recent','old','random']})){for(const value of values){const e=new Element();e.value=value;e.parentElement={textContent:value};e._checked=radios[group].length===0;Object.defineProperty(e,'checked',{get(){return this._checked;},set(v){if(v)radios[group].forEach(r=>r._checked=false);this._checked=v;}});radios[group].push(e);}}
 const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:{appendChild(){}},createElement:()=>new Element(),querySelectorAll(sel){if(sel==='.nav')return nav;if(sel==='.view')return views;if(sel==='[name=status],[name=order]')return [...radios.status,...radios.order];return [];},querySelector(sel){if(sel==='.view.active')return views.find(e=>e.classList.contains('active'));if(sel==='meta[name="theme-color"]')return $('meta');if(sel==='.simulation-builder')return $('builder');const name=sel.match(/name=(status|order)/)?.[1];if(name){const val=sel.match(/value=([a-z]+)/)?.[1];return val?radios[name].find(r=>r.value===val):radios[name].find(r=>r.checked);}return null;},addEventListener(type,fn){(events['document:'+type]??=[]).push(fn);}};
 const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
 const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco'},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
 if(previewFile){for(const [i,match]of [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].entries())vm.runInContext(match[1],ctx,{filename:'preview-inline-'+i});}
-else for(const file of ['skills-data.js','flashcards-data.js','flashcards.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','enem.js','enem-sim.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+else for(const file of ['skills-data.js','flashcards-data.js','flashcards.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','enem.js','enem-sim.js','levelup-data.js','levelup.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
 assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,570);assert.equal(model.skills.length,119);
@@ -159,4 +159,41 @@ async function checkEnemSimulations(){
   vm.runInContext('state='+snapshot,ctx);vm.runInContext('globalThis.FurgEnemSim.init({getState:()=>state,save,toast})',ctx);
   assert.equal(errors.length,0);console.log('PASS: annual ENEM simulations 2010+, both days/languages, original order, hidden keys, pause/resume, persisted answers, export/import, completion, annulments, review and time expiry.');
 }
-checkProfile().then(checkEnemSimulations).catch(error=>{console.error(error);process.exitCode=1;});
+checkProfile().then(checkEnemSimulations).then(checkLevelUp).catch(error=>{console.error(error);process.exitCode=1;});
+
+async function checkLevelUp(){
+  const up=ctx.FurgLevelUp,stages=ctx.FURG_LEVELUP_DATA,snapshot=vm.runInContext('JSON.stringify(state)',ctx);
+  assert.equal(stages.length,10);assert.equal(stages.flatMap(s=>s.questions).length,30);
+  for(const stage of stages){assert.equal(stage.questions.length,3);for(const q of stage.questions){assert.equal(q.options.length,4);assert.equal(new Set(q.options).size,4);assert(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);assert(q.hint&&q.explanation);}}
+  for(let letter=0;letter<4;letter++)assert(stages.flatMap(s=>s.questions).filter(q=>q.answer===letter).length>=5,'Answer positions must vary');
+  assert(stages[0].questions[0].stem.includes('2 lápis'));assert.equal(stages[0].questions[0].options[stages[0].questions[0].answer],'3');
+  const click=(action,extra={})=>{for(const fn of events['levelupRoot:click']||[])fn({target:{closest:()=>({dataset:{up:action,...extra},disabled:false})},preventDefault(){}});};
+  const progress=()=>vm.runInContext('state.levelup',ctx);
+  function key(key){for(const fn of events['document:keydown']||[])fn({key,target:{closest:()=>null},preventDefault(){}});}
+  function solve(q){click('question',{id:q.id});click('choose',{choice:String(q.answer)});click('confirm');assert(progress().answers[q.id].solved,q.id);}
+  vm.runInContext("state.levelup={answers:{}};FurgLevelUp.refresh();setView('evolucao')",ctx);
+  const bankIndex=vm.runInContext('index',ctx);assert.equal(up.metrics().xp,0);assert.equal(up.metrics().level,1);
+  const first=stages[0].questions[0];click('stage',{stage:'9'});assert.equal(progress().lastQuestion,first.id);
+  click('question',{id:stages[1].questions[0].id});assert.equal(progress().lastQuestion,first.id);
+  click('confirm');assert.equal(up.metrics().xp,0);click('hint');assert(progress().answers[first.id].hinted);
+  key('A');key('Enter');assert.equal(progress().answers[first.id].solved,false);assert($('levelupRoot').innerHTML.includes('Ainda não.'));
+  key('Enter');key('C');key('Enter');assert(progress().answers[first.id].solved);assert.equal(progress().answers[first.id].firstChoice,0);assert.equal(progress().answers[first.id].attempts,2);assert.equal(up.metrics().xp,10);assert.equal(vm.runInContext('index',ctx),bankIndex,'Level Up shortcuts moved the bank');
+  click('confirm');assert.equal(up.metrics().xp,10,'Repeated confirmation farmed XP');
+  solve(stages[0].questions[1]);solve(stages[0].questions[2]);assert.equal(up.metrics().xp,50);assert.equal(up.metrics().level,2);click('next');assert.equal(progress().lastQuestion,stages[1].questions[0].id);
+  // A failed storage write must not unlock a question or award XP.
+  vm.runInContext('FurgLevelUp.init({getState:()=>state,save:()=>false,toast,setView})',ctx);
+  click('choose',{choice:String(stages[1].questions[0].answer)});click('confirm');assert(!progress().answers[stages[1].questions[0].id]?.solved);assert.equal(up.metrics().xp,50);
+  vm.runInContext('FurgLevelUp.init({getState:()=>state,save,toast,setView})',ctx);
+  $('exportProgress').click();let backup=JSON.parse(await exported.at(-1).text());assert.equal(up.metrics(up.validate(backup.levelup)).xp,50);
+  const importBackup=async value=>{const text=JSON.stringify(value);await $('progressFile').onchange({target:{files:[{size:Buffer.byteLength(text),text:async()=>text}],value:'progress.json'}});};
+  await importBackup({version:1,answers:{}});assert.equal(up.metrics().xp,50);assert.equal(progress().lastQuestion,stages[1].questions[0].id,'Legacy import reset the current level');
+  vm.runInContext('state.levelup={answers:{}};FurgLevelUp.refresh()',ctx);await importBackup(backup);assert.equal(up.metrics().xp,50);assert.equal(progress().lastQuestion,stages[1].questions[0].id);
+  const hacked={answers:{[stages[9].questions[0].id]:{solved:true,choice:stages[9].questions[0].answer}},xp:999999,lastQuestion:stages[9].questions[0].id};assert.equal(up.metrics(up.validate(hacked)).xp,0);assert.equal(Object.keys(up.validate(hacked).answers).length,0);
+  const invalid={answers:{[first.id]:{solved:true,choice:0,attempts:Infinity}}};assert(!up.validate(invalid).answers[first.id].solved);assert.equal(up.validate(invalid).answers[first.id].attempts,100000);
+  for(const stage of stages.slice(1))for(const q of stage.questions)solve(q);
+  assert.equal(up.metrics().xp,500);assert.equal(up.metrics().completed,10);assert($('levelupRoot').innerHTML.includes('Do primeiro passo ao desafio final.'));
+  solve(first);assert.equal(up.metrics().xp,500);assert.equal(up.metrics(up.merge(progress(),progress())).xp,500);
+  $('exportProgress').click();backup=JSON.parse(await exported.at(-1).text());assert.equal(up.metrics(up.validate(backup.levelup)).xp,500);assert(storage.get(progressKey).includes('up-desafio-3'));
+  vm.runInContext('state='+snapshot,ctx);up.refresh();assert.equal(errors.length,0);
+  console.log('PASS: Level Up: 30 original questions, locked stages, hint/retry, first choice, unique XP, all 10 unlocks, storage rollback, keyboard isolation, export/import, legacy backups and forged progress validation.');
+}
