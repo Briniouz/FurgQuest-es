@@ -64,4 +64,377 @@
   ],
   reminder:'Guarda esta diferença: log − log vira o logaritmo de um quociente; log / log é a divisão entre os valores e permite mudar a base. As regras não dizem que log(x + y) = log(x) + log(y), nem que log(x − y) = log(x) − log(y). Por exemplo, log₂(8 − 4) = 2, enquanto log₂(8) − log₂(4) = 1.'
  };
+ globalThis.FURG_MATH_LESSONS.matrizes.operations={
+  "title": "Operações com matrizes",
+  "conditions": "Começa conferindo a ordem: linhas × colunas. Soma e subtração exigem matrizes da mesma ordem; no produto AB, o número de colunas de A deve ser igual ao número de linhas de B.",
+  "items": [
+    {
+      "id": "soma",
+      "title": "Soma · A + B",
+      "formula": "(A + B)ᵢⱼ = aᵢⱼ + bᵢⱼ",
+      "explanation": "Soma os elementos que ocupam a mesma posição. As duas matrizes precisam ter o mesmo número de linhas e de colunas.",
+      "example": "Calcula A + B.",
+      "steps": [
+        "A e B são 2 × 2, então a soma é possível.",
+        "Na primeira linha: 1 + 5 = 6 e 2 + 6 = 8.",
+        "Na segunda linha: 3 + 7 = 10 e 4 + 8 = 12."
+      ],
+      "result": "A + B tem linhas (6, 8) e (10, 12).",
+      "matrices": [
+        {
+          "label": "A",
+          "rows": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "B",
+          "rows": [
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "A + B",
+          "rows": [
+            [
+              6,
+              8
+            ],
+            [
+              10,
+              12
+            ]
+          ]
+        }
+      ],
+      "open": true
+    },
+    {
+      "id": "subtracao",
+      "title": "Subtração · A − B",
+      "formula": "(A − B)ᵢⱼ = aᵢⱼ − bᵢⱼ",
+      "explanation": "Subtrai os elementos de B dos elementos de A na mesma posição. Respeita os sinais; também vale A − B = A + (−B).",
+      "example": "Calcula A − B.",
+      "steps": [
+        "Confere: A e B têm ordem 2 × 2.",
+        "Primeira linha: 1 − 5 = −4 e 2 − 6 = −4.",
+        "Segunda linha: 3 − 7 = −4 e 4 − 8 = −4."
+      ],
+      "result": "Todas as entradas de A − B são −4.",
+      "matrices": [
+        {
+          "label": "A",
+          "rows": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "B",
+          "rows": [
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "A − B",
+          "rows": [
+            [
+              -4,
+              -4
+            ],
+            [
+              -4,
+              -4
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escalar",
+      "title": "Multiplicação por um número · kA",
+      "formula": "(kA)ᵢⱼ = k × aᵢⱼ",
+      "explanation": "Multiplica cada entrada pelo mesmo número. A ordem da matriz permanece igual. Se o número for negativo, atenção aos sinais.",
+      "example": "Calcula −2A.",
+      "steps": [
+        "Multiplica a primeira linha por −2: −2 × 1 = −2 e −2 × 2 = −4.",
+        "Multiplica a segunda linha por −2: −2 × 3 = −6 e −2 × 4 = −8.",
+        "Mantém cada resultado na sua posição."
+      ],
+      "result": "−2A tem linhas (−2, −4) e (−6, −8).",
+      "matrices": [
+        {
+          "label": "A",
+          "rows": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "−2A",
+          "rows": [
+            [
+              -2,
+              -4
+            ],
+            [
+              -6,
+              -8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "produto",
+      "title": "Multiplicação entre matrizes · AB",
+      "formula": "Aₘ×ₙ × Bₙ×ₚ → (AB)ₘ×ₚ",
+      "explanation": "Para cada entrada do resultado, combina uma linha de A com uma coluna de B: multiplica os pares correspondentes e soma os produtos. Não é multiplicar entrada por entrada.",
+      "example": "Calcula AB.",
+      "steps": [
+        "A e B são 2 × 2: o produto existe e será 2 × 2.",
+        "Primeira linha do resultado: 1 × 5 + 2 × 7 = 19; 1 × 6 + 2 × 8 = 22.",
+        "Segunda linha: 3 × 5 + 4 × 7 = 43; 3 × 6 + 4 × 8 = 50."
+      ],
+      "result": "AB tem linhas (19, 22) e (43, 50).",
+      "matrices": [
+        {
+          "label": "A",
+          "rows": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "B",
+          "rows": [
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "AB",
+          "rows": [
+            [
+              19,
+              22
+            ],
+            [
+              43,
+              50
+            ]
+          ]
+        }
+      ],
+      "note": "O termo da linha i e coluna j usa a linha i da primeira matriz e a coluna j da segunda.",
+      "open": true
+    },
+    {
+      "id": "ordem",
+      "title": "A ordem dos fatores importa",
+      "formula": "Em geral, AB ≠ BA",
+      "explanation": "Trocar os fatores pode mudar os valores, a ordem do resultado ou até tornar o produto impossível. Verifica a compatibilidade a cada vez.",
+      "example": "Com A de ordem 1 × 2 e B de ordem 2 × 1, compara AB e BA.",
+      "steps": [
+        "AB existe: (1 × 2)(2 × 1) resulta em uma matriz 1 × 1.",
+        "Seu único elemento é 1 × 3 + 2 × 4 = 11.",
+        "BA também existe, mas é 2 × 2: suas linhas são (3 × 1, 3 × 2) e (4 × 1, 4 × 2)."
+      ],
+      "result": "AB é 1 × 1; BA é 2 × 2. Portanto, AB ≠ BA.",
+      "matrices": [
+        {
+          "label": "A",
+          "rows": [
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "label": "B",
+          "rows": [
+            [
+              3
+            ],
+            [
+              4
+            ]
+          ]
+        },
+        {
+          "label": "AB",
+          "rows": [
+            [
+              11
+            ]
+          ]
+        },
+        {
+          "label": "BA",
+          "rows": [
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ],
+      "note": "Se A é 2 × 3 e B é 3 × 4, AB existe e é 2 × 4; BA não existe, pois 4 ≠ 2."
+    },
+    {
+      "id": "transposta",
+      "title": "Transposta · troca linhas por colunas",
+      "formula": "(Aᵀ)ᵢⱼ = aⱼᵢ",
+      "explanation": "A primeira linha vira a primeira coluna, a segunda linha vira a segunda coluna e assim por diante. Uma matriz m × n vira n × m.",
+      "example": "Encontra a transposta de uma matriz 2 × 3.",
+      "steps": [
+        "A primeira linha (1, 2, 3) vira a primeira coluna.",
+        "A segunda linha (4, 5, 6) vira a segunda coluna.",
+        "O resultado passa a ter 3 linhas e 2 colunas."
+      ],
+      "result": "Aᵀ tem linhas (1, 4), (2, 5) e (3, 6).",
+      "matrices": [
+        {
+          "label": "A",
+          "rows": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              4,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Aᵀ",
+          "rows": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        }
+      ],
+      "note": "No produto, a transposta inverte a ordem: (AB)ᵀ = BᵀAᵀ."
+    },
+    {
+      "id": "inversa",
+      "title": "Inversa · desfaz uma multiplicação",
+      "formula": "AA⁻¹ = A⁻¹A = I",
+      "explanation": "A inversa só existe para matrizes quadradas com determinante diferente de zero. I é a identidade: 1 na diagonal principal e 0 nas demais posições.",
+      "example": "Confere se a matriz B abaixo é a inversa de A.",
+      "steps": [
+        "Calcula det(A) = 1 × 1 − 2 × 0 = 1: a inversa existe.",
+        "Em AB, a primeira linha é (1 × 1 + 2 × 0, 1 × (−2) + 2 × 1) = (1, 0).",
+        "A segunda linha é (0, 1). O produto BA também resulta em I."
+      ],
+      "result": "B = A⁻¹, pois AB = BA = I.",
+      "matrices": [
+        {
+          "label": "A",
+          "rows": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "label": "B = A⁻¹",
+          "rows": [
+            [
+              1,
+              -2
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "label": "I",
+          "rows": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "note": "Inversa não é trocar cada entrada pelo seu inverso. Para A = ((a, b), (c, d)), A⁻¹ = [1/(ad − bc)] × ((d, −b), (−c, a)), se ad − bc ≠ 0. A regra de cálculo é aprofundada em Determinantes."
+    }
+  ],
+  "reminder": "Soma e subtração: mesma ordem e mesma posição. Produto: linha por coluna, conferindo as dimensões. Não existe uma divisão usual A/B entre matrizes; quando a inversa existe, usa-se multiplicação por B⁻¹ e a ordem dos fatores importa. Para A quadrada: A² = AA; A(B + C) = AB + AC quando as operações são compatíveis."
+};
 })();
