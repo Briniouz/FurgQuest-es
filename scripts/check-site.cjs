@@ -25,7 +25,7 @@ const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:
 const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
 const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco'},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
 if(previewFile){for(const [i,match]of [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].entries())vm.runInContext(match[1],ctx,{filename:'preview-inline-'+i});}
-else for(const file of ['skills-data.js','flashcards-data.js','biology-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','enem.js','fuvest-data.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+else for(const file of ['skills-data.js','flashcards-data.js','biology-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','fuvest-data.js','enem-subjects-data.js','exam-subjects.js','enem.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
 assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,765);assert.equal(model.skills.length,144);
@@ -173,7 +173,7 @@ async function checkEnemSimulations(){
   vm.runInContext('state='+snapshot,ctx);vm.runInContext('globalThis.FurgEnemSim.init({getState:()=>state,save,toast})',ctx);
   assert.equal(errors.length,0);console.log('PASS: annual ENEM simulations 2010+, both days/languages, original order, hidden keys, pause/resume, persisted answers, export/import, completion, annulments, review and time expiry.');
 }
-checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).catch(error=>{console.error(error);process.exitCode=1;});
+checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).then(checkExamSubjectEditing).catch(error=>{console.error(error);process.exitCode=1;});
 
 async function checkLevelUp(){
   const up=ctx.FurgLevelUp,stages=ctx.FURG_LEVELUP_DATA,snapshot=vm.runInContext('JSON.stringify(state)',ctx);
@@ -251,4 +251,32 @@ function checkBiologyAndSubjects(){
  $('fuvestSubject').value='';$('fuvestYear').value='';$('fuvestFormat').value='text';$('fuvestFormat').onchange();assert($('fuvestQuestionRoot').innerHTML.includes('data-reading-mode="text"'));assert($('fuvestQuestionRoot').innerHTML.includes('fuvest-text-options'));assert($('fuvestQuestionRoot').innerHTML.includes('Conferir o original com figuras'));assert.equal(parseInt($('fuvestCount').textContent.replace(/\./g,'')),data.readingCoverage.text);
  $('fuvestFormat').value='original';$('fuvestFormat').onchange();assert($('fuvestQuestionRoot').innerHTML.includes('data-reading-mode="text"'));assert($('fuvestQuestionRoot').innerHTML.includes('data-transcription-kind="companion"'));assert($('fuvestQuestionRoot').innerHTML.includes('fuvest-text-options'));assert($('fuvestQuestionRoot').innerHTML.indexOf('fuvest-reading')<$('fuvestQuestionRoot').innerHTML.indexOf('fuvest-originals'));assert(!/class="fuvest-transcription fuvest-source-original"[^>]*\bopen\b/.test($('fuvestQuestionRoot').innerHTML));assert($('fuvestQuestionRoot').innerHTML.includes('fuvest-originals'));assert($('fuvestQuestionRoot').innerHTML.includes('Transcrição complementar'));
  console.log('PASS: 25 Biology paths with prerequisites, 125 flashcards, explanations/examples, classified practice and saved review; all 1530 Fuvest items filter by subject; text/original views and combined year/subject filters.');
+}
+
+async function checkExamSubjectEditing(){
+ const before=vm.runInContext('JSON.stringify(state)',ctx);
+ const subjectData=ctx.FURG_ENEM_SUBJECTS_DATA;assert.equal(Object.keys(subjectData.questions).length,3833);
+ for(const q of ctx.FURG_ENEM_DATA.questions){assert(q.subjects.length);assert(q.subjects.every(id=>subjectData.labels[id]));}
+ function click(exam,action,extra={}){for(const fn of events[exam+'Root:click']||[])fn({target:{closest:()=>({dataset:{[exam]:action,...extra},disabled:false})}});}
+ function currentId(exam){return $(exam+'QuestionRoot').innerHTML.match(/data-question-id="([^"]+)"/)[1];}
+ vm.runInContext("setView('enem')",ctx);click('enem','clear');
+ for(const subject of Object.keys(subjectData.labels)){$('enemSubject').value=subject;$('enemSubject').onchange();assert(ctx.FURG_ENEM_DATA.questions.find(q=>q.id===currentId('enem')).subjects.includes(subject));}
+ $('enemSubject').value='fisica';$('enemYear').value='2025';$('enemYear').onchange();let expected=ctx.FURG_ENEM_DATA.questions.filter(q=>q.year===2025&&q.subjects.includes('fisica')).length;assert.equal(parseInt($('enemCount').textContent),expected);
+ const ids={};
+ for(const exam of ['enem','fuvest']){
+  vm.runInContext('setView('+JSON.stringify(exam)+')',ctx);click(exam,'clear');const id=ids[exam]=currentId(exam);const module=exam==='enem'?ctx.FurgEnem:ctx.FurgFuvest;
+  $(exam+'SubjectChoice').value='fisica';$(exam+'SubjectChoice').onchange();assert.equal(vm.runInContext('state.'+exam+'.subjectOverrides['+JSON.stringify(id)+']',ctx),'fisica');assert($(exam+'QuestionRoot').innerHTML.includes('>Física</span>'));assert.equal(JSON.parse(storage.get(progressKey))[exam].subjectOverrides[id],'fisica');
+  const clean=module.validate({subjectOverrides:{[id]:'quimica',unknown:'fisica',[id+'-fake']:'<img>'}});assert.equal(Object.keys(clean.subjectOverrides).length,1);assert.equal(clean.subjectOverrides[id],'quimica');assert.equal(Object.keys(module.validate({subjectOverrides:{[id]:'<script>'}}).subjectOverrides).length,0);
+  const setItem=ctx.localStorage.setItem;ctx.localStorage.setItem=()=>{throw Error('quota');};$(exam+'SubjectChoice').value='quimica';$(exam+'SubjectChoice').onchange();assert.equal(vm.runInContext('state.'+exam+'.subjectOverrides['+JSON.stringify(id)+']',ctx),'fisica');assert($(exam+'SubjectStatus').textContent.includes('Não foi possível'));ctx.localStorage.setItem=setItem;
+  $(exam+'Subject').value='fisica';$(exam+'Subject').onchange();assert.equal(currentId(exam),id);$(exam+'SubjectChoice').value='quimica';$(exam+'SubjectChoice').onchange();assert.notEqual(currentId(exam),id,'Edited question stayed in the previous subject filter');click(exam,'clear');
+ }
+ $('exportProgress').click();const backup=JSON.parse(await exported.at(-1).text());
+ for(const exam of ['enem','fuvest'])assert.equal(backup[exam].subjectOverrides[ids[exam]],'quimica');
+ vm.runInContext('state.enem.subjectOverrides={};state.fuvest.subjectOverrides={}',ctx);
+ async function importValue(value){const text=JSON.stringify(value);await $('progressFile').onchange({target:{files:[{size:Buffer.byteLength(text),text:async()=>text}],value:'progress.json'}});}
+ await importValue(backup);for(const exam of ['enem','fuvest'])assert.equal(vm.runInContext('state.'+exam+'.subjectOverrides['+JSON.stringify(ids[exam])+']',ctx),'quimica');
+ await importValue({version:1,answers:{}});for(const exam of ['enem','fuvest'])assert.equal(vm.runInContext('state.'+exam+'.subjectOverrides['+JSON.stringify(ids[exam])+']',ctx),'quimica','Legacy import removed custom subjects');
+ for(const exam of ['enem','fuvest']){vm.runInContext('setView('+JSON.stringify(exam)+')',ctx);click(exam,'clear');const questions=(exam==='enem'?ctx.FURG_ENEM_DATA:ctx.FURG_FUVEST_DATA).questions;const sorted=[...questions].sort((a,b)=>b.year-a.year||a.application.localeCompare(b.application)||a.index-b.index||String(a.language||'').localeCompare(String(b.language||'')));click(exam,'jump',{index:String(sorted.findIndex(q=>q.id===ids[exam]))});assert.equal(currentId(exam),ids[exam]);$(exam+'SubjectChoice').value='';$(exam+'SubjectChoice').onchange();assert(!vm.runInContext('state.'+exam+'.subjectOverrides['+JSON.stringify(ids[exam])+']',ctx));}
+ vm.runInContext('state='+before,ctx);
+ console.log('PASS: ENEM subject coverage and combined filters; ENEM/Fuvest custom subjects, filter refresh, safe validation, persistence, export/import, legacy backups and storage rollback.');
 }
