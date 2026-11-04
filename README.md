@@ -115,3 +115,10 @@ Cada questão oferece dica e explicação. Resolver as três questões da etapa 
 Fuvest, EsPCEx, ITA e IME são etapas futuras; nenhuma questão dessas provas foi importada para o protótipo.
 
 As 49 trilhas de Matemática incluem explicação breve e exemplo autoral resolvido em três passos, com resultado e tabelas para matrizes. O exemplo fica aberto inicialmente e pode ser recolhido.
+
+
+## Atualização do repertório ENEM — novembro de 2026
+
+Na área **Estudos → Resumos literários** (`#leituras`), a galeria complementar apresenta **40 perfis** de autores, filósofos, sociólogos, artistas e referências para o ENEM, com busca, filtros, retratos quando disponíveis, obras de referência e conceitos centrais. As seis leituras receberam um quadro com os principais pontos para revisão e busca de imagens de capa em catálogos públicos, com fallback visual.
+
+Arquivos desta atualização: `thinkers-data.js`, `thinkers.js`, `thinkers.css`, `reading-media.js` e `index.html`. Esta anotação não altera os dados nem o progresso de estudo; também registra a nova publicação após o deploy anterior ter sido cancelado.
