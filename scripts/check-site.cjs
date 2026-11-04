@@ -19,13 +19,13 @@ class Element{
 }
 const $=id=>{if(!els.has(id))els.set(id,new Element(id));return els.get(id);};ids.forEach($);$('loadError').hidden=true;
 for(const id of ['subject','year','edition','skill','search','archiveSearch','simSubject','simYear'])$(id).value='';
-const nav=['banco','leve','enem','fuvest','evolucao','simulados','desempenho','trilhas','leituras','acervo'].map(v=>{const e=new Element();e.dataset.view=v;return e;}),views=nav.map(n=>{const e=$(n.dataset.view);e.classList.toggle('active',e.id==='banco');return e;});
+const nav=['banco','leve','enem','anatomia','fuvest','evolucao','simulados','desempenho','trilhas','leituras','acervo'].map(v=>{const e=new Element();e.dataset.view=v;return e;}),views=nav.map(n=>{const e=$(n.dataset.view);e.classList.toggle('active',e.id==='banco');return e;});
 const radios={status:[],order:[]};for(const[group,values]of Object.entries({status:['all','unanswered','answered','correct','wrong','favorites'],order:['recent','old','random']})){for(const value of values){const e=new Element();e.value=value;e.parentElement={textContent:value};e._checked=radios[group].length===0;Object.defineProperty(e,'checked',{get(){return this._checked;},set(v){if(v)radios[group].forEach(r=>r._checked=false);this._checked=v;}});radios[group].push(e);}}
 const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:{appendChild(){}},createElement:()=>new Element(),querySelectorAll(sel){if(sel==='.nav')return nav;if(sel==='.view')return views;if(sel==='[name=status],[name=order]')return [...radios.status,...radios.order];return [];},querySelector(sel){if(sel==='.view.active')return views.find(e=>e.classList.contains('active'));if(sel==='meta[name="theme-color"]')return $('meta');if(sel==='.simulation-builder')return $('builder');const name=sel.match(/name=(status|order)/)?.[1];if(name){const val=sel.match(/value=([a-z]+)/)?.[1];return val?radios[name].find(r=>r.value===val):radios[name].find(r=>r.checked);}return null;},addEventListener(type,fn){(events['document:'+type]??=[]).push(fn);}};
 const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
 const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco'},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
 if(previewFile){for(const [i,match]of [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].entries())vm.runInContext(match[1],ctx,{filename:'preview-inline-'+i});}
-else for(const file of ['skills-data.js','flashcards-data.js','biology-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','fuvest-data.js','enem-subjects-data.js','exam-subjects.js','enem.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','light-review-data.js','light-review.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+else for(const file of ['skills-data.js','flashcards-data.js','biology-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','experience.js','profile.js','enem-data.js','fuvest-data.js','enem-subjects-data.js','exam-subjects.js','enem.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','light-review-data.js','day1-practice-data.js','day1-practice.js','light-review.js','enem-anatomy-data.js','enem-anatomy.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
 assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,765);assert.equal(model.skills.length,144);
@@ -173,7 +173,7 @@ async function checkEnemSimulations(){
   vm.runInContext('state='+snapshot,ctx);vm.runInContext('globalThis.FurgEnemSim.init({getState:()=>state,save,toast})',ctx);
   assert.equal(errors.length,0);console.log('PASS: annual ENEM simulations 2010+, both days/languages, original order, hidden keys, pause/resume, persisted answers, export/import, completion, annulments, review and time expiry.');
 }
-checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).then(checkExamSubjectEditing).then(checkLightReview).catch(error=>{console.error(error);process.exitCode=1;});
+checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).then(checkExamSubjectEditing).then(checkLightReview).then(checkAnatomy).then(checkDayOne).catch(error=>{console.error(error);process.exitCode=1;});
 
 async function checkLevelUp(){
   const up=ctx.FurgLevelUp,stages=ctx.FURG_LEVELUP_DATA,snapshot=vm.runInContext('JSON.stringify(state)',ctx);
@@ -308,3 +308,7 @@ async function checkLightReview(){
  vm.runInContext('state='+snapshot,ctx);module.refresh();assert.equal(errors.length,0);
  console.log('PASS: 61 sourced/original light cards; opt-in modal, keyboard isolation, accessible close/focus, short sessions/pause/resume, saved/unseen suggestions, deduplicated activity, calm/reduced-motion controls, safe validation/rendering, export/import, legacy backups, storage rollback and optional speech cancellation.');
 }
+
+function studyAdditionContext(){return {ctx,$,vm,events,assert,storage,progressKey,exported,document,errors,fs};}
+function checkAnatomy(){return require('./check-study-additions.cjs').anatomy(studyAdditionContext());}
+function checkDayOne(){return require('./check-study-additions.cjs').dayOne(studyAdditionContext());}
