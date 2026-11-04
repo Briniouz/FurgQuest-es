@@ -122,3 +122,9 @@ As 49 trilhas de Matemática incluem explicação breve e exemplo autoral resolv
 Na área **Estudos → Resumos literários** (`#leituras`), a galeria complementar apresenta **40 perfis** de autores, filósofos, sociólogos, artistas e referências para o ENEM, com busca, filtros, retratos quando disponíveis, obras de referência e conceitos centrais. As seis leituras receberam um quadro com os principais pontos para revisão e busca de imagens de capa em catálogos públicos, com fallback visual.
 
 Arquivos desta atualização: `thinkers-data.js`, `thinkers.js`, `thinkers.css`, `reading-media.js` e `index.html`. Esta anotação não altera os dados nem o progresso de estudo; também registra a nova publicação após o deploy anterior ter sido cancelado.
+
+## Biblioteca ENEM: pessoas, obras e conceitos
+
+A área **Biblioteca ENEM** reúne 208 perfis em português, preservando os 40 originais. Busca por ideias e obras, filtros combinados e vínculos com questões reais distinguem citações nominais, obras sem nome e conexões conceituais sugeridas. O banco e os simulados também receberam áreas próprias para apoio, fonte, comando e resolução, sem alterar o conteúdo das questões. Há 34 comentários autorais iniciais; os demais itens informam quando ainda não há resolução comentada.
+
+Método, limites, manutenção e testes: [docs/biblioteca-enem.md](docs/biblioteca-enem.md). Índice de auditoria: [docs/enem-library-audit.json](docs/enem-library-audit.json).

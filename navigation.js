@@ -2,7 +2,7 @@
 (() => {
  const $=id=>document.getElementById(id),nav=$('mainNavigation'),previous=$('navScrollPrevious'),next=$('navScrollNext');
  if(!nav||!previous||!next)return;
- const names=['provas','simulados','pratica','estudos'],owners={banco:'provas',enem:'provas',fuvest:'provas',anatomia:'provas',acervo:'provas',simulados:'simulados',evolucao:'pratica',leve:'pratica',trilhas:'estudos',leituras:'estudos'};
+ const names=['provas','simulados','pratica','estudos'],owners={banco:'provas',enem:'provas',fuvest:'provas',anatomia:'provas',acervo:'provas',simulados:'simulados',evolucao:'pratica',leve:'pratica',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos'};
  let adapter,opened='',bound=false;
  const behavior=()=>globalThis.FurgUI?.reducedMotion()?'auto':'smooth';
  const trigger=id=>$('navTrigger-'+id),menu=id=>$('navMenu-'+id);

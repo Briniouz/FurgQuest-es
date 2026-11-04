@@ -1,0 +1,2335 @@
+{
+  "profiles": 208,
+  "originalProfiles": 40,
+  "newProfiles": 168,
+  "questions": 3833,
+  "years": [
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "profilesWithDirectMentions": 157,
+  "nominalLinks": 530,
+  "workLinks": 14,
+  "suggestedLinks": 17,
+  "linkedQuestions": 480,
+  "method": "Uma classificação por personalidade/questão: nome, depois obra sem nome, depois conexão conceitual. Nomes em alternativas são identificados como tais. Sugestões conceituais são amostras didáticas, não aparições nem estatística oficial. Busca textual conservadora, sujeita a lacunas de transcrição e homônimos; consulte o trecho e o original.",
+  "byProfile": [
+    {
+      "id": 1,
+      "name": "Heródoto",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2008
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sócrates",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015,
+        2017,
+        2021,
+        2025
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Platão",
+      "directCount": 9,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2021,
+        2025
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Aristóteles",
+      "directCount": 12,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2001,
+        2009,
+        2012,
+        2013,
+        2014,
+        2016,
+        2017,
+        2020,
+        2021,
+        2024,
+        2025
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Santo Agostinho",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2010,
+        2015,
+        2018,
+        2019
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Tomás de Aquino",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1999,
+        2015,
+        2018
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Nicolau Maquiavel",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2010,
+        2012,
+        2013,
+        2019
+      ]
+    },
+    {
+      "id": 8,
+      "name": "René Descartes",
+      "directCount": 8,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2013,
+        2014,
+        2016,
+        2019,
+        2021,
+        2023
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Thomas Hobbes",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2001,
+        2015,
+        2018
+      ]
+    },
+    {
+      "id": 10,
+      "name": "John Locke",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2000
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Jean-Jacques Rousseau",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2018
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Voltaire",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2024
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Immanuel Kant",
+      "directCount": 5,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2013,
+        2017,
+        2019
+      ]
+    },
+    {
+      "id": 14,
+      "name": "G. W. F. Hegel",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2017
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Auguste Comte",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 16,
+      "name": "Karl Marx",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 1,
+      "directYears": [
+        2013,
+        2016
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Friedrich Engels",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2013,
+        2021
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Friedrich Nietzsche",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015,
+        2016,
+        2021
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Émile Durkheim",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2016
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Max Weber",
+      "directCount": 1,
+      "workCount": 1,
+      "conceptCount": 0,
+      "directYears": [
+        2015
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Simone de Beauvoir",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Hannah Arendt",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2014,
+        2019,
+        2022,
+        2023
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Michel Foucault",
+      "directCount": 6,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2010,
+        2019,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Pierre Bourdieu",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 1,
+      "directYears": []
+    },
+    {
+      "id": 25,
+      "name": "Zygmunt Bauman",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2018,
+        2025
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Paulo Freire",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015,
+        2018,
+        2023
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Milton Santos",
+      "directCount": 12,
+      "workCount": 0,
+      "conceptCount": 1,
+      "directYears": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2015,
+        2018,
+        2020,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Darcy Ribeiro",
+      "directCount": 1,
+      "workCount": 1,
+      "conceptCount": 0,
+      "directYears": [
+        2009
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Gilberto Freyre",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2018
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Lélia Gonzalez",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 31,
+      "name": "Djamila Ribeiro",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 1,
+      "directYears": []
+    },
+    {
+      "id": 32,
+      "name": "Machado de Assis",
+      "directCount": 24,
+      "workCount": 1,
+      "conceptCount": 0,
+      "directYears": [
+        1999,
+        2000,
+        2005,
+        2009,
+        2010,
+        2013,
+        2014,
+        2016,
+        2017,
+        2018,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Lima Barreto",
+      "directCount": 5,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2010,
+        2011,
+        2012,
+        2020,
+        2021
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Clarice Lispector",
+      "directCount": 7,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2010,
+        2013,
+        2016,
+        2017,
+        2022,
+        2025
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Carolina Maria de Jesus",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2022,
+        2023
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Conceição Evaristo",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2023
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Graciliano Ramos",
+      "directCount": 8,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2006,
+        2007,
+        2015,
+        2017,
+        2018,
+        2024
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Oswald de Andrade",
+      "directCount": 7,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2004,
+        2006,
+        2007,
+        2012,
+        2013,
+        2019
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Tarsila do Amaral",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2003
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Caetano Veloso",
+      "directCount": 5,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2014,
+        2017,
+        2020,
+        2023,
+        2024
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Epicuro",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2014,
+        2018
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Heráclito",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2016,
+        2025
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Parmênides",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2016
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Protágoras",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 45,
+      "name": "Demócrito",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2017
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Diógenes de Sinope",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 47,
+      "name": "Sêneca",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2022
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Epicteto",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 49,
+      "name": "Marco Aurélio",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 50,
+      "name": "Michel de Montaigne",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2002,
+        2020
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Francis Bacon",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2016,
+        2019
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Baruch Spinoza",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 53,
+      "name": "David Hume",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2015,
+        2020,
+        2025
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Montesquieu",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2003,
+        2012,
+        2013
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Denis Diderot",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 56,
+      "name": "Alexis de Tocqueville",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2020
+      ]
+    },
+    {
+      "id": 57,
+      "name": "John Stuart Mill",
+      "directCount": 0,
+      "workCount": 1,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 58,
+      "name": "Arthur Schopenhauer",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2016
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Walter Benjamin",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 60,
+      "name": "Theodor Adorno",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 2,
+      "directYears": [
+        2016,
+        2023
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Max Horkheimer",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 2,
+      "directYears": [
+        2016,
+        2023
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Herbert Marcuse",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2021,
+        2025
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Jean-Paul Sartre",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2020,
+        2023
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Maurice Merleau-Ponty",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2018,
+        2020,
+        2022,
+        2023
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Jürgen Habermas",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 1,
+      "directYears": [
+        2012,
+        2014,
+        2017,
+        2024
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Guy Debord",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2018
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Norberto Bobbio",
+      "directCount": 6,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2001,
+        2002,
+        2003,
+        2011,
+        2018,
+        2025
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Hans Jonas",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2016
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Angela Davis",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2025
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Frantz Fanon",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 1,
+      "directYears": []
+    },
+    {
+      "id": 71,
+      "name": "Adam Smith",
+      "directCount": 2,
+      "workCount": 2,
+      "conceptCount": 0,
+      "directYears": [
+        2019,
+        2025
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Antonio Gramsci",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 73,
+      "name": "Georg Simmel",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 74,
+      "name": "Norbert Elias",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2006,
+        2009,
+        2012,
+        2023
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Anthony Giddens",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2011,
+        2017
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Manuel Castells",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2011,
+        2013,
+        2019,
+        2022
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Stuart Hall",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2024
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Edward Said",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2018
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Achille Mbembe",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 80,
+      "name": "Florestan Fernandes",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2004,
+        2011
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Josué de Castro",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2003
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Celso Furtado",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2014
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Sérgio Buarque de Holanda",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2015
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Caio Prado Júnior",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 85,
+      "name": "Eric Hobsbawm",
+      "directCount": 5,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1999,
+        2010,
+        2014,
+        2017,
+        2019
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Edward Palmer Thompson",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Marc Bloch",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 88,
+      "name": "Jacques Le Goff",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015,
+        2019
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Fernand Braudel",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2001,
+        2025
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Nicolau Sevcenko",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2010,
+        2011,
+        2012,
+        2015
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Mary Del Priore",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2013,
+        2020,
+        2023
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Lilia Moritz Schwarcz",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2013,
+        2015,
+        2024
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Claude Lévi-Strauss",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 94,
+      "name": "Clifford Geertz",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 95,
+      "name": "Marcel Mauss",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 96,
+      "name": "Ailton Krenak",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 1,
+      "directYears": []
+    },
+    {
+      "id": 97,
+      "name": "Davi Kopenawa",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 98,
+      "name": "Abdias do Nascimento",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 99,
+      "name": "Ermínia Maricato",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2013
+      ]
+    },
+    {
+      "id": 100,
+      "name": "Rogério Haesbaert",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2011,
+        2016,
+        2017
+      ]
+    },
+    {
+      "id": 101,
+      "name": "David Harvey",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015,
+        2019
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Aziz Ab'Sáber",
+      "directCount": 8,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2002,
+        2009,
+        2011,
+        2013,
+        2018,
+        2020,
+        2021
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Luís de Camões",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1998,
+        2012
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Gregório de Matos",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2014
+      ]
+    },
+    {
+      "id": 105,
+      "name": "Antônio Vieira",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2011,
+        2012,
+        2024
+      ]
+    },
+    {
+      "id": 106,
+      "name": "Tomás Antônio Gonzaga",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2023
+      ]
+    },
+    {
+      "id": 107,
+      "name": "Gonçalves Dias",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2007
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Álvares de Azevedo",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2004,
+        2010,
+        2011
+      ]
+    },
+    {
+      "id": 109,
+      "name": "Castro Alves",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2001,
+        2004,
+        2023,
+        2024
+      ]
+    },
+    {
+      "id": 110,
+      "name": "José de Alencar",
+      "directCount": 5,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2004,
+        2009,
+        2012,
+        2021,
+        2024
+      ]
+    },
+    {
+      "id": 111,
+      "name": "Aluísio Azevedo",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2010,
+        2011
+      ]
+    },
+    {
+      "id": 112,
+      "name": "Olavo Bilac",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015,
+        2020,
+        2023
+      ]
+    },
+    {
+      "id": 113,
+      "name": "Cruz e Sousa",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2014
+      ]
+    },
+    {
+      "id": 114,
+      "name": "Euclides da Cunha",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2013,
+        2015,
+        2022
+      ]
+    },
+    {
+      "id": 115,
+      "name": "Augusto dos Anjos",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1999,
+        2014
+      ]
+    },
+    {
+      "id": 116,
+      "name": "Monteiro Lobato",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2002,
+        2007,
+        2010
+      ]
+    },
+    {
+      "id": 117,
+      "name": "Manuel Bandeira",
+      "directCount": 12,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1998,
+        2000,
+        2005,
+        2006,
+        2009,
+        2011,
+        2014,
+        2015,
+        2020
+      ]
+    },
+    {
+      "id": 118,
+      "name": "Mário de Andrade",
+      "directCount": 8,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2000,
+        2005,
+        2007,
+        2012,
+        2020,
+        2023
+      ]
+    },
+    {
+      "id": 119,
+      "name": "Carlos Drummond de Andrade",
+      "directCount": 23,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1999,
+        2001,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2009,
+        2012,
+        2015
+      ]
+    },
+    {
+      "id": 120,
+      "name": "João Cabral de Melo Neto",
+      "directCount": 3,
+      "workCount": 3,
+      "conceptCount": 0,
+      "directYears": [
+        1999,
+        2003,
+        2016
+      ]
+    },
+    {
+      "id": 121,
+      "name": "Cecília Meireles",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2015
+      ]
+    },
+    {
+      "id": 122,
+      "name": "Murilo Mendes",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2001,
+        2017
+      ]
+    },
+    {
+      "id": 123,
+      "name": "Jorge Amado",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2010,
+        2012
+      ]
+    },
+    {
+      "id": 124,
+      "name": "Rachel de Queiroz",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009
+      ]
+    },
+    {
+      "id": 125,
+      "name": "João Guimarães Rosa",
+      "directCount": 5,
+      "workCount": 1,
+      "conceptCount": 0,
+      "directYears": [
+        2011,
+        2014,
+        2018,
+        2021,
+        2023
+      ]
+    },
+    {
+      "id": 126,
+      "name": "Érico Veríssimo",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2002,
+        2009,
+        2018
+      ]
+    },
+    {
+      "id": 127,
+      "name": "Rubem Braga",
+      "directCount": 5,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1999,
+        2004,
+        2006,
+        2008,
+        2012
+      ]
+    },
+    {
+      "id": 128,
+      "name": "Fernando Sabino",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2014,
+        2021
+      ]
+    },
+    {
+      "id": 129,
+      "name": "Lygia Fagundes Telles",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015,
+        2021
+      ]
+    },
+    {
+      "id": 130,
+      "name": "Hilda Hilst",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2019,
+        2021
+      ]
+    },
+    {
+      "id": 131,
+      "name": "João Antônio",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015,
+        2025
+      ]
+    },
+    {
+      "id": 132,
+      "name": "Rubem Fonseca",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2014
+      ]
+    },
+    {
+      "id": 133,
+      "name": "Dalton Trevisan",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2010,
+        2014,
+        2020
+      ]
+    },
+    {
+      "id": 134,
+      "name": "Moacyr Scliar",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2003,
+        2019
+      ]
+    },
+    {
+      "id": 135,
+      "name": "Adélia Prado",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1999,
+        2013,
+        2014
+      ]
+    },
+    {
+      "id": 136,
+      "name": "Manoel de Barros",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2018,
+        2021
+      ]
+    },
+    {
+      "id": 137,
+      "name": "Ferreira Gullar",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2000,
+        2003,
+        2007,
+        2015
+      ]
+    },
+    {
+      "id": 138,
+      "name": "Paulo Leminski",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 139,
+      "name": "Marina Colasanti",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 140,
+      "name": "José Saramago",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2016,
+        2017
+      ]
+    },
+    {
+      "id": 141,
+      "name": "Fernando Pessoa",
+      "directCount": 6,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2003,
+        2004,
+        2010,
+        2017,
+        2020,
+        2025
+      ]
+    },
+    {
+      "id": 142,
+      "name": "Mia Couto",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2018
+      ]
+    },
+    {
+      "id": 143,
+      "name": "Chimamanda Ngozi Adichie",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2020
+      ]
+    },
+    {
+      "id": 144,
+      "name": "Eduardo Galeano",
+      "directCount": 8,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2017,
+        2018,
+        2020,
+        2022,
+        2024
+      ]
+    },
+    {
+      "id": 145,
+      "name": "Gabriel García Márquez",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2018,
+        2023
+      ]
+    },
+    {
+      "id": 146,
+      "name": "William Shakespeare",
+      "directCount": 3,
+      "workCount": 1,
+      "conceptCount": 0,
+      "directYears": [
+        2000,
+        2001,
+        2016
+      ]
+    },
+    {
+      "id": 147,
+      "name": "Bertolt Brecht",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2010
+      ]
+    },
+    {
+      "id": 148,
+      "name": "Antonio Candido",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009
+      ]
+    },
+    {
+      "id": 149,
+      "name": "Luís Fernando Veríssimo",
+      "directCount": 10,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1998,
+        2011,
+        2012,
+        2014,
+        2016,
+        2019,
+        2022,
+        2025
+      ]
+    },
+    {
+      "id": 150,
+      "name": "Ariano Suassuna",
+      "directCount": 2,
+      "workCount": 1,
+      "conceptCount": 0,
+      "directYears": [
+        2016,
+        2020
+      ]
+    },
+    {
+      "id": 151,
+      "name": "Patativa do Assaré",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 152,
+      "name": "José Falero",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 153,
+      "name": "Ana Paula Tavares",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 154,
+      "name": "Angélica Freitas",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2018,
+        2024
+      ]
+    },
+    {
+      "id": 155,
+      "name": "Candido Portinari",
+      "directCount": 6,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2004,
+        2005,
+        2013,
+        2024
+      ]
+    },
+    {
+      "id": 156,
+      "name": "Anita Malfatti",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2007,
+        2010
+      ]
+    },
+    {
+      "id": 157,
+      "name": "Di Cavalcanti",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 158,
+      "name": "Alfredo Volpi",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 159,
+      "name": "Lygia Clark",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2014
+      ]
+    },
+    {
+      "id": 160,
+      "name": "Hélio Oiticica",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 161,
+      "name": "Cildo Meireles",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2015
+      ]
+    },
+    {
+      "id": 162,
+      "name": "Vik Muniz",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2019
+      ]
+    },
+    {
+      "id": 163,
+      "name": "Augusto Boal",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009
+      ]
+    },
+    {
+      "id": 164,
+      "name": "Pablo Picasso",
+      "directCount": 9,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2002,
+        2007,
+        2009,
+        2011,
+        2012,
+        2014,
+        2015,
+        2019
+      ]
+    },
+    {
+      "id": 165,
+      "name": "Marcel Duchamp",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2022
+      ]
+    },
+    {
+      "id": 166,
+      "name": "Salvador Dalí",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2010
+      ]
+    },
+    {
+      "id": 167,
+      "name": "Vincent van Gogh",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2000
+      ]
+    },
+    {
+      "id": 168,
+      "name": "Leonardo da Vinci",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 169,
+      "name": "Frida Kahlo",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2022
+      ]
+    },
+    {
+      "id": 170,
+      "name": "Chico Buarque",
+      "directCount": 11,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1999,
+        2001,
+        2003,
+        2005,
+        2014,
+        2015,
+        2016,
+        2017,
+        2021,
+        2022
+      ]
+    },
+    {
+      "id": 171,
+      "name": "Gilberto Gil",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2001,
+        2017
+      ]
+    },
+    {
+      "id": 172,
+      "name": "Chiquinha Gonzaga",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2024
+      ]
+    },
+    {
+      "id": 173,
+      "name": "Noel Rosa",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2004,
+        2011,
+        2013
+      ]
+    },
+    {
+      "id": 174,
+      "name": "Cartola",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 175,
+      "name": "Adoniran Barbosa",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "id": 176,
+      "name": "Luiz Gonzaga",
+      "directCount": 7,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012,
+        2015,
+        2019,
+        2020,
+        2021,
+        2023
+      ]
+    },
+    {
+      "id": 177,
+      "name": "Tom Jobim",
+      "directCount": 5,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2012,
+        2013,
+        2019,
+        2020
+      ]
+    },
+    {
+      "id": 178,
+      "name": "Vinicius de Moraes",
+      "directCount": 7,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        1999,
+        2003,
+        2011,
+        2013,
+        2015,
+        2024
+      ]
+    },
+    {
+      "id": 179,
+      "name": "Emicida",
+      "directCount": 0,
+      "workCount": 1,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 180,
+      "name": "Mano Brown",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 181,
+      "name": "Ferdinand de Saussure",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 1,
+      "directYears": []
+    },
+    {
+      "id": 182,
+      "name": "Roman Jakobson",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 5,
+      "directYears": []
+    },
+    {
+      "id": 183,
+      "name": "Mikhail Bakhtin",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 184,
+      "name": "Marcos Bagno",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2012
+      ]
+    },
+    {
+      "id": 185,
+      "name": "Luiz Antônio Marcuschi",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2011,
+        2016
+      ]
+    },
+    {
+      "id": 186,
+      "name": "Noam Chomsky",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 187,
+      "name": "Anísio Teixeira",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 188,
+      "name": "Jean Piaget",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 189,
+      "name": "Lev Vygotsky",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 190,
+      "name": "Charles Darwin",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2022
+      ]
+    },
+    {
+      "id": 191,
+      "name": "Isaac Newton",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2001,
+        2013,
+        2018
+      ]
+    },
+    {
+      "id": 192,
+      "name": "Galileu Galilei",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2000,
+        2001,
+        2014
+      ]
+    },
+    {
+      "id": 193,
+      "name": "Albert Einstein",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2022,
+        2024
+      ]
+    },
+    {
+      "id": 194,
+      "name": "Marie Curie",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 195,
+      "name": "Pero Vaz de Caminha",
+      "directCount": 4,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2001,
+        2009,
+        2013
+      ]
+    },
+    {
+      "id": 196,
+      "name": "José de Anchieta",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 197,
+      "name": "João do Rio",
+      "directCount": 1,
+      "workCount": 1,
+      "conceptCount": 0,
+      "directYears": [
+        2002
+      ]
+    },
+    {
+      "id": 198,
+      "name": "José Lins do Rego",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2003,
+        2008,
+        2023
+      ]
+    },
+    {
+      "id": 199,
+      "name": "Raul Pompeia",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015,
+        2019
+      ]
+    },
+    {
+      "id": 200,
+      "name": "Eça de Queirós",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 201,
+      "name": "Lygia Bojunga",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 202,
+      "name": "Raduan Nassar",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009,
+        2017
+      ]
+    },
+    {
+      "id": 203,
+      "name": "Jorge Luis Borges",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2005,
+        2013,
+        2021
+      ]
+    },
+    {
+      "id": 204,
+      "name": "Pepetela",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 205,
+      "name": "Antônio de Alcântara Machado",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 206,
+      "name": "Elza Soares",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 207,
+      "name": "Carlo Ginzburg",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2020
+      ]
+    },
+    {
+      "id": 208,
+      "name": "Beatriz Nascimento",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    }
+  ]
+}

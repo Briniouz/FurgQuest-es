@@ -1,0 +1,26 @@
+/* Clear reading order while preserving the original question's text and images. */
+.enem-structured-text{font-size:16px;line-height:1.85;overflow-wrap:anywhere}
+.enem-structured-text h4,.enem-resolution>h4{font:700 10px/1.4 Inter,'Segoe UI',sans-serif;text-transform:uppercase;letter-spacing:1.4px;margin:0 0 14px;color:var(--muted)}
+.enem-support{margin:25px 0;padding:0 0 0 20px;border-left:3px solid var(--line)}
+.enem-support p:first-child,.enem-prompt p:first-child,.enem-bibliography p:first-child{margin-top:0}
+.enem-support p:last-child,.enem-prompt p:last-child,.enem-bibliography p:last-child{margin-bottom:0}
+.enem-bibliography{margin:14px 0 30px;padding:13px 17px;background:var(--surface-2);border:1px solid var(--line);border-radius:9px;font-size:12px;line-height:1.7;color:var(--muted);overflow-wrap:anywhere}
+.enem-bibliography h4{font-size:9px;letter-spacing:.9px;margin-bottom:6px}
+.enem-bibliography p{font-size:inherit;line-height:inherit;text-align:start}
+.enem-prompt{margin:28px 0 22px;padding:22px 23px;background:var(--surface);border:1px solid var(--line);border-radius:12px;font-weight:500}
+.enem-prompt h4{color:var(--blue)}
+.enem-prompt p{font-size:16px;line-height:1.8}
+.enem-support-figures{border:0;padding:0}
+.enem-structured-text .enem-figure{max-width:100%;height:auto;margin:16px auto;display:block}
+.enem-answer-label{font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:1.2px;margin-top:25px}
+.enem-resolution{padding:23px;margin:18px 0 25px;background:var(--surface-2);border:1px solid var(--line);border-radius:12px;color:var(--ink)}
+.enem-resolution>h4{color:var(--blue);font-size:11px}
+.enem-resolution p{font-size:14px;line-height:1.8}
+.enem-resolution .enem-resolution-credit{font-size:11px;color:var(--muted)}
+.enem-resolution-key{margin:0 0 12px}
+.enem-resolution .enem-resolution-pending{color:var(--muted);font-size:13px}
+.enem-correct-text{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:17px}
+.enem-correct-text summary{cursor:pointer;font-size:12px;font-weight:600;color:var(--muted)}
+.enem-resolution .text-link{display:inline-block;margin-top:10px;font-size:12px}
+.enem-library-link{display:inline-flex;margin:9px 0 0;font-size:12px;font-weight:650}
+@media(max-width:600px){.enem-structured-text{font-size:15px;line-height:1.8}.enem-support{padding-left:12px;margin:20px 0}.enem-bibliography{padding:12px;font-size:11px}.enem-prompt{padding:17px 14px}.enem-prompt p{font-size:15px}.enem-resolution{padding:17px 14px}.enem-structured-text h4{font-size:9px}}
