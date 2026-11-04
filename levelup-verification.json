@@ -1,0 +1,1074 @@
+{
+  "version": 1,
+  "description": "Conferência dos210itens autorais acrescentados ao banco.",
+  "verification": [
+    {
+      "id": "up-primeiros-passos-4",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "4 + 0 = 4. Única alternativa correta: índice 1, 4."
+    },
+    {
+      "id": "up-primeiros-passos-5",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "6 + 1 = 7. Única alternativa correta: índice 0, 7."
+    },
+    {
+      "id": "up-primeiros-passos-6",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "5 − 3 = 2; também 3 + 2 = 5. Única alternativa correta: índice 3, 2."
+    },
+    {
+      "id": "up-primeiros-passos-7",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "6 − 4 = 2. Única alternativa correta: índice 2, 2."
+    },
+    {
+      "id": "up-primeiros-passos-8",
+      "method": "Comparação direta das quatro afirmações com operadores de ordem em Python.",
+      "result": "As verificações 2 > 5, 3 < 8, 6 < 3 e 4 = 7 resultam, respectivamente, em falso, verdadeiro, falso e falso. Única alternativa correta: índice 1, 3 é menor que 8.."
+    },
+    {
+      "id": "up-primeiros-passos-9",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "6 + 2 − 1 = 7. Única alternativa correta: índice 3, 7."
+    },
+    {
+      "id": "up-primeiros-passos-10",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "8 − 5 = 3; conferir 8 − 3 = 5. Única alternativa correta: índice 0, 3."
+    },
+    {
+      "id": "up-primeiros-passos-11",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "As quatro somas resultam em 5, 7, 6 e 8; apenas 4 + 2 = 6. Única alternativa correta: índice 2, 4 + 2."
+    },
+    {
+      "id": "up-primeiros-passos-12",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "3 − 2 = 1 banco vazio; os 4 bancos já ocupados não entram nessa subtração. Única alternativa correta: índice 1, 1."
+    },
+    {
+      "id": "up-operacoes-4",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "7 × 0 = 0. Única alternativa correta: índice 3, 0."
+    },
+    {
+      "id": "up-operacoes-5",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "24 ÷ 4 = 6 e o resto é zero. Única alternativa correta: índice 1, 6."
+    },
+    {
+      "id": "up-operacoes-6",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "56 ÷ 8 = 7; as outras alternativas não satisfazem a igualdade. Única alternativa correta: índice 0, 8."
+    },
+    {
+      "id": "up-operacoes-7",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Divisão euclidiana: 17 = 4 × 4 + 1; 4 × 5 = 20 > 17. Única alternativa correta: índice 2, 4."
+    },
+    {
+      "id": "up-operacoes-8",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "(8 + 4) ÷ 2 = 12 ÷ 2 = 6. Única alternativa correta: índice 3, 6."
+    },
+    {
+      "id": "up-operacoes-9",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "O modelo é 6 × 5 − 4 = 26; os demais modelos resultam em 6, 7 e 10. Única alternativa correta: índice 0, 6 × 5 − 4."
+    },
+    {
+      "id": "up-operacoes-10",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "30 − (12 ÷ 3) × 2 = 30 − 8 = 22. Única alternativa correta: índice 1, 22."
+    },
+    {
+      "id": "up-operacoes-11",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "30 − (3 × 7 + 2) = 30 − 23 = 7 reais. Única alternativa correta: índice 3, R$ 7,00."
+    },
+    {
+      "id": "up-operacoes-12",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "48 ÷ (2 × 3) + 5 = 48 ÷ 6 + 5 = 13. Única alternativa correta: índice 2, 13."
+    },
+    {
+      "id": "up-fracoes-4",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "3/5 = 6/10; as alternativas têm valores distintos 3/5, 3/10, 6/5 e 5/3. Única alternativa correta: índice 0, 6/10."
+    },
+    {
+      "id": "up-fracoes-5",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "7/10 = 70/100 > 65/100 > 59/100 > 7/100. Única alternativa correta: índice 2, 0,7."
+    },
+    {
+      "id": "up-fracoes-6",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "(3/4) × 20 = 15. Única alternativa correta: índice 1, 15."
+    },
+    {
+      "id": "up-fracoes-7",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "235 centavos + 180 centavos = 415 centavos = R$ 4,15. Única alternativa correta: índice 3, R$ 4,15."
+    },
+    {
+      "id": "up-fracoes-8",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "(3/4) ÷ 2 = 3/8 L. Única alternativa correta: índice 0, 3/8 L."
+    },
+    {
+      "id": "up-fracoes-9",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "5/6 − 1/3 = 5/6 − 2/6 = 3/6 = 1/2. Única alternativa correta: índice 2, 1/2."
+    },
+    {
+      "id": "up-fracoes-10",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "125/1000 = 1/8; as demais alternativas valem 0,25, 0,2 e 0,1. Única alternativa correta: índice 0, 1/8."
+    },
+    {
+      "id": "up-fracoes-11",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "(3/2) ÷ (1/4) = 6; seis copos usam exatamente 1,5 L. Única alternativa correta: índice 3, 6."
+    },
+    {
+      "id": "up-fracoes-12",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "1 − 1/3 − 1/4 = 12/12 − 4/12 − 3/12 = 5/12. Única alternativa correta: índice 1, 5/12."
+    },
+    {
+      "id": "up-proporcao-4",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Concentrado/água = 2/3; (2/3) × 6 = 4 copos. Única alternativa correta: índice 1, 4."
+    },
+    {
+      "id": "up-proporcao-5",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "(30 km/2 h) × 5 h = 75 km. Única alternativa correta: índice 3, 75 km."
+    },
+    {
+      "id": "up-proporcao-6",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "3 × 50.000 cm = 150.000 cm = 1,5 km. Única alternativa correta: índice 2, 1,5 km."
+    },
+    {
+      "id": "up-proporcao-7",
+      "method": "Cálculo exato de todos os quocientes y/x com Fraction em Python e teste de constância.",
+      "result": "Os quocientes y/x são (4,4,4), (4,5/2,2), (4,4,16/3) e (12,3,4/3); somente a primeira sequência é constante. Única alternativa correta: índice 0, y = 4, 8 e 12, respectivamente.."
+    },
+    {
+      "id": "up-proporcao-8",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Caio recebe 5/(4+5) × 54 = 30 reais; Bia recebe 24 reais e 24:30 = 4:5. Única alternativa correta: índice 1, R$ 30,00."
+    },
+    {
+      "id": "up-proporcao-9",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Volume = 15 × 12 = 180 L; tempo = 180/30 = 6 min. Única alternativa correta: índice 2, 6 min."
+    },
+    {
+      "id": "up-proporcao-10",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Preços exatos em reais/kg: 15, 31/2, 16 e 14; o mínimo único é 14. Única alternativa correta: índice 3, 600 g por R$ 8,40."
+    },
+    {
+      "id": "up-proporcao-11",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Custo para 4 h = 10 + 4 × 4 = 26 reais; 2 × 18 = 36 não se aplica por causa da taxa fixa. Única alternativa correta: índice 1, R$ 26,00."
+    },
+    {
+      "id": "up-proporcao-12",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Taxa por impressora = 1.800/12 = 150 folhas/h; produção = 150 × 6 × 2 = 1.800 folhas. Única alternativa correta: índice 0, 1.800 folhas."
+    },
+    {
+      "id": "up-porcentagem-4",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "(3/20) × 100 = 15%. Única alternativa correta: índice 2, 15%."
+    },
+    {
+      "id": "up-porcentagem-5",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "(30/100) × 40 = 12 estudantes. Única alternativa correta: índice 0, 12."
+    },
+    {
+      "id": "up-porcentagem-6",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Preço original = 80/(1 − 20/100) = 100 reais; 100 × 0,80 = 80. Única alternativa correta: índice 3, R$ 100,00."
+    },
+    {
+      "id": "up-porcentagem-7",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "(15 − 12)/12 × 100 = 25%. Única alternativa correta: índice 1, 25%."
+    },
+    {
+      "id": "up-porcentagem-8",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "42% − 30% = 12 pontos percentuais; a variação relativa seria 40%, uma medida diferente. Única alternativa correta: índice 2, 12 pontos percentuais."
+    },
+    {
+      "id": "up-porcentagem-9",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "(100 − 80)/80 × 100 = 25%; 80 × 1,25 = 100. Única alternativa correta: índice 3, 25%."
+    },
+    {
+      "id": "up-porcentagem-10",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Praticantes = 10 + 6 = 16; total = 20 + 30 = 50; 16/50 × 100 = 32%. Única alternativa correta: índice 1, 32%."
+    },
+    {
+      "id": "up-porcentagem-11",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Base da comissão = 7.000 − 5.000 = 2.000 reais; 6/100 × 2.000 = 120 reais. Única alternativa correta: índice 0, R$ 120,00."
+    },
+    {
+      "id": "up-porcentagem-12",
+      "method": "Cálculo exato com inteiros ou frações em Python; comparação das quatro alternativas.",
+      "result": "Custo A = 111 reais; custo B = 209/2 = 104,50 reais; diferença = 13/2 = 6,50 reais, favorável à loja B. Única alternativa correta: índice 3, Loja B, por R$ 6,50 a menos.."
+    },
+    {
+      "id": "up-equacoes-4",
+      "method": "Isolamento algébrico e substituição exata em Python.",
+      "result": "x = 4 × 6 = 24; 24/4 = 6. O coeficiente 1/4 é não nulo, portanto a solução é única."
+    },
+    {
+      "id": "up-equacoes-5",
+      "method": "Isolamento algébrico e substituição exata em Python.",
+      "result": "x = 18/2 − 3 = 6; 2(6 + 3) = 18. A equação reduz-se a 2x = 12, com solução única."
+    },
+    {
+      "id": "up-equacoes-6",
+      "method": "Redução a uma equação linear e substituição exata em Python.",
+      "result": "x = (18 − 2)/(5 − 3) = 8; os dois membros valem 42. Como 5 − 3 ≠ 0, a solução é única."
+    },
+    {
+      "id": "up-equacoes-7",
+      "method": "Operações inversas e substituição exata em Python.",
+      "result": "x = 3(5 − 1) + 2 = 14; (14 − 2)/3 + 1 = 5. A equação linear tem coeficiente 1/3 não nulo."
+    },
+    {
+      "id": "up-equacoes-8",
+      "method": "Modelagem linear e conferência da soma de inteiros consecutivos em Python.",
+      "result": "x = (41 − 1)/2 = 20; 20 e 21 são consecutivos e somam 41. A equação 2x + 1 = 41 tem solução única."
+    },
+    {
+      "id": "up-equacoes-9",
+      "method": "Modelagem do custo e divisão inteira exata em Python.",
+      "result": "(78 − 18)/6 = 10; 18 + 6 × 10 = 78. O número de oficinas é inteiro e não negativo."
+    },
+    {
+      "id": "up-equacoes-10",
+      "method": "Prova por comparação de coeficientes e termos constantes; conferência numérica da contradição em Python.",
+      "result": "Os coeficientes de x são iguais a 4, mas as constantes são 8 e 5. Como 8 ≠ 5, nenhum x torna a igualdade verdadeira."
+    },
+    {
+      "id": "up-equacoes-11",
+      "method": "Aritmética racional exata com Fraction em Python e substituição.",
+      "result": "x = 10/(1/2 + 1/3) = 12; 12/2 + 12/3 = 6 + 4 = 10. A soma dos coeficientes é 5/6, não nula."
+    },
+    {
+      "id": "up-equacoes-12",
+      "method": "Enumeração exaustiva das 12 contagens inteiras possíveis em Python.",
+      "result": "Entre x = 0, 1, ..., 11, somente x = 7 satisfaz 2x + (11 − x) = 18. Restam 4 moedas de 1 real, confirmando 11 moedas e 18 reais."
+    },
+    {
+      "id": "up-geometria-4",
+      "method": "Aplicação da fórmula da área do triângulo com cálculo exato em Python.",
+      "result": "A = 12 × 7/2 = 42 cm². As quatro alternativas representam áreas numéricas distintas."
+    },
+    {
+      "id": "up-geometria-5",
+      "method": "Conversão de perímetro em lado e cálculo da área em Python.",
+      "result": "Lado = 36/4 = 9 cm; área = 9² = 81 cm². O perímetro conferido é 4 × 9 = 36 cm."
+    },
+    {
+      "id": "up-geometria-6",
+      "method": "Fórmula da circunferência com π adotado como fração exata 314/100 em Python.",
+      "result": "C = 2 × (314/100) × 3 = 471/25 m = 18,84 m."
+    },
+    {
+      "id": "up-geometria-7",
+      "method": "Fórmula da área do trapézio, calculada exatamente em Python.",
+      "result": "A = (10 + 6) × 5/2 = 40 cm². A distância perpendicular fornecida é a altura necessária à fórmula."
+    },
+    {
+      "id": "up-geometria-8",
+      "method": "Subtração de áreas sem sobreposição, conferida em Python.",
+      "result": "Área restante = 10 × 8 − 4 × 3 = 68 cm². O recorte de canto cabe na placa e não deixa ambiguidade de área."
+    },
+    {
+      "id": "up-geometria-9",
+      "method": "Teorema de Pitágoras e raiz quadrada inteira em Python.",
+      "result": "13² − 5² = 169 − 25 = 144 = 12². A condição de comprimento positivo seleciona 12 m."
+    },
+    {
+      "id": "up-geometria-10",
+      "method": "Aplicação da escala linear e conversão exata de centímetros em quilômetros em Python.",
+      "result": "6 × 25.000/100.000 = 3/2 km = 1,5 km."
+    },
+    {
+      "id": "up-geometria-11",
+      "method": "Lei de escala de áreas em figuras semelhantes e aritmética racional em Python.",
+      "result": "Razão linear k = 9/3 = 3; razão das áreas k² = 9; área maior = 8 × 9 = 72 cm²."
+    },
+    {
+      "id": "up-geometria-12",
+      "method": "Conversão de unidades e contagem exata de linhas e colunas com Fraction em Python.",
+      "result": "(4,8/0,6) × (3,6/0,6) = 8 × 6 = 48. As duas divisões são inteiras, coerentes com a ausência de cortes."
+    },
+    {
+      "id": "up-potencias-4",
+      "method": "Multiplicação direta da base por ela mesma em Python.",
+      "result": "(−3)² = (−3) × (−3) = 9."
+    },
+    {
+      "id": "up-potencias-5",
+      "method": "Regras dos expoentes zero e negativo, usando frações exatas em Python.",
+      "result": "5⁰ + 1/2² = 1 + 1/4 = 5/4 = 1,25."
+    },
+    {
+      "id": "up-potencias-6",
+      "method": "Cálculo direto e conferência pela regra dos expoentes em Python.",
+      "result": "(2³ × 2⁴)/2⁵ = 128/32 = 4 = 2^(3 + 4 − 5)."
+    },
+    {
+      "id": "up-potencias-7",
+      "method": "Verificação das raízes por potenciação inteira e soma em Python.",
+      "result": "9² = 81, (−2)³ = −8 e 9 + (−2) = 7. A raiz quadrada principal é 9."
+    },
+    {
+      "id": "up-potencias-8",
+      "method": "Produto racional exato em Python e normalização da notação científica.",
+      "result": "(3 × 100.000) × (2/1.000) = 600 = 6 × 10²; o coeficiente 6 está entre 1 e 10."
+    },
+    {
+      "id": "up-potencias-9",
+      "method": "Contagem de períodos e modelo exponencial, calculados exatamente em Python.",
+      "result": "6/3 = 2 períodos; 150 × 2² = 600. A sequência nos instantes 0, 3 e 6 horas é 150, 300 e 600."
+    },
+    {
+      "id": "up-potencias-10",
+      "method": "Redução à mesma base e resolução racional exata em Python; unicidade pela injetividade de 3^x.",
+      "result": "2x = 3 implica x = 3/2 = 1,5. A base 3 é positiva e diferente de 1, logo a igualdade dos expoentes é equivalente à original."
+    },
+    {
+      "id": "up-potencias-11",
+      "method": "Definição de logaritmo e comparação racional exata em Python.",
+      "result": "10^(−3) = 1/1.000 = 0,001. Como 10^x é injetiva, o logaritmo é unicamente −3."
+    },
+    {
+      "id": "up-potencias-12",
+      "method": "Definição de logaritmo, resolução linear e verificação do domínio em Python.",
+      "result": "x = 2³ + 1 = 9 > 1 e x − 1 = 8 = 2³. A solução satisfaz o domínio e é única."
+    },
+    {
+      "id": "up-funcoes-4",
+      "method": "Substituição direta na função afim em Python.",
+      "result": "f(−3) = 4 − 2 × (−3) = 10."
+    },
+    {
+      "id": "up-funcoes-5",
+      "method": "Determinação exata dos coeficientes afins com Fraction em Python e conferência dos dois pontos.",
+      "result": "a = (9 − 5)/(3 − 1) = 2; b = 5 − 2 × 1 = 3. A função 2x + 3 assume 5 e 9 nos argumentos 1 e 3."
+    },
+    {
+      "id": "up-funcoes-6",
+      "method": "Resolução linear exata em Python, com conferência do intervalo do modelo.",
+      "result": "t = (240 − 120)/15 = 8 h; V(8) = 120 L e 0 ≤ 8 ≤ 16. A função é estritamente decrescente, logo o instante é único."
+    },
+    {
+      "id": "up-funcoes-7",
+      "method": "Interseção de funções afins com cálculo exato e substituição em Python.",
+      "result": "x = (12 − 6)/(3 − 2) = 6 km; 12 + 2 × 6 = 6 + 3 × 6 = 24. As inclinações distintas garantem uma só interseção."
+    },
+    {
+      "id": "up-funcoes-8",
+      "method": "Prova completa por sinais dos fatores, com amostras de cada intervalo conferidas em Python.",
+      "result": "Raízes 1 e 5. Para x < 1 ambos os fatores são negativos; para 1 < x < 5 têm sinais opostos; para x > 5 ambos são positivos. O intervalo negativo é (1,5), sem extremos."
+    },
+    {
+      "id": "up-funcoes-9",
+      "method": "Prova por completar o quadrado, com coeficientes e valor no vértice conferidos em Python.",
+      "result": "(x − 2)² + 3 = x² − 4x + 7. O quadrado é ≥ 0 e f(2) = 3, logo o mínimo global é 3."
+    },
+    {
+      "id": "up-funcoes-10",
+      "method": "Composição calculada na ordem indicada em Python.",
+      "result": "g(3) = 9 e f(g(3)) = f(9) = 19. O valor 49 corresponderia à ordem inversa g(f(3)), que é distinta."
+    },
+    {
+      "id": "up-funcoes-11",
+      "method": "Prova por completar o quadrado e conferência exata do vértice em Python.",
+      "result": "−2(p − 10)² + 200 equivale a −2p² + 40p. Como −2(p − 10)² ≤ 0, o máximo 200 é atingido somente em p = 10 ∈ [0,20]."
+    },
+    {
+      "id": "up-funcoes-12",
+      "method": "Seleção do ramo da função por partes e substituição direta em Python.",
+      "result": "5 > 2 seleciona C(t) = 16 + 5(t − 2); C(5) = 31 reais. As duas expressões coincidem em 2 horas, ambas dando 16 reais."
+    },
+    {
+      "id": "up-desafio-4",
+      "method": "Conservação do volume de suco e razão percentual exata com Fraction em Python.",
+      "result": "Suco = (30/100) × 400 = 120 mL; total = 400 + 100 = 500 mL; percentual = 100 × 120/500 = 24%."
+    },
+    {
+      "id": "up-desafio-5",
+      "method": "Cálculo exato dos tempos e aplicação da definição de velocidade média em Python.",
+      "result": "Tempo total = 60/30 + 60/60 = 3 h; distância total = 120 km; velocidade média = 120/3 = 40 km/h."
+    },
+    {
+      "id": "up-desafio-6",
+      "method": "Cálculo da região interna e da fração percentual em Python.",
+      "result": "Área central = (10 − 2 × 1)(8 − 2 × 1) = 48 m²; área total = 80 m²; 100 × 48/80 = 60%. Os cantos da faixa são contados uma só vez pelo método da área restante."
+    },
+    {
+      "id": "up-desafio-7",
+      "method": "Duas verificações exatas em Python: probabilidades sequenciais e contagem de pares por combinações.",
+      "result": "(4/7)(3/6) + (3/7)(2/6) = 3/7; equivalentemente, [C(4,2) + C(3,2)]/C(7,2) = (6 + 3)/21 = 3/7."
+    },
+    {
+      "id": "up-desafio-8",
+      "method": "Resolução exata da inequação e enumeração das horas inteiras em Python com Fraction.",
+      "result": "0,9(20 + 8h) ≤ 90 equivale a h ≤ 10. Para 10 h o custo é 90 reais; para 11 h é 97,20 reais, ultrapassando o orçamento."
+    },
+    {
+      "id": "up-desafio-9",
+      "method": "Expansão e prova pelo quadrado completo, mais enumeração exaustiva dos 11 valores inteiros em Python.",
+      "result": "R(k) = −20k² + 80k + 1.200 = −20(k − 2)² + 1.280. A enumeração k = 0,...,10 confirma máximo único 1.280 em k = 2: 80 ingressos a 16 reais."
+    },
+    {
+      "id": "up-desafio-10",
+      "method": "Resolução exata da inequação da média ponderada usando Fraction em Python.",
+      "result": "x mínimo = (7 × (2 + 3) − 2 × 5,5)/3 = 8. O coeficiente de x é positivo e 8 pertence a [0,10], portanto o limite é atingível e mínimo."
+    },
+    {
+      "id": "up-desafio-11",
+      "method": "Circunferência com π adotado, cálculo do tempo e conversão de segundos em minutos em Python.",
+      "result": "Distância = 3 × 2 × 3 × 20 = 360 m; tempo = 360/2 = 180 s = 3 min."
+    },
+    {
+      "id": "up-desafio-12",
+      "method": "Conversão linear da escala, cálculo de área, acréscimo percentual e custo com frações exatas em Python.",
+      "result": "Lados = 5 × 200/100 = 10 m e 3 × 200/100 = 6 m; compra = 10 × 6 × 11/10 = 66 m²; custo = 66 × 35 = 2.310 reais."
+    },
+    {
+      "id": "up-sequencias-1",
+      "method": "Cálculo inteiro em Python: a₄ = 7 + 3(11 − 7).",
+      "result": "a₄ = 19; diferenças consecutivas iguais a 4."
+    },
+    {
+      "id": "up-sequencias-2",
+      "method": "Cálculo inteiro em Python pela fórmula do termo geral da PA.",
+      "result": "5 + (12 − 1) × 3 = 38."
+    },
+    {
+      "id": "up-sequencias-3",
+      "method": "Cálculo racional em Python: diferença dos valores dividida pela diferença dos índices.",
+      "result": "r = (42 − 17)/(9 − 4) = 5."
+    },
+    {
+      "id": "up-sequencias-4",
+      "method": "Cálculo inteiro em Python: a₄ = 3 × 2³.",
+      "result": "a₄ = 24; razão geométrica igual a 2."
+    },
+    {
+      "id": "up-sequencias-5",
+      "method": "Soma direta em Python dos oito depósitos, conferida pela fórmula da soma de PA.",
+      "result": "15 + 20 + 25 + 30 + 35 + 40 + 45 + 50 = 260 reais."
+    },
+    {
+      "id": "up-sequencias-6",
+      "method": "Potenciação racional exata em Python com Fraction.",
+      "result": "81 × (1/3)⁴ = 1; termos: 81, 27, 9, 3, 1."
+    },
+    {
+      "id": "up-sequencias-7",
+      "method": "Cálculo racional em Python da razão e avanço de quatro termos.",
+      "result": "r = 5 e a₁₀ = 31 + 4 × 5 = 51."
+    },
+    {
+      "id": "up-sequencias-8",
+      "method": "Soma direta em Python das doze fileiras e conferência pela soma de PA.",
+      "result": "Última fileira: 36; total: 12 × 50/2 = 300."
+    },
+    {
+      "id": "up-sequencias-9",
+      "method": "Prova algébrica: q³ = 27 tem única raiz real q = 3; substituição inteira em Python.",
+      "result": "a₁ = 2; a₂ = 2 × 3 = 6 e a₅ = 2 × 3⁴ = 162."
+    },
+    {
+      "id": "up-sequencias-10",
+      "method": "Busca inteira em Python e conferência da potência; verificado o instante anterior.",
+      "result": "200 × 2⁴ = 3.200 < 6.400 e 200 × 2⁵ = 6.400; resposta: 5 horas."
+    },
+    {
+      "id": "up-sequencias-11",
+      "method": "Soma direta em Python, conferida por 4(2⁶ − 1)/(2 − 1).",
+      "result": "4 + 8 + 16 + 32 + 64 + 128 = 252 kits."
+    },
+    {
+      "id": "up-sequencias-12",
+      "method": "Busca inteira em Python pela soma da PA; conferidos os totais imediatamente anterior e posterior à meta.",
+      "result": "S₁₀ = 185 < 200 ≤ S₁₁ = 220; a soma é crescente, logo o mínimo é 11."
+    },
+    {
+      "id": "up-dados-1",
+      "method": "Média calculada com aritmética racional em Python.",
+      "result": "(6 + 8 + 10)/3 = 8."
+    },
+    {
+      "id": "up-dados-2",
+      "method": "Ordenação e função statistics.median em Python.",
+      "result": "Dados ordenados: 4, 6, 9, 11, 20; mediana = 9 min."
+    },
+    {
+      "id": "up-dados-3",
+      "method": "Contagem de frequências e statistics.multimode em Python.",
+      "result": "Frequências: 2→1, 3→2, 4→3, 5→1; única moda: 4."
+    },
+    {
+      "id": "up-dados-4",
+      "method": "Máximo menos mínimo calculado em Python.",
+      "result": "25 − 17 = 8 °C."
+    },
+    {
+      "id": "up-dados-5",
+      "method": "Média ponderada calculada exatamente com Fraction em Python.",
+      "result": "(6 × 2 + 9 × 3)/(2 + 3) = 39/5 = 7,8."
+    },
+    {
+      "id": "up-dados-6",
+      "method": "statistics.median e média dos dois termos centrais em Python.",
+      "result": "Mediana = (7 + 9)/2 = 8."
+    },
+    {
+      "id": "up-dados-7",
+      "method": "Expansão das frequências e média racional em Python.",
+      "result": "Total = 11 livros; média = 11/10 = 1,1."
+    },
+    {
+      "id": "up-dados-8",
+      "method": "Reconstrução do total e cálculo racional da nova média em Python.",
+      "result": "Total inicial = 60 kg; novo total = 78 kg; nova média = 13 kg."
+    },
+    {
+      "id": "up-dados-9",
+      "method": "Médias e amplitudes calculadas em Python; avaliação lógica individual das quatro afirmações.",
+      "result": "Média(A) = Média(B) = 6; amplitude(A) = 6 > amplitude(B) = 0. Só a terceira afirmação é verdadeira."
+    },
+    {
+      "id": "up-dados-10",
+      "method": "Médias e medianas antes e depois calculadas com statistics em Python.",
+      "result": "Média: 11 → 21, aumento 10; mediana: 11 → 11, variação zero."
+    },
+    {
+      "id": "up-dados-11",
+      "method": "Cálculo exato em Python com Fraction, usando divisor populacional n = 3.",
+      "result": "Média = 4; soma dos desvios quadráticos = 8; variância populacional = 8/3."
+    },
+    {
+      "id": "up-dados-12",
+      "method": "Expansão da tabela de frequências em Python; soma racional e statistics.median.",
+      "result": "20 valores, soma 132, média 6,6; 10º = 11º = 7, logo mediana 7."
+    },
+    {
+      "id": "up-probabilidade-1",
+      "method": "Enumeração em Python das seis faces equiprováveis.",
+      "result": "3 resultados pares em 6; probabilidade = 1/2."
+    },
+    {
+      "id": "up-probabilidade-2",
+      "method": "Contagem exata de resultados favoráveis sobre o total em Python.",
+      "result": "2 bolas vermelhas / 5 bolas = 2/5."
+    },
+    {
+      "id": "up-probabilidade-3",
+      "method": "Enumeração em Python dos quatro pares ordenados equiprováveis.",
+      "result": "2 sequências com exatamente uma cara em 4; probabilidade = 1/2."
+    },
+    {
+      "id": "up-probabilidade-4",
+      "method": "Enumeração em Python dos números de 1 a 20 e conferência por inclusão-exclusão.",
+      "result": "Favoráveis: 3, 5, 6, 9, 10, 12, 15, 18, 20; probabilidade = 9/20."
+    },
+    {
+      "id": "up-probabilidade-5",
+      "method": "Enumeração em Python dos 36 pares ordenados equiprováveis.",
+      "result": "5 pares somam 8; probabilidade = 5/36."
+    },
+    {
+      "id": "up-probabilidade-6",
+      "method": "Enumeração em Python dos 30 pares ordenados de bolas distintas e conferência pelo produto condicional.",
+      "result": "12 pares de verdes em 30 possíveis; 12/30 = (4/6)(3/5) = 2/5."
+    },
+    {
+      "id": "up-probabilidade-7",
+      "method": "Enumeração em Python dos 25 pares ordenados com reposição.",
+      "result": "5 pares iguais em 25; probabilidade = 1/5."
+    },
+    {
+      "id": "up-probabilidade-8",
+      "method": "Enumeração em Python das oito sequências e conferência pelo complemento.",
+      "result": "7 sequências têm ao menos uma cara; 1 − (1/2)³ = 7/8."
+    },
+    {
+      "id": "up-probabilidade-9",
+      "method": "Probabilidade condicional calculada exatamente em Python, usando só o grupo elegível.",
+      "result": "12 usuárias de capacete entre 18 ciclistas; probabilidade = 2/3."
+    },
+    {
+      "id": "up-probabilidade-10",
+      "method": "Produto de probabilidades independentes e complemento com Fraction em Python.",
+      "result": "P(duas falhas) = 1/100; P(sistema funcionar) = 99/100."
+    },
+    {
+      "id": "up-probabilidade-11",
+      "method": "Enumeração em Python dos 15 pares não ordenados e conferência das duas ordens de retirada.",
+      "result": "8 pares mistos em 15; (4/6)(2/5) + (2/6)(4/5) = 8/15."
+    },
+    {
+      "id": "up-probabilidade-12",
+      "method": "Enumeração em Python das 1.140 trincas equiprováveis e conferência pelo complemento sem reposição.",
+      "result": "685 trincas favoráveis em 1.140: 685/1.140 = 137/228 = 1 − (15/20)(14/19)(13/18)."
+    },
+    {
+      "id": "up-contagem-1",
+      "method": "Enumeração em Python do produto cartesiano de três camisetas por duas calças.",
+      "result": "3 × 2 = 6 conjuntos distintos."
+    },
+    {
+      "id": "up-contagem-2",
+      "method": "Enumeração em Python de todas as sequências de três letras com repetição.",
+      "result": "4³ = 64 códigos."
+    },
+    {
+      "id": "up-contagem-3",
+      "method": "Enumeração em Python das permutações de cinco elementos distintos.",
+      "result": "5! = 120 arrumações."
+    },
+    {
+      "id": "up-contagem-4",
+      "method": "Enumeração em Python dos arranjos de oito atletas, três posições distintas.",
+      "result": "A(8,3) = 8 × 7 × 6 = 336."
+    },
+    {
+      "id": "up-contagem-5",
+      "method": "Enumeração em Python dos subconjuntos de três pessoas e conferência por combinação.",
+      "result": "C(7,3) = 35."
+    },
+    {
+      "id": "up-contagem-6",
+      "method": "Enumeração em Python de todas as permutações de quatro algarismos; filtros de não repetição, início não nulo e paridade.",
+      "result": "24 números terminam em 0 e 36 em 2 ou 4; total 60."
+    },
+    {
+      "id": "up-contagem-7",
+      "method": "Enumeração em Python das permutações, removendo sequências duplicadas por letras repetidas.",
+      "result": "6!/(3!2!) = 60 sequências distintas."
+    },
+    {
+      "id": "up-contagem-8",
+      "method": "Enumeração em Python das 720 filas e filtro de adjacência; conferência pelo método do bloco.",
+      "result": "240 filas atendem à condição; 2 × 5! = 240."
+    },
+    {
+      "id": "up-contagem-9",
+      "method": "Enumeração em Python do produto entre as dez duplas de estudantes e os três professores.",
+      "result": "C(5,2) × 3 = 10 × 3 = 30 equipes."
+    },
+    {
+      "id": "up-contagem-10",
+      "method": "Enumeração em Python das sequências distintas com três L e dois N.",
+      "result": "5!/(3!2!) = C(5,2) = 10 trajetos."
+    },
+    {
+      "id": "up-contagem-11",
+      "method": "Enumeração em Python das 120 permutações e filtro de não adjacência; conferência por complemento.",
+      "result": "5! − 2 × 4! = 120 − 48 = 72."
+    },
+    {
+      "id": "up-contagem-12",
+      "method": "Enumeração em Python dos 70 subconjuntos e exclusão daqueles com as duas pessoas; conferência por complemento.",
+      "result": "C(8,4) − C(6,2) = 70 − 15 = 55."
+    },
+    {
+      "id": "up-espaciais-1",
+      "method": "Produto das três dimensões calculado em Python; unidade cúbica conferida.",
+      "result": "V = 5 × 4 × 3 = 60 cm³."
+    },
+    {
+      "id": "up-espaciais-2",
+      "method": "Fórmula de área do cubo calculada em Python.",
+      "result": "A = 6 × 4² = 96 cm²."
+    },
+    {
+      "id": "up-espaciais-3",
+      "method": "Conversão de unidades calculada exatamente com Fraction em Python.",
+      "result": "0,5 m³ = 500 L."
+    },
+    {
+      "id": "up-espaciais-4",
+      "method": "Cálculo em Python do coeficiente de π em V = πr²h; todas as opções são múltiplos de π.",
+      "result": "V = π × 3² × 10 = 90π cm³."
+    },
+    {
+      "id": "up-espaciais-5",
+      "method": "Área triangular e produto pela altura calculados racionalmente em Python.",
+      "result": "V = (6 × 8/2) × 10 = 240 cm³."
+    },
+    {
+      "id": "up-espaciais-6",
+      "method": "Cálculo em Python do coeficiente de π na área lateral 2πrh.",
+      "result": "A lateral = 2π × 2 × 5 = 20π cm²."
+    },
+    {
+      "id": "up-espaciais-7",
+      "method": "Cálculo racional em Python do coeficiente de π no volume da esfera.",
+      "result": "V = (4/3)π × 27 = 36π cm³."
+    },
+    {
+      "id": "up-espaciais-8",
+      "method": "Prova algébrica (2a)³/a³ = 8 para a > 0 e cálculo inteiro em Python.",
+      "result": "O volume é multiplicado por 2³ = 8."
+    },
+    {
+      "id": "up-espaciais-9",
+      "method": "Conversão de litros, divisão pela área e teste de capacidade calculados em Python.",
+      "result": "h = 20.000/(40 × 25) = 20 cm < 30 cm; sem transbordamento."
+    },
+    {
+      "id": "up-espaciais-10",
+      "method": "Pitágoras com raiz inteira e soma das áreas calculados em Python.",
+      "result": "g = 5 cm; A total = 15π + 9π = 24π cm²."
+    },
+    {
+      "id": "up-espaciais-11",
+      "method": "Cálculo racional em Python do volume, conversão, percentual e tempo por vazão.",
+      "result": "Capacidade = 3.000 L; 80% = 2.400 L; t = 2.400/25 = 96 min."
+    },
+    {
+      "id": "up-espaciais-12",
+      "method": "Cálculo exato em Python com Fraction para os coeficientes de π e razão dos volumes.",
+      "result": "V cilindro = 360π cm³; V esfera = (9/2)π cm³; quociente exato = 80."
+    },
+    {
+      "id": "up-trigonometria-1",
+      "method": "Razão trigonométrica exata, conferida com Fraction.",
+      "result": "sen θ = 6/10 = 3/5; os demais valores são distintos."
+    },
+    {
+      "id": "up-trigonometria-2",
+      "method": "Conversão exata de graus para radianos com Fraction.",
+      "result": "150 × π/180 = 5π/6."
+    },
+    {
+      "id": "up-trigonometria-3",
+      "method": "Identidade trigonométrica conferida em aritmética racional e escolha do sinal positivo.",
+      "result": "1 − (5/13)² = (12/13)²; θ agudo elimina a raiz negativa."
+    },
+    {
+      "id": "up-trigonometria-4",
+      "method": "Identidade, sinal por quadrante e divisão racional conferidos com Fraction.",
+      "result": "cos θ = −4/5 e tan θ = −3/4 para 90° < θ < 180°."
+    },
+    {
+      "id": "up-trigonometria-5",
+      "method": "Valor notável sen 60° = √3/2 e conferência numérica independente com math.",
+      "result": "10 × sen 60° = 5√3 m."
+    },
+    {
+      "id": "up-trigonometria-6",
+      "method": "Redução ao primeiro quadrante e conferência numérica com math.",
+      "result": "cos 120° = −cos 60° = −1/2."
+    },
+    {
+      "id": "up-trigonometria-7",
+      "method": "Fórmulas gerais θ = 60° + 360°k ou θ = 120° + 360°k, restringidas ao intervalo; substituição numérica.",
+      "result": "Só k = 0 é admissível em cada família; conjunto completo {60°, 120°}."
+    },
+    {
+      "id": "up-trigonometria-8",
+      "method": "Lei dos senos com valores notáveis e conferência numérica independente.",
+      "result": "b = 6 sen 45°/sen 30° = 6√2 cm."
+    },
+    {
+      "id": "up-trigonometria-9",
+      "method": "Lei dos cossenos calculada exatamente com Fraction.",
+      "result": "c² = 25 + 49 − 35 = 39; c = √39 cm, que satisfaz 2 < c < 12."
+    },
+    {
+      "id": "up-trigonometria-10",
+      "method": "Limite sen ≤ 1 e família de máximos πt/6 = π/2 + 2πk, com substituição numérica.",
+      "result": "Máximos em t = 3 + 12k; apenas t = 3 está em [0, 12]."
+    },
+    {
+      "id": "up-trigonometria-11",
+      "method": "Prova no círculo trigonométrico: coordenada horizontal menor que −1/2 entre os dois pontos de fronteira; fronteiras conferidas com math.",
+      "result": "Conjunto completo: (2π/3, 4π/3); os extremos são excluídos e o restante do ciclo tem cos ≥ −1/2."
+    },
+    {
+      "id": "up-trigonometria-12",
+      "method": "Sistema das tangentes com distância final x > 0 e inicial x + 40, pois a caminhada termina antes da base; redução exata a 3x = x + 40 e substituição numérica.",
+      "result": "Única solução geométrica admissível: distância final x = 20 m, distância inicial 60 m e altura h = 20√3 m; ultrapassar a base está explicitamente excluído."
+    },
+    {
+      "id": "up-logaritmos-1",
+      "method": "Definição de logaritmo e potência racional exata.",
+      "result": "4^(−2) = 1/16; a base 4 é positiva e diferente de 1, e o argumento é positivo."
+    },
+    {
+      "id": "up-logaritmos-2",
+      "method": "Combinação exata dos argumentos e definição do logaritmo.",
+      "result": "6 × 12/9 = 8 e log₂ 8 = 3; todos os argumentos são positivos."
+    },
+    {
+      "id": "up-logaritmos-3",
+      "method": "Definição de raiz como potência e conferência numérica independente com math.",
+      "result": "√5 = 5^(1/2), logo log₅(√5) = 1/2; base e argumento são válidos."
+    },
+    {
+      "id": "up-logaritmos-4",
+      "method": "Prova por desigualdade linear: dividir 2x − 6 > 0 por 2 positivo.",
+      "result": "Domínio exato (3, +∞); a base 3 já satisfaz as condições do logaritmo real."
+    },
+    {
+      "id": "up-logaritmos-5",
+      "method": "Prova algébrica pela propriedade do quociente, com x > 0 permitindo cancelamento; testes numéricos independentes com math.",
+      "result": "S(9x) − S(x) = log₃(9x/x) = log₃ 9 = 2 para todo x > 0; não depende de x."
+    },
+    {
+      "id": "up-logaritmos-6",
+      "method": "Produto dos argumentos, equação quadrática exata e filtragem pelo domínio.",
+      "result": "Raízes algébricas ±3; única raiz admissível 3, com argumentos 2 e 4 positivos."
+    },
+    {
+      "id": "up-logaritmos-7",
+      "method": "Aritmética racional exata e monotonicidade de exponencial com base maior que 1.",
+      "result": "N(3) = 600 × 27/8 = 2.025; instante único no domínio t ≥ 0."
+    },
+    {
+      "id": "up-logaritmos-8",
+      "method": "Prova pela monotonicidade decrescente; limite exato e testes internos/externos com math.",
+      "result": "0 < x − 1 < 4, portanto conjunto aberto (1, 5); x = 5 dá igualdade e é excluído."
+    },
+    {
+      "id": "up-logaritmos-9",
+      "method": "Potências racionais exatas e monotonicidade do modelo de decaimento.",
+      "result": "A(12) = 12; A(t) > 12 para 0 ≤ t < 12, logo o primeiro instante é 12 h."
+    },
+    {
+      "id": "up-logaritmos-10",
+      "method": "Propriedade do quociente dos logaritmos e conferência numérica.",
+      "result": "I₂/I₁ = 10^(20/10) = 100; a constante positiva I₀ se cancela."
+    },
+    {
+      "id": "up-logaritmos-11",
+      "method": "Equação quadrática exata e verificação das restrições da base.",
+      "result": "A raiz −4 é inválida; x = 4 é a única base admissível e log₄ 16 = 2."
+    },
+    {
+      "id": "up-logaritmos-12",
+      "method": "Fatoração exata −x² + 8x − 12 = −(x − 2)(x − 6), prova de sinais e testes racionais.",
+      "result": "Conjunto fechado [2, 6]; ambos os extremos dão igualdade e preservam argumentos positivos."
+    },
+    {
+      "id": "up-matrizes-1",
+      "method": "Indexação direta de uma lista 2 × 2, respeitando a convenção linha/coluna.",
+      "result": "a₂₁ = 5, distinto das outras três entradas."
+    },
+    {
+      "id": "up-matrizes-2",
+      "method": "Soma exata das quatro entradas por compreensão de listas.",
+      "result": "A + B tem linhas [4; 2] e [2; 4]."
+    },
+    {
+      "id": "up-matrizes-3",
+      "method": "Multiplicação por escalar e subtração das quatro entradas em aritmética inteira.",
+      "result": "2A − B tem linhas [3; −2] e [−6; 8]."
+    },
+    {
+      "id": "up-matrizes-4",
+      "method": "Transposição por troca exata dos índices i e j.",
+      "result": "Aᵀ tem linhas [1; −2] e [7; 4]; as entradas diagonais ficam nas mesmas posições."
+    },
+    {
+      "id": "up-matrizes-5",
+      "method": "Multiplicação matricial completa por linhas e colunas em Python.",
+      "result": "AB tem linhas [4; 7] e [3; 12], logo (AB)₁₂ = 7."
+    },
+    {
+      "id": "up-matrizes-6",
+      "method": "Fórmula exata ad − bc aplicada à matriz.",
+      "result": "det A = 12 − 10 = 2."
+    },
+    {
+      "id": "up-matrizes-7",
+      "method": "Critério det = 0 e equação linear exata; substituição com Fraction.",
+      "result": "det A = 4k − 6 anula-se unicamente em k = 3/2."
+    },
+    {
+      "id": "up-matrizes-8",
+      "method": "Eliminação exata, substituição nas duas equações e determinante não nulo para unicidade.",
+      "result": "Solução única (x; y) = (3; 1); det A = −3."
+    },
+    {
+      "id": "up-matrizes-9",
+      "method": "Determinante e multiplicação exata dos dois produtos A·A⁻¹ e A⁻¹·A.",
+      "result": "Os dois produtos dão a identidade de linhas [1; 0] e [0; 1]; inversa confirmada."
+    },
+    {
+      "id": "up-matrizes-10",
+      "method": "Dois produtos matriciais e subtração exata, sem supor comutatividade.",
+      "result": "AB = [[2,3],[0,3]], BA = [[2,2],[0,3]]; AB − BA = [[0,1],[0,0]]."
+    },
+    {
+      "id": "up-matrizes-11",
+      "method": "Duas multiplicações matriz-vetor com frações exatas; conservação do total de 100 clientes.",
+      "result": "Estados: (100;0) → (80;20) → (66;34); resposta 66."
+    },
+    {
+      "id": "up-matrizes-12",
+      "method": "Resolução exata do sistema por determinantes, substituição dos consumos e soma ponderada dos lucros.",
+      "result": "det A = 5; solução única (7;6), com lucro 56 + 60 = R$ 116,00."
+    },
+    {
+      "id": "up-modelos-1",
+      "method": "Cálculo racional do coeficiente angular entre dois pontos distintos e substituição.",
+      "result": "a = 2 e b = 5, única função afim que passa por (0;5) e (3;11)."
+    },
+    {
+      "id": "up-modelos-2",
+      "method": "Desigualdade linear exata e interseção com domínio; testes racionais nos dois lados da fronteira.",
+      "result": "A − B = 2x − 30 < 0 se e somente se x < 15; domínio final [0,15)."
+    },
+    {
+      "id": "up-modelos-3",
+      "method": "Derivação algébrica por área = produto e perímetro = dobro da soma; conferência em valores racionais.",
+      "result": "Identidade P(x) = 2x + 72/x para todo x > 0; condição evita divisão por zero e lados não positivos."
+    },
+    {
+      "id": "up-modelos-4",
+      "method": "Razões exatas consecutivas e substituição nos três dados.",
+      "result": "Fator diário 6/5 = 1,2; o modelo exponencial reproduz 500, 600 e 720."
+    },
+    {
+      "id": "up-modelos-5",
+      "method": "Aplicação do ramo correto de uma função por partes e aritmética inteira.",
+      "result": "C(5) = 8 + 3(5 − 2) = R$ 17,00; não se cobra o adicional sobre os 5 kg inteiros."
+    },
+    {
+      "id": "up-modelos-6",
+      "method": "Fatoração exata (t − 1)(t − 3), prova de sinais e testes racionais no domínio.",
+      "result": "Conjunto fechado [1,3] segundos, contido em [0,4]; nas duas fronteiras h = 16 m."
+    },
+    {
+      "id": "up-modelos-7",
+      "method": "Balanço do volume do componente, pois todas as concentrações são volumétricas; frações exatas e verificação do volume total.",
+      "result": "15 L a 30% e 5 L a 10% contêm 4,5 + 0,5 = 5 L do componente, ou 25% de 20 L."
+    },
+    {
+      "id": "up-modelos-8",
+      "method": "Enumeração exata de todos os 16 valores inteiros admissíveis, acompanhada de prova pelo vértice.",
+      "result": "Máximo único R(15) = 750; o vértice q = 20 seria inviável pela capacidade."
+    },
+    {
+      "id": "up-modelos-9",
+      "method": "Subtração e inversão exatas de taxas com Fraction.",
+      "result": "Taxa líquida positiva de esvaziamento 1/18 tanque/h; tempo total 18 h."
+    },
+    {
+      "id": "up-modelos-10",
+      "method": "Soma racional dos tempos e divisão distância/tempo total.",
+      "result": "Distância total 60 km, tempo 5/6 h, velocidade média 72 km/h; a média aritmética das velocidades não se aplica."
+    },
+    {
+      "id": "up-modelos-11",
+      "method": "Calibração exata da base positiva e extrapolação por potência racional.",
+      "result": "a = 3/2 é a única raiz positiva; N(3) = 400 × 27/8 = 1.350."
+    },
+    {
+      "id": "up-modelos-12",
+      "method": "Enumeração exata de todos os pares inteiros admissíveis e prova de limite superior por combinação das restrições.",
+      "result": "Máximo único 47 em (x;y) = (3;4); limite superior 2,5 × 18 + 0,5 × 4 = 47 é atingido."
+    },
+    {
+      "id": "up-integracao-1",
+      "method": "Volume e conversão exatos, seguidos de percentual inicial e fração de consumo calculados com Fraction.",
+      "result": "3,6 m³ = 3.600 L; (3/4) × 3.600 × (2/3) + 200 = 2.000 L, abaixo da capacidade."
+    },
+    {
+      "id": "up-integracao-2",
+      "method": "Lei da probabilidade total calculada com frações exatas.",
+      "result": "P(azul) = 3/10 + 1/8 = 17/40; as urnas, e não todas as nove bolas juntas, têm pesos iguais na primeira escolha."
+    },
+    {
+      "id": "up-integracao-3",
+      "method": "Contagens por percentual e proporção total exatas, respeitando os tamanhos distintos dos grupos.",
+      "result": "6 + 8 = 14 defeitos; total 120 + 80 = 200; taxa conjunta 7%."
+    },
+    {
+      "id": "up-integracao-4",
+      "method": "Decomposição do hexágono regular em seis triângulos equiláteros; cálculo exato do coeficiente de √3 e conferência numérica da área trigonométrica.",
+      "result": "Cada triângulo tem área √3 cm², a base tem 6√3 cm² e o volume é 30√3 cm³; nenhuma alternativa é equivalente."
+    },
+    {
+      "id": "up-integracao-5",
+      "method": "Geração e soma exatas dos quatro termos da PG e divisão pelo tamanho do lote.",
+      "result": "Produção total 750 peças, divisível por 25; exatamente 30 caixas completas."
+    },
+    {
+      "id": "up-integracao-6",
+      "method": "Cálculo direto das duas médias e variâncias em aritmética racional, além da propriedade de transformação afim.",
+      "result": "Dados transformados 7,13,13,19; média 13; variância (36 + 0 + 0 + 36)/4 = 18."
+    },
+    {
+      "id": "up-integracao-7",
+      "method": "Conversão da unidade monetária, fatoração quadrática e enumeração completa dos onze valores inteiros do domínio.",
+      "result": "Cinco valores admissíveis n ∈ {3,4,5,6,7}; nos extremos P = 5 centenas de reais."
+    },
+    {
+      "id": "up-integracao-8",
+      "method": "Sistema linear verificado por substituição e determinante não nulo; probabilidade sem reposição exata.",
+      "result": "Solução única 7 kits A e 3 B; P(BB) = 6/90 = 1/15, também C(3,2)/C(10,2)."
+    },
+    {
+      "id": "up-integracao-9",
+      "method": "Volume cilíndrico com π convencionado, conversão de unidade e balanço exato de vazões.",
+      "result": "Volume 6.000 L; vazão líquida 40 L/min; tempo 150 min."
+    },
+    {
+      "id": "up-integracao-10",
+      "method": "Potências e percentuais calculados exatamente com frações.",
+      "result": "Fator de área 36/25 = 1,44 e de volume 216/125 = 1,728; aumentos 44% e 72,8%."
+    },
+    {
+      "id": "up-integracao-11",
+      "method": "Trigonometria, conversão de comprimentos, áreas e acréscimo racional exatos; encaixe 20 × 5 placas confirma ausência de perda.",
+      "result": "Comprimento 6 m, área 12 m², placas de 0,12 m²; 100 necessárias + 10 extras = 110."
+    },
+    {
+      "id": "up-integracao-12",
+      "method": "Soma de PA e equação quadrática exatas; fatoração prova unicidade positiva, além de enumeração de controle.",
+      "result": "180 lugares, 162 ingressos vendidos, 162 × 25 = 4.050; raízes n = 9 e −20, sendo só 9 admissível."
+    }
+  ],
+  "audit": {
+    "checked": 210,
+    "issues": [],
+    "notes": [
+      "Auditoria concluída dos 210 itens novos: 45 em bank-1-5.json, 45 em bank-6-10.json, 60 em bank-11-15.json e 60 em bank-16-20.json. Os 30 itens legados não fazem parte desta contagem.",
+      "Enunciados, alternativas, chaves, dicas e explicações foram lidos. As soluções foram obtidas independentemente das notas verification dos autores. Todas as 210 chaves estão corretas e cada item tem exatamente uma alternativa correta na versão auditada.",
+      "Python com Fraction conferiu valores racionais, proporções, conversões, médias, variâncias, probabilidades e chaves. Enumeração direta conferiu os problemas de contagem e otimização inteira; alternativas numéricas e matriciais também foram comparadas entre si para detectar equivalências.",
+      "A revisão manual conferiu intervalos completos, extremos abertos ou fechados, domínios reais e raízes admissíveis, sinais trigonométricos, unidades, equiprobabilidade, independência e reposição. Não permanecem ambiguidades materiais nesses pontos.",
+      "As ambiguidades inicialmente apontadas em up-trigonometria-12 (não alcançar nem ultrapassar a base) e up-modelos-7 (concentrações em volume) foram corrigidas pelos autores e as versões corrigidas foram reconferidas.",
+      "O item up-logaritmos-5 foi substituído durante a revisão; a versão atual S(9x)−S(x)=log₃9=2 foi auditada novamente. Também foram reconferidas as revisões finais de up-integracao-1 (2.000 L) e up-integracao-4 (30√3 cm³).",
+      "Conferências independentes relevantes: 60 números pares de quatro algarismos sem repetição; probabilidade 137/228 de pelo menos um prêmio entre três bilhetes; 11 dias para acumular pelo menos 200 peças; lucro máximo de R$ 47,00 em up-modelos-12; nove fileiras em up-integracao-12.",
+      "Nenhuma alteração foi feita nos bancos ou no repositório por esta auditoria.",
+      "SHA-256 da versão auditada de bank-1-5.json: 5d43f68fc0764bd43c725b36b3e65794ee005fd6d56f401cfbf7e8eeb4e0c30b",
+      "SHA-256 da versão auditada de bank-6-10.json: 6db5472e3fa6a9ae72a4feab6a223ce3fcadbf39081c41ba8535b6524ec8923c",
+      "SHA-256 da versão auditada de bank-11-15.json: 51e1d997fa362dd80b23370376faa2e61296a42e8d63b883c7f64b753a644b06",
+      "SHA-256 da versão auditada de bank-16-20.json: 76b44385b4bcb412a1b8d45b840fd58c4316742bd77ef64129b791de9545ddd2"
+    ]
+  }
+}

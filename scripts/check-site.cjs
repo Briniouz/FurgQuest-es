@@ -173,44 +173,9 @@ async function checkEnemSimulations(){
   vm.runInContext('state='+snapshot,ctx);vm.runInContext('globalThis.FurgEnemSim.init({getState:()=>state,save,toast})',ctx);
   assert.equal(errors.length,0);console.log('PASS: annual ENEM simulations 2010+, both days/languages, original order, hidden keys, pause/resume, persisted answers, export/import, completion, annulments, review and time expiry.');
 }
-checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).then(checkExamSubjectEditing).then(checkLightReview).then(checkAnatomy).then(checkDayOne).catch(error=>{console.error(error);process.exitCode=1;});
+checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).then(checkExamSubjectEditing).then(checkLightReview).then(checkAnatomy).then(checkDayOne).then(checkGroupedNavigation).catch(error=>{console.error(error);process.exitCode=1;});
 
-async function checkLevelUp(){
-  const up=ctx.FurgLevelUp,stages=ctx.FURG_LEVELUP_DATA,snapshot=vm.runInContext('JSON.stringify(state)',ctx);
-  assert.equal(stages.length,10);assert.equal(stages.flatMap(s=>s.questions).length,30);
-  for(const stage of stages){assert.equal(stage.questions.length,3);for(const q of stage.questions){assert.equal(q.options.length,4);assert.equal(new Set(q.options).size,4);assert(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);assert(q.hint&&q.explanation);}}
-  for(let letter=0;letter<4;letter++)assert(stages.flatMap(s=>s.questions).filter(q=>q.answer===letter).length>=5,'Answer positions must vary');
-  assert(stages[0].questions[0].stem.includes('2 lápis'));assert.equal(stages[0].questions[0].options[stages[0].questions[0].answer],'3');
-  const click=(action,extra={})=>{for(const fn of events['levelupRoot:click']||[])fn({target:{closest:()=>({dataset:{up:action,...extra},disabled:false})},preventDefault(){}});};
-  const progress=()=>vm.runInContext('state.levelup',ctx);
-  function key(key){for(const fn of events['document:keydown']||[])fn({key,target:{closest:()=>null},preventDefault(){}});}
-  function solve(q){click('question',{id:q.id});click('choose',{choice:String(q.answer)});click('confirm');assert(progress().answers[q.id].solved,q.id);}
-  vm.runInContext("state.levelup={answers:{}};FurgLevelUp.refresh();setView('evolucao')",ctx);
-  const bankIndex=vm.runInContext('index',ctx);assert.equal(up.metrics().xp,0);assert.equal(up.metrics().level,1);
-  const first=stages[0].questions[0];click('stage',{stage:'9'});assert.equal(progress().lastQuestion,first.id);
-  click('question',{id:stages[1].questions[0].id});assert.equal(progress().lastQuestion,first.id);
-  click('confirm');assert.equal(up.metrics().xp,0);click('hint');assert(progress().answers[first.id].hinted);
-  key('A');key('Enter');assert.equal(progress().answers[first.id].solved,false);assert($('levelupRoot').innerHTML.includes('Ainda não.'));
-  key('Enter');key('C');key('Enter');assert(progress().answers[first.id].solved);assert.equal(progress().answers[first.id].firstChoice,0);assert.equal(progress().answers[first.id].attempts,2);assert.equal(up.metrics().xp,10);assert.equal(vm.runInContext('index',ctx),bankIndex,'Level Up shortcuts moved the bank');
-  click('confirm');assert.equal(up.metrics().xp,10,'Repeated confirmation farmed XP');
-  solve(stages[0].questions[1]);solve(stages[0].questions[2]);assert.equal(up.metrics().xp,50);assert.equal(up.metrics().level,2);click('next');assert.equal(progress().lastQuestion,stages[1].questions[0].id);
-  // A failed storage write must not unlock a question or award XP.
-  vm.runInContext('FurgLevelUp.init({getState:()=>state,save:()=>false,toast,setView})',ctx);
-  click('choose',{choice:String(stages[1].questions[0].answer)});click('confirm');assert(!progress().answers[stages[1].questions[0].id]?.solved);assert.equal(up.metrics().xp,50);
-  vm.runInContext('FurgLevelUp.init({getState:()=>state,save,toast,setView})',ctx);
-  $('exportProgress').click();let backup=JSON.parse(await exported.at(-1).text());assert.equal(up.metrics(up.validate(backup.levelup)).xp,50);
-  const importBackup=async value=>{const text=JSON.stringify(value);await $('progressFile').onchange({target:{files:[{size:Buffer.byteLength(text),text:async()=>text}],value:'progress.json'}});};
-  await importBackup({version:1,answers:{}});assert.equal(up.metrics().xp,50);assert.equal(progress().lastQuestion,stages[1].questions[0].id,'Legacy import reset the current level');
-  vm.runInContext('state.levelup={answers:{}};FurgLevelUp.refresh()',ctx);await importBackup(backup);assert.equal(up.metrics().xp,50);assert.equal(progress().lastQuestion,stages[1].questions[0].id);
-  const hacked={answers:{[stages[9].questions[0].id]:{solved:true,choice:stages[9].questions[0].answer}},xp:999999,lastQuestion:stages[9].questions[0].id};assert.equal(up.metrics(up.validate(hacked)).xp,0);assert.equal(Object.keys(up.validate(hacked).answers).length,0);
-  const invalid={answers:{[first.id]:{solved:true,choice:0,attempts:Infinity}}};assert(!up.validate(invalid).answers[first.id].solved);assert.equal(up.validate(invalid).answers[first.id].attempts,100000);
-  for(const stage of stages.slice(1))for(const q of stage.questions)solve(q);
-  assert.equal(up.metrics().xp,500);assert.equal(up.metrics().completed,10);assert($('levelupRoot').innerHTML.includes('Do primeiro passo ao desafio final.'));
-  solve(first);assert.equal(up.metrics().xp,500);assert.equal(up.metrics(up.merge(progress(),progress())).xp,500);
-  $('exportProgress').click();backup=JSON.parse(await exported.at(-1).text());assert.equal(up.metrics(up.validate(backup.levelup)).xp,500);assert(storage.get(progressKey).includes('up-desafio-3'));
-  vm.runInContext('state='+snapshot,ctx);up.refresh();assert.equal(errors.length,0);
-  console.log('PASS: Level Up: 30 original questions, locked stages, hint/retry, first choice, unique XP, all 10 unlocks, storage rollback, keyboard isolation, export/import, legacy backups and forged progress validation.');
-}
+async function checkLevelUp(){return require('./check-levelup-rounds.cjs')({ctx,$,vm,events,assert,storage,progressKey,exported,fs,errors});}
 
 function checkFuvest(){
  if(previewFile)return;
@@ -312,3 +277,5 @@ async function checkLightReview(){
 function studyAdditionContext(){return {ctx,$,vm,events,assert,storage,progressKey,exported,document,errors,fs};}
 function checkAnatomy(){return require('./check-study-additions.cjs').anatomy(studyAdditionContext());}
 function checkDayOne(){return require('./check-study-additions.cjs').dayOne(studyAdditionContext());}
+
+function checkGroupedNavigation(){return require('./check-grouped-navigation.cjs')({ctx,$,vm,events,assert,document,errors,html});}

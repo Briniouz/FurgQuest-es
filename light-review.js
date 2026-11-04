@@ -84,5 +84,5 @@
   document.addEventListener('click',event=>{const trigger=event.target.closest('[data-light-launch]');if(trigger){event.preventDefault();open();}});
   if(typeof window!=='undefined')window.addEventListener('pagehide',stopAudio);
  }
- globalThis.FurgLightReview={init,render,refresh:render,validate,merge,open,stopAudio,defaults:fresh};
+ globalThis.FurgLightReview={init,render,refresh:render,validate,merge,open,stopAudio,defaults:fresh,showDayOne:()=>action('dayone','light',{})};
 })();

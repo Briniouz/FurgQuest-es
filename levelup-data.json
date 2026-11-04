@@ -1,0 +1,3302 @@
+[
+  {
+    "id": "primeiros-passos",
+    "title": "Primeiros passos",
+    "label": "Extremamente fácil",
+    "skill": "Somar, tirar e comparar",
+    "level": 1,
+    "questions": [
+      {
+        "id": "up-primeiros-passos-1",
+        "stem": "Tu tem 2 lápis e ganha mais 1. Com quantos lápis tu fica?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 2,
+        "hint": "Junta os dois lápis com mais um.",
+        "explanation": "2 + 1 = 3. Somar é juntar quantidades."
+      },
+      {
+        "id": "up-primeiros-passos-2",
+        "stem": "Há 5 bolinhas na mesa. Tu retira 2. Quantas ficam?",
+        "options": [
+          "2",
+          "5",
+          "7",
+          "3"
+        ],
+        "answer": 3,
+        "hint": "Conta para trás duas vezes a partir de 5.",
+        "explanation": "5 − 2 = 3. Retirar uma quantidade corresponde a subtrair."
+      },
+      {
+        "id": "up-primeiros-passos-3",
+        "stem": "Qual destes números é o maior?",
+        "options": [
+          "9",
+          "4",
+          "6",
+          "2"
+        ],
+        "answer": 0,
+        "hint": "Pensa em qual deles aparece por último ao contar de 1 até 10.",
+        "explanation": "9 é maior que 6, 4 e 2."
+      },
+      {
+        "id": "up-primeiros-passos-4",
+        "stem": "Uma caixa contém 4 carrinhos e outra caixa está vazia. Quantos carrinhos há nas duas caixas juntas?",
+        "options": [
+          "3",
+          "4",
+          "0",
+          "5"
+        ],
+        "answer": 1,
+        "hint": "Pensa se a caixa vazia acrescenta algum carrinho à contagem.",
+        "explanation": "A caixa vazia tem zero carrinhos. Portanto, 4 + 0 = 4 carrinhos nas duas caixas."
+      },
+      {
+        "id": "up-primeiros-passos-5",
+        "stem": "Na contagem de um em um, qual número vem imediatamente depois de 6?",
+        "options": [
+          "7",
+          "5",
+          "6",
+          "8"
+        ],
+        "answer": 0,
+        "hint": "Avança uma posição na sequência dos números.",
+        "explanation": "Contando de um em um, passamos por 5, 6 e 7. Assim, o número imediatamente depois de 6 é 7."
+      },
+      {
+        "id": "up-primeiros-passos-6",
+        "stem": "Há 3 copos na mesa. Quantos copos ainda precisam ser colocados para que a mesa fique com 5 copos?",
+        "options": [
+          "1",
+          "3",
+          "5",
+          "2"
+        ],
+        "answer": 3,
+        "hint": "Conta quantos passos faltam para ir de 3 até 5.",
+        "explanation": "A mesa precisa passar de 3 para 5 copos. Como 5 − 3 = 2, faltam 2 copos."
+      },
+      {
+        "id": "up-primeiros-passos-7",
+        "stem": "Lia tem 6 adesivos e Rui tem 4. Quantos adesivos Lia tem a mais que Rui?",
+        "options": [
+          "10",
+          "4",
+          "2",
+          "6"
+        ],
+        "answer": 2,
+        "hint": "Compara as quantidades retirando a menor da maior.",
+        "explanation": "A diferença entre as quantidades é 6 − 4 = 2. Portanto, Lia tem 2 adesivos a mais que Rui."
+      },
+      {
+        "id": "up-primeiros-passos-8",
+        "stem": "Qual das afirmações sobre os números está correta?",
+        "options": [
+          "2 é maior que 5.",
+          "3 é menor que 8.",
+          "6 é menor que 3.",
+          "4 é igual a 7."
+        ],
+        "answer": 1,
+        "hint": "Usa a ordem dos números na contagem para conferir cada afirmação.",
+        "explanation": "Na contagem, 3 aparece antes de 8, então 3 é menor que 8. As outras afirmações trocam a ordem dos números ou igualam números diferentes."
+      },
+      {
+        "id": "up-primeiros-passos-9",
+        "stem": "Seis crianças estavam brincando no pátio. Chegaram mais 2 crianças e depois 1 foi para casa. Quantas crianças ficaram no pátio?",
+        "options": [
+          "6",
+          "8",
+          "9",
+          "7"
+        ],
+        "answer": 3,
+        "hint": "Primeiro conta quem chegou; depois desconta quem saiu.",
+        "explanation": "Com a chegada das 2 crianças, o grupo ficou com 6 + 2 = 8 crianças. Depois da saída de 1, ficaram 8 − 1 = 7 crianças."
+      },
+      {
+        "id": "up-primeiros-passos-10",
+        "stem": "Havia 8 livros numa prateleira. Alguns foram retirados e ficaram 5. Quantos livros foram retirados?",
+        "options": [
+          "3",
+          "5",
+          "8",
+          "13"
+        ],
+        "answer": 0,
+        "hint": "Compara a quantidade inicial com a quantidade que ficou.",
+        "explanation": "A quantidade retirada é a diferença entre 8 e 5. Como 8 − 5 = 3, foram retirados 3 livros."
+      },
+      {
+        "id": "up-primeiros-passos-11",
+        "stem": "Qual destas contas tem resultado igual a 6?",
+        "options": [
+          "1 + 4",
+          "2 + 5",
+          "4 + 2",
+          "5 + 3"
+        ],
+        "answer": 2,
+        "hint": "Faz cada soma e compara o resultado com 6.",
+        "explanation": "Os resultados das quatro somas são 5, 7, 6 e 8, nessa ordem. Portanto, a conta que resulta em 6 é 4 + 2."
+      },
+      {
+        "id": "up-primeiros-passos-12",
+        "stem": "Numa sala há 4 bancos ocupados e 3 bancos vazios. Depois, 2 dos bancos vazios são ocupados. Quantos bancos continuam vazios?",
+        "options": [
+          "2",
+          "1",
+          "3",
+          "5"
+        ],
+        "answer": 1,
+        "hint": "Acompanha apenas os bancos que estavam vazios.",
+        "explanation": "Dos 3 bancos vazios, 2 passaram a ficar ocupados. Assim, continuam vazios 3 − 2 = 1 banco."
+      }
+    ]
+  },
+  {
+    "id": "operacoes",
+    "title": "Operações",
+    "label": "Muito fácil",
+    "skill": "Multiplicação, divisão e prioridade",
+    "level": 2,
+    "questions": [
+      {
+        "id": "up-operacoes-1",
+        "stem": "São 3 caixas com 4 lápis em cada uma. Quantos lápis há ao todo?",
+        "options": [
+          "7",
+          "12",
+          "10",
+          "16"
+        ],
+        "answer": 1,
+        "hint": "Soma 4 + 4 + 4.",
+        "explanation": "3 × 4 = 12 lápis. Multiplicar também pode representar uma soma de parcelas iguais."
+      },
+      {
+        "id": "up-operacoes-2",
+        "stem": "Tu divide 12 balas igualmente entre 3 pessoas. Quantas cada uma recebe?",
+        "options": [
+          "4",
+          "3",
+          "6",
+          "9"
+        ],
+        "answer": 0,
+        "hint": "Qual número multiplicado por 3 resulta em 12?",
+        "explanation": "12 ÷ 3 = 4 balas para cada pessoa."
+      },
+      {
+        "id": "up-operacoes-3",
+        "stem": "Quanto vale 8 + 2 × 3?",
+        "options": [
+          "30",
+          "24",
+          "14",
+          "18"
+        ],
+        "answer": 2,
+        "hint": "A multiplicação vem antes da adição.",
+        "explanation": "Primeiro 2 × 3 = 6. Depois 8 + 6 = 14."
+      },
+      {
+        "id": "up-operacoes-4",
+        "stem": "Quanto vale 7 × 0?",
+        "options": [
+          "7",
+          "1",
+          "70",
+          "0"
+        ],
+        "answer": 3,
+        "hint": "Pensa na quantidade total de objetos em sete grupos vazios.",
+        "explanation": "Cada um dos sete grupos tem zero objetos. Somar sete parcelas iguais a zero dá 0, então 7 × 0 = 0."
+      },
+      {
+        "id": "up-operacoes-5",
+        "stem": "Uma professora organiza 24 estudantes em grupos de 4, sem deixar ninguém de fora. Quantos grupos são formados?",
+        "options": [
+          "4",
+          "6",
+          "20",
+          "96"
+        ],
+        "answer": 1,
+        "hint": "Procura quantas vezes o grupo de 4 cabe no total de 24.",
+        "explanation": "A quantidade de grupos é 24 ÷ 4 = 6. A conferência é 6 × 4 = 24 estudantes."
+      },
+      {
+        "id": "up-operacoes-6",
+        "stem": "Qual número deve ocupar o quadrado para que 56 ÷ □ = 7?",
+        "options": [
+          "8",
+          "7",
+          "9",
+          "49"
+        ],
+        "answer": 0,
+        "hint": "Usa a multiplicação para desfazer a divisão.",
+        "explanation": "O divisor procurado, multiplicado por 7, deve resultar em 56. Como 8 × 7 = 56, o quadrado deve ser preenchido com 8."
+      },
+      {
+        "id": "up-operacoes-7",
+        "stem": "Há 17 maçãs para colocar em sacos com exatamente 4 maçãs cada. Qual é o maior número de sacos completos que podem ser montados?",
+        "options": [
+          "3",
+          "5",
+          "4",
+          "1"
+        ],
+        "answer": 2,
+        "hint": "Procura o maior múltiplo de 4 que não ultrapassa 17.",
+        "explanation": "Quatro sacos completos usam 4 × 4 = 16 maçãs e sobra 1. Cinco sacos exigiriam 20 maçãs, então o máximo é 4 sacos."
+      },
+      {
+        "id": "up-operacoes-8",
+        "stem": "Quanto vale (8 + 4) ÷ 2?",
+        "options": [
+          "10",
+          "2",
+          "24",
+          "6"
+        ],
+        "answer": 3,
+        "hint": "Resolve primeiro a operação dentro dos parênteses.",
+        "explanation": "Primeiro, 8 + 4 = 12. Depois, 12 ÷ 2 = 6."
+      },
+      {
+        "id": "up-operacoes-9",
+        "stem": "Há 6 caixas com 5 canetas em cada uma. São retiradas 4 canetas do total. Qual expressão calcula quantas canetas ficam?",
+        "options": [
+          "6 × 5 − 4",
+          "6 × (5 − 4)",
+          "6 + 5 − 4",
+          "(6 − 4) × 5"
+        ],
+        "answer": 0,
+        "hint": "Calcula primeiro o total nas caixas e depois considera a retirada feita uma única vez.",
+        "explanation": "As caixas contêm 6 × 5 canetas ao todo. Como a retirada é de 4 canetas do total, a expressão é 6 × 5 − 4, que resulta em 26 canetas."
+      },
+      {
+        "id": "up-operacoes-10",
+        "stem": "Quanto vale 30 − 12 ÷ 3 × 2?",
+        "options": [
+          "12",
+          "22",
+          "24",
+          "26"
+        ],
+        "answer": 1,
+        "hint": "Divisão e multiplicação têm a mesma prioridade e são feitas da esquerda para a direita.",
+        "explanation": "Primeiro, 12 ÷ 3 = 4 e 4 × 2 = 8. Depois, 30 − 8 = 22."
+      },
+      {
+        "id": "up-operacoes-11",
+        "stem": "Três cadernos custam R$ 7,00 cada, e uma borracha custa R$ 2,00. Ao pagar esses itens com R$ 30,00, quanto se recebe de troco?",
+        "options": [
+          "R$ 9,00",
+          "R$ 5,00",
+          "R$ 23,00",
+          "R$ 7,00"
+        ],
+        "answer": 3,
+        "hint": "Soma o preço dos três cadernos ao da borracha antes de calcular o troco.",
+        "explanation": "A compra custa 3 × 7 + 2 = 23 reais. O troco é 30 − 23 = R$ 7,00."
+      },
+      {
+        "id": "up-operacoes-12",
+        "stem": "Quanto vale 48 ÷ (2 × 3) + 5?",
+        "options": [
+          "8",
+          "77",
+          "13",
+          "29"
+        ],
+        "answer": 2,
+        "hint": "Calcula o produto entre parênteses antes de fazer a divisão.",
+        "explanation": "O produto entre parênteses é 2 × 3 = 6. Assim, a expressão fica 48 ÷ 6 + 5 = 8 + 5 = 13."
+      }
+    ]
+  },
+  {
+    "id": "fracoes",
+    "title": "Partes do todo",
+    "label": "Fácil",
+    "skill": "Frações e números decimais",
+    "level": 3,
+    "questions": [
+      {
+        "id": "up-fracoes-1",
+        "stem": "Uma pizza foi dividida em 4 fatias iguais. Tu come 1 fatia. Que fração da pizza tu comeu?",
+        "options": [
+          "1/2",
+          "1/4",
+          "3/4",
+          "4/1"
+        ],
+        "answer": 1,
+        "hint": "O denominador conta as partes iguais do todo.",
+        "explanation": "Uma parte de um total de quatro partes iguais é 1/4."
+      },
+      {
+        "id": "up-fracoes-2",
+        "stem": "Quanto é 1/2 + 1/4?",
+        "options": [
+          "2/6",
+          "1/6",
+          "2/4",
+          "3/4"
+        ],
+        "answer": 3,
+        "hint": "Escreve 1/2 como uma fração com denominador 4.",
+        "explanation": "1/2 = 2/4. Então 2/4 + 1/4 = 3/4."
+      },
+      {
+        "id": "up-fracoes-3",
+        "stem": "Uma fita mede 2,5 m. Tu corta 0,75 m. Quanto sobra?",
+        "options": [
+          "1,25 m",
+          "1,75 m",
+          "2,25 m",
+          "3,25 m"
+        ],
+        "answer": 1,
+        "hint": "Alinha as casas decimais: 2,50 − 0,75.",
+        "explanation": "2,50 − 0,75 = 1,75 m."
+      },
+      {
+        "id": "up-fracoes-4",
+        "stem": "Qual fração é equivalente a 3/5?",
+        "options": [
+          "6/10",
+          "3/10",
+          "6/5",
+          "5/3"
+        ],
+        "answer": 0,
+        "hint": "Multiplica o numerador e o denominador pelo mesmo número.",
+        "explanation": "Multiplicando as duas partes de 3/5 por 2, obtemos 6/10. A fração mantém o mesmo valor porque o fator 2 aparece no numerador e no denominador."
+      },
+      {
+        "id": "up-fracoes-5",
+        "stem": "Qual destes números decimais é o maior?",
+        "options": [
+          "0,07",
+          "0,65",
+          "0,7",
+          "0,59"
+        ],
+        "answer": 2,
+        "hint": "Escreve todos com duas casas decimais para comparar.",
+        "explanation": "Podemos escrever 0,7 como 0,70. Comparando 0,07, 0,65, 0,70 e 0,59, o maior é 0,70, isto é, 0,7."
+      },
+      {
+        "id": "up-fracoes-6",
+        "stem": "Uma caixa tem 20 bombons. Se 3/4 deles são de chocolate ao leite, quantos bombons são de chocolate ao leite?",
+        "options": [
+          "5",
+          "15",
+          "23",
+          "60"
+        ],
+        "answer": 1,
+        "hint": "Descobre primeiro quanto vale uma das quatro partes iguais.",
+        "explanation": "Um quarto dos 20 bombons corresponde a 20 ÷ 4 = 5 bombons. Três quartos correspondem a 3 × 5 = 15 bombons."
+      },
+      {
+        "id": "up-fracoes-7",
+        "stem": "Um pão custa R$ 2,35 e um suco custa R$ 1,80. Qual é o preço dos dois juntos?",
+        "options": [
+          "R$ 3,15",
+          "R$ 2,53",
+          "R$ 4,05",
+          "R$ 4,15"
+        ],
+        "answer": 3,
+        "hint": "Soma reais com reais e centavos com centavos, mantendo as casas decimais alinhadas.",
+        "explanation": "Somamos 2,35 + 1,80 = 4,15. Portanto, o preço total é R$ 4,15."
+      },
+      {
+        "id": "up-fracoes-8",
+        "stem": "Uma receita completa usa 3/4 L de leite. Quanto leite é necessário para fazer exatamente metade dessa receita?",
+        "options": [
+          "3/8 L",
+          "3/4 L",
+          "3/2 L",
+          "1/8 L"
+        ],
+        "answer": 0,
+        "hint": "Metade da receita usa metade de cada ingrediente.",
+        "explanation": "Precisamos dividir 3/4 L por 2. Isso equivale a multiplicar por 1/2, dando 3/4 × 1/2 = 3/8 L."
+      },
+      {
+        "id": "up-fracoes-9",
+        "stem": "Quanto vale 5/6 − 1/3?",
+        "options": [
+          "4/3",
+          "4/6",
+          "1/2",
+          "1/3"
+        ],
+        "answer": 2,
+        "hint": "Escreve as duas frações com o mesmo denominador antes de subtrair.",
+        "explanation": "Como 1/3 = 2/6, a diferença é 5/6 − 2/6 = 3/6. Simplificando a fração, obtemos 1/2."
+      },
+      {
+        "id": "up-fracoes-10",
+        "stem": "Qual fração representa exatamente o número decimal 0,125?",
+        "options": [
+          "1/8",
+          "1/4",
+          "1/5",
+          "1/10"
+        ],
+        "answer": 0,
+        "hint": "Escreve o decimal como uma fração com denominador 1.000 e depois simplifica.",
+        "explanation": "O número 0,125 corresponde a 125/1.000. Dividindo numerador e denominador por 125, obtemos 1/8."
+      },
+      {
+        "id": "up-fracoes-11",
+        "stem": "Há 1,5 L de suco para servir em copos de 0,25 L, todos completamente cheios. Sem desperdício, quantos copos podem ser servidos?",
+        "options": [
+          "4",
+          "5",
+          "8",
+          "6"
+        ],
+        "answer": 3,
+        "hint": "Calcula quantas porções de 0,25 L cabem em 1,5 L.",
+        "explanation": "A quantidade de copos é 1,5 ÷ 0,25 = 6. Conferindo, 6 × 0,25 L = 1,5 L, sem sobrar suco."
+      },
+      {
+        "id": "up-fracoes-12",
+        "stem": "Um tanque estava cheio. Pela manhã foi usado 1/3 da capacidade total e, à tarde, mais 1/4 da capacidade total. Sem entrada de água, que fração da capacidade total permaneceu no tanque?",
+        "options": [
+          "1/12",
+          "5/12",
+          "7/12",
+          "1/2"
+        ],
+        "answer": 1,
+        "hint": "As duas frações usam a mesma referência: a capacidade total do tanque.",
+        "explanation": "Foi usado 1/3 + 1/4 = 4/12 + 3/12 = 7/12 da capacidade total. Restou 1 − 7/12 = 5/12 da capacidade total."
+      }
+    ]
+  },
+  {
+    "id": "proporcao",
+    "title": "Tudo na proporção",
+    "label": "Fácil → médio",
+    "skill": "Razão, proporção e regra de três",
+    "level": 4,
+    "questions": [
+      {
+        "id": "up-proporcao-1",
+        "stem": "Duas canetas iguais custam R$ 6,00. Quanto custa uma?",
+        "options": [
+          "R$ 3,00",
+          "R$ 2,00",
+          "R$ 4,00",
+          "R$ 12,00"
+        ],
+        "answer": 0,
+        "hint": "Divide o preço total pela quantidade.",
+        "explanation": "6 ÷ 2 = 3. Cada caneta custa R$ 3,00."
+      },
+      {
+        "id": "up-proporcao-2",
+        "stem": "Uma receita para 4 pessoas usa 2 xícaras de arroz. Mantendo a proporção, quantas xícaras são necessárias para 10 pessoas?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "8"
+        ],
+        "answer": 2,
+        "hint": "Para cada pessoa, a receita usa meia xícara.",
+        "explanation": "2 ÷ 4 = 0,5 xícara por pessoa. Para 10 pessoas: 10 × 0,5 = 5 xícaras."
+      },
+      {
+        "id": "up-proporcao-3",
+        "stem": "Três máquinas idênticas fazem um serviço em 8 horas. Seis máquinas, com o mesmo ritmo e trabalhando juntas, fariam esse serviço em quanto tempo?",
+        "options": [
+          "2 h",
+          "8 h",
+          "16 h",
+          "4 h"
+        ],
+        "answer": 3,
+        "hint": "Dobrar o número de máquinas reduz o tempo à metade.",
+        "explanation": "A quantidade de máquinas e o tempo são inversamente proporcionais: 3 × 8 = 6 × t. Logo t = 4 horas."
+      },
+      {
+        "id": "up-proporcao-4",
+        "stem": "Um suco é preparado com 2 partes de concentrado para 3 partes de água, medidas em copos do mesmo tamanho. Para usar 6 copos de água, quantos copos de concentrado são necessários?",
+        "options": [
+          "3",
+          "4",
+          "6",
+          "9"
+        ],
+        "answer": 1,
+        "hint": "Compara os 6 copos de água com as 3 partes de água da mistura original.",
+        "explanation": "A quantidade de água dobrou, passando de 3 para 6 copos. Para manter a razão, o concentrado também dobra: 2 × 2 = 4 copos."
+      },
+      {
+        "id": "up-proporcao-5",
+        "stem": "Uma ciclista percorre 30 km em 2 horas. Mantendo a mesma velocidade durante todo o trajeto, quantos quilômetros percorre em 5 horas?",
+        "options": [
+          "30 km",
+          "60 km",
+          "90 km",
+          "75 km"
+        ],
+        "answer": 3,
+        "hint": "Descobre a distância percorrida em uma hora e depois usa o novo tempo.",
+        "explanation": "A velocidade é 30 ÷ 2 = 15 km/h. Em 5 horas, a distância é 15 × 5 = 75 km."
+      },
+      {
+        "id": "up-proporcao-6",
+        "stem": "Num mapa de escala 1:50.000, dois pontos estão separados por 3 cm. Qual é a distância real em linha reta entre eles?",
+        "options": [
+          "0,15 km",
+          "15 km",
+          "1,5 km",
+          "150 km"
+        ],
+        "answer": 2,
+        "hint": "Converte os centímetros do mapa em centímetros reais e depois em quilômetros.",
+        "explanation": "A distância real é 3 × 50.000 = 150.000 cm. Como 100.000 cm correspondem a 1 km, essa distância é 1,5 km."
+      },
+      {
+        "id": "up-proporcao-7",
+        "stem": "Uma tabela registra x = 1, 2 e 3. Em qual opção os valores correspondentes de y são diretamente proporcionais a x?",
+        "options": [
+          "y = 4, 8 e 12, respectivamente.",
+          "y = 4, 5 e 6, respectivamente.",
+          "y = 4, 8 e 16, respectivamente.",
+          "y = 12, 6 e 4, respectivamente."
+        ],
+        "answer": 0,
+        "hint": "Em uma proporção direta, o quociente y ÷ x deve ser constante.",
+        "explanation": "Para y igual a 4, 8 e 12, os quocientes são 4/1 = 8/2 = 12/3 = 4. Nas outras opções esses quocientes mudam, então somente a primeira representa proporção direta."
+      },
+      {
+        "id": "up-proporcao-8",
+        "stem": "Bia e Caio dividem R$ 54,00 na razão 4:5, nessa ordem. Quanto Caio recebe?",
+        "options": [
+          "R$ 24,00",
+          "R$ 30,00",
+          "R$ 27,00",
+          "R$ 45,00"
+        ],
+        "answer": 1,
+        "hint": "Soma as partes da razão para descobrir o valor de uma parte.",
+        "explanation": "O total corresponde a 4 + 5 = 9 partes, e cada parte vale 54 ÷ 9 = 6 reais. Caio recebe 5 partes, isto é, 5 × 6 = R$ 30,00."
+      },
+      {
+        "id": "up-proporcao-9",
+        "stem": "Uma torneira com vazão constante de 15 L/min enche um reservatório vazio em 12 minutos. Outra torneira, usada sozinha, tem vazão constante de 30 L/min. Quanto tempo ela leva para encher o mesmo reservatório vazio?",
+        "options": [
+          "24 min",
+          "12 min",
+          "6 min",
+          "3 min"
+        ],
+        "answer": 2,
+        "hint": "O volume do reservatório é o mesmo nas duas situações.",
+        "explanation": "A capacidade do reservatório é 15 × 12 = 180 L. Com vazão de 30 L/min, o tempo é 180 ÷ 30 = 6 minutos."
+      },
+      {
+        "id": "up-proporcao-10",
+        "stem": "As quatro embalagens contêm o mesmo produto e não há outras cobranças. Qual delas tem o menor preço por quilograma?",
+        "options": [
+          "400 g por R$ 6,00",
+          "1 kg por R$ 15,50",
+          "250 g por R$ 4,00",
+          "600 g por R$ 8,40"
+        ],
+        "answer": 3,
+        "hint": "Transforma todos os preços em preços de 1 kg antes de comparar.",
+        "explanation": "Os preços por quilograma são R$ 15,00, R$ 15,50, R$ 16,00 e R$ 14,00, nessa ordem. O menor é R$ 14,00/kg, correspondente à embalagem de 600 g por R$ 8,40."
+      },
+      {
+        "id": "up-proporcao-11",
+        "stem": "Uma locadora cobra R$ 10,00 pela retirada de uma bicicleta, mais R$ 4,00 por hora de uso. Duas horas custam R$ 18,00. Quanto custam 4 horas de uso?",
+        "options": [
+          "R$ 36,00",
+          "R$ 26,00",
+          "R$ 16,00",
+          "R$ 28,00"
+        ],
+        "answer": 1,
+        "hint": "A taxa de retirada é cobrada uma única vez, independentemente do número de horas.",
+        "explanation": "Para 4 horas, o preço é 10 + 4 × 4 = 26 reais. Dobrar o tempo não dobra o preço total, pois a taxa fixa continua sendo R$ 10,00."
+      },
+      {
+        "id": "up-proporcao-12",
+        "stem": "Quatro impressoras idênticas imprimem juntas 1.800 folhas em 3 horas. Se todas mantêm a mesma produção por hora, quantas folhas 6 dessas impressoras imprimem juntas em 2 horas?",
+        "options": [
+          "1.800 folhas",
+          "2.700 folhas",
+          "1.200 folhas",
+          "3.600 folhas"
+        ],
+        "answer": 0,
+        "hint": "Considera tanto a mudança no número de impressoras quanto a mudança no tempo.",
+        "explanation": "Cada impressora produz 1.800 ÷ (4 × 3) = 150 folhas por hora. Em 2 horas, 6 impressoras produzem 150 × 6 × 2 = 1.800 folhas."
+      }
+    ]
+  },
+  {
+    "id": "porcentagem",
+    "title": "Por cento, por partes",
+    "label": "Médio inicial",
+    "skill": "Porcentagem, desconto e variações",
+    "level": 5,
+    "questions": [
+      {
+        "id": "up-porcentagem-1",
+        "stem": "Quanto é 10% de 80?",
+        "options": [
+          "4",
+          "8",
+          "10",
+          "18"
+        ],
+        "answer": 1,
+        "hint": "10% é a décima parte.",
+        "explanation": "10/100 × 80 = 8."
+      },
+      {
+        "id": "up-porcentagem-2",
+        "stem": "Uma camiseta de R$ 120,00 tem desconto de 25%. Qual é o preço final?",
+        "options": [
+          "R$ 90,00",
+          "R$ 30,00",
+          "R$ 95,00",
+          "R$ 100,00"
+        ],
+        "answer": 0,
+        "hint": "25% é um quarto do preço. Depois subtrai o desconto.",
+        "explanation": "O desconto é 120 ÷ 4 = 30 reais. O preço final é 120 − 30 = R$ 90,00."
+      },
+      {
+        "id": "up-porcentagem-3",
+        "stem": "Um produto de R$ 100,00 aumenta 20% e depois recebe desconto de 20% sobre o novo preço. Qual é o preço final?",
+        "options": [
+          "R$ 80,00",
+          "R$ 96,00",
+          "R$ 100,00",
+          "R$ 104,00"
+        ],
+        "answer": 1,
+        "hint": "O segundo percentual é calculado sobre R$ 120,00.",
+        "explanation": "100 × 1,20 × 0,80 = 96. Os percentuais usam bases diferentes, por isso não se anulam."
+      },
+      {
+        "id": "up-porcentagem-4",
+        "stem": "Em uma caixa com 20 peças, 3 são vermelhas. Qual porcentagem das peças é vermelha?",
+        "options": [
+          "3%",
+          "20%",
+          "15%",
+          "60%"
+        ],
+        "answer": 2,
+        "hint": "Escreve a razão entre as peças vermelhas e o total e transforma-a em uma razão por 100.",
+        "explanation": "A fração de peças vermelhas é 3/20. Multiplicando por 100, obtemos 15%, pois 3/20 = 15/100."
+      },
+      {
+        "id": "up-porcentagem-5",
+        "stem": "Uma turma tem 40 estudantes, e 30% deles chegam à escola de ônibus. Quantos estudantes dessa turma chegam de ônibus?",
+        "options": [
+          "12",
+          "10",
+          "28",
+          "30"
+        ],
+        "answer": 0,
+        "hint": "Transforma 30% em uma fração ou em um número decimal antes de multiplicar pelo total.",
+        "explanation": "Trinta por cento correspondem a 30/100 do total. Logo, 30/100 × 40 = 12 estudantes chegam de ônibus."
+      },
+      {
+        "id": "up-porcentagem-6",
+        "stem": "Depois de um desconto de 20% sobre o preço original, uma mochila passou a custar R$ 80,00. Qual era o preço original?",
+        "options": [
+          "R$ 64,00",
+          "R$ 96,00",
+          "R$ 120,00",
+          "R$ 100,00"
+        ],
+        "answer": 3,
+        "hint": "Após o desconto, o preço pago corresponde a 80% do preço original.",
+        "explanation": "Os R$ 80,00 representam 80% do valor original. Dividindo 80 por 0,80, obtemos o preço original de R$ 100,00."
+      },
+      {
+        "id": "up-porcentagem-7",
+        "stem": "A mensalidade de uma atividade passou de R$ 12,00 para R$ 15,00. Qual foi o aumento percentual em relação ao valor antigo?",
+        "options": [
+          "3%",
+          "25%",
+          "20%",
+          "80%"
+        ],
+        "answer": 1,
+        "hint": "Divide o aumento em reais pelo valor antigo, que é a base da comparação.",
+        "explanation": "O aumento foi de 15 − 12 = 3 reais. Em relação ao valor antigo, isso representa 3/12 × 100 = 25%."
+      },
+      {
+        "id": "up-porcentagem-8",
+        "stem": "A participação de uma empresa em um mercado passou de 30% para 42%. De quantos pontos percentuais foi esse aumento?",
+        "options": [
+          "40 pontos percentuais",
+          "42 pontos percentuais",
+          "12 pontos percentuais",
+          "30 pontos percentuais"
+        ],
+        "answer": 2,
+        "hint": "Uma variação em pontos percentuais é a diferença entre as duas porcentagens.",
+        "explanation": "Subtraímos a participação inicial da final: 42 − 30 = 12. Portanto, a participação aumentou 12 pontos percentuais."
+      },
+      {
+        "id": "up-porcentagem-9",
+        "stem": "Um recipiente contém agora 80% do volume de água que tinha inicialmente. Para voltar ao volume inicial, de quantos por cento o volume atual precisa aumentar?",
+        "options": [
+          "20%",
+          "80%",
+          "5%",
+          "25%"
+        ],
+        "answer": 3,
+        "hint": "Usa o volume atual como base do aumento, pois é ele que será acrescido.",
+        "explanation": "Podemos representar o volume inicial por 100 unidades e o atual por 80. Faltam 20 unidades, que correspondem a 20/80 × 100 = 25% do volume atual."
+      },
+      {
+        "id": "up-porcentagem-10",
+        "stem": "Na turma A, com 20 estudantes, 50% praticam natação. Na turma B, com 30 estudantes, 20% praticam natação. Que porcentagem dos estudantes das duas turmas, consideradas juntas, pratica natação?",
+        "options": [
+          "35%",
+          "32%",
+          "70%",
+          "16%"
+        ],
+        "answer": 1,
+        "hint": "Calcula a quantidade de praticantes em cada turma antes de dividir pelo total de estudantes.",
+        "explanation": "Na turma A há 0,50 × 20 = 10 praticantes e na B há 0,20 × 30 = 6. São 16 praticantes entre 50 estudantes, isto é, 16/50 × 100 = 32%."
+      },
+      {
+        "id": "up-porcentagem-11",
+        "stem": "Uma vendedora recebe comissão de 6% apenas sobre a parte de suas vendas mensais que ultrapassa R$ 5.000,00. Em um mês, ela vendeu R$ 7.000,00. Qual é a comissão desse mês?",
+        "options": [
+          "R$ 120,00",
+          "R$ 420,00",
+          "R$ 300,00",
+          "R$ 20,00"
+        ],
+        "answer": 0,
+        "hint": "Identifica a parte das vendas que realmente entra na base de cálculo da comissão.",
+        "explanation": "A comissão incide sobre 7.000 − 5.000 = 2.000 reais. Assim, ela recebe 0,06 × 2.000 = R$ 120,00."
+      },
+      {
+        "id": "up-porcentagem-12",
+        "stem": "A mesma mochila custa R$ 120,00 na loja A, com desconto de 20% sobre esse preço e frete de R$ 15,00 acrescentado depois. Na loja B, custa R$ 110,00, com desconto de 5% sobre esse preço e frete grátis. Qual compra tem o menor custo total e qual é a diferença entre os custos?",
+        "options": [
+          "Loja A, por R$ 6,50 a menos.",
+          "Loja A, por R$ 10,00 a menos.",
+          "Loja B, por R$ 5,50 a menos.",
+          "Loja B, por R$ 6,50 a menos."
+        ],
+        "answer": 3,
+        "hint": "Calcula o preço com desconto em cada loja e só depois considera o frete.",
+        "explanation": "Na loja A, o total é 120 × 0,80 + 15 = R$ 111,00. Na loja B, o total é 110 × 0,95 = R$ 104,50. A loja B custa 111,00 − 104,50 = R$ 6,50 a menos."
+      }
+    ]
+  },
+  {
+    "id": "equacoes",
+    "title": "Encontra o x",
+    "label": "Médio",
+    "skill": "Equações e tradução de problemas",
+    "level": 6,
+    "questions": [
+      {
+        "id": "up-equacoes-1",
+        "stem": "Qual valor de x torna x + 7 = 12 verdadeira?",
+        "options": [
+          "3",
+          "7",
+          "19",
+          "5"
+        ],
+        "answer": 3,
+        "hint": "Subtrai 7 dos dois lados.",
+        "explanation": "x = 12 − 7 = 5."
+      },
+      {
+        "id": "up-equacoes-2",
+        "stem": "Resolve: 3x − 4 = 17.",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "9"
+        ],
+        "answer": 2,
+        "hint": "Primeiro soma 4 aos dois lados. Depois divide por 3.",
+        "explanation": "3x = 21. Portanto x = 7."
+      },
+      {
+        "id": "up-equacoes-3",
+        "stem": "Um ingresso inteiro custa o dobro da meia-entrada. Dois ingressos inteiros e uma meia custam R$ 100,00. Quanto custa a meia?",
+        "options": [
+          "R$ 20,00",
+          "R$ 15,00",
+          "R$ 25,00",
+          "R$ 40,00"
+        ],
+        "answer": 0,
+        "hint": "Se a meia custa x, cada inteira custa 2x.",
+        "explanation": "2 × 2x + x = 100, então 5x = 100 e x = 20 reais."
+      },
+      {
+        "id": "up-equacoes-4",
+        "stem": "Qual valor real de x satisfaz x/4 = 6?",
+        "options": [
+          "10",
+          "20",
+          "24",
+          "30"
+        ],
+        "answer": 2,
+        "hint": "Usa a operação inversa da divisão por 4.",
+        "explanation": "Multiplicando os dois lados por 4, obtemos x = 4 × 6. Portanto, x = 24."
+      },
+      {
+        "id": "up-equacoes-5",
+        "stem": "Resolve, nos números reais: 2(x + 3) = 18.",
+        "options": [
+          "3",
+          "6",
+          "9",
+          "12"
+        ],
+        "answer": 1,
+        "hint": "Divide os dois lados por 2 antes de retirar o 3.",
+        "explanation": "Dividindo por 2, temos x + 3 = 9. Subtraindo 3, encontramos x = 6."
+      },
+      {
+        "id": "up-equacoes-6",
+        "stem": "Qual é a solução real de 5x + 2 = 3x + 18?",
+        "options": [
+          "4",
+          "6",
+          "10",
+          "8"
+        ],
+        "answer": 3,
+        "hint": "Reúne os termos com x em um lado e os números no outro.",
+        "explanation": "Subtraindo 3x e 2 dos dois lados, obtemos 2x = 16. Assim, x = 8."
+      },
+      {
+        "id": "up-equacoes-7",
+        "stem": "Resolve, nos números reais: (x − 2)/3 + 1 = 5.",
+        "options": [
+          "14",
+          "12",
+          "8",
+          "6"
+        ],
+        "answer": 0,
+        "hint": "Desfaz primeiro a adição de 1 e depois a divisão por 3.",
+        "explanation": "Subtraindo 1 e multiplicando por 3, temos x − 2 = 12. Logo, x = 14."
+      },
+      {
+        "id": "up-equacoes-8",
+        "stem": "A soma de dois números inteiros consecutivos é 41. Qual é o menor deles?",
+        "options": [
+          "19",
+          "20",
+          "21",
+          "22"
+        ],
+        "answer": 1,
+        "hint": "Se o menor é x, o seguinte é x + 1.",
+        "explanation": "A soma pode ser escrita como x + (x + 1) = 41. Portanto, 2x = 40 e o menor número é 20."
+      },
+      {
+        "id": "up-equacoes-9",
+        "stem": "Uma inscrição custa uma taxa fixa de R$ 18,00 mais R$ 6,00 por oficina escolhida. Uma pessoa pagou R$ 78,00. Quantas oficinas ela escolheu?",
+        "options": [
+          "8",
+          "9",
+          "11",
+          "10"
+        ],
+        "answer": 3,
+        "hint": "Retira do total a taxa que é paga independentemente da quantidade de oficinas.",
+        "explanation": "Após retirar a taxa fixa, restam 78 − 18 = 60 reais para as oficinas. Como cada oficina custa 6 reais, foram escolhidas 60 ÷ 6 = 10 oficinas."
+      },
+      {
+        "id": "up-equacoes-10",
+        "stem": "Qual alternativa descreve o conjunto de soluções reais de 4(x + 2) = 4x + 5?",
+        "options": [
+          "Nenhum número real",
+          "Apenas x = 0",
+          "Apenas x = 3",
+          "Todos os números reais"
+        ],
+        "answer": 0,
+        "hint": "Distribui o 4 e verifica o que acontece quando os termos com x são cancelados.",
+        "explanation": "Aplicando a distributiva, a equação fica 4x + 8 = 4x + 5. Cancelar 4x produz 8 = 5, uma afirmação falsa; portanto, não existe solução real."
+      },
+      {
+        "id": "up-equacoes-11",
+        "stem": "Qual valor real de x satisfaz x/2 + x/3 = 10?",
+        "options": [
+          "6",
+          "10",
+          "12",
+          "15"
+        ],
+        "answer": 2,
+        "hint": "Usa o denominador comum 6 para reunir as duas parcelas.",
+        "explanation": "Como x/2 + x/3 = 3x/6 + 2x/6, temos 5x/6 = 10. Multiplicando por 6/5, encontramos x = 12."
+      },
+      {
+        "id": "up-equacoes-12",
+        "stem": "Uma caixa contém apenas moedas de R$ 1,00 e de R$ 2,00. Há 11 moedas, que totalizam R$ 18,00. Quantas moedas de R$ 2,00 há na caixa?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "answer": 3,
+        "hint": "Se x moedas são de 2 reais, as outras 11 − x são de 1 real.",
+        "explanation": "O valor total é 2x + (11 − x) = 18. Assim, x + 11 = 18 e há 7 moedas de R$ 2,00."
+      }
+    ]
+  },
+  {
+    "id": "geometria",
+    "title": "Enxerga a medida",
+    "label": "Médio",
+    "skill": "Área, Pitágoras e escala",
+    "level": 7,
+    "questions": [
+      {
+        "id": "up-geometria-1",
+        "stem": "Um retângulo mede 6 cm de comprimento e 4 cm de largura. Qual é sua área?",
+        "options": [
+          "10 cm²",
+          "20 cm²",
+          "24 cm²",
+          "48 cm²"
+        ],
+        "answer": 2,
+        "hint": "Área do retângulo = comprimento × largura.",
+        "explanation": "6 × 4 = 24 cm². O perímetro seria 20 cm, mas a pergunta pede área."
+      },
+      {
+        "id": "up-geometria-2",
+        "stem": "Um triângulo retângulo tem catetos de 6 cm e 8 cm. Quanto mede a hipotenusa?",
+        "options": [
+          "10 cm",
+          "12 cm",
+          "14 cm",
+          "100 cm"
+        ],
+        "answer": 0,
+        "hint": "Usa a² = 6² + 8² para a hipotenusa a.",
+        "explanation": "a² = 36 + 64 = 100. Como o comprimento é positivo, a = 10 cm."
+      },
+      {
+        "id": "up-geometria-3",
+        "stem": "Uma planta está na escala 1:100. Um cômodo retangular mede 3 cm por 4 cm na planta. Qual é sua área real?",
+        "options": [
+          "7 m²",
+          "120 m²",
+          "1.200 m²",
+          "12 m²"
+        ],
+        "answer": 3,
+        "hint": "Converte as duas medidas antes de calcular a área: 100 cm = 1 m.",
+        "explanation": "As medidas reais são 300 cm = 3 m e 400 cm = 4 m. A área é 3 × 4 = 12 m²."
+      },
+      {
+        "id": "up-geometria-4",
+        "stem": "Um triângulo tem base de 12 cm e altura relativa a essa base de 7 cm. Qual é sua área?",
+        "options": [
+          "42 cm²",
+          "84 cm²",
+          "19 cm²",
+          "38 cm²"
+        ],
+        "answer": 0,
+        "hint": "Compara o triângulo com um paralelogramo de mesma base e altura.",
+        "explanation": "A área de um triângulo é metade do produto da base pela altura. Assim, A = 12 × 7 ÷ 2 = 42 cm²."
+      },
+      {
+        "id": "up-geometria-5",
+        "stem": "Um quadrado tem perímetro de 36 cm. Qual é sua área?",
+        "options": [
+          "36 cm²",
+          "72 cm²",
+          "81 cm²",
+          "144 cm²"
+        ],
+        "answer": 2,
+        "hint": "Encontra primeiro o lado dividindo o perímetro pelos quatro lados iguais.",
+        "explanation": "Cada lado mede 36 ÷ 4 = 9 cm. A área é 9² = 81 cm²."
+      },
+      {
+        "id": "up-geometria-6",
+        "stem": "Um canteiro circular tem raio de 3 m. Usando π = 3,14, qual é o comprimento de sua borda?",
+        "options": [
+          "9,42 m",
+          "18,84 m",
+          "28,26 m",
+          "56,52 m"
+        ],
+        "answer": 1,
+        "hint": "O comprimento da circunferência usa o diâmetro, que é o dobro do raio.",
+        "explanation": "O comprimento da borda é C = 2πr. Substituindo os valores dados, C = 2 × 3,14 × 3 = 18,84 m."
+      },
+      {
+        "id": "up-geometria-7",
+        "stem": "Um trapézio tem bases paralelas de 10 cm e 6 cm. A distância perpendicular entre essas bases é 5 cm. Qual é a área do trapézio?",
+        "options": [
+          "80 cm²",
+          "30 cm²",
+          "50 cm²",
+          "40 cm²"
+        ],
+        "answer": 3,
+        "hint": "Multiplica a média das duas bases pela altura.",
+        "explanation": "A média das bases é (10 + 6) ÷ 2 = 8 cm. Multiplicando pela altura de 5 cm, a área é 40 cm²."
+      },
+      {
+        "id": "up-geometria-8",
+        "stem": "De uma placa retangular de 10 cm por 8 cm, recorta-se, em um canto, um retângulo de 4 cm por 3 cm. Qual é a área da parte que sobra?",
+        "options": [
+          "68 cm²",
+          "64 cm²",
+          "72 cm²",
+          "74 cm²"
+        ],
+        "answer": 0,
+        "hint": "Calcula as duas áreas retangulares antes de fazer a subtração.",
+        "explanation": "A placa inteira tem área 10 × 8 = 80 cm². O recorte tem área 4 × 3 = 12 cm², então sobram 80 − 12 = 68 cm²."
+      },
+      {
+        "id": "up-geometria-9",
+        "stem": "Uma escada reta de 13 m apoia-se em uma parede vertical. Seu pé está no chão horizontal, a 5 m da parede. A que altura do chão está o topo da escada?",
+        "options": [
+          "8 m",
+          "10 m",
+          "12 m",
+          "18 m"
+        ],
+        "answer": 2,
+        "hint": "A escada é a hipotenusa do triângulo retângulo formado com o chão e a parede.",
+        "explanation": "Pelo teorema de Pitágoras, h² + 5² = 13². Logo, h² = 144 e a altura positiva é h = 12 m."
+      },
+      {
+        "id": "up-geometria-10",
+        "stem": "Em um mapa na escala 1:25.000, dois pontos estão separados por um segmento de 6 cm. Qual é a distância real correspondente, em quilômetros?",
+        "options": [
+          "0,15 km",
+          "15 km",
+          "150 km",
+          "1,5 km"
+        ],
+        "answer": 3,
+        "hint": "Multiplica a medida no mapa por 25.000 e depois converte centímetros para quilômetros.",
+        "explanation": "A distância real é 6 × 25.000 = 150.000 cm. Como 1 km corresponde a 100.000 cm, essa distância é 1,5 km."
+      },
+      {
+        "id": "up-geometria-11",
+        "stem": "Dois triângulos são semelhantes. Um lado do menor mede 3 cm e o lado correspondente do maior mede 9 cm. Se a área do menor é 8 cm², qual é a área do maior?",
+        "options": [
+          "24 cm²",
+          "72 cm²",
+          "216 cm²",
+          "64 cm²"
+        ],
+        "answer": 1,
+        "hint": "Em figuras semelhantes, a razão entre as áreas é o quadrado da razão entre os lados.",
+        "explanation": "A razão entre os lados é 9 ÷ 3 = 3. A área é multiplicada por 3² = 9, portanto a área do maior é 8 × 9 = 72 cm²."
+      },
+      {
+        "id": "up-geometria-12",
+        "stem": "Um piso retangular mede 4,8 m por 3,6 m. Ele será coberto por peças quadradas de 60 cm de lado, sem cortes, juntas ou sobreposição. Quantas peças são necessárias?",
+        "options": [
+          "48",
+          "24",
+          "28",
+          "96"
+        ],
+        "answer": 0,
+        "hint": "Expressa as medidas do piso e das peças na mesma unidade e conta linhas e colunas.",
+        "explanation": "Como 60 cm = 0,6 m, cabem 4,8 ÷ 0,6 = 8 peças em uma direção e 3,6 ÷ 0,6 = 6 na outra. Logo, são necessárias 8 × 6 = 48 peças."
+      }
+    ]
+  },
+  {
+    "id": "potencias",
+    "title": "Cresce mais rápido",
+    "label": "Médio +",
+    "skill": "Potências, exponenciais e logaritmos",
+    "level": 8,
+    "questions": [
+      {
+        "id": "up-potencias-1",
+        "stem": "Quanto vale 2³?",
+        "options": [
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "answer": 2,
+        "hint": "O expoente indica quantas vezes a base aparece como fator.",
+        "explanation": "2³ = 2 × 2 × 2 = 8."
+      },
+      {
+        "id": "up-potencias-2",
+        "stem": "Resolve a equação 2ˣ = 32.",
+        "options": [
+          "5",
+          "4",
+          "6",
+          "16"
+        ],
+        "answer": 0,
+        "hint": "Escreve 32 como uma potência de 2.",
+        "explanation": "32 = 2 × 2 × 2 × 2 × 2 = 2⁵. Logo x = 5."
+      },
+      {
+        "id": "up-potencias-3",
+        "stem": "Quanto vale log₂(16) + log₃(9)?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "8"
+        ],
+        "answer": 2,
+        "hint": "Cada logaritmo pergunta a qual expoente elevar sua base.",
+        "explanation": "2⁴ = 16 e 3² = 9. Assim, log₂(16) + log₃(9) = 4 + 2 = 6."
+      },
+      {
+        "id": "up-potencias-4",
+        "stem": "Quanto vale (−3)²?",
+        "options": [
+          "−9",
+          "9",
+          "−6",
+          "6"
+        ],
+        "answer": 1,
+        "hint": "Os parênteses indicam que a base inteira, incluindo o sinal, é elevada ao quadrado.",
+        "explanation": "A potência é o produto (−3) × (−3). Como o produto de dois números negativos é positivo, o resultado é 9."
+      },
+      {
+        "id": "up-potencias-5",
+        "stem": "Qual é o valor de 5⁰ + 2⁻²?",
+        "options": [
+          "0,25",
+          "1",
+          "4",
+          "1,25"
+        ],
+        "answer": 3,
+        "hint": "Uma base não nula elevada a zero vale 1; um expoente negativo indica o inverso.",
+        "explanation": "Temos 5⁰ = 1 e 2⁻² = 1/2² = 1/4. Assim, a soma vale 1 + 0,25 = 1,25."
+      },
+      {
+        "id": "up-potencias-6",
+        "stem": "Quanto vale (2³ × 2⁴)/2⁵?",
+        "options": [
+          "4",
+          "8",
+          "16",
+          "32"
+        ],
+        "answer": 0,
+        "hint": "Ao multiplicar potências de mesma base, soma os expoentes; ao dividir, subtrai.",
+        "explanation": "A expressão é igual a 2³⁺⁴⁻⁵ = 2². Portanto, seu valor é 4."
+      },
+      {
+        "id": "up-potencias-7",
+        "stem": "Qual é o valor de √81 + ∛(−8)?",
+        "options": [
+          "5",
+          "11",
+          "7",
+          "−11"
+        ],
+        "answer": 2,
+        "hint": "A raiz quadrada indicada é não negativa; já uma raiz cúbica pode ser negativa.",
+        "explanation": "A raiz quadrada de 81 é 9, e a raiz cúbica de −8 é −2. Portanto, a soma é 9 − 2 = 7."
+      },
+      {
+        "id": "up-potencias-8",
+        "stem": "Qual é o produto (3 × 10⁵) × (2 × 10⁻³), escrito em notação científica?",
+        "options": [
+          "6 × 10⁻²",
+          "6 × 10²",
+          "5 × 10²",
+          "6 × 10⁸"
+        ],
+        "answer": 1,
+        "hint": "Multiplica os coeficientes e soma os expoentes da base 10.",
+        "explanation": "O produto dos coeficientes é 3 × 2 = 6, e a soma dos expoentes é 5 + (−3) = 2. O resultado é 6 × 10², já em notação científica."
+      },
+      {
+        "id": "up-potencias-9",
+        "stem": "Uma cultura começa com 150 bactérias e dobra de quantidade a cada 3 horas. Mantido esse modelo, quantas bactérias haverá após 6 horas?",
+        "options": [
+          "600",
+          "300",
+          "900",
+          "1.200"
+        ],
+        "answer": 0,
+        "hint": "Conta quantos intervalos completos de 3 horas cabem em 6 horas.",
+        "explanation": "Em 6 horas ocorrem 6 ÷ 3 = 2 duplicações. Assim, a quantidade é 150 × 2² = 600 bactérias."
+      },
+      {
+        "id": "up-potencias-10",
+        "stem": "Qual valor real de x satisfaz 9ˣ = 27?",
+        "options": [
+          "0,5",
+          "1",
+          "2",
+          "1,5"
+        ],
+        "answer": 3,
+        "hint": "Escreve tanto 9 quanto 27 como potências de base 3.",
+        "explanation": "Como 9 = 3² e 27 = 3³, a equação se torna 3²ˣ = 3³. A igualdade dos expoentes dá 2x = 3, portanto x = 1,5."
+      },
+      {
+        "id": "up-potencias-11",
+        "stem": "Quanto vale log₁₀(0,001)?",
+        "options": [
+          "3",
+          "0,3",
+          "−3",
+          "−0,3"
+        ],
+        "answer": 2,
+        "hint": "Procura o expoente de 10 que produz um milésimo.",
+        "explanation": "Como 0,001 = 1/1.000 = 10⁻³, o expoente procurado é −3. Portanto, log₁₀(0,001) = −3."
+      },
+      {
+        "id": "up-potencias-12",
+        "stem": "Para x > 1, qual valor satisfaz log₂(x − 1) = 3?",
+        "options": [
+          "7",
+          "9",
+          "8",
+          "10"
+        ],
+        "answer": 1,
+        "hint": "Transforma a igualdade logarítmica em uma igualdade com potência de base 2.",
+        "explanation": "Pela definição de logaritmo, x − 1 = 2³ = 8. Logo, x = 9, que respeita a condição x > 1."
+      }
+    ]
+  },
+  {
+    "id": "funcoes",
+    "title": "Conecta as ideias",
+    "label": "Intermediário",
+    "skill": "Função afim, quadrática e máximo",
+    "level": 9,
+    "questions": [
+      {
+        "id": "up-funcoes-1",
+        "stem": "Uma corrida custa uma taxa fixa de R$ 5,00 mais R$ 3,00 por quilômetro. Qual é o custo de uma corrida de 7 km?",
+        "options": [
+          "R$ 21,00",
+          "R$ 35,00",
+          "R$ 56,00",
+          "R$ 26,00"
+        ],
+        "answer": 3,
+        "hint": "Escreve o custo como C(x) = 5 + 3x.",
+        "explanation": "C(7) = 5 + 3 × 7 = 26 reais."
+      },
+      {
+        "id": "up-funcoes-2",
+        "stem": "Quais são as raízes de x² − 5x + 6 = 0?",
+        "options": [
+          "1 e 6",
+          "−2 e −3",
+          "2 e 3",
+          "−1 e −6"
+        ],
+        "answer": 2,
+        "hint": "Procura dois números com soma 5 e produto 6.",
+        "explanation": "x² − 5x + 6 = (x − 2)(x − 3). O produto é zero quando x = 2 ou x = 3."
+      },
+      {
+        "id": "up-funcoes-3",
+        "stem": "A altura de uma bola, em metros, é h(t) = −t² + 6t, para 0 ≤ t ≤ 6 segundos. Qual é a altura máxima?",
+        "options": [
+          "9 m",
+          "6 m",
+          "12 m",
+          "18 m"
+        ],
+        "answer": 0,
+        "hint": "Completa o quadrado ou encontra o instante do vértice.",
+        "explanation": "h(t) = −(t − 3)² + 9. O quadrado é sempre não negativo, então a altura máxima é 9 m, em t = 3 s."
+      },
+      {
+        "id": "up-funcoes-4",
+        "stem": "Se f(x) = 4 − 2x, quanto vale f(−3)?",
+        "options": [
+          "−10",
+          "−2",
+          "10",
+          "2"
+        ],
+        "answer": 2,
+        "hint": "Substitui x por −3 e respeita o sinal do produto.",
+        "explanation": "Ao substituir, obtemos f(−3) = 4 − 2(−3). Como −2 × (−3) = 6, o valor é 4 + 6 = 10."
+      },
+      {
+        "id": "up-funcoes-5",
+        "stem": "Uma função afim f satisfaz f(1) = 5 e f(3) = 9. Qual é o valor de f(0)?",
+        "options": [
+          "3",
+          "2",
+          "5",
+          "7"
+        ],
+        "answer": 0,
+        "hint": "A variação de f dividida pela variação de x fornece o coeficiente de x.",
+        "explanation": "O coeficiente angular é (9 − 5)/(3 − 1) = 2. Então f(x) = 2x + b e, usando f(1) = 5, encontramos b = f(0) = 3."
+      },
+      {
+        "id": "up-funcoes-6",
+        "stem": "O volume de água em um reservatório é V(t) = 240 − 15t litros, para 0 ≤ t ≤ 16 horas. Em que instante o volume será metade do volume inicial?",
+        "options": [
+          "4 h",
+          "6 h",
+          "12 h",
+          "8 h"
+        ],
+        "answer": 3,
+        "hint": "Calcula o volume inicial usando t = 0 e iguala a função à metade desse valor.",
+        "explanation": "O volume inicial é 240 litros, cuja metade é 120 litros. Resolvendo 240 − 15t = 120, obtemos t = 8 horas."
+      },
+      {
+        "id": "up-funcoes-7",
+        "stem": "Para uma viagem de x quilômetros, com x ≥ 0, o plano A custa 12 + 2x reais e o plano B custa 6 + 3x reais. Para qual distância os dois planos têm o mesmo custo?",
+        "options": [
+          "3 km",
+          "6 km",
+          "9 km",
+          "18 km"
+        ],
+        "answer": 1,
+        "hint": "Iguala as duas expressões de custo e isola x.",
+        "explanation": "A igualdade dos custos é 12 + 2x = 6 + 3x. Subtraindo 2x e 6, encontramos x = 6 km, quando ambos custam 24 reais."
+      },
+      {
+        "id": "up-funcoes-8",
+        "stem": "Para quais números reais x a função g(x) = (x − 1)(x − 5) tem valor negativo?",
+        "options": [
+          "x < 1",
+          "x > 5",
+          "1 < x < 5",
+          "x < 1 ou x > 5"
+        ],
+        "answer": 2,
+        "hint": "Analisa quando os dois fatores têm sinais opostos.",
+        "explanation": "Entre 1 e 5, o fator x − 1 é positivo e o fator x − 5 é negativo. Fora desse intervalo os fatores têm o mesmo sinal, e nos extremos o produto é zero; portanto, g(x) < 0 apenas para 1 < x < 5."
+      },
+      {
+        "id": "up-funcoes-9",
+        "stem": "Qual é o valor mínimo de f(x) = x² − 4x + 7, para x real?",
+        "options": [
+          "−1",
+          "1",
+          "7",
+          "3"
+        ],
+        "answer": 3,
+        "hint": "Completa o quadrado para separar uma parcela que nunca fica negativa.",
+        "explanation": "Reescrevendo, temos f(x) = (x − 2)² + 3. Como o quadrado é sempre não negativo e vale zero em x = 2, o valor mínimo é 3."
+      },
+      {
+        "id": "up-funcoes-10",
+        "stem": "Se f(x) = 2x + 1 e g(x) = x², qual é o valor de f(g(3))?",
+        "options": [
+          "19",
+          "49",
+          "37",
+          "7"
+        ],
+        "answer": 0,
+        "hint": "Calcula primeiro a função que aparece mais por dentro dos parênteses.",
+        "explanation": "Primeiro, g(3) = 3² = 9. Depois, f(9) = 2 × 9 + 1 = 19."
+      },
+      {
+        "id": "up-funcoes-11",
+        "stem": "A receita de uma sessão é modelada por R(p) = p(40 − 2p), em reais, quando o preço p do ingresso satisfaz 0 ≤ p ≤ 20. Qual preço maximiza essa receita?",
+        "options": [
+          "R$ 5,00",
+          "R$ 10,00",
+          "R$ 15,00",
+          "R$ 20,00"
+        ],
+        "answer": 1,
+        "hint": "Expande a expressão e procura o vértice da parábola voltada para baixo.",
+        "explanation": "Temos R(p) = −2p² + 40p = −2(p − 10)² + 200. O máximo ocorre em p = 10, que pertence ao intervalo permitido, então o preço é R$ 10,00."
+      },
+      {
+        "id": "up-funcoes-12",
+        "stem": "O custo C(t), em reais, de usar um espaço por t horas é C(t) = 8t para 0 ≤ t ≤ 2; para t > 2, é C(t) = 16 + 5(t − 2). Quanto custa usar o espaço por 5 horas?",
+        "options": [
+          "R$ 24,00",
+          "R$ 25,00",
+          "R$ 31,00",
+          "R$ 40,00"
+        ],
+        "answer": 2,
+        "hint": "Escolhe a expressão cujo intervalo contém t = 5.",
+        "explanation": "Como 5 > 2, usamos a segunda expressão. Ela dá C(5) = 16 + 5(5 − 2) = 16 + 15 = 31 reais."
+      }
+    ]
+  },
+  {
+    "id": "desafio",
+    "title": "Desafio de integração",
+    "label": "Mais desafiador",
+    "skill": "Combinar modelos e raciocínio",
+    "level": 10,
+    "questions": [
+      {
+        "id": "up-desafio-1",
+        "stem": "Um capital cresce 10% por período, com juros compostos. Depois de quantos períodos completos ele supera o dobro do valor inicial? Usa 1,1⁷ ≈ 1,949 e 1,1⁸ ≈ 2,144.",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "10"
+        ],
+        "answer": 2,
+        "hint": "Compara os fatores de crescimento com 2.",
+        "explanation": "Após 7 períodos o capital ainda é menor que o dobro: 1,949C < 2C. Após 8, é maior: 2,144C > 2C. Portanto são 8 períodos."
+      },
+      {
+        "id": "up-desafio-2",
+        "stem": "De um grupo de 5 pessoas, serão escolhidas 2 para uma comissão, sem cargos diferentes. Quantas comissões podem ser formadas?",
+        "options": [
+          "5",
+          "20",
+          "25",
+          "10"
+        ],
+        "answer": 3,
+        "hint": "Cada par contado em ordens diferentes representa a mesma comissão.",
+        "explanation": "Há 5 × 4 = 20 pares ordenados. Como cada comissão foi contada duas vezes, são 20 ÷ 2 = 10 comissões."
+      },
+      {
+        "id": "up-desafio-3",
+        "stem": "Um retângulo tem perímetro de 20 cm e lados positivos. Qual é a maior área que ele pode ter?",
+        "options": [
+          "20 cm²",
+          "25 cm²",
+          "24 cm²",
+          "100 cm²"
+        ],
+        "answer": 1,
+        "hint": "Se um lado mede x, o outro mede 10 − x. Maximiza o produto.",
+        "explanation": "A(x) = x(10 − x) = −(x − 5)² + 25. O máximo é 25 cm², quando os dois lados medem 5 cm."
+      },
+      {
+        "id": "up-desafio-4",
+        "stem": "Uma mistura de 400 mL contém 30% de suco e o restante de água. Acrescentam-se 100 mL de água, sem perdas, e os volumes se somam. Qual é a porcentagem de suco na mistura final?",
+        "options": [
+          "20%",
+          "25%",
+          "30%",
+          "24%"
+        ],
+        "answer": 3,
+        "hint": "A quantidade de suco fica igual, mas o volume total aumenta.",
+        "explanation": "A quantidade de suco é 30% de 400 = 120 mL. O volume final é 500 mL, então a porcentagem é 120/500 × 100% = 24%."
+      },
+      {
+        "id": "up-desafio-5",
+        "stem": "Uma pessoa percorre 60 km de ida a 30 km/h e os mesmos 60 km de volta a 60 km/h, sem paradas. Qual é a velocidade média em todo o percurso?",
+        "options": [
+          "45 km/h",
+          "40 km/h",
+          "30 km/h",
+          "90 km/h"
+        ],
+        "answer": 1,
+        "hint": "Divide a distância total pelo tempo total, calculando o tempo de cada trecho.",
+        "explanation": "A ida dura 60 ÷ 30 = 2 horas, e a volta dura 60 ÷ 60 = 1 hora. Assim, a velocidade média é 120 km ÷ 3 h = 40 km/h."
+      },
+      {
+        "id": "up-desafio-6",
+        "stem": "Um terreno retangular mede 10 m por 8 m. Uma faixa pavimentada de 1 m de largura ocupa todo o contorno interno, junto às quatro bordas. A região retangular central fica gramada. Que porcentagem da área total fica gramada?",
+        "options": [
+          "60%",
+          "20%",
+          "40%",
+          "80%"
+        ],
+        "answer": 0,
+        "hint": "Em cada direção, a faixa retira 1 m de cada lado da região central.",
+        "explanation": "A região central mede 10 − 2 = 8 m por 8 − 2 = 6 m, com área de 48 m². Como o terreno tem 80 m², a parte gramada corresponde a 48/80 × 100% = 60%."
+      },
+      {
+        "id": "up-desafio-7",
+        "stem": "Uma urna contém 4 bolas vermelhas e 3 azuis. Duas bolas são retiradas ao acaso, sem reposição, com todas as bolas tendo a mesma chance em cada retirada. Qual é a probabilidade de as duas terem a mesma cor?",
+        "options": [
+          "1/2",
+          "2/7",
+          "3/7",
+          "4/7"
+        ],
+        "answer": 2,
+        "hint": "Soma a chance de duas vermelhas com a chance de duas azuis.",
+        "explanation": "A probabilidade de duas vermelhas é (4/7)(3/6), e a de duas azuis é (3/7)(2/6). Somando os casos exclusivos, obtemos 12/42 + 6/42 = 18/42 = 3/7."
+      },
+      {
+        "id": "up-desafio-8",
+        "stem": "O aluguel de um equipamento custa R$ 20,00 de taxa fixa mais R$ 8,00 por hora de uso. Um desconto de 10% é aplicado ao total. Com orçamento de R$ 90,00, qual é o maior número de horas inteiras que se pode pagar?",
+        "options": [
+          "8",
+          "9",
+          "11",
+          "10"
+        ],
+        "answer": 3,
+        "hint": "Depois do desconto, paga-se 90% da soma da taxa fixa com o valor das horas.",
+        "explanation": "O orçamento exige 0,9(20 + 8h) ≤ 90, ou seja, 20 + 8h ≤ 100. Logo, h ≤ 10, e o maior número de horas inteiras é 10."
+      },
+      {
+        "id": "up-desafio-9",
+        "stem": "Uma sessão vende 100 ingressos quando o preço é R$ 12,00. Um modelo prevê que, a cada aumento de R$ 2,00, serão vendidos 10 ingressos a menos. Seja k o número de aumentos, com k inteiro e 0 ≤ k ≤ 10. Qual é a maior receita prevista?",
+        "options": [
+          "R$ 1.280,00",
+          "R$ 1.200,00",
+          "R$ 1.320,00",
+          "R$ 1.440,00"
+        ],
+        "answer": 0,
+        "hint": "Multiplica o preço 12 + 2k pela quantidade 100 − 10k e analisa a parábola resultante.",
+        "explanation": "A receita é R(k) = (12 + 2k)(100 − 10k) = −20(k − 2)² + 1.280. O máximo ocorre em k = 2, que é permitido, e vale R$ 1.280,00."
+      },
+      {
+        "id": "up-desafio-10",
+        "stem": "A média final de duas provas usa peso 2 para a primeira e peso 3 para a segunda. As notas variam de 0 a 10. Se a primeira nota foi 5,5, qual é a menor nota na segunda prova que permite média final de pelo menos 7?",
+        "options": [
+          "7",
+          "7,5",
+          "8",
+          "8,5"
+        ],
+        "answer": 2,
+        "hint": "Escreve a média ponderada dividindo a soma dos produtos pela soma dos pesos.",
+        "explanation": "A condição é (2 × 5,5 + 3x)/5 ≥ 7. Assim, 11 + 3x ≥ 35 e x ≥ 8, logo a menor nota é 8."
+      },
+      {
+        "id": "up-desafio-11",
+        "stem": "Uma pista circular tem raio de 20 m. Uma pessoa percorre 3 voltas completas com velocidade constante de 2 m/s. Adotando π = 3, quanto tempo ela leva, em minutos?",
+        "options": [
+          "1,5 min",
+          "3 min",
+          "4 min",
+          "6 min"
+        ],
+        "answer": 1,
+        "hint": "Calcula o comprimento de uma volta e depois divide a distância das três voltas pela velocidade.",
+        "explanation": "Uma volta mede 2 × 3 × 20 = 120 m, então três voltas somam 360 m. O tempo é 360 ÷ 2 = 180 segundos, equivalentes a 3 minutos."
+      },
+      {
+        "id": "up-desafio-12",
+        "stem": "Uma planta na escala 1:200 mostra uma sala retangular de 5 cm por 3 cm. Para revestir o piso, compra-se 10% a mais de material que a área real. Se o material custa R$ 35,00 por metro quadrado, qual é o custo da compra, sem outras despesas?",
+        "options": [
+          "R$ 2.100,00",
+          "R$ 2.250,00",
+          "R$ 2.400,00",
+          "R$ 2.310,00"
+        ],
+        "answer": 3,
+        "hint": "Converte as duas medidas pela escala antes de calcular a área e acrescentar a margem de material.",
+        "explanation": "As medidas reais são 10 m e 6 m, portanto o piso tem 60 m². Com 10% a mais, compram-se 66 m², cujo custo é 66 × 35 = R$ 2.310,00."
+      }
+    ]
+  },
+  {
+    "id": "sequencias",
+    "title": "Sequências em movimento",
+    "label": "Intermediário",
+    "skill": "PA, PG e soma de termos",
+    "level": 11,
+    "questions": [
+      {
+        "id": "up-sequencias-1",
+        "stem": "Uma progressão aritmética começa com 7, 11, 15. Qual é o quarto termo?",
+        "options": [
+          "19",
+          "18",
+          "20",
+          "21"
+        ],
+        "answer": 0,
+        "hint": "Em uma PA, a diferença entre termos consecutivos é constante.",
+        "explanation": "A razão é 11 − 7 = 4, também igual a 15 − 11. Portanto, o quarto termo é 15 + 4 = 19."
+      },
+      {
+        "id": "up-sequencias-2",
+        "stem": "Uma PA tem primeiro termo 5 e razão 3. Qual é seu 12º termo?",
+        "options": [
+          "36",
+          "38",
+          "41",
+          "40"
+        ],
+        "answer": 1,
+        "hint": "Do primeiro ao 12º termo há 11 aumentos iguais.",
+        "explanation": "O termo geral é aₙ = a₁ + (n − 1)r. Assim, a₁₂ = 5 + 11 × 3 = 38."
+      },
+      {
+        "id": "up-sequencias-3",
+        "stem": "Em uma PA, o quarto termo vale 17 e o nono vale 42. Qual é a razão?",
+        "options": [
+          "4",
+          "6",
+          "5",
+          "25"
+        ],
+        "answer": 2,
+        "hint": "Conta quantos intervalos de mesma razão existem entre o quarto e o nono termo.",
+        "explanation": "Entre esses termos há 9 − 4 = 5 intervalos. Como a variação total é 42 − 17 = 25, a razão é 25 ÷ 5 = 5."
+      },
+      {
+        "id": "up-sequencias-4",
+        "stem": "Uma progressão geométrica começa com 3, 6, 12. Qual é o quarto termo?",
+        "options": [
+          "15",
+          "18",
+          "21",
+          "24"
+        ],
+        "answer": 3,
+        "hint": "Em uma PG, o quociente entre termos consecutivos é constante.",
+        "explanation": "Cada termo é o dobro do anterior, pois 6 ÷ 3 = 12 ÷ 6 = 2. O quarto termo é 12 × 2 = 24."
+      },
+      {
+        "id": "up-sequencias-5",
+        "stem": "No primeiro mês, Lara guarda R$ 15,00. A cada mês seguinte, guarda R$ 5,00 a mais que no anterior. Quanto ela guarda ao todo nos primeiros 8 meses?",
+        "options": [
+          "R$ 200,00",
+          "R$ 260,00",
+          "R$ 300,00",
+          "R$ 400,00"
+        ],
+        "answer": 1,
+        "hint": "Descobre o valor do oitavo depósito e usa a soma de uma PA.",
+        "explanation": "O oitavo depósito é 15 + 7 × 5 = 50 reais. A soma é 8 × (15 + 50) ÷ 2 = R$ 260,00."
+      },
+      {
+        "id": "up-sequencias-6",
+        "stem": "Uma PG tem primeiro termo 81 e razão 1/3. Qual é o quinto termo?",
+        "options": [
+          "3",
+          "1/3",
+          "1",
+          "9"
+        ],
+        "answer": 2,
+        "hint": "Do primeiro ao quinto termo, multiplica-se pela razão quatro vezes.",
+        "explanation": "O quinto termo é 81 × (1/3)⁴. Como 3⁴ = 81, o resultado é 1."
+      },
+      {
+        "id": "up-sequencias-7",
+        "stem": "Em uma PA, o segundo termo é 11 e o sexto é 31. Quanto vale o décimo termo?",
+        "options": [
+          "46",
+          "56",
+          "61",
+          "51"
+        ],
+        "answer": 3,
+        "hint": "Primeiro encontra a razão usando os termos conhecidos; depois avança do sexto ao décimo.",
+        "explanation": "A razão é (31 − 11) ÷ (6 − 2) = 5. Do sexto ao décimo termo há quatro intervalos, então a₁₀ = 31 + 4 × 5 = 51."
+      },
+      {
+        "id": "up-sequencias-8",
+        "stem": "Um auditório tem 12 fileiras. A primeira tem 14 cadeiras, e cada fileira seguinte tem 2 cadeiras a mais que a anterior. Quantas cadeiras há no auditório?",
+        "options": [
+          "300",
+          "288",
+          "312",
+          "432"
+        ],
+        "answer": 0,
+        "hint": "As quantidades por fileira formam uma PA; usa a primeira e a última.",
+        "explanation": "A última fileira tem 14 + 11 × 2 = 36 cadeiras. A soma é 12 × (14 + 36) ÷ 2 = 300 cadeiras."
+      },
+      {
+        "id": "up-sequencias-9",
+        "stem": "Uma PG de termos positivos tem segundo termo 6 e quinto termo 162. Qual é o primeiro termo?",
+        "options": [
+          "1",
+          "3",
+          "2",
+          "6"
+        ],
+        "answer": 2,
+        "hint": "Entre o segundo e o quinto termo, a razão é aplicada três vezes.",
+        "explanation": "Temos q³ = 162 ÷ 6 = 27, logo q = 3. Como o segundo termo é o primeiro multiplicado por 3, o primeiro termo é 6 ÷ 3 = 2."
+      },
+      {
+        "id": "up-sequencias-10",
+        "stem": "Uma cultura tem 200 microrganismos no instante zero. O modelo prevê que essa quantidade dobra a cada hora completa. Após quantas horas completas ela atinge 6.400 microrganismos pela primeira vez?",
+        "options": [
+          "3",
+          "4",
+          "6",
+          "5"
+        ],
+        "answer": 3,
+        "hint": "Divide a quantidade desejada pela inicial e escreve o quociente como potência de 2.",
+        "explanation": "A quantidade após n horas é 200 × 2ⁿ. Como 6.400 ÷ 200 = 32 = 2⁵ e a sequência é crescente, a primeira ocorrência é após 5 horas."
+      },
+      {
+        "id": "up-sequencias-11",
+        "stem": "Em uma campanha, foram entregues 4 kits no primeiro dia. Em cada dia seguinte, o número de kits entregues foi o dobro do dia anterior. Quantos kits foram entregues nos primeiros 6 dias, ao todo?",
+        "options": [
+          "252",
+          "128",
+          "256",
+          "248"
+        ],
+        "answer": 0,
+        "hint": "A pergunta pede a soma dos seis termos da PG, e não apenas o sexto termo.",
+        "explanation": "As quantidades são 4, 8, 16, 32, 64 e 128. Somando os seis dias, obtém-se 252 kits."
+      },
+      {
+        "id": "up-sequencias-12",
+        "stem": "Uma oficina produz 5 peças no primeiro dia e, a cada dia seguinte, produz 3 peças a mais que no dia anterior. Qual é o menor número de dias completos necessário para produzir pelo menos 200 peças ao todo?",
+        "options": [
+          "10",
+          "11",
+          "12",
+          "13"
+        ],
+        "answer": 1,
+        "hint": "Soma a PA da produção diária e procura o primeiro total que alcança a meta.",
+        "explanation": "A soma em n dias é n[2 × 5 + (n − 1) × 3] ÷ 2. Em 10 dias são 185 peças, e em 11 dias são 220. Como a produção diária é positiva, o menor número é 11 dias."
+      }
+    ]
+  },
+  {
+    "id": "dados",
+    "title": "Lê os dados",
+    "label": "Intermediário",
+    "skill": "Média, mediana, dispersão e leitura de dados",
+    "level": 12,
+    "questions": [
+      {
+        "id": "up-dados-1",
+        "stem": "As notas de três atividades foram 6, 8 e 10, todas com o mesmo peso. Qual é a média aritmética?",
+        "options": [
+          "8",
+          "7",
+          "9",
+          "24"
+        ],
+        "answer": 0,
+        "hint": "Soma as notas e divide pelo número de atividades.",
+        "explanation": "A soma das notas é 6 + 8 + 10 = 24. Dividindo pelas três atividades, a média é 24 ÷ 3 = 8."
+      },
+      {
+        "id": "up-dados-2",
+        "stem": "Os tempos de espera, em minutos, foram 11, 4, 9, 6 e 20. Qual é a mediana desses cinco tempos?",
+        "options": [
+          "6 min",
+          "9 min",
+          "10 min",
+          "11 min"
+        ],
+        "answer": 1,
+        "hint": "Ordena os valores e encontra aquele que ocupa a posição central.",
+        "explanation": "Em ordem crescente, os tempos são 4, 6, 9, 11 e 20. O terceiro valor é o central, portanto a mediana é 9 minutos."
+      },
+      {
+        "id": "up-dados-3",
+        "stem": "Em sete partidas, uma equipe marcou 2, 3, 3, 4, 4, 4 e 5 gols. Qual é a moda dessa lista?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": 2,
+        "hint": "A moda é o valor com maior frequência.",
+        "explanation": "O número 4 aparece três vezes, mais que qualquer outro valor. Assim, a moda é 4 gols."
+      },
+      {
+        "id": "up-dados-4",
+        "stem": "Foram registradas as temperaturas 18 °C, 22 °C, 17 °C, 25 °C e 20 °C. Qual é a amplitude desse conjunto, isto é, a diferença entre o maior e o menor valor?",
+        "options": [
+          "5 °C",
+          "6 °C",
+          "7 °C",
+          "8 °C"
+        ],
+        "answer": 3,
+        "hint": "Identifica a maior e a menor temperatura da lista.",
+        "explanation": "A maior temperatura é 25 °C, e a menor é 17 °C. A amplitude é 25 − 17 = 8 °C."
+      },
+      {
+        "id": "up-dados-5",
+        "stem": "A nota final de uma disciplina é a média ponderada de duas avaliações: nota 6 com peso 2 e nota 9 com peso 3. Qual é a nota final?",
+        "options": [
+          "7,5",
+          "7,8",
+          "8,0",
+          "8,5"
+        ],
+        "answer": 1,
+        "hint": "Multiplica cada nota pelo seu peso e divide pela soma dos pesos.",
+        "explanation": "A soma ponderada é 6 × 2 + 9 × 3 = 39. A soma dos pesos é 5, então a nota final é 39 ÷ 5 = 7,8."
+      },
+      {
+        "id": "up-dados-6",
+        "stem": "Uma lista ordenada contém os valores 2, 4, 7, 9, 12 e 14. Qual é a mediana?",
+        "options": [
+          "7",
+          "9",
+          "8",
+          "10"
+        ],
+        "answer": 2,
+        "hint": "Com uma quantidade par de valores, usa a média dos dois valores centrais.",
+        "explanation": "Os valores centrais são o terceiro e o quarto: 7 e 9. A mediana é (7 + 9) ÷ 2 = 8."
+      },
+      {
+        "id": "up-dados-7",
+        "stem": "Em uma pesquisa com 10 pessoas sobre livros lidos no mês, 2 leram nenhum livro, 5 leram 1 livro e 3 leram 2 livros. Qual foi a média de livros lidos por pessoa?",
+        "options": [
+          "1,0",
+          "1,2",
+          "1,5",
+          "1,1"
+        ],
+        "answer": 3,
+        "hint": "As frequências indicam quantas vezes cada quantidade de livros entra na soma.",
+        "explanation": "O total de livros é 2 × 0 + 5 × 1 + 3 × 2 = 11. Dividindo pelas 10 pessoas, a média é 1,1 livro por pessoa."
+      },
+      {
+        "id": "up-dados-8",
+        "stem": "Cinco caixas têm massa média de 12 kg. Uma sexta caixa, de 18 kg, é acrescentada ao conjunto. Qual passa a ser a massa média das seis caixas?",
+        "options": [
+          "13 kg",
+          "15 kg",
+          "12,5 kg",
+          "14 kg"
+        ],
+        "answer": 0,
+        "hint": "Recupera a massa total das cinco caixas antes de incluir a sexta.",
+        "explanation": "As cinco caixas somam 5 × 12 = 60 kg. Com a sexta caixa, são 78 kg em seis caixas, então a média é 78 ÷ 6 = 13 kg."
+      },
+      {
+        "id": "up-dados-9",
+        "stem": "Dois conjuntos de medidas são A = (4, 4, 10) e B = (6, 6, 6). Qual afirmação está correta?",
+        "options": [
+          "A média de A é 4, e a de B é 6.",
+          "A média de A é 6, e a de B é 4.",
+          "As duas médias são 6, e A tem maior amplitude que B.",
+          "As duas médias são 6, e A tem menor amplitude que B."
+        ],
+        "answer": 2,
+        "hint": "Calcula separadamente as médias e a diferença entre o maior e o menor valor de cada conjunto.",
+        "explanation": "Ambos os conjuntos têm soma 18 e três valores, então as duas médias são 6. A amplitude de A é 10 − 4 = 6, enquanto a de B é 6 − 6 = 0. Portanto, A tem maior amplitude."
+      },
+      {
+        "id": "up-dados-10",
+        "stem": "Uma lista de cinco valores é 10, 10, 11, 12 e 12. O último 12 é corrigido para 62. O que acontece com a média aritmética e a mediana?",
+        "options": [
+          "A média aumenta 50, e a mediana aumenta 50.",
+          "A média não muda, e a mediana aumenta 10.",
+          "A média aumenta 10, e a mediana aumenta 50.",
+          "A média aumenta 10, e a mediana não muda."
+        ],
+        "answer": 3,
+        "hint": "Compara a mudança na soma com a posição do valor central da lista ordenada.",
+        "explanation": "A correção acrescenta 50 à soma de cinco valores, então a média aumenta 50 ÷ 5 = 10. As listas ordenadas têm o mesmo valor central, 11. Por isso, a mediana não muda."
+      },
+      {
+        "id": "up-dados-11",
+        "stem": "Considere a população formada pelos valores 2, 4 e 6. Sua variância populacional é a média dos quadrados das diferenças de cada valor para a média. Quanto vale essa variância?",
+        "options": [
+          "8/3",
+          "4",
+          "2",
+          "8"
+        ],
+        "answer": 0,
+        "hint": "Calcula a média, eleva cada desvio ao quadrado e divide a soma por 3.",
+        "explanation": "A média é 4, e os desvios são −2, 0 e 2. Os quadrados somam 4 + 0 + 4 = 8. Dividindo pelo número de valores, a variância populacional é 8/3."
+      },
+      {
+        "id": "up-dados-12",
+        "stem": "Em uma turma de 20 alunos, 4 tiraram nota 5, 5 tiraram nota 6, 6 tiraram nota 7 e 5 tiraram nota 8. Todas as notas têm o mesmo peso. Quais são, respectivamente, a média e a mediana da turma?",
+        "options": [
+          "6,5 e 7",
+          "6,6 e 7",
+          "6,6 e 6",
+          "7 e 6,6"
+        ],
+        "answer": 1,
+        "hint": "Usa as frequências para a média e localiza o 10º e o 11º valores na lista ordenada.",
+        "explanation": "A soma das notas é 4 × 5 + 5 × 6 + 6 × 7 + 5 × 8 = 132, e a média é 132 ÷ 20 = 6,6. As notas 7 ocupam as posições de 10 a 15 na lista ordenada. Logo, os dois valores centrais são 7, e a mediana é 7."
+      }
+    ]
+  },
+  {
+    "id": "probabilidade",
+    "title": "Pensa nas chances",
+    "label": "Intermediário +",
+    "skill": "Probabilidade, complemento e independência",
+    "level": 13,
+    "questions": [
+      {
+        "id": "up-probabilidade-1",
+        "stem": "Um dado honesto de seis faces, numeradas de 1 a 6, é lançado uma vez. Todas as faces têm a mesma chance. Qual é a probabilidade de sair um número par?",
+        "options": [
+          "1/2",
+          "1/3",
+          "2/3",
+          "1/6"
+        ],
+        "answer": 0,
+        "hint": "Conta quantas das seis faces têm número par.",
+        "explanation": "As faces favoráveis são 2, 4 e 6: três entre seis igualmente prováveis. A probabilidade é 3/6 = 1/2."
+      },
+      {
+        "id": "up-probabilidade-2",
+        "stem": "Uma urna contém 3 bolas azuis e 2 vermelhas. Retira-se uma bola, com a mesma chance para cada uma das cinco bolas. Qual é a probabilidade de ela ser vermelha?",
+        "options": [
+          "3/5",
+          "2/5",
+          "1/2",
+          "1/5"
+        ],
+        "answer": 1,
+        "hint": "Divide o número de bolas vermelhas pelo total de bolas.",
+        "explanation": "Há duas bolas vermelhas entre cinco bolas equiprováveis. Portanto, a probabilidade é 2/5."
+      },
+      {
+        "id": "up-probabilidade-3",
+        "stem": "Uma moeda honesta é lançada duas vezes de forma independente. Qual é a probabilidade de ocorrer exatamente uma cara?",
+        "options": [
+          "1/4",
+          "3/4",
+          "1/2",
+          "1"
+        ],
+        "answer": 2,
+        "hint": "Lista os quatro pares ordenados de resultados e procura os que têm uma única cara.",
+        "explanation": "Os quatro resultados equiprováveis são cara-cara, cara-coroa, coroa-cara e coroa-coroa. Exatamente uma cara ocorre em dois deles. A probabilidade é 2/4 = 1/2."
+      },
+      {
+        "id": "up-probabilidade-4",
+        "stem": "Um cartão é escolhido ao acaso entre 20 cartões distintos, numerados de 1 a 20, todos com a mesma chance. Qual é a probabilidade de o número ser múltiplo de 3 ou de 5, incluindo os que são múltiplos dos dois?",
+        "options": [
+          "1/4",
+          "1/2",
+          "3/10",
+          "9/20"
+        ],
+        "answer": 3,
+        "hint": "Conta os múltiplos de cada número e evita contar duas vezes os múltiplos comuns.",
+        "explanation": "Há 6 múltiplos de 3 e 4 múltiplos de 5. O número 15 aparece nos dois grupos, então há 6 + 4 − 1 = 9 cartões favoráveis. A probabilidade é 9/20."
+      },
+      {
+        "id": "up-probabilidade-5",
+        "stem": "Dois dados honestos de seis faces, numeradas de 1 a 6, são lançados independentemente. Qual é a probabilidade de a soma dos resultados ser 8?",
+        "options": [
+          "1/6",
+          "5/36",
+          "1/8",
+          "1/9"
+        ],
+        "answer": 1,
+        "hint": "Considera os 36 pares ordenados, pois os dados podem ser distinguidos.",
+        "explanation": "Os pares favoráveis são (2,6), (3,5), (4,4), (5,3) e (6,2). São cinco pares em 36 pares equiprováveis, dando probabilidade 5/36."
+      },
+      {
+        "id": "up-probabilidade-6",
+        "stem": "Uma urna contém 4 bolas verdes e 2 amarelas. Duas bolas são retiradas sucessivamente, sem reposição, escolhendo cada bola restante com a mesma chance. Qual é a probabilidade de as duas serem verdes?",
+        "options": [
+          "4/9",
+          "1/3",
+          "2/5",
+          "3/5"
+        ],
+        "answer": 2,
+        "hint": "Depois de retirar uma verde, diminuem tanto o total de bolas quanto o número de verdes.",
+        "explanation": "A primeira bola é verde com probabilidade 4/6. Se isso ocorre, restam 3 verdes entre 5 bolas. Logo, a probabilidade pedida é (4/6) × (3/5) = 2/5."
+      },
+      {
+        "id": "up-probabilidade-7",
+        "stem": "Um saco contém cinco fichas distintas, numeradas de 1 a 5. Uma ficha é sorteada, devolvida ao saco e misturada; depois ocorre um segundo sorteio independente. Cada ficha tem a mesma chance em cada sorteio. Qual é a probabilidade de os dois números serem iguais?",
+        "options": [
+          "1/25",
+          "2/5",
+          "4/5",
+          "1/5"
+        ],
+        "answer": 3,
+        "hint": "Para cada resultado do primeiro sorteio, apenas uma das cinco fichas repete esse número.",
+        "explanation": "Com reposição, há 5 × 5 = 25 pares ordenados equiprováveis. Os cinco pares (1,1), (2,2), (3,3), (4,4) e (5,5) têm números iguais. A probabilidade é 5/25 = 1/5."
+      },
+      {
+        "id": "up-probabilidade-8",
+        "stem": "Uma moeda honesta é lançada três vezes de forma independente. Qual é a probabilidade de ocorrer pelo menos uma cara?",
+        "options": [
+          "7/8",
+          "1/8",
+          "3/8",
+          "1/2"
+        ],
+        "answer": 0,
+        "hint": "O evento contrário é não ocorrer nenhuma cara nos três lançamentos.",
+        "explanation": "Não ocorrer cara significa obter três coroas, com probabilidade (1/2)³ = 1/8. Pelo complemento, a probabilidade de pelo menos uma cara é 1 − 1/8 = 7/8."
+      },
+      {
+        "id": "up-probabilidade-9",
+        "stem": "Em um grupo de 30 pessoas, 18 vão ao trabalho de bicicleta. Dessas 18 ciclistas, 12 usam capacete. Uma pessoa é escolhida apenas entre as ciclistas, todas com a mesma chance. Qual é a probabilidade de ela usar capacete?",
+        "options": [
+          "2/5",
+          "3/5",
+          "2/3",
+          "1/3"
+        ],
+        "answer": 2,
+        "hint": "O sorteio está restrito às pessoas que usam bicicleta.",
+        "explanation": "O espaço amostral tem apenas as 18 ciclistas, das quais 12 usam capacete. A probabilidade é 12/18 = 2/3."
+      },
+      {
+        "id": "up-probabilidade-10",
+        "stem": "Dois sensores funcionam independentemente. Cada sensor tem probabilidade 1/10 de falhar durante um teste. O sistema funciona se pelo menos um sensor não falhar. Qual é a probabilidade de o sistema funcionar no teste?",
+        "options": [
+          "81/100",
+          "9/10",
+          "19/100",
+          "99/100"
+        ],
+        "answer": 3,
+        "hint": "O sistema só deixa de funcionar quando os dois sensores falham.",
+        "explanation": "Pela independência, a probabilidade de os dois falharem é (1/10) × (1/10) = 1/100. A probabilidade de o sistema funcionar é o complemento: 1 − 1/100 = 99/100."
+      },
+      {
+        "id": "up-probabilidade-11",
+        "stem": "Há seis cartões distintos: quatro trazem a letra A e dois trazem a letra B. Dois cartões são retirados sucessivamente, sem reposição, escolhendo cada cartão restante com a mesma chance. Qual é a probabilidade de sair exatamente um A e um B, em qualquer ordem?",
+        "options": [
+          "8/15",
+          "4/9",
+          "2/3",
+          "7/15"
+        ],
+        "answer": 0,
+        "hint": "Soma as probabilidades das ordens A depois B e B depois A.",
+        "explanation": "A probabilidade de A seguido de B é (4/6) × (2/5), e a de B seguido de A é (2/6) × (4/5). Os casos são disjuntos, então somamos: 8/30 + 8/30 = 8/15."
+      },
+      {
+        "id": "up-probabilidade-12",
+        "stem": "Uma caixa contém 20 bilhetes distintos, sendo 5 premiados e 15 sem prêmio. Retiram-se 3 bilhetes sucessivamente, sem reposição, com a mesma chance para cada bilhete restante. Qual é a probabilidade de sair pelo menos um bilhete premiado?",
+        "options": [
+          "3/4",
+          "137/228",
+          "91/228",
+          "1/4"
+        ],
+        "answer": 1,
+        "hint": "Calcula primeiro a probabilidade de os três bilhetes não terem prêmio.",
+        "explanation": "A probabilidade de não sair prêmio é (15/20) × (14/19) × (13/18) = 91/228. Pelo complemento, a probabilidade de pelo menos um prêmio é 1 − 91/228 = 137/228."
+      }
+    ]
+  },
+  {
+    "id": "contagem",
+    "title": "Conta sem listar",
+    "label": "Intermediário +",
+    "skill": "Princípio multiplicativo, arranjos e combinações",
+    "level": 14,
+    "questions": [
+      {
+        "id": "up-contagem-1",
+        "stem": "Ravi tem 3 camisetas distintas e 2 calças distintas. Quantos conjuntos diferentes ele pode montar escolhendo exatamente uma camiseta e uma calça?",
+        "options": [
+          "6",
+          "5",
+          "8",
+          "9"
+        ],
+        "answer": 0,
+        "hint": "Cada camiseta pode ser combinada com qualquer uma das calças.",
+        "explanation": "Há 3 escolhas de camiseta e, para cada uma, 2 escolhas de calça. Pelo princípio multiplicativo, são 3 × 2 = 6 conjuntos."
+      },
+      {
+        "id": "up-contagem-2",
+        "stem": "Um código é uma sequência de 3 letras escolhidas entre A, B, C e D. As letras podem se repetir, e a ordem importa. Quantos códigos diferentes existem?",
+        "options": [
+          "12",
+          "64",
+          "24",
+          "81"
+        ],
+        "answer": 1,
+        "hint": "As quatro letras continuam disponíveis em cada uma das três posições.",
+        "explanation": "Cada posição admite 4 escolhas, independentemente das demais. Assim, há 4 × 4 × 4 = 64 códigos."
+      },
+      {
+        "id": "up-contagem-3",
+        "stem": "Cinco livros distintos serão colocados em uma única fileira numa prateleira. Todos serão usados, e ordens diferentes contam como arrumações diferentes. Quantas arrumações existem?",
+        "options": [
+          "25",
+          "60",
+          "120",
+          "125"
+        ],
+        "answer": 2,
+        "hint": "Depois de escolher um livro para uma posição, ele não pode ocupar outra.",
+        "explanation": "Há 5 escolhas para a primeira posição, 4 para a segunda, depois 3, 2 e 1. O total é 5 × 4 × 3 × 2 × 1 = 120 arrumações."
+      },
+      {
+        "id": "up-contagem-4",
+        "stem": "Oito atletas distintos disputam medalhas de ouro, prata e bronze. Não há empates, cada atleta pode ganhar no máximo uma medalha, e a ordem das medalhas importa. Quantos pódios diferentes podem ocorrer?",
+        "options": [
+          "24",
+          "56",
+          "512",
+          "336"
+        ],
+        "answer": 3,
+        "hint": "Escolhe os medalhistas na ordem ouro, prata e bronze, sem repetir atletas.",
+        "explanation": "Há 8 escolhas para o ouro, depois 7 para a prata e 6 para o bronze. Portanto, existem 8 × 7 × 6 = 336 pódios."
+      },
+      {
+        "id": "up-contagem-5",
+        "stem": "De um grupo de 7 pessoas distintas, serão escolhidas 3 para uma comissão sem cargos. A ordem de escolha não muda a comissão. Quantas comissões diferentes podem ser formadas?",
+        "options": [
+          "21",
+          "35",
+          "210",
+          "343"
+        ],
+        "answer": 1,
+        "hint": "Os mesmos três nomes aparecem em seis ordens, mas formam uma só comissão.",
+        "explanation": "A contagem ordenada dá 7 × 6 × 5 = 210. Cada comissão foi contada 3! = 6 vezes, então há 210 ÷ 6 = 35 comissões."
+      },
+      {
+        "id": "up-contagem-6",
+        "stem": "Quantos números pares de quatro algarismos podem ser formados com os algarismos 0, 1, 2, 3 e 4, sem repetir algarismos? O primeiro algarismo não pode ser zero.",
+        "options": [
+          "48",
+          "72",
+          "60",
+          "120"
+        ],
+        "answer": 2,
+        "hint": "Separa os casos em que o último algarismo é zero e em que ele é 2 ou 4.",
+        "explanation": "Terminando em 0, há 4 × 3 × 2 = 24 números. Terminando em 2 ou 4, há 2 escolhas para o final, 3 para o início e depois 3 e 2: 36 números. O total é 24 + 36 = 60."
+      },
+      {
+        "id": "up-contagem-7",
+        "stem": "Quantas sequências distintas de seis letras podem ser formadas usando todas as letras de BANANA? Letras iguais são indistinguíveis, e a ordem das letras importa.",
+        "options": [
+          "20",
+          "120",
+          "360",
+          "60"
+        ],
+        "answer": 3,
+        "hint": "Na palavra, há três letras A iguais e duas letras N iguais.",
+        "explanation": "Se as seis letras fossem distintas, haveria 6! arrumações. As trocas dos três A e dos dois N não mudam a sequência, então dividimos por 3! × 2!. Assim, são 720 ÷ 12 = 60 sequências."
+      },
+      {
+        "id": "up-contagem-8",
+        "stem": "Ana, Bia e outras quatro pessoas distintas vão formar uma fila de seis pessoas. Ana e Bia devem ficar lado a lado, em qualquer uma das duas ordens. Quantas filas diferentes atendem à condição?",
+        "options": [
+          "240",
+          "120",
+          "720",
+          "48"
+        ],
+        "answer": 0,
+        "hint": "Trata Ana e Bia como um bloco e depois considera as ordens dentro dele.",
+        "explanation": "O bloco e as outras quatro pessoas formam cinco unidades distintas, que podem ser ordenadas de 5! formas. Ana e Bia podem trocar de lugar dentro do bloco. Portanto, são 5! × 2 = 240 filas."
+      },
+      {
+        "id": "up-contagem-9",
+        "stem": "Uma equipe deve ter exatamente 2 estudantes escolhidos entre 5 estudantes distintos e 1 professor escolhido entre 3 professores distintos. Não há cargos, e a ordem dos nomes não importa. Quantas equipes podem ser formadas?",
+        "options": [
+          "15",
+          "60",
+          "30",
+          "75"
+        ],
+        "answer": 2,
+        "hint": "Combina cada dupla de estudantes com cada escolha de professor.",
+        "explanation": "As duplas de estudantes são C(5,2) = 10. Para cada dupla, há 3 escolhas de professor. Assim, existem 10 × 3 = 30 equipes."
+      },
+      {
+        "id": "up-contagem-10",
+        "stem": "Para ir de um ponto A a um ponto B em uma malha sem obstáculos, uma pessoa precisa andar exatamente 3 quarteirões para leste e 2 para norte. Ela só pode dar esses cinco passos, cada um de um quarteirão, em qualquer ordem. Quantos trajetos diferentes existem?",
+        "options": [
+          "5",
+          "6",
+          "12",
+          "10"
+        ],
+        "answer": 3,
+        "hint": "Escolhe quais duas das cinco posições serão ocupadas pelos passos para norte.",
+        "explanation": "Cada trajeto é uma sequência de três passos para leste e dois para norte. Basta escolher as duas posições dos passos para norte entre cinco posições. São C(5,2) = 10 trajetos."
+      },
+      {
+        "id": "up-contagem-11",
+        "stem": "Cinco livros distintos, incluindo um de Álgebra e um de Biologia, serão colocados em uma fileira. Esses dois livros não podem ficar lado a lado. Quantas arrumações são possíveis?",
+        "options": [
+          "72",
+          "48",
+          "96",
+          "60"
+        ],
+        "answer": 0,
+        "hint": "Subtrai do total de arrumações aquelas em que os dois livros ficam juntos.",
+        "explanation": "Sem restrição, há 5! = 120 arrumações. Com os dois livros juntos, o bloco e os outros três livros podem ser ordenados de 4! formas, e há duas ordens no bloco: 48 casos. Restam 120 − 48 = 72 arrumações."
+      },
+      {
+        "id": "up-contagem-12",
+        "stem": "Uma comissão sem cargos terá 4 integrantes escolhidos entre 8 pessoas distintas. Ana e Bruno estão entre elas, mas não podem participar juntos: pode entrar apenas um deles ou nenhum. A ordem de escolha não importa. Quantas comissões são possíveis?",
+        "options": [
+          "40",
+          "55",
+          "60",
+          "70"
+        ],
+        "answer": 1,
+        "hint": "Conta todas as comissões e retira aquelas que incluem simultaneamente Ana e Bruno.",
+        "explanation": "Sem a restrição, há C(8,4) = 70 comissões. Quando Ana e Bruno estão juntos, faltam escolher 2 pessoas entre as outras 6: C(6,2) = 15. Portanto, restam 70 − 15 = 55 comissões."
+      }
+    ]
+  },
+  {
+    "id": "espaciais",
+    "title": "Sai do plano",
+    "label": "Intermediário +",
+    "skill": "Volume, área de sólidos e conversões",
+    "level": 15,
+    "questions": [
+      {
+        "id": "up-espaciais-1",
+        "stem": "Uma caixa em forma de paralelepípedo retângulo tem dimensões internas de 5 cm, 4 cm e 3 cm. Qual é seu volume interno?",
+        "options": [
+          "60 cm³",
+          "12 cm³",
+          "47 cm³",
+          "120 cm³"
+        ],
+        "answer": 0,
+        "hint": "Multiplica as três dimensões perpendiculares da caixa.",
+        "explanation": "O volume de um paralelepípedo retângulo é o produto das três dimensões. Assim, V = 5 × 4 × 3 = 60 cm³."
+      },
+      {
+        "id": "up-espaciais-2",
+        "stem": "Um cubo tem arestas de 4 cm. Qual é a área total de sua superfície externa?",
+        "options": [
+          "64 cm²",
+          "96 cm²",
+          "48 cm²",
+          "128 cm²"
+        ],
+        "answer": 1,
+        "hint": "O cubo tem seis faces quadradas iguais.",
+        "explanation": "Cada face tem área 4² = 16 cm². Como são seis faces, a área total é 6 × 16 = 96 cm²."
+      },
+      {
+        "id": "up-espaciais-3",
+        "stem": "Um reservatório tem capacidade de 0,5 m³. Sabendo que 1 m³ equivale a 1.000 litros, qual é sua capacidade em litros?",
+        "options": [
+          "5 L",
+          "50 L",
+          "500 L",
+          "5.000 L"
+        ],
+        "answer": 2,
+        "hint": "Meio metro cúbico corresponde à metade de mil litros.",
+        "explanation": "Para converter metros cúbicos em litros, multiplicamos por 1.000. Logo, 0,5 × 1.000 = 500 litros."
+      },
+      {
+        "id": "up-espaciais-4",
+        "stem": "Um cilindro circular reto tem raio da base de 3 cm e altura de 10 cm. Qual é seu volume? Mantém π na resposta.",
+        "options": [
+          "30π cm³",
+          "60π cm³",
+          "180π cm³",
+          "90π cm³"
+        ],
+        "answer": 3,
+        "hint": "O volume é a área da base circular multiplicada pela altura.",
+        "explanation": "A base tem área π × 3² = 9π cm². Multiplicando pela altura de 10 cm, o volume é 90π cm³."
+      },
+      {
+        "id": "up-espaciais-5",
+        "stem": "Um prisma reto tem base triangular retângula com catetos de 6 cm e 8 cm. A distância entre as duas bases é 10 cm. Qual é o volume do prisma?",
+        "options": [
+          "480 cm³",
+          "240 cm³",
+          "140 cm³",
+          "80 cm³"
+        ],
+        "answer": 1,
+        "hint": "Calcula primeiro a área do triângulo da base.",
+        "explanation": "A área da base é 6 × 8 ÷ 2 = 24 cm². O volume é área da base vezes altura do prisma: 24 × 10 = 240 cm³."
+      },
+      {
+        "id": "up-espaciais-6",
+        "stem": "Um cilindro circular reto tem raio de 2 cm e altura de 5 cm. Qual é apenas a área lateral, sem incluir as duas bases? Mantém π na resposta.",
+        "options": [
+          "10π cm²",
+          "28π cm²",
+          "20π cm²",
+          "40π cm²"
+        ],
+        "answer": 2,
+        "hint": "Ao abrir a lateral, obtém-se um retângulo com largura igual ao comprimento da circunferência da base.",
+        "explanation": "O comprimento da circunferência é 2π × 2 = 4π cm. Multiplicando pela altura de 5 cm, a área lateral é 20π cm²."
+      },
+      {
+        "id": "up-espaciais-7",
+        "stem": "Uma esfera tem raio de 3 cm. Usando V = (4/3)πr³, qual é seu volume? Mantém π na resposta.",
+        "options": [
+          "12π cm³",
+          "27π cm³",
+          "108π cm³",
+          "36π cm³"
+        ],
+        "answer": 3,
+        "hint": "Eleva o raio ao cubo antes de multiplicar pelo fator 4/3.",
+        "explanation": "Como 3³ = 27, o volume é (4/3)π × 27. Simplificando, obtemos 36π cm³."
+      },
+      {
+        "id": "up-espaciais-8",
+        "stem": "Um cubo tem todas as suas arestas duplicadas. Por qual fator seu volume é multiplicado?",
+        "options": [
+          "8",
+          "2",
+          "4",
+          "16"
+        ],
+        "answer": 0,
+        "hint": "O volume depende do produto de três medidas lineares.",
+        "explanation": "Se a aresta era a, o volume era a³. Com aresta 2a, o volume é (2a)³ = 8a³. Portanto, o fator de multiplicação é 8."
+      },
+      {
+        "id": "up-espaciais-9",
+        "stem": "Um aquário retangular tem base interna de 40 cm por 25 cm e altura interna de 30 cm. Inicialmente vazio, recebe 20 litros de água, sem perdas. Qual é a altura da água? Usa 1 L = 1.000 cm³.",
+        "options": [
+          "2 cm",
+          "8 cm",
+          "20 cm",
+          "50 cm"
+        ],
+        "answer": 2,
+        "hint": "Converte o volume para cm³ e divide pela área da base interna.",
+        "explanation": "Os 20 litros equivalem a 20.000 cm³. A base tem área 40 × 25 = 1.000 cm², então a altura é 20.000 ÷ 1.000 = 20 cm. Esse valor cabe nos 30 cm de altura do aquário."
+      },
+      {
+        "id": "up-espaciais-10",
+        "stem": "Um cone circular reto tem raio da base de 3 cm e altura de 4 cm. Qual é sua área total, incluindo a base? A área lateral é πrg, em que g é a geratriz. Mantém π na resposta.",
+        "options": [
+          "12π cm²",
+          "15π cm²",
+          "21π cm²",
+          "24π cm²"
+        ],
+        "answer": 3,
+        "hint": "A geratriz, a altura e o raio formam um triângulo retângulo.",
+        "explanation": "Pelo teorema de Pitágoras, g = √(3² + 4²) = 5 cm. A área lateral é π × 3 × 5 = 15π cm², e a base tem área 9π cm². A área total é 24π cm²."
+      },
+      {
+        "id": "up-espaciais-11",
+        "stem": "Um tanque retangular tem dimensões internas de 2 m, 1,5 m e 1 m. Ele começa vazio e é abastecido à vazão constante de 25 litros por minuto, sem perdas. Quanto tempo leva para atingir 80% da capacidade? Usa 1 m³ = 1.000 L.",
+        "options": [
+          "96 min",
+          "120 min",
+          "80 min",
+          "60 min"
+        ],
+        "answer": 0,
+        "hint": "Calcula a capacidade em litros, determina 80% e divide pela vazão.",
+        "explanation": "A capacidade é 2 × 1,5 × 1 = 3 m³ = 3.000 litros. O volume desejado é 80% de 3.000, isto é, 2.400 litros. À vazão de 25 L/min, o tempo é 2.400 ÷ 25 = 96 minutos."
+      },
+      {
+        "id": "up-espaciais-12",
+        "stem": "Uma peça maciça em forma de cilindro circular reto, de raio 6 cm e altura 10 cm, é derretida para produzir esferas maciças de raio 1,5 cm. Não há perda de material, e todo o volume é aproveitado. Quantas esferas são produzidas? Usa V da esfera = (4/3)πr³.",
+        "options": [
+          "40",
+          "80",
+          "120",
+          "160"
+        ],
+        "answer": 1,
+        "hint": "Divide o volume do cilindro pelo de uma esfera; o fator π se cancela.",
+        "explanation": "O volume do cilindro é π × 6² × 10 = 360π cm³. Cada esfera tem volume (4/3)π × (1,5)³ = 4,5π cm³. A razão 360π ÷ 4,5π é 80, portanto são produzidas 80 esferas."
+      }
+    ]
+  },
+  {
+    "id": "trigonometria",
+    "title": "Ângulos que ajudam",
+    "label": "Avançando",
+    "skill": "Razões trigonométricas e relações entre ângulos",
+    "level": 16,
+    "questions": [
+      {
+        "id": "up-trigonometria-1",
+        "stem": "Num triângulo retângulo, o cateto oposto ao ângulo agudo θ mede 6 cm e a hipotenusa mede 10 cm. Quanto vale sen θ?",
+        "options": [
+          "3/5",
+          "4/5",
+          "5/3",
+          "3/4"
+        ],
+        "answer": 0,
+        "hint": "Identifica quais lados entram na definição de seno.",
+        "explanation": "O seno de um ângulo agudo é a razão entre o cateto oposto e a hipotenusa. Assim, sen θ = 6/10 = 3/5."
+      },
+      {
+        "id": "up-trigonometria-2",
+        "stem": "Um ângulo mede 150°. Qual é sua medida em radianos?",
+        "options": [
+          "3π/4",
+          "5π/6",
+          "2π/3",
+          "5π/3"
+        ],
+        "answer": 1,
+        "hint": "Usa a equivalência 180° = π radianos.",
+        "explanation": "Para converter graus em radianos, multiplica-se a medida por π/180. Portanto, 150π/180 = 5π/6 radianos."
+      },
+      {
+        "id": "up-trigonometria-3",
+        "stem": "Se θ é um ângulo agudo e cos θ = 5/13, quanto vale sen θ?",
+        "options": [
+          "5/12",
+          "8/13",
+          "12/13",
+          "13/12"
+        ],
+        "answer": 2,
+        "hint": "Usa sen² θ + cos² θ = 1 e o sinal do seno no primeiro quadrante.",
+        "explanation": "A identidade fundamental dá sen² θ = 1 − 25/169 = 144/169. Como θ é agudo, o seno é positivo e vale 12/13."
+      },
+      {
+        "id": "up-trigonometria-4",
+        "stem": "Para 90° < θ < 180°, sabe-se que sen θ = 3/5. Quanto vale tan θ?",
+        "options": [
+          "3/4",
+          "−4/3",
+          "4/3",
+          "−3/4"
+        ],
+        "answer": 3,
+        "hint": "Nesse quadrante, o cosseno é negativo; depois usa tan θ = sen θ/cos θ.",
+        "explanation": "A identidade fundamental fornece cos² θ = 16/25. No segundo quadrante, cos θ = −4/5, então tan θ = (3/5)/(−4/5) = −3/4."
+      },
+      {
+        "id": "up-trigonometria-5",
+        "stem": "Uma escada reta de 10 m está apoiada numa parede vertical e faz 60° com o chão horizontal. A que altura do chão está sua extremidade superior?",
+        "options": [
+          "5 m",
+          "5√3 m",
+          "10 m",
+          "10√3 m"
+        ],
+        "answer": 1,
+        "hint": "A escada é a hipotenusa do triângulo; a altura é o cateto oposto a 60°.",
+        "explanation": "A altura h satisfaz sen 60° = h/10. Como sen 60° = √3/2, resulta h = 5√3 m."
+      },
+      {
+        "id": "up-trigonometria-6",
+        "stem": "Quanto vale cos 120°?",
+        "options": [
+          "1/2",
+          "−√3/2",
+          "−1/2",
+          "√3/2"
+        ],
+        "answer": 2,
+        "hint": "Escreve 120° como 180° − 60° e observa o sinal no segundo quadrante.",
+        "explanation": "Ângulos suplementares têm cossenos opostos. Assim, cos 120° = −cos 60° = −1/2."
+      },
+      {
+        "id": "up-trigonometria-7",
+        "stem": "Quais são todas as soluções de 2 sen θ = √3 no intervalo 0° ≤ θ < 360°?",
+        "options": [
+          "30° e 150°",
+          "60° e 300°",
+          "120° e 240°",
+          "60° e 120°"
+        ],
+        "answer": 3,
+        "hint": "O seno é positivo nos dois primeiros quadrantes; encontra o ângulo de referência.",
+        "explanation": "A equação equivale a sen θ = √3/2, cujo ângulo de referência é 60°. No intervalo indicado, o seno tem esse valor em 60° e 120°."
+      },
+      {
+        "id": "up-trigonometria-8",
+        "stem": "Num triângulo, o lado oposto ao ângulo de 30° mede 6 cm. Quanto mede o lado oposto ao ângulo de 45°?",
+        "options": [
+          "6√2 cm",
+          "3√2 cm",
+          "6√3 cm",
+          "12 cm"
+        ],
+        "answer": 0,
+        "hint": "Relaciona cada lado com o seno do ângulo oposto pela lei dos senos.",
+        "explanation": "Pela lei dos senos, b/sen 45° = 6/sen 30°. Logo, b = 6 × (√2/2)/(1/2) = 6√2 cm."
+      },
+      {
+        "id": "up-trigonometria-9",
+        "stem": "Dois lados de um triângulo medem 5 cm e 7 cm, e o ângulo entre eles mede 60°. Quanto mede o terceiro lado?",
+        "options": [
+          "√74 cm",
+          "√109 cm",
+          "√39 cm",
+          "6 cm"
+        ],
+        "answer": 2,
+        "hint": "Usa a lei dos cossenos com o ângulo entre os dois lados conhecidos.",
+        "explanation": "A lei dos cossenos dá c² = 5² + 7² − 2 × 5 × 7 × cos 60°. Assim, c² = 39 e, por ser um comprimento, c = √39 cm."
+      },
+      {
+        "id": "up-trigonometria-10",
+        "stem": "A altura de um assento de uma roda, em metros, é h(t) = 4 + 3 sen(πt/6), com t em segundos e 0 ≤ t ≤ 12. Em que instante ele atinge a altura máxima pela primeira vez nesse intervalo?",
+        "options": [
+          "1 s",
+          "6 s",
+          "9 s",
+          "3 s"
+        ],
+        "answer": 3,
+        "hint": "O seno atinge seu maior valor quando seu argumento chega pela primeira vez a π/2.",
+        "explanation": "A altura máxima é 4 + 3 × 1 = 7 m. O primeiro instante satisfaz πt/6 = π/2, portanto t = 3 s."
+      },
+      {
+        "id": "up-trigonometria-11",
+        "stem": "Para θ medido em radianos e 0 ≤ θ < 2π, qual condição descreve exatamente as soluções de cos θ < −1/2?",
+        "options": [
+          "2π/3 < θ < 4π/3",
+          "π/3 < θ < 5π/3",
+          "2π/3 ≤ θ ≤ 4π/3",
+          "4π/3 < θ < 2π"
+        ],
+        "answer": 0,
+        "hint": "Encontra os dois pontos do ciclo em que o cosseno vale −1/2 e considera a desigualdade estrita.",
+        "explanation": "No ciclo indicado, cos θ = −1/2 em 2π/3 e 4π/3. O cosseno é menor que −1/2 entre esses pontos, e a desigualdade estrita exclui as extremidades."
+      },
+      {
+        "id": "up-trigonometria-12",
+        "stem": "Em terreno horizontal, observa-se o topo de uma torre vertical sob ângulo de elevação de 30°. Após caminhar 40 m em direção à base da torre, numa linha reta e sem alcançar nem ultrapassar a base da torre, o ângulo passa a 60°. Desconsiderando a altura dos olhos, qual é a altura da torre?",
+        "options": [
+          "20 m",
+          "20√3 m",
+          "40√3 m",
+          "60 m"
+        ],
+        "answer": 1,
+        "hint": "Se a distância final até a base é x, a inicial é x + 40; escreve uma tangente para cada posição.",
+        "explanation": "Se x é a distância final, a altura satisfaz h = x√3 e h = (x + 40)/√3. Igualando, vem 3x = x + 40, então x = 20 e h = 20√3 m."
+      }
+    ]
+  },
+  {
+    "id": "logaritmos",
+    "title": "Muda a escala",
+    "label": "Avançando",
+    "skill": "Propriedades de logaritmos e modelos exponenciais",
+    "level": 17,
+    "questions": [
+      {
+        "id": "up-logaritmos-1",
+        "stem": "Quanto vale log₄(1/16)?",
+        "options": [
+          "−4",
+          "1/2",
+          "−2",
+          "2"
+        ],
+        "answer": 2,
+        "hint": "Procura o expoente que transforma 4 em 1/16.",
+        "explanation": "O logaritmo é o expoente ao qual se eleva a base para obter o argumento. Como 4^(−2) = 1/16, o valor pedido é −2."
+      },
+      {
+        "id": "up-logaritmos-2",
+        "stem": "Qual é o valor de log₂(6) + log₂(12) − log₂(9)?",
+        "options": [
+          "3",
+          "2",
+          "4",
+          "8"
+        ],
+        "answer": 0,
+        "hint": "Transforma a soma em logaritmo de produto e a subtração em logaritmo de quociente.",
+        "explanation": "As propriedades dão log₂(6 × 12/9) = log₂(8). Como 2³ = 8, a expressão vale 3."
+      },
+      {
+        "id": "up-logaritmos-3",
+        "stem": "Quanto vale log₅(√5)?",
+        "options": [
+          "1/5",
+          "2",
+          "5/2",
+          "1/2"
+        ],
+        "answer": 3,
+        "hint": "Escreve a raiz quadrada como uma potência da base 5.",
+        "explanation": "A raiz √5 é igual a 5^(1/2). Portanto, o expoente procurado pelo logaritmo é 1/2."
+      },
+      {
+        "id": "up-logaritmos-4",
+        "stem": "Para quais valores reais de x a expressão log₃(2x − 6) está definida?",
+        "options": [
+          "x ≥ 3",
+          "x > 3",
+          "x > −3",
+          "Todo x real"
+        ],
+        "answer": 1,
+        "hint": "O argumento de um logaritmo real deve ser estritamente positivo.",
+        "explanation": "É necessário que 2x − 6 > 0. Resolvendo essa desigualdade, obtém-se x > 3; o ponto x = 3 fica excluído porque o argumento seria zero."
+      },
+      {
+        "id": "up-logaritmos-5",
+        "stem": "Numa escala definida por S(x) = log₃(x), com x > 0, uma medição é substituída por 9x. Qual é o aumento S(9x) − S(x)?",
+        "options": [
+          "1",
+          "3",
+          "9",
+          "2"
+        ],
+        "answer": 3,
+        "hint": "Usa a propriedade que transforma a diferença de logaritmos no logaritmo de um quociente.",
+        "explanation": "A diferença é log₃(9x/x) = log₃(9), pois x é positivo. Como 9 = 3², o aumento na escala é sempre 2, independentemente da medição inicial."
+      },
+      {
+        "id": "up-logaritmos-6",
+        "stem": "Para x real com x > 1, resolve log₂(x − 1) + log₂(x + 1) = 3.",
+        "options": [
+          "x = −3",
+          "x = 3",
+          "x = √8",
+          "x = 4"
+        ],
+        "answer": 1,
+        "hint": "Combina os logaritmos em um produto, mantendo a condição x > 1.",
+        "explanation": "A soma equivale a log₂(x² − 1) = 3, logo x² − 1 = 8. As raízes algébricas são −3 e 3, mas apenas x = 3 pertence ao domínio x > 1."
+      },
+      {
+        "id": "up-logaritmos-7",
+        "stem": "Uma população é modelada por N(t) = 600 × (3/2)^t, com t ≥ 0 em horas. Em que instante ela atinge 2.025 indivíduos?",
+        "options": [
+          "3 h",
+          "2 h",
+          "4 h",
+          "4,5 h"
+        ],
+        "answer": 0,
+        "hint": "Divide o valor desejado por 600 e procura uma potência de 3/2.",
+        "explanation": "A razão 2.025/600 é 27/8 = (3/2)³. Como a base 3/2 é maior que 1, o modelo é crescente e atinge esse valor uma única vez, em t = 3 h."
+      },
+      {
+        "id": "up-logaritmos-8",
+        "stem": "No domínio real x > 1, qual é o conjunto de soluções de log_(1/2)(x − 1) > −2?",
+        "options": [
+          "x > 5",
+          "1 < x < 3",
+          "1 < x < 5",
+          "−3 < x < 1"
+        ],
+        "answer": 2,
+        "hint": "Uma base entre 0 e 1 torna a função logarítmica decrescente.",
+        "explanation": "Como a base é 1/2, a desigualdade equivale a x − 1 < (1/2)^(−2) = 4. Juntando isso com x − 1 > 0, resulta 1 < x < 5."
+      },
+      {
+        "id": "up-logaritmos-9",
+        "stem": "A massa de uma substância segue A(t) = 96 × (1/2)^(t/4), com t ≥ 0 em horas. Qual é o primeiro instante em que A(t) ≤ 12?",
+        "options": [
+          "4 h",
+          "12 h",
+          "8 h",
+          "16 h"
+        ],
+        "answer": 1,
+        "hint": "Compara 12/96 com as potências de 1/2 e observa que o modelo é decrescente.",
+        "explanation": "Como 12/96 = 1/8 = (1/2)³, a igualdade ocorre quando t/4 = 3. O modelo é estritamente decrescente, então a condição passa a valer em t = 12 h."
+      },
+      {
+        "id": "up-logaritmos-10",
+        "stem": "Uma escala sonora é definida por L = 10 log₁₀(I/I₀), com intensidades I > 0 e I₀ > 0. Se o nível L aumenta 20 unidades, por qual fator a intensidade I é multiplicada?",
+        "options": [
+          "2",
+          "10",
+          "20",
+          "100"
+        ],
+        "answer": 3,
+        "hint": "Subtrai os níveis inicial e final para obter o logaritmo da razão entre as intensidades.",
+        "explanation": "A diferença dos níveis é 20 = 10 log₁₀(I₂/I₁). Assim, log₁₀(I₂/I₁) = 2 e a razão entre as intensidades é 10² = 100."
+      },
+      {
+        "id": "up-logaritmos-11",
+        "stem": "A base real x satisfaz x > 0 e x ≠ 1. Se logₓ(16) = 2, qual é o valor de x?",
+        "options": [
+          "−4",
+          "2",
+          "4",
+          "8"
+        ],
+        "answer": 2,
+        "hint": "Reescreve a igualdade logarítmica como uma potência e verifica a condição da base.",
+        "explanation": "Pela definição de logaritmo, x² = 16. As raízes são −4 e 4, e somente 4 é uma base positiva permitida."
+      },
+      {
+        "id": "up-logaritmos-12",
+        "stem": "Para x real no domínio 0 < x < 8, qual condição equivale a log₂(x) + log₂(8 − x) ≥ log₂(12)?",
+        "options": [
+          "2 ≤ x ≤ 6",
+          "0 < x ≤ 2 ou 6 ≤ x < 8",
+          "2 < x < 6",
+          "0 < x < 8"
+        ],
+        "answer": 0,
+        "hint": "A base é maior que 1; combina o produto e resolve a desigualdade quadrática resultante.",
+        "explanation": "Como a base 2 é crescente, a desigualdade equivale a x(8 − x) ≥ 12. Isso dá (x − 2)(x − 6) ≤ 0, portanto 2 ≤ x ≤ 6, intervalo inteiramente contido no domínio."
+      }
+    ]
+  },
+  {
+    "id": "matrizes",
+    "title": "Organiza e resolve",
+    "label": "Avançando",
+    "skill": "Operações com matrizes, determinantes e sistemas",
+    "level": 18,
+    "questions": [
+      {
+        "id": "up-matrizes-1",
+        "stem": "A matriz 2 × 2 A tem 1ª linha [2; −1] e 2ª linha [5; 3]. Qual é a entrada a₂₁?",
+        "options": [
+          "2",
+          "5",
+          "−1",
+          "3"
+        ],
+        "answer": 1,
+        "hint": "O primeiro índice indica a linha e o segundo indica a coluna.",
+        "explanation": "A entrada a₂₁ fica na segunda linha e na primeira coluna. Nessa posição está o número 5."
+      },
+      {
+        "id": "up-matrizes-2",
+        "stem": "As matrizes 2 × 2 A e B têm, respectivamente, 1ª linha [1; 4] e 2ª linha [2; −1], e 1ª linha [3; −2] e 2ª linha [0; 5]. Qual é A + B?",
+        "options": [
+          "1ª linha [3; -8]; 2ª linha [0; -5]",
+          "1ª linha [-2; 6]; 2ª linha [2; -6]",
+          "1ª linha [4; 2]; 2ª linha [2; 6]",
+          "1ª linha [4; 2]; 2ª linha [2; 4]"
+        ],
+        "answer": 3,
+        "hint": "Soma entradas que ocupam a mesma linha e a mesma coluna.",
+        "explanation": "A soma de matrizes é feita entrada por entrada. Calculando, a primeira linha é [4; 2] e a segunda é [2; 4]."
+      },
+      {
+        "id": "up-matrizes-3",
+        "stem": "A matriz A tem 1ª linha [2; 0] e 2ª linha [−1; 3]. A matriz B tem 1ª linha [1; 2] e 2ª linha [4; −2]. Qual é a matriz 2A − B?",
+        "options": [
+          "1ª linha [3; -2]; 2ª linha [-6; 8]",
+          "1ª linha [3; 2]; 2ª linha [2; 4]",
+          "1ª linha [5; 2]; 2ª linha [2; 4]",
+          "1ª linha [2; -2]; 2ª linha [-5; 5]"
+        ],
+        "answer": 0,
+        "hint": "Multiplica cada entrada de A por 2 e depois subtrai a entrada correspondente de B.",
+        "explanation": "A matriz 2A tem linhas [4; 0] e [−2; 6]. Subtraindo B, obtêm-se as linhas [3; −2] e [−6; 8]."
+      },
+      {
+        "id": "up-matrizes-4",
+        "stem": "A matriz 2 × 2 A tem 1ª linha [1; 7] e 2ª linha [−2; 4]. Qual é sua transposta Aᵀ?",
+        "options": [
+          "1ª linha [1; 7]; 2ª linha [-2; 4]",
+          "1ª linha [1; 2]; 2ª linha [-7; 4]",
+          "1ª linha [1; -2]; 2ª linha [7; 4]",
+          "1ª linha [4; 7]; 2ª linha [-2; 1]"
+        ],
+        "answer": 2,
+        "hint": "Na transposição, cada linha da matriz original vira uma coluna.",
+        "explanation": "A primeira coluna de Aᵀ é formada pela primeira linha de A, e a segunda coluna pela segunda linha de A. Assim, Aᵀ tem linhas [1; −2] e [7; 4]."
+      },
+      {
+        "id": "up-matrizes-5",
+        "stem": "A matriz A tem 1ª linha [2; 1] e 2ª linha [3; 0]. A matriz B tem 1ª linha [1; 4] e 2ª linha [2; −1]. Qual é a entrada da 1ª linha e 2ª coluna do produto AB?",
+        "options": [
+          "7",
+          "3",
+          "8",
+          "9"
+        ],
+        "answer": 0,
+        "hint": "Multiplica a primeira linha de A pela segunda coluna de B e soma os produtos.",
+        "explanation": "A entrada pedida é o produto da linha [2; 1] pela coluna formada por 4 e −1. Seu valor é 2 × 4 + 1 × (−1) = 7."
+      },
+      {
+        "id": "up-matrizes-6",
+        "stem": "Qual é o determinante da matriz 2 × 2 com 1ª linha [3; 2] e 2ª linha [5; 4]?",
+        "options": [
+          "22",
+          "−2",
+          "2",
+          "7"
+        ],
+        "answer": 2,
+        "hint": "Para uma matriz 2 × 2, subtrai o produto da diagonal secundária do produto da principal.",
+        "explanation": "O determinante é 3 × 4 − 2 × 5. Portanto, seu valor é 12 − 10 = 2."
+      },
+      {
+        "id": "up-matrizes-7",
+        "stem": "A matriz 2 × 2 A tem 1ª linha [k; 2] e 2ª linha [3; 4], com k real. Para qual valor de k ela não possui inversa?",
+        "options": [
+          "2/3",
+          "3/2",
+          "6",
+          "−3/2"
+        ],
+        "answer": 1,
+        "hint": "Uma matriz quadrada não possui inversa quando seu determinante é zero.",
+        "explanation": "O determinante de A é 4k − 6. A matriz não é invertível quando 4k − 6 = 0, isto é, k = 3/2."
+      },
+      {
+        "id": "up-matrizes-8",
+        "stem": "A matriz de coeficientes de um sistema tem 1ª linha [2; 1] e 2ª linha [1; −1]. Os termos independentes são 7 e 2, respectivamente. Qual par (x; y) resolve o sistema?",
+        "options": [
+          "(2; 3)",
+          "(1; 5)",
+          "(4; −1)",
+          "(3; 1)"
+        ],
+        "answer": 3,
+        "hint": "Escreve as equações 2x + y = 7 e x − y = 2 e tenta somá-las.",
+        "explanation": "Somando as equações 2x + y = 7 e x − y = 2, vem 3x = 9. Logo x = 3 e, substituindo na segunda equação, y = 1."
+      },
+      {
+        "id": "up-matrizes-9",
+        "stem": "A matriz 2 × 2 A tem 1ª linha [1; 2] e 2ª linha [3; 7]. Qual é sua inversa A⁻¹?",
+        "options": [
+          "1ª linha [7; 2]; 2ª linha [3; 1]",
+          "1ª linha [1; -2]; 2ª linha [-3; 7]",
+          "1ª linha [7; -2]; 2ª linha [-3; 1]",
+          "1ª linha [-7; 2]; 2ª linha [3; -1]"
+        ],
+        "answer": 2,
+        "hint": "Calcula o determinante, troca as entradas da diagonal principal e muda os sinais das outras duas.",
+        "explanation": "Como det A = 7 − 6 = 1, não é necessário alterar os valores por uma divisão diferente de 1. A inversa tem linhas [7; −2] e [−3; 1], cujo produto por A é a identidade."
+      },
+      {
+        "id": "up-matrizes-10",
+        "stem": "A matriz A tem 1ª linha [1; 1] e 2ª linha [0; 1]. A matriz B tem 1ª linha [2; 0] e 2ª linha [0; 3]. Qual é a matriz AB − BA?",
+        "options": [
+          "1ª linha [0; 1]; 2ª linha [0; 0]",
+          "1ª linha [0; 0]; 2ª linha [0; 0]",
+          "1ª linha [0; -1]; 2ª linha [0; 0]",
+          "1ª linha [2; 3]; 2ª linha [0; 3]"
+        ],
+        "answer": 0,
+        "hint": "Calcula AB e BA separadamente; a ordem dos fatores pode mudar o produto.",
+        "explanation": "O produto AB tem linhas [2; 3] e [0; 3], enquanto BA tem linhas [2; 2] e [0; 3]. Subtraindo, AB − BA tem linhas [0; 1] e [0; 0]."
+      },
+      {
+        "id": "up-matrizes-11",
+        "stem": "Num modelo diário de mudança entre lojas, 80% dos clientes de A ficam em A e 20% vão para B; 10% dos de B vão para A e 90% ficam em B. A matriz que multiplica a coluna de quantidades em A e B tem 1ª linha [0,8; 0,1] e 2ª linha [0,2; 0,9]. Hoje há 100 clientes em A e nenhum em B. Quantos estarão em A após dois dias, segundo o modelo?",
+        "options": [
+          "64",
+          "72",
+          "82",
+          "66"
+        ],
+        "answer": 3,
+        "hint": "Atualiza as duas quantidades após um dia e só então aplica o modelo mais uma vez.",
+        "explanation": "Após um dia, há 80 clientes em A e 20 em B. No segundo dia, A recebe 0,8 × 80 + 0,1 × 20 = 66 clientes."
+      },
+      {
+        "id": "up-matrizes-12",
+        "stem": "Uma fábrica produz lotes A e B usando dois insumos. A matriz de consumo em kg tem 1ª linha [2; 1] e 2ª linha [1; 3], com colunas correspondentes a A e B e linhas aos insumos 1 e 2. Foram gastos exatamente 20 kg do insumo 1 e 25 kg do insumo 2. Se o lucro por lote é R$ 8,00 em A e R$ 10,00 em B, qual é o lucro total?",
+        "options": [
+          "R$ 104,00",
+          "R$ 116,00",
+          "R$ 130,00",
+          "R$ 200,00"
+        ],
+        "answer": 1,
+        "hint": "Traduz o consumo num sistema para as quantidades de lotes A e B antes de calcular o lucro.",
+        "explanation": "As quantidades x e y satisfazem 2x + y = 20 e x + 3y = 25. Resolvendo, x = 7 e y = 6. O lucro é 8 × 7 + 10 × 6 = R$ 116,00."
+      }
+    ]
+  },
+  {
+    "id": "modelos",
+    "title": "Modela e compara",
+    "label": "Desafiador",
+    "skill": "Funções, taxas, restrições e escolha de modelos",
+    "level": 19,
+    "questions": [
+      {
+        "id": "up-modelos-1",
+        "stem": "Uma função afim f, definida para todo x real, satisfaz f(0) = 5 e f(3) = 11. Qual é sua expressão?",
+        "options": [
+          "f(x) = 3x + 5",
+          "f(x) = 2x + 11",
+          "f(x) = 5x + 2",
+          "f(x) = 2x + 5"
+        ],
+        "answer": 3,
+        "hint": "O valor em zero revela o termo constante; usa o outro ponto para achar a taxa de variação.",
+        "explanation": "Escrevendo f(x) = ax + b, obtém-se b = 5. A condição 3a + 5 = 11 dá a = 2, portanto f(x) = 2x + 5."
+      },
+      {
+        "id": "up-modelos-2",
+        "stem": "Dois planos de uso têm custos A(x) = 30 + 4x e B(x) = 60 + 2x, em reais, para x ≥ 0 horas de uso, admitindo valores reais de x. Em que condição o plano A é estritamente mais barato?",
+        "options": [
+          "x > 15",
+          "0 ≤ x ≤ 15",
+          "0 ≤ x < 15",
+          "Todo x ≥ 0"
+        ],
+        "answer": 2,
+        "hint": "Compara os custos por uma desigualdade e mantém a restrição x ≥ 0.",
+        "explanation": "A condição é 30 + 4x < 60 + 2x, que se reduz a 2x < 30. Junto ao domínio, isso dá 0 ≤ x < 15; em 15 horas os preços são iguais."
+      },
+      {
+        "id": "up-modelos-3",
+        "stem": "Um retângulo tem área fixa de 36 cm² e um dos lados mede x cm, com x > 0. Qual expressão dá seu perímetro P(x), em centímetros?",
+        "options": [
+          "P(x) = 2x + 36/x",
+          "P(x) = 2x + 72/x",
+          "P(x) = x + 36/x",
+          "P(x) = 4x + 36"
+        ],
+        "answer": 1,
+        "hint": "Escreve o outro lado a partir da área e depois soma os quatro lados.",
+        "explanation": "O outro lado mede 36/x cm, pois o produto dos lados é 36. O perímetro é 2(x + 36/x) = 2x + 72/x, válido para x > 0."
+      },
+      {
+        "id": "up-modelos-4",
+        "stem": "Uma população tem 500 indivíduos em t = 0, 600 em t = 1 e 720 em t = 2, com t em dias. Admitindo a mesma taxa percentual de crescimento por dia, qual modelo descreve a população para t ≥ 0?",
+        "options": [
+          "N(t) = 500 × (1,2)^t",
+          "N(t) = 500 + 100t",
+          "N(t) = 500 × (0,2)^t",
+          "N(t) = 500 × (1,02)^t"
+        ],
+        "answer": 0,
+        "hint": "Compara as razões entre valores de dias consecutivos, em vez das diferenças.",
+        "explanation": "As razões 600/500 e 720/600 são ambas 1,2. Logo, a população cresce 20% por dia e o modelo é N(t) = 500 × (1,2)^t."
+      },
+      {
+        "id": "up-modelos-5",
+        "stem": "Um frete custa R$ 8,00 para pacotes de até 2 kg, inclusive. Acima disso, acrescentam-se R$ 3,00 por quilograma excedente aos 2 kg, proporcionalmente à massa. Quanto custa enviar um pacote de 5 kg?",
+        "options": [
+          "R$ 15,00",
+          "R$ 23,00",
+          "R$ 17,00",
+          "R$ 24,00"
+        ],
+        "answer": 2,
+        "hint": "A cobrança adicional usa somente a massa que ultrapassa 2 kg.",
+        "explanation": "O pacote excede a faixa inicial em 5 − 2 = 3 kg. O custo é 8 + 3 × 3 = R$ 17,00."
+      },
+      {
+        "id": "up-modelos-6",
+        "stem": "A altura de um objeto é h(t) = −5t² + 20t + 1 metros, para 0 ≤ t ≤ 4 segundos. Em quais instantes desse domínio sua altura é de pelo menos 16 m?",
+        "options": [
+          "1 ≤ t ≤ 3",
+          "0 ≤ t ≤ 4",
+          "1 ≤ t ≤ 4",
+          "0 ≤ t ≤ 1 ou 3 ≤ t ≤ 4"
+        ],
+        "answer": 0,
+        "hint": "Traduz “pelo menos” por ≥ e fatoriza a desigualdade depois de simplificá-la.",
+        "explanation": "A condição h(t) ≥ 16 equivale a t² − 4t + 3 ≤ 0. Como (t − 1)(t − 3) ≤ 0 entre as raízes, a resposta é 1 ≤ t ≤ 3."
+      },
+      {
+        "id": "up-modelos-7",
+        "stem": "Serão preparados 20 L de uma mistura a 25% em volume usando soluções a 10% e a 30% em volume do mesmo componente. Os volumes são aditivos e não há perdas. Quantos litros da solução a 30% devem ser usados?",
+        "options": [
+          "5 L",
+          "10 L",
+          "18 L",
+          "15 L"
+        ],
+        "answer": 3,
+        "hint": "Se x é o volume a 30%, o volume a 10% é 20 − x; iguala a quantidade do componente.",
+        "explanation": "O balanço é 0,30x + 0,10(20 − x) = 0,25 × 20. Simplificando, 0,20x = 3, portanto são necessários 15 L da solução a 30% e 5 L da outra."
+      },
+      {
+        "id": "up-modelos-8",
+        "stem": "Uma oficina vende q peças por dia, a um preço de 80 − 2q reais por peça. Por restrição de capacidade, q é inteiro e 0 ≤ q ≤ 15. Qual é a maior receita diária possível?",
+        "options": [
+          "R$ 650,00",
+          "R$ 750,00",
+          "R$ 800,00",
+          "R$ 1.200,00"
+        ],
+        "answer": 1,
+        "hint": "Modela a receita como quantidade vezes preço e verifica se o vértice está no intervalo permitido.",
+        "explanation": "A receita é R(q) = q(80 − 2q) = −2(q − 20)² + 800. Ela cresce no intervalo permitido de 0 a 15, então o máximo ocorre em q = 15 e vale 15 × 50 = R$ 750,00."
+      },
+      {
+        "id": "up-modelos-9",
+        "stem": "Uma bomba esvazia sozinha um tanque cheio em 6 h. Uma torneira enche sozinha o mesmo tanque vazio em 9 h. Com o tanque inicialmente cheio e ambas funcionando a taxas constantes, em quanto tempo ele fica vazio?",
+        "options": [
+          "18 h",
+          "3 h",
+          "15 h",
+          "54 h"
+        ],
+        "answer": 0,
+        "hint": "Subtrai a taxa de entrada da taxa de saída, medidas em tanques por hora.",
+        "explanation": "A retirada líquida é 1/6 − 1/9 = 1/18 do tanque por hora. Para retirar um tanque inteiro a essa taxa, são necessárias 18 h."
+      },
+      {
+        "id": "up-modelos-10",
+        "stem": "Num trajeto sem paradas, um veículo percorre 30 km a 60 km/h e depois mais 30 km a 90 km/h. Qual é a velocidade média no percurso completo?",
+        "options": [
+          "70 km/h",
+          "72 km/h",
+          "75 km/h",
+          "80 km/h"
+        ],
+        "answer": 1,
+        "hint": "Calcula o tempo de cada trecho e divide a distância total pelo tempo total.",
+        "explanation": "Os tempos são 30/60 = 1/2 h e 30/90 = 1/3 h, somando 5/6 h. Assim, a velocidade média é 60 ÷ (5/6) = 72 km/h."
+      },
+      {
+        "id": "up-modelos-11",
+        "stem": "Uma população segue N(t) = 400a^t, com a > 0 e t ≥ 0 em anos. Sabe-se que N(2) = 900. Qual é a população prevista para t = 3?",
+        "options": [
+          "1.200 indivíduos",
+          "1.300 indivíduos",
+          "1.350 indivíduos",
+          "2.025 indivíduos"
+        ],
+        "answer": 2,
+        "hint": "Primeiro determina o fator a usando o dado de dois anos e a condição a > 0.",
+        "explanation": "O dado fornece a² = 900/400 = 9/4, então a = 3/2 por ser positivo. Portanto, N(3) = 400 × (3/2)³ = 1.350 indivíduos."
+      },
+      {
+        "id": "up-modelos-12",
+        "stem": "Uma empresa prepara caixas A e B. Cada A consome 2 kg de matéria-prima e dá lucro de R$ 5,00; cada B consome 3 kg e dá lucro de R$ 8,00. Há 18 kg disponíveis, podem ser preparadas no máximo 7 caixas e no máximo 4 delas podem ser B. As quantidades são inteiras não negativas. Qual é o maior lucro possível?",
+        "options": [
+          "R$ 44,00",
+          "R$ 45,00",
+          "R$ 46,00",
+          "R$ 47,00"
+        ],
+        "answer": 3,
+        "hint": "Verifica combinações que usam bem a matéria-prima sem violar os dois limites de quantidade.",
+        "explanation": "Com x caixas A e y caixas B, o lucro é 5x + 8y = 2,5(2x + 3y) + 0,5y. Como 2x + 3y ≤ 18 e y ≤ 4, ele não passa de R$ 47,00. O par x = 3 e y = 4 usa 18 kg, totaliza 7 caixas e alcança esse lucro."
+      }
+    ]
+  },
+  {
+    "id": "integracao",
+    "title": "Desafio final",
+    "label": "Desafiador +",
+    "skill": "Integrar conteúdos em problemas de várias etapas",
+    "level": 20,
+    "questions": [
+      {
+        "id": "up-integracao-1",
+        "stem": "Um tanque retangular mede internamente 2 m por 1,2 m por 1,5 m e contém água em 75% de sua capacidade. Retira-se um terço da água que estava nele e depois acrescentam-se 200 L. Quantos litros ficam no tanque? Usa 1 m³ = 1.000 L.",
+        "options": [
+          "2.000 L",
+          "1.800 L",
+          "2.700 L",
+          "2.900 L"
+        ],
+        "answer": 0,
+        "hint": "Calcula a capacidade em litros; a fração retirada incide sobre a água inicial, não sobre a capacidade.",
+        "explanation": "A capacidade é 2 × 1,2 × 1,5 = 3,6 m³, ou 3.600 L, e o volume inicial é 2.700 L. Após a retirada de um terço, restam dois terços de 2.700 L, isto é, 1.800 L. Acrescentando 200 L, ficam 2.000 L."
+      },
+      {
+        "id": "up-integracao-2",
+        "stem": "Uma moeda equilibrada escolhe a urna: cara leva à urna A, com 3 bolas azuis e 2 vermelhas; coroa leva à urna B, com 1 azul e 3 vermelhas. Depois, retira-se uma bola ao acaso da urna escolhida, com todas as bolas dela igualmente prováveis. Qual é a probabilidade de sair azul?",
+        "options": [
+          "3/10",
+          "4/9",
+          "17/40",
+          "1/2"
+        ],
+        "answer": 2,
+        "hint": "Considera separadamente os dois caminhos que podem resultar numa bola azul.",
+        "explanation": "A probabilidade é (1/2) × (3/5) + (1/2) × (1/4). Somando os dois caminhos mutuamente exclusivos, obtém-se 17/40."
+      },
+      {
+        "id": "up-integracao-3",
+        "stem": "Uma equipe produz 120 peças, das quais 5% têm defeito. Outra produz 80 peças, das quais 10% têm defeito. Qual é o percentual de peças defeituosas na produção reunida das duas equipes?",
+        "options": [
+          "5%",
+          "7%",
+          "7,5%",
+          "15%"
+        ],
+        "answer": 1,
+        "hint": "Descobre as quantidades de defeitos em cada grupo antes de calcular o percentual conjunto.",
+        "explanation": "A primeira equipe tem 6 peças defeituosas e a segunda tem 8. Assim, são 14 defeituosas em 200 peças, ou 14/200 = 7%."
+      },
+      {
+        "id": "up-integracao-4",
+        "stem": "Uma embalagem tem a forma de um prisma reto de altura 5 cm, cuja base é um hexágono regular de lado 2 cm. Qual é seu volume? Usa sen 60° = √3/2.",
+        "options": [
+          "10√3 cm³",
+          "20√3 cm³",
+          "60√3 cm³",
+          "30√3 cm³"
+        ],
+        "answer": 3,
+        "hint": "Divide a base em seis triângulos equiláteros antes de calcular o volume do prisma.",
+        "explanation": "O hexágono regular pode ser dividido em seis triângulos equiláteros de lado 2 cm. Cada um tem área (1/2) × 2 × 2 × sen 60° = √3 cm², então a área da base é 6√3 cm². O volume é 6√3 × 5 = 30√3 cm³."
+      },
+      {
+        "id": "up-integracao-5",
+        "stem": "Uma máquina produz 50 peças no primeiro dia e dobra sua produção a cada novo dia. Toda a produção dos primeiros quatro dias será colocada em caixas de 25 peças, sem sobras. Quantas caixas completas serão necessárias?",
+        "options": [
+          "16",
+          "30",
+          "28",
+          "32"
+        ],
+        "answer": 1,
+        "hint": "Soma os quatro termos da progressão geométrica antes de dividir pela capacidade da caixa.",
+        "explanation": "As produções são 50, 100, 200 e 400 peças, totalizando 750. Como cada caixa contém 25 peças, serão necessárias 750/25 = 30 caixas."
+      },
+      {
+        "id": "up-integracao-6",
+        "stem": "Os quatro dados 2, 4, 4 e 6 são transformados pela regra y = 3x + 1. Qual é a variância populacional dos dados transformados? Considera a média dos quadrados dos desvios, usando divisor 4.",
+        "options": [
+          "6",
+          "9",
+          "19",
+          "18"
+        ],
+        "answer": 3,
+        "hint": "Somar uma constante não muda os desvios; multiplicar os dados por 3 multiplica os desvios por 3.",
+        "explanation": "Os dados originais têm média 4 e variância (4 + 0 + 0 + 4)/4 = 2. A transformação multiplica os desvios por 3, então a variância é multiplicada por 9. Logo, a nova variância é 18."
+      },
+      {
+        "id": "up-integracao-7",
+        "stem": "O lucro P(n), em centenas de reais, é P(n) = −n² + 10n − 16, em que n é um número inteiro de lotes entre 0 e 10. Quantos valores de n geram lucro de pelo menos R$ 500,00?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "7"
+        ],
+        "answer": 2,
+        "hint": "Na unidade da função, R$ 500,00 corresponde a 5; resolve a desigualdade e conta os inteiros admissíveis.",
+        "explanation": "A condição é −n² + 10n − 16 ≥ 5, equivalente a (n − 3)(n − 7) ≤ 0. Portanto, os valores possíveis são 3, 4, 5, 6 e 7, totalizando 5."
+      },
+      {
+        "id": "up-integracao-8",
+        "stem": "Uma remessa contém apenas kits A, cada um com 2 cadernos e 1 caneta, e kits B, cada um com 1 caderno e 3 canetas. No total, a remessa tem 17 cadernos e 16 canetas. Escolhem-se dois kits ao acaso, sem reposição, todos os kits com a mesma chance em cada retirada. Qual é a probabilidade de ambos serem B?",
+        "options": [
+          "1/15",
+          "9/100",
+          "1/10",
+          "3/10"
+        ],
+        "answer": 0,
+        "hint": "Resolve o sistema para descobrir a quantidade de cada kit; depois considera as duas retiradas sem reposição.",
+        "explanation": "As quantidades satisfazem 2x + y = 17 e x + 3y = 16, cuja solução é x = 7 e y = 3. Há 10 kits, dos quais 3 são B, então a probabilidade é (3/10) × (2/9) = 1/15."
+      },
+      {
+        "id": "up-integracao-9",
+        "stem": "Um reservatório cilíndrico de raio interno 1 m e altura 2 m está cheio. Uma bomba retira 50 L/min enquanto uma entrada fornece 10 L/min. As duas vazões permanecem constantes até o tanque esvaziar. Em quanto tempo isso ocorre? Usa π = 3 e 1 m³ = 1.000 L.",
+        "options": [
+          "100 min",
+          "120 min",
+          "200 min",
+          "150 min"
+        ],
+        "answer": 3,
+        "hint": "Calcula o volume em litros e divide pela vazão líquida de saída.",
+        "explanation": "O volume inicial é πr²h = 3 × 1² × 2 = 6 m³, ou 6.000 L. A saída líquida é 50 − 10 = 40 L/min, então o esvaziamento leva 6.000/40 = 150 min."
+      },
+      {
+        "id": "up-integracao-10",
+        "stem": "A aresta de um cubo aumenta 20%. Quais são, respectivamente, os aumentos percentuais da área total e do volume desse cubo?",
+        "options": [
+          "44% e 72,8%",
+          "20% e 20%",
+          "40% e 60%",
+          "44% e 60%"
+        ],
+        "answer": 0,
+        "hint": "As áreas acompanham o quadrado do fator de escala e os volumes acompanham o cubo.",
+        "explanation": "O fator linear é 1,2, então a área é multiplicada por 1,2² = 1,44 e o volume por 1,2³ = 1,728. Os aumentos correspondentes são 44% e 72,8%."
+      },
+      {
+        "id": "up-integracao-11",
+        "stem": "A superfície superior retangular de uma rampa reta sobe 3 m e faz 30° com a horizontal. Sua largura é 2 m. Ela será revestida com placas de 30 cm por 40 cm, desprezando rejuntes e perdas de corte. O planejamento compra 10% a mais que a quantidade calculada pela área. Quantas placas devem ser compradas?",
+        "options": [
+          "100",
+          "110",
+          "120",
+          "200"
+        ],
+        "answer": 1,
+        "hint": "Encontra o comprimento inclinado usando o seno; converte a área de uma placa para metros quadrados.",
+        "explanation": "O comprimento inclinado é 3/sen 30° = 6 m, logo a área da rampa é 12 m². Cada placa tem área 0,30 × 0,40 = 0,12 m², o que exige 100 placas pela área. Com 10% extras, devem ser compradas 110 placas."
+      },
+      {
+        "id": "up-integracao-12",
+        "stem": "Uma arquibancada tem 12 lugares na primeira fileira e 2 lugares a mais em cada fileira seguinte. Todos os lugares foram colocados à venda por R$ 25,00 cada. Exatamente 90% deles foram vendidos, gerando receita de R$ 4.050,00. Quantas fileiras tem a arquibancada?",
+        "options": [
+          "8",
+          "10",
+          "9",
+          "12"
+        ],
+        "answer": 2,
+        "hint": "Usa a soma de uma PA para o total de lugares e relaciona esse total com a receita e os 90% vendidos.",
+        "explanation": "Com n fileiras, a soma dos lugares é n[24 + 2(n − 1)]/2 = n(n + 11). A receita dá 0,9 × 25 × n(n + 11) = 4.050, logo n(n + 11) = 180. A equação (n − 9)(n + 20) = 0 tem uma única raiz positiva, n = 9."
+      }
+    ]
+  }
+]
