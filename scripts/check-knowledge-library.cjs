@@ -1,10 +1,12 @@
 'use strict';
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),crypto=require('node:crypto');
 const c=vm.createContext({console,document:{getElementById:()=>null},URLSearchParams});
-for(const f of ['thinkers-data.js','thinkers-index.js','thinkers.js','enem-layout.js','enem-solutions.js'])vm.runInContext(fs.readFileSync(f,'utf8'),c,{filename:f});
+for(const f of ['thinkers-data.js','thinkers-index.js','thinkers.js','enem-layout.js','enem-solutions.js','linguagens-solutions.js'])vm.runInContext(fs.readFileSync(f,'utf8'),c,{filename:f});
 const people=c.FURG_THINKERS_DATA,index=c.FURG_THINKERS_INDEX,bank=JSON.parse(fs.readFileSync('enem-data.json','utf8')).questions,questions=new Map(bank.map(q=>[q.id,q]));
 const originals=JSON.parse(fs.readFileSync('tests/fixtures/thinkers-v1.json','utf8'));
-assert.equal(people.length,208);assert.equal(new Set(people.map(p=>p.id)).size,208);assert.equal(new Set(people.map(p=>p.name)).size,208);
+assert(!index.profiles['219'].references.some(r=>r.questionId==='enem-2009-106'),'M. F. Fernandes is not a confirmed mention of Millôr Fernandes');
+assert(!index.profiles[String(people.find(p=>p.name==='Milton Santos').id)].references.some(r=>r.type==='direct'&&r.questionId==='enem-2020-79'),'An extended bibliographic signature must not be shortened to another author');
+assert.equal(people.length,224);assert.equal(new Set(people.map(p=>p.id)).size,224);assert.equal(new Set(people.map(p=>p.name)).size,224);
 for(const old of originals){const current=people.find(p=>p.id===old.id);assert(current,old.name);for(const[key,value]of Object.entries(old))assert.equal(JSON.stringify(current[key]),JSON.stringify(value),old.name+': '+key);}
 for(const p of people){for(const field of ['name','fullName','area','period','movement','idea','details','connections','work','wiki'])assert(typeof p[field]==='string'&&p[field].trim(),p.name+': '+field);assert(p.concepts.length>=2);assert(p.sources.length);for(const s of p.sources)assert.equal(new URL(s.url).protocol,'https:');for(const related of p.related)assert(people.some(p=>p.id===related));}
 assert.equal(index.totalQuestions,3833);assert.deepEqual(Array.from(index.years),Array.from({length:28},(_,i)=>1998+i));
@@ -51,6 +53,6 @@ const html=fs.readFileSync('index.html','utf8');assert(html.includes('id="biblio
  assert(c.FurgThinkers.matches(person('Epicuro'),{...filters,query:'epicuro',area:'Filosofia',period:'Antiguidade',movement:'Epicurismo',frequency:'1-2',type:'direct'}));
  assert(!c.FurgThinkers.matches(person('Epicuro'),{...filters,query:'epicuro',frequency:'6+'}));
  assert(!c.FurgThinkers.matches(person('Frantz Fanon'),{...filters,query:'',type:'direct'}));
- console.log('PASS: 208 unique profiles, all 40 originals preserved; '+references+' traceable links, direct/work/concept separation, counterexamples, exact years and reverse graph.');
- console.log('PASS: idea/work search and combined filters; all 3833 question texts and objects unchanged; multi-source and recent inline layouts, 34 guarded authored solutions, lazy library data and safe rendering.');
+ console.log('PASS: 224 unique profiles, all 40 originals preserved; '+references+' traceable links, direct/work/concept separation, counterexamples, exact years and reverse graph.');
+ console.log('PASS: idea/work search and combined filters; all 3833 question texts and objects unchanged; multi-source and recent inline layouts, 66 guarded authored solutions, lazy library data and safe rendering.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

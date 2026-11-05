@@ -1,10 +1,14 @@
-# FURG Questões
+# BriniouzStudy
 
 Site publicado: https://briniouz.github.io/FurgQuest-es/
 
-O site inclui o **acervo completo do ENEM regular de 1998 a 2025**, com 3.833 itens, e simulados anuais de 2010 a 2025. O arquivo de prévia para download usa uma amostra; o banco publicado usa todas as questões.
+Biblioteca de autores, obras e ideias, com **224 perfis**, **32 guias de Linguagens**, questões reais, botão de voltar e alternativas que podem ser riscadas. [Documentação da revisão](docs/linguagens.md).
 
-Banco com 2.091 questões históricas de 2000–2010, provas e gabaritos em PDF, texto selecionável, simulados, favoritos, anotações e progresso no navegador. A área Leituras contém seis resumos ampliados, trechos originais comentados e 60 exercícios autorais. As trilhas incluem 595 flashcards básicos.
+O aplicativo local preserva FURG/COPERSE, o acervo FURG e as seis leituras originais. No site, essas entradas ficam reservadas ao aplicativo; ENEM, Fuvest e os recursos gerais de estudo continuam disponíveis. As chaves de progresso existentes foram mantidas.
+
+O site inclui o **acervo do ENEM regular de 1998 a 2025 disponível no repositório**, com 3.833 itens, e simulados anuais de 2010 a 2025. O arquivo de prévia para download usa uma amostra; o banco publicado usa todas as questões.
+
+Banco com 2.091 questões históricas de 2000–2010, provas e gabaritos em PDF, texto selecionável, simulados, favoritos, anotações e progresso no navegador. A área Leituras contém seis resumos ampliados, trechos originais comentados e 60 exercícios autorais. As trilhas incluem 720 flashcards.
 
 ## Como atualizar sem enviar lotes de 100 arquivos
 
@@ -106,18 +110,18 @@ O resultado informa acertos, erros, itens em branco e anulados por área, sem es
 
 `enem-sim.js` e `enem-sim.css` implementam o recurso. A amostra `Previa-ENEM.html` inclui 2025 inteiro para testar as duas línguas e os dois dias; o pacote completo oferece todos os 16 anos. O simulado personalizado da FURG continua disponível. As mudanças integram a versão publicada do site.
 
-## Level Up · protótipo de matemática
+## Level Up · prática de matemática
 
-A aba **Level Up** (`#evolucao`) tem 30 questões autorais em 10 níveis. Começa com uma soma extremamente simples e avança por operações, frações, proporção, porcentagem, equações, geometria, potências/logaritmos, funções e desafios de integração. A classificação é pedagógica, sem equivalência oficial com provas.
+A aba **Level Up** (`#evolucao`) tem 240 questões autorais em 20 níveis, organizadas em rodadas de três questões. Começa com uma soma extremamente simples e avança por operações, frações, proporção, porcentagem, equações, geometria, potências/logaritmos, funções e desafios de integração. A classificação é pedagógica, sem equivalência oficial com provas.
 
-Cada questão oferece dica e explicação. Resolver as três questões da etapa libera a seguinte. O XP é calculado pelas conquistas únicas (10 por questão e 20 por etapa, até 500), sem duplicar em revisões. O progresso fica no navegador e acompanha o JSON de exportação/importação existente. Arquivos antigos continuam compatíveis.
+Cada questão oferece dica e explicação. Resolver as três questões da etapa libera a seguinte. O XP é calculado pelas conquistas únicas, sem duplicar em revisões. Novas rodadas preservam os acertos já conquistados. O progresso fica no navegador e acompanha o JSON de exportação/importação existente. Arquivos antigos continuam compatíveis.
 
-Fuvest, EsPCEx, ITA e IME são etapas futuras; nenhuma questão dessas provas foi importada para o protótipo.
+O Level Up utiliza questões autorais. O banco de Fuvest fica em sua própria seção; EsPCEx, ITA e IME não fazem parte desse percurso.
 
 As 49 trilhas de Matemática incluem explicação breve e exemplo autoral resolvido em três passos, com resultado e tabelas para matrizes. O exemplo fica aberto inicialmente e pode ser recolhido.
 
 
-## Atualização do repertório ENEM — novembro de 2026
+## Origem da galeria de 40 perfis — registro histórico
 
 Na área **Estudos → Resumos literários** (`#leituras`), a galeria complementar apresenta **40 perfis** de autores, filósofos, sociólogos, artistas e referências para o ENEM, com busca, filtros, retratos quando disponíveis, obras de referência e conceitos centrais. As seis leituras receberam um quadro com os principais pontos para revisão e busca de imagens de capa em catálogos públicos, com fallback visual.
 
@@ -125,6 +129,6 @@ Arquivos desta atualização: `thinkers-data.js`, `thinkers.js`, `thinkers.css`,
 
 ## Biblioteca ENEM: pessoas, obras e conceitos
 
-A área **Biblioteca ENEM** reúne 208 perfis em português, preservando os 40 originais. Busca por ideias e obras, filtros combinados e vínculos com questões reais distinguem citações nominais, obras sem nome e conexões conceituais sugeridas. O banco e os simulados também receberam áreas próprias para apoio, fonte, comando e resolução, sem alterar o conteúdo das questões. Há 34 comentários autorais iniciais; os demais itens informam quando ainda não há resolução comentada.
+A área **Biblioteca ENEM** reúne 224 perfis em português, preservando os 40 originais. Busca por ideias e obras, filtros combinados e vínculos com questões reais distinguem citações nominais, obras sem nome e conexões conceituais sugeridas. O banco e os simulados também receberam áreas próprias para apoio, fonte, comando e resolução, sem alterar o conteúdo das questões. Há 66 comentários autorais; os demais itens informam quando ainda não há resolução comentada.
 
 Método, limites, manutenção e testes: [docs/biblioteca-enem.md](docs/biblioteca-enem.md). Índice de auditoria: [docs/enem-library-audit.json](docs/enem-library-audit.json).

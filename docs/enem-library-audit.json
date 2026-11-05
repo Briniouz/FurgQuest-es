@@ -1,7 +1,7 @@
 {
-  "profiles": 208,
+  "profiles": 224,
   "originalProfiles": 40,
-  "newProfiles": 168,
+  "newProfiles": 184,
   "questions": 3833,
   "years": [
     1998,
@@ -33,11 +33,11 @@
     2024,
     2025
   ],
-  "profilesWithDirectMentions": 157,
-  "nominalLinks": 530,
+  "profilesWithDirectMentions": 170,
+  "nominalLinks": 545,
   "workLinks": 14,
   "suggestedLinks": 17,
-  "linkedQuestions": 480,
+  "linkedQuestions": 493,
   "method": "Uma classificação por personalidade/questão: nome, depois obra sem nome, depois conexão conceitual. Nomes em alternativas são identificados como tais. Sugestões conceituais são amostras didáticas, não aparições nem estatística oficial. Busca textual conservadora, sujeita a lacunas de transcrição e homônimos; consulte o trecho e o original.",
   "byProfile": [
     {
@@ -352,7 +352,7 @@
     {
       "id": 27,
       "name": "Milton Santos",
-      "directCount": 12,
+      "directCount": 9,
       "workCount": 0,
       "conceptCount": 1,
       "directYears": [
@@ -361,8 +361,6 @@
         2012,
         2013,
         2015,
-        2018,
-        2020,
         2022,
         2023,
         2024
@@ -1196,13 +1194,12 @@
     {
       "id": 105,
       "name": "Antônio Vieira",
-      "directCount": 3,
+      "directCount": 2,
       "workCount": 0,
       "conceptCount": 0,
       "directYears": [
         2011,
-        2012,
-        2024
+        2012
       ]
     },
     {
@@ -1354,7 +1351,7 @@
     {
       "id": 118,
       "name": "Mário de Andrade",
-      "directCount": 8,
+      "directCount": 7,
       "workCount": 0,
       "conceptCount": 0,
       "directYears": [
@@ -1362,7 +1359,6 @@
         2005,
         2007,
         2012,
-        2020,
         2023
       ]
     },
@@ -1495,12 +1491,11 @@
     {
       "id": 129,
       "name": "Lygia Fagundes Telles",
-      "directCount": 2,
+      "directCount": 1,
       "workCount": 0,
       "conceptCount": 0,
       "directYears": [
-        2015,
-        2021
+        2015
       ]
     },
     {
@@ -1563,13 +1558,12 @@
     {
       "id": 135,
       "name": "Adélia Prado",
-      "directCount": 3,
+      "directCount": 2,
       "workCount": 0,
       "conceptCount": 0,
       "directYears": [
         1999,
-        2013,
-        2014
+        2013
       ]
     },
     {
@@ -2280,12 +2274,11 @@
     {
       "id": 203,
       "name": "Jorge Luis Borges",
-      "directCount": 3,
+      "directCount": 2,
       "workCount": 0,
       "conceptCount": 0,
       "directYears": [
         2005,
-        2013,
         2021
       ]
     },
@@ -2326,6 +2319,164 @@
     {
       "id": 208,
       "name": "Beatriz Nascimento",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 209,
+      "name": "Gilka Machado",
+      "directCount": 3,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2011,
+        2025
+      ]
+    },
+    {
+      "id": 210,
+      "name": "Alice Ruiz",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2024
+      ]
+    },
+    {
+      "id": 211,
+      "name": "Roseana Murray",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2025
+      ]
+    },
+    {
+      "id": 212,
+      "name": "Visconde de Taunay",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2025
+      ]
+    },
+    {
+      "id": 213,
+      "name": "Marcelino Freire",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2016,
+        2025
+      ]
+    },
+    {
+      "id": 214,
+      "name": "José Paulo Paes",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2015
+      ]
+    },
+    {
+      "id": 215,
+      "name": "Cora Coralina",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2020
+      ]
+    },
+    {
+      "id": 216,
+      "name": "Mário Quintana",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2003,
+        2012
+      ]
+    },
+    {
+      "id": 217,
+      "name": "Ana Cristina Cesar",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2016
+      ]
+    },
+    {
+      "id": 218,
+      "name": "João Ubaldo Ribeiro",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 219,
+      "name": "Millôr Fernandes",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2017
+      ]
+    },
+    {
+      "id": 220,
+      "name": "Stella Maris Bortoni-Ricardo",
+      "directCount": 2,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2009
+      ]
+    },
+    {
+      "id": 221,
+      "name": "Ingedore Villaça Koch",
+      "directCount": 0,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": []
+    },
+    {
+      "id": 222,
+      "name": "Ana Elisa Ribeiro",
+      "directCount": 6,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": 223,
+      "name": "Dalton Paula",
+      "directCount": 1,
+      "workCount": 0,
+      "conceptCount": 0,
+      "directYears": [
+        2025
+      ]
+    },
+    {
+      "id": 224,
+      "name": "Rosana Paulino",
       "directCount": 0,
       "workCount": 0,
       "conceptCount": 0,

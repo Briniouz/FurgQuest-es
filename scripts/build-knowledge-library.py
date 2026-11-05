@@ -25,6 +25,10 @@ def snippet(raw,positions,match):
  start=positions[match.start()];end=positions[match.end()-1]+1
  left=max(0,start-65);right=min(len(raw),max(end+65,left+145))
  return {'start':start,'end':end,'text':raw[start:end],'excerpt':raw[left:right]}
+def complete_initials(raw,positions,match):
+ # A citation to FERNANDES, M. F. must not become a confirmed citation to Millôr.
+ # Do not accept a shorter initial alias as the prefix of a longer signature.
+ return not (len(normalized(match.group()).split()[-1])==1 and re.match(r'^\.\s*[A-ZÀ-ÖØ-Ý]\.',raw[positions[match.end()-1]+1:]))
 
 catalog=load('scripts/personality-catalog.json')
 corpus=load('enem-data.json')
@@ -61,6 +65,10 @@ for person in profiles:
  # Bibliographic surnames with the first initial: never match a bare common surname.
  if len(words)>1 and last not in {'andrade','rosa','barros','tavares','holanda','assis','caminha','verissimo','machado','neto','junior','nascimento','rio','moraes','teixeira','santos','ribeiro','castro','alves'}:
   aliases += [last+', '+words[0][0]+'.',last+'. '+words[0][0]+'.']
+ initials=[w[0] for w in words[:-1] if w not in {'de','da','do','das','dos','e'}]
+ if len(initials)>1:
+  signature=' '.join(i+'.' for i in initials)
+  aliases += [last+', '+signature,last+'. '+signature]
  names=pattern(aliases)
  works=[]
  for title in person['works']:
@@ -73,7 +81,7 @@ for person in profiles:
  for q in questions:
   found=None
   for field,raw,text,positions in fields[q['id']]:
-   match=names.search(text) if names else None
+   match=next((m for m in names.finditer(text) if complete_initials(raw,positions,m)),None) if names else None
    if match:
     found={'questionId':q['id'],'type':'direct','field':field,'evidence':snippet(raw,positions,match),'reason':'Nome identificado no texto da questão.' if not field.startswith('alternative:') else 'Nome citado em alternativa; a alternativa pode ser um distrator.'};break
   if found:direct.append(found);continue

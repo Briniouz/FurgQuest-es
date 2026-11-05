@@ -1,0 +1,1422 @@
+{
+  "version": 1,
+  "language": "pt-BR",
+  "scope": "Guias autorais e seleção didática de questões. Relação com um conceito ou leitura sugerida não comprova citação de uma personalidade nem mede frequência no ENEM.",
+  "groups": [
+    "Leitura e argumentação",
+    "Língua em uso",
+    "Literatura",
+    "Artes e cultura",
+    "Corpo e mídia",
+    "Línguas estrangeiras"
+  ],
+  "topics": [
+    {
+      "id": "interpretacao",
+      "group": "Leitura e argumentação",
+      "title": "Interpretação, inferência e finalidade",
+      "summary": "A resposta precisa explicar o que o texto permite concluir e qual tarefa o comando propõe.",
+      "points": [
+        "Tema é o assunto; tese é uma posição sobre ele. Finalidade é o que o texto busca realizar naquela situação.",
+        "Inferir é relacionar pistas para chegar a uma conclusão sustentada, mesmo quando ela não está escrita literalmente.",
+        "Lê o comando, localiza a passagem decisiva e confere o alcance da alternativa: ela não pode afirmar mais do que o texto permite."
+      ],
+      "tip": "Transforma o comando em uma pergunta curta: o autor informa, critica, compara, convida ou explica?",
+      "trap": "Uma frase pode ser verdadeira no mundo e ainda assim não responder ao comando. Desconfia de ampliações como sempre, apenas e todos quando o texto não as sustenta.",
+      "example": {
+        "text": "O aviso diz: “A biblioteca fecha às 18h. A devolução pode ser feita na caixa externa durante a noite.”",
+        "explanation": "É possível inferir que uma devolução noturna não exige entrar na biblioteca. Não é possível concluir que todos os serviços funcionam à noite.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        221,
+        185
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-9",
+          "reason": "Identifica a conclusão da autora sobre a convivência entre formas de escrita."
+        }
+      ],
+      "terms": [
+        "sentido",
+        "implícito",
+        "objetivo",
+        "comando"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        },
+        {
+          "label": "Ceale — textualidade",
+          "url": "https://ceale.fae.ufmg.br/glossarioceale/verbetes/textualidade"
+        }
+      ]
+    },
+    {
+      "id": "argumentacao",
+      "group": "Leitura e argumentação",
+      "title": "Tese e estratégias de argumentação",
+      "summary": "Não basta reconhecer a opinião: identifica como o texto tenta torná-la convincente.",
+      "points": [
+        "Tese é a posição defendida. Argumentos são razões mobilizadas para sustentá-la.",
+        "Dados, exemplos, comparações, causas e consequências, enumerações e referências de autoridade podem organizar a persuasão.",
+        "Uma citação não é automaticamente o argumento central; é preciso ver que papel ela desempenha."
+      ],
+      "tip": "Completa mentalmente: “O texto defende que... e sustenta isso por meio de...”.",
+      "trap": "Não escolhe a alternativa só porque ela nomeia um recurso que existe. O comando pode pedir a estratégia predominante ou uma passagem específica.",
+      "example": {
+        "text": "“A escola deve ampliar a biblioteca: a medida facilita o empréstimo, diversifica as leituras e cria um espaço de encontro.”",
+        "explanation": "A proposta é sustentada pela enumeração de benefícios. O exemplo não apresenta pesquisa estatística nem fala de especialista.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        221,
+        148
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-44",
+          "reason": "Examina a estratégia usada para defender a leitura na primeira infância."
+        }
+      ],
+      "terms": [
+        "tese",
+        "persuasão",
+        "argumento",
+        "enumeração"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "humor",
+      "group": "Leitura e argumentação",
+      "title": "Humor, ironia e crítica",
+      "summary": "O efeito depende de uma expectativa e da maneira como o texto a desloca.",
+      "points": [
+        "A ironia pode construir um sentido diferente ou contrário ao elogio aparente, conforme o contexto.",
+        "Humor também pode nascer de ambiguidade, quebra de expectativa, exagero e contraste entre palavra e imagem.",
+        "Pergunta quem ou o que está sendo criticado e qual detalhe permite reconhecer a crítica."
+      ],
+      "tip": "Explica o mecanismo: “é engraçado porque o leitor espera X, mas encontra Y”.",
+      "trap": "Nem toda frase negativa é irônica, e nem todo texto engraçado faz a mesma crítica social.",
+      "example": {
+        "text": "Após três horas na fila, a personagem comenta: “Que atendimento relâmpago!”.",
+        "explanation": "O contexto de espera prolongada transforma a rapidez aparente em crítica à demora. Isolada, a frase permitiria outra leitura.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        219,
+        149,
+        214
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-25",
+          "reason": "Observa como o cronista emprega as expressões automatizadas que ele próprio critica."
+        }
+      ],
+      "terms": [
+        "ironia",
+        "sátira",
+        "charge",
+        "tirinha"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "polissemia",
+      "group": "Língua em uso",
+      "title": "Polissemia e ambiguidade",
+      "summary": "Uma mesma forma pode ativar sentidos diferentes; o contexto e a relação entre eles são decisivos.",
+      "points": [
+        "Polissemia envolve sentidos relacionados de uma palavra. Ambiguidade é a possibilidade de mais de uma interpretação de um enunciado.",
+        "O duplo sentido pode ser um recurso intencional de publicidade, poesia e humor, e não um defeito automático.",
+        "Localiza os sentidos ativados e explica a função da aproximação."
+      ],
+      "tip": "Substitui mentalmente a palavra por cada sentido possível e vê o que se altera no argumento.",
+      "trap": "Reconhecer duas definições no dicionário não explica sozinho o efeito que elas produzem naquele texto.",
+      "example": {
+        "text": "“No mutirão de leitura, cada livro abriu uma nova página na vida do bairro.”",
+        "explanation": "Página remete à parte material do livro e, na expressão, a uma etapa de vida. A aproximação valoriza uma transformação coletiva.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        211,
+        182
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-31",
+          "reason": "Investiga a articulação dos sentidos de rede; consulta também a imagem original do texto."
+        }
+      ],
+      "terms": [
+        "ambiguidade",
+        "duplo sentido",
+        "rede",
+        "semântica"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "multimodalidade",
+      "group": "Língua em uso",
+      "title": "Texto verbal, imagem e multimodalidade",
+      "summary": "Imagem, palavras, cores, disposição e tipografia podem construir sentidos em conjunto.",
+      "points": [
+        "O verbal não precisa repetir a imagem: pode explicá-la, restringir uma leitura, contrastar com ela ou completá-la.",
+        "A disposição de elementos na página também orienta o percurso do leitor.",
+        "Identifica o que cada recurso acrescenta e explica a relação entre eles."
+      ],
+      "tip": "Lê título, legenda e imagem juntos antes de escolher uma alternativa que se apoia em apenas um elemento.",
+      "trap": "Evita atribuir um significado universal a uma cor ou a um desenho sem apoio no contexto.",
+      "example": {
+        "text": "Um cartaz mostra uma torneira seca e, abaixo, a frase “Amanhã também precisa de água”.",
+        "explanation": "A imagem concretiza a escassez; a frase projeta a consequência no futuro. A persuasão resulta da combinação.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        222,
+        182
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-45",
+          "reason": "Analisa a função do texto verbal em relação à ilustração, preservada no banco."
+        }
+      ],
+      "terms": [
+        "não verbal",
+        "verbal",
+        "cartaz",
+        "infográfico",
+        "visual"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        },
+        {
+          "label": "Ceale — texto",
+          "url": "https://ceale.fae.ufmg.br/glossarioceale/verbetes/texto"
+        }
+      ]
+    },
+    {
+      "id": "intertextualidade",
+      "group": "Leitura e argumentação",
+      "title": "Intertextualidade, paródia e releitura",
+      "summary": "Um texto ou uma obra pode retomar outros para produzir continuidade, contraste, homenagem ou crítica.",
+      "points": [
+        "A referência pode aparecer por citação, alusão, título, imagem ou estrutura reconhecível.",
+        "Paródia é uma retomada transformadora que pode deslocar criticamente o texto anterior; não é qualquer referência.",
+        "A questão pede o efeito da retomada, e não apenas a identificação de sua origem."
+      ],
+      "tip": "Compara o contexto novo com o anterior: o que é preservado e o que muda de sentido?",
+      "trap": "Não confunde intertextualidade com metalinguagem. Um texto pode retomar outro sem explicar o funcionamento da própria linguagem.",
+      "example": {
+        "text": "Um cartaz de feira de livros adapta o provérbio para “Quem lê, seus horizontes amplia”.",
+        "explanation": "A forma reconhecível do provérbio é reaproveitada para valorizar a leitura. A finalidade depende do novo contexto de circulação.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        183,
+        38,
+        219
+      ],
+      "questions": [
+        {
+          "id": "enem-2024-37",
+          "reason": "Reconhece a retomada de canções como recurso na defesa da importância da música."
+        }
+      ],
+      "terms": [
+        "paráfrase",
+        "paródia",
+        "alusão",
+        "releitura"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "funcoes",
+      "group": "Língua em uso",
+      "title": "As seis funções da linguagem",
+      "summary": "Identifica o foco predominante da comunicação, sem supor que um texto tenha somente uma função.",
+      "points": [
+        "Referencial: informação sobre o contexto. Emotiva: expressão do enunciador. Conativa: orientação ao interlocutor.",
+        "Fática: abertura ou manutenção do contato. Metalinguística: a linguagem examina o próprio código. Poética: atenção à organização expressiva da mensagem.",
+        "Função poética não se limita a poemas; função emotiva não depende apenas de aparecer a primeira pessoa."
+      ],
+      "tip": "Relaciona a função ao objetivo e ao efeito do trecho destacado pelo comando.",
+      "trap": "Um anúncio pode informar e persuadir ao mesmo tempo. A presença de dados não garante que a função predominante seja referencial.",
+      "example": {
+        "text": "“Alô, tu me ouve?” verifica o contato. “Substantivo é uma classe de palavras” usa a língua para falar da própria língua.",
+        "explanation": "O primeiro exemplo destaca a função fática; o segundo, a metalinguística. A análise deve considerar a situação completa.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        182,
+        222
+      ],
+      "questions": [
+        {
+          "id": "enem-2024-13",
+          "reason": "Relaciona o propósito informativo e os dados do texto à função referencial."
+        }
+      ],
+      "terms": [
+        "referencial",
+        "emotiva",
+        "conativa",
+        "apelativa",
+        "fática",
+        "metalinguagem",
+        "poética"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "variacao",
+      "group": "Língua em uso",
+      "title": "Variação linguística",
+      "summary": "Línguas variam no tempo, no espaço, entre grupos e conforme a situação comunicativa.",
+      "points": [
+        "Variação regional: diferenças entre localidades. Social: relações com grupos e trajetórias. Histórica: mudanças ao longo do tempo.",
+        "O registro também varia com interlocutores, finalidade e grau de formalidade da situação.",
+        "Uma variedade tem organização e usos próprios; diferença não demonstra inferioridade intelectual."
+      ],
+      "tip": "Identifica o fator de variação pedido e observa as pistas do contexto, sem reduzir toda diferença à região.",
+      "trap": "Não confunde variedade popular com falta de regras. Também não conclui que todos os registros servem igualmente a qualquer situação.",
+      "example": {
+        "text": "Um estudante diz “bah, que frio” em conversa com amigos e escreve uma solicitação formal à direção.",
+        "explanation": "A marca regional e a escolha de registro são dimensões diferentes e podem coexistir no repertório do mesmo falante.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        184,
+        220
+      ],
+      "questions": [
+        {
+          "id": "enem-2024-14",
+          "reason": "Analisa expressões maranhenses como parte da diversidade do português brasileiro."
+        }
+      ],
+      "terms": [
+        "regionalismo",
+        "sociolinguística",
+        "dialeto",
+        "diatópica",
+        "diastrática",
+        "diafásica",
+        "diacrônica"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        },
+        {
+          "label": "Ceale — variação linguística",
+          "url": "https://ceale.fae.ufmg.br/glossarioceale/verbetes/variacao-linguistica"
+        }
+      ]
+    },
+    {
+      "id": "registro",
+      "group": "Língua em uso",
+      "title": "Norma-padrão e adequação de registro",
+      "summary": "A questão costuma relacionar escolhas linguísticas ao gênero e à situação de uso.",
+      "points": [
+        "Norma-padrão é uma referência de codificação; não corresponde à totalidade das formas de falar e escrever.",
+        "Registros formais e informais atendem a diferentes relações entre interlocutores e propósitos.",
+        "Valorizar a diversidade e aprender práticas formais são objetivos compatíveis."
+      ],
+      "tip": "Pergunta onde o texto circula, para quem é produzido e que compromisso institucional estabelece.",
+      "trap": "A formalidade de uma lei não prova que seu público é formado apenas por especialistas.",
+      "example": {
+        "text": "Uma mensagem a um amigo pode usar abreviações; um requerimento administrativo exige outra organização.",
+        "explanation": "A diferença é de adequação à situação. Não torna um dos interlocutores mais inteligente.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        220,
+        184
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-13",
+          "reason": "Relaciona o uso da norma-padrão às características de um texto legal."
+        }
+      ],
+      "terms": [
+        "norma culta",
+        "formalidade",
+        "registro",
+        "adequação"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "preconceito",
+      "group": "Língua em uso",
+      "title": "Preconceito linguístico e identidade",
+      "summary": "Julgar negativamente uma fala pode funcionar como forma de discriminação de seus falantes.",
+      "points": [
+        "O prestígio de uma variedade é uma construção social, não uma medida natural da capacidade de seus usuários.",
+        "Práticas linguísticas podem expressar pertencimento, memória e resistência.",
+        "Preservação envolve comunidades e transmissão; não exige que todas as línguas estejam registradas por escrito."
+      ],
+      "tip": "Procura a relação entre avaliações da língua, posições sociais e reconhecimento de identidades.",
+      "trap": "Não escolhe a valorização de uma variedade com base na ideia de que ela seria a única forma legítima de falar.",
+      "example": {
+        "text": "Um personagem é chamado de incapaz por usar palavras de sua comunidade, embora todos tenham entendido o recado.",
+        "explanation": "O julgamento desqualifica o grupo pela fala, em vez de analisar a eficácia da comunicação.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        184,
+        220
+      ],
+      "questions": [
+        {
+          "id": "enem-2024-12",
+          "reason": "Relaciona a preservação da Língua da Tabatinga ao pertencimento e à identidade."
+        }
+      ],
+      "terms": [
+        "discriminação",
+        "pertencimento",
+        "estigma",
+        "variedade"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "generos",
+      "group": "Língua em uso",
+      "title": "Gêneros discursivos e tipos textuais",
+      "summary": "Forma, circulação e finalidade ajudam a reconhecer gêneros; narração e descrição são modos de organização.",
+      "points": [
+        "Notícia, receita, artigo de opinião, carta e poema são exemplos de gêneros ligados a práticas sociais.",
+        "Narração, descrição, exposição, argumentação e injunção podem se combinar dentro do mesmo gênero.",
+        "Um poema pode imitar uma receita ou uma carta sem deixar de produzir efeitos poéticos."
+      ],
+      "tip": "Evita decidir somente pelo formato visual: investiga o que o texto faz com aquela forma.",
+      "trap": "O verbo no imperativo não basta para classificar todo texto como receita ou instrução.",
+      "example": {
+        "text": "“Receita de domingo: duas xícaras de silêncio e uma conversa sem pressa.”",
+        "explanation": "A organização lembra instruções, mas os ingredientes figurados constroem uma recriação poética do gênero.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        183,
+        185,
+        211
+      ],
+      "questions": [
+        {
+          "id": "enem-2024-42",
+          "reason": "Distingue marcas de carta e receita da linguagem expressiva que estrutura o poema."
+        }
+      ],
+      "terms": [
+        "gêneros textuais",
+        "tipologia",
+        "injunção",
+        "receita",
+        "notícia"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        },
+        {
+          "label": "Ceale — gêneros do discurso",
+          "url": "https://ceale.fae.ufmg.br/glossarioceale/verbetes/generos-do-discurso"
+        }
+      ]
+    },
+    {
+      "id": "coesao",
+      "group": "Língua em uso",
+      "title": "Coesão e progressão temática",
+      "summary": "Repetições, retomadas e conectores orientam como as partes do texto se relacionam.",
+      "points": [
+        "Pronomes, nomes e expressões podem retomar ou antecipar referentes. Verifica a que elemento se ligam.",
+        "Conectores constroem relações como oposição, causa, conclusão e concessão, conforme o uso concreto.",
+        "Repetir pode ser produtivo: pode criar ritmo, dar ênfase ou reorganizar um tema."
+      ],
+      "tip": "Reconstitui a relação entre o trecho destacado e o que vem antes e depois.",
+      "trap": "Não trata toda repetição como erro ou toda ocorrência de uma conjunção como portadora do mesmo sentido.",
+      "example": {
+        "text": "“O projeto é pequeno, mas mobilizou a escola. Essa iniciativa já reúne três turmas.”",
+        "explanation": "Mas contrapõe tamanho e alcance; essa iniciativa retoma o projeto. A retomada permite acrescentar informação sem reiniciar o assunto.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        221,
+        185
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-17",
+          "reason": "Investiga o papel da repetição de antes de na construção das memórias da narradora."
+        }
+      ],
+      "terms": [
+        "coerência",
+        "conectivo",
+        "pronome",
+        "retomada",
+        "referenciação"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        },
+        {
+          "label": "Ceale — coesão textual",
+          "url": "https://ceale.fae.ufmg.br/glossarioceale/verbetes/coesao-textual"
+        }
+      ]
+    },
+    {
+      "id": "figuras",
+      "group": "Leitura e argumentação",
+      "title": "Conotação e figuras de linguagem",
+      "summary": "O efeito de sentido importa mais do que decorar o nome do recurso.",
+      "points": [
+        "Metáfora aproxima por semelhança sem exigir comparação explícita; metonímia mobiliza uma relação de proximidade.",
+        "Personificação atribui ações ou traços humanos a outros seres. Hipérbole intensifica por exagero.",
+        "Antítese aproxima opostos; paradoxo produz uma tensão aparentemente contraditória. Os recursos podem coexistir."
+      ],
+      "tip": "Depois de nomear a figura, completa: “ela constrói a ideia de...”.",
+      "trap": "Uma imagem de natureza pode representar um conflito humano. Não precisa ser descrição literal da paisagem.",
+      "example": {
+        "text": "“A cidade engoliu o último ônibus.”",
+        "explanation": "A atribuição de engolir à cidade produz personificação e pode construir uma imagem de desaparecimento no espaço urbano.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        209,
+        121,
+        138
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-16",
+          "reason": "Analisa a relação metafórica entre o conflito amoroso e as imagens de mar e rocha."
+        }
+      ],
+      "terms": [
+        "metáfora",
+        "metonímia",
+        "hipérbole",
+        "personificação",
+        "antítese",
+        "paradoxo",
+        "conotação"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "narrador",
+      "group": "Literatura",
+      "title": "Narrador, vozes e ponto de vista",
+      "summary": "Quem narra, quem fala e quem escreve a obra são instâncias que precisam ser diferenciadas.",
+      "points": [
+        "Narrador em primeira pessoa participa da enunciação como eu; terceira pessoa pode acompanhar diferentes perspectivas.",
+        "A descrição seleciona traços e avaliações, podendo criar simpatia, desconfiança, humor ou crítica.",
+        "Discurso direto, indireto e indireto livre organizam diferentes relações entre voz narrativa e fala das personagens."
+      ],
+      "tip": "Procura palavras avaliativas e identifica a perspectiva a que pertencem.",
+      "trap": "Não atribui automaticamente ao autor a opinião de um narrador ou de uma personagem.",
+      "example": {
+        "text": "“Chegou o senhor impecável: sapatos brilhando e a desculpa de sempre para não pagar ninguém.”",
+        "explanation": "A descrição contrapõe aparência e conduta e cria uma avaliação irônica. Não é um retrato inteiramente neutro.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        32,
+        34,
+        218,
+        213
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-40",
+          "reason": "Relaciona escolhas descritivas à construção de uma ambiência de escárnio."
+        }
+      ],
+      "terms": [
+        "foco narrativo",
+        "discurso indireto livre",
+        "personagem",
+        "voz"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "eu-lirico",
+      "group": "Literatura",
+      "title": "Eu lírico, ritmo e construção poética",
+      "summary": "A voz do poema não se confunde automaticamente com a pessoa que o escreveu.",
+      "points": [
+        "Repetições, pausas, sons, versos e imagens participam da expressão de uma experiência.",
+        "A forma não é um enfeite separado do tema: pode intensificar, contradizer ou reorganizar o que se diz.",
+        "Um poema não precisa ter rima para ser poema, nem apresentar um sentimento autobiográfico do autor."
+      ],
+      "tip": "Observa o que retorna e como a repetição muda ou intensifica o sentido.",
+      "trap": "Uma alternativa que apenas cita um elemento presente pode não explicar o efeito pedido pelo comando.",
+      "example": {
+        "text": "“Volta, tarde. Volta, rua. Volta o passo que não volta.”",
+        "explanation": "A repetição constrói o desejo de retorno, mas o último segmento introduz sua impossibilidade.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        117,
+        121,
+        210,
+        209
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-28",
+          "reason": "Analisa a insistência da voz poética diante da irreversibilidade da morte."
+        }
+      ],
+      "terms": [
+        "verso",
+        "rima",
+        "ritmo",
+        "soneto",
+        "subjetividade"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "barroco-arcadismo",
+      "group": "Literatura",
+      "title": "Barroco e Arcadismo: tensões e contrastes",
+      "summary": "Compara projetos de linguagem; evita usar uma lista de traços como resposta automática.",
+      "points": [
+        "No Barroco, contrastes, elaboração retórica e tensões entre experiência terrena e valores religiosos podem estruturar o texto.",
+        "No Arcadismo, referências clássicas, vida pastoril idealizada e busca de simplicidade formam um repertório importante.",
+        "Gregório de Matos também produz sátira política; Tomás Antônio Gonzaga não deve ser reduzido a uma paisagem rural genérica."
+      ],
+      "tip": "Relaciona o recurso observado à crítica, ao conflito ou à idealização que o texto constrói.",
+      "trap": "Uma referência religiosa não torna automaticamente um texto Barroco. O contexto e a elaboração da linguagem precisam ser examinados.",
+      "example": {
+        "text": "Um poema opõe a pressa da cidade a um campo idealizado; outro aproxima termos religiosos de uma crítica ao governante.",
+        "explanation": "As relações podem lembrar projetos diferentes. É necessário verificar linguagem, contexto e finalidade, não apenas o tema campo ou religião.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        104,
+        105,
+        106
+      ],
+      "questions": [
+        {
+          "id": "enem-2014-113",
+          "reason": "Exemplo de crítica política em um soneto barroco; o contraste com o Arcadismo é uma proposta de estudo."
+        }
+      ],
+      "terms": [
+        "cultismo",
+        "conceptismo",
+        "bucolismo",
+        "fugere urbem",
+        "carpe diem",
+        "árcade"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "romantismo",
+      "group": "Literatura",
+      "title": "Romantismo: idealização, nação e conflitos",
+      "summary": "A literatura romântica reúne diferentes projetos; o texto precisa mostrar qual está em jogo.",
+      "points": [
+        "Nacionalismo, natureza, indianismo e idealização amorosa são repertórios relevantes, com diferenças entre autores e gêneros.",
+        "A poesia ultrarromântica enfatiza outros conflitos; a vertente social e condoreira mobiliza uma voz de intervenção.",
+        "Romances também permitem observar relações familiares, hierarquias e o lugar atribuído às mulheres."
+      ],
+      "tip": "Identifica quem tem voz, quem decide e como a narrativa representa as personagens.",
+      "trap": "Idealização romântica não significa que toda personagem feminina tenha autonomia ou que toda obra defenda os mesmos valores.",
+      "example": {
+        "text": "Em uma narrativa hipotética, o pai negocia o casamento, enquanto a jovem quase não participa da conversa.",
+        "explanation": "A organização da cena pode evidenciar protagonismo masculino e limitação da autonomia feminina, mesmo em uma história de amor.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        107,
+        108,
+        109,
+        110,
+        212
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-11",
+          "reason": "Observa os valores reproduzidos pelo pai de Inocência ao tratar do casamento da filha."
+        }
+      ],
+      "terms": [
+        "indianismo",
+        "ultrarromantismo",
+        "condoreirismo",
+        "idealização",
+        "patriarcalismo"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "realismo-naturalismo",
+      "group": "Literatura",
+      "title": "Realismo e Naturalismo",
+      "summary": "Crítica social, construção do narrador e representação de condicionamentos pedem leituras diferentes.",
+      "points": [
+        "No Realismo, examina relações sociais, interesses e perspectivas narrativas, sem reduzir a obra a uma cópia fiel do mundo.",
+        "Machado de Assis explora ironia, digressão, metalinguagem e vozes que exigem avaliação crítica.",
+        "No Naturalismo, são importantes as representações de meio, hereditariedade, corporeidade e personagens coletivas; elas exprimem concepções históricas que podem ser criticadas."
+      ],
+      "tip": "Explica como a forma do trecho produz o efeito: enumeração, animalização, comentário do narrador ou contraste.",
+      "trap": "Não endossa determinismos biológicos ou raciais porque aparecem em uma obra. Analisa-os como representações historicamente situadas.",
+      "example": {
+        "text": "Um narrador interrompe a história e avisa ao leitor que omitirá a parte mais emocionante.",
+        "explanation": "O comentário expõe a construção da narrativa e pode contrariar a expectativa do leitor, em vez de oferecer um relato transparente.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        32,
+        111
+      ],
+      "questions": [
+        {
+          "id": "enem-2022-33",
+          "reason": "Analisa a enumeração em um trecho de Memórias póstumas de Brás Cubas."
+        },
+        {
+          "id": "enem-2011-117",
+          "reason": "Examina a representação da música e das personagens coletivas em O cortiço."
+        }
+      ],
+      "terms": [
+        "digressão",
+        "determinismo",
+        "animalização",
+        "zoomorfização",
+        "Machado",
+        "Aluísio"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "simbolismo",
+      "group": "Literatura",
+      "title": "Simbolismo e sugestão de sentidos",
+      "summary": "Sons, sensações e símbolos podem transformar experiências subjetivas em imagens.",
+      "points": [
+        "Musicalidade, sugestão, aproximação de sensações e imagens simbólicas são recursos frequentes, sem serem exclusivos da escola.",
+        "O símbolo não é um código universal que autoriza qualquer interpretação: a rede de imagens do poema orienta a leitura.",
+        "Cruz e Sousa e Gilka Machado ajudam a estudar caminhos distintos dessa elaboração."
+      ],
+      "tip": "Relaciona a imagem a um conflito ou estado do eu lírico, apoiando a interpretação em outras passagens.",
+      "trap": "Não basta encontrar uma palavra abstrata ou uma referência noturna para classificar o texto ou resolver a questão.",
+      "example": {
+        "text": "“A noite costura no quarto um silêncio azul.”",
+        "explanation": "A aproximação entre cor, silêncio e ação sugere uma experiência sensorial e subjetiva; não descreve uma costura literal.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        113,
+        209
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-16",
+          "reason": "Lê como os símbolos mar e rocha representam uma relação afetiva."
+        }
+      ],
+      "terms": [
+        "sinestesia",
+        "musicalidade",
+        "símbolo",
+        "sugestão"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "modernismo",
+      "group": "Literatura",
+      "title": "Modernismo e Antropofagia",
+      "summary": "Ruptura, experimentação e discussão do Brasil não significam rejeição simples de tudo que veio antes.",
+      "points": [
+        "Os modernismos brasileiros mobilizam linguagem cotidiana, experimentação formal e revisão crítica de imagens nacionais.",
+        "A Antropofagia propõe reelaborar influências, e não apenas copiar modelos ou recusar qualquer contato cultural.",
+        "Oswald e Mário de Andrade têm projetos distintos. Uma escola não apaga diferenças entre obras e autores."
+      ],
+      "tip": "Procura o efeito da ruptura e a relação entre forma artística, tradição e recepção do público.",
+      "trap": "Não trata modernismo como simples ausência de regras nem confunde antropofagia artística com seu sentido literal.",
+      "example": {
+        "text": "Um poema mistura fala cotidiana e referências de origens diversas para construir uma imagem crítica do país.",
+        "explanation": "A combinação pode indicar transformação criadora de repertórios, não falta de elaboração ou mera cópia estrangeira.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        38,
+        118,
+        117,
+        39
+      ],
+      "questions": [
+        {
+          "id": "enem-2019-13",
+          "reason": "Examina a ironia de Oswald de Andrade sobre a recepção conservadora das vanguardas."
+        }
+      ],
+      "terms": [
+        "Semana de 22",
+        "antropofagia",
+        "ruptura",
+        "coloquialidade",
+        "vanguarda"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "regionalismo",
+      "group": "Literatura",
+      "title": "Romance de 1930 e regionalismos",
+      "summary": "Espaços locais podem revelar conflitos sociais e humanos de alcance amplo.",
+      "points": [
+        "Graciliano Ramos, Rachel de Queiroz e José Lins do Rego apresentam projetos próprios; não são intercambiáveis.",
+        "Condições de trabalho, relações de poder, deslocamentos e formas de linguagem participam da elaboração do mundo ficcional.",
+        "Em Guimarães Rosa, a invenção verbal também transforma a experiência regional; o sertão não é só cenário."
+      ],
+      "tip": "Lê a relação entre experiência social e forma de dizer, evitando escolher somente o tema seca.",
+      "trap": "Um trecho de romance regionalista pode cobrar reflexão sobre a escrita, e não uma característica social genérica.",
+      "example": {
+        "text": "Duas personagens discutem se uma história deve conservar a fala cotidiana ou adotar uma linguagem rebuscada.",
+        "explanation": "A cena desloca a atenção do cenário para as concepções de literatura e para o conflito de registros.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        37,
+        124,
+        198,
+        125
+      ],
+      "questions": [
+        {
+          "id": "enem-2024-24",
+          "reason": "Lê o debate entre preciosismo e coloquialidade em São Bernardo."
+        }
+      ],
+      "terms": [
+        "romance de 30",
+        "regionalismo",
+        "sertão",
+        "linguagem literária"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "literatura-memoria",
+      "group": "Literatura",
+      "title": "Literatura negra, memória e autoria",
+      "summary": "Memória, experiência e criação literária podem questionar apagamentos históricos.",
+      "points": [
+        "Escrevivência, em Conceição Evaristo, relaciona experiência e criação sem transformar toda ficção em autobiografia literal.",
+        "A tradição oral pode transmitir história e pertencimento, mesmo quando uma personagem não compreende todas as palavras de um canto.",
+        "A autoria negra não é uma escola homogênea: cada obra constrói sua própria voz e forma."
+      ],
+      "tip": "Observa que história é preservada, quem a transmite e como a linguagem faz isso.",
+      "trap": "Não reduz textos de autores negros a documentos sem elaboração estética ou a uma única temática.",
+      "example": {
+        "text": "Uma personagem aprende uma cantiga com a avó e a repete ao voltar para casa, mesmo sem conhecer todo o vocabulário.",
+        "explanation": "A transmissão do canto pode manter um vínculo coletivo e afetivo. O desconhecimento parcial das palavras não elimina seu valor cultural.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        36,
+        35,
+        213,
+        215
+      ],
+      "questions": [
+        {
+          "id": "enem-2023-22",
+          "reason": "Analisa a tradição oral e a ancestralidade africana em Ponciá Vicêncio."
+        }
+      ],
+      "terms": [
+        "escrevivência",
+        "ancestralidade",
+        "literatura afro-brasileira",
+        "memória"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "vanguardas",
+      "group": "Artes e cultura",
+      "title": "Vanguardas e arte contemporânea",
+      "summary": "Técnica, material, espaço e relação com a tradição podem fazer parte do sentido da obra.",
+      "points": [
+        "Cubismo, Surrealismo e Dadaísmo não são sinônimos. Investiga a operação visual ou conceitual apresentada.",
+        "No ready-made, a escolha e o deslocamento de um objeto cotidiano desafiam critérios estabelecidos de arte.",
+        "Instalação e participação podem modificar o papel do público e o espaço da experiência artística."
+      ],
+      "tip": "Pergunta o que a obra coloca em discussão ao escolher aquele material ou modo de apresentação.",
+      "trap": "Arte que não imita fielmente um objeto não é, por isso, tecnicamente incapaz ou desprovida de sentido.",
+      "example": {
+        "text": "Um objeto industrial é retirado de seu uso habitual e apresentado em uma exposição com um novo título.",
+        "explanation": "O gesto pode deslocar a discussão da habilidade manual para seleção, contexto e critérios de reconhecimento artístico.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        164,
+        165,
+        166,
+        159,
+        160,
+        161
+      ],
+      "questions": [
+        {
+          "id": "enem-2022-44",
+          "reason": "Estuda o diálogo de uma instalação com o ready-made e os valores estéticos estabelecidos."
+        }
+      ],
+      "terms": [
+        "ready-made",
+        "cubismo",
+        "surrealismo",
+        "dadaísmo",
+        "instalação"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "arte-identidade",
+      "group": "Artes e cultura",
+      "title": "Arte, identidade e representatividade",
+      "summary": "A escolha de quem aparece nas imagens participa da construção da memória social.",
+      "points": [
+        "O retrato não é apenas reprodução: envolve seleção de pessoas, atributos, posição e reconhecimento.",
+        "Revisitar arquivos e imagens pode questionar silenciamentos de grupos sociais.",
+        "Analisa também materialidade e forma; representatividade não dispensa leitura visual."
+      ],
+      "tip": "Pergunta quem foi historicamente representado e o que muda com a obra apresentada.",
+      "trap": "Não confunde dar visibilidade a uma trajetória com garantir automaticamente ascensão econômica ou encerrar a desigualdade.",
+      "example": {
+        "text": "Uma exposição dedica retratos nomeados a lideranças antes ausentes da galeria oficial de uma cidade.",
+        "explanation": "A seleção amplia o repertório de pessoas reconhecidas publicamente e pode interrogar a memória institucional.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        223,
+        224,
+        155
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-15",
+          "reason": "Relaciona os retratos de Dalton Paula à afirmação de identidade social."
+        }
+      ],
+      "terms": [
+        "representatividade",
+        "retrato",
+        "memória",
+        "arquivo"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        },
+        {
+          "label": "MASP — Dalton Paula",
+          "url": "https://masp.org.br/exposicoes/dalton-paula"
+        }
+      ]
+    },
+    {
+      "id": "musica",
+      "group": "Artes e cultura",
+      "title": "Canção, rap e oralidade",
+      "summary": "Letra, ritmo, voz e circulação social podem construir um projeto cultural.",
+      "points": [
+        "A letra é um texto, mas a canção também envolve voz e som. O comando delimita o recurso em análise.",
+        "Rap, samba, tropicalismo e outras manifestações têm histórias e disputas próprias.",
+        "A apropriação de uma forma por outra comunidade pode produzir criação e resistência, sem apagar sua identidade."
+      ],
+      "tip": "Relaciona a escolha da linguagem musical à voz social e ao contexto apresentado.",
+      "trap": "Contato entre repertórios não significa necessariamente abandono da cultura de origem.",
+      "example": {
+        "text": "Um grupo cria rap em sua língua indígena e aborda a defesa do território.",
+        "explanation": "A forma urbana contemporânea se articula a experiências e reivindicações indígenas; a combinação não implica perda automática de identidade.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        170,
+        171,
+        179,
+        180,
+        40
+      ],
+      "questions": [
+        {
+          "id": "enem-2023-38",
+          "reason": "Examina o encontro entre rap e repertórios culturais dos povos originários."
+        }
+      ],
+      "terms": [
+        "rap",
+        "hip-hop",
+        "samba",
+        "tropicalismo",
+        "oralidade"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "cena-danca",
+      "group": "Artes e cultura",
+      "title": "Teatro, dança e diálogo cultural",
+      "summary": "Corpos, espaço, gestos e relações entre repertórios participam da produção de sentidos.",
+      "points": [
+        "Teatro não se reduz ao texto escrito: encenação, corpo, voz e público compõem a experiência.",
+        "A dança pode reelaborar tradições e fazer dialogar linguagens de grupos diferentes.",
+        "Uma recriação não é simples cópia: observa o que ela transforma e como o faz."
+      ],
+      "tip": "Compara os elementos preservados e transformados, sem pressupor uma hierarquia natural entre erudito e popular.",
+      "trap": "Não conclui que uma forma artística é superior porque está em um museu, em um palco tradicional ou em uma competição.",
+      "example": {
+        "text": "Uma coreografia antes encenada com sapatilhas ganha movimentos de dança de rua e outro figurino.",
+        "explanation": "A mudança pode ampliar possibilidades expressivas pelo encontro de repertórios, em vez de apenas empobrecer uma suposta forma correta.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        163,
+        147
+      ],
+      "questions": [
+        {
+          "id": "enem-2021-23",
+          "reason": "Compara a releitura de A morte do cisne a seu repertório de origem."
+        }
+      ],
+      "terms": [
+        "coreografia",
+        "performance",
+        "encenação",
+        "street dance",
+        "cultura corporal"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "corpo-esporte",
+      "group": "Corpo e mídia",
+      "title": "Esporte, inclusão e práticas corporais",
+      "summary": "O corpo também é linguagem e participa de práticas sociais, culturais e políticas.",
+      "points": [
+        "Práticas corporais incluem esporte, dança, jogos, lutas e outras experiências; não são apenas desempenho físico.",
+        "Inclusão pode envolver adaptação, acesso, participação e políticas públicas.",
+        "O sentido de uma prática depende também de seu contexto e das relações entre participantes."
+      ],
+      "tip": "Identifica que barreira ou possibilidade de participação o texto apresenta.",
+      "trap": "Uma iniciativa inclusiva não precisa ter como finalidade principal ganhar medalhas ou produzir atletas profissionais.",
+      "example": {
+        "text": "Uma escola modifica regras e materiais para que estudantes com diferentes condições de mobilidade participem de um jogo.",
+        "explanation": "A adaptação amplia participação. A prática não se torna inferior apenas por não reproduzir regras do alto rendimento.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [],
+      "questions": [
+        {
+          "id": "enem-2025-12",
+          "reason": "Analisa a relação entre parasurf, política pública e inclusão."
+        },
+        {
+          "id": "enem-2023-6",
+          "reason": "Investiga o valor de cooperação acrescentado ao lema olímpico."
+        }
+      ],
+      "terms": [
+        "educação física",
+        "acessibilidade",
+        "cooperação",
+        "parasurf"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "corpo-midia",
+      "group": "Corpo e mídia",
+      "title": "Corpo, padrões de beleza e mídia esportiva",
+      "summary": "Imagens do sucesso e do corpo ideal podem ocultar condições de vida e produzir pressões sociais.",
+      "points": [
+        "A análise crítica relaciona representações midiáticas, interesses e consequências, sem transformar toda mídia em uma prática idêntica.",
+        "Padrões corporais são históricos e sociais; não constituem uma medida neutra do valor das pessoas.",
+        "O alto rendimento tem condições de preparação que uma narrativa de superação pode deixar invisíveis."
+      ],
+      "tip": "Observa o que a imagem de sucesso destaca e o que o texto afirma que ela apaga.",
+      "trap": "Criticar uma representação não equivale a rejeitar toda prática esportiva ou desvalorizar atletas.",
+      "example": {
+        "text": "Um vídeo exibe somente o pódio e anuncia que alcançar o mesmo resultado depende apenas de querer.",
+        "explanation": "O recorte pode apagar acesso a treino, apoio, tempo e condições materiais, além das dificuldades pessoais.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [],
+      "questions": [
+        {
+          "id": "enem-2025-18",
+          "reason": "Examina a crítica à invisibilidade das dificuldades do alto rendimento."
+        },
+        {
+          "id": "enem-2025-35",
+          "reason": "Investiga a estratégia usada para apresentar a vigilância sobre o corpo feminino."
+        }
+      ],
+      "terms": [
+        "estereótipo",
+        "padrão de beleza",
+        "mídia",
+        "espetacularização"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "tecnologias",
+      "group": "Corpo e mídia",
+      "title": "Tecnologias, suporte e circulação",
+      "summary": "Meios e ferramentas mudam práticas de leitura e escrita, sem exigir que tudo que existia desapareça.",
+      "points": [
+        "Suporte é a base material ou tecnológica de circulação; gênero é uma forma de prática comunicativa. Não são a mesma coisa.",
+        "Tecnologias podem coexistir, adaptar-se e assumir novas funções.",
+        "Avalia acesso, autoria, participação e circulação, em vez de supor progresso ou prejuízo automático."
+      ],
+      "tip": "Verifica se o texto descreve substituição, coexistência, adaptação ou conflito entre meios.",
+      "trap": "Uma linha do tempo não demonstra, sozinha, que a tecnologia mais nova eliminou as anteriores.",
+      "example": {
+        "text": "O grupo recebe o convite pelo celular, mas assina um mural em papel ao chegar ao encontro.",
+        "explanation": "Suportes diferentes atendem a práticas distintas na mesma situação. A convivência não é contradição.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        222,
+        185
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-9",
+          "reason": "Lê a conclusão sobre manuscrito e escrita digital."
+        },
+        {
+          "id": "enem-2025-39",
+          "reason": "Investiga a permanência e a transformação do rádio."
+        }
+      ],
+      "terms": [
+        "letramento digital",
+        "suporte",
+        "podcast",
+        "tecnologia",
+        "multiletramentos"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "patrimonio",
+      "group": "Artes e cultura",
+      "title": "Patrimônio linguístico e cultural",
+      "summary": "Práticas, palavras e memórias transmitidas por comunidades podem constituir patrimônio.",
+      "points": [
+        "A dimensão imaterial inclui saberes, celebrações, expressões e modos de fazer; não se limita a objetos ou construções.",
+        "A preservação envolve continuidade e transmissão, mas uma cultura não precisa ficar congelada para existir.",
+        "O contato entre línguas e repertórios participa da formação cultural brasileira."
+      ],
+      "tip": "Localiza que memória é transmitida, por quem e com qual vínculo de pertencimento.",
+      "trap": "Não confunde patrimônio com uma origem cultural única, pura ou livre de transformações.",
+      "example": {
+        "text": "Uma comunidade ensina aos mais novos cantos e palavras usados em celebrações locais.",
+        "explanation": "A prática pode transmitir memória e identidade mesmo sem um registro escrito de todas as palavras.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        28,
+        183,
+        220
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-20",
+          "reason": "Analisa o repertório de origem africana preservado em práticas religiosas."
+        },
+        {
+          "id": "enem-2023-22",
+          "reason": "Relaciona cantiga e ancestralidade em uma narrativa literária."
+        }
+      ],
+      "terms": [
+        "patrimônio imaterial",
+        "tradição oral",
+        "identidade",
+        "línguas africanas"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "ingles",
+      "group": "Línguas estrangeiras",
+      "title": "Inglês: sentido, propósito e contexto",
+      "summary": "A leitura é global e situada: não exige traduzir palavra por palavra para reconhecer a ideia central.",
+      "points": [
+        "Lê título, fonte, imagens e comando; procura o tema e a posição construída.",
+        "Conectores como but, however, because e therefore orientam relações. Negação e expressões de obrigação ou possibilidade podem mudar o alcance de uma afirmação.",
+        "Cognatos ajudam, mas não substituem o contexto. Confere falsos cognatos e evita escolher pela primeira palavra reconhecida."
+      ],
+      "tip": "Resume em português a ideia central e depois compara o que cada alternativa acrescenta ou retira.",
+      "trap": "Um nome conhecido no apoio não garante uma pergunta sobre sua biografia ou seu sistema filosófico.",
+      "example": {
+        "text": "“The library is small. However, it welcomes the whole neighborhood.”",
+        "explanation": "However sinaliza contraste entre o tamanho da biblioteca e o alcance social apresentado; não introduz uma causa.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        69
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-2-ingles",
+          "reason": "Identifica o propósito do argumento de Angela Davis sobre a relevância social da filosofia."
+        }
+      ],
+      "terms": [
+        "english",
+        "cognatos",
+        "conectores",
+        "however",
+        "but",
+        "inglês"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    },
+    {
+      "id": "espanhol",
+      "group": "Línguas estrangeiras",
+      "title": "Espanhol: variedades e construção de sentidos",
+      "summary": "O contexto cultural e discursivo é tão importante quanto o reconhecimento do vocabulário.",
+      "points": [
+        "Espanhol reúne variedades. Uma palavra pode mudar de sentido entre regiões e comunidades.",
+        "Observa conectores, negação, interlocutores e propósito; palavras semelhantes ao português podem ter outro uso.",
+        "A língua em contato com outras línguas registra histórias de circulação de pessoas e culturas."
+      ],
+      "tip": "Relaciona o exemplo lexical à ideia geral defendida pelo texto.",
+      "trap": "Uma diferença entre variedades não demonstra que uma delas seja inferior ou que exista competição inevitável entre as línguas.",
+      "example": {
+        "text": "Um texto compara o uso de uma palavra para ônibus em uma região e para bebê em outra.",
+        "explanation": "O objetivo pode ser explicar trajetórias e contatos linguísticos, sem defender que só uma definição é correta.",
+        "label": "Exemplo autoral, criado para estudo"
+      },
+      "authors": [
+        181,
+        184
+      ],
+      "questions": [
+        {
+          "id": "enem-2025-2-espanhol",
+          "reason": "Lê a trajetória de guagua e o papel dos empréstimos linguísticos no texto."
+        }
+      ],
+      "terms": [
+        "español",
+        "empréstimo linguístico",
+        "variedades",
+        "falsos cognatos",
+        "espanhol"
+      ],
+      "sources": [
+        {
+          "label": "Inep — organização da área de Linguagens",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem"
+        }
+      ]
+    }
+  ],
+  "review": [
+    {
+      "title": "Lê com objetivo",
+      "minutes": 15,
+      "topics": [
+        "interpretacao",
+        "argumentacao",
+        "humor"
+      ]
+    },
+    {
+      "title": "Língua em uso",
+      "minutes": 15,
+      "topics": [
+        "generos",
+        "variacao",
+        "coesao"
+      ]
+    },
+    {
+      "title": "Literatura e arte",
+      "minutes": 15,
+      "topics": [
+        "narrador",
+        "modernismo",
+        "arte-identidade"
+      ]
+    },
+    {
+      "title": "Escolhe tua língua estrangeira",
+      "minutes": 15,
+      "topics": [
+        "ingles",
+        "espanhol"
+      ]
+    }
+  ]
+}

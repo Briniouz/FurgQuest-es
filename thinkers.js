@@ -24,7 +24,7 @@
   function script(path,globalName){
     if(globalThis[globalName])return Promise.resolve();
     return new Promise((resolve,reject)=>{
-      const el=document.createElement('script');el.src=path+'?v=20261104-biblioteca';el.async=true;
+      const el=document.createElement('script');el.src=path+'?v=20261105-linguagens';el.async=true;
       el.onload=()=>globalThis[globalName]?resolve():reject(Error('Conteúdo não disponível.'));
       el.onerror=()=>{el.remove();reject(Error('Falha no carregamento.'));};document.head.appendChild(el);
     });
@@ -82,7 +82,7 @@
   function selectHTML(id,label,key,options){return'<label class="knowledge-select" for="'+id+'">'+label+'<select id="'+id+'" data-knowledge-filter="'+key+'"><option value="">Todos</option>'+options.map(v=>'<option value="'+esc(v)+'" '+(filters[key]===v?'selected':'')+'>'+esc(v)+'</option>').join('')+'</select></label>';}
   function hero(){
     const direct=Object.values(indexData.profiles).filter(m=>m.directCount>0).length;
-    return'<div class="knowledge-hero"><div><p class="eyebrow">BIBLIOTECA ENEM · PESSOAS, OBRAS E IDEIAS</p><h2>Entende a ideia.<br>Conecta com a prova.</h2><p>Da filosofia à canção: quem pensou, criou e ajudou a explicar o mundo. Pesquisa por nomes, conceitos, obras ou movimentos.</p><div class="knowledge-hero-links"><a href="#leituras" data-knowledge-readings>Rever as seis leituras ↗</a><a href="#enem" data-knowledge-bank>Consultar o banco ENEM ↗</a></div></div><div class="knowledge-numbers"><strong>'+records.length+'<small>perfis de estudo</small></strong><span>'+direct+' com citação nominal identificada</span><span>'+indexData.totalQuestions.toLocaleString('pt-BR')+' questões analisadas · '+indexData.years[0]+'–'+indexData.years.at(-1)+'</span></div></div>';
+    return'<div class="knowledge-hero"><div><p class="eyebrow">BIBLIOTECA ENEM · PESSOAS, OBRAS E IDEIAS</p><h2>Entende a ideia.<br>Conecta com a prova.</h2><p>Da filosofia à canção: quem pensou, criou e ajudou a explicar o mundo. Pesquisa por nomes, conceitos, obras ou movimentos.</p><div class="knowledge-hero-links"><a href="#linguagens" data-language-open>Revisar Linguagens ↗</a><a href="#leituras" data-knowledge-readings data-app-only>Rever as seis leituras ↗</a><a href="#enem" data-knowledge-bank>Consultar o banco ENEM ↗</a></div></div><div class="knowledge-numbers"><strong>'+records.length+'<small>perfis de estudo</small></strong><span>'+direct+' com citação nominal identificada</span><span>'+indexData.totalQuestions.toLocaleString('pt-BR')+' questões analisadas · '+indexData.years[0]+'–'+indexData.years.at(-1)+'</span></div></div>';
   }
   function shellHTML(){
     const options=key=>[...new Set(records.map(p=>p[key]))].sort((a,b)=>a.localeCompare(b,'pt-BR'));
@@ -116,7 +116,7 @@
   async function open(options={}){
     if(typeof options==='string')options={query:options};
     if(options.questionId){questionScope=options.questionId;Object.assign(filters,{query:'',area:'',period:'',movement:'',frequency:'',type:'',sort:'relevance'});}
-    if(options.query!==undefined){filters.query=String(options.query);questionScope='';}
+    if(options.query!==undefined){Object.assign(filters,{query:String(options.query),area:'',period:'',movement:'',frequency:'',type:'',sort:'relevance'});questionScope='';}
     count=12;shell=false;adapter?.setView('biblioteca');await render();
     if(options.focus!==false)$('thinkerSearch')?.focus({preventScroll:true});
   }
