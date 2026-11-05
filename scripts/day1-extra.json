@@ -1,0 +1,964 @@
+[
+  {
+    "id": "d1-plus-linguagens-01",
+    "subject": "linguagens",
+    "topic": "Pressuposição",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "No aviso “A biblioteca voltou a abrir aos sábados”, a expressão “voltou a” pressupõe que a biblioteca:",
+    "explanation": "“Voltar a” indica retomada. A frase apresenta como informação anterior o funcionamento aos sábados, interrompido por algum tempo. Não informa quais são os outros dias de abertura.",
+    "tip": "O que precisa ter acontecido para algo voltar a acontecer?",
+    "sources": [],
+    "options": [
+      "Nunca abriu aos sábados.",
+      "Já abriu aos sábados antes de uma interrupção.",
+      "Abre somente aos sábados.",
+      "Fechou definitivamente."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "d1-plus-linguagens-02",
+    "subject": "linguagens",
+    "topic": "Modalização",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Qual frase apresenta maior grau de certeza sobre a previsão?",
+    "explanation": "“Certamente” reforça o compromisso do enunciador com a afirmação. “Talvez”, “pode” e “é possível” apresentam possibilidade. Isso mostra a posição da voz que fala, sem provar que a previsão se realizará.",
+    "tip": "Compara as palavras que marcam possibilidade ou certeza.",
+    "sources": [],
+    "options": [
+      "É possível que o evento termine cedo.",
+      "Talvez o evento termine cedo.",
+      "O evento certamente terminará cedo.",
+      "O evento pode terminar cedo."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "d1-plus-linguagens-03",
+    "subject": "linguagens",
+    "topic": "Metalinguagem",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Uma tira mostra uma personagem explicando o significado da palavra “tira”. Nessa explicação, a linguagem se volta para:",
+    "explanation": "A linguagem é usada para explicar um elemento da própria linguagem. Esse foco no código caracteriza a função metalinguística, que pode coexistir com humor e outras funções.",
+    "tip": "O assunto da explicação é uma palavra.",
+    "sources": [],
+    "options": [
+      "O próprio código e seus sentidos.",
+      "Apenas o sentimento de medo.",
+      "Uma ordem para o leitor.",
+      "O teste do funcionamento de um telefone."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "d1-plus-linguagens-04",
+    "subject": "linguagens",
+    "topic": "Argumentação e dados",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Um texto defende ampliar ciclovias e apresenta um levantamento sobre deslocamentos de bicicleta. Os dados funcionam principalmente como:",
+    "explanation": "Um levantamento pode oferecer apoio à tese. Seu alcance depende da amostra, do contexto e do que foi medido; ele não autoriza generalizações como “todos” sem base.",
+    "tip": "Relaciona o dado à tese do texto.",
+    "sources": [],
+    "options": [
+      "Confirmação de que todos os moradores pedalam.",
+      "Prova de que não existem outros transportes.",
+      "Substituição automática de toda justificativa.",
+      "Recurso para sustentar a posição defendida."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "d1-plus-linguagens-05",
+    "subject": "linguagens",
+    "topic": "Intertextualidade e paródia",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Uma campanha retoma um provérbio conhecido e altera suas palavras para criticar o desperdício. Essa transformação produz sentido ao:",
+    "explanation": "A retomada permite reconhecer uma fórmula anterior, enquanto a alteração a desloca para uma crítica. O diálogo com o provérbio participa do efeito de sentido.",
+    "tip": "Procura a relação entre reconhecimento e mudança.",
+    "sources": [],
+    "options": [
+      "Apagar toda relação com outros textos.",
+      "Reelaborar uma expressão reconhecível com nova finalidade.",
+      "Reproduzir o provérbio sem mudanças.",
+      "Tornar obrigatório conhecer a vida do autor."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "d1-plus-linguagens-06",
+    "subject": "linguagens",
+    "topic": "Literatura e voz narrativa",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "“Só anos depois percebi o engano daquela tarde.” Essa frase indica uma voz que:",
+    "explanation": "A primeira pessoa e a referência a uma compreensão posterior constroem uma narração retrospectiva. Isso não permite identificar automaticamente narrador e autor nem atribuir onisciência à voz.",
+    "tip": "Observa as marcas de pessoa e de tempo.",
+    "sources": [],
+    "options": [
+      "Conhece necessariamente os pensamentos de todos.",
+      "Não participou do acontecimento.",
+      "Narra retrospectivamente uma experiência própria.",
+      "É sempre idêntica à pessoa que escreveu o livro."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "d1-plus-linguagens-07",
+    "subject": "linguagens",
+    "topic": "Inglês — contraste",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Em “The route is longer; however, it is safer”, however estabelece uma relação de:",
+    "explanation": "“However” introduz contraste: embora o percurso seja mais longo, ele tem a vantagem de ser mais seguro. O conector orienta a relação entre as duas avaliações.",
+    "tip": "As duas avaliações apontam na mesma direção?",
+    "sources": [],
+    "options": [
+      "Causa.",
+      "Adição.",
+      "Condição.",
+      "Contraste."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "d1-plus-linguagens-08",
+    "subject": "linguagens",
+    "topic": "Espanhol — referência",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Em “Estas fotografías muestran la plaza; aquellas, el puerto”, aquellas retoma:",
+    "explanation": "O demonstrativo feminino plural “aquellas” retoma “fotografías”, em contraste com “estas”. O verbo e o substantivo podem ficar elípticos na segunda parte: aquelas fotografias mostram o porto.",
+    "tip": "Compara gênero, número e contraste.",
+    "sources": [],
+    "options": [
+      "Outras fotografias.",
+      "A praça.",
+      "O porto.",
+      "Uma pessoa não identificada."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "d1-plus-linguagens-09",
+    "subject": "linguagens",
+    "topic": "Coesão — consequência",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "“A via ficou alagada; ____, a circulação foi interrompida.” O conector que explicita consequência é:",
+    "explanation": "“Portanto” apresenta a interrupção como consequência do alagamento. “Entretanto” marcaria oposição; “embora”, concessão; “conforme”, conformidade.",
+    "tip": "A segunda informação decorre da primeira.",
+    "sources": [],
+    "options": [
+      "entretanto",
+      "portanto",
+      "embora",
+      "conforme"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "d1-plus-linguagens-10",
+    "subject": "linguagens",
+    "topic": "Coesão — concessão",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "“____ o percurso fosse longo, ela decidiu caminhar.” A relação de concessão é expressa por:",
+    "explanation": "“Embora” admite uma condição que poderia dificultar a decisão, sem impedir sua realização. É uma relação concessiva, não causal.",
+    "tip": "Qual palavra admite um obstáculo que não impediu a ação?",
+    "sources": [],
+    "options": [
+      "Porque",
+      "Conforme",
+      "Embora",
+      "Portanto"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "d1-plus-linguagens-11",
+    "subject": "linguagens",
+    "topic": "Figuras — metonímia",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "Em “O estádio inteiro aplaudiu”, o lugar representa as pessoas presentes. Esse recurso é a ____.",
+    "explanation": "“Estádio” representa o público, em uma relação de proximidade entre continente e conteúdo. O foco aqui é a substituição do lugar pelas pessoas, típica da metonímia.",
+    "tip": "Há uma relação de proximidade, não de semelhança.",
+    "sources": [],
+    "options": [
+      "metonímia",
+      "hipérbato",
+      "onomatopeia",
+      "comparação explícita"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "d1-plus-linguagens-12",
+    "subject": "linguagens",
+    "topic": "Voz poética",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "A voz que se expressa em um poema é chamada de ____, sem ser automaticamente a pessoa do poeta.",
+    "explanation": "O eu lírico é uma construção do poema. Pode mobilizar sentimentos e experiências, mas isso não comprova que cada verso seja um relato biográfico de quem escreveu.",
+    "tip": "Diferencia a voz do texto e a autoria.",
+    "sources": [],
+    "options": [
+      "editor",
+      "leitor obrigatório",
+      "personagem histórica",
+      "eu lírico"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "d1-plus-linguagens-13",
+    "subject": "linguagens",
+    "topic": "Variação e registro",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "Escolher entre um bilhete íntimo e um ofício envolve adequação à situação e ao ____.",
+    "explanation": "Finalidade, interlocutor e circulação ajudam a orientar a escolha de registro e gênero. Uma forma adequada em uma conversa íntima pode não servir a um documento administrativo.",
+    "tip": "Pensa em para quem e para quê se escreve.",
+    "sources": [],
+    "options": [
+      "gênero discursivo",
+      "valor moral do falante",
+      "grau de inteligência",
+      "tamanho da palavra"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "d1-plus-linguagens-14",
+    "subject": "linguagens",
+    "topic": "Leitura crítica de publicidade",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "“Só hoje: últimas vagas!” tenta provocar uma sensação de ____ para estimular uma decisão rápida.",
+    "explanation": "As expressões restringem o tempo e sugerem escassez. Na publicidade, podem atuar como estratégias persuasivas. Reconhecer a estratégia não comprova que a oferta seja falsa.",
+    "tip": "O que acontece com o tempo disponível para decidir?",
+    "sources": [],
+    "options": [
+      "neutralidade absoluta",
+      "ausência de destinatário",
+      "urgência",
+      "definição científica"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "d1-plus-linguagens-15",
+    "subject": "linguagens",
+    "topic": "Funções da linguagem — aplicação",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona o foco de cada trecho à função predominante.",
+    "explanation": "O foco no canal, no código ou no destinatário ajuda a reconhecer a função predominante. Um enunciado pode combinar funções.",
+    "tip": "Pergunta qual elemento da comunicação fica em primeiro plano.",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "“Alô, tu está me ouvindo?”",
+        "right": "Fática: testa o canal."
+      },
+      {
+        "left": "“Um adjetivo caracteriza um substantivo.”",
+        "right": "Metalinguística: explica o código."
+      },
+      {
+        "left": "“Inscreve-te na oficina!”",
+        "right": "Conativa: orienta o destinatário."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-linguagens-16",
+    "subject": "linguagens",
+    "topic": "Recursos expressivos",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona o exemplo ao recurso destacado.",
+    "explanation": "A cidade recebe comportamento humano; a espera é exagerada; dia e noite constroem oposição. Um exemplo pode conter mais de um recurso, mas o recorte indicado orienta a associação.",
+    "tip": "Observa o aspecto destacado em cada descrição.",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "“A cidade acordou apressada.”",
+        "right": "Personificação."
+      },
+      {
+        "left": "“Esperei um século pelo ônibus.”",
+        "right": "Hipérbole."
+      },
+      {
+        "left": "“O dia sorri; a noite chora.”",
+        "right": "Antítese entre dia e noite."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-linguagens-17",
+    "subject": "linguagens",
+    "topic": "Gêneros e finalidade",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona cada gênero à finalidade típica apresentada.",
+    "explanation": "A finalidade e a situação social de circulação ajudam a reconhecer gêneros. Essas descrições apontam usos típicos e não excluem variações.",
+    "tip": "O que o texto pretende fazer socialmente?",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "Receita de bolo.",
+        "right": "Orientar etapas de preparo."
+      },
+      {
+        "left": "Resenha crítica.",
+        "right": "Apresentar e avaliar uma produção."
+      },
+      {
+        "left": "Abaixo-assinado.",
+        "right": "Reunir apoio a uma reivindicação."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-linguagens-18",
+    "subject": "linguagens",
+    "topic": "Literatura — instâncias do texto",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona as três instâncias sem confundi-las.",
+    "explanation": "Autor pertence à produção da obra; narrador e eu lírico são construções textuais. A primeira pessoa não elimina essa distinção.",
+    "tip": "Separa produção da obra e voz construída nela.",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "Pessoa responsável pela criação da obra.",
+        "right": "Autor."
+      },
+      {
+        "left": "Voz que conta os acontecimentos de uma narrativa.",
+        "right": "Narrador."
+      },
+      {
+        "left": "Voz que se manifesta no poema.",
+        "right": "Eu lírico."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-linguagens-19",
+    "subject": "linguagens",
+    "topic": "Leitura de imagens",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona cada escolha visual a um efeito possível no contexto descrito.",
+    "explanation": "Sentidos se formam pela relação entre os modos de linguagem. Tamanho, direção e contraste precisam ser lidos junto do contexto, sem um significado fixo universal.",
+    "tip": "Relaciona a escolha visual ao restante da mensagem.",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "Uma seta liga a instrução ao botão que deve ser usado.",
+        "right": "Orientação da ação do leitor."
+      },
+      {
+        "left": "Um número aparece muito maior que o restante do anúncio.",
+        "right": "Destaque e hierarquia da informação."
+      },
+      {
+        "left": "O desenho mostra o contrário do elogio escrito.",
+        "right": "Contraste que pode construir ironia."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-linguagens-20",
+    "subject": "linguagens",
+    "topic": "Inglês — conectores",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona os conectores a suas relações de sentido mais usuais.",
+    "explanation": "Os conectores orientam relações entre ideias. O contexto da frase continua necessário para compreender o argumento.",
+    "tip": "Usa a relação entre ideias para evitar traduzir palavra por palavra.",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "because",
+        "right": "Causa ou justificativa."
+      },
+      {
+        "left": "although",
+        "right": "Concessão."
+      },
+      {
+        "left": "therefore",
+        "right": "Consequência ou conclusão."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-humanas-01",
+    "subject": "humanas",
+    "topic": "Sociologia — alienação",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Em uma análise inspirada em Marx, o trabalhador produz objetos que não controla e encontra sua própria atividade submetida a uma direção externa. O conceito mais relacionado é:",
+    "explanation": "No trabalho alienado, Marx discute formas de estranhamento em relação ao produto e à atividade, entre outras dimensões. Alienação aqui não significa simplesmente distração ou falta de informação.",
+    "tip": "Observa a relação do trabalhador com o produto e o processo.",
+    "sources": [],
+    "options": [
+      "Alienação do trabalho.",
+      "Contrato social de Rousseau.",
+      "Justo meio aristotélico.",
+      "Determinismo climático."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "d1-plus-humanas-02",
+    "subject": "humanas",
+    "topic": "Sociologia — fato social",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Uma regra de comportamento existe antes do nascimento de alguém e sua violação provoca sanções. Numa leitura de Durkheim, esses elementos destacam:",
+    "explanation": "Fatos sociais são maneiras coletivas de agir, pensar e sentir exteriores ao indivíduo e dotadas de poder coercitivo. Sanções podem ser formais ou informais.",
+    "tip": "A regra depende só da vontade dessa pessoa?",
+    "sources": [],
+    "options": [
+      "Um gosto inteiramente isolado.",
+      "Uma determinação genética.",
+      "Exterioridade e coerção de um fato social.",
+      "A inexistência de normas coletivas."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "d1-plus-humanas-03",
+    "subject": "humanas",
+    "topic": "Sociologia — ação social",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Para Weber, compreender uma ação social exige considerar principalmente:",
+    "explanation": "A ação social tem um sentido para quem age e se orienta pelo comportamento de outras pessoas. Nem todo movimento ou comportamento coletivo constitui ação social nesse sentido.",
+    "tip": "Procura sentido e orientação a outros.",
+    "sources": [],
+    "options": [
+      "A ausência de relação com outras pessoas.",
+      "O sentido atribuído pelo agente e sua orientação aos outros.",
+      "Somente o efeito biológico do movimento.",
+      "Uma lei universal que elimina o contexto."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "d1-plus-humanas-04",
+    "subject": "humanas",
+    "topic": "Sociologia — capital cultural",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Duas pessoas têm renda semelhante, mas oportunidades diferentes de familiaridade com livros, museus e códigos valorizados pela escola. O exemplo permite discutir:",
+    "explanation": "Bourdieu permite analisar como conhecimentos, disposições e títulos socialmente valorizados participam da reprodução de desigualdades. O conceito não transforma repertório cultural em atributo biológico nem em destino inevitável.",
+    "tip": "Nem toda vantagem escolar se reduz à renda imediata.",
+    "sources": [],
+    "options": [
+      "A igualdade automática de todas as trajetórias.",
+      "A transmissão genética do aprendizado.",
+      "A ausência de valores na escola.",
+      "A distribuição desigual do capital cultural."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "d1-plus-humanas-05",
+    "subject": "humanas",
+    "topic": "Filosofia — ética do dever",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Uma pessoa sustenta que só deve agir segundo uma regra que possa valer para todos, e não apenas pelo benefício que obtém. O raciocínio se aproxima da:",
+    "explanation": "A formulação aproxima-se da exigência kantiana de universalização da máxima. O dever não se reduz ao cálculo da vantagem pessoal ou ao resultado desejado.",
+    "tip": "A justificativa se apoia na regra ou apenas no efeito?",
+    "sources": [],
+    "options": [
+      "Ética kantiana.",
+      "Defesa de que os fins sempre justificam os meios.",
+      "Recusa de qualquer princípio moral.",
+      "Avaliação exclusiva do prazer imediato."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "d1-plus-humanas-06",
+    "subject": "humanas",
+    "topic": "História — permanência e mudança",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "O fim legal de uma instituição é seguido pela continuidade de desigualdades ligadas a ela. Analisar isso exige:",
+    "explanation": "Mudanças legais são historicamente relevantes, mas práticas, estruturas e desigualdades podem persistir. É preciso observar evidências, mecanismos de continuidade e novas disputas.",
+    "tip": "Mudança e permanência podem coexistir.",
+    "sources": [],
+    "options": [
+      "Negar toda mudança jurídica.",
+      "Supor que uma lei elimina imediatamente todas as práticas.",
+      "Distinguir transformação legal e permanências sociais.",
+      "Abandonar as evidências do período posterior."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "d1-plus-humanas-07",
+    "subject": "humanas",
+    "topic": "Geografia — ilhas de calor",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Em uma cidade, uma área muito pavimentada e pouco arborizada registra temperaturas maiores que outra área com vegetação. O exemplo se relaciona a:",
+    "explanation": "Materiais urbanos, impermeabilização e pouca vegetação podem favorecer maior aquecimento em áreas densamente construídas. O fenômeno é local e não explica sozinho o aquecimento global.",
+    "tip": "Relaciona cobertura da superfície e temperatura.",
+    "sources": [],
+    "options": [
+      "Deslocamento da cidade para outra latitude.",
+      "Ilha de calor urbana.",
+      "Ausência completa de clima no campo.",
+      "Prova de que a arborização não tem efeitos."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "d1-plus-humanas-08",
+    "subject": "humanas",
+    "topic": "Geografia — divisão territorial do trabalho",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Um produto é projetado em um país, tem peças feitas em outros e é montado em um terceiro. Esse arranjo exemplifica:",
+    "explanation": "Cadeias produtivas podem distribuir etapas por diferentes territórios, conectadas por logística e informação. A integração não elimina fronteiras ou desigualdades entre os lugares.",
+    "tip": "Observa onde ocorre cada etapa da produção.",
+    "sources": [],
+    "options": [
+      "Fim de todas as fronteiras políticas.",
+      "Autossuficiência de cada fábrica.",
+      "Ausência de transporte e logística.",
+      "Fragmentação espacial das etapas produtivas."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "d1-plus-humanas-09",
+    "subject": "humanas",
+    "topic": "Cultura — etnocentrismo",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "Considerar os costumes do próprio grupo superiores e usá-los como medida para julgar todos os outros caracteriza ____.",
+    "explanation": "O etnocentrismo toma os valores do próprio grupo como centro e frequentemente hierarquiza os demais. A análise crítica busca entender contextos e evitar essa superioridade presumida.",
+    "tip": "O próprio grupo está virando uma medida universal?",
+    "sources": [],
+    "options": [
+      "etnocentrismo",
+      "relativismo cultural",
+      "alteridade",
+      "pluralismo"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "d1-plus-humanas-10",
+    "subject": "humanas",
+    "topic": "Cultura — relativização",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "Buscar compreender uma prática cultural em seu contexto, em vez de classificá-la de imediato por valores externos, é um exercício de ____.",
+    "explanation": "Relativizar culturalmente é compreender os sentidos das práticas em seus contextos. Isso é uma orientação de análise e não a obrigação de aprovar moralmente qualquer prática.",
+    "tip": "Compreender o contexto não é aprovar tudo.",
+    "sources": [],
+    "options": [
+      "determinismo biológico",
+      "relativização cultural",
+      "etnocentrismo",
+      "isolamento econômico"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "d1-plus-humanas-11",
+    "subject": "humanas",
+    "topic": "Geografia — migração",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "O deslocamento de residência do campo para a cidade é chamado de ____.",
+    "explanation": "Êxodo rural designa a migração do campo para a cidade. Migração pendular costuma envolver deslocamentos regulares, como trabalho e estudo, sem a mesma mudança de residência.",
+    "tip": "A pessoa mudou onde mora ou só vai e volta diariamente?",
+    "sources": [],
+    "options": [
+      "transumância",
+      "migração pendular",
+      "êxodo rural",
+      "movimento de rotação"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "d1-plus-humanas-12",
+    "subject": "humanas",
+    "topic": "Política — soberania popular",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "A ideia de que a legitimidade do poder político tem sua fonte no povo se relaciona à ____.",
+    "explanation": "Soberania popular vincula o fundamento da autoridade política ao povo. As formas de participação e representação variam historicamente e precisam ser analisadas em cada contexto.",
+    "tip": "De onde viria a legitimidade do poder?",
+    "sources": [],
+    "options": [
+      "hereditariedade obrigatória",
+      "segregação residencial",
+      "inversão térmica",
+      "soberania popular"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "d1-plus-humanas-13",
+    "subject": "humanas",
+    "topic": "Geografia — desigualdade urbana",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "Bairros com condições muito diferentes de transporte, saneamento e moradia revelam uma organização marcada pela ____.",
+    "explanation": "A segregação socioespacial relaciona a distribuição dos grupos no espaço urbano a desigualdades e barreiras de acesso. Distâncias, políticas públicas e infraestrutura participam dessa organização.",
+    "tip": "Pensa em quem acessa quais serviços e a partir de onde.",
+    "sources": [],
+    "options": [
+      "segregação socioespacial",
+      "homogeneidade de acesso",
+      "igualdade automática de serviços",
+      "ausência de relações sociais no espaço"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "d1-plus-humanas-14",
+    "subject": "humanas",
+    "topic": "Educação — Paulo Freire",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "O modelo criticado por Freire em que o professor deposita conteúdos e o estudante é tratado como receptor passivo é a educação ____.",
+    "explanation": "A metáfora bancária critica relações de ensino que reduzem o estudante à recepção de conteúdos. A educação problematizadora valoriza diálogo e reflexão sobre a realidade, sem tornar dispensável o conhecimento.",
+    "tip": "A imagem central é de um depósito.",
+    "sources": [],
+    "options": [
+      "dialógica",
+      "bancária",
+      "intercultural por definição",
+      "autônoma por definição"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "d1-plus-humanas-15",
+    "subject": "humanas",
+    "topic": "Pensadores e conceitos",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona as descrições às tradições de análise indicadas.",
+    "explanation": "Esses pares situam conceitos centrais, sem esgotar as obras dos autores. Em uma prova, é preciso interpretar o recorte da questão, e não responder apenas pelo nome.",
+    "tip": "Lembra o problema que cada conceito tenta explicar.",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "Trabalho alienado e relações de classe.",
+        "right": "Karl Marx."
+      },
+      {
+        "left": "Fato social e formas de solidariedade.",
+        "right": "Émile Durkheim."
+      },
+      {
+        "left": "Sentido da ação social e dominação legítima.",
+        "right": "Max Weber."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-humanas-16",
+    "subject": "humanas",
+    "topic": "Cidadania — direitos",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona o exemplo à dimensão do direito destacada.",
+    "explanation": "A distinção é analítica: essas dimensões se relacionam e suas conquistas não ocorreram na mesma sequência em todas as sociedades.",
+    "tip": "Liberdades, participação e proteção social indicam focos diferentes.",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "Liberdade de expressão e igualdade perante a lei.",
+        "right": "Direitos civis."
+      },
+      {
+        "left": "Votar e participar das decisões políticas.",
+        "right": "Direitos políticos."
+      },
+      {
+        "left": "Acesso à educação e à proteção social.",
+        "right": "Direitos sociais."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-humanas-17",
+    "subject": "humanas",
+    "topic": "Geografia — categorias",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona cada recorte à categoria enfatizada.",
+    "explanation": "Paisagem destaca formas perceptíveis; território, apropriação e poder; lugar, experiência e pertencimento. As categorias dialogam e variam entre abordagens da Geografia.",
+    "tip": "Qual relação espacial está em primeiro plano em cada descrição?",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "Aspectos que podem ser percebidos em uma cena, com marcas de diferentes tempos.",
+        "right": "Paisagem."
+      },
+      {
+        "left": "Espaço delimitado e apropriado por relações de poder.",
+        "right": "Território."
+      },
+      {
+        "left": "Espaço vivido com vínculos e experiências cotidianas.",
+        "right": "Lugar."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-humanas-18",
+    "subject": "humanas",
+    "topic": "História — trabalho e produção",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona o processo à característica central apresentada.",
+    "explanation": "As três noções tratam de relações de trabalho por ângulos diferentes. A automação pode mudar ocupações e qualificações, sem permitir concluir que todo trabalho humano desaparece.",
+    "tip": "Distingue organização da produção, ação coletiva e mudança técnica.",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "Especialização de tarefas dentro da fábrica.",
+        "right": "Divisão do trabalho."
+      },
+      {
+        "left": "Organização coletiva para reivindicar condições de trabalho.",
+        "right": "Ação sindical."
+      },
+      {
+        "left": "Substituição ou reorganização de tarefas por máquinas e sistemas.",
+        "right": "Automação."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-humanas-19",
+    "subject": "humanas",
+    "topic": "Democracia — mecanismos",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona o exemplo ao mecanismo político descrito.",
+    "explanation": "Democracias podem combinar representação, participação e fiscalização social. Nenhum desses exemplos, isoladamente, garante igualdade efetiva de influência.",
+    "tip": "O cidadão está escolhendo representantes, decidindo prioridades ou fiscalizando?",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "Eleitores escolhem pessoas que exercem mandatos.",
+        "right": "Representação política."
+      },
+      {
+        "left": "Moradores discutem prioridades de recursos públicos em assembleias.",
+        "right": "Participação no orçamento."
+      },
+      {
+        "left": "Conselho acompanha e fiscaliza uma política pública.",
+        "right": "Controle social da administração."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-humanas-20",
+    "subject": "humanas",
+    "topic": "Ambiente — processos",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona o processo ao efeito descrito.",
+    "explanation": "A retirada de vegetação pode intensificar erosão; sedimentos transportados podem assorear rios; a impermeabilização altera o caminho da água. Os efeitos concretos também dependem de relevo, chuva e manejo.",
+    "tip": "Acompanha o caminho da água e dos sedimentos.",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "Retirada da vegetação que protegia as margens de um rio.",
+        "right": "Maior exposição do solo e risco de erosão."
+      },
+      {
+        "left": "Deposição de sedimentos no leito do rio.",
+        "right": "Assoreamento."
+      },
+      {
+        "left": "Expansão de superfícies impermeáveis na cidade.",
+        "right": "Redução da infiltração e aumento do escoamento superficial."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-redacao-01",
+    "subject": "redacao",
+    "topic": "Redação — recorte do tema",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "O tema é “Desafios para o acesso à leitura no Brasil”. Qual abordagem mantém melhor esse recorte?",
+    "explanation": "O recorte pede desafios de acesso à leitura. Discutir disponibilidade, mediação e formação leitora permite enfrentar o problema sem reduzir o texto a um assunto apenas próximo.",
+    "tip": "Diferencia uma palavra do tema e o problema completo.",
+    "sources": [],
+    "options": [
+      "Narrar apenas a biografia de um escritor.",
+      "Defender que toda forma de lazer é inútil.",
+      "Explicar obstáculos à disponibilidade de livros e à formação de leitores.",
+      "Descrever uma viagem sem relação com leitura."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "d1-plus-redacao-02",
+    "subject": "redacao",
+    "topic": "Redação — repertório produtivo",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Um conceito citado se torna produtivo na argumentação quando o texto:",
+    "explanation": "O repertório precisa participar do raciocínio. É necessário explicar o conceito de modo adequado e mostrar como ele ajuda a entender o problema discutido.",
+    "tip": "A referência está fazendo algum trabalho no argumento?",
+    "sources": [],
+    "options": [
+      "Explica sua relação com o problema e o usa para sustentar uma análise.",
+      "Acumula nomes sem explicar relações.",
+      "Troca o tema pela biografia do pensador.",
+      "Supõe que a citação dispensa o argumento."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "d1-plus-redacao-03",
+    "subject": "redacao",
+    "topic": "Redação — intervenção viável",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Qual proposta especifica melhor uma ação ligada à falta de acesso a bibliotecas?",
+    "explanation": "A proposta indica um agente, uma ação e meios de acesso vinculados ao problema. Sua qualidade depende ainda da articulação com a argumentação e do detalhamento pertinente, não do simples tamanho da frase.",
+    "tip": "Procura quem faz, o que faz e como a ação alcança o público.",
+    "sources": [],
+    "options": [
+      "Todos devem resolver tudo imediatamente.",
+      "A sociedade precisa melhorar.",
+      "É necessário acabar com todo problema.",
+      "A secretaria municipal de cultura deve ampliar bibliotecas itinerantes em bairros sem equipamentos de leitura, com rotas e horários divulgados."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "d1-plus-redacao-04",
+    "subject": "redacao",
+    "topic": "Redação — desenvolvimento",
+    "level": "Médio",
+    "type": "choice",
+    "prompt": "Depois de afirmar que a distância dificulta o acesso ao museu, qual frase mais desenvolve esse argumento?",
+    "explanation": "A frase explicita o mecanismo que liga distância e dificuldade de acesso. Desenvolver o argumento é explicar a relação apresentada, em vez de apenas repetir a tese ou acrescentar uma informação lateral.",
+    "tip": "Que informação explica como a barreira funciona?",
+    "sources": [],
+    "options": [
+      "O museu possui uma fachada clara.",
+      "Longos deslocamentos e custos de transporte podem impedir visitas frequentes de moradores de regiões distantes.",
+      "Museus existem em vários países.",
+      "A palavra museu tem cinco letras."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "d1-plus-redacao-05",
+    "subject": "redacao",
+    "topic": "Redação — encadeamento",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "Uma frase que explica por que a afirmação anterior se sustenta oferece uma ____ para o argumento.",
+    "explanation": "Justificar é apresentar razões para aceitar uma afirmação. A relação precisa ser coerente com o que se defende e não se resume a inserir um conector.",
+    "tip": "A nova frase responde “por quê?” à afirmação anterior?",
+    "sources": [],
+    "options": [
+      "digressão obrigatória",
+      "contradição automática",
+      "justificativa",
+      "mudança aleatória de assunto"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "d1-plus-redacao-06",
+    "subject": "redacao",
+    "topic": "Redação — revisão",
+    "level": "Médio",
+    "type": "cloze",
+    "prompt": "Ao revisar, verificar se cada parágrafo contribui para a tese ajuda a manter a ____ do projeto de texto.",
+    "explanation": "A coerência envolve relações de sentido entre as partes e o projeto global do texto. Ela não se garante apenas pela presença de conectores ou pelo número de repertórios.",
+    "tip": "Lê cada parágrafo perguntando qual função ele cumpre.",
+    "sources": [],
+    "options": [
+      "coerência",
+      "quantidade fixa de citações",
+      "ausência de autoria",
+      "cópia do texto motivador"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "d1-plus-redacao-07",
+    "subject": "redacao",
+    "topic": "Redação — intervenção e funções",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona cada trecho à função que cumpre na proposta.",
+    "explanation": "Agente, ação e finalidade respondem a perguntas diferentes. Uma proposta completa também precisa especificar meios e detalhamento pertinentes ao problema, sem virar uma lista desconectada.",
+    "tip": "Quem? O quê? Para quê?",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "“A secretaria municipal de educação”.",
+        "right": "Agente responsável."
+      },
+      {
+        "left": "“Deve organizar oficinas de leitura”.",
+        "right": "Ação proposta."
+      },
+      {
+        "left": "“Para ampliar a participação de jovens na vida cultural”.",
+        "right": "Finalidade pretendida."
+      }
+    ]
+  },
+  {
+    "id": "d1-plus-redacao-08",
+    "subject": "redacao",
+    "topic": "Redação — funções no argumento",
+    "level": "Médio",
+    "type": "match",
+    "prompt": "Relaciona cada movimento à função argumentativa indicada.",
+    "explanation": "Um projeto de texto organiza funções em uma sequência coerente. Não existe um número universal de frases que, sozinho, garanta qualidade argumentativa.",
+    "tip": "Pensa na função do trecho no raciocínio, não apenas na posição dele.",
+    "sources": [],
+    "pairs": [
+      {
+        "left": "Apresentar a posição defendida sobre o problema.",
+        "right": "Tese."
+      },
+      {
+        "left": "Explicar o mecanismo que sustenta uma afirmação.",
+        "right": "Desenvolvimento da justificativa."
+      },
+      {
+        "left": "Retomar o diagnóstico e encaminhar uma resposta ao problema.",
+        "right": "Fechamento articulado à argumentação."
+      }
+    ]
+  }
+]

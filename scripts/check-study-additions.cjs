@@ -25,8 +25,8 @@ exports.anatomy=function({ctx,$,vm,events,assert,fs}){
 };
 exports.dayOne=async function({ctx,$,vm,events,assert,storage,progressKey,exported,fs,errors}){
  const module=ctx.FurgDayOne,data=ctx.FURG_DAY1_DATA,questions=data.questions,snapshot=vm.runInContext('JSON.stringify(state)',ctx),bankBefore=JSON.stringify(ctx.FurgEnem.metrics());
- assert.equal(JSON.stringify(data),JSON.stringify(JSON.parse(fs.readFileSync('day1-practice-data.json','utf8'))));assert.equal(questions.length,72);assert.equal(new Set(questions.map(q=>q.id)).size,72);
- for(const type of ['choice','cloze','match'])assert.equal(questions.filter(q=>q.type===type).length,24);
+ assert.equal(JSON.stringify(data),JSON.stringify(JSON.parse(fs.readFileSync('day1-practice-data.json','utf8'))));assert.equal(questions.length,120);assert.equal(new Set(questions.map(q=>q.id)).size,120);
+ for(const [type,total] of Object.entries({choice:44,cloze:38,match:38}))assert.equal(questions.filter(q=>q.type===type).length,total);
  for(const q of questions){assert(['linguagens','humanas','redacao'].includes(q.subject));assert(['Fácil','Médio'].includes(q.level));assert(q.explanation&&q.tip&&q.topic);if(q.type==='match'){assert(q.pairs.length>=3&&q.pairs.length<=4);assert.equal(new Set(q.pairs.map(p=>p.right)).size,q.pairs.length);}else{assert.equal(q.options.length,4);assert.equal(new Set(q.options).size,4);assert(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);if(q.type==='cloze')assert.equal((q.prompt.match(/____/g)||[]).length,1);}}
  vm.runInContext('state.lightReview=FurgLightReview.defaults()',ctx);ctx.FurgLightReview.init({getState:()=>vm.runInContext('state',ctx),save:()=>vm.runInContext('save()',ctx),toast:()=>{},setView:name=>vm.runInContext('setView('+JSON.stringify(name)+')',ctx)});vm.runInContext("setView('leve')",ctx);
  for(const fn of events['lightReviewRoot:click']||[])fn({preventDefault(){},target:{closest:()=>({dataset:{light:'dayone'},disabled:false})}});
@@ -49,5 +49,5 @@ exports.dayOne=async function({ctx,$,vm,events,assert,storage,progressKey,export
  let canceled=0,spoken=null;ctx.SpeechSynthesisUtterance=function(text){this.text=text;};ctx.speechSynthesis={speak:u=>spoken=u,cancel:()=>canceled++};click('listen');assert(spoken.text.includes(q.prompt.replace('____','espaço em branco')));click('pause');assert.equal(canceled,1);delete ctx.SpeechSynthesisUtterance;delete ctx.speechSynthesis;click('resume');
  for(let i=0;i<p().session.ids.length;i++){click('jump',{index:String(i)});if(!p().session.responses[current().id]?.submitted)click('skip');}click('next');assert(p().session.finished);assert($('dayOneRoot').innerHTML.includes('Bloco concluído'));
  assert.equal(JSON.stringify(ctx.FurgEnem.metrics()),bankBefore,'Day 1 practice changed ENEM bank answers');vm.runInContext('state='+snapshot,ctx);ctx.FurgLightReview.refresh();assert.equal(errors.length,0);
- console.log('PASS: 72 original Day 1 items; choices/cloze/matching, unique pairs, correction/explanation, skip/retry/first attempt, saved review, pause/drafts/export/import/legacy preservation, validation, storage rollback, speech and isolated bank progress.');
+ console.log('PASS: 120 original Day 1 items; choices/cloze/matching, unique pairs, correction/explanation, skip/retry/first attempt, saved review, pause/drafts/export/import/legacy preservation, validation, storage rollback, speech and isolated bank progress.');
 };

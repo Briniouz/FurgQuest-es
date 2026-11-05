@@ -5,6 +5,6 @@
  const preview=host==='terminal.local'&&new URLSearchParams(location.search||'').has('app-preview');
  const isApp=local||preview;
  document.documentElement.dataset.appMode=isApp?'app':'web';
- const appViews=new Set(['banco','acervo','leituras']);
- globalThis.FurgRuntime={isApp,view:name=>!isApp&&appViews.has(name)?'linguagens':name};
+ // The complete collection is available on both the website and the local app.
+ globalThis.FurgRuntime={isApp,view:name=>name};
 })();

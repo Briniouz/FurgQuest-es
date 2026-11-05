@@ -132,3 +132,7 @@ Arquivos desta atualização: `thinkers-data.js`, `thinkers.js`, `thinkers.css`,
 A área **Biblioteca ENEM** reúne 224 perfis em português, preservando os 40 originais. Busca por ideias e obras, filtros combinados e vínculos com questões reais distinguem citações nominais, obras sem nome e conexões conceituais sugeridas. O banco e os simulados também receberam áreas próprias para apoio, fonte, comando e resolução, sem alterar o conteúdo das questões. Há 66 comentários autorais; os demais itens informam quando ainda não há resolução comentada.
 
 Método, limites, manutenção e testes: [docs/biblioteca-enem.md](docs/biblioteca-enem.md). Índice de auditoria: [docs/enem-library-audit.json](docs/enem-library-audit.json).
+
+## Guia de consulta, Configurações e Aquecimento
+
+O botão **?** abre conceitos e perfis ao lado da questão. A engrenagem abre as preferências de botões, pistas, atalhos, tema e movimento. O Aquecimento tem 120 exercícios autorais, mantendo os 72 anteriores. FURG/COPERSE, acervo, simulados e leituras estão novamente acessíveis no site e no aplicativo. Detalhes e testes: [docs/guia-e-configuracoes.md](docs/guia-e-configuracoes.md).

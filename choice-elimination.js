@@ -25,5 +25,6 @@
       cross.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();const yes=toggle(scope,id,value);paint(row,button,cross,scope,id,value,label);if(yes&&button.getAttribute('aria-pressed')==='true')onClear(value);});
     });
   }
-  globalThis.FurgElimination={decorate,marked,toggle,restore,clear,lock};
+  function clearAll(){marks.clear();if(typeof document==='undefined')return;for(const row of document.querySelectorAll?.('.choice-elimination-row')||[]){row.classList.remove('choice-is-eliminated');const cross=row.querySelector('.choice-eliminate');if(cross){cross.setAttribute('aria-pressed','false');cross.setAttribute('aria-label','Riscar alternativa '+row.dataset.eliminationLabel);cross.title='Riscar alternativa '+row.dataset.eliminationLabel;cross.textContent='×';}}}
+  globalThis.FurgElimination={decorate,marked,toggle,restore,clear,lock,clearAll};
 })();

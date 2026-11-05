@@ -2,7 +2,7 @@
 (() => {
  const $=id=>document.getElementById(id),nav=$('mainNavigation'),previous=$('navScrollPrevious'),next=$('navScrollNext');
  if(!nav||!previous||!next)return;
- const names=['provas','simulados','pratica','estudos'],owners={banco:'provas',enem:'provas',fuvest:'provas',anatomia:'provas',acervo:'provas',simulados:'simulados',evolucao:'pratica',leve:'pratica',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos'};
+ const names=['provas','simulados','pratica','estudos'],owners={banco:'provas',enem:'provas',fuvest:'provas',anatomia:'provas',acervo:'provas',simulados:'simulados',evolucao:'pratica',leve:'pratica',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos',configuracoes:'estudos'};
  let adapter,opened='',bound=false,currentView='',returning=false;
  const trail=[];
  function syncBack(){const b=$('pageBack');if(!b)return;b.disabled=!trail.length;b.title=trail.length?'Voltar à página anterior':'Visita outra seção para poder voltar';}
@@ -10,7 +10,7 @@
  function back(){const last=trail.pop();if(!last||!adapter)return false;returning=true;try{adapter.setView(last.view);}finally{returning=false;}syncBack();$('pageTitle')?.focus({preventScroll:true});const restore=()=>{if(typeof window!=='undefined'&&window.scrollTo)window.scrollTo({top:last.y,behavior:'auto'});};if(typeof requestAnimationFrame==='function')requestAnimationFrame(restore);else restore();return true;}
  const behavior=()=>globalThis.FurgUI?.reducedMotion()?'auto':'smooth';
  const trigger=id=>$('navTrigger-'+id),menu=id=>$('navMenu-'+id);
- const items=id=>Array.from(menu(id)?.querySelectorAll('button')||[]).filter(b=>!b.hidden&&(globalThis.FurgRuntime?.isApp!==false||!b.hasAttribute('data-app-only')));
+ const items=id=>Array.from(menu(id)?.querySelectorAll('button')||[]).filter(b=>!b.hidden);
  function update(){const max=Math.max(0,(nav.scrollWidth||0)-(nav.clientWidth||0));previous.hidden=next.hidden=max<=2;previous.disabled=(nav.scrollLeft||0)<=2;next.disabled=(nav.scrollLeft||0)>=max-2;}
  function close(focus=false){const old=opened;for(const id of names){if(menu(id))menu(id).hidden=true;trigger(id)?.setAttribute('aria-expanded','false');}opened='';if(focus&&old)trigger(old)?.focus();}
  function position(){if(!opened)return;const b=trigger(opened),m=menu(opened);if(!b?.getBoundingClientRect||!m?.getBoundingClientRect)return;const r=b.getBoundingClientRect(),width=m.getBoundingClientRect().width||310,vw=typeof window!=='undefined'?window.innerWidth:1280,vh=typeof window!=='undefined'?window.innerHeight:900;if(m.style){m.style.left=Math.max(12,Math.min(r.left,vw-width-12))+'px';m.style.top=(r.bottom+9)+'px';m.style.maxHeight=Math.max(120,vh-r.bottom-25)+'px';}}

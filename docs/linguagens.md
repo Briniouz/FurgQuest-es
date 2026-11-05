@@ -12,9 +12,9 @@ Há 32 comentários novos de Linguagens, somando 66 resoluções autorais no pro
 
 O nome de apresentação é **BriniouzStudy**, com um B em grafite. O ícone foi criado para o projeto, em fundo transparente; `briniouz-mark.png` e `briniouz-icon.ico` são as versões de uso na interface e no Windows. O repositório e o endereço existente do GitHub Pages foram mantidos.
 
-FURG/COPERSE, o acervo de provas FURG e as seis leituras originais ficam disponíveis no aplicativo local. No site, essas entradas são ocultadas e os respectivos endereços internos levam à revisão de Linguagens. ENEM, Fuvest, biblioteca, guias, Level Up, trilhas, flashcards e desempenho permanecem disponíveis. As bases e os registros de progresso não são removidos.
+FURG/COPERSE, o acervo de provas FURG, os simulados e as seis leituras originais estão disponíveis no site e no aplicativo local, junto de ENEM, Fuvest, biblioteca, guias, Level Up, trilhas, flashcards e desempenho. As bases e os registros de progresso são preservados.
 
-`app-mode.js` identifica o endereço local usado pelo executável ou a abertura direta dos arquivos. Para QA, `terminal.local` aceita `?app-preview=1`. Isso é uma diferença de apresentação, não um controle de acesso. As chaves de armazenamento e a origem local do aplicativo são mantidas para preservar o progresso.
+`app-mode.js` identifica o endereço local usado pelo executável ou a abertura direta dos arquivos. Para QA, `terminal.local` aceita `?app-preview=1`. Essa identificação não restringe as seções disponíveis. As chaves de armazenamento e a origem local do aplicativo são mantidas para preservar o progresso.
 
 ## Voltar e riscar alternativas
 

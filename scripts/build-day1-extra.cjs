@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('node:fs');
+const data=JSON.parse(fs.readFileSync('day1-practice-data.json'));
+const base=data.questions.filter(q=>!q.id.startsWith('d1-plus-'));
+const extra=JSON.parse(fs.readFileSync('scripts/day1-extra.json'));
+if(base.length!==72||extra.length!==48)throw Error('Unexpected exercise count.');
+data.questions=[...base,...extra];
+if(new Set(data.questions.map(q=>q.id)).size!==120)throw Error('Duplicate exercise ID.');
+fs.writeFileSync('day1-practice-data.json',JSON.stringify(data,null,2)+'\n');
+fs.writeFileSync('day1-practice-data.js','"use strict";\nglobalThis.FURG_DAY1_DATA='+JSON.stringify(data,null,2)+';\n');
+console.log('Built 120 authored warm-up exercises.');
