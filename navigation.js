@@ -2,7 +2,7 @@
 (() => {
  const $=id=>document.getElementById(id),nav=$('mainNavigation'),previous=$('navScrollPrevious'),next=$('navScrollNext');
  if(!nav||!previous||!next)return;
- const names=['provas','simulados','pratica','estudos'],owners={banco:'provas',enem:'provas',fuvest:'provas',anatomia:'provas',acervo:'provas',simulados:'simulados',evolucao:'pratica',leve:'pratica',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos',configuracoes:'estudos'};
+ const names=['provas','simulados','pratica','estudos'],owners={vespera:'pratica',banco:'provas',enem:'provas',fuvest:'provas',anatomia:'provas',acervo:'provas',simulados:'simulados',evolucao:'pratica',leve:'pratica',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos',configuracoes:'estudos'};
  let adapter,opened='',bound=false,currentView='',returning=false;
  const trail=[];
  function syncBack(){const b=$('pageBack');if(!b)return;b.disabled=!trail.length;b.title=trail.length?'Voltar à página anterior':'Visita outra seção para poder voltar';}

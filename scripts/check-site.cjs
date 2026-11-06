@@ -25,7 +25,7 @@ const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:
 const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
 const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco',hostname:'127.0.0.1',protocol:'http:',search:''},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
 if(previewFile){for(const [i,match]of [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].entries())vm.runInContext(match[1],ctx,{filename:'preview-inline-'+i});}
-else for(const file of ['app-mode.js','study-settings.js','study-guide.js','choice-elimination.js','linguagens-data.js','linguagens.js','skills-data.js','flashcards-data.js','biology-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','portraits-data.js','thinkers.js','experience.js','profile.js','enem-data.js','fuvest-data.js','enem-subjects-data.js','exam-subjects.js','enem-presentation-data.js','enem-layout.js','enem-solutions.js','linguagens-solutions.js','enem.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','light-review-data.js','day1-practice-data.js','day1-practice.js','light-review.js','enem-anatomy-data.js','enem-anatomy.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+else for(const file of ['app-mode.js','study-settings.js','study-guide.js','choice-elimination.js','linguagens-data.js','linguagens.js','skills-data.js','flashcards-data.js','biology-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','portraits-data.js','thinkers.js','experience.js','profile.js','enem-data.js','fuvest-data.js','enem-subjects-data.js','exam-subjects.js','enem-presentation-data.js','enem-layout.js','enem-solutions.js','linguagens-solutions.js','enem.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','navigation.js','light-review-data.js','day1-practice-data.js','day1-practice.js','light-review.js','enem-anatomy-data.js','enem-anatomy.js','vespera-data.js','vespera.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
 assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,765);assert.equal(model.skills.length,144);
@@ -173,7 +173,7 @@ async function checkEnemSimulations(){
   vm.runInContext('state='+snapshot,ctx);vm.runInContext('globalThis.FurgEnemSim.init({getState:()=>state,save,toast})',ctx);
   assert.equal(errors.length,0);console.log('PASS: annual ENEM simulations 2010+, both days/languages, original order, hidden keys, pause/resume, persisted answers, export/import, completion, annulments, review and time expiry.');
 }
-checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).then(checkExamSubjectEditing).then(checkLightReview).then(checkAnatomy).then(checkDayOne).then(checkGroupedNavigation).then(()=>require('./check-study-guide.cjs').integration(studyAdditionContext())).catch(error=>{console.error(error);process.exitCode=1;});
+checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).then(checkExamSubjectEditing).then(checkLightReview).then(checkAnatomy).then(checkDayOne).then(checkGroupedNavigation).then(()=>require('./check-study-guide.cjs').integration(studyAdditionContext())).then(checkVesperaBackup).catch(error=>{console.error(error);process.exitCode=1;});
 
 async function checkLevelUp(){return require('./check-levelup-rounds.cjs')({ctx,$,vm,events,assert,storage,progressKey,exported,fs,errors});}
 
@@ -279,3 +279,17 @@ function checkAnatomy(){return require('./check-study-additions.cjs').anatomy(st
 function checkDayOne(){return require('./check-study-additions.cjs').dayOne(studyAdditionContext());}
 
 function checkGroupedNavigation(){return require('./check-grouped-navigation.cjs')({ctx,$,vm,events,assert,document,errors,html});}
+
+async function checkVesperaBackup(){
+ if(previewFile||!ctx.FurgVespera)return;
+ const mode=ctx.FurgVespera,oldBank=vm.runInContext('JSON.stringify(state.enem)',ctx),oldFurg=vm.runInContext('JSON.stringify(state.answers)',ctx);
+ assert(mode.start('foco'));const id=vm.runInContext('state.vespera.active.ids[0]',ctx),q=ctx.FURG_ENEM_DATA.questions.find(q=>q.id===id);
+ assert(mode.record({command:'Identificar o propósito delimitado.',evidence:'Uma evidência presente no apoio.',confidence:'alta',choice:q.answer==='A'?'B':'A'}));
+ $('exportProgress').click();const backup=JSON.parse(await exported.at(-1).text());assert.equal(backup.vespera.attempts.length,1);assert.equal(backup.vespera.attempts[0].confidence,'alta');
+ const importFile=async data=>{const text=JSON.stringify(data);await $('progressFile').onchange({target:{files:[{size:text.length,text:async()=>text}],value:'test'}});};
+ await importFile(backup);assert.equal(vm.runInContext('state.vespera.attempts.length',ctx),1,'Reimport duplicated Vespera attempts');
+ await importFile({version:1,answers:{}});assert.equal(vm.runInContext('state.vespera.attempts.length',ctx),1,'Legacy backup erased Vespera');assert.equal(vm.runInContext('JSON.stringify(state.enem)',ctx),oldBank);assert.equal(vm.runInContext('JSON.stringify(state.answers)',ctx),oldFurg);
+ const before=vm.runInContext('JSON.stringify(state)',ctx),setItem=ctx.localStorage.setItem;ctx.localStorage.setItem=()=>{throw Error('full')};
+ const added=JSON.parse(JSON.stringify(backup));added.vespera.attempts[0].id+='-second';await importFile(added);assert.equal(vm.runInContext('JSON.stringify(state)',ctx),before,'Failed import did not roll back full progress');ctx.localStorage.setItem=setItem;
+ console.log('PASS: Vespera included in real backup export/import; repeated import deduplicates, old backups preserve new records, failed writes roll back, original ENEM/FURG records preserved.');
+}
