@@ -29,7 +29,7 @@ for(const entry of c.FURG_STUDY_CONCEPTS){assert(entry.summary&&entry.tip&&entry
  const doc={getElementById:()=>null,querySelector:()=>null,documentElement:{dataset:{}}};
  const p=vm.createContext({document:doc,FurgElimination:{clearAll:()=>calls.push('clear')}});vm.runInContext(fs.readFileSync('study-settings.js','utf8'),p);
  p.FurgSettings.init({getState:()=>prefState,save:()=>{saves++;return !fail;}});
- assert.equal(prefState.preferences.guideLauncher,true);assert.equal(saves,0,'Migration must not save over an older progress file');
+ assert.equal(prefState.preferences.guideLauncher,true);assert.equal(prefState.preferences.compactEnem,false);assert.equal(doc.documentElement.dataset.compactEnem,'false');assert.equal(saves,0,'Migration must not save over an older progress file');assert(p.FurgSettings.set('compactEnem',true));assert.equal(doc.documentElement.dataset.compactEnem,'true');
  assert(p.FurgSettings.set('shortcuts',false));assert.equal(doc.documentElement.dataset.shortcuts,'false');
  assert(p.FurgSettings.set('crossOut',false));assert(calls.length);assert(!p.FurgSettings.set('unknown',true));assert(!p.FurgSettings.set('hints','false'));
  const saved=JSON.stringify(prefState);fail=true;assert(!p.FurgSettings.set('hints',false));assert.equal(JSON.stringify(prefState),saved,'Failed preference save did not roll back');
@@ -41,9 +41,9 @@ for(const entry of c.FURG_STUDY_CONCEPTS){assert(entry.summary&&entry.tip&&entry
 
 exports.integration=async function({ctx,$,vm,events,assert,storage,progressKey,exported,document,errors}){
  const snapshot=vm.runInContext('JSON.stringify(state)',ctx),settings=ctx.FurgSettings;
- settings.set('guideLauncher',false);settings.set('quickCards',false);settings.set('shortcuts',false);
+ settings.set('guideLauncher',false);settings.set('quickCards',false);settings.set('shortcuts',false);settings.set('compactEnem',true);
  const expected=JSON.stringify(settings.get());
- $('exportProgress').click();const backup=JSON.parse(await exported.at(-1).text());assert.equal(backup.preferences.guideLauncher,false);assert.equal(backup.preferences.shortcuts,false);
+ $('exportProgress').click();const backup=JSON.parse(await exported.at(-1).text());assert.equal(backup.preferences.guideLauncher,false);assert.equal(backup.preferences.shortcuts,false);assert.equal(backup.preferences.compactEnem,true);
  settings.set('guideLauncher',true);const json=JSON.stringify(backup);await $('progressFile').onchange({target:{files:[{size:Buffer.byteLength(json),text:async()=>json}],value:'preferences.json'}});assert.equal(JSON.stringify(settings.get()),expected);assert.equal(document.documentElement.dataset.guideLauncher,'false');
  const legacy=JSON.stringify({version:1,answers:{}});await $('progressFile').onchange({target:{files:[{size:legacy.length,text:async()=>legacy}],value:'legacy.json'}});assert.equal(JSON.stringify(settings.get()),expected,'Legacy import reset preferences');
  const saved=JSON.stringify(settings.get()),setItem=ctx.localStorage.setItem;ctx.localStorage.setItem=()=>{throw Error('quota');};assert(!settings.set('hints',false));assert.equal(JSON.stringify(settings.get()),saved);ctx.localStorage.setItem=setItem;

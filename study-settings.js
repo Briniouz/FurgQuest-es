@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   const $ = id => document.getElementById(id);
-  const defaults = () => ({guideLauncher:true,quickCards:true,backButton:true,crossOut:true,hints:true,shortcuts:true,reduceMotion:false});
+  const defaults = () => ({guideLauncher:true,quickCards:true,backButton:true,crossOut:true,hints:true,shortcuts:true,reduceMotion:false,compactEnem:false});
   let adapter, bound=false;
   function validate(value) {
     const out=defaults();
@@ -33,6 +33,7 @@
       ['shortcuts','Atalhos para responder questões','Permite usar A–E, Enter e as setas nos bancos de questões e treinos compatíveis.']
     ]],
     ['Conforto',[
+      ['compactEnem','Enunciado compacto (ENEM)','Diminui a fonte, as entrelinhas e os espaços do texto de apoio e do comando. Fontes bibliográficas, imagens e alternativas mantêm o formato atual.'],
       ['reduceMotion','Reduzir movimento','Desativa transições e animações. A preferência de acessibilidade do sistema também é respeitada.']
     ]]
   ];

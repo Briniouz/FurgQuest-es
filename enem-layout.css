@@ -24,3 +24,13 @@
 .enem-resolution .text-link{display:inline-block;margin-top:10px;font-size:12px}
 .enem-library-link{display:inline-flex;margin:9px 0 0;font-size:12px;font-weight:650}
 @media(max-width:600px){.enem-structured-text{font-size:15px;line-height:1.8}.enem-support{padding-left:12px;margin:20px 0}.enem-bibliography{padding:12px;font-size:11px}.enem-prompt{padding:17px 14px}.enem-prompt p{font-size:15px}.enem-resolution{padding:17px 14px}.enem-structured-text h4{font-size:9px}}
+
+/* Optional statement density. Bibliography, figures and choices keep their styles. */
+html[data-compact-enem="true"] .enem-support:not(.enem-support-figures){font-size:14px;line-height:1.5;margin-top:16px;margin-bottom:16px;padding-left:14px}
+html[data-compact-enem="true"] .enem-support:not(.enem-support-figures) p{font-size:inherit;line-height:inherit;text-align:justify;margin-bottom:10px}
+html[data-compact-enem="true"] .enem-support:not(.enem-support-figures) p:last-child{margin-bottom:0}
+html[data-compact-enem="true"] .enem-prompt{font-size:14px;line-height:1.5;margin-top:18px;margin-bottom:16px;padding:15px 17px}
+html[data-compact-enem="true"] .enem-prompt p{font-size:inherit;line-height:inherit;margin-bottom:10px}
+html[data-compact-enem="true"] .enem-prompt p:last-child{margin-bottom:0}
+html[data-compact-enem="true"] .enem-support:not(.enem-support-figures) h4,html[data-compact-enem="true"] .enem-prompt h4{margin-bottom:8px}
+@media(max-width:600px){html[data-compact-enem="true"] .enem-support:not(.enem-support-figures){padding-left:10px}html[data-compact-enem="true"] .enem-prompt{padding:13px 12px}}
