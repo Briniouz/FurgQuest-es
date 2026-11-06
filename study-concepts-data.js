@@ -859,5 +859,540 @@ globalThis.FURG_STUDY_CONCEPTS=[
         "url": "https://pt.wikipedia.org/wiki/Theodor_W._Adorno"
       }
     ]
+  },
+  {
+    "id": "estoicismo",
+    "title": "Estoicismo",
+    "terms": [
+      "estoico",
+      "estoica",
+      "filosofia helenística",
+      "virtude",
+      "o que depende de nós",
+      "Sêneca",
+      "Epicteto",
+      "Marco Aurélio"
+    ],
+    "summary": "Escola helenística que coloca a vida racional e virtuosa no centro da felicidade. Em Epicteto, é decisivo distinguir nossas escolhas dos acontecimentos que não controlamos.",
+    "points": [
+      "Surgiu com Zenão de Cítio, em Atenas, por volta de 300 a.C.; Sêneca, Epicteto e Marco Aurélio são representantes do período romano.",
+      "Viver segundo a natureza envolve orientar a conduta pela razão. Riqueza e reconhecimento não garantem uma vida boa; importa como agimos diante deles.",
+      "Examinar os próprios juízos não exige abandonar deveres ou tratar as outras pessoas com indiferença."
+    ],
+    "tip": "Identifica se o texto relaciona liberdade ao julgamento e à conduta, em vez de prometer domínio sobre todos os acontecimentos.",
+    "example": "Uma estudante prepara a apresentação com cuidado. No dia, o equipamento falha. Ela procura outra forma de apresentar, sem concluir que o imprevisto determina o valor de toda a sua conduta.",
+    "people": [
+      "Sêneca",
+      "Epicteto",
+      "Marco Aurélio"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy — Stoicism",
+        "url": "https://plato.stanford.edu/entries/stoicism/"
+      }
+    ]
+  },
+  {
+    "id": "epicurismo",
+    "title": "Epicurismo",
+    "terms": [
+      "Epicuro",
+      "prazer",
+      "ataraxia",
+      "aponia",
+      "desejos naturais e necessários",
+      "filosofia helenística"
+    ],
+    "summary": "Filosofia de Epicuro que liga a felicidade ao prazer entendido com prudência: ausência de dor corporal e de perturbação da alma, com avaliação dos desejos.",
+    "points": [
+      "A tranquilidade não exige satisfazer qualquer desejo. É preciso avaliar necessidades, consequências e dependências.",
+      "Alguns prazeres podem trazer sofrimento maior; uma dificuldade passageira pode ser escolhida por seus efeitos posteriores.",
+      "A amizade e a crítica a temores que perturbam a vida integram esse modo de viver."
+    ],
+    "tip": "Compara a busca de uma vida tranquila com a ideia de acumular estímulos ou prazeres sem limite.",
+    "example": "Uma pessoa deixa de comprar um objeto por pressão de status e prefere uma refeição simples com amigos. Ela avalia se o desejo de prestígio realmente contribui para viver melhor.",
+    "people": [
+      "Epicuro"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy — Epicurus",
+        "url": "https://plato.stanford.edu/entries/epicurus/"
+      }
+    ]
+  },
+  {
+    "id": "ceticismo",
+    "title": "Ceticismo antigo",
+    "terms": [
+      "ceticismo",
+      "cético",
+      "cética",
+      "suspensão do juízo",
+      "epoché",
+      "investigação",
+      "pirronismo"
+    ],
+    "summary": "Conjunto de práticas de investigação que problematizam a aceitação precipitada de crenças. Na tradição pirrônica, a suspensão do juízo tem papel central.",
+    "points": [
+      "Diante de argumentos em disputa, o cético investiga e evita afirmar além do que pode sustentar.",
+      "Suspender o juízo difere de proclamar uma nova certeza dogmática de que nenhuma verdade pode existir.",
+      "As tradições céticas são diversas; não se deve tratar todas as formas de dúvida como uma única doutrina."
+    ],
+    "tip": "Observa se o texto mantém a investigação e suspende uma afirmação, em vez de apenas trocar uma certeza por outra.",
+    "example": "Duas explicações incompatíveis parecem igualmente sustentáveis a uma pesquisadora. Ela mantém a investigação e evita declarar uma delas definitivamente verdadeira naquele momento.",
+    "people": [],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy — Ancient Skepticism",
+        "url": "https://plato.stanford.edu/entries/skepticism-ancient/"
+      }
+    ]
   }
 ];
+globalThis.FURG_STUDY_GUIDE_LESSONS={
+  "concepts": {
+    "alienacao": {
+      "exampleExplanation": "O exemplo destaca a separação entre quem trabalha e o controle da atividade e do produto. O conceito descreve uma relação social, não apenas um estado de desatenção.",
+      "examFocus": [
+        "Relacionar trabalho e estranhamento nas relações de produção.",
+        "Distinguir alienação de distração ou desconhecimento individual.",
+        "Interpretar o controle sobre o produto e o processo de trabalho."
+      ]
+    },
+    "mais-valia": {
+      "exampleExplanation": "O foco é a apropriação do valor excedente produzido pelo trabalho. O pagamento de salário, por si só, não elimina a relação de exploração analisada por Marx.",
+      "examFocus": [
+        "Distinguir valor da força de trabalho e valor produzido.",
+        "Relacionar jornada, trabalho excedente e valorização do capital."
+      ]
+    },
+    "fetichismo": {
+      "exampleExplanation": "O objeto parece ter valor por si mesmo, enquanto desaparecem de vista as relações entre as pessoas que o produziram.",
+      "examFocus": [
+        "Identificar relações sociais apresentadas como propriedades de coisas.",
+        "Diferenciar fetichismo da mercadoria e simples desejo de consumir."
+      ]
+    },
+    "fato-social": {
+      "exampleExplanation": "A norma antecede o indivíduo e exerce pressão por meio de expectativas e sanções. Essas características ajudam a reconhecer o fato social.",
+      "examFocus": [
+        "Reconhecer exterioridade, generalidade e coerção.",
+        "Interpretar normas e sanções no comportamento coletivo."
+      ]
+    },
+    "anomia": {
+      "exampleExplanation": "A transformação descrita enfraquece referências que regulavam expectativas. A questão é a regulação coletiva, não um diagnóstico psicológico individual.",
+      "examFocus": [
+        "Relacionar mudanças sociais e enfraquecimento da regulação.",
+        "Distinguir anomia e problemas individuais sem relação com normas sociais."
+      ]
+    },
+    "solidariedade": {
+      "exampleExplanation": "A coesão do exemplo depende da complementaridade entre funções diferentes, aproximando-se da solidariedade orgânica.",
+      "examFocus": [
+        "Comparar solidariedade mecânica e orgânica.",
+        "Relacionar divisão social do trabalho e interdependência."
+      ]
+    },
+    "acao-social": {
+      "exampleExplanation": "A escolha é orientada pelas expectativas de outras pessoas e tem sentido para quem age. O movimento físico isolado não explicaria a situação.",
+      "examFocus": [
+        "Reconhecer sentido atribuído pelo agente e orientação aos outros.",
+        "Distinguir tipos de ação em situações concretas sem supor formas puras."
+      ]
+    },
+    "dominacao": {
+      "exampleExplanation": "As justificativas da obediência são diferentes: a competência impessoal de um cargo e o reconhecimento pessoal de um líder não têm o mesmo fundamento.",
+      "examFocus": [
+        "Diferenciar legitimidade tradicional, carismática e legal-racional.",
+        "Interpretar a justificativa da obediência, sem confundir legitimidade com aprovação moral."
+      ]
+    },
+    "capital-cultural": {
+      "exampleExplanation": "A familiaridade exigida pelo processo seletivo foi construída em oportunidades desiguais. Uma vantagem pode parecer apenas mérito individual quando sua formação social fica oculta.",
+      "examFocus": [
+        "Relacionar origem social, repertório cultural e oportunidades escolares.",
+        "Analisar reprodução das desigualdades e critérios de avaliação."
+      ]
+    },
+    "habitus": {
+      "exampleExplanation": "A sensação de familiaridade resulta de uma trajetória de aprendizagens. Isso orienta práticas sem determinar mecanicamente todas as escolhas.",
+      "examFocus": [
+        "Relacionar disposições e experiências de socialização.",
+        "Evitar tanto o determinismo rígido quanto a ideia de escolhas sem condicionamentos sociais."
+      ]
+    },
+    "violencia-simbolica": {
+      "exampleExplanation": "Um repertório social particular é apresentado como padrão natural. A hierarquia entre grupos se torna menos visível quando é atribuída apenas a qualidades individuais.",
+      "examFocus": [
+        "Identificar a naturalização de hierarquias sociais.",
+        "Relacionar critérios de distinção, reconhecimento e dominação."
+      ]
+    },
+    "educacao-bancaria": {
+      "exampleExplanation": "A repetição sem problematização ilustra o estudante tratado como receptor. A crítica freiriana examina a relação pedagógica, sem exigir abandono do conteúdo.",
+      "examFocus": [
+        "Contrastar educação bancária e problematizadora.",
+        "Relacionar diálogo, participação do estudante e leitura da realidade."
+      ]
+    },
+    "dialogicidade": {
+      "exampleExplanation": "A experiência local vira objeto de investigação e diálogo com conhecimentos. Não basta conversar: há reflexão crítica sobre o problema.",
+      "examFocus": [
+        "Relacionar diálogo, escuta e construção do conhecimento.",
+        "Interpretar conscientização como relação entre reflexão e ação."
+      ]
+    },
+    "banalidade-mal": {
+      "exampleExplanation": "A justificativa burocrática tenta afastar o julgamento sobre o próprio ato. O exemplo não reduz sua gravidade nem elimina a responsabilidade de quem agiu.",
+      "examFocus": [
+        "Relacionar obediência burocrática e ausência de julgamento crítico.",
+        "Distinguir a normalização da prática e a gravidade de seus efeitos."
+      ]
+    },
+    "etnocentrismo": {
+      "exampleExplanation": "O visitante transforma a própria experiência em medida superior. A diferença é julgada antes que se compreendam seus sentidos no outro grupo.",
+      "examFocus": [
+        "Reconhecer hierarquizações entre culturas.",
+        "Identificar críticas ao uso de um padrão cultural como medida universal."
+      ]
+    },
+    "relativismo": {
+      "exampleExplanation": "A pesquisa procura compreender sentidos locais. Compreender uma prática não obriga a aprová-la moralmente.",
+      "examFocus": [
+        "Distinguir compreensão contextual e etnocentrismo.",
+        "Analisar diversidade cultural sem confundir relativização e aprovação irrestrita."
+      ]
+    },
+    "contrato-social": {
+      "exampleExplanation": "As justificativas do poder variam entre os contratualistas. Segurança, direitos e vontade geral precisam ser lidos no argumento de cada autor.",
+      "examFocus": [
+        "Comparar Hobbes, Locke e Rousseau sobre poder e direitos.",
+        "Relacionar pacto, estado de natureza, soberania e limites do governo."
+      ]
+    },
+    "industria-cultural": {
+      "exampleExplanation": "A organização por fórmulas e estratégias de consumo exemplifica a padronização mercantil. A crítica não depende de declarar inferior toda cultura popular.",
+      "examFocus": [
+        "Relacionar mercantilização e padronização cultural.",
+        "Interpretar as relações entre entretenimento, consumo e dominação."
+      ]
+    },
+    "biopolitica": {
+      "exampleExplanation": "O conhecimento estatístico da população participa de formas de intervenção e governo. A análise considera a relação entre saber e poder.",
+      "examFocus": [
+        "Reconhecer formas de gestão política da vida das populações.",
+        "Relacionar estatísticas, saberes e intervenções, sem transformar o conceito em juízo automático sobre uma política."
+      ]
+    },
+    "segregacao": {
+      "exampleExplanation": "Os tempos de viagem tornam visível uma desigualdade espacial de acesso. A localização ganha sentido junto da infraestrutura e dos serviços.",
+      "examFocus": [
+        "Relacionar moradia, transporte e acesso a serviços.",
+        "Interpretar desigualdades urbanas em mapas, relatos e indicadores."
+      ]
+    },
+    "globalizacao": {
+      "exampleExplanation": "A conexão internacional da produção pode conviver com concentração de decisões. Integração e desigualdade não se excluem.",
+      "examFocus": [
+        "Interpretar redes e fluxos entre territórios.",
+        "Relacionar integração econômica, divisão do trabalho e distribuição desigual de poder."
+      ]
+    },
+    "territorio": {
+      "exampleExplanation": "A mesma praça permite observar formas, relações de poder e vínculos vividos. O recorte da análise indica a categoria mais pertinente.",
+      "examFocus": [
+        "Diferenciar território, paisagem e lugar em situações concretas.",
+        "Relacionar apropriação, percepção e experiência do espaço."
+      ]
+    },
+    "escrevivencia": {
+      "exampleExplanation": "A experiência coletiva é transformada pela criação literária. A relação com a memória não torna o texto um registro biográfico literal.",
+      "examFocus": [
+        "Relacionar voz, memória coletiva e criação literária.",
+        "Reconhecer enfrentamentos de apagamentos históricos sem reduzir ficção a documento literal."
+      ]
+    },
+    "interseccionalidade": {
+      "exampleExplanation": "A análise separada das categorias pode tornar invisível uma experiência específica. O foco está na articulação das relações de poder.",
+      "examFocus": [
+        "Identificar cruzamentos entre desigualdades e formas de discriminação.",
+        "Analisar limites de políticas que tratam raça, gênero ou classe como dimensões inteiramente isoladas."
+      ]
+    },
+    "imperativo": {
+      "exampleExplanation": "A vantagem obtida não basta para justificar a regra de agir. É preciso examinar sua possibilidade de universalização e o tratamento das pessoas como fins.",
+      "examFocus": [
+        "Distinguir ação por dever e ação por interesse.",
+        "Aplicar universalização da máxima e respeito à pessoa em dilemas morais."
+      ]
+    },
+    "justo-meio": {
+      "exampleExplanation": "A escolha virtuosa exige avaliação prudente da situação. O exemplo afasta a interpretação de que a virtude seria uma média matemática.",
+      "examFocus": [
+        "Relacionar virtude, hábito e prudência.",
+        "Distinguir justo meio e simples compromisso quantitativo entre extremos."
+      ]
+    },
+    "ataraxia": {
+      "exampleExplanation": "A escolha considera consequências sobre a tranquilidade e a dor. O prazer não é confundido com satisfação imediata de todo desejo.",
+      "examFocus": [
+        "Distinguir ataraxia, aponia e tipos de desejo.",
+        "Interpretar escolhas prudentes e a crítica ao excesso."
+      ]
+    },
+    "antropofagia": {
+      "exampleExplanation": "As influências são transformadas em uma criação própria. O gesto difere tanto da cópia passiva quanto da rejeição total do que vem de fora.",
+      "examFocus": [
+        "Interpretar apropriação crítica e reelaboração de influências.",
+        "Relacionar modernismo, identidade cultural e experimentação artística."
+      ]
+    },
+    "narrador": {
+      "exampleExplanation": "O próprio relato permite desconfiar da versão apresentada. É necessário confrontar a autoimagem da voz narrativa com as pistas do texto.",
+      "examFocus": [
+        "Analisar interesses, omissões e contradições do narrador.",
+        "Distinguir autor, narrador e personagem ao interpretar uma perspectiva."
+      ]
+    },
+    "preconceito-linguistico": {
+      "exampleExplanation": "A forma de falar é usada como atalho para inferiorizar a pessoa. O julgamento social não é uma avaliação pertinente à tarefa.",
+      "examFocus": [
+        "Distinguir adequação de registro e discriminação do falante.",
+        "Relacionar variedades linguísticas, identidade e desigualdades de prestígio."
+      ]
+    },
+    "dialogismo": {
+      "exampleExplanation": "O artigo responde a uma fala anterior e a transforma. O diálogo entre discursos existe mesmo sem uma conversa entre personagens.",
+      "examFocus": [
+        "Reconhecer vozes sociais e relações entre enunciados.",
+        "Interpretar retomada, resposta e contestação de outros discursos."
+      ]
+    },
+    "razao-instrumental": {
+      "exampleExplanation": "O sistema busca eficiência sem discutir o valor do objetivo. A crítica incide sobre a separação entre cálculo dos meios e avaliação dos fins.",
+      "examFocus": [
+        "Distinguir eficiência dos meios e reflexão sobre os fins.",
+        "Relacionar técnica, racionalidade e consequências sociais."
+      ]
+    },
+    "estoicismo": {
+      "exampleExplanation": "Ela distingue a própria conduta do imprevisto e continua agindo. A resposta racional não é passividade nem garantia de sucesso externo.",
+      "examFocus": [
+        "Relacionar virtude, razão e felicidade.",
+        "Em Epicteto, distinguir nossas escolhas dos acontecimentos que não dependem de nós.",
+        "Interpretar juízos, deveres e liberdade interior."
+      ]
+    },
+    "epicurismo": {
+      "exampleExplanation": "A escolha avalia um desejo e suas consequências, em vez de tratar todo prazer como igualmente necessário. A amizade participa da vida prazerosa.",
+      "examFocus": [
+        "Distinguir prazeres e desejos em uma escolha prudente.",
+        "Relacionar felicidade, ausência de dor e tranquilidade da alma."
+      ]
+    },
+    "ceticismo": {
+      "exampleExplanation": "A pesquisadora não troca a dúvida por outra certeza. O exemplo representa investigação com suspensão de uma afirmação ainda não sustentada.",
+      "examFocus": [
+        "Reconhecer suspensão do juízo e investigação.",
+        "Distinguir ceticismo e negação dogmática de toda possibilidade de verdade."
+      ]
+    }
+  },
+  "topics": {
+    "interpretacao": {
+      "examFocus": [
+        "Distinguir informação explícita e inferência sustentada pelo texto.",
+        "Identificar tema, finalidade e tarefa pedida pelo comando."
+      ]
+    },
+    "argumentacao": {
+      "examFocus": [
+        "Reconhecer a tese e a função de dados, exemplos e comparações.",
+        "Explicar como uma estratégia sustenta a posição defendida."
+      ]
+    },
+    "humor": {
+      "examFocus": [
+        "Identificar a quebra de expectativa que produz humor.",
+        "Relacionar ironia e crítica ao contexto e às pistas do texto."
+      ]
+    },
+    "polissemia": {
+      "examFocus": [
+        "Reconhecer sentidos diferentes ativados por uma palavra.",
+        "Explicar o efeito da ambiguidade no contexto de uso."
+      ]
+    },
+    "multimodalidade": {
+      "examFocus": [
+        "Relacionar palavras, imagem, cores e disposição gráfica.",
+        "Explicar a contribuição de cada recurso para o sentido global."
+      ]
+    },
+    "intertextualidade": {
+      "examFocus": [
+        "Reconhecer retomada, paródia ou releitura.",
+        "Interpretar o que muda quando uma referência aparece em outro contexto."
+      ]
+    },
+    "funcoes": {
+      "examFocus": [
+        "Identificar o foco predominante: contexto, emissor, destinatário, mensagem, código ou contato.",
+        "Justificar a função com marcas do texto e da situação comunicativa."
+      ]
+    },
+    "variacao": {
+      "examFocus": [
+        "Relacionar variedades a grupos, lugares, épocas e situações.",
+        "Distinguir diversidade linguística e julgamento de valor sobre falantes."
+      ]
+    },
+    "registro": {
+      "examFocus": [
+        "Relacionar escolhas de linguagem a gênero, interlocutor e finalidade.",
+        "Distinguir norma-padrão e adequação a uma situação concreta."
+      ]
+    },
+    "preconceito": {
+      "examFocus": [
+        "Reconhecer discriminação dirigida ao falante por sua variedade.",
+        "Distinguir prestígio social e funcionamento linguístico de uma forma."
+      ]
+    },
+    "generos": {
+      "examFocus": [
+        "Identificar finalidade e circulação social de um gênero.",
+        "Distinguir gênero discursivo e modo de organização textual."
+      ]
+    },
+    "coesao": {
+      "examFocus": [
+        "Reconhecer referentes de pronomes e outras retomadas.",
+        "Interpretar relações de causa, oposição, concessão e conclusão entre partes do texto."
+      ]
+    },
+    "figuras": {
+      "examFocus": [
+        "Identificar o efeito de uma escolha expressiva no contexto.",
+        "Distinguir relações de semelhança, substituição, oposição, exagero e personificação."
+      ]
+    },
+    "narrador": {
+      "examFocus": [
+        "Identificar quem narra e o que essa voz pode conhecer.",
+        "Interpretar perspectiva, discurso de personagens e efeitos de confiabilidade."
+      ]
+    },
+    "eu-lirico": {
+      "examFocus": [
+        "Distinguir voz poética e pessoa do autor.",
+        "Relacionar ritmo, repetição, sonoridade e imagens à construção do sentido."
+      ]
+    },
+    "barroco-arcadismo": {
+      "examFocus": [
+        "Comparar tensões expressivas e projetos de linguagem.",
+        "Interpretar conflitos, idealizações e representação da natureza a partir do trecho."
+      ]
+    },
+    "romantismo": {
+      "examFocus": [
+        "Analisar idealização, subjetividade e projetos de identidade nacional.",
+        "Interpretar conflitos e diferenças entre obras e fases, sem aplicar traços automaticamente."
+      ]
+    },
+    "realismo-naturalismo": {
+      "examFocus": [
+        "Relacionar crítica social e construção da perspectiva narrativa.",
+        "Distinguir ironia e análise das personagens de explicações naturalistas de condicionamentos."
+      ]
+    },
+    "simbolismo": {
+      "examFocus": [
+        "Relacionar sonoridades e imagens sensoriais a efeitos de sugestão.",
+        "Interpretar símbolos e subjetividade no poema apresentado."
+      ]
+    },
+    "modernismo": {
+      "examFocus": [
+        "Analisar experimentação, ruptura e discussão da cultura brasileira.",
+        "Interpretar reelaboração de influências e crítica a modelos culturais."
+      ]
+    },
+    "regionalismo": {
+      "examFocus": [
+        "Relacionar espaço, linguagem e conflitos sociais.",
+        "Interpretar como uma experiência regional ganha alcance humano e histórico mais amplo."
+      ]
+    },
+    "literatura-memoria": {
+      "examFocus": [
+        "Relacionar memória, autoria e voz narrativa.",
+        "Interpretar como escolhas literárias enfrentam silenciamentos e constroem identidades."
+      ]
+    },
+    "vanguardas": {
+      "examFocus": [
+        "Relacionar procedimentos formais e ruptura com convenções.",
+        "Analisar material, suporte, espaço e participação do público na obra."
+      ]
+    },
+    "arte-identidade": {
+      "examFocus": [
+        "Interpretar representação e ausência de grupos na memória visual.",
+        "Relacionar escolhas artísticas e disputas sobre identidade e reconhecimento."
+      ]
+    },
+    "musica": {
+      "examFocus": [
+        "Relacionar letra, voz, ritmo e oralidade.",
+        "Interpretar projetos culturais e críticas sociais da canção no contexto do texto."
+      ]
+    },
+    "cena-danca": {
+      "examFocus": [
+        "Ler corpo, gesto, espaço e repertórios como construção de sentidos.",
+        "Interpretar diálogo cultural e transformação de tradições na cena."
+      ]
+    },
+    "corpo-esporte": {
+      "examFocus": [
+        "Relacionar práticas corporais a inclusão, regras e participação social.",
+        "Distinguir prática esportiva e explicações que naturalizam barreiras de acesso."
+      ]
+    },
+    "corpo-midia": {
+      "examFocus": [
+        "Identificar padrões de corpo e sucesso construídos pela mídia.",
+        "Relacionar representações, consumo e pressões sociais."
+      ]
+    },
+    "tecnologias": {
+      "examFocus": [
+        "Relacionar suporte, circulação e práticas de leitura e escrita.",
+        "Interpretar continuidades e transformações sem supor substituição total dos meios anteriores."
+      ]
+    },
+    "patrimonio": {
+      "examFocus": [
+        "Identificar sentidos e práticas reconhecidos como patrimônio.",
+        "Relacionar preservação, transmissão e participação das comunidades."
+      ]
+    },
+    "ingles": {
+      "examFocus": [
+        "Reconhecer assunto, propósito e posição discursiva sem traduzir tudo.",
+        "Usar conectores, referentes e contexto para sustentar inferências."
+      ]
+    },
+    "espanhol": {
+      "examFocus": [
+        "Relacionar contexto, variedade e construção dos sentidos.",
+        "Interpretar referentes, conectores e vocabulário sem confiar apenas na semelhança com o português."
+      ]
+    }
+  }
+};

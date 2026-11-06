@@ -6,7 +6,7 @@ FURG, COPERSE, as seis leituras, os simulados e as trilhas estão disponíveis t
 
 O botão **?** no canto abre uma janela de consulta com rolagem própria. Também pode ser aberto em **Estudos → Guia de consulta** ou nas Configurações. Não navega para outra seção, não seleciona nem registra respostas e não consulta o gabarito da questão atual. Fechar com o × ou Escape devolve o foco ao controle anterior.
 
-A busca reúne 224 perfis da biblioteca, 32 guias existentes de Linguagens e 32 novos verbetes conceituais. Aceita nomes, ideias, obras e movimentos, ignora diferenças entre maiúsculas e minúsculas e acentos, e permite filtrar conceitos ou perfis. O conteúdo é carregado ao abrir a consulta; a paginação limita os cartões simultâneos. As relações entre conceitos e pessoas são leituras de apoio, sem alegação de ocorrência numa prova.
+A busca reúne 224 perfis da biblioteca, 32 guias existentes de Linguagens e 35 verbetes conceituais. Aceita nomes, ideias, obras e movimentos, ignora diferenças entre maiúsculas e minúsculas e acentos, e permite filtrar conceitos ou perfis. O conteúdo é carregado ao abrir a consulta; a paginação limita os cartões simultâneos. As relações entre conceitos e pessoas são leituras de apoio, sem alegação de ocorrência numa prova.
 
 ## Configurações
 
@@ -29,3 +29,13 @@ node scripts/check-site.cjs
 ```
 
 Os testes cobrem busca por nome, conceito e obra, acentos, carregamento sob demanda, conservação dos 72 itens, validação e rollback das preferências, importação/exportação, atalhos e integridade das bases oficiais. A consulta precisa dos arquivos locais do projeto no aplicativo; links externos de referência dependem de conexão.
+
+## Leitura compacta e exemplos
+
+O cabeçalho agora ocupa uma linha. Sugestões desaparecem durante a busca, o contador fica junto dos filtros e a janela usa a altura disponível da tela. Uma nova busca repõe a rolagem no primeiro resultado; carregar mais mantém a posição. Correspondências exatas abrem a explicação inicial.
+
+Os 67 temas de consulta (35 verbetes e 32 guias de Linguagens) têm exemplo autoral explicado e focos de estudo em “O que pode ser cobrado”. Essas possibilidades são uma orientação didática, sem previsão ou nova alegação de ocorrência no exame. Estoicismo, epicurismo e ceticismo antigo receberam verbetes próprios. Os perfis relacionados aproveitam exemplos de seus conceitos, identificados pelo tema.
+
+Retratos ou representações dos perfis são solicitados à Wikipédia ao ficarem visíveis, com cache compartilhado com a biblioteca, miniaturas leves e link para os créditos do arquivo. Ausência de imagem ou falha de conexão mantém as iniciais. A busca não precisa esperar as imagens.
+
+Três representações de estoicos (Sêneca, Epicteto e Marco Aurélio) acompanham o projeto como miniaturas locais, com autoria e licença em `portraits/README.md`. Os outros perfis usam a consulta de imagens da Wikipédia. O carregamento aceita os dois domínios de miniaturas do Wikimedia, `upload` e `thumb`.

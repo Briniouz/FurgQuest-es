@@ -21,6 +21,7 @@
   const filters={query:'',area:'',period:'',movement:'',frequency:'',type:'',sort:'relevance'};
   const expanded=new Set(),referenceLimits=new Map(),portraitRequests=new Map();
   let observer=null;
+  const portraitObservers=new WeakMap();
   function script(path,globalName){
     if(globalThis[globalName])return Promise.resolve();
     return new Promise((resolve,reject)=>{
@@ -64,16 +65,38 @@
   function photo(node){
     if(!node||node.dataset.loaded==='1')return;node.dataset.loaded='1';
     const title=node.dataset.wiki;let request=portraitRequests.get(title);
+    const local=globalThis.FURG_PORTRAITS_DATA?.[title];
+    if(local)request=Promise.resolve(local);
     if(!request){
-      const query=new URLSearchParams({action:'query',format:'json',prop:'pageimages',pithumbsize:'220',redirects:'1',titles:title,origin:'*'});
-      request=fetch('https://pt.wikipedia.org/w/api.php?'+query,{mode:'cors'}).then(r=>{if(!r.ok)throw Error('Imagem indisponível');return r.json();}).then(j=>Object.values(j.query?.pages||{}).find(p=>p.thumbnail?.source)?.thumbnail?.source||null).catch(()=>null);
+      const query=new URLSearchParams({action:'query',format:'json',prop:'pageimages|info',piprop:'thumbnail|name',inprop:'url',pithumbsize:'220',redirects:'1',titles:title,origin:'*'});
+      request=fetch('https://pt.wikipedia.org/w/api.php?'+query,{mode:'cors'}).then(r=>{if(!r.ok)throw Error('Imagem indisponível');return r.json();}).then(j=>{
+        const page=Object.values(j.query?.pages||{}).find(p=>p.thumbnail?.source);
+        if(!page||!/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/(?:commons|pt)\//.test(page.thumbnail.source))return null;
+        const commons=page.thumbnail.source.includes('/commons/');
+        return {src:page.thumbnail.source,credit:page.pageimage?(commons?'https://commons.wikimedia.org/wiki/File:':'https://pt.wikipedia.org/wiki/Ficheiro:')+encodeURIComponent(page.pageimage):page.fullurl||'https://pt.wikipedia.org/wiki/'+encodeURIComponent(title)};
+      }).catch(()=>null);
       portraitRequests.set(title,request);
     }
-    request.then(src=>{
-      if(!src||!/^https:\/\/upload\.wikimedia\.org\//.test(src)||!node.isConnected)return;
-      const img=new Image();img.alt='Retrato de '+node.dataset.name;img.loading='lazy';img.decoding='async';img.width=88;img.height=110;
-      img.onload=()=>{if(node.isConnected){node.appendChild(img);node.classList.add('has-photo');}};img.src=src;
+    request.then(media=>{
+      const allowed=media&&(media.local?/^portraits\/[a-z0-9-]+\.jpg$/.test(media.src):/^https:\/\/(?:upload|thumb)\.wikimedia\.org\//.test(media.src));
+      if(!allowed||!node.isConnected)return;
+      const img=new Image();img.alt=media.alt||'Retrato ou representação de '+node.dataset.name;img.loading='eager';img.decoding='async';img.width=88;img.height=110;
+      img.onload=()=>{
+        if(!node.isConnected)return;node.appendChild(img);node.classList.add('has-photo');
+        if(!/^https:\/\/(?:commons\.wikimedia\.org|pt\.wikipedia\.org)\//.test(media.credit))return;
+        let credit=node.parentElement?.querySelector('[data-portrait-credit]'),caption;
+        if(!credit&&node.ownerDocument?.createElement){caption=node.ownerDocument.createElement('div');caption.className='portrait-overlay-credit';credit=node.ownerDocument.createElement('a');credit.target='_blank';credit.rel='noopener noreferrer';caption.appendChild(credit);node.appendChild(caption);}
+        if(!credit)return;credit.href=media.credit;credit.hidden=false;credit.textContent=media.author||'Imagem e créditos ↗';credit.title='Wikimedia: autoria, licença e informações da imagem';
+        if(media.license&&/^https:\/\/creativecommons\.org\//.test(media.licenseURL)){
+          const license=node.ownerDocument.createElement('a');license.href=media.licenseURL;license.textContent=media.license;license.className='portrait-license';license.target='_blank';license.rel='noopener noreferrer';license.title='Miniatura redimensionada do arquivo original';(caption||credit.parentElement).appendChild(license);
+        }
+      };img.src=media.src;
     });
+  }
+  function hydratePortraits(root){
+    if(!root)return;portraitObservers.get(root)?.disconnect();
+    const nodes=root.querySelectorAll('[data-wiki]');
+    if('IntersectionObserver' in globalThis){const watcher=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){watcher.unobserve(e.target);photo(e.target);}}),{root:root.closest?.('.guide-content')||null,rootMargin:'100px'});portraitObservers.set(root,watcher);nodes.forEach(n=>watcher.observe(n));}else nodes.forEach(photo);
   }
   function hydrate(){
     observer?.disconnect();const nodes=$('thinkersRoot')?.querySelectorAll('[data-wiki]')||[];
@@ -144,5 +167,5 @@
       open(a.dataset.knowledgeQuestion?{questionId:a.dataset.knowledgeQuestion}:{});
     });
   }
-  globalThis.FurgThinkers={init,render,open,ensure,count:()=>records.length,search:q=>open({query:q}),filter:area=>{filters.area=area;count=12;shell=false;return render();},matches,selection:()=>({...filters}),referencesForQuestion:id=>indexData?.questions[id]||[],getProfile:id=>byId.get(Number(id))};
+  globalThis.FurgThinkers={init,render,open,ensure,hydratePortraits,count:()=>records.length,search:q=>open({query:q}),filter:area=>{filters.area=area;count=12;shell=false;return render();},matches,selection:()=>({...filters}),referencesForQuestion:id=>indexData?.questions[id]||[],getProfile:id=>byId.get(Number(id))};
 })();
