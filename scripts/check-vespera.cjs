@@ -4,11 +4,11 @@ const map=new Map(),events=new Map();let images=[];
 const el=id=>{if(!map.has(id))map.set(id,{id,innerHTML:'',textContent:'',value:'',open:false,hidden:true,querySelectorAll:()=>images,addEventListener:(type,fn)=>events.set(id+':'+type,fn),focus(){},scrollIntoView(){},showModal(){this.open=true},close(){this.open=false},setAttribute(){}});return map.get(id)};
 const document={getElementById:el,activeElement:el('previousFocus')};
 const c=vm.createContext({document,setTimeout:()=>1,clearTimeout(){},console});
-for(const p of ['enem-data.js','enem-presentation-data.js','enem-layout.js','enem-solutions.js','linguagens-solutions.js','enem.js','vespera-data.js','vespera.js'])vm.runInContext(fs.readFileSync(p,'utf8'),c,{filename:p});
-const mode=c.FurgVespera,data=c.FURG_VESPERA_DATA,bank=new Map(c.FURG_ENEM_DATA.questions.map(q=>[q.id,q])),keys=Object.keys(data.questions);
-assert.equal(data.entries.length,39);assert.equal(new Set(data.entries.map(e=>e.id)).size,39);assert.equal(data.entries.filter(e=>e.kind==='genero').length,8);assert.equal(data.entries.filter(e=>e.kind==='recurso').length,7);assert.equal(keys.length,25);
+for(const p of ['enem-data.js','enem-presentation-data.js','enem-layout.js','enem-solutions.js','linguagens-solutions.js','enem.js','vespera-data.js','vespera-percurso-data.js','vespera-repertorios-data.js','vespera.js'])vm.runInContext(fs.readFileSync(p,'utf8'),c,{filename:p});
+const mode=c.FurgVespera,data=c.FURG_VESPERA_DATA,bank=new Map(c.FURG_ENEM_DATA.questions.map(q=>[q.id,q])),trail=c.FURG_VESPERA_TRAIL, questions={...data.questions,...trail.questions}, keys=Object.keys(questions);
+assert.equal(data.entries.length,39);assert.equal(new Set(data.entries.map(e=>e.id)).size,39);assert.equal(data.entries.filter(e=>e.kind==='genero').length,8);assert.equal(data.entries.filter(e=>e.kind==='recurso').length,7);assert.equal(keys.length,36);
 for(const e of data.entries)for(const p of ['definition','example','recognize','difference'])assert(e[p]?.length>15,e.id+' '+p);
-for(const [id,n]of Object.entries(data.questions)){
+for(const [id,n]of Object.entries(questions)){
  const q=bank.get(id);assert(mode.eligible(id),id+' stale or invalid');assert.equal(q.answer,n.answerExpected);assert.equal(Object.keys(n.wrong).length,4);assert(!n.wrong[q.answer]);assert((n.explanation||c.FURG_ENEM_SOLUTIONS[id]?.paragraphs).length>=2,id+' missing reasoning');
  for(const [letter,w]of Object.entries(n.wrong)){assert(/^[A-E]$/.test(letter));assert(w.why.length>35);assert(['vocabulario','comando','genero','conteudo','extrapolacao','generalizacao','informacao'].includes(w.category));}
  if(n.evidenceKind!=='imagem')assert((q.context+' '+q.stem).includes(n.evidence),id+' evidence not in source');
@@ -26,7 +26,7 @@ const draft={choice:q.answer==='A'?'B':'A',confidence:'alta',command:'Informar s
 images=[{complete:false,naturalWidth:0}];assert(!mode.record(draft),'Allowed an unloaded figure');images=[];
 canSave=false;const before=JSON.stringify(root.vespera);assert(!mode.record(draft));assert.equal(JSON.stringify(root.vespera),before,'Storage failure lost existing mode state');canSave=true;
 assert(mode.record(draft));assert(!mode.record(draft),'Duplicate answer counted twice');assert.equal(root.vespera.attempts[0].exposure,'new');assert.equal(mode.stats().new.total,1);assert.equal(mode.errors(true).length,1);
-let html=el('vesperaRoot').innerHTML;assert(html.includes('Feedback da questão'));assert(html.indexOf('data-eve="next"')>html.indexOf('Feedback da questão'));assert(!html.includes('<textarea'),'Reflections remained editable after grading');
+let html=el('vesperaRoot').innerHTML;assert(html.includes('Feedback da questão'));assert(html.indexOf('data-eve="next"')>html.indexOf('Feedback da questão'));assert(!html.includes('id="eveCommand"'),'Reflections remained editable after grading');assert(html.indexOf('data-eve="next"')<html.indexOf('data-eve-comment'),'Comment moved the next action away from feedback');
 assert(mode.next());assert(mode.start('humanas'));assert.equal(root.vespera.active.id,batch,'Starting another block discarded pending progress');
 while(root.vespera.active.index<5){const id=root.vespera.active.ids[root.vespera.active.index];assert(mode.record({command:'Identificar o papel do trecho.',evidence:'Uma pista registrada antes da resposta.',confidence:'baixa',choice:bank.get(id).answer}));assert(mode.next());}
 assert.equal(root.vespera.attempts.length,5);assert.equal(mode.stats().new.total,4);assert.equal(mode.stats().repeat.total,1);assert.equal(mode.stats().highErrors,1);assert(el('vesperaRoot').innerHTML.includes('Bloco concluído'));
@@ -36,5 +36,62 @@ const polluted=JSON.parse(JSON.stringify(snapshot));polluted.attempts[0].correct
 assert.equal(mode.validate({active:{id:'x',ids:[first,first],index:0}}).active,null);
 mode.openDictionary('Inferência');assert(el('eveDictionary').open);assert.equal(el('eveDictCount').textContent,'1 verbete');events.get('eveDictionary:keydown')({key:'Escape',stopPropagation(){},preventDefault(){}});assert(!el('eveDictionary').open,'Dictionary did not close with Escape');
 root={...root,vespera:mode.fresh()};assert(mode.start());assert.equal(root.vespera.active.ids.filter(id=>bank.get(id).area==='linguagens').length,3);assert.equal(root.vespera.active.ids.filter(id=>bank.get(id).area==='ciencias-humanas').length,2);
-console.log('PASS: 39 complete reference cards; 25 fingerprint-checked official items; eight original answer-sheet hashes; all feedback alternatives, evidence and sources verified.');
+const longIds = trail.blocks.flatMap(block => {
+ assert.equal(block.items.length,5);
+ for (const item of block.items) assert(item.hint.length > 25);
+ return block.items.map(item => item.id);
+});
+assert.equal(trail.blocks.length,5);
+assert.equal(new Set(longIds).size,25);
+assert.equal(longIds.filter(id=>bank.get(id).area==='linguagens').length,12);
+assert(longIds.every(id=>mode.eligible(id)));
+assert.equal(c.FURG_VESPERA_REPERTORIES.length,12);
+for (const card of c.FURG_VESPERA_REPERTORIES) {
+ assert(card.tip.length > 40 && card.example.length > 100);
+ assert.match(card.news.fact,/20[0-9]{2}/);
+ assert.equal(new URL(card.news.url).protocol,'https:');
+ assert.equal(new URL(card.art.url).protocol,'https:');
+}
+
+const shortBatch = root.vespera.active.id;
+assert(mode.start('percurso'));
+assert.equal(root.vespera.active.id,shortBatch);
+assert.equal(root.vespera.percurso.ids.join(','),longIds.join(','));
+const courseBatch = root.vespera.percurso.id;
+const firstCourse = bank.get(longIds[0]);
+const authored = 'Minha pista explica a conclusão. <script>teste</script>';
+assert(mode.record({...draft,choice:firstCourse.answer,discursive:authored}));
+const attempt = root.vespera.attempts.at(-1);
+assert.equal(attempt.discursive,authored);
+assert(el('vesperaRoot').innerHTML.includes('&lt;script&gt;teste&lt;/script&gt;'));
+events.get('vesperaRoot:change')({target:{dataset:{eveComment:attempt.id},value:'Revisar o alcance da tese.'}});
+assert.equal(root.vespera.attempts.at(-1).comment,'Revisar o alcance da tese.');
+const newer = JSON.parse(JSON.stringify(root.vespera));
+newer.attempts.at(-1).comment='Comentário editado em outro navegador';
+newer.attempts.at(-1).commentAt='2100-01-01T00:00:00.000Z';
+assert.equal(mode.merge(root.vespera,newer).attempts.at(-1).comment,newer.attempts.at(-1).comment);
+assert.equal(mode.next(),true);
+assert(mode.start('mix'));
+assert.equal(root.vespera.active.id,shortBatch);
+assert(mode.start('percurso'));
+assert.equal(root.vespera.percurso.id,courseBatch);
+assert.equal(root.vespera.percurso.index,1);
+const reloaded = mode.validate(JSON.parse(JSON.stringify(root.vespera)));
+assert.equal(reloaded.percurso.ids.length,25);
+assert.equal(reloaded.attempts.at(-1).discursive,authored);
+assert.equal(reloaded.attempts.at(-1).comment,'Revisar o alcance da tese.');
+assert.equal(mode.validate({...reloaded,active:reloaded.percurso}).active,null);
+assert.equal(mode.merge(reloaded,{attempts:[]}).percurso.id,courseBatch);
+while (root.vespera.percurso.index<25) {
+ const id=root.vespera.percurso.ids[root.vespera.percurso.index];
+ assert(mode.record({...draft,choice:bank.get(id).answer}));
+ assert(mode.next());
+}
+assert.equal(root.vespera.attempts.filter(a=>a.batch===courseBatch).length,25);
+assert(el('vesperaRoot').innerHTML.includes('Percurso concluído'));
+assert.equal(root.vespera.active.id,shortBatch);
+assert.equal(JSON.stringify(root.enem),old);
+assert.equal(JSON.stringify(root.answers),oldMain);
+console.log('PASS: 39 complete reference cards; 36 fingerprint-checked official items; eight original answer-sheet hashes; all feedback alternatives, evidence and sources verified.');
 console.log('PASS: required pre-answer reflections/confidence, five-item sessions, feedback order, repeated-vs-new metrics, legacy exposures, high-confidence reviews, image gating, save rollback, session resume and import deduplication; original bank progress unchanged.');
+console.log('PASS: 25-item route, independent short session, 12 sourced writing cards, discursive response, comment, reload, merge and completion.');
