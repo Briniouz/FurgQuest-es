@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),crypto=require('node:crypto');
 const c=vm.createContext({console,document:{getElementById:()=>null},URLSearchParams});
-for(const f of ['thinkers-data.js','thinkers-index.js','thinkers.js','enem-layout.js','enem-solutions.js','linguagens-solutions.js'])vm.runInContext(fs.readFileSync(f,'utf8'),c,{filename:f});
+for(const f of ['thinkers-data.js','thinkers-index.js','thinkers.js','enem-layout.js','linguagens-data.js','linguagens.js','study-concepts-data.js','study-guide.js','vespera-data.js','enem-anatomy-data.js','biblioteca-guia-data.js','biblioteca-guia.js','enem-solutions.js','linguagens-solutions.js'])vm.runInContext(fs.readFileSync(f,'utf8'),c,{filename:f});
 const people=c.FURG_THINKERS_DATA,index=c.FURG_THINKERS_INDEX,bank=JSON.parse(fs.readFileSync('enem-data.json','utf8')).questions,questions=new Map(bank.map(q=>[q.id,q]));
 const originals=JSON.parse(fs.readFileSync('tests/fixtures/thinkers-v1.json','utf8'));
 assert(!index.profiles['219'].references.some(r=>r.questionId==='enem-2009-106'),'M. F. Fernandes is not a confirmed mention of Millôr Fernandes');
@@ -53,6 +53,34 @@ const html=fs.readFileSync('index.html','utf8');assert(html.includes('id="biblio
  assert(c.FurgThinkers.matches(person('Epicuro'),{...filters,query:'epicuro',area:'Filosofia',period:'Antiguidade',movement:'Epicurismo',frequency:'1-2',type:'direct'}));
  assert(!c.FurgThinkers.matches(person('Epicuro'),{...filters,query:'epicuro',frequency:'6+'}));
  assert(!c.FurgThinkers.matches(person('Frantz Fanon'),{...filters,query:'',type:'direct'}));
+ const guide = c.FurgLibraryGuide;
+ const data = c.FURG_LIBRARY_GUIDE_DATA;
+ c.FURG_ENEM_DATA = {questions: bank};
+ const concepts = await guide.loadConcepts(data);
+ assert(concepts.length >= 175);
+ assert.equal(new Set(concepts.map(x=>x.titleKey)).size,concepts.length);
+ for (const entry of [...concepts,...data.commands]) {
+  assert(entry.summary?.length > 20 && entry.tip?.length > 20 && entry.example?.length > 15,entry.title);
+ }
+ for (const [term, title] of [['realismo','Realismo e Naturalismo'],['racionalismo','Racionalismo'],['iluminismo','Iluminismo'],['inferência','Inferência'],['rubrica','Rubrica'],['toyotismo','Fordismo, toyotismo e trabalho flexível']]) {
+  assert.equal(guide.search(concepts,term)[0].title,title,term);
+ }
+ assert.equal(guide.search(concepts,'iluminismo','Geografia').length,0);
+ assert.equal(guide.search(concepts,'inexistente123').length,0);
+ assert.equal(data.commands.length,39);
+ for (const title of ['Pressupõe-se','Define-se / defina-se','Destaca-se','Respectivamente','Exceto / incorreta']) assert(data.commands.some(x=>x.title===title));
+ for (const source of data.sources) assert.equal(new URL(source.url).protocol,'https:');
+ const {sample,rows} = guide.patterns();
+ assert.equal(sample.length,450);
+ assert.equal(new Set(sample.map(x=>x.id)).size,sample.length);
+ assert.equal(rows.length,10);
+ assert.equal(rows.reduce((sum,p)=>sum+p.count,0),sample.length);
+ assert.equal(rows[0].id,'caracterizar');
+ for (const [pattern,id] of Object.entries(data.cases)) {
+  assert(sample.some(r=>r.pattern===pattern&&r.id===id),id);
+  assert(questions.get(id)?.quality?.keyVerified,id);
+ }
+ console.log('PASS: '+concepts.length+' unique concept cards, 39 command cards, accented search, group filtering, 450 first-day items and 10 valid real examples.');
  console.log('PASS: 224 unique profiles, all 40 originals preserved; '+references+' traceable links, direct/work/concept separation, counterexamples, exact years and reverse graph.');
  console.log('PASS: idea/work search and combined filters; all 3833 question texts and objects unchanged; multi-source and recent inline layouts, 66 guarded authored solutions, lazy library data and safe rendering.');
 })().catch(e=>{console.error(e);process.exitCode=1;});
