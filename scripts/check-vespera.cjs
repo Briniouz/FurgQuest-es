@@ -46,11 +46,23 @@ assert.equal(new Set(longIds).size,25);
 assert.equal(longIds.filter(id=>bank.get(id).area==='linguagens').length,12);
 assert(longIds.every(id=>mode.eligible(id)));
 assert.equal(c.FURG_VESPERA_REPERTORIES.length,12);
+assert.equal(new Set(c.FURG_VESPERA_REPERTORIES.map(axis => axis.id)).size,12);
 for (const card of c.FURG_VESPERA_REPERTORIES) {
  assert(card.tip.length > 40 && card.example.length > 100);
  assert.match(card.news.fact,/20[0-9]{2}/);
  assert.equal(new URL(card.news.url).protocol,'https:');
  assert.equal(new URL(card.art.url).protocol,'https:');
+ const {consensus, area, pocket, music, agents, study} = card.kit;
+ assert(consensus.length > 40 && area.title && area.text.length > 30 && area.opening.length > 60);
+ assert.notEqual(music.title,card.art.title);
+ assert.equal(agents.length,2);
+ assert.notEqual(agents[0].title,agents[1].title);
+ assert(agents.every(agent => agent.title && agent.text.length > 50));
+ for (const source of [pocket,music,study].filter(Boolean)) {
+  assert(source.title && source.source && source.text.length > 40);
+  assert.equal(new URL(source.url).protocol,'https:');
+ }
+ if (study) assert.match(study.text,/20[0-9]{2}/);
 }
 
 const shortBatch = root.vespera.active.id;
@@ -92,6 +104,31 @@ assert(el('vesperaRoot').innerHTML.includes('Percurso concluído'));
 assert.equal(root.vespera.active.id,shortBatch);
 assert.equal(JSON.stringify(root.enem),old);
 assert.equal(JSON.stringify(root.answers),oldMain);
+const repertoryProgress = JSON.stringify(root);
+const repertorySaves = saves;
+events.get('vesperaRoot:click')({target:{closest:()=>({dataset:{eve:'repertories'}})}});
+const repertoryResults = el('eveRepertoryResults');
+const selectRepertory = (id,value) => events.get('vesperaRoot:change')({target:{id,value}});
+const searchRepertory = value => events.get('vesperaRoot:input')({target:{id:'eveRepertorySearch',dataset:{},value}});
+assert.equal(repertoryResults.innerHTML.match(/data-eve-axis=/g).length,12);
+selectRepertory('eveRepertoryAxis','tecnologia');
+assert.equal(el('eveRepertoryCount').textContent,'1 eixo temático');
+assert.match(repertoryResults.innerHTML,/data-eve-axis="tecnologia" open/);
+assert.match(repertoryResults.innerHTML,/Ciência da Computação/);
+assert.match(repertoryResults.innerHTML,/Pela Internet/);
+selectRepertory('eveRepertoryUse','conclusao');
+assert.equal(repertoryResults.innerHTML.match(/data-repertory-kind="Agente"/g).length,2);
+assert.doesNotMatch(repertoryResults.innerHTML,/data-repertory-kind="(Música|Dado de pesquisa)"/);
+selectRepertory('eveRepertoryAxis','');
+selectRepertory('eveRepertoryUse','');
+searchRepertory('Admiravel Chip Novo');
+assert.match(repertoryResults.innerHTML,/data-eve-axis="midia" open/);
+searchRepertory('nenhum-eixo-com-este-nome');
+assert.equal(el('eveRepertoryEmpty').hidden,false);
+assert.equal(repertoryResults.innerHTML,'');
+assert.equal(JSON.stringify(root),repertoryProgress);
+assert.equal(saves,repertorySaves);
 console.log('PASS: 39 complete reference cards; 36 fingerprint-checked official items; eight original answer-sheet hashes; all feedback alternatives, evidence and sources verified.');
 console.log('PASS: required pre-answer reflections/confidence, five-item sessions, feedback order, repeated-vs-new metrics, legacy exposures, high-confidence reviews, image gating, save rollback, session resume and import deduplication; original bank progress unchanged.');
 console.log('PASS: 25-item route, independent short session, 12 sourced writing cards, discursive response, comment, reload, merge and completion.');
+console.log('PASS: 12 writing axes with complete kits and sources, accent-insensitive search, stage and axis filters, and unchanged saved progress.');

@@ -18,7 +18,13 @@
  const ids=()=>Object.keys(data.questions).filter(eligible),uid=()=>Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,11);
  const fresh = () => ({version: 1, attempts: [], active: null, percurso: null, cards: {}, plan: {}, hints: true});
  let adapter,bound=false,tab='plan',dictionaryQuery='',dictionaryKind='all',lastFocus=null,flashIds=[],flashIndex=0,flashRevealed=false,reviewHigh=false,draftTimer,blockedImage=false;
- let sessionKey = 'active', repertoryQuery = '', commentTimer;
+ let sessionKey = 'active', commentTimer;
+ const repertoryFilter = {axis: '', use: '', query: ''};
+ const repertoryUses = {
+  introducao: 'Introdução',
+  desenvolvimento: 'Desenvolvimento',
+  conclusao: 'Conclusão',
+ };
  const pendingComments = new Map();
  const unfinished = session => session && session.index < session.ids.length;
  const session = () => state()[sessionKey];
@@ -431,42 +437,115 @@
    }).join('') : '<p>Teus textos aparecem aqui depois de conferir uma resposta discursiva ou salvar um comentário.</p>'}
   </section>`;
  }
- function repertoryCard(card) {
-  const searchText = norm([card.title, card.angle, card.art.title, ...card.tags].join(' '));
-  return `<article class="eve-repertoire-card panel" data-eve-repertoire="${esc(searchText)}">
-   <h3>${esc(card.title)}</h3><p class="eve-repertoire-angle">${esc(card.angle)}</p>
-   <div class="eve-repertoire-brief"><h4>Obra para lembrar</h4><p><b>${esc(card.art.title)}</b> · ${esc(card.art.connection)}</p></div>
-   <div class="eve-repertoire-brief"><h4>Dado de notícia</h4><p>${esc(card.news.fact)}</p></div>
-   <details><summary>Como usar na redação</summary>
-    <p>${esc(card.tip)}</p><h4>Exemplo autoral</h4><p>${esc(card.example)}</p>
-   </details>
-   <div class="eve-repertoire-sources">
-    <a href="${esc(card.art.url)}" target="_blank" rel="noopener">Conferir a obra ↗</a>
-    <a href="${esc(card.news.url)}" target="_blank" rel="noopener">${esc(card.news.label)} ↗</a>
-   </div>
+ function repertoryGroups(axis) {
+  const {art, news, kit} = axis;
+  const research = kit.study || {title: news.label, text: news.fact, url: news.url};
+  const intro = ['introducao'];
+  const argument = ['desenvolvimento'];
+  const both = ['introducao', 'desenvolvimento'];
+  const evidence = [
+   {...kit.pocket, kind: 'De bolso', uses: both},
+   {kind: 'Obra cultural', title: art.title, text: art.connection, url: art.url, uses: both},
+   {...kit.music, kind: 'Música', uses: both},
+   {...research, kind: 'Dado de pesquisa', uses: argument},
+  ];
+  if (kit.study) evidence.push({
+   kind: 'Dado complementar', title: news.label, text: news.fact, url: news.url, uses: argument,
+  });
+  return [
+   {
+    title: 'Para abrir o tema',
+    items: [
+     {kind: 'Consenso geral', title: 'Ponto de partida', text: kit.consensus, uses: intro},
+     {...kit.area, kind: 'Área do conhecimento', uses: intro},
+    ],
+   },
+   {title: 'Repertórios para argumentar', items: evidence},
+   {
+    title: 'Agentes para a proposta de intervenção',
+    items: kit.agents.map(agent => ({...agent, kind: 'Agente', uses: ['conclusao']})),
+   },
+  ];
+ }
+
+ function repertoryBadges(uses) {
+  return `<div class="eve-repertoire-badges" aria-label="Uso sugerido">
+   ${uses.map(use => `<span title="Usável para ${repertoryUses[use].toLowerCase()}">${repertoryUses[use]}</span>`).join('')}
+  </div>`;
+ }
+
+ function repertoryItem(item) {
+  const source = item.url ? `<a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.source || 'Conferir a fonte')} ↗</a>` : '';
+  const profile = item.profile ? button('repertory-profile', 'Ver perfil na Biblioteca ↗', `data-profile="${esc(item.profile)}"`, 'quiet') : '';
+  return `<article class="eve-repertoire-item" data-repertory-kind="${esc(item.kind)}">
+   <p class="eyebrow">${esc(item.kind)}</p>
+   <h4>${esc(item.title)}</h4>
+   ${repertoryBadges(item.uses)}
+   <p>${esc(item.text)}</p>
+   ${item.opening ? `<div class="eve-repertoire-opening"><strong>Exemplo de abertura</strong><p>${esc(item.opening)}</p></div>` : ''}
+   ${source || profile ? `<div class="eve-repertoire-sources">${source}${profile}</div>` : ''}
   </article>`;
  }
+
+ function repertoryCard(axis, groups, open) {
+  const showExample = !repertoryFilter.use || repertoryFilter.use === 'desenvolvimento';
+  return `<details class="eve-repertoire-card panel" data-eve-axis="${esc(axis.id)}" ${open ? 'open' : ''}>
+   <summary><span class="eve-repertoire-title">${esc(axis.title)}</span><span class="eve-repertoire-angle">${esc(axis.angle)}</span></summary>
+   ${groups.map(group => `<section class="eve-repertoire-group">
+    <h3>${esc(group.title)}</h3>
+    <div class="eve-repertoire-items">${group.items.map(repertoryItem).join('')}</div>
+   </section>`).join('')}
+   ${showExample ? `<details class="eve-repertoire-example"><summary>Ver dica e exemplo de parágrafo</summary>
+    ${repertoryBadges(['desenvolvimento'])}<p>${esc(axis.tip)}</p><h4>Exemplo autoral</h4><p>${esc(axis.example)}</p>
+   </details>` : ''}
+  </details>`;
+ }
+
  function repertoryView() {
   return `<section class="eve-repertories">
-   <h2>Dicas e repertórios de Redação</h2>
-   <p>Parte do recorte do tema. Usa a obra para apresentar uma ideia e o dado para explicar a dimensão do problema. Liga cada referência à tua tese.</p>
-   <div class="eve-repertoire-search"><label for="eveRepertorySearch">Busca um tema ou uma referência</label>
-    <input type="search" id="eveRepertorySearch" autocomplete="off" value="${esc(repertoryQuery)}" placeholder="Educação, rap, clima, mobilidade…">
-    <span id="eveRepertoryCount" aria-live="polite"></span>
+   <h2>Repertórios de Redação por eixo</h2>
+   <p>Escolhe um eixo ou busca uma referência. Os selos indicam onde cada item pode ajudar na redação.</p>
+   <div class="eve-repertoire-search">
+    <label for="eveRepertoryAxis">Eixo temático
+     <select id="eveRepertoryAxis"><option value="">Todos os eixos</option>
+      ${repertories.map(axis => `<option value="${esc(axis.id)}" ${repertoryFilter.axis === axis.id ? 'selected' : ''}>${esc(axis.title)}</option>`).join('')}
+     </select>
+    </label>
+    <label for="eveRepertoryUse">Parte da redação
+     <select id="eveRepertoryUse"><option value="">Todas as partes</option>
+      ${Object.entries(repertoryUses).map(([use, label]) => `<option value="${use}" ${repertoryFilter.use === use ? 'selected' : ''}>${label}</option>`).join('')}
+     </select>
+    </label>
+    <label for="eveRepertorySearch">Buscar tema, autor ou obra
+     <input type="search" id="eveRepertorySearch" autocomplete="off" value="${esc(repertoryFilter.query)}" placeholder="Educação, rap, clima, mobilidade…">
+    </label>
    </div>
-   <div class="eve-repertoire-grid">${repertories.map(repertoryCard).join('')}</div>
-   <p id="eveRepertoryEmpty" hidden>Nenhum tema encontrado. Tenta uma palavra mais curta.</p>
-   <p class="eve-muted">Os exemplos são trechos de desenvolvimento. Adapta a ideia ao problema pedido na prova. <a href="https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/enem-2026-cartilha-da-redacao-esta-disponivel" target="_blank" rel="noopener">Cartilha de Redação do Inep ↗</a></p>
+   <p id="eveRepertoryCount" aria-live="polite"></p>
+   <div id="eveRepertoryResults" class="eve-repertoire-grid"></div>
+   <p id="eveRepertoryEmpty" hidden>Nenhum eixo encontrado com esses filtros. Tenta outro termo ou seleciona todos os eixos.</p>
+   <p class="eve-muted">As aberturas, aplicações e propostas são exemplos autorais. Escolhe a referência que ajuda a explicar o recorte da prova. <a href="https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/a-redacao-do-enem-2026-cartilha-do-a-participante" target="_blank" rel="noopener noreferrer">Cartilha de Redação do Inep ↗</a></p>
   </section>`;
  }
+
  function filterRepertories() {
-  const cards = $('vesperaRoot').querySelectorAll('[data-eve-repertoire]');
-  const words = norm(repertoryQuery).trim().split(/\s+/).filter(Boolean);
-  let count = 0;
-  for (const card of cards) {
-   card.hidden = !words.every(word => card.dataset.eveRepertoire.includes(word));
-   if (!card.hidden) count++;
+  const {axis: selected, use, query} = repertoryFilter;
+  const words = norm(query).trim().split(/\s+/).filter(Boolean);
+  const matches = [];
+  for (const axis of repertories) {
+   if (selected && selected !== axis.id) continue;
+   const groups = repertoryGroups(axis).map(group => ({
+    ...group, items: group.items.filter(item => !use || item.uses.includes(use)),
+   })).filter(group => group.items.length);
+   if (!groups.length) continue;
+   const items = groups.flatMap(group => group.items);
+   const searchText = norm([
+    axis.title, axis.angle, ...axis.tags,
+    ...items.flatMap(item => [item.kind, item.title, item.text, item.source, item.opening]),
+   ].join(' '));
+   if (words.every(word => searchText.includes(word))) matches.push({axis, groups});
   }
+  const count = matches.length;
+  $('eveRepertoryResults').innerHTML = matches.map(({axis, groups}) => repertoryCard(axis, groups, count === 1)).join('');
   $('eveRepertoryCount').textContent = count + (count === 1 ? ' eixo temático' : ' eixos temáticos');
   $('eveRepertoryEmpty').hidden = count > 0;
  }
@@ -518,7 +597,7 @@
    if (['eveCommand','eveEvidence','eveDiscursive'].includes(e.target.id)) queueDraft();
    else if (e.target.dataset.eveComment) queueComment(e.target);
    else if (e.target.id === 'eveRepertorySearch') {
-    repertoryQuery = e.target.value;
+    repertoryFilter.query = e.target.value;
     filterRepertories();
    }
   });
@@ -528,6 +607,10 @@
    } else if (e.target.id === 'eveReviewHigh') {
     reviewHigh = e.target.checked;
     render();
+   } else if (e.target.id === 'eveRepertoryAxis' || e.target.id === 'eveRepertoryUse') {
+    const key = e.target.id === 'eveRepertoryAxis' ? 'axis' : 'use';
+    repertoryFilter[key] = e.target.value;
+    filterRepertories();
    } else if (e.target.id === 'eveConfidence') queueDraft();
    else if (e.target.dataset.eveComment) {
     queueComment(e.target);
@@ -579,6 +662,10 @@
    if(action==='mark'){if(write(s=>{s.plan[b.dataset.block]=new Date().toISOString();}))render();return;}
    if(action==='card-reveal'){flashRevealed=true;render();return;}
    if(['card-known','card-review'].includes(action)&&flashRevealed){const id=flashIds[flashIndex];if(!write(s=>{s.cards[id]=action==='card-known'?'known':'review';}))return;flashIndex++;flashRevealed=false;if(flashIndex>=flashIds.length){write(s=>{s.plan.cards=new Date().toISOString();});tab='plan';flashIds=[];}render();return;}
+   if (action === 'repertory-profile') {
+    globalThis.FurgThinkers?.open({query: b.dataset.profile});
+    return;
+   }
    if(action==='library'){adapter.setView('biblioteca');return;}if(action==='dayone'){adapter.setView('leve');globalThis.FurgLightReview?.showDayOne();}
   });
   $('eveDictSearch').addEventListener('input',e=>{dictionaryQuery=e.target.value;dictionaryResults();});$('eveDictKind').addEventListener('change',e=>{dictionaryKind=e.target.value;dictionaryResults();});$('eveDictClose').onclick=()=>$('eveDictionary').close();$('eveDictionary').addEventListener('close',()=>{$('studyGuideLauncher')?.setAttribute('aria-expanded','false');lastFocus?.focus?.({preventScroll:true});});$('eveDictionary').addEventListener('keydown',e=>{e.stopPropagation();if(e.key==='Escape'){e.preventDefault();$('eveDictionary').close();}});

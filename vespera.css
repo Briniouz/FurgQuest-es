@@ -104,7 +104,8 @@ body:has(#vespera.active) .eve-entry-banner{display:none}body:has(#vespera.activ
 }
 
 .eve-comment textarea,
-.eve-repertoire-search input {
+.eve-repertoire-search input,
+.eve-repertoire-search select {
   box-sizing: border-box;
   width: 100%;
   padding: 9px 11px;
@@ -138,15 +139,16 @@ body:has(#vespera.active) .eve-entry-banner{display:none}body:has(#vespera.activ
 
 .eve-repertoire-search {
   display: grid;
-  grid-template-columns: minmax(0, 540px) auto;
-  align-items: center;
-  justify-content: start;
-  gap: 4px 12px;
-  margin: 15px 0;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .8fr) minmax(0, 1.1fr);
+  align-items: end;
+  gap: 10px 12px;
+  margin: 15px 0 0;
 }
 
 .eve-repertoire-search label {
-  grid-column: 1 / -1;
+  display: grid;
+  gap: 4px;
+  min-width: 0;
   font-weight: 650;
 }
 
@@ -155,48 +157,104 @@ body:has(#vespera.active) .eve-entry-banner{display:none}body:has(#vespera.activ
   color: var(--muted);
 }
 
-.eve-repertoire-grid {
+.eve-repertoire-grid,
+.eve-repertoire-items {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: start;
   gap: 12px;
 }
 
-.eve-repertoire-card {
-  min-width: 0;
-  padding: 18px;
+.eve-repertoire-items {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.eve-repertoire-card h3,
-.eve-repertoire-card h4 {
+.eve-repertoire-card,
+.eve-repertoire-item {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  padding: 14px 18px;
+}
+
+.eve-repertoire-card > summary {
+  font-weight: 650;
+  padding: 3px 0;
+}
+
+.eve-repertoire-title {
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.eve-repertoire-angle {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.eve-repertoire-group {
+  margin-top: 18px;
+}
+
+.eve-repertoire-group h3 {
+  margin: 0 0 8px;
+}
+
+.eve-repertoire-item {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+
+.eve-repertoire-item h4,
+.eve-repertoire-example h4 {
   margin: 0;
 }
 
-#vespera .eve-repertoire-angle {
-  color: var(--muted);
-  font-size: 13px;
-  margin: 4px 0 12px;
+#vespera .eve-repertoire-item p,
+#vespera .eve-repertoire-example p {
+  margin: 5px 0 0;
 }
 
-.eve-repertoire-brief {
-  padding: 9px 0;
+#vespera .eve-repertoire-item .eyebrow {
+  margin: 0 0 3px;
+}
+
+.eve-repertoire-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 6px 0;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.eve-repertoire-badges span {
+  padding: 1px 7px;
+  border-radius: 20px;
+  background: var(--surface-3);
+  color: var(--ink);
+}
+
+.eve-repertoire-opening,
+.eve-repertoire-example {
   border-top: 1px solid var(--line);
-}
-
-#vespera .eve-repertoire-brief p {
-  margin: 4px 0 0;
-}
-
-.eve-repertoire-card details {
-  padding-top: 8px;
+  margin-top: 10px;
+  padding-top: 9px;
 }
 
 .eve-repertoire-sources {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px 14px;
-  margin-top: 12px;
+  align-items: center;
+  gap: 4px 12px;
+  margin-top: 8px;
   font-size: 12px;
+}
+
+.eve-repertoire-sources button {
+  padding: 3px 0;
+  color: var(--blue);
 }
 
 @media (max-width: 650px) {
@@ -221,13 +279,14 @@ body:has(#vespera.active) .eve-entry-banner{display:none}body:has(#vespera.activ
     gap: 8px;
   }
 
-  .eve-repertoire-grid,
+  .eve-repertoire-items,
   .eve-repertoire-search {
     grid-template-columns: minmax(0, 1fr);
   }
 
   .eve-comment textarea,
-  .eve-repertoire-search input {
+  .eve-repertoire-search input,
+  .eve-repertoire-search select {
     font-size: 16px;
   }
 }
