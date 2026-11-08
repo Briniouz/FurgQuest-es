@@ -240,3 +240,20 @@
   .knowledge-tabs button { padding: 8px 9px; font-size: 12px; }
   #knowledgeStudySearch, #knowledgeStudyArea { font-size: 16px; }
 }
+
+.knowledge-study-meanings {
+  display: grid;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.knowledge-study-meanings dt {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.knowledge-study-meanings dd {
+  margin: 2px 0 0;
+  font-size: 13px;
+}

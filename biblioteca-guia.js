@@ -24,7 +24,7 @@
     if (pendingData) return pendingData;
     pendingData = new Promise((resolve, reject) => {
       const script = document.createElement('script');
-      script.src = 'biblioteca-guia-data.js?v=20261108-consulta';
+      script.src = 'biblioteca-guia-data.js?v=20261108-clareza';
       script.onload = () => {
         if (globalThis.FURG_LIBRARY_GUIDE_DATA) resolve(globalThis.FURG_LIBRARY_GUIDE_DATA);
         else reject(new Error('Guia indisponível'));
@@ -40,7 +40,7 @@
     return {
       ...entry, terms,
       titleKey: norm(entry.title),
-      search: norm([entry.title, entry.group, ...terms, entry.summary, entry.tip, entry.example, ...(entry.people || [])].join(' ')),
+      search: norm([entry.title, entry.group, ...terms, entry.summary, entry.literal, entry.simple, entry.tip, entry.example, ...(entry.people || [])].join(' ')),
     };
   }
 
@@ -72,7 +72,7 @@
       const byTitle = new Map();
       for (const entry of [...data.concepts, ...existing, ...vesp]) {
         const key = norm(entry.title);
-        if (!byTitle.has(key)) byTitle.set(key, index(entry));
+        if (!byTitle.has(key)) byTitle.set(key, index({...entry, ...data.meanings?.[entry.title]}));
       }
       const rank = title => preferred.includes(title) ? preferred.indexOf(title) : preferred.length;
       return [...byTitle.values()].sort((a, b) => rank(a.title) - rank(b.title) || a.title.localeCompare(b.title, 'pt-BR'));
@@ -112,10 +112,14 @@
     return `<article class="panel knowledge-study-card">
       ${entry.group ? `<p class="eyebrow">${esc(entry.group)}</p>` : ''}
       <h3>${esc(entry.title)}</h3>
-      <p>${esc(entry.summary)}</p>
+      ${entry.simple ? `<dl class="knowledge-study-meanings">
+        <div><dt>Em palavras simples</dt><dd>${esc(entry.simple)}</dd></div>
+        <div><dt>Sentido literal</dt><dd>${esc(entry.literal)}</dd></div>
+      </dl>` : `<p>${esc(entry.summary)}</p>`}
       <div class="knowledge-study-tip"><strong>Na prova</strong><p>${esc(entry.tip)}</p></div>
       <details ${exact ? 'open' : ''}>
-        <summary>Ver exemplo${entry.trap ? ' e distinção' : ''}</summary>
+        <summary>${entry.simple ? 'Ver definição e exemplo' : 'Ver exemplo'}</summary>
+        ${entry.simple ? `<p><b>Definição</b> ${esc(entry.summary)}</p>` : ''}
         <p><b>Exemplo autoral</b> ${esc(entry.example)}</p>
         ${entry.exampleExplanation && entry.exampleExplanation !== entry.tip ? `<p>${esc(entry.exampleExplanation)}</p>` : ''}
         ${entry.trap ? `<p><b>Como distinguir</b> ${esc(entry.trap)}</p>` : ''}
@@ -144,7 +148,7 @@
     const concepts = tab === 'conceitos';
     const title = profile ? 'Conceitos ligados a ' + profile.name : concepts ? 'Conceitos do primeiro dia' : 'O que o comando quer dizer?';
     const intro = concepts
-      ? 'Revisa correntes, movimentos, termos de interpretação e ideias de Humanas. Cada verbete dá uma pista para reconhecer o conceito na prova.'
+      ? 'Revisa correntes, movimentos, termos de interpretação e ideias de Humanas. Cada verbete traz uma explicação simples, o sentido literal e uma pista para reconhecer o conceito na prova.'
       : 'Procura o verbo ou a expressão que te travou. Cada cartão traduz o pedido, mostra onde olhar e dá um exemplo curto.';
     root.innerHTML = `<section class="knowledge-study-section" aria-labelledby="knowledgeStudyTitle">
       <h2 id="knowledgeStudyTitle">${esc(title)}</h2><p>${intro}</p>
@@ -282,5 +286,25 @@
     }
   }
 
-  globalThis.FurgLibraryGuide = {open, loadConcepts, search, patterns};
+  async function lookup(question) {
+    const original = norm(question);
+    const term = original
+      .replace(/^(?:o que (?:e|significa)|qual o significado de|significado de|define|defina|me explica|explique) /, '')
+      .replace(/ (?:no enem|na prova|por favor)$/, '');
+    if (!original) return null;
+    const data = await loadData();
+    const entries = [...await loadConcepts(data), ...data.commands.map(index)];
+    for (const query of [original, term]) {
+      const exact = entries.find(entry => entry.titleKey === query ||
+        entry.title.split(' / ').some(title => norm(title) === query));
+      if (exact) return exact;
+    }
+    const combined = entries.filter(entry =>
+      entry.titleKey.startsWith(term + ' e ') || entry.titleKey.endsWith(' e ' + term));
+    if (combined.length === 1) return combined[0];
+    const aliases = entries.filter(entry => entry.terms.some(alias => norm(alias) === term));
+    return aliases.length === 1 ? aliases[0] : null;
+  }
+
+  globalThis.FurgLibraryGuide = {open, loadConcepts, search, patterns, lookup};
 })();

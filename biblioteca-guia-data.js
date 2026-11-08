@@ -16,6 +16,12 @@ globalThis.FURG_LIBRARY_GUIDE_DATA = {
       "example": "Mesmo se duvido dos sentidos, o próprio ato de duvidar mostra que estou pensando.",
       "people": [
         "René Descartes"
+      ],
+      "sources": [
+        {
+          "label": "Stanford Encyclopedia of Philosophy · Racionalismo e empirismo",
+          "url": "https://plato.stanford.edu/entries/rationalism-empiricism/"
+        }
       ]
     },
     {
@@ -32,6 +38,12 @@ globalThis.FURG_LIBRARY_GUIDE_DATA = {
       "people": [
         "John Locke",
         "David Hume"
+      ],
+      "sources": [
+        {
+          "label": "Stanford Encyclopedia of Philosophy · Racionalismo e empirismo",
+          "url": "https://plato.stanford.edu/entries/rationalism-empiricism/"
+        }
       ]
     },
     {
@@ -51,6 +63,12 @@ globalThis.FURG_LIBRARY_GUIDE_DATA = {
         "Montesquieu",
         "Immanuel Kant",
         "Jean-Jacques Rousseau"
+      ],
+      "sources": [
+        {
+          "label": "Stanford Encyclopedia of Philosophy · Iluminismo",
+          "url": "https://plato.stanford.edu/entries/enlightenment/"
+        }
       ]
     },
     {
@@ -1768,5 +1786,739 @@ globalThis.FURG_LIBRARY_GUIDE_DATA = {
       "label": "ACNUR Brasil · Conceito de refúgio",
       "url": "https://help.unhcr.org/brazil/solicitacao-da-condicao-de-refugiado/"
     }
-  ]
+  ],
+  "meanings": {
+    "Racionalismo": {
+      "literal": "Corrente que dá destaque à razão.",
+      "simple": "Para Descartes, o raciocínio pode dar certeza mesmo quando os sentidos enganam. O ponto de partida dele é perceber que duvidar já é pensar."
+    },
+    "Empirismo": {
+      "literal": "Corrente que dá destaque à experiência.",
+      "simple": "A gente aprende muito do que sabe observando e vivendo situações. Para esses pensadores, importa perguntar de onde vieram nossas ideias."
+    },
+    "Iluminismo": {
+      "literal": "A ideia de iluminar, usando a luz como imagem do esclarecimento.",
+      "simple": "Usar a própria cabeça para questionar tradições e autoridades. A ideia é que leis e crenças possam ser discutidas em público."
+    },
+    "Criticismo kantiano": {
+      "literal": "Exame crítico do conhecimento segundo Kant.",
+      "simple": "Kant pergunta até onde podemos conhecer. Os sentidos dão informações, e nossa mente já tem modos de organizá-las."
+    },
+    "Dialética socrática e maiêutica": {
+      "literal": "Dialética envolve diálogo. Maiêutica remete ao trabalho de ajudar em um parto.",
+      "simple": "Sócrates faz perguntas para a pessoa perceber os problemas da própria resposta e formular uma ideia melhor."
+    },
+    "Teoria das Formas": {
+      "literal": "Teoria sobre as Formas ou Ideias, com maiúscula no sentido platônico.",
+      "simple": "Os triângulos que tu desenha podem ser tortos ou diferentes. A ideia de triângulo é o que permite reconhecer todos como exemplos da mesma coisa."
+    },
+    "Ética e moral": {
+      "literal": "Moral remete a costumes e regras de conduta. Ética é a reflexão sobre como agir.",
+      "simple": "A moral diz o que um grupo considera certo. A ética pergunta por que isso seria certo e se a regra é justa."
+    },
+    "Utilitarismo": {
+      "literal": "Corrente que avalia a utilidade das ações.",
+      "simple": "Para decidir entre duas ações, compara o bem-estar e o sofrimento que cada uma causaria a quem é afetado."
+    },
+    "Existencialismo": {
+      "literal": "Corrente centrada na existência humana.",
+      "simple": "Em Sartre, o que tu faz com as condições em que vive ajuda a definir quem tu se torna. Tu é responsável pelas escolhas que faz."
+    },
+    "Cidadania e direitos": {
+      "literal": "Cidadania é a condição de participar como cidadão. Direitos são garantias reconhecidas.",
+      "simple": "Pensa em quem pode votar, estudar e ser ouvido. Ter um direito escrito e conseguir exercê-lo são etapas diferentes."
+    },
+    "Democracia e representação": {
+      "literal": "Democracia significa governo do povo. Representar é agir em nome de outras pessoas.",
+      "simple": "O povo pode decidir diretamente sobre uma proposta ou eleger alguém para tomar decisões e prestar contas."
+    },
+    "Estado, governo e poder": {
+      "literal": "Estado é o conjunto de instituições. Governo é quem as dirige. Poder é capacidade de influir e decidir.",
+      "simple": "O presidente muda, mas tribunais, leis e órgãos públicos seguem funcionando. Para entender o poder, pergunta quem consegue decidir e fazer a decisão valer."
+    },
+    "Positivismo": {
+      "literal": "O “positivo”, aqui, remete ao que pode ser investigado pela observação.",
+      "simple": "Comte queria estudar a sociedade de maneira organizada, procurando padrões nos fatos, como fazem as ciências."
+    },
+    "Materialismo histórico": {
+      "literal": "Leitura da história a partir das condições materiais de vida.",
+      "simple": "Para entender como uma sociedade muda, olha quem controla a produção, quem trabalha e quais grupos entram em conflito."
+    },
+    "Ideologia e hegemonia": {
+      "literal": "Ideologia envolve ideias que orientam a visão de mundo. Hegemonia envolve direção ou liderança.",
+      "simple": "Um grupo pode manter influência quando suas ideias viram senso comum e passam a ser aceitas por outros grupos."
+    },
+    "Socialização e cultura": {
+      "literal": "Socializar é aprender a viver em grupo. Cultura reúne práticas e sentidos compartilhados.",
+      "simple": "A maneira de cumprimentar, vestir e celebrar é aprendida na convivência e pode mudar de um grupo para outro."
+    },
+    "Estratificação e mobilidade social": {
+      "literal": "Estratificar é dividir em camadas. Mobilidade é mudar de posição.",
+      "simple": "A sociedade distribui renda, prestígio e oportunidades de modo desigual. Mobilidade é quando alguém passa a ocupar outra posição nessa estrutura."
+    },
+    "Racismo estrutural": {
+      "literal": "Racismo que se reproduz na estrutura da sociedade.",
+      "simple": "Rotinas e regras de escolas, empresas ou outros órgãos podem manter desigualdades raciais mesmo quando ninguém verbaliza uma ofensa."
+    },
+    "Movimentos sociais": {
+      "literal": "Grupos que se põem em movimento em torno de uma causa.",
+      "simple": "Pessoas se organizam por um objetivo comum, como melhorar o transporte de um bairro ou defender o direito à moradia."
+    },
+    "Patrimônio e memória coletiva": {
+      "literal": "Patrimônio é uma herança reconhecida. Memória coletiva é o que grupos lembram e transmitem juntos.",
+      "simple": "Uma festa, uma construção ou um modo de fazer pode ajudar uma comunidade a lembrar sua história e ensiná-la a outras gerações."
+    },
+    "Renascimento e humanismo": {
+      "literal": "Renascimento é nascer de novo. Humanismo põe os seres humanos e suas experiências em foco.",
+      "simple": "Artistas e estudiosos europeus retomaram referências antigas e experimentaram modos de observar o corpo, representar o espaço e pensar a vida."
+    },
+    "Reformas religiosas": {
+      "literal": "Reformar é modificar algo já existente. Aqui, a mudança envolve igrejas e crenças.",
+      "simple": "Grupos contestaram regras e autoridades da Igreja no século XVI. A disputa envolveu fé e também quem tinha poder em cada lugar."
+    },
+    "Absolutismo": {
+      "literal": "A ideia de um poder monárquico concentrado, chamado de absoluto.",
+      "simple": "O rei reúne mais poder para governar, cobrar tributos e manter tropas, em relação a outros grupos e autoridades."
+    },
+    "Mercantilismo": {
+      "literal": "A palavra destaca o comércio, isto é, a atividade mercantil.",
+      "simple": "Governos usavam regras comerciais para acumular recursos e fortalecer a Coroa. Um exemplo é controlar com quem a colônia podia negociar."
+    },
+    "Colonização e resistência": {
+      "literal": "Colonizar é ocupar e dominar para estabelecer uma colônia. Resistir é enfrentar ou contornar esse domínio.",
+      "simple": "A conquista impôs poderes e formas de exploração. Os povos atingidos também fizeram alianças, fugiram, negociaram e lutaram."
+    },
+    "Escravidão e abolição no Brasil": {
+      "literal": "Escravidão é submeter pessoas à condição de escravizadas. Abolição é extinguir essa prática por lei.",
+      "simple": "A lei acabou com a escravidão em 1888. A população liberta ainda teve de disputar trabalho, moradia, educação e direitos."
+    },
+    "Revolução Francesa": {
+      "literal": "Transformação profunda da ordem política e social da França.",
+      "simple": "A partir de 1789, ganhou força a disputa sobre os privilégios da nobreza, os direitos das pessoas e quem deveria mandar no país."
+    },
+    "Liberalismo político e econômico": {
+      "literal": "Correntes que dão destaque à liberdade na política ou na economia.",
+      "simple": "Na política, pensa em direitos e limites ao governante. Na economia, pensa no espaço de comerciantes, empresas e mercados para decidir."
+    },
+    "Revolução Industrial": {
+      "literal": "Transformação profunda na maneira de produzir, ligada à indústria.",
+      "simple": "Máquinas e fábricas mudaram como os produtos eram feitos, como as pessoas trabalhavam e como as cidades cresciam."
+    },
+    "Imperialismo e neocolonialismo": {
+      "literal": "Imperialismo envolve expandir poder sobre outros povos. Neocolonialismo significa nova forma de domínio colonial.",
+      "simple": "Potências ocuparam territórios ou passaram a controlar sua economia e sua política. Justificavam esse domínio com discursos sobre suposta superioridade."
+    },
+    "Nacionalismo": {
+      "literal": "Ideias e ações centradas na nação.",
+      "simple": "Um grupo usa história, língua ou símbolos em comum para defender autonomia, união política ou um Estado mais forte."
+    },
+    "República Oligárquica": {
+      "literal": "República com forte poder de poucos grupos, as oligarquias.",
+      "simple": "Na Primeira República, grupos ricos e influentes controlavam parte importante da política. Chefes locais usavam favores e pressão para conseguir votos."
+    },
+    "Era Vargas e Estado Novo": {
+      "literal": "A Era Vargas é o período iniciado com Getúlio Vargas em 1930. Estado Novo é o nome da fase ditatorial de 1937 a 1945.",
+      "simple": "Pensa em três frentes do período Vargas, direitos do trabalho, industrialização e concentração de poder. Na fase do Estado Novo houve também censura e propaganda oficial."
+    },
+    "Ditadura militar e redemocratização": {
+      "literal": "Ditadura militar é governo autoritário sob comando militar. Redemocratizar é recuperar instituições e participação democráticas.",
+      "simple": "O regime restringiu liberdades e perseguiu opositores. Na transição, mobilizações, eleições e novas garantias ajudaram a reabrir a participação política."
+    },
+    "Guerra Fria e descolonização": {
+      "literal": "Guerra Fria é o nome da rivalidade entre os blocos liderados por EUA e URSS. Descolonizar é pôr fim à dominação colonial formal.",
+      "simple": "As duas potências disputavam influência pelo mundo. No mesmo período, diferentes povos lutavam por independência e seguiam caminhos próprios."
+    },
+    "Fascismo, nazismo e totalitarismo": {
+      "literal": "Fascismo é o nome de uma corrente autoritária. Nazismo designa sua forma histórica alemã. Totalitarismo indica pretensão de controle amplo da sociedade.",
+      "simple": "Esses conceitos ajudam a ler propaganda, perseguição e repressão. No nazismo, a perseguição racial e antissemita ocupou lugar central."
+    },
+    "Cartografia e escala": {
+      "literal": "Cartografia é fazer e ler mapas. Escala é a proporção entre a medida no mapa e a do terreno.",
+      "simple": "Para saber quanto uma rua mede de verdade, mede no mapa e usa a escala para converter a distância."
+    },
+    "Projeções cartográficas": {
+      "literal": "Modos de projetar a superfície da Terra em um plano.",
+      "simple": "É como tentar abrir uma casca de laranja e deixá-la plana. Alguma parte precisa esticar, encolher ou mudar de forma."
+    },
+    "Urbanização e metropolização": {
+      "literal": "Urbanização é o avanço da vida urbana. Metropolização é o fortalecimento da influência das metrópoles sobre outras cidades.",
+      "simple": "Mais gente morando em áreas urbanas indica urbanização. Uma cidade que concentra empregos e serviços usados por municípios vizinhos exerce influência metropolitana."
+    },
+    "Gentrificação": {
+      "literal": "Mudança no perfil de um bairro com a chegada de moradores e atividades de maior renda.",
+      "simple": "O bairro valoriza, os aluguéis sobem e parte dos moradores e negócios antigos perde condições de continuar ali."
+    },
+    "Migrações e refúgio": {
+      "literal": "Migrar é mudar de lugar de residência. Refúgio envolve buscar proteção fora do país de origem.",
+      "simple": "Há quem se mude por trabalho ou estudo e há quem atravesse uma fronteira para buscar proteção. Confere o motivo do deslocamento."
+    },
+    "Transição demográfica": {
+      "literal": "Mudança no padrão de nascimentos, mortes e crescimento de uma população.",
+      "simple": "Quando as mortes caem antes dos nascimentos, a população pode crescer rápido. Quando os nascimentos também caem, muda o peso de crianças e idosos."
+    },
+    "Tempo, clima e massas de ar": {
+      "literal": "Tempo é o estado do ar agora. Clima é o padrão ao longo de muitos anos. Massa de ar é um grande volume de ar com características parecidas.",
+      "simple": "A chuva de hoje é tempo. O padrão de chuvas de muitos anos é clima. Uma massa de ar pode levar frio ou umidade a outra região."
+    },
+    "Floresta, chuvas e bacias": {
+      "literal": "Uma bacia hidrográfica é uma área em que as águas escoam para um mesmo sistema de rios.",
+      "simple": "Árvores liberam vapor, que pode alimentar chuvas. A água que chega ao chão escoa conforme o relevo e a drenagem do lugar."
+    },
+    "Matrizes energética e elétrica": {
+      "literal": "Matriz é a composição das fontes usadas. A elétrica trata da eletricidade e a energética reúne todos os usos de energia.",
+      "simple": "Gasolina de carro conta na matriz energética. Sol, água ou vento usados para gerar luz entram também na matriz elétrica."
+    },
+    "Questão agrária": {
+      "literal": "Agrário diz respeito à terra e às relações de produção no campo.",
+      "simple": "Pergunta quem tem terra, como ela é usada e em que condições as pessoas trabalham nela."
+    },
+    "Desconcentração industrial": {
+      "literal": "Espalhamento de indústrias que estavam concentradas em poucos lugares.",
+      "simple": "Uma fábrica pode sair de um grande centro e abrir em outra cidade por causa de custos, estradas ou proximidade dos clientes."
+    },
+    "Geopolítica, fronteiras e blocos": {
+      "literal": "Geopolítica liga poder e espaço. Fronteiras delimitam territórios. Blocos são agrupamentos de países.",
+      "simple": "Olha quem controla rotas, recursos e decisões e por que certos países cooperam ou entram em disputa."
+    },
+    "Desenvolvimento sustentável e justiça ambiental": {
+      "literal": "Sustentável é o que pode se manter no tempo. Justiça ambiental trata da distribuição de riscos e benefícios ambientais.",
+      "simple": "Uma solução pode funcionar por anos e ainda concentrar seus danos em um bairro pobre. As duas ideias ajudam a fazer perguntas diferentes sobre ela."
+    },
+    "Parnasianismo": {
+      "literal": "Nome de uma corrente poética. O Parnaso é uma referência tradicional à poesia.",
+      "simple": "Pensa em um poeta tratando o verso como uma peça artesanal, escolhendo palavras, ritmo e forma com cuidado."
+    },
+    "Pré-modernismo": {
+      "literal": "Pré significa antes. O nome reúne obras anteriores ao Modernismo brasileiro.",
+      "simple": "São obras diferentes que mostram conflitos de um Brasil pouco idealizado, como exclusão nas cidades e desigualdade no campo."
+    },
+    "Passadismo": {
+      "literal": "Apego ao passado.",
+      "simple": "É a crítica a quem exige seguir os modelos antigos como regra, mesmo quando outros artistas querem experimentar."
+    },
+    "Cubismo": {
+      "literal": "O nome remete a cubos e à geometrização das formas.",
+      "simple": "Imagina desenhar o rosto de frente e de perfil ao mesmo tempo. O quadro pode juntar esses ângulos numa única figura."
+    },
+    "Futurismo": {
+      "literal": "Corrente que põe o futuro em destaque.",
+      "simple": "Velocidade, carros e máquinas viraram temas e inspirações para mudar a forma de escrever e fazer arte."
+    },
+    "Expressionismo": {
+      "literal": "Corrente que dá destaque à expressão.",
+      "simple": "O artista pode deformar um rosto ou uma rua para mostrar medo ou angústia com mais força."
+    },
+    "Dadaísmo e ready-made": {
+      "literal": "Dadá é o nome do movimento. Ready-made significa algo já pronto.",
+      "simple": "Um artista tira um objeto comum do lugar onde é usado e o coloca numa exposição. A escolha faz a gente discutir o que pode ser arte."
+    },
+    "Surrealismo": {
+      "literal": "O nome sugere algo além da realidade habitual.",
+      "simple": "O artista junta cenas e objetos como num sonho, sem seguir a lógica que a gente espera no cotidiano."
+    },
+    "Tropicalismo": {
+      "literal": "Nome associado à Tropicália, movimento cultural brasileiro.",
+      "simple": "Uma canção pode juntar tradição popular, guitarra elétrica e televisão para experimentar sons e discutir o Brasil da época."
+    },
+    "Comparação e metáfora": {
+      "literal": "Comparar é apontar uma semelhança. Metáfora usa uma coisa para falar de outra.",
+      "simple": "“Correu como um foguete” compara. “Era um foguete na pista” usa foguete para transmitir a ideia de velocidade."
+    },
+    "Antítese e paradoxo": {
+      "literal": "Antítese é oposição. Paradoxo junta ideias que parecem incompatíveis.",
+      "simple": "“Dia e noite” põe contrários lado a lado. “Um silêncio que gritava” junta contrários numa imagem que ganha sentido no contexto."
+    },
+    "Eufemismo e hipérbole": {
+      "literal": "Eufemismo é suavização. Hipérbole é exagero.",
+      "simple": "Dizer que alguém “nos deixou” pode suavizar a morte. Dizer que esperou “uma eternidade” intensifica a demora."
+    },
+    "Anáfora e retomada": {
+      "literal": "Retomar é voltar a algo anterior. Anáfora pode indicar essa retomada ou uma repetição no começo de frases ou versos.",
+      "simple": "Em “Rita chegou. Ela sorriu”, “ela” aponta de volta para Rita. Em “quero água, quero sombra”, o começo se repete para dar ritmo ou ênfase."
+    },
+    "Pressuposto e subentendido": {
+      "literal": "Pressuposto é o que se supõe antes. Subentendido é o que se entende mesmo sem ser dito diretamente.",
+      "simple": "“Voltou a estudar” dá a pista de que estudava antes. “Tá frio aqui” pode ser um pedido para fechar a janela, dependendo da situação."
+    },
+    "Cidadania na Grécia e em Roma": {
+      "literal": "Condição de cidadão nas sociedades gregas e romanas antigas.",
+      "simple": "Pergunta quem podia participar da política em cada lugar e época. Em Atenas, só parte dos moradores tinha acesso às decisões da assembleia."
+    },
+    "Feudalismo e sociedade medieval": {
+      "literal": "Feudalismo remete a feudo e a relações medievais ligadas à terra e ao poder.",
+      "simple": "Um nobre podia prometer apoio militar a outro. Já um camponês podia dever trabalho ou parte da colheita ao senhor. São relações diferentes."
+    },
+    "Independência e Império do Brasil": {
+      "literal": "Independência é deixar de estar sob governo de outro Estado. Império foi a forma de governo do Brasil sob imperadores.",
+      "simple": "O Brasil rompeu politicamente com Portugal e se tornou um império. A monarquia e a escravidão continuaram."
+    },
+    "Revolução Russa": {
+      "literal": "Transformação política profunda ocorrida na Rússia.",
+      "simple": "Em 1917, primeiro caiu o czar. Mais tarde naquele ano, os bolcheviques tomaram o poder do governo provisório."
+    },
+    "Guerras Mundiais": {
+      "literal": "Guerras que envolveram países e territórios de várias partes do mundo.",
+      "simple": "Situa se o texto fala da guerra iniciada em 1914 ou da iniciada em 1939. A vida dos civis, a propaganda e a produção também fizeram parte dos conflitos."
+    },
+    "Biomas e domínios morfoclimáticos": {
+      "literal": "Bioma é um grande conjunto ecológico. Morfoclimático liga formas do relevo ao clima.",
+      "simple": "Uma paisagem pode ser estudada pelas plantas e animais ou pelo conjunto de clima, relevo, vegetação e solos. O comando diz qual recorte usar."
+    },
+    "Relevo, erosão e ocupação": {
+      "literal": "Relevo é a forma da superfície. Erosão é remoção e transporte de material. Ocupação é como o espaço é usado.",
+      "simple": "A água leva terra de uma encosta para o rio. Construir, retirar vegetação ou impermeabilizar o chão pode mudar esse caminho."
+    },
+    "Saneamento e usos da água": {
+      "literal": "Sanear é tornar mais salubre. Usos da água incluem consumo, produção, irrigação e outros fins.",
+      "simple": "Ter um rio por perto e ter água tratada em casa são situações diferentes. Tratamento, rede e drenagem mudam como a água chega e sai do bairro."
+    },
+    "Fordismo, toyotismo e trabalho flexível": {
+      "literal": "Fordismo remete à Ford, toyotismo à Toyota. Flexível indica capacidade de ajustar formas de produzir e trabalhar.",
+      "simple": "Uma fábrica pode fazer grandes lotes iguais ou ajustar o ritmo aos pedidos. A organização muda também quando parte do trabalho é terceirizada."
+    },
+    "Gênero e divisão social do trabalho": {
+      "literal": "Divisão social é a distribuição das tarefas entre grupos. Gênero diz respeito a papéis e relações construídos socialmente.",
+      "simple": "Se as mulheres de uma comunidade assumem mais horas de cuidado, pode sobrar menos tempo para estudar, descansar ou fazer trabalho remunerado."
+    },
+    "Eurocentrismo e decolonialidade": {
+      "literal": "Eurocentrismo coloca a Europa no centro. Decolonialidade questiona hierarquias que vieram da colonização.",
+      "simple": "Um relato pode mostrar a Europa como padrão para todo mundo. Uma leitura decolonial pergunta quais vozes e conhecimentos ficaram de fora e por quê."
+    },
+    "Quinhentismo": {
+      "literal": "Nome ligado aos anos 1500, isto é, ao século XVI.",
+      "simple": "Muitos desses textos descrevem a terra e os povos para leitores de Portugal ou servem à catequese. Pergunta quem fala e para quem."
+    },
+    "Cognatos e falsos cognatos": {
+      "literal": "Cognatos são palavras de origem aparentada. Falsos cognatos, na leitura, são palavras parecidas que podem enganar na tradução.",
+      "simple": "“Important” parece “importante” e tem sentido próximo. “Actually” parece “atualmente”, mas costuma significar “na verdade”."
+    },
+    "Conectores em inglês": {
+      "literal": "Palavras que ligam uma ideia à outra.",
+      "simple": "“However” avisa que vem um contraste. “Because” explica a causa. “Therefore” introduz um resultado ou conclusão."
+    },
+    "Leitura global e busca localizada": {
+      "literal": "Leitura global olha o conjunto. Busca localizada procura um ponto específico.",
+      "simple": "Para saber do que o cartaz trata, olha título e imagem. Para achar o horário, procura números e lê o que está ao redor deles."
+    },
+    "Alienação": {
+      "literal": "Estranhamento ou separação em relação a algo que deveria estar ligado a ti.",
+      "simple": "Imagina fazer um produto sem poder decidir como trabalhar nem o que acontece com o que tu fez. Em Marx, essa separação é parte da alienação do trabalho."
+    },
+    "Mais-valia": {
+      "literal": "Valor a mais.",
+      "simple": "O trabalho cria valor acima do que custa pagar pela força de trabalho. Na análise de Marx, essa parte a mais é apropriada pelo capital."
+    },
+    "Fetichismo da mercadoria": {
+      "literal": "Tratar uma mercadoria como se ela tivesse poderes próprios.",
+      "simple": "Na vitrine, o preço parece uma qualidade da coisa. A ideia de Marx chama atenção para as relações de trabalho e troca que ficam escondidas atrás dela."
+    },
+    "Fato social": {
+      "literal": "Modo de agir, pensar ou sentir que vem da vida em sociedade.",
+      "simple": "Tu já nasce num mundo com regras de língua e de convivência. Mesmo sem ter criado essas regras, sente pressão para segui-las."
+    },
+    "Anomia": {
+      "literal": "Enfraquecimento ou falta de regras que orientem a convivência.",
+      "simple": "Quando muita coisa muda de repente, as pessoas podem ficar sem referência clara do que esperar umas das outras e de como agir."
+    },
+    "Solidariedade mecânica e orgânica": {
+      "literal": "Solidariedade é o vínculo que mantém um grupo unido. Durkheim dá dois nomes a modos de formar esse vínculo.",
+      "simple": "Um grupo pode se unir porque seus membros se parecem e compartilham costumes. Também pode se unir porque pessoas com trabalhos diferentes dependem umas das outras."
+    },
+    "Ação social": {
+      "literal": "Ação orientada por outras pessoas.",
+      "simple": "Esperar o sinal para falar numa reunião é uma ação social. O que tu faz leva em conta o que as outras pessoas estão fazendo ou esperando."
+    },
+    "Dominação legítima": {
+      "literal": "Poder de mandar que é reconhecido como válido por quem obedece.",
+      "simple": "As pessoas podem aceitar uma ordem porque ela vem de um costume, de um líder em quem confiam ou de um cargo reconhecido por lei."
+    },
+    "Capital cultural": {
+      "literal": "Recursos ligados à cultura, como saberes, hábitos, obras e diplomas.",
+      "simple": "Quem aprende desde cedo os códigos que a escola valoriza pode ter vantagem ali, mesmo que todo mundo faça a mesma prova."
+    },
+    "Habitus": {
+      "literal": "Conjunto de disposições e maneiras adquiridas na vida social.",
+      "simple": "O jeito de falar, escolher ou se sentir à vontade em certos lugares se forma com as experiências que tu viveu. Essas tendências orientam escolhas sem decidir tudo por ti."
+    },
+    "Violência simbólica": {
+      "literal": "Dominação que opera por ideias, padrões e símbolos aceitos no cotidiano.",
+      "simple": "Quando a escola trata o jeito de falar de um grupo como inferior, pode fazer essa hierarquia parecer natural até para quem é prejudicado."
+    },
+    "Educação bancária": {
+      "literal": "Imagem de um ensino que faz “depósitos” de conteúdo no estudante.",
+      "simple": "É a aula em que o professor entrega informações prontas e o aluno só memoriza. Paulo Freire usa essa imagem para criticar a falta de participação."
+    },
+    "Dialogicidade": {
+      "literal": "Qualidade de uma prática construída pelo diálogo.",
+      "simple": "Em Freire, professor e alunos usam a conversa para levantar problemas, ouvir experiências e pensar juntos sobre a realidade."
+    },
+    "Banalidade do mal": {
+      "literal": "Banalidade indica algo tratado como corriqueiro. O mal, aqui, diz respeito ao crime e à violência.",
+      "simple": "Arendt chama atenção para como uma pessoa pode participar de crimes ao cumprir ordens como rotina e deixar de examinar o que está fazendo."
+    },
+    "Etnocentrismo": {
+      "literal": "Colocar a própria cultura no centro.",
+      "simple": "É olhar para costumes diferentes usando os teus como régua e achar que quem faz de outro jeito vale menos."
+    },
+    "Relativização cultural": {
+      "literal": "Interpretar costumes em relação ao contexto da cultura em que existem.",
+      "simple": "Antes de julgar uma prática pela tua experiência, pergunta o que ela significa para as pessoas que a realizam."
+    },
+    "Contrato social": {
+      "literal": "A ideia de um acordo que fundamenta a vida política.",
+      "simple": "Os filósofos imaginam por que pessoas aceitariam regras e um governo em comum. Cada um dá uma resposta diferente sobre o que se ganha e o que se entrega."
+    },
+    "Indústria cultural": {
+      "literal": "Produção de cultura organizada como indústria e voltada ao mercado.",
+      "simple": "Um estúdio pode repetir fórmulas de sucesso para vender em massa. A ideia ajuda a pensar como a busca por lucro molda o que chega ao público."
+    },
+    "Biopolítica": {
+      "literal": "Bio remete à vida. Biopolítica liga a vida das populações a formas de poder.",
+      "simple": "Pensa em como governos e instituições medem e administram saúde, nascimentos e mortes para orientar decisões sobre a população."
+    },
+    "Segregação socioespacial": {
+      "literal": "Separação de grupos sociais no espaço.",
+      "simple": "Num mesmo município, alguns bairros concentram serviços e oportunidades enquanto outros ficam distantes deles. O endereço pesa nas chances de cada grupo."
+    },
+    "Globalização": {
+      "literal": "Ampliação de conexões para uma escala global.",
+      "simple": "Um produto pode ser pensado num país, montado em outro e vendido em vários. Os lugares se ligam, mas participam com poderes e ganhos diferentes."
+    },
+    "Território, paisagem e lugar": {
+      "literal": "Território é espaço apropriado. Paisagem é o que se percebe. Lugar é espaço vivido.",
+      "simple": "A mesma praça pode ser disputada por grupos, observada pelas suas formas ou lembrada pelas experiências de quem cresceu ali. Cada olhar corresponde a um conceito."
+    },
+    "Escrevivência": {
+      "literal": "Junção de escrever e vivência.",
+      "simple": "Conceição Evaristo escreve a partir de experiências e memórias que dialogam com a vida de outras pessoas, especialmente mulheres negras. A história ganha uma dimensão coletiva."
+    },
+    "Interseccionalidade": {
+      "literal": "Interseção é o cruzamento entre elementos.",
+      "simple": "Uma mulher negra pode enfrentar racismo e discriminação de gênero na mesma situação. A ideia é entender como uma coisa afeta a outra."
+    },
+    "Imperativo categórico": {
+      "literal": "Imperativo é uma ordem. Categórico significa que ela vale sem depender de um objetivo particular.",
+      "simple": "Antes de agir, Kant propõe perguntar se a regra que orienta tua decisão poderia valer para todo mundo."
+    },
+    "Justo meio e virtude": {
+      "literal": "Justo meio é a medida adequada entre extremos. Virtude é uma disposição para agir bem.",
+      "simple": "Coragem pode ser agir apesar do medo quando a situação pede. Entre fugir sempre e se arriscar à toa, o melhor depende do caso."
+    },
+    "Ataraxia e desejos em Epicuro": {
+      "literal": "Ataraxia significa ausência de perturbação. Desejos são coisas que a pessoa quer.",
+      "simple": "Epicuro sugere distinguir o que faz falta do que só cria ansiedade. Tranquilidade e prazer podem vir de desejos simples e bem escolhidos."
+    },
+    "Antropofagia cultural": {
+      "literal": "Antropofagia, ao pé da letra, é comer carne humana. O Modernismo usa essa imagem para falar de cultura.",
+      "simple": "É pegar uma influência de fora, misturar com experiências daqui e transformar aquilo numa criação própria."
+    },
+    "Narrador não confiável": {
+      "literal": "A voz que conta a história dá motivos para desconfiar da sua versão.",
+      "simple": "Se quem narra omite fatos, se contradiz ou tem interesse em convencer o leitor, vale comparar o que diz com outras pistas da história."
+    },
+    "Preconceito linguístico": {
+      "literal": "Preconceito dirigido a alguém pelo modo como usa a língua.",
+      "simple": "É tratar alguém como menos capaz porque tem sotaque ou usa formas de falar diferentes das que um grupo considera padrão."
+    },
+    "Dialogismo": {
+      "literal": "Presença de diálogo e de relação entre vozes.",
+      "simple": "Quando tu fala, tua frase pode responder a algo que já foi dito, repetir uma ideia conhecida ou discordar de outra voz."
+    },
+    "Razão instrumental": {
+      "literal": "Razão usada como instrumento para alcançar um fim.",
+      "simple": "Alguém escolhe o jeito mais rápido de cumprir uma tarefa. A crítica pergunta se a própria tarefa faz sentido e quem pode ser prejudicado."
+    },
+    "Estoicismo": {
+      "literal": "O nome da escola vem de stoa, o pórtico onde os primeiros estoicos ensinavam.",
+      "simple": "Tu pode escolher tua atitude diante de um problema. O que depende de outras pessoas ou do acaso está fora do teu controle."
+    },
+    "Epicurismo": {
+      "literal": "Corrente filosófica de Epicuro.",
+      "simple": "Uma vida boa pode vir de prazeres simples, amizades e tranquilidade. Querer sempre mais pode aumentar a inquietação."
+    },
+    "Ceticismo antigo": {
+      "literal": "Ceticismo envolve examinar e colocar crenças em dúvida.",
+      "simple": "Se os argumentos dos dois lados continuam em aberto, tu pode investigar mais e adiar o julgamento."
+    },
+    "Interpretação, inferência e finalidade": {
+      "literal": "Interpretar é explicar um sentido. Inferir é concluir por pistas. Finalidade é o objetivo.",
+      "simple": "Pergunta o que o texto quer dizer, o que dá pra concluir a partir dele e o que ele tenta fazer com o leitor. O comando diz qual dessas tarefas vale."
+    },
+    "Tese e estratégias de argumentação": {
+      "literal": "Tese é a posição defendida. Estratégias são os caminhos usados para sustentá-la.",
+      "simple": "Primeiro descobre o que o autor quer que tu aceite. Depois vê como ele tenta convencer, por exemplo com dados, comparações ou casos."
+    },
+    "Humor, ironia e crítica": {
+      "literal": "Humor provoca graça. Ironia cria distância entre o que parece dito e o sentido sugerido. Crítica aponta um problema.",
+      "simple": "Se alguém comenta “ótimo serviço” depois de esperar horas, a situação transforma o aparente elogio em reclamação. Isso também pode criar humor."
+    },
+    "Polissemia e ambiguidade": {
+      "literal": "Polissemia é ter vários sentidos. Ambiguidade é permitir mais de uma interpretação.",
+      "simple": "“Rede” pode ser objeto de descanso ou conjunto de conexões. O contexto ajuda a escolher, e alguns textos brincam com os dois sentidos."
+    },
+    "Texto verbal, imagem e multimodalidade": {
+      "literal": "Verbal usa palavras. Multimodal combina diferentes modos, como texto, imagem e som.",
+      "simple": "Numa charge, lê a legenda e olha o desenho juntos. A graça ou a crítica pode aparecer justamente na relação entre os dois."
+    },
+    "Intertextualidade, paródia e releitura": {
+      "literal": "Intertextualidade é relação entre textos. Paródia transforma algo reconhecível. Releitura é uma nova leitura ou versão.",
+      "simple": "Uma música pode recuperar uma frase famosa e mudar seu contexto. Ao reconhecer a referência, tu entende melhor a homenagem, a piada ou a crítica."
+    },
+    "As seis funções da linguagem": {
+      "literal": "São seis maneiras de classificar o foco de uma mensagem.",
+      "simple": "Olha o que ganha mais destaque. Pode ser o assunto, quem fala, quem recebe, o contato, a própria língua ou a forma da mensagem."
+    },
+    "Variação linguística": {
+      "literal": "Variação é diferença ou mudança no uso da língua.",
+      "simple": "O português muda conforme região, época, grupo e situação. Tu mesmo pode escrever diferente num grupo de amigos e numa prova."
+    },
+    "Norma-padrão e adequação de registro": {
+      "literal": "Norma-padrão é uma referência de escrita e fala formal. Adequar o registro é ajustar a linguagem à situação.",
+      "simple": "Uma lei e uma conversa entre amigos circulam de modos diferentes. A questão pode pedir por que a escolha de linguagem combina com cada caso."
+    },
+    "Preconceito linguístico e identidade": {
+      "literal": "Preconceito linguístico é discriminar pela fala. Identidade envolve como pessoas e grupos se reconhecem.",
+      "simple": "O sotaque pode mostrar de onde alguém vem e com quem convive. Ridicularizar essa fala também atinge a identidade do grupo."
+    },
+    "Gêneros discursivos e tipos textuais": {
+      "literal": "Gênero é um formato usado numa situação social. Tipo é um jeito de organizar o que se diz.",
+      "simple": "Uma notícia é um gênero. Dentro dela pode haver narração de acontecimentos e descrição de lugares. Esses são tipos de organização."
+    },
+    "Coesão e progressão temática": {
+      "literal": "Coesão é a ligação das partes. Progressão temática é o avanço do assunto ao longo do texto.",
+      "simple": "Uma palavra aponta para algo já apresentado, e a frase seguinte acrescenta uma ideia. Tu acompanha o fio sem ficar preso à mesma informação."
+    },
+    "Conotação e figuras de linguagem": {
+      "literal": "Conotação é um sentido associado que ganha força no contexto. Figuras são formas expressivas de dizer.",
+      "simple": "Quando alguém chama a cidade de “selva”, pode sugerir disputa ou confusão. O efeito depende do que o texto está dizendo sobre a cidade."
+    },
+    "Narrador, vozes e ponto de vista": {
+      "literal": "Narrador é quem conta. Vozes são as falas e posições presentes. Ponto de vista é de onde se observa.",
+      "simple": "A mesma cena muda se quem conta é uma das personagens ou alguém de fora. Confere de quem é cada opinião antes de interpretar."
+    },
+    "Eu lírico, ritmo e construção poética": {
+      "literal": "Eu lírico é a voz do poema. Ritmo é a cadência criada por sons, pausas e repetições.",
+      "simple": "O “eu” que fala no poema pode ser inventado. Lê os cortes, as pausas e o som para entender como a voz transmite uma emoção."
+    },
+    "Barroco e Arcadismo: tensões e contrastes": {
+      "literal": "Barroco e Arcadismo são nomes de correntes. Tensões e contrastes são conflitos e oposições.",
+      "simple": "Em muitos textos barrocos, ideias como culpa e desejo entram em choque. No Arcadismo, a vida simples no campo pode virar um ideal poético."
+    },
+    "Romantismo: idealização, nação e conflitos": {
+      "literal": "Idealizar é apresentar algo de acordo com um ideal. O Romantismo reúne projetos literários sobre afetos, sociedade e nação.",
+      "simple": "Uma obra pode imaginar um amor perfeito ou construir uma imagem ideal do Brasil. Outras mostram conflitos e questionam a sociedade."
+    },
+    "Realismo e Naturalismo": {
+      "literal": "Realismo remete ao real. Naturalismo remete à natureza e à observação de seus processos.",
+      "simple": "Em Machado, a ironia ajuda a enxergar o jogo de interesses dos personagens. No Naturalismo, o ambiente e a herança biológica aparecem como forças que moldam suas vidas."
+    },
+    "Simbolismo e sugestão de sentidos": {
+      "literal": "Simbolismo destaca o uso de símbolos. Sugerir é fazer perceber algo por pistas.",
+      "simple": "Um poema pode usar sons e imagens vagas para criar uma sensação. Tu entende o clima mesmo quando o texto deixa a emoção sem nome."
+    },
+    "Modernismo e Antropofagia": {
+      "literal": "Modernismo remete ao moderno. Antropofagia quer dizer comer carne humana e vira uma metáfora cultural no movimento.",
+      "simple": "Artistas experimentaram novas formas e criaram a partir da mistura de referências daqui e de fora. É a ideia de transformar o que se recebe."
+    },
+    "Romance de 1930 e regionalismos": {
+      "literal": "Romance é narrativa longa. Regionalismo destaca características de uma região.",
+      "simple": "Uma história sobre seca e trabalho num lugar específico pode ajudar a entender problemas maiores, como concentração de terra e desigualdade."
+    },
+    "Literatura negra, memória e autoria": {
+      "literal": "Memória é o que se lembra e transmite. Autoria diz respeito a quem cria e conta.",
+      "simple": "Quando pessoas negras escrevem suas próprias histórias, podem mostrar experiências e memórias que outras versões apagaram ou deixaram de lado."
+    },
+    "Vanguardas e arte contemporânea": {
+      "literal": "Vanguarda é a parte que vai à frente. Contemporânea indica arte de um período mais próximo do nosso.",
+      "simple": "Alguns artistas testam novos materiais, técnicas e lugares para a obra. A pergunta pode pedir por que essa mudança faz a gente olhar de outro jeito."
+    },
+    "Arte, identidade e representatividade": {
+      "literal": "Identidade envolve reconhecimento e pertencimento. Representatividade é ter presença na forma como um grupo aparece.",
+      "simple": "Quem é retratado, como aparece e quem cria a imagem mudam as histórias que o público aprende a reconhecer."
+    },
+    "Canção, rap e oralidade": {
+      "literal": "Oralidade é o modo como fala, voz e ritmo participam da comunicação.",
+      "simple": "No rap, o que se diz e o jeito de dizer andam juntos. A batida, o ritmo da fala e as repetições também constroem o sentido."
+    },
+    "Teatro, dança e diálogo cultural": {
+      "literal": "Diálogo cultural é o encontro ou a troca entre repertórios e práticas de grupos diferentes.",
+      "simple": "Um espetáculo pode misturar gestos, ritmos ou formas de atuar de origens diferentes. Observa o que essa mistura faz aparecer na cena."
+    },
+    "Esporte, inclusão e práticas corporais": {
+      "literal": "Incluir é tornar possível participar. Práticas corporais são atividades que envolvem movimento aprendido e compartilhado.",
+      "simple": "Uma turma pode adaptar a regra ou o equipamento de um jogo para mais gente participar e se sentir parte da atividade."
+    },
+    "Corpo, padrões de beleza e mídia esportiva": {
+      "literal": "Padrão é um modelo tomado como referência. Mídia é o conjunto de meios pelos quais imagens e mensagens circulam.",
+      "simple": "Uma imagem de atleta pode transmitir um ideal de corpo e esconder a pressão, o trabalho e as condições por trás do resultado."
+    },
+    "Tecnologias, suporte e circulação": {
+      "literal": "Suporte é onde o texto fica, como papel ou tela. Circulação é como ele chega a quem lê.",
+      "simple": "Uma notícia no celular pode ganhar vídeo, links e comentários. A ferramenta muda a forma de ler e compartilhar."
+    },
+    "Patrimônio linguístico e cultural": {
+      "literal": "É a herança de línguas, práticas e bens culturais que uma comunidade reconhece e transmite.",
+      "simple": "Uma língua, uma festa ou um jeito de contar histórias pode guardar memórias de um povo. Manter essas práticas vivas também preserva a história."
+    },
+    "Inglês: sentido, propósito e contexto": {
+      "literal": "Sentido é o que a mensagem significa. Propósito é para que foi feita. Contexto é a situação em que aparece.",
+      "simple": "Mesmo sem saber todas as palavras, usa título, imagem e trechos conhecidos para descobrir se o texto informa, alerta, convida ou critica."
+    },
+    "Finalidade": {
+      "literal": "O fim ou objetivo de algo.",
+      "simple": "Pergunta pra que o texto foi feito. Pode ser para informar, convencer, orientar, criticar ou divertir alguém."
+    },
+    "Função social": {
+      "literal": "O papel que algo cumpre na sociedade.",
+      "simple": "Um edital ajuda a divulgar regras para quem quer participar de uma seleção. Esse é o papel dele naquela situação."
+    },
+    "Efeito de sentido": {
+      "literal": "O sentido ou a impressão que uma escolha produz.",
+      "simple": "Se a palavra muda o tom, dá graça ou reforça uma crítica, explica o que ela faz o leitor perceber naquele trecho."
+    },
+    "Recurso expressivo": {
+      "literal": "Um meio usado para dar força ou forma à expressão.",
+      "simple": "É o truque de linguagem que o texto usa, como exagerar, repetir ou brincar com dois sentidos de uma palavra."
+    },
+    "Inferência": {
+      "literal": "Uma conclusão tirada a partir de pistas.",
+      "simple": "A frase diz que a rua ficou cheia de guarda-chuvas. Tu pode concluir que provavelmente chove, mesmo que ela deixe isso implícito."
+    },
+    "Tese": {
+      "literal": "A posição que alguém defende.",
+      "simple": "Se o tema é biblioteca, a tese pode ser que ela deveria abrir à noite. É a ideia que o texto quer fazer tu aceitar."
+    },
+    "Argumento": {
+      "literal": "Razão usada para sustentar uma ideia.",
+      "simple": "“Ela deveria abrir à noite porque muita gente trabalha de dia” dá uma razão para a proposta."
+    },
+    "Perspectiva": {
+      "literal": "Ponto de vista ou ângulo a partir do qual se olha.",
+      "simple": "Quem mora num bairro e quem quer construir ali podem ver o mesmo lugar de jeitos diferentes. Descobre de quem é o olhar do texto."
+    },
+    "Predominância": {
+      "literal": "Aquilo que predomina ou tem mais peso.",
+      "simple": "Um texto pode usar um relato pessoal para defender uma ideia. Se a defesa organiza o conjunto, ela é o que predomina."
+    },
+    "Estrutura composicional": {
+      "literal": "A organização das partes que compõem um texto.",
+      "simple": "É como o texto foi montado. Uma notícia pode começar com título e resumo do fato, e depois detalhar o que aconteceu."
+    },
+    "Eu lírico": {
+      "literal": "O “eu” que se expressa no poema.",
+      "simple": "Quando um verso diz “sinto saudade”, essa é a voz criada pelo poema. A experiência pode ser inventada pelo autor."
+    },
+    "Narrador": {
+      "literal": "Quem narra ou conta a história.",
+      "simple": "É a voz que apresenta o que aconteceu. Pode ser de uma personagem que viveu a cena ou de alguém que conta de fora."
+    },
+    "Foco narrativo": {
+      "literal": "O ponto de vista que orienta a narração.",
+      "simple": "Pensa na câmera da história. Ela pode seguir o que uma personagem vê e sabe, ou mostrar coisas que ela desconhece."
+    },
+    "Rubrica": {
+      "literal": "Anotação ou indicação. No teatro, é uma instrução de cena.",
+      "simple": "Se o roteiro diz “entra devagar” entre parênteses, aquilo orienta a atuação. A fala da personagem vem separada."
+    },
+    "Justaposição": {
+      "literal": "Colocar coisas lado a lado.",
+      "simple": "O texto pode pôr frases ou imagens uma ao lado da outra. Tu percebe a ligação pelo conjunto, mesmo sem palavras como “porque” ou “mas”."
+    },
+    "Sequência nominal": {
+      "literal": "Sequência formada principalmente por nomes e grupos ligados a eles.",
+      "simple": "“Porta fechada, rua vazia, silêncio” faz uma lista de elementos. O destaque está no que se vê ou se nomeia."
+    },
+    "Sequência verbal": {
+      "literal": "Sequência em que verbos têm destaque.",
+      "simple": "“Abriu, olhou e correu” põe ações em ordem. O foco está no que vai acontecendo."
+    },
+    "Caricatura": {
+      "literal": "Representação que carrega ou exagera traços.",
+      "simple": "O desenhista aumenta um traço reconhecível de alguém para causar humor ou destacar uma crítica."
+    },
+    "Descrição impressionista": {
+      "literal": "Descrição centrada nas impressões de quem observa.",
+      "simple": "É mostrar uma rua pelas cores, ruídos e sensações que ela provoca, como se tu acompanhasse o olhar de quem está ali."
+    },
+    "Estigma social": {
+      "literal": "Marca negativa que a sociedade atribui a alguém ou a um grupo.",
+      "simple": "É quando um rótulo ruim faz as pessoas tratarem um grupo como inferior antes de conhecerem a situação de cada pessoa."
+    },
+    "Intertextualidade": {
+      "literal": "Relação entre textos.",
+      "simple": "Um filme, poema ou música pode recuperar uma obra conhecida. Reconhecer essa ligação ajuda a entender o novo sentido."
+    },
+    "Multimodalidade": {
+      "literal": "Uso de vários modos de comunicar na mesma mensagem.",
+      "simple": "Num meme, as palavras e a imagem podem funcionar como duas peças da mesma piada. Lê as duas juntas."
+    },
+    "Gênero textual × tipo textual": {
+      "literal": "Gênero é uma forma de texto usada socialmente. Tipo é um modo de organizar o conteúdo.",
+      "simple": "Receita e reportagem são gêneros. Dar instruções, narrar e descrever são maneiras de organizar partes de um texto."
+    },
+    "Alcance da informação": {
+      "literal": "Até onde uma afirmação vale.",
+      "simple": "Se o texto diz “alguns estudantes”, uma alternativa sobre “todos os estudantes” foi além da pista disponível."
+    },
+    "Notícia": {
+      "literal": "Relato informativo de um acontecimento.",
+      "simple": "Diz o que aconteceu, com quem, onde e quando. O foco é informar o público sobre o fato."
+    },
+    "Reportagem": {
+      "literal": "Relato jornalístico apurado que aprofunda um assunto.",
+      "simple": "Vai além de contar o fato. Costuma juntar contexto, entrevistas e dados para explicar por que ele importa."
+    },
+    "Editorial": {
+      "literal": "Texto que expressa a posição de um veículo ou publicação.",
+      "simple": "É como se o jornal falasse em nome próprio sobre um assunto. Num artigo assinado, a opinião pertence a quem escreve."
+    },
+    "Artigo de opinião": {
+      "literal": "Texto em que alguém apresenta e defende uma opinião.",
+      "simple": "A pessoa assume uma posição sobre um tema e tenta convencer o leitor com razões ou exemplos."
+    },
+    "Resenha": {
+      "literal": "Texto que apresenta e avalia uma obra.",
+      "simple": "Conta do que trata um livro ou filme e explica o que o autor da resenha achou dele, com motivos."
+    },
+    "Prefácio": {
+      "literal": "Texto que vem antes da parte principal de uma obra.",
+      "simple": "Abre o livro e pode contar como ele surgiu, por que foi escrito ou o que vale observar durante a leitura."
+    },
+    "Campanha publicitária": {
+      "literal": "Conjunto planejado de mensagens para divulgar algo e influenciar um público.",
+      "simple": "Um cartaz pode pedir que tu economize água. A imagem, a frase e o jeito de falar são escolhidos para incentivar a ação."
+    },
+    "Texto teatral": {
+      "literal": "Texto feito para orientar uma representação em cena.",
+      "simple": "Tu costuma ver quem fala, o que diz e, às vezes, instruções sobre movimentos, cenário e tom."
+    },
+    "Metáfora": {
+      "literal": "Transferência de um sentido para outro contexto.",
+      "simple": "Se alguém diz “a sala virou um forno”, usa forno para fazer tu imaginar o calor da sala."
+    },
+    "Ironia": {
+      "literal": "Diferença entre o que parece dito e o que a situação faz entender.",
+      "simple": "Dizer “que pontual!” para quem chega muito atrasado soa como elogio, mas a situação mostra a crítica."
+    },
+    "Hipérbole": {
+      "literal": "Exagero usado de propósito.",
+      "simple": "“Já te falei mil vezes” aumenta o número para mostrar impaciência ou insistência."
+    },
+    "Antítese": {
+      "literal": "Colocação de ideias opostas lado a lado.",
+      "simple": "“Ria por fora e chorava por dentro” usa o contraste entre rir e chorar para destacar dois lados da situação."
+    },
+    "Personificação": {
+      "literal": "Dar características de pessoa ao que não é humano.",
+      "simple": "“O vento sussurrou” dá ao vento uma ação humana para ajudar tu a imaginar o som."
+    },
+    "Metalinguagem": {
+      "literal": "Linguagem usada para falar da própria linguagem.",
+      "simple": "Uma canção sobre como se faz uma canção ou um poema sobre escrever versos são exemplos."
+    },
+    "Repetição": {
+      "literal": "Aparecimento de novo de algo que já foi usado.",
+      "simple": "Uma palavra pode voltar para dar ritmo, reforçar uma ideia ou mostrar que o texto continua falando da mesma coisa."
+    }
+  }
 };

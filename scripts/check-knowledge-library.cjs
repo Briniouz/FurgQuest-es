@@ -57,8 +57,17 @@ const html=fs.readFileSync('index.html','utf8');assert(html.includes('id="biblio
  const data = c.FURG_LIBRARY_GUIDE_DATA;
  c.FURG_ENEM_DATA = {questions: bank};
  const concepts = await guide.loadConcepts(data);
- assert(concepts.length >= 175);
+ assert.equal(concepts.length,183);
  assert.equal(new Set(concepts.map(x=>x.titleKey)).size,concepts.length);
+ assert.equal(Object.keys(data.meanings).length,concepts.length);
+ for (const entry of concepts) {
+  assert(entry.literal?.length > 10 && entry.simple?.length > 25,entry.title);
+  assert.notEqual(entry.literal,entry.simple,entry.title);
+ }
+ for (const [query,title] of [['O que é iluminismo?','Iluminismo'],['realismo','Realismo e Naturalismo'],['pressupõe-se','Pressupõe-se'],['defina-se','Define-se / defina-se']]) {
+  assert.equal((await guide.lookup(query))?.title,title,query);
+ }
+ assert.equal(await guide.lookup('Quais eram as críticas ao absolutismo?'),null);
  for (const entry of [...concepts,...data.commands]) {
   assert(entry.summary?.length > 20 && entry.tip?.length > 20 && entry.example?.length > 15,entry.title);
  }
