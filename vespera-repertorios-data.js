@@ -52,6 +52,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "url": "https://www.unicef.org/brazil/comunicados-de-imprensa/dois-milhoes-de-criancas-e-adolescentes-de-11-a-19-anos-nao-estao-frequentando-a-escola-no-brasil"
       }
     },
+    development: {
+      "title": "Conciliação entre estudo e trabalho",
+      "reference": "art",
+      "parts": [
+        "A incompatibilidade entre a jornada de trabalho e o horário das aulas dificulta a permanência de jovens trabalhadores na escola.",
+        "O choque de horários se torna decisivo quando o estudante depende da renda que recebe,",
+        "já que faltar ao emprego para assistir à aula pode comprometer o orçamento familiar.",
+        "A série Segunda Chamada acompanha estudantes da Educação de Jovens e Adultos em uma escola pública de São Paulo e permite observar a dificuldade de encaixar os estudos em uma rotina de obrigações.",
+        "Diante de um impasse semelhante ao retratado na série, a necessidade de comparecer ao trabalho pode levar a faltas recorrentes nas aulas,",
+        "o que atrasa a aprendizagem e aumenta o risco de interrupção dos estudos.",
+        "Assim, a disputa pelo tempo que atravessa Segunda Chamada ajuda a entender por que voltar à escola exige condições para continuar frequentando as aulas."
+      ]
+    },
     tip: 'Escolhe uma barreira concreta, como choque de horários, custo do transporte ou pressão para complementar a renda. Explica como ela afeta a frequência às aulas.',
     example: 'Ao acompanhar estudantes da EJA, a série Segunda Chamada ajuda a entender por que voltar à escola exige reorganizar a rotina. Na PNAD de 2025, a necessidade de trabalhar foi o motivo mais citado por jovens sem ensino médio completo que haviam deixado a escola ou nunca a frequentaram. Políticas de permanência precisam considerar essa disputa pelo tempo.',
   },
@@ -109,6 +122,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "url": "https://cetic.br/pt/noticia/em-duas-decadas-proporcao-de-lares-urbanos-brasileiros-com-internet-passou-de-13-para-85-aponta-tic-domicilios-2024/"
       }
     },
+    development: {
+      "title": "Qualidade da conexão e inclusão digital",
+      "reference": "study",
+      "parts": [
+        "A baixa qualidade do acesso à internet restringe a participação em atividades de estudo e trabalho.",
+        "Essa limitação aparece quando tarefas escolares e profissionais exigem conexão estável e equipamento adequado,",
+        "pois editar arquivos e participar de videochamadas pode demandar mais recursos do que trocar mensagens.",
+        "Segundo a TIC Domicílios 2024, do Cetic.br, 22% das pessoas de 10 anos ou mais no Brasil tinham condições satisfatórias no indicador de conectividade significativa, que considera fatores como custo, velocidade e dispositivos.",
+        "Diante das limitações captadas por esse indicador, quem depende de uma conexão instável pode perder etapas de uma aula ou de uma seleção on-line,",
+        "o que reduz as chances de aproveitar oportunidades de aprendizagem e de trabalho.",
+        "Portanto, a qualidade do acesso, como indica a medida do Cetic.br, é decisiva para transformar a conexão à internet em oportunidade de participação."
+      ]
+    },
     tip: 'Se o tema tratar de participação digital, diferencia disponibilidade da conexão, qualidade, equipamento e formação. O indicador mede uso no domicílio.',
     example: 'As experiências sonoras de Bon Iver em 22, A Million ilustram o potencial criativo das ferramentas digitais. A diferença de acesso à internet entre domicílios urbanos e rurais registrada pelo IBGE em 2025 ajuda a explicar por que as oportunidades de aprender e divulgar produções digitais ainda variam conforme o território.',
   },
@@ -164,6 +190,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2025/brazil"
       }
     },
+    development: {
+      "title": "Disputa por atenção e desinformação",
+      "reference": "art",
+      "parts": [
+        "A circulação veloz de publicações dificulta a checagem de informações nas redes sociais.",
+        "Esse obstáculo se intensifica quando usuários repassam mensagens a partir de títulos chamativos,",
+        "pois o compartilhamento pode ocorrer antes da leitura da matéria e da conferência da fonte.",
+        "O documentário O Dilema das Redes recorre a entrevistas e cenas dramatizadas para discutir a disputa das plataformas pela atenção dos usuários.",
+        "Em uma dinâmica como a descrita no documentário, uma alegação chamativa pode alcançar muitas pessoas antes de ser checada,",
+        "o que dificulta corrigi-la quando já foi repetida por pessoas em quem os leitores confiam.",
+        "Assim, a disputa por atenção discutida em O Dilema das Redes ajuda a entender por que o ritmo de circulação das mensagens importa para a prevenção da desinformação."
+      ]
+    },
     tip: 'Descreve o mecanismo que tu quer combater, como o compartilhamento por manchetes. Propõe ações verificáveis, como comparar fontes e identificar a data e o autor da alegação.',
     example: 'O Dilema das Redes chama atenção para o modo como as plataformas disputam o tempo do usuário. A TIC Domicílios 2024 indicou que 52% dos usuários de internet relataram verificar informações encontradas on-line. Exercícios de checagem na escola podem tornar esse hábito mais frequente antes de um compartilhamento.',
   },
@@ -212,6 +251,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "source": "Laboratório Fantasma · Faixa em AmarElo",
         "url": "https://open.spotify.com/track/0lvDrCwoPcDV60I7TuQPNI"
       }
+    },
+    development: {
+      "title": "Distância e acesso ao cinema",
+      "reference": "study",
+      "parts": [
+        "A concentração de salas de cinema em determinados municípios limita o acesso às obras audiovisuais.",
+        "A barreira pesa sobre quem mora em cidades sem salas e precisa viajar para assistir a uma sessão,",
+        "já que o deslocamento acrescenta gastos e tempo ao custo do ingresso.",
+        "Segundo informe da Ancine, em 2024, 40,7% da população brasileira vivia em municípios sem salas de cinema.",
+        "No cenário medido pela agência, o custo adicional pode levar parte do público a desistir de frequentar as sessões,",
+        "o que reduz suas oportunidades de conhecer filmes e participar de mostras e debates presenciais.",
+        "Por isso, a distribuição territorial registrada pela Ancine ajuda a entender por que o acesso ao cinema depende também do lugar onde se mora."
+      ]
     },
     tip: 'Separa produção e acesso. A obra ajuda a discutir representatividade, e o dado de cinema ajuda quando o recorte envolve circulação ou acesso territorial a equipamentos culturais.',
     example: 'Ao partir de um show de rap no Theatro Municipal, AmarElo recupera histórias da cultura negra brasileira. A circulação de obras desse tipo pode ser ampliada por exibições comunitárias, especialmente onde faltam equipamentos culturais. Em 2024, cerca de quatro em cada dez brasileiros viviam em municípios sem salas de cinema, segundo a Ancine.',
@@ -268,6 +320,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "url": "https://biblioteca.ibge.gov.br/visualizacao/livros/liv102212_informativo.pdf"
       }
     },
+    development: {
+      "title": "Custo de acesso a serviços públicos",
+      "reference": "pocket",
+      "parts": [
+        "O custo do deslocamento dificulta o acesso de famílias de baixa renda a serviços públicos distantes de suas casas.",
+        "A dificuldade se agrava quando um atendimento exige idas repetidas a diferentes locais,",
+        "pois cada trajeto consome uma parte do orçamento familiar.",
+        "Em O Espaço do Cidadão, Milton Santos relaciona o exercício da cidadania às condições sociais e ao lugar onde se vive.",
+        "Sob essa perspectiva, a falta de dinheiro para a passagem pode levar uma família a adiar uma ida à unidade de saúde,",
+        "o que pode atrasar o diagnóstico e o início do tratamento.",
+        "Essa dificuldade de exercer um direito, discutida por Milton Santos, mostra a importância de considerar o custo de chegar até os serviços públicos."
+      ]
+    },
     tip: 'Dá nome ao direito afetado. Mostra, por exemplo, como orçamento apertado limita transporte para a escola, acesso a equipamentos culturais ou uma alimentação adequada.',
     example: 'Em Sobrevivendo no Inferno, os Racionais MC’s apresentam trajetórias atravessadas pela desigualdade na periferia. Fora da obra, a proporção de brasileiros abaixo da linha de pobreza medida pelo IBGE em 2024 ajuda a dimensionar a necessidade de políticas que reduzam barreiras econômicas ao acesso a direitos.',
   },
@@ -316,6 +381,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "source": "IMMuB · Créditos da canção",
         "url": "https://immub.org/album/xote-ecologico"
       }
+    },
+    development: {
+      "title": "Garimpo e modos de vida indígenas",
+      "reference": "art",
+      "parts": [
+        "O avanço do garimpo em territórios indígenas ameaça práticas que dependem da floresta e dos rios.",
+        "Essa pressão aparece quando a extração degrada as águas utilizadas pela comunidade,",
+        "uma vez que a pesca e outras atividades cotidianas dependem dos rios.",
+        "O filme A Última Floresta apresenta o vínculo de uma comunidade Yanomami com a floresta diante do avanço do garimpo.",
+        "Em uma situação como a retratada no filme, a degradação das águas pode dificultar a pesca e a obtenção de alimentos,",
+        "o que compromete a continuidade de práticas de subsistência e de saberes transmitidos entre gerações.",
+        "Assim, a relação com a floresta retratada em A Última Floresta mostra por que proteger o território é também proteger modos de vida."
+      ]
     },
     tip: 'Explica a escala de cada evidência. Usa o mapa para mostrar extensão regional e a obra para abordar os vínculos com o território e as experiências de comunidades.',
     example: 'Em A Última Floresta, o território aparece como base das práticas culturais e da vida comunitária Yanomami. Em escala regional, o Prodes registrou mais de cinco mil quilômetros quadrados de desmatamento na Amazônia Legal no ciclo de 2025. Monitoramento e escuta das comunidades ajudam a planejar a proteção territorial.',
@@ -371,6 +449,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "url": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/dbff6312ead43646734c2b1f9258b7d9.pdf"
       }
     },
+    development: {
+      "title": "Estigma e busca de apoio na escola",
+      "reference": "pocket",
+      "parts": [
+        "Na escola, o medo do julgamento pode dificultar que adolescentes procurem ajuda diante do sofrimento emocional.",
+        "Essa barreira se forma quando colegas tratam relatos de sofrimento como sinal de fraqueza,",
+        "pois quem presencia esse tipo de reação pode esperar o mesmo julgamento ao falar de si.",
+        "Erving Goffman analisa como o estigma desvaloriza pessoas nas interações sociais a partir do significado que um grupo atribui a certas características.",
+        "Sob essa lógica, jovens que antecipam um rótulo depreciativo podem esconder o que sentem,",
+        "o que torna mais difícil para pessoas de confiança perceberem a necessidade de acolhimento.",
+        "Dessa forma, a ideia de estigma de Goffman ajuda a entender por que a qualidade da escuta importa para a busca de apoio na escola."
+      ]
+    },
     tip: 'Liga o argumento à barreira de acolhimento pedida pelo tema, como medo de julgamento na escola ou cobrança de rendimento no esporte. O dado da OMS tem alcance mundial.',
     example: 'A atmosfera de A Different Age, de Current Joys, permite ler a solidão como experiência de isolamento. A estimativa da OMS para adolescentes de 10 a 19 anos ajuda a dimensionar a relevância da saúde mental nessa fase. Espaços de escuta na escola podem facilitar a procura por apoio.',
   },
@@ -424,6 +515,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "source": "IBGE · Trabalho por meio de plataformas digitais 2024",
         "url": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/59722d4ac24bd853f52f54f12b9514f7.pdf"
       }
+    },
+    development: {
+      "title": "Despesas do entregador e renda instável",
+      "reference": "art",
+      "parts": [
+        "A transferência de custos operacionais para entregadores aumenta a instabilidade da renda no trabalho por plataformas.",
+        "Essa pressão aparece quando o trabalhador precisa pagar a manutenção do veículo com ganhos que variam conforme o volume de entregas,",
+        "uma vez que despesas como consertos podem surgir em semanas de baixa demanda.",
+        "Em Você Não Estava Aqui, de Ken Loach, um entregador passa a arcar com custos da atividade ao tentar melhorar a renda da família.",
+        "Em situações como a do personagem, uma despesa inesperada pode consumir parte importante do dinheiro ganho com as entregas,",
+        "o que dificulta formar uma reserva para períodos em que seja preciso parar de trabalhar.",
+        "Assim, o orçamento apertado retratado no filme de Loach ajuda a entender por que a divisão dos custos importa na discussão sobre trabalho por plataformas."
+      ]
     },
     tip: 'Escolhe um custo ou risco concreto, como manutenção do veículo, oscilação de demanda ou pressão por metas. O total do IBGE reúne diferentes serviços, incluindo transporte e entrega.',
     example: 'O entregador de Você Não Estava Aqui assume despesas do veículo usado para trabalhar. No Brasil, o IBGE identificou cerca de 1,7 milhão de trabalhadores em plataformas de serviços no trabalho principal em 2024. Essa escala torna relevante discutir a divisão de custos e a proteção social nessas atividades.',
@@ -479,6 +583,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "url": "https://repositorio.ipea.gov.br/server/api/core/bitstreams/89484aa8-8b87-476c-a3de-02ec9c77aa22/content"
       }
     },
+    development: {
+      "title": "Distância entre moradia e emprego",
+      "reference": "study",
+      "parts": [
+        "A distância entre moradia e emprego restringe as oportunidades de trabalho de moradores de bairros com pouca oferta de vagas.",
+        "A dificuldade aumenta quando os principais polos de emprego ficam longe das áreas residenciais de menor renda,",
+        "já que chegar a esses locais exige tempo e pode exigir gastos com transporte.",
+        "Em estudo sobre São Paulo em 2019, o Ipea estimou que os 10% mais ricos alcançavam, em média, mais de nove vezes o número de empregos acessíveis aos 40% mais pobres. A comparação considerou deslocamentos a pé de até 30 minutos.",
+        "Em um cenário de acesso desigual como esse, quem tem poucas vagas próximas depende mais de viagens longas para ampliar a busca,",
+        "o que pode tornar inviável aceitar uma vaga de baixa remuneração diante dos custos do trajeto.",
+        "A diferença de alcance estimada pelo Ipea evidencia, portanto, o peso do endereço no acesso ao trabalho."
+      ]
+    },
     tip: 'Recorta um serviço, como transporte, drenagem ou saneamento, e explica a barreira espacial. Trata o número de moradores como medida da população desses territórios.',
     example: 'Em O Som ao Redor, pessoas que compartilham uma rua do Recife vivenciam o espaço de maneiras diferentes. O Censo 2022 contou cerca de 16,4 milhões de moradores em favelas e comunidades urbanas. Considerar esses territórios no planejamento é necessário para que serviços e deslocamentos atendam à população que já vive neles.',
   },
@@ -527,6 +644,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "url": "https://www.youtube.com/watch?v=lKmYTHgBNoE"
       }
     },
+    development: {
+      "title": "Sobrecarga doméstica e tempo para estudar",
+      "reference": "music",
+      "parts": [
+        "A divisão desigual do trabalho doméstico reduz o tempo que muitas mulheres podem dedicar à formação profissional.",
+        "A sobrecarga é reforçada pela expectativa de que cozinhar, limpar e cuidar de parentes sejam responsabilidades femininas,",
+        "pois tratar essas tarefas como obrigações naturais favorece que outros moradores deixem de dividi-las.",
+        "A canção Triste, Louca ou Má, do grupo Francisco, el Hombre, questiona expectativas que restringem o papel das mulheres à vida doméstica.",
+        "Quando a norma contestada na canção orienta a rotina de uma família, as tarefas de cuidado podem ocupar o horário em que uma mulher faria um curso,",
+        "o que dificulta sua qualificação e pode limitar suas possibilidades de renda.",
+        "Assim, o papel doméstico questionado pela banda ajuda a entender como uma expectativa cultural se transforma em desigualdade de tempo."
+      ]
+    },
     tip: 'O filme mostra trabalho remunerado dentro de uma casa. Usa a pesquisa para discutir a divisão do cuidado e dos afazeres no cotidiano e explica a relação entre essas duas dimensões.',
     example: 'Que Horas Ela Volta? evidencia quanto a rotina de uma família pode depender do cuidado prestado por outra mulher. Na PNAD de 2022, a dedicação semanal feminina a afazeres e cuidados superava a masculina em 9,6 horas. Ampliar o acesso a serviços de cuidado pode reduzir parte da pressão sobre o tempo das mulheres.',
   },
@@ -574,6 +704,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "source": "ANAMORPHOSIS · Análise da canção",
         "url": "https://periodicos.rdl.org.br/anacidil/article/view/786"
       }
+    },
+    development: {
+      "title": "Retaliação e ciclo de violência",
+      "reference": "art",
+      "parts": [
+        "A retaliação alimenta a repetição de conflitos entre grupos.",
+        "O ciclo se forma quando uma agressão recebe outra agressão como resposta,",
+        "já que a resposta produz novos prejuízos que podem ser usados para justificar outra represália.",
+        "No arco de Pain, em Naruto Shippuden, o relato de Nagato associa suas perdas a sucessivas retaliações e permite visualizar essa lógica.",
+        "De modo semelhante ao conflito narrado no anime, uma represália pode atingir pessoas que estavam à margem da disputa inicial,",
+        "o que amplia o conflito e dificulta restabelecer a confiança entre os grupos.",
+        "O arco de Pain ajuda a compreender, portanto, por que enfrentar os danos de uma agressão é importante para evitar que a vingança organize as respostas seguintes."
+      ]
     },
     tip: 'Usa a narrativa para explicar o ciclo de retaliação. Se o tema tratar de violência letal, o Atlas dá a dimensão dos registros. Para um recorte como violência escolar, busca evidência específica desse contexto.',
     example: 'O arco de Pain em Naruto Shippuden dramatiza a repetição da violência quando uma agressão alimenta outra. O Atlas da Violência contabilizou mais de 42 mil homicídios registrados no Brasil em 2024. Esse cenário dá relevância a estratégias de prevenção territorial e mediação de conflitos articuladas com políticas de segurança.',
@@ -628,6 +771,19 @@ globalThis.FURG_VESPERA_REPERTORIES = [
         "source": "IBGE · Censo Demográfico 2022",
         "url": "https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv102178.pdf"
       }
+    },
+    development: {
+      "title": "Superproteção e autonomia na escola",
+      "reference": "art",
+      "parts": [
+        "A superproteção no convívio escolar pode limitar a autonomia de estudantes com deficiência.",
+        "Isso acontece quando colegas e adultos decidem pelo estudante até em tarefas que ele poderia escolher como fazer,",
+        "pois associam a necessidade de algum apoio à incapacidade de tomar decisões.",
+        "No filme Hoje Eu Quero Voltar Sozinho, Leonardo, um adolescente cego, busca autonomia em casa e na escola.",
+        "À semelhança do que vive o personagem, decisões tomadas por outras pessoas podem restringir as escolhas do estudante na rotina escolar,",
+        "o que reduz suas oportunidades de assumir responsabilidades e construir vínculos por iniciativa própria.",
+        "A busca de Leonardo por autonomia ilustra, portanto, a importância de oferecer apoio que amplie a participação e respeite as decisões do estudante."
+      ]
     },
     tip: 'Nomeia a barreira, como um site incompatível com leitores de tela, ausência de sinalização ou superproteção. Explica de que forma a mudança proposta aumenta a autonomia.',
     example: 'Em Hoje Eu Quero Voltar Sozinho, Leonardo reivindica autonomia diante da superproteção. O Censo 2022 estimou que 14,4 milhões de pessoas com deficiência viviam no Brasil. Planejar acessibilidade nas escolas é uma forma de transformar o espaço para que estudantes possam participar com mais independência.',

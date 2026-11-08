@@ -63,6 +63,12 @@ for (const card of c.FURG_VESPERA_REPERTORIES) {
   assert.equal(new URL(source.url).protocol,'https:');
  }
  if (study) assert.match(study.text,/20[0-9]{2}/);
+ const {title, reference, parts} = card.development;
+ assert(title.length > 10 && parts.length === 7);
+ assert(parts.every(part => part.length > 35));
+ const sources = {art:card.art,pocket,music,study:study || card.news};
+ assert(Object.hasOwn(sources,reference));
+ assert.equal(new URL(sources[reference].url).protocol,'https:');
 }
 
 const shortBatch = root.vespera.active.id;
@@ -111,13 +117,22 @@ const repertoryResults = el('eveRepertoryResults');
 const selectRepertory = (id,value) => events.get('vesperaRoot:change')({target:{id,value}});
 const searchRepertory = value => events.get('vesperaRoot:input')({target:{id:'eveRepertorySearch',dataset:{},value}});
 assert.equal(repertoryResults.innerHTML.match(/data-eve-axis=/g).length,12);
+assert.equal(repertoryResults.innerHTML.match(/class="eve-development"/g).length,12);
 selectRepertory('eveRepertoryAxis','tecnologia');
 assert.equal(el('eveRepertoryCount').textContent,'1 eixo temático');
 assert.match(repertoryResults.innerHTML,/data-eve-axis="tecnologia" open/);
 assert.match(repertoryResults.innerHTML,/Ciência da Computação/);
 assert.match(repertoryResults.innerHTML,/Pela Internet/);
+selectRepertory('eveRepertoryUse','desenvolvimento');
+assert.match(repertoryResults.innerHTML,/<details class="eve-development" open>/);
+assert.equal(repertoryResults.innerHTML.match(/class="eve-development-part"/g).length,7);
+assert.match(repertoryResults.innerHTML,/Finalização com retomada do repertório/);
+assert.match(repertoryResults.innerHTML,/Fonte do repertório · Cetic.br/);
+selectRepertory('eveRepertoryUse','introducao');
+assert.doesNotMatch(repertoryResults.innerHTML,/class="eve-development"/);
 selectRepertory('eveRepertoryUse','conclusao');
 assert.equal(repertoryResults.innerHTML.match(/data-repertory-kind="Agente"/g).length,2);
+assert.doesNotMatch(repertoryResults.innerHTML,/class="eve-development"/);
 assert.doesNotMatch(repertoryResults.innerHTML,/data-repertory-kind="(Música|Dado de pesquisa)"/);
 selectRepertory('eveRepertoryAxis','');
 selectRepertory('eveRepertoryUse','');
@@ -132,3 +147,4 @@ console.log('PASS: 39 complete reference cards; 36 fingerprint-checked official 
 console.log('PASS: required pre-answer reflections/confidence, five-item sessions, feedback order, repeated-vs-new metrics, legacy exposures, high-confidence reviews, image gating, save rollback, session resume and import deduplication; original bank progress unchanged.');
 console.log('PASS: 25-item route, independent short session, 12 sourced writing cards, discursive response, comment, reload, merge and completion.');
 console.log('PASS: 12 writing axes with complete kits and sources, accent-insensitive search, stage and axis filters, and unchanged saved progress.');
+console.log('PASS: one sourced seven-part development per axis, stage-specific rendering and expanded model when a single axis is selected.');

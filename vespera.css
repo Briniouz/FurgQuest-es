@@ -257,6 +257,75 @@ body:has(#vespera.active) .eve-entry-banner{display:none}body:has(#vespera.activ
   color: var(--blue);
 }
 
+.eve-development {
+  margin-top: 12px;
+  padding: 10px 13px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface-2);
+}
+
+.eve-development h3 {
+  margin: 10px 0 0;
+}
+
+.eve-development [data-step="1"] { --eve-step-color: #7744b6; --eve-step-dark: #c5a6fb; }
+.eve-development [data-step="2"] { --eve-step-color: #b52636; --eve-step-dark: #ff9096; }
+.eve-development [data-step="3"] { --eve-step-color: #aa490e; --eve-step-dark: #ffad72; }
+.eve-development [data-step="4"] { --eve-step-color: #8b6300; --eve-step-dark: #f6ce64; }
+.eve-development [data-step="5"] { --eve-step-color: #1b773f; --eve-step-dark: #7de2a1; }
+.eve-development [data-step="6"] { --eve-step-color: #285cb4; --eve-step-dark: #8bbcff; }
+.eve-development [data-step="7"] { --eve-step-color: #795033; --eve-step-dark: #dbb093; }
+
+:root[data-theme="dark"] .eve-development [data-step] {
+  --eve-step-color: var(--eve-step-dark);
+}
+
+.eve-development-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+}
+
+.eve-development-number {
+  display: inline-grid;
+  place-items: center;
+  width: 1.4em;
+  height: 1.4em;
+  margin-inline-end: .3em;
+  border-radius: 50%;
+  background: var(--eve-step-color);
+  color: #fff;
+  font-size: .86em;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: .06em;
+}
+
+:root[data-theme="dark"] .eve-development-number {
+  color: var(--surface);
+}
+
+#vespera .eve-development-paragraph {
+  margin: 12px 0 6px;
+  font-size: 15px;
+  line-height: 1.95;
+  color: var(--ink);
+}
+
+.eve-development-part {
+  padding: 1px 3px;
+  background: color-mix(in srgb, var(--eve-step-color) 15%, var(--surface));
+  border-bottom: 2px solid var(--eve-step-color);
+  border-radius: 3px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
 @media (max-width: 650px) {
   .eve-tabs {
     flex-wrap: wrap;

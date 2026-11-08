@@ -25,6 +25,15 @@
   desenvolvimento: 'Desenvolvimento',
   conclusao: 'Conclusão',
  };
+ const developmentSteps = [
+  'Tópico frasal',
+  'Causa',
+  'Minijustificativa da causa',
+  'Repertório',
+  'Consequência decorrente do repertório',
+  'Consequência da consequência',
+  'Finalização com retomada do repertório',
+ ];
  const pendingComments = new Map();
  const unfinished = session => session && session.index < session.ids.length;
  const session = () => state()[sessionKey];
@@ -487,10 +496,31 @@
   </article>`;
  }
 
+ function repertoryDevelopment(axis, open) {
+  const {title, reference, parts} = axis.development;
+  const {pocket, music, study} = axis.kit;
+  const source = {art: axis.art, pocket, music, study: study || axis.news}[reference];
+  const stepNumber = number => `<span class="eve-development-number" aria-hidden="true">${number}</span>`;
+  return `<details class="eve-development" ${open ? 'open' : ''}>
+   <summary>Desenvolvimento em 7 partes</summary>
+   <h3>${esc(title)}</h3>
+   <p class="eve-muted">Modelo autoral de parágrafo</p>
+   <ol class="eve-development-legend" role="list" aria-label="Legenda das sete partes">
+    ${developmentSteps.map((step, index) => `<li data-step="${index + 1}">${stepNumber(index + 1)}${esc(step)}</li>`).join('')}
+   </ol>
+   <p class="eve-development-paragraph">${parts.map((part, index) =>
+    `<span class="eve-development-part" data-step="${index + 1}" title="${esc(developmentSteps[index])}">${stepNumber(index + 1)}<span class="sr-only">${esc(developmentSteps[index])}. </span>${esc(part)}</span>`
+   ).join(' ')}</p>
+   <p class="eve-muted">O passo 5 liga o repertório a um efeito do problema. O passo 6 mostra o que esse primeiro efeito provoca.</p>
+   <div class="eve-repertoire-sources"><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">Fonte do repertório · ${esc(source.source || source.label || source.title)} ↗</a></div>
+  </details>`;
+ }
+
  function repertoryCard(axis, groups, open) {
   const showExample = !repertoryFilter.use || repertoryFilter.use === 'desenvolvimento';
   return `<details class="eve-repertoire-card panel" data-eve-axis="${esc(axis.id)}" ${open ? 'open' : ''}>
    <summary><span class="eve-repertoire-title">${esc(axis.title)}</span><span class="eve-repertoire-angle">${esc(axis.angle)}</span></summary>
+   ${showExample ? repertoryDevelopment(axis, open && repertoryFilter.use === 'desenvolvimento') : ''}
    ${groups.map(group => `<section class="eve-repertoire-group">
     <h3>${esc(group.title)}</h3>
     <div class="eve-repertoire-items">${group.items.map(repertoryItem).join('')}</div>
