@@ -76,7 +76,16 @@ const html=fs.readFileSync('index.html','utf8');assert(html.includes('id="biblio
  }
  assert.equal(guide.search(concepts,'iluminismo','Geografia').length,0);
  assert.equal(guide.search(concepts,'inexistente123').length,0);
- assert.equal(data.commands.length,39);
+ assert.equal(data.commands.length,45);
+ const writing = data.commands.filter(entry=>entry.group==='Redação');
+ assert.equal(writing.length,6);
+ for (const entry of writing) {
+  assert(entry.structure.title.length > 4 && entry.structure.guide.length > 35,entry.title);
+ }
+ for (const [query,title] of [['redacao','Redação · Redija um texto dissertativo-argumentativo'],['perspectivas','Perspectivas'],['desafios','Desafios / obstáculos'],['problematizacao','Problematização / problematize']]) {
+  assert.equal((await guide.lookup(query))?.title,title,query);
+ }
+ assert.equal((await guide.lookup('perspectivas')).exampleLabel,'Tema oficial do ENEM 2025');
  for (const title of ['Pressupõe-se','Define-se / defina-se','Destaca-se','Respectivamente','Exceto / incorreta']) assert(data.commands.some(x=>x.title===title));
  for (const source of data.sources) assert.equal(new URL(source.url).protocol,'https:');
  const {sample,rows} = guide.patterns();
@@ -89,7 +98,7 @@ const html=fs.readFileSync('index.html','utf8');assert(html.includes('id="biblio
   assert(sample.some(r=>r.pattern===pattern&&r.id===id),id);
   assert(questions.get(id)?.quality?.keyVerified,id);
  }
- console.log('PASS: '+concepts.length+' unique concept cards, 39 command cards, accented search, group filtering, 450 first-day items and 10 valid real examples.');
+ console.log('PASS: '+concepts.length+' unique concept cards, 45 command cards including six writing prompts, accented search, group filtering, 450 first-day items and 10 valid real examples.');
  console.log('PASS: 224 unique profiles, all 40 originals preserved; '+references+' traceable links, direct/work/concept separation, counterexamples, exact years and reverse graph.');
  console.log('PASS: idea/work search and combined filters; all 3833 question texts and objects unchanged; multi-source and recent inline layouts, 66 guarded authored solutions, lazy library data and safe rendering.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

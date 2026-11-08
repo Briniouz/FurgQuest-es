@@ -95,7 +95,12 @@
     if (entry.literal) {
       box.append(node('b', 'Sentido literal'), node('p', entry.literal));
     }
-    box.append(node('b', 'Na prova'), node('p', entry.tip), node('b', 'Exemplo'), node('p', entry.example));
+    box.append(node('b', 'Na prova'), node('p', entry.tip));
+    if (entry.structure) {
+      output.append(node('p', 'Estrutura sugerida · ' + entry.structure.title));
+      box.append(node('b', 'Como organizar'), node('p', entry.structure.guide));
+    }
+    box.append(node('b', entry.exampleLabel || 'Exemplo'), node('p', entry.example));
     const list = node('div', '', 'quick-lookup-links');
     const local = node('a', 'Biblioteca ENEM ↗');
     local.href = '#biblioteca';

@@ -24,7 +24,7 @@
     if (pendingData) return pendingData;
     pendingData = new Promise((resolve, reject) => {
       const script = document.createElement('script');
-      script.src = 'biblioteca-guia-data.js?v=20261108-clareza';
+      script.src = 'biblioteca-guia-data.js?v=20261108-redacao';
       script.onload = () => {
         if (globalThis.FURG_LIBRARY_GUIDE_DATA) resolve(globalThis.FURG_LIBRARY_GUIDE_DATA);
         else reject(new Error('Guia indisponível'));
@@ -40,7 +40,7 @@
     return {
       ...entry, terms,
       titleKey: norm(entry.title),
-      search: norm([entry.title, entry.group, ...terms, entry.summary, entry.literal, entry.simple, entry.tip, entry.example, ...(entry.people || [])].join(' ')),
+      search: norm([entry.title, entry.group, ...terms, entry.summary, entry.literal, entry.simple, entry.tip, entry.structure?.title, entry.structure?.guide, entry.example, ...(entry.people || [])].join(' ')),
     };
   }
 
@@ -116,11 +116,13 @@
         <div><dt>Em palavras simples</dt><dd>${esc(entry.simple)}</dd></div>
         <div><dt>Sentido literal</dt><dd>${esc(entry.literal)}</dd></div>
       </dl>` : `<p>${esc(entry.summary)}</p>`}
-      <div class="knowledge-study-tip"><strong>Na prova</strong><p>${esc(entry.tip)}</p></div>
+      <div class="knowledge-study-tip"><strong>Na prova</strong><p>${esc(entry.tip)}</p>
+        ${entry.structure ? `<p><b>Estrutura sugerida · ${esc(entry.structure.title)}</b></p><p>${esc(entry.structure.guide)}</p>` : ''}
+      </div>
       <details ${exact ? 'open' : ''}>
         <summary>${entry.simple ? 'Ver definição e exemplo' : 'Ver exemplo'}</summary>
         ${entry.simple ? `<p><b>Definição</b> ${esc(entry.summary)}</p>` : ''}
-        <p><b>Exemplo autoral</b> ${esc(entry.example)}</p>
+        <p><b>${esc(entry.exampleLabel || 'Exemplo autoral')}</b> ${esc(entry.example)}</p>
         ${entry.exampleExplanation && entry.exampleExplanation !== entry.tip ? `<p>${esc(entry.exampleExplanation)}</p>` : ''}
         ${entry.trap ? `<p><b>Como distinguir</b> ${esc(entry.trap)}</p>` : ''}
       </details>
@@ -146,10 +148,11 @@
   function renderReferences(context) {
     const {root, tab, profile, filters, data} = context;
     const concepts = tab === 'conceitos';
+    const groups = concepts ? groupNames : ['Redação'];
     const title = profile ? 'Conceitos ligados a ' + profile.name : concepts ? 'Conceitos do primeiro dia' : 'O que o comando quer dizer?';
     const intro = concepts
       ? 'Revisa correntes, movimentos, termos de interpretação e ideias de Humanas. Cada verbete traz uma explicação simples, o sentido literal e uma pista para reconhecer o conceito na prova.'
-      : 'Procura o verbo ou a expressão que te travou. Cada cartão traduz o pedido, mostra onde olhar e dá um exemplo curto.';
+      : 'Procura o verbo ou a expressão que te travou. Filtra por Redação para ver o que a frase temática pede e como organizar teus argumentos.';
     root.innerHTML = `<section class="knowledge-study-section" aria-labelledby="knowledgeStudyTitle">
       <h2 id="knowledgeStudyTitle">${esc(title)}</h2><p>${intro}</p>
       ${profile ? '<button type="button" class="outline" data-study-unscope>Ver todos os conceitos</button>' : ''}
@@ -157,12 +160,12 @@
         <label class="knowledge-search" for="knowledgeStudySearch">
           ${concepts ? 'Busca um conceito, termo ou figura' : 'Busca uma palavra do comando'}
           <input type="search" id="knowledgeStudySearch" autocomplete="off" value="${esc(filters.query)}"
-            placeholder="${concepts ? 'Realismo, racionalismo, iluminismo…' : 'Pressupõe-se, destaca-se, respectivamente…'}">
+            placeholder="${concepts ? 'Realismo, racionalismo, iluminismo…' : 'Pressupõe-se, desafios, perspectivas…'}">
         </label>
-        ${concepts ? `<label class="knowledge-select" for="knowledgeStudyArea">Área
-          <select id="knowledgeStudyArea"><option value="">Todas</option>${groupNames.map(g =>
+        <label class="knowledge-select" for="knowledgeStudyArea">${concepts ? 'Área' : 'Tipo de comando'}
+          <select id="knowledgeStudyArea"><option value="">${concepts ? 'Todas' : 'Todos'}</option>${groups.map(g =>
             `<option ${g === filters.group ? 'selected' : ''}>${esc(g)}</option>`).join('')}</select>
-        </label>` : ''}
+        </label>
       </div>
       <p id="knowledgeStudyCount" class="knowledge-count" role="status" aria-live="polite"></p>
       <div id="knowledgeStudyResults" class="knowledge-study-grid"></div>

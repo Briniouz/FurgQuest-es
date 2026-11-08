@@ -1241,6 +1241,134 @@ globalThis.FURG_LIBRARY_GUIDE_DATA = {
       "example": "Se uma reportagem destaca a falta de transporte, citações de outros problemas podem servir de contexto."
     },
     {
+      "title": "Redação · Redija um texto dissertativo-argumentativo",
+      "terms": [
+        "redação",
+        "redija",
+        "comando da redação",
+        "comandos de redação",
+        "comando de redação",
+        "enunciado da redação",
+        "redija um texto dissertativo-argumentativo",
+        "dissertativo-argumentativo",
+        "proposta de intervenção"
+      ],
+      "summary": "Defende um ponto de vista sobre o recorte do tema, em português formal. Sustenta tua tese com argumentos e propõe uma intervenção que respeite os direitos humanos.",
+      "tip": "Sublinha o problema, o público e o lugar na frase temática. Os textos motivadores ajudam a entender o recorte.",
+      "structure": {
+        "title": "Tese → argumentos → intervenção",
+        "guide": "Apresenta tua posição. Em cada desenvolvimento, explica um argumento e conecta o repertório a ele. Na intervenção, detalha quem age, o que faz, como e com qual objetivo."
+      },
+      "example": "Num tema sobre acesso de jovens à produção musical no Brasil, uma tese pode apontar o custo dos equipamentos como barreira. Explica como esse custo limita a prática e propõe, por exemplo, oficinas públicas com empréstimo de equipamento.",
+      "sources": [
+        {
+          "label": "Inep · Cartilha da Redação 2026",
+          "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/a-redacao-do-enem-2026-cartilha-do-a-participante"
+        }
+      ],
+      "group": "Redação"
+    },
+    {
+      "title": "Perspectivas",
+      "terms": [
+        "perspectivas acerca de",
+        "perspectivas para",
+        "visões",
+        "pontos de vista",
+        "possibilidades futuras",
+        "perspectivas da redação"
+      ],
+      "summary": "Em “perspectivas acerca de”, olha como o assunto é visto ou tratado. Em “perspectivas para”, considera também os caminhos que podem mudar a situação.",
+      "tip": "Escolhe o recorte e toma posição. Se a frase permitir comparar visões, explica o que muda na prática com cada uma.",
+      "structure": {
+        "title": "Soma de dois ângulos ou contraste de visões",
+        "guide": "No D1, desenvolve um ângulo do problema. No D2, acrescenta outro ou contrapõe uma visão diferente. Liga os dois à tua tese."
+      },
+      "exampleLabel": "Tema oficial do ENEM 2025",
+      "example": "“Perspectivas acerca do envelhecimento na sociedade brasileira”. Uma possibilidade é mostrar no D1 como estereótipos reduzem a participação de pessoas idosas e no D2 como barreiras de acessibilidade afetam sua autonomia.",
+      "sources": [
+        {
+          "label": "Inep · Proposta de Redação do ENEM 2025",
+          "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D1_CD3.pdf"
+        }
+      ],
+      "group": "Redação"
+    },
+    {
+      "title": "Desafios / obstáculos",
+      "terms": [
+        "desafios",
+        "obstáculos",
+        "desafios para",
+        "entraves",
+        "barreiras",
+        "dificuldades"
+      ],
+      "summary": "Explica o que dificulta chegar ao objetivo da frase temática e por que essas barreiras existem ou persistem.",
+      "tip": "Completa “fica difícil porque…”. Depois explica o mecanismo de cada barreira e quem ela afeta.",
+      "structure": {
+        "title": "Soma de duas barreiras + causa e efeito",
+        "guide": "No D1, explica uma barreira e o que ela provoca. No D2, soma outra barreira que dificulta o mesmo objetivo de um jeito diferente."
+      },
+      "example": "“Desafios para ampliar o acesso de jovens à produção musical no Brasil”. No D1, o custo do equipamento pode limitar a prática. No D2, a concentração de oficinas em grandes centros pode dificultar o acesso de jovens de cidades menores.",
+      "group": "Redação"
+    },
+    {
+      "title": "Problematização / problematize",
+      "terms": [
+        "problematização",
+        "problematize",
+        "problema",
+        "problematização da redação",
+        "questão social"
+      ],
+      "summary": "Mostra por que a situação merece discussão. Explica quem é afetado e como o problema aparece ou se mantém.",
+      "tip": "Faz duas perguntas antes de escrever. O que alimenta esse problema? O que muda na vida de quem é afetado?",
+      "structure": {
+        "title": "Causa e efeito",
+        "guide": "No D1, explica um fator que sustenta o problema. No D2, desenvolve uma consequência concreta ou outra causa que ajude a entender a gravidade do caso."
+      },
+      "example": "Num tema sobre desperdício de alimentos em escolas, o D1 pode explicar como planejar as refeições sem considerar a frequência gera sobras. O D2 pode discutir o efeito disso no orçamento da alimentação escolar.",
+      "group": "Redação"
+    },
+    {
+      "title": "Benefícios e riscos / prós e contras",
+      "terms": [
+        "benefícios e riscos",
+        "prós e contras",
+        "vantagens e desvantagens",
+        "pontos positivos e negativos",
+        "contraste"
+      ],
+      "summary": "Avalia lados diferentes de uma prática ou medida. Tua tese pode dizer em quais condições ela ajuda e em quais traz riscos.",
+      "tip": "Usa o mesmo recorte para os dois lados. Se o tema é aprendizagem, explica como cada efeito mexe com a aprendizagem.",
+      "structure": {
+        "title": "Prós e contras",
+        "guide": "No D1, explica um benefício e como ele acontece. No D2, explica um risco e em que condições ele aparece. Amarra os dois à posição que tu defende."
+      },
+      "example": "Num tema sobre benefícios e riscos da IA no estudo, o D1 pode explicar como ela ajuda a gerar exemplos. O D2 pode mostrar como usar respostas sem conferir pode reforçar erros. A tese pode defender o uso com orientação e verificação.",
+      "group": "Redação"
+    },
+    {
+      "title": "Caminhos / medidas",
+      "terms": [
+        "caminhos",
+        "medidas",
+        "caminhos para",
+        "estratégias de enfrentamento",
+        "alternativas de solução",
+        "como enfrentar"
+      ],
+      "summary": "Discute como melhorar a situação. Mostra por que cada caminho responde a um problema concreto do tema.",
+      "tip": "Liga cada medida a uma barreira. Na conclusão, desenvolve uma proposta com ação, agente, meio, objetivo e detalhamento.",
+      "structure": {
+        "title": "Soma de duas frentes",
+        "guide": "No D1, explica o que a primeira frente enfrenta. No D2, acrescenta uma frente que resolve outra parte do problema."
+      },
+      "example": "“Caminhos para ampliar o acesso à cultura no Brasil”. O D1 pode discutir a oferta de atividades fora das regiões centrais. O D2 pode tratar de transporte e horários para que o público consiga participar.",
+      "group": "Redação"
+    },
+    {
       "title": "Infere-se",
       "terms": [
         "inferir",
