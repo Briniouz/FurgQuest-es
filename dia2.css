@@ -25,11 +25,20 @@ body:has(#dia2.active) .study-day-links { display: none; }
   gap: 8px;
 }
 .d2-toolbar { justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 11px; margin-bottom: 17px; }
-.d2-tabs button, .d2-subjects button { padding: 8px 12px; border-radius: 8px; }
-.d2-tabs [aria-pressed="true"] {
-  background: var(--surface-3);
+#dia2 .d2-tabs button {
+  min-height: 36px;
+  padding: 6px 11px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  color: var(--muted);
+  font-weight: 600;
+}
+#dia2 .d2-tabs button:hover { color: var(--ink); }
+#dia2 .d2-tabs [aria-pressed="true"] {
+  border-color: var(--line);
+  background: var(--surface);
   color: var(--blue);
-  font-weight: 700;
+  font-weight: 750;
 }
 .d2-switch { font-size: 12px; color: var(--muted); cursor: pointer; }
 .d2-switch input { accent-color: var(--action); width: 16px; height: 16px; }
@@ -150,7 +159,7 @@ body:has(#dia2.active) .study-day-links { display: none; }
   .study-day-links { gap: 6px; }
   .d2-toolbar { gap: 9px; }
   .d2-tabs { gap: 4px; }
-  .d2-tabs button, .d2-subjects button { padding: 7px 9px; }
+  #dia2 .d2-tabs button { padding-inline: 8px; }
   .d2-panel { padding: 13px; }
   .d2-subject-grid { gap: 8px; }
   .d2-subject-card button { font-size: 11px; padding: 6px 8px; }
@@ -158,32 +167,37 @@ body:has(#dia2.active) .study-day-links { display: none; }
   #dia2QuickGuide :is(input,select) { font-size: 16px; }
 }
 
-/* Tons de matéria usados na guia, nos cartões e na consulta rápida. */
+/* Cores por matéria no guia, nas fichas e na consulta rápida. */
 #dia2, #dia2QuickGuide {
   --d2-accent: var(--blue);
   --d2-tint: var(--surface-3);
+  --d2-selected: var(--d2-tint);
   --d2-border: var(--line);
   --d2-warn-bg: #fbf1df;
   --d2-warn-ink: #724b1e;
 }
 :is(#dia2,#dia2QuickGuide) [data-subject="fisica"] {
-  --d2-accent: #795400;
-  --d2-tint: #fff2cb;
-  --d2-border: #e2c579;
+  --d2-accent: #694611;
+  --d2-tint: #fff3d5;
+  --d2-selected: #f4cb68;
+  --d2-border: #dcb778;
 }
 :is(#dia2,#dia2QuickGuide) [data-subject="quimica"] {
   --d2-accent: #684299;
   --d2-tint: #f1e8ff;
+  --d2-selected: #e8d8fa;
   --d2-border: #cdb7ec;
 }
 :is(#dia2,#dia2QuickGuide) [data-subject="biologia"] {
   --d2-accent: #176442;
   --d2-tint: #e1f4e8;
+  --d2-selected: #cdebd9;
   --d2-border: #a4d7ba;
 }
 :is(#dia2,#dia2QuickGuide) [data-subject="matematica"] {
   --d2-accent: #245ca1;
   --d2-tint: #e6effe;
+  --d2-selected: #d6e6fc;
   --d2-border: #a8c7ef;
 }
 :root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) {
@@ -191,23 +205,27 @@ body:has(#dia2.active) .study-day-links { display: none; }
   --d2-warn-ink: #ffce89;
 }
 :root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="fisica"] {
-  --d2-accent: #f5d373;
-  --d2-tint: #3e351f;
-  --d2-border: #796438;
+  --d2-accent: #ffda8a;
+  --d2-tint: #3d311e;
+  --d2-selected: #614725;
+  --d2-border: #886837;
 }
 :root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="quimica"] {
   --d2-accent: #d9b5fc;
   --d2-tint: #392d50;
+  --d2-selected: #503968;
   --d2-border: #70588c;
 }
 :root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="biologia"] {
   --d2-accent: #a1e9be;
   --d2-tint: #203d35;
+  --d2-selected: #28513e;
   --d2-border: #48785e;
 }
 :root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="matematica"] {
   --d2-accent: #a7d1ff;
   --d2-tint: #253b54;
+  --d2-selected: #2c4b71;
   --d2-border: #4b729a;
 }
 
@@ -225,30 +243,43 @@ body:has(#dia2.active) .study-day-links { display: none; }
 }
 .d2-study-heading > div > span { color: #9beddf; font-size: 10px; font-weight: 760; letter-spacing: .13em; }
 #dia2 .d2-study-heading h2 { color: inherit; margin: 3px 0 0; }
+#dia2 .d2-study-heading h2:focus { outline: none; }
 #dia2 .d2-study-heading p { color: #cce6e7; margin: 5px 0 0; }
 #dia2 .d2-study-heading button { background: #a8eee3; border-color: #a8eee3; color: #102c35; }
-.d2-subjects { gap: 7px; margin: 12px 0; }
+.d2-subjects {
+  gap: 4px;
+  margin: 12px 0;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
 .d2-study-view .d2-subjects { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); }
 :is(#dia2,#dia2QuickGuide) .d2-subject-button {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 7px;
-  min-height: 42px;
-  padding: 6px 10px;
-  border: 1px solid var(--d2-border);
-  border-radius: 9px;
-  background: var(--d2-tint);
+  min-height: 40px;
+  padding: 6px 9px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
   color: var(--d2-accent);
   font-weight: 650;
-  text-align: left;
+}
+:is(#dia2,#dia2QuickGuide) .d2-subject-button:hover {
+  background: var(--d2-tint);
+  color: var(--d2-accent);
 }
 :is(#dia2,#dia2QuickGuide) .d2-subject-button[aria-pressed="true"] {
-  border-color: var(--d2-accent);
-  box-shadow: inset 0 -2px var(--d2-accent);
+  border-color: var(--d2-border);
+  background: var(--d2-selected);
+  color: var(--d2-accent);
   font-weight: 760;
 }
-.d2-subject-icon { display: grid; place-items: center; flex: 0 0 23px; min-height: 23px; border-radius: 5px; background: var(--surface); font-size: 14px; }
-.d2-subject-card { border-top: 3px solid var(--d2-border); }
+.d2-subject-icon { color: var(--d2-accent); font-size: 15px; font-variant-emoji: text; line-height: 1; }
+.d2-subject-card { border-color: var(--d2-border); }
 .d2-subject-card .d2-symbol { background: var(--d2-tint); color: var(--d2-accent); }
 .d2-subject-card button.outline { color: var(--d2-accent); border-color: var(--d2-border); }
 #dia2 .d2-result-count { margin: 8px 0 10px; }
@@ -259,15 +290,16 @@ body:has(#dia2.active) .study-day-links { display: none; }
 }
 .d2-guide-grid, .d2-exercise-list { display: grid; grid-template-columns: minmax(0,1fr); gap: 6px; margin: 0; }
 .d2-guide-card { padding: 0; overflow: clip; }
+.d2-guide-card[open] { border-color: var(--d2-border); }
 .d2-guide-card > summary {
   display: flex;
   align-items: center;
   gap: 10px;
   min-height: 44px;
   padding: 8px 13px;
-  border-left: 3px solid var(--d2-border);
-  background: var(--d2-tint);
-  color: var(--d2-accent);
+  background: var(--surface);
+  background: color-mix(in srgb,var(--d2-tint) 38%,var(--surface));
+  color: var(--ink);
   font-size: 14px;
   font-weight: 720;
   list-style: none;
@@ -275,7 +307,11 @@ body:has(#dia2.active) .study-day-links { display: none; }
 .d2-guide-card > summary::-webkit-details-marker { display: none; }
 .d2-guide-card > summary > span:first-child { flex: 1; min-width: 0; overflow-wrap: anywhere; }
 .d2-guide-card > summary:focus-visible { outline: 2px solid var(--d2-accent); outline-offset: -3px; }
-.d2-guide-card[open] > summary { border-bottom: 1px solid var(--d2-border); border-left-color: var(--d2-accent); }
+.d2-guide-card > summary:hover, .d2-guide-card[open] > summary {
+  background: var(--d2-tint);
+  color: var(--d2-accent);
+}
+.d2-guide-card[open] > summary { border-bottom: 1px solid var(--d2-border); }
 .d2-chevron {
   width: 7px;
   height: 7px;
@@ -289,7 +325,6 @@ body:has(#dia2.active) .study-day-links { display: none; }
 .d2-formula-box {
   padding: 8px 12px;
   border: 1px solid var(--d2-border);
-  border-left: 4px solid var(--d2-accent);
   border-radius: 8px;
   background: var(--d2-tint);
 }
@@ -311,7 +346,7 @@ body:has(#dia2.active) .study-day-links { display: none; }
 .d2-origin, .d2-solution { border: 1px solid var(--d2-border); border-radius: 8px; background: var(--surface); }
 .d2-origin summary, .d2-solution summary { padding: 8px 10px; color: var(--d2-accent); cursor: pointer; font-weight: 680; }
 :is(#dia2,#dia2QuickGuide) .d2-origin p { margin: 0; padding: 0 10px 9px; }
-.d2-card-body .d2-example { border: 1px solid var(--line); border-left: 3px solid var(--d2-border); }
+.d2-card-body .d2-example { border: 1px solid var(--line); }
 :is(#dia2,#dia2QuickGuide) .d2-card-body .d2-example p { margin: 4px 0; }
 .d2-card-body .d2-example li + li { margin-top: 3px; }
 .d2-card-body .d2-trap, .d2-worked .d2-trap, .d2-feedback .d2-trap {
@@ -325,7 +360,7 @@ body:has(#dia2.active) .study-day-links { display: none; }
 .d2-card-actions button { color: var(--d2-accent); border-color: var(--d2-border); }
 .d2-quick-head .d2-subjects { margin: 8px 0; gap: 4px; }
 #dia2QuickGuide .d2-subject-button { min-height: 33px; padding: 3px 6px; gap: 4px; font-size: 12px; }
-#dia2QuickGuide .d2-subject-icon { flex-basis: 16px; min-height: 17px; font-size: 11px; }
+#dia2QuickGuide .d2-subject-icon { font-size: 12px; }
 #dia2QuickGuide .d2-facts { grid-template-columns: minmax(0,1fr); }
 
 .d2-authorial-callout, .d2-exercise-tools { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
