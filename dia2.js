@@ -409,9 +409,9 @@
     ${choices(q,null)}
     ${state().hints?`<details class="d2-hint"><summary>Quero uma pista</summary><p>${esc(item.hint)}</p></details>`:''}
     <div class="d2-reasoning"><label for="d2Request">O que o comando pede?</label>
-     <textarea id="d2Request" required maxlength="500" rows="2" placeholder="Ex. Tempo total em minutos">${esc(draft.request)}</textarea>
+     <textarea id="d2Request" required maxlength="500" rows="2" placeholder="Registra a grandeza ou o efeito pedido">${esc(draft.request)}</textarea>
      <label for="d2Plan">Qual relação, conta ou ideia vou usar?</label>
-     <textarea id="d2Plan" required maxlength="900" rows="2" placeholder="Ex. Distância ÷ velocidade e depois somar as paradas">${esc(draft.plan)}</textarea>
+     <textarea id="d2Plan" required maxlength="900" rows="2" placeholder="Registra a fórmula, a conversão ou a ideia que tu quer testar">${esc(draft.plan)}</textarea>
      <label for="d2Confidence">Minha confiança</label>
      <select id="d2Confidence" required><option value="">Seleciona</option>${Object.entries(confidence).map(([id,label]) =>
       `<option value="${id}" ${id===draft.confidence?'selected':''}>${label}</option>`).join('')}</select>
