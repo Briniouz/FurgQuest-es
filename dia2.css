@@ -26,7 +26,7 @@ body:has(#dia2.active) .study-day-links { display: none; }
 }
 .d2-toolbar { justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 11px; margin-bottom: 17px; }
 .d2-tabs button, .d2-subjects button { padding: 8px 12px; border-radius: 8px; }
-.d2-tabs [aria-pressed="true"], .d2-subjects [aria-pressed="true"] {
+.d2-tabs [aria-pressed="true"] {
   background: var(--surface-3);
   color: var(--blue);
   font-weight: 700;
@@ -36,7 +36,7 @@ body:has(#dia2.active) .study-day-links { display: none; }
 .d2-overview, .d2-subject-grid, .d2-block-grid, .d2-guide-grid, .d2-error-grid { display: grid; gap: 12px; }
 .d2-overview { grid-template-columns: minmax(0,1.8fr) minmax(230px,1fr); }
 .d2-subject-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
-.d2-block-grid, .d2-guide-grid, .d2-error-grid { grid-template-columns: repeat(2,minmax(0,1fr)); margin: 12px 0; align-items: start; }
+.d2-block-grid, .d2-error-grid { grid-template-columns: repeat(2,minmax(0,1fr)); margin: 12px 0; align-items: start; }
 .d2-panel { padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
 .d2-feature {
   padding: clamp(17px,3vw,28px);
@@ -73,19 +73,9 @@ body:has(#dia2.active) .study-day-links { display: none; }
   padding: 10px 13px;
   background: var(--surface);
 }
-.d2-guide-card summary, .d2-command-list summary, .d2-hint summary, .d2-notebook summary { color: var(--blue); font-weight: 650; cursor: pointer; }
+.d2-command-list summary, .d2-hint summary, .d2-notebook summary { color: var(--blue); font-weight: 650; cursor: pointer; }
 .d2-command-list { margin: 14px 0; }
 .d2-command-list > div { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
-#dia2 .d2-rule, #dia2QuickGuide .d2-rule {
-  background: var(--surface-3);
-  border-left: 3px solid var(--action);
-  border-radius: 5px;
-  padding: 9px 12px;
-  color: var(--ink);
-  font-size: 16px;
-  font-weight: 700;
-  overflow-wrap: anywhere;
-}
 .d2-explain { margin: 10px 0; }
 .d2-explain dt { margin-top: 9px; font-weight: 700; }
 .d2-explain dd { margin: 1px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
@@ -152,12 +142,11 @@ body:has(#dia2.active) .study-day-links { display: none; }
 .d2-quick-title { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .d2-quick-title h2 { margin: 0; font-size: 20px; }
 .d2-quick-body { padding: 15px; }
-.d2-quick-body .d2-guide-grid { grid-template-columns: 1fr; }
 @media (max-width: 820px) {
   .d2-subject-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 @media (max-width: 620px) {
-  .study-day-links, .d2-overview, .d2-guide-grid, .d2-block-grid, .d2-error-grid, .d2-controls { grid-template-columns: minmax(0,1fr); }
+  .study-day-links, .d2-overview, .d2-block-grid, .d2-error-grid, .d2-controls { grid-template-columns: minmax(0,1fr); }
   .study-day-links { gap: 6px; }
   .d2-toolbar { gap: 9px; }
   .d2-tabs { gap: 4px; }
@@ -167,4 +156,199 @@ body:has(#dia2.active) .study-day-links { display: none; }
   .d2-subject-card button { font-size: 11px; padding: 6px 8px; }
   #dia2 input:not([type="checkbox"],[type="radio"]), #dia2 textarea, #dia2 select,
   #dia2QuickGuide :is(input,select) { font-size: 16px; }
+}
+
+/* Tons de matéria usados na guia, nos cartões e na consulta rápida. */
+#dia2, #dia2QuickGuide {
+  --d2-accent: var(--blue);
+  --d2-tint: var(--surface-3);
+  --d2-border: var(--line);
+  --d2-warn-bg: #fbf1df;
+  --d2-warn-ink: #724b1e;
+}
+:is(#dia2,#dia2QuickGuide) [data-subject="fisica"] {
+  --d2-accent: #795400;
+  --d2-tint: #fff2cb;
+  --d2-border: #e2c579;
+}
+:is(#dia2,#dia2QuickGuide) [data-subject="quimica"] {
+  --d2-accent: #684299;
+  --d2-tint: #f1e8ff;
+  --d2-border: #cdb7ec;
+}
+:is(#dia2,#dia2QuickGuide) [data-subject="biologia"] {
+  --d2-accent: #176442;
+  --d2-tint: #e1f4e8;
+  --d2-border: #a4d7ba;
+}
+:is(#dia2,#dia2QuickGuide) [data-subject="matematica"] {
+  --d2-accent: #245ca1;
+  --d2-tint: #e6effe;
+  --d2-border: #a8c7ef;
+}
+:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) {
+  --d2-warn-bg: #362b1c;
+  --d2-warn-ink: #ffce89;
+}
+:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="fisica"] {
+  --d2-accent: #f5d373;
+  --d2-tint: #3e351f;
+  --d2-border: #796438;
+}
+:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="quimica"] {
+  --d2-accent: #d9b5fc;
+  --d2-tint: #392d50;
+  --d2-border: #70588c;
+}
+:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="biologia"] {
+  --d2-accent: #a1e9be;
+  --d2-tint: #203d35;
+  --d2-border: #48785e;
+}
+:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="matematica"] {
+  --d2-accent: #a7d1ff;
+  --d2-tint: #253b54;
+  --d2-border: #4b729a;
+}
+
+.d2-study-view { width: min(100%,1000px); margin-inline: auto; }
+.d2-study-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 10px;
+  padding: clamp(15px,2.4vw,24px) clamp(15px,3vw,28px);
+  border-radius: 13px;
+  background: linear-gradient(115deg,#102c35,#225b63);
+  color: #f7fcff;
+}
+.d2-study-heading > div > span { color: #9beddf; font-size: 10px; font-weight: 760; letter-spacing: .13em; }
+#dia2 .d2-study-heading h2 { color: inherit; margin: 3px 0 0; }
+#dia2 .d2-study-heading p { color: #cce6e7; margin: 5px 0 0; }
+#dia2 .d2-study-heading button { background: #a8eee3; border-color: #a8eee3; color: #102c35; }
+.d2-subjects { gap: 7px; margin: 12px 0; }
+.d2-study-view .d2-subjects { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); }
+:is(#dia2,#dia2QuickGuide) .d2-subject-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 42px;
+  padding: 6px 10px;
+  border: 1px solid var(--d2-border);
+  border-radius: 9px;
+  background: var(--d2-tint);
+  color: var(--d2-accent);
+  font-weight: 650;
+  text-align: left;
+}
+:is(#dia2,#dia2QuickGuide) .d2-subject-button[aria-pressed="true"] {
+  border-color: var(--d2-accent);
+  box-shadow: inset 0 -2px var(--d2-accent);
+  font-weight: 760;
+}
+.d2-subject-icon { display: grid; place-items: center; flex: 0 0 23px; min-height: 23px; border-radius: 5px; background: var(--surface); font-size: 14px; }
+.d2-subject-card { border-top: 3px solid var(--d2-border); }
+.d2-subject-card .d2-symbol { background: var(--d2-tint); color: var(--d2-accent); }
+.d2-subject-card button.outline { color: var(--d2-accent); border-color: var(--d2-border); }
+#dia2 .d2-result-count { margin: 8px 0 10px; }
+#dia2 .d2-topic h3, #dia2QuickGuide .d2-topic h3 {
+  color: var(--d2-accent);
+  font-size: 14px;
+  margin: 0 0 7px;
+}
+.d2-guide-grid, .d2-exercise-list { display: grid; grid-template-columns: minmax(0,1fr); gap: 6px; margin: 0; }
+.d2-guide-card { padding: 0; overflow: clip; }
+.d2-guide-card > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 8px 13px;
+  border-left: 3px solid var(--d2-border);
+  background: var(--d2-tint);
+  color: var(--d2-accent);
+  font-size: 14px;
+  font-weight: 720;
+  list-style: none;
+}
+.d2-guide-card > summary::-webkit-details-marker { display: none; }
+.d2-guide-card > summary > span:first-child { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.d2-guide-card > summary:focus-visible { outline: 2px solid var(--d2-accent); outline-offset: -3px; }
+.d2-guide-card[open] > summary { border-bottom: 1px solid var(--d2-border); border-left-color: var(--d2-accent); }
+.d2-chevron {
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  margin-inline: 2px;
+  transform: rotate(45deg);
+}
+.d2-guide-card[open] > summary .d2-chevron { transform: rotate(225deg); }
+.d2-card-body, .d2-exercise-body { display: grid; gap: 8px; padding: clamp(9px,1.5vw,15px); }
+.d2-formula-box {
+  padding: 8px 12px;
+  border: 1px solid var(--d2-border);
+  border-left: 4px solid var(--d2-accent);
+  border-radius: 8px;
+  background: var(--d2-tint);
+}
+.d2-block-label { display: block; color: var(--d2-accent); font-size: 12px; font-weight: 750; }
+#dia2 .d2-rule, #dia2QuickGuide .d2-rule {
+  margin: 4px 0 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: clamp(14px,2vw,17px);
+  line-height: 1.45;
+  font-weight: 750;
+}
+.d2-facts { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 7px; margin: 0; }
+.d2-fact { border: 1px solid var(--line); border-radius: 8px; overflow: clip; }
+.d2-fact dt { padding: 5px 9px; background: var(--d2-tint); color: var(--d2-accent); font-size: 12px; font-weight: 740; }
+.d2-fact dd { margin: 0; padding: 7px 9px; line-height: 1.5; overflow-wrap: anywhere; }
+.d2-origin, .d2-solution { border: 1px solid var(--d2-border); border-radius: 8px; background: var(--surface); }
+.d2-origin summary, .d2-solution summary { padding: 8px 10px; color: var(--d2-accent); cursor: pointer; font-weight: 680; }
+:is(#dia2,#dia2QuickGuide) .d2-origin p { margin: 0; padding: 0 10px 9px; }
+.d2-card-body .d2-example { border: 1px solid var(--line); border-left: 3px solid var(--d2-border); }
+:is(#dia2,#dia2QuickGuide) .d2-card-body .d2-example p { margin: 4px 0; }
+.d2-card-body .d2-example li + li { margin-top: 3px; }
+.d2-card-body .d2-trap, .d2-worked .d2-trap, .d2-feedback .d2-trap {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: var(--d2-warn-bg);
+}
+:is(.d2-card-body,.d2-worked,.d2-feedback) .d2-trap .d2-block-label { color: var(--d2-warn-ink); }
+:is(#dia2,#dia2QuickGuide) :is(.d2-card-body,.d2-worked,.d2-feedback) .d2-trap p { margin: 3px 0 0; }
+.d2-card-actions button { color: var(--d2-accent); border-color: var(--d2-border); }
+.d2-quick-head .d2-subjects { margin: 8px 0; gap: 4px; }
+#dia2QuickGuide .d2-subject-button { min-height: 33px; padding: 3px 6px; gap: 4px; font-size: 12px; }
+#dia2QuickGuide .d2-subject-icon { flex-basis: 16px; min-height: 17px; font-size: 11px; }
+#dia2QuickGuide .d2-facts { grid-template-columns: minmax(0,1fr); }
+
+.d2-authorial-callout, .d2-exercise-tools { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
+.d2-authorial-callout { padding: 12px 14px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); }
+#dia2 .d2-authorial-callout p { margin: 2px 0 0; }
+.d2-exercise-tools { margin: 10px 0; }
+#dia2 .d2-exercise-tools p, #dia2 .d2-exercise-prompt { margin: 0; }
+.d2-level { flex: 0 0 auto; padding: 1px 6px; border: 1px solid var(--d2-border); border-radius: 99px; background: var(--surface); font-size: 10px; }
+.d2-exercise-options { margin: 0; padding-left: 24px; }
+.d2-exercise-options li { padding: 2px 4px; }
+.d2-exercise-options li::marker { color: var(--d2-accent); font-weight: 750; }
+.d2-exercise .d2-hint { margin: 0; }
+#dia2 .d2-exercise .d2-hint p { margin: 5px 0 0; }
+.d2-solution[open] > summary { border-bottom: 1px solid var(--d2-border); background: var(--d2-tint); border-radius: 8px 8px 0 0; }
+.d2-worked { padding: 9px; }
+#dia2 .d2-worked-result { margin: 0; padding: 7px 9px; border-radius: 6px; background: var(--d2-tint); }
+.d2-worked-result strong { color: var(--d2-accent); margin-right: 5px; }
+.d2-worked > button { margin-top: 7px; }
+.d2-feedback .d2-actions { margin-top: 8px; }
+@media (max-width: 730px) {
+  .d2-facts { grid-template-columns: minmax(0,1fr); }
+}
+@media (max-width: 520px) {
+  .d2-study-view .d2-subjects { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .d2-guide-card > summary { font-size: 13px; }
 }

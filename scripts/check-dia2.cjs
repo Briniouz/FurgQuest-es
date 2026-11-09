@@ -1,6 +1,21 @@
 'use strict';
 module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  const mode = ctx.FurgDia2, guide = ctx.FURG_DIA2_GUIDE, data = ctx.FURG_DIA2_PRACTICE;
+ const exercises = ctx.FURG_DIA2_EXERCISES, cards = new Map(guide.entries.map(e=>[e.id,e]));
+ assert.equal(exercises.items.length,24);
+ assert.equal(new Set(exercises.items.map(q=>q.id)).size,24);
+ for(const subject of Object.keys(guide.subjects)){
+  const list=exercises.items.filter(q=>cards.get(q.card)?.subject===subject);
+  assert.equal(list.length,6);
+  assert.deepEqual([...new Set(list.map(q=>q.level))].sort(),['aplicacao','base','desafio']);
+ }
+ for(const q of exercises.items){
+  assert(/^d2-aut-/.test(q.id)&&q.title&&q.stem&&q.hint&&q.trap);
+  assert.equal(q.options.length,5);
+  assert.equal(new Set(q.options).size,5);
+  assert(/^[A-E]$/.test(q.answer)&&q.steps.length===3&&q.steps.every(step=>step.length>20));
+  assert(exercises.origins[q.card]);
+ }
  const bank = new Map(ctx.FURG_ENEM_DATA.questions.map(q => [q.id,q]));
  assert.equal(guide.entries.length,96);
  assert.equal(new Set(guide.entries.map(e => e.id)).size,96);
@@ -31,6 +46,8 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  }
  const inApp = js => vm.runInContext(js,ctx);
  inApp("state.enem.answers['enem-2023-124']={choice:'A', firstChoice:'A', attempts:1, viewed:true, date:''}; setView('dia2')");
+ const click = dataset => events['dia2Root:click'][0]({target:{closest:()=>({dataset})}});
+ click({d2:'tab',tab:'plano'});
  const oldBank = inApp('JSON.stringify(state.enem)'), oldFirstDay = inApp('JSON.stringify(state.vespera)');
  assert($('dia2Root').innerHTML.includes('Começa pela Física'));
  assert(mode.start('percurso'));
@@ -71,7 +88,6 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  assert($('dia2QuickGuide').open);
  assert($('d2QuickResults').innerHTML.includes('U = Ri'));
  $('dia2QuickGuide').close();
- const click = dataset => events['dia2Root:click'][0]({target:{closest:()=>({dataset})}});
  click({d2:'tab',tab:'caderno'});
  assert($('dia2Root').innerHTML.includes('&lt;script&gt;teste&lt;/script&gt;'));
  click({d2:'tab',tab:'flash'});
@@ -91,10 +107,43 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  assert.equal(inApp('state.dia2.sessions.percurso.index'),1);
  assert.equal(inApp('JSON.stringify(state.enem)'),oldBank);
  assert.equal(inApp('JSON.stringify(state.vespera)'),oldFirstDay);
+ inApp("openStudyRoute('#dia-2/formulas')");
+ const guideHTML=$('d2GuideResults').innerHTML;
+ for(const label of ['Fórmula ou relação','O que quer dizer','Quando usar','Símbolos, unidades ou termos','Exemplo resolvido','Cuidado com este erro'])assert(guideHTML.includes(label));
+ assert(guideHTML.includes('Por que essa relação funciona?'));
+ assert($('dia2Root').innerHTML.includes('data-subject="quimica"'));
+ click({d2:'exercise-card',card:'velocidade'});
+ assert($('dia2Root').innerHTML.includes('Ida e volta na ciclovia'));
+ assert(!$('dia2Root').innerHTML.includes('A posição zero é uma referência'));
+ assert($('dia2Root').innerHTML.includes('d2-solution" data-d2-solution="d2-aut-rapidez"'));
+ assert(!$('dia2Root').innerHTML.includes('d2-solution" open'));
+ click({d2:'all-exercises'});
+ assert($('dia2Root').innerHTML.includes('A posição zero é uma referência'));
+ inApp("openStudyRoute('#dia-2/exercicios')");
+ assert($('dia2Root').innerHTML.includes('Treinar 6 com correção'));
+ const author=exercises.items.find(q=>q.id==='d2-aut-mu');
+ for(const fn of events['dia2Root:toggle'])fn({target:{open:true,dataset:{d2Solution:author.id}}});
+ assert(inApp("state.dia2.seenExercises['d2-aut-mu']"));
+ assert(mode.start('autorais-fisica'));
+ assert.equal(inApp('state.dia2.sessions["autorais-fisica"].ids.length'),6);
+ assert(!$('dia2Root').innerHTML.includes('Caderno azul'));
+ assert(!$('dia2Root').innerHTML.includes('d2Feedback'));
+ assert(mode.record({choice:'A',confidence:'alta',request:'Encontrar o tempo',plan:'Dividir 120 m pela velocidade'}));
+ assert.equal(inApp('state.dia2.attempts.at(-1).exposure'),'repeat');
+ assert(mode.errors(true).some(e=>e.questionId===author.id));
+ assert($('dia2Root').innerHTML.includes('Por que esse caminho')&&$('dia2Root').innerHTML.includes('30 s'));
+ const authorBackup=JSON.parse(inApp('JSON.stringify(state)'));
+ await importFile(authorBackup);
+ await importFile({version:1,answers:{}});
+ assert.equal(inApp('state.dia2.sessions["autorais-fisica"].ids.length'),6);
+ assert.equal(inApp('state.dia2.sessions.percurso.ids.length'),25);
+ assert.equal(inApp('JSON.stringify(state.enem)'),oldBank);
+ assert.equal(inApp('JSON.stringify(state.vespera)'),oldFirstDay);
+ inApp("openStudyRoute('#dia2')");
  assert(ctx.FurgEnem.openSubject('fisica'));
  assert.equal(inApp('view'),'enem');
  assert.equal($('enemSubject').value,'fisica');
  assert(ctx.FurgEnemSim.selectDay('2'));
  assert.equal($('enemExamDay').value,'2');
- console.log('PASS: 96 cards, 25 fingerprint-checked questions and official keys, draft-safe grading, rollback, notebook, flashcards, high-confidence review, legacy backup, and subject/day links.');
+ console.log('PASS: 96 intact cards, 24 original exercises with linked explanations, 25 fingerprint-checked questions and official keys, draft-safe grading, rollback, notebook, flashcards, high-confidence review, legacy backup, and subject/day links.');
 };

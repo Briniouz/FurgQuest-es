@@ -5,7 +5,7 @@
  const groups={provas:'Provas',treinamento:'Treinamento',estudos:'Estudos'};
  const names=['areas',...Object.keys(groups)],owners={vespera:'treinamento',dia2:'treinamento','matematica-lab':'treinamento',banco:'provas',enem:'provas',fuvest:'provas',anatomia:'treinamento',acervo:'provas',simulados:'provas',evolucao:'estudos',leve:'estudos',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos',configuracoes:'estudos'};
  const topItems=()=>Array.from(nav.querySelectorAll('button')).filter(button=>!button.hidden);
- let adapter,opened='',bound=false,currentView='',returning=false,context='';
+ let adapter,opened='',bound=false,currentView='',returning=false,context='',routePath='';
  const trail=[];
  function syncBack(){const b=$('pageBack');if(!b)return;b.disabled=!trail.length;b.title=trail.length?'Voltar à página anterior':'Visita outra seção para poder voltar';}
  function beforeNavigate(name){if(!name||name===currentView)return;if(currentView&&!returning){trail.push({view:currentView,y:typeof window!=='undefined'?window.scrollY||0:0});if(trail.length>40)trail.shift();}currentView=name;syncBack();}
@@ -20,7 +20,8 @@
  function position(){if(!opened)return;const b=trigger(opened),m=menu(opened);if(!b?.getBoundingClientRect||!m?.getBoundingClientRect)return;const r=b.getBoundingClientRect(),width=m.getBoundingClientRect().width||310,vw=typeof window!=='undefined'?window.innerWidth:1280,vh=typeof window!=='undefined'?window.innerHeight:900;if(m.style){m.style.left=Math.max(12,Math.min(r.left,vw-width-12))+'px';m.style.top=(r.bottom+9)+'px';m.style.maxHeight=Math.max(120,vh-r.bottom-25)+'px';}}
  function open(id,focus=false){if(!names.includes(id))return;close();opened=id;menu(id).hidden=false;trigger(id).setAttribute('aria-expanded','true');position();if(focus)items(id)[0]?.focus();}
  function configure(route) {
-  const {space,view}=route, study=globalThis.FurgStudyAreas, area=study.get(space);
+  const {space,view,path}=route, study=globalThis.FurgStudyAreas, area=study.get(space);
+  routePath=path;
   const landing=view==='inicio', spaceLabel=area?'Dia '+area.day:'Geral';
   trigger('areas').hidden=landing;
   trigger('areas').setAttribute('aria-label','Trocar área de estudo · '+spaceLabel);
@@ -49,7 +50,19 @@
   const current=name||Array.from(document.querySelectorAll('.nav')).find(b=>b.classList.contains('active'))?.dataset.view;
   const study=globalThis.FurgStudyAreas, area=study?.get(context);
   const direct=topItems().find(b=>b.dataset.view===current);
-  const owner=area?Object.keys(groups).find(id=>area.menus[id].some(([page])=>study.viewOf(page)===current)):owners[current];
+  let owner=owners[current];
+  if(area){
+   const section=match=>Object.keys(groups).find(id=>area.menus[id].some(([page])=>match(page)));
+   owner=section(page=>context+'/'+page===routePath)||section(page=>study.viewOf(page)===current);
+   for(const id of Object.keys(groups)){
+    for(const button of $('navScoped-'+id).querySelectorAll('button')){
+     const selected=button.dataset.studyRoute===routePath;
+     button.classList.toggle('active',selected);
+     if(selected)button.setAttribute('aria-current','page');
+     else button.removeAttribute('aria-current');
+    }
+   }
+  }
   for(const id of Object.keys(groups))trigger(id)?.classList.toggle('is-active',!direct&&owner===id);
   trigger('areas')?.classList.toggle('is-active',!!area);
   const active=direct||trigger(owner);

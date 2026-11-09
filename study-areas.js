@@ -35,6 +35,7 @@
     ],
     treinamento:[
      ['dia2','Treino guiado do Dia 2','Raciocínio, flashcards e revisão de erros','∑'],
+     ['exercicios','Exercícios autorais','Questões por matéria com resolução em etapas','✓'],
      ['matematica-lab','Laboratório de Matemática','Desafios com tempo e caderno de erros','×'],
      ['calculo-mental','Cálculo mental','Rodadas rápidas por nível','⚡'],
      ['evolucao','Level Up','Exercícios progressivos de Matemática','→'],
@@ -50,6 +51,7 @@
   aquecimento:{view:'leve',open:()=>globalThis.FurgLightReview?.showDayOne()},
   repertorios:{view:'vespera',open:()=>globalThis.FurgVespera?.showRepertories()},
   formulas:{view:'dia2',open:()=>globalThis.FurgDia2?.showGuide()},
+  exercicios:{view:'dia2',open:()=>globalThis.FurgDia2?.showExercises()},
  };
  const views=new Set(['inicio','banco','leve','enem','anatomia','fuvest','evolucao','simulados','desempenho','trilhas','leituras','biblioteca','linguagens','acervo','configuracoes','vespera','dia2','matematica-lab','calculo-mental']);
  const get=space=>Object.hasOwn(areas,space)?areas[space]:null;

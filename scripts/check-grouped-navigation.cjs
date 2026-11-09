@@ -46,6 +46,12 @@ module.exports=function({ctx,$,vm,events,assert,document,errors,html}){
  assert(!$('navMental').hidden);
  assert($('studyHubRoot').innerHTML.includes('Matemática e Ciências da Natureza'));
  assert($('navScoped-estudos').innerHTML.includes('Fórmulas e conceitos'));
+ navigate('dia-2/formulas');
+ assert($('navTrigger-estudos').classList.contains('is-active'));
+ assert(!$('navTrigger-treinamento').classList.contains('is-active'));
+ navigate('dia-2/exercicios');
+ assert($('navTrigger-treinamento').classList.contains('is-active'));
+ assert(!$('navTrigger-estudos').classList.contains('is-active'));
  navigate('dia-2/enem');
  assert.deepEqual([...$('enemRoot').innerHTML.matchAll(/data-area="([^"]+)"/g)].map(m=>m[1]),['ciencias-natureza','matematica']);
  const dayTwoBank=$('enemQuestionRoot').innerHTML.match(/data-question-id="([^"]+)"/)?.[1];
