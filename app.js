@@ -18,6 +18,7 @@ function applyStudyRoute(route){
  const {view:name,space,path}=route;
  if(view==='dia2'&&(name!=='dia2'||route.page==='formulas')&&globalThis.FurgDia2?.flushDraft()===false)return false;
  if(view==='vespera'&&globalThis.FurgVespera?.flushPending()===false)return false;
+ if(view==='aulas'&&name!=='aulas')globalThis.FurgDia2Maps?.unmount();
  if(view==='calculo-mental'&&name!=='calculo-mental')globalThis.FurgMathLab?.leaveMental();
  if(name!=='leve')globalThis.FurgLightReview?.stopAudio();
  if(space!==studyAreas.current()||name==='inicio')globalThis.FurgStudyGuide?.close();

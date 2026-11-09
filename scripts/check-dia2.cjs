@@ -143,7 +143,28 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  const lessonIds=new Set();
  for(const [subject,list] of Object.entries(lessons)){
   assert.equal(list.length,9);
-  assert.deepEqual(Array.from(maps[subject].branches.flatMap(branch=>branch[2])).sort((a,b)=>a-b),[0,1,2,3,4,5,6,7,8]);
+  const map=maps[subject], entries=map.branches.flatMap(branch=>branch.lessons);
+  assert(map.root.title&&map.root.description);
+  assert.equal(new Set(map.branches.map(branch=>branch.tone)).size,map.branches.length);
+  assert.deepEqual(Array.from(entries,item=>item.id),Array.from(list,item=>item.id));
+  for(const [index,entry] of entries.entries()){
+   assert.equal(entry.number,index+1);
+   assert.equal(entry.route,'dia-2/aulas/'+subject+'/'+list[index].id);
+   assert.equal(ctx.FurgStudyAreas.parse('#'+entry.route).path,entry.route);
+   assert(entry.description);
+   if(subject==='fisica'){
+    assert([1,2,3].includes(entry.relevance)&&Number.isInteger(entry.minutes)&&entry.minutes>0);
+   }else{
+    assert.equal(entry.relevance,null);
+    assert.equal(entry.minutes,null);
+   }
+   for(const ref of entry.related){
+    assert.notEqual(ref.subject,subject);
+    assert(lessons[ref.subject].some(item=>item.id===ref.id));
+    assert.equal(ctx.FurgStudyAreas.parse('#'+ref.route).path,ref.route);
+   }
+  }
+  for(const path of map.paths)assert(path.lessons.every(id=>entries.some(item=>item.id===id)));
   for(const lesson of list){
    assert(!lessonIds.has(lesson.id));lessonIds.add(lesson.id);
    assert.equal(cards.get(lesson.card).subject,subject);
@@ -162,9 +183,22 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  inApp("openStudyRoute('#dia-2/mapa/fisica')");
  assert($('dia2LessonsRoot').innerHTML.includes('dia-2/aulas/fisica/energia'));
  assert($('dia2LessonsRoot').innerHTML.includes('CONCEITO DE PARTIDA'));
+ assert($('dia2LessonsRoot').innerHTML.includes('Tela ampla'));
+ assert(!$('dia2LessonsRoot').innerHTML.includes('Continuar de onde parei'));
  inApp("openStudyRoute('#dia-2/aulas/fisica/energia')");
  assert($('dia2LessonsRoot').innerHTML.includes('Energia e transformações'));
  assert($('dia2LessonsRoot').innerHTML.includes('Exemplo resolvido'));
+ assert($('dia2LessonsRoot').innerHTML.includes('dia-2/aulas/matematica/crescimento'));
+ assert(inApp('state.dia2.lessonVisits.energia')>0);
+ inApp("openStudyRoute('#dia-2/aulas/quimica/reacoes')");
+ const lastVisit=inApp('state.dia2.lessonVisits.reacoes');
+ assert(lastVisit>inApp('state.dia2.lessonVisits.energia'));
+ await importFile({version:1,answers:{},dia2:{lessonVisits:{reacoes:1,energia:-1,unknown:lastVisit+1}}});
+ assert.equal(inApp('state.dia2.lessonVisits.reacoes'),lastVisit);
+ assert.equal(inApp('state.dia2.lessonVisits.unknown'),undefined);
+ inApp("openStudyRoute('#dia-2/mapa/fisica')");
+ assert.match($('dia2LessonsRoot').innerHTML,/dia-2\/aulas\/quimica\/reacoes[^>]+>Continuar de onde parei/);
+ assert($('dia2LessonsRoot').innerHTML.includes('data-map-state="reading">Estudando'));
  await importFile({version:1,answers:{},dia2:{lessons:{energia:true,unknown:true,volumes:'true'}}});
  await importFile({version:1,answers:{},dia2:{lessons:{movimento:true}}});
  await importFile({version:1,answers:{}});
@@ -172,6 +206,10 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  inApp("openStudyRoute('#dia-2/aulas/fisica')");
  assert($('dia2LessonsRoot').innerHTML.includes('Forças, trabalho e equilíbrio</h2>'));
  assert($('dia2LessonsRoot').innerHTML.includes('2 de 9 estudadas'));
+ assert.equal(inApp('state.dia2.lessonVisits.reacoes'),lastVisit);
+ inApp("openStudyRoute('#dia-2/mapa/fisica')");
+ assert($('dia2LessonsRoot').innerHTML.includes('data-map-state="done">Concluída'));
+ assert($('dia2LessonsRoot').innerHTML.includes('2/9 concluídas'));
  assert.equal(inApp('JSON.stringify(state.enem)'),oldBank);
  inApp("openStudyRoute('#dia2')");
  assert(ctx.FurgEnem.openSubject('fisica'));

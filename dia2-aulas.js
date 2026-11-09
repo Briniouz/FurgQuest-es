@@ -12,16 +12,11 @@
  const link=(path,label,className)=>`<a class="${className}" href="#${path}" data-study-route="${path}">${esc(label)}</a>`;
  const valid=(subject,lesson)=>subjects.includes(subject)&&(!lesson||catalog[subject].some(item=>item.id===lesson));
  const validate=value=>Object.fromEntries(lessonIds.filter(id=>value?.[id]===true).map(id=>[id,true]));
+ const validVisit=stamp=>Number.isSafeInteger(stamp)&&stamp>0&&stamp<8.64e15;
+ const validateVisits=value=>Object.fromEntries(lessonIds.filter(id=>validVisit(value?.[id])).map(id=>[id,value[id]]));
+ const latestVisit=visits=>Object.keys(visits).reduce((last,id)=>visits[id]>(visits[last]||0)?id:last,'');
  const number=index=>String(index+1).padStart(2,'0');
  let adapter, active;
-
- function subjectTabs(subject,mode){
-  return `<nav class="aula-subjects" aria-label="Matérias do Dia 2">${subjects.map(id=>{
-   const {label,icon}=guide.subjects[id], path=route(id,null,mode);
-   return `<a class="aula-subject-tab" data-subject="${id}" href="#${path}" data-study-route="${path}"
-    ${id===subject?'aria-current="page"':''}><span aria-hidden="true">${esc(icon)}</span>${esc(label)}</a>`;
-  }).join('')}</nav>`;
- }
 
  function switches(subject,mode){
   return `<nav class="aula-mode-tabs" aria-label="Formatos de estudo">
@@ -62,6 +57,7 @@
      <ol>${lesson.example.slice(1).map(step=>`<li>${esc(step)}</li>`).join('')}</ol>
     </section>
     ${lesson.lab?labs.markup(lesson.lab):''}
+    ${maps.relatedLinks(lesson.id)}
     <aside class="aula-exam"><strong>Na hora da questão</strong><p>${esc(lesson.exam)}</p></aside>
     <section class="aula-check" aria-labelledby="aulaCheckTitle">
      <p class="aula-overline">QUESTÃO AUTORAL</p><h3 id="aulaCheckTitle">Testa a ideia</h3><p id="aulaCheckPrompt">${esc(check.prompt)}</p>
@@ -93,6 +89,20 @@
   const lesson=lessons.find(item=>item.id===selection.lesson)||lessons.find(item=>!completed[item.id])||lessons[0];
   const count=lessons.filter(item=>completed[item.id]).length;
   const {label}=guide.subjects[subject];
+  const visits=validateVisits(adapter.getVisits()), latest=latestVisit(visits);
+  const source='<p class="aula-source">Aulas e exercícios autorais. <a href="https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem" target="_blank" rel="noopener noreferrer">Matrizes de Referência do Inep ↗</a></p>';
+  maps.unmount(mode==='mapa');
+  if(mode==='mapa'){
+   active=null;
+   host.innerHTML=`<div class="aula-view" data-subject="${subject}">
+    <h1 id="aulaPageTitle" class="sr-only">Mapa mental do Dia 2</h1>
+    ${maps.markup(subject,completed,visits,latest)}${source}
+   </div>`;
+   maps.bind(host,subject);
+   return;
+  }
+  // A abertura marca a aula como estudando. A conclusão continua sendo explícita.
+  if(latest!==lesson.id)adapter.saveVisits({...visits,[lesson.id]:Math.max(Date.now(),(visits[latest]||0)+1)});
   active={subject,lesson};
   host.innerHTML=`<div class="aula-view" data-subject="${subject}">
    <header class="aula-hero panel">
@@ -103,11 +113,9 @@
      <span id="aulaProgressLabel">${count} de ${lessons.length} estudadas</span>
     </div>
    </header>
-   <div class="aula-nav">${subjectTabs(subject,mode)}${switches(subject,mode)}</div>
-   ${mode==='mapa'?maps.markup(subject,lessons,route,completed):lessonMarkup(subject,lessons,lesson,completed)}
-   <p class="aula-source">Aulas e exercícios autorais. <a href="https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem" target="_blank" rel="noopener noreferrer">Matrizes de Referência do Inep ↗</a></p>
+   <div class="aula-nav">${maps.subjectTabs(subject,mode,completed)}${switches(subject,mode)}</div>
+   ${lessonMarkup(subject,lessons,lesson,completed)}${source}
   </div>`;
-  if(mode==='mapa')maps.bind(host);
  }
 
  function grade(button){
@@ -136,7 +144,10 @@
   $('aulaProgressLabel').textContent=`${count} de ${lessons.length} estudadas`;
   $('aulaMark').textContent='Aula estudada ✓';
   $('aulaMark').setAttribute('aria-disabled','true');
-  $('dia2LessonsRoot').querySelector('[data-aula-mark="'+lesson.id+'"]').hidden=false;
+  const host=$('dia2LessonsRoot');
+  host.querySelector(`[data-map-progress="${subject}"]`).textContent=`${count}/${lessons.length}`;
+  host.querySelector(`[data-map-progress-label="${subject}"]`).textContent=`${count} de ${lessons.length} concluídas`;
+  host.querySelector('[data-aula-mark="'+lesson.id+'"]').hidden=false;
   status.textContent='Progresso da aula salvo.';
  }
 
@@ -156,5 +167,5 @@
    if(event.target.id==='aulaLabRange')labs.update(active.lesson.lab,event.target);
   });
  }
- globalThis.FurgDia2Lessons={init,render,valid,validate};
+ globalThis.FurgDia2Lessons={init,render,valid,validate,validateVisits};
 })();

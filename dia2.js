@@ -44,7 +44,7 @@
  const allPracticeIds = [...route,...Object.values(authorialBlocks).flatMap(block=>block.ids)];
  const sessionKeys = ['percurso', ...Object.keys(allBlocks), 'revisao'];
  const idsFor = key => key === 'percurso' ? route : allBlocks[key].ids.filter(eligible);
- const fresh = () => ({sessions:{}, attempts:[], cards:{}, seenExercises:{}, lessons:{}, hints:true});
+ const fresh = () => ({sessions:{}, attempts:[], cards:{}, seenExercises:{}, lessons:{}, lessonVisits:{}, hints:true});
  const emptyDraft = () => ({choice:'', confidence:'', request:'', plan:''});
  const cleanText = (value, size) => typeof value === 'string' ? value.trim().slice(0,size) : '';
  const isChoice = value => typeof value === 'string' && /^[A-E]$/.test(value);
@@ -105,6 +105,7 @@
   }
   for(const item of exerciseItems)if(value?.seenExercises?.[item.id]===true)result.seenExercises[item.id]=true;
   result.lessons=globalThis.FurgDia2Lessons?.validate(value?.lessons)||{};
+  result.lessonVisits=globalThis.FurgDia2Lessons?.validateVisits(value?.lessonVisits)||{};
   return result;
  }
 
@@ -124,7 +125,9 @@
   for (const [id, mark] of Object.entries(b.cards)) {
    if (!marks[id] || Date.parse(mark.date) > Date.parse(marks[id].date)) marks[id] = mark;
   }
-  return validate({sessions, cards:marks, seenExercises:{...a.seenExercises,...b.seenExercises}, lessons:{...a.lessons,...b.lessons}, attempts:[...attempts.values()].sort((x,y) => Date.parse(x.date) - Date.parse(y.date)), hints:typeof incomingValue?.hints === 'boolean' ? b.hints : a.hints});
+  const lessonVisits={...a.lessonVisits};
+  for(const [id,stamp] of Object.entries(b.lessonVisits))lessonVisits[id]=Math.max(stamp,lessonVisits[id]||0);
+  return validate({sessions, lessonVisits, cards:marks, seenExercises:{...a.seenExercises,...b.seenExercises}, lessons:{...a.lessons,...b.lessons}, attempts:[...attempts.values()].sort((x,y) => Date.parse(x.date) - Date.parse(y.date)), hints:typeof incomingValue?.hints === 'boolean' ? b.hints : a.hints});
  }
 
  function status(message) {
@@ -631,7 +634,10 @@
   const host = $('dia2Root'), dialog = $('dia2QuickGuide');
   if (bound || !host || !dialog) return;
   bound = true;
-  globalThis.FurgDia2Lessons?.init({getProgress:()=>state().lessons,saveProgress:lessons=>write({lessons})});
+  globalThis.FurgDia2Lessons?.init({
+   getProgress:()=>state().lessons, saveProgress:lessons=>write({lessons}),
+   getVisits:()=>state().lessonVisits, saveVisits:lessonVisits=>write({lessonVisits:globalThis.FurgDia2Lessons.validateVisits(lessonVisits)}),
+  });
   host.addEventListener('click',click);
   host.addEventListener('submit',event => {
    const form = event.target;
