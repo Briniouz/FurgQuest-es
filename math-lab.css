@@ -124,72 +124,207 @@ body:has(#matematica-lab.active) .study-day-links { display: none; }
 .ml-dialog-head { display: flex; align-items: start; justify-content: space-between; gap: 10px; }
 .ml-dialog-head h2 { margin: 0 0 10px; font-size: 21px; }
 
-/* O cálculo mental tem um painel próprio, com contraste independente do tema. */
-.ml-speed {
+/* Cálculo mental */
+body:has(#calculo-mental.active) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  padding-bottom: 0;
+  background: #090e20;
+}
+body:has(#calculo-mental.active) main { display: flex; flex: 1; width: 100%; max-width: none; padding: 0; margin: 0; }
+body:has(#calculo-mental.active) :is(.page-heading,.study-day-links,.site-footer,#pageBack,#studyGuideLauncher,#quickLookupLauncher,#lightLauncher) { display: none; }
+#calculo-mental {
   --speed-ink: #f6f5ff;
-  --speed-muted: #bdbee0;
-  --speed-accent: #ffce55;
-  --speed-line: #343953;
-  --speed-blue: #5fdbff;
+  --speed-muted: #bbc5df;
+  --speed-accent: #ffce64;
+  --speed-line: #3b4565;
+  --speed-blue: #76dcff;
+  --speed-green: #76e7ab;
+  --speed-red: #ff9faa;
+  width: 100%;
   min-width: 0;
   color: var(--speed-ink);
-  background: radial-gradient(ellipse at 50% -30%,#30325e,transparent 70%),#0b1027;
-  padding: clamp(14px,3.5vw,29px);
-  border: 1px solid var(--speed-line);
-  border-radius: 15px;
-  max-width: 860px;
-  margin: 0 auto;
-  text-align: center;
+  background:
+    radial-gradient(ellipse at 8% 6%,#23385b80,transparent 53%),
+    radial-gradient(ellipse at 95% 76%,#37316465,transparent 47%),
+    radial-gradient(circle,#c3d7ff24 1px,transparent 1.5px) 0 0/42px 42px,
+    #090e20;
 }
-.ml-speed .ml-muted, .ml-speed .eyebrow { color: var(--speed-muted); }
-.ml-speed .ml-actions, .ml-modes { justify-content: center; }
-.ml-speed .outline, .ml-speed .quiet { background: #1b213b; color: var(--speed-ink); border-color: var(--speed-line); }
-.ml-speed .primary { background: var(--speed-accent); color: #151324; border-color: var(--speed-accent); }
-.ml-modes button[aria-pressed="true"] { color: var(--speed-accent); border-color: var(--speed-accent); }
-.ml-operations { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; margin: 16px 0; }
-.ml-operation, .ml-level, .ml-survival {
-  background: #121831;
+body:has(#calculo-mental.active.is-immersive) { overflow: hidden; }
+#calculo-mental.is-immersive { position: fixed; inset: 0; z-index: 200; height: 100dvh; overflow: auto; }
+#calculo-mental:fullscreen { overflow: auto; }
+.ml-arena { width: min(100%,1360px); margin: 0 auto; padding: clamp(12px,3vw,36px); }
+.ml-arena-toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.ml-arena-toolbar h1 { margin: 0; color: var(--speed-ink); font-size: clamp(18px,2.4vw,27px); line-height: 1.15; letter-spacing: -.025em; }
+.ml-arena-toolbar h1 span { color: var(--speed-accent); margin-right: 3px; }
+.ml-arena .outline,.ml-arena .quiet {
+  background: #222b48;
+  color: var(--speed-ink);
   border: 1px solid var(--speed-line);
-  border-radius: 10px;
+}
+.ml-arena .quiet { background: transparent; }
+.ml-arena .primary { background: var(--speed-accent); color: #171526; border: 1px solid var(--speed-accent); }
+.ml-arena .primary:hover { background: #ffe09a; }
+.ml-arena :is(button,select,input):focus-visible { outline: 2px solid var(--speed-blue); outline-offset: 3px; }
+.ml-speed {
+  background: linear-gradient(145deg,#182443dc,#10172c);
+  border: 1px solid var(--speed-line);
+  border-radius: 20px;
+  padding: clamp(14px,2.7vw,34px);
+  box-shadow: 0 14px 40px #03061540;
+}
+.ml-speed:not(.ml-speed-play) { animation: ml-screen-in 230ms ease-out both; }
+.ml-speed p { margin: 4px 0 0; color: var(--speed-muted); }
+.ml-speed .ml-speed-kicker {
+  color: var(--speed-blue);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .12em;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+.ml-speed h2,.ml-speed h3 { margin: 0; color: var(--speed-ink); line-height: 1.13; }
+.ml-speed h2 { font-size: clamp(27px,4vw,48px); letter-spacing: -.035em; }
+.ml-speed h3 { font-size: 22px; }
+.ml-speed-intro { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; align-items: end; }
+.ml-speed-controls { display: grid; gap: 9px; }
+.ml-modes button[aria-pressed="true"] { background: #382d29; color: var(--speed-accent); border-color: var(--speed-accent); }
+.ml-pace { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; color: var(--speed-muted); font-size: 12px; font-weight: 650; }
+.ml-pace select { width: auto; min-width: 128px; font-size: 14px; padding: 8px 10px; border-radius: 8px; color: var(--speed-ink); background: #111a31; border: 1px solid var(--speed-line); color-scheme: dark; }
+.ml-operations { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 11px; margin: 19px 0 15px; }
+.ml-operation,.ml-level,.ml-survival {
+  background: #131d36;
+  border: 1px solid var(--speed-line);
+  border-radius: 13px;
   color: var(--speed-ink);
   min-width: 0;
-  padding: 12px 8px;
 }
-.ml-operation { display: grid; justify-items: center; align-content: start; gap: 3px; }
-.ml-operation:hover, .ml-level:hover:not(:disabled) { border-color: var(--speed-blue); }
-.ml-operation small { color: var(--speed-muted); font-size: 11px; }
-.ml-operation strong { font-size: 16px; }
-.ml-op-icon { color: var(--speed-blue); font-weight: 800; font-size: 23px; }
-.ml-op-level { font-size: 11px; color: var(--speed-accent); }
+.ml-operation {
+  display: grid;
+  grid-template-columns: 43px minmax(0,1fr);
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  gap: 5px 11px;
+  min-height: 96px;
+  text-align: left;
+  padding: 10px 12px;
+  transition: background .18s,border-color .18s,transform .18s;
+}
+.ml-operation:hover,.ml-level:hover:not(:disabled) { background: #1b2947; border-color: var(--speed-blue); }
+.ml-operation:hover { transform: translateY(-2px); }
+.ml-operation strong,.ml-operation small { display: block; }
+.ml-operation small { color: var(--speed-muted); font-size: 11px; font-weight: 500; }
+.ml-operation strong { color: var(--speed-ink); font-size: 17px; line-height: 1.2; }
+.ml-op-icon { display: grid; place-items: center; width: 43px; height: 43px; border-radius: 12px; background: #203252; color: var(--speed-blue); font-weight: 800; font-size: 24px; }
+.ml-op-level { grid-column: 2; justify-self: start; font-size: 11px; color: var(--speed-accent); }
+.ml-survival { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; padding: 13px 16px; }
+.ml-survival h3 { font-size: 20px; }
+.ml-survival p { font-size: 13px; }
+.ml-path .ml-actions { margin: 14px 0; }
+.ml-path .ml-chapter { margin: 10px 0; text-align: center; }
 .ml-path-levels { width: fit-content; margin: 0 auto; display: grid; gap: 12px; position: relative; padding: 0 33px; }
 .ml-path-levels::before { content: ''; border-left: 2px dashed var(--speed-line); position: absolute; left: 50%; inset-block: 10px; }
-.ml-level { position: relative; width: 79px; min-height: 65px; padding: 5px; font-weight: 750; }
+.ml-level { position: relative; width: 82px; min-height: 60px; padding: 5px; font-weight: 750; }
 .ml-level:nth-child(even) { transform: translateX(24px); }
 .ml-level:nth-child(odd) { transform: translateX(-24px); }
-.ml-level.current { border-color: var(--speed-accent); color: var(--speed-accent); }
-.ml-level:disabled { opacity: .58; }
-#matematica-lab .ml-chapter { margin: 12px 0; }
-.ml-speed-play header { display: flex; justify-content: space-between; text-align: left; gap: 10px; }
-.ml-speed-play header > strong { color: var(--speed-accent); font-size: 20px; }
-.ml-speed progress { width: 100%; accent-color: var(--speed-blue); display: block; }
-.ml-speed-time { display: block; text-align: left; font-size: 12px; margin-top: 8px; }
-.ml-speed-time progress { accent-color: #77e589; }
-#matematica-lab .ml-equation {
-  font-size: clamp(24px,6vw,57px);
-  line-height: 1.1;
-  font-weight: 800;
-  margin: 18px 0 6px;
+.ml-level.current { border-color: var(--speed-accent); color: var(--speed-accent); box-shadow: 0 0 18px #ffce6420; }
+.ml-level:disabled { opacity: .64; }
+
+.ml-speed-play { max-width: 1140px; margin: 0 auto; }
+.ml-round-header,.ml-round-tools { display: flex; justify-content: space-between; align-items: center; gap: 9px; }
+.ml-round-header h2 { font-size: clamp(25px,3.2vw,39px); }
+.ml-xp { color: var(--speed-accent); font-variant-numeric: tabular-nums; font-size: clamp(17px,2vw,23px); white-space: nowrap; }
+.ml-round-progress { display: grid; grid-template-columns: repeat(10,minmax(0,1fr)); gap: 6px; margin: 11px 0; }
+.ml-round-progress span { background: #2c3957; height: 6px; border-radius: 99px; }
+.ml-round-progress .done { background: #6ebce2; }
+.ml-round-progress .current { background: #96e7ff; box-shadow: 0 0 8px #76dcff6b; }
+.ml-speed-progress { display: block; width: 100%; margin: 11px 0; accent-color: var(--speed-blue); }
+.ml-speed-time { font-size: 13px; color: var(--speed-muted); }
+.ml-speed-time > div:first-child { display: flex; justify-content: space-between; gap: 8px; }
+.ml-speed-time strong { color: var(--speed-green); font-variant-numeric: tabular-nums; font-size: 19px; line-height: 1.1; }
+.ml-clock-rail { margin-top: 4px; border-radius: 99px; height: 9px; background: #2b3956; overflow: hidden; }
+.ml-clock-rail span { display: block; height: 100%; background: linear-gradient(90deg,#35dbaa,#b1ed77); transform-origin: left; border-radius: inherit; transition: transform .11s linear; }
+.ml-speed-time[data-clock=urgent] strong { color: var(--speed-red); }
+.ml-speed-time[data-clock=urgent] .ml-clock-rail span { background: #ff8796; }
+.ml-free-time { font-size: 12px; }
+.ml-play-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(250px,350px); align-items: stretch; gap: clamp(10px,2vw,23px); margin-top: 12px; }
+.ml-play-stage {
+  display: grid;
+  align-content: center;
+  min-width: 0;
+  min-height: 280px;
+  text-align: center;
+  padding: 12px;
+  background: #101a33;
+  border: 1px solid var(--speed-line);
+  border-radius: 14px;
+}
+.ml-play-stage[data-result=ok] { border-color: var(--speed-green); animation: ml-feedback-ok 380ms ease-out both; }
+.ml-play-stage:is([data-result=miss],[data-result=time]) { border-color: var(--speed-red); animation: ml-feedback-miss 500ms ease-out both; }
+.ml-speed .ml-equation {
+  font-size: clamp(32px,5.7vw,78px);
+  line-height: 1.08;
+  font-weight: 850;
+  color: var(--speed-ink);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.045em;
+  margin: 9px 0;
   overflow-wrap: anywhere;
 }
-#matematica-lab .ml-speed-last { min-height: 21px; color: var(--speed-muted); }
-.ml-mental-form { margin: 8px auto 13px; max-width: 355px; }
-#matematica-lab #mlMentalAnswer { background: #080d22; border-color: var(--speed-line); color: var(--speed-ink); text-align: center; font-size: 22px; }
-.ml-keypad { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 7px; margin-top: 9px; }
-.ml-keypad button { min-height: 41px; font-weight: 750; padding: 6px 4px; }
-.ml-speed .ml-keypad button:focus-visible { outline-color: var(--speed-blue) !important; }
+.ml-play-stage[data-result=""] .ml-equation { animation: ml-question-in 260ms cubic-bezier(.2,.7,.3,1) both; }
+.ml-speed .ml-speed-last { font-size: 13px; font-weight: 600; min-height: 22px; }
+.ml-speed-last[data-result=ok],.ml-speed-result .ml-equation[data-result=ok] { color: var(--speed-green); }
+.ml-speed-last:is([data-result=miss],[data-result=time]) { color: var(--speed-red); }
+.ml-mental-form { min-width: 0; }
+.ml-mental-form fieldset { min-width: 0; border: 0; padding: 0; margin: 0; }
+#mlMentalAnswer {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 47px;
+  border: 1px solid var(--speed-line);
+  border-radius: 9px;
+  background: #0a1229;
+  color: var(--speed-ink);
+  text-align: center;
+  font-size: 22px;
+}
+#mlMentalAnswer::placeholder { color: var(--speed-muted); font-size: 15px; }
+.ml-keypad { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 6px; margin-top: 8px; }
+.ml-keypad button { min-height: 43px; font-size: 18px; font-weight: 760; padding: 5px 3px; }
+.ml-keypad .primary { font-size: 13px; }
+.ml-speed-result { text-align: center; padding-block: clamp(33px,7vw,95px); }
+.ml-speed-result .ml-actions { justify-content: center; margin-top: 18px; }
+@keyframes ml-screen-in { from { opacity: .65; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes ml-question-in { from { opacity: .2; transform: translateY(12px) scale(.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes ml-feedback-ok { from { background: #1c433e; } to { background: #101a33; } }
+@keyframes ml-feedback-miss { from { background: #47263e; } to { background: #101a33; } }
+.ml-motion-off :is(.ml-speed,.ml-equation,.ml-play-stage,.ml-clock-rail span,.ml-operation) { animation: none !important; transition: none !important; }
+
+@media (max-width: 780px) {
+  .ml-operations { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .ml-play-grid { grid-template-columns: minmax(0,1fr); }
+  .ml-play-stage { min-height: 115px; }
+  .ml-speed .ml-equation { font-size: clamp(32px,9vw,52px); }
+}
+@media (max-width: 520px) {
+  .ml-arena-toolbar .ml-actions { gap: 3px; }
+  .ml-arena-toolbar button,.ml-speed-controls button { padding: 6px 7px; font-size: 11px; }
+  .ml-operation { grid-template-columns: 30px minmax(0,1fr); padding: 7px; gap: 5px 7px; }
+  .ml-operation strong { font-size: 14px; }
+  .ml-operation small { font-size: 10px; }
+  .ml-op-icon { width: 30px; height: 34px; font-size: 18px; }
+  .ml-op-level { font-size: 10px; }
+  .ml-keypad button { min-height: 38px; }
+  .ml-pace select { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ml-arena :is(.ml-speed,.ml-equation,.ml-play-stage,.ml-clock-rail span,.ml-operation) { animation: none !important; transition: none !important; }
+}
+
 @media (max-width: 670px) {
   .ml-grid, .ml-overview, .ml-routes { grid-template-columns: minmax(0,1fr); }
-  .ml-filters, .ml-operations { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .ml-filters { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .ml-tabs { gap: 4px; }
   .ml-tabs button { padding: 6px 8px; }
   .ml-panel { padding: 12px; }

@@ -7,7 +7,7 @@
  const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const date=n=>new Date(n).toLocaleDateString('pt-BR');
  const label=id=>{const q=bank.get(id);return `ENEM ${q.year} · Questão ${q.index}`;};
- const tabs={inicio:'Plano',treino:'Treino',calculo:'Cálculo mental',banco:'Banco',erros:'Caderno de erros',formulas:'Fórmulas',painel:'Desempenho',colecao:'Coleção'};
+ const tabs={inicio:'Plano',treino:'Treino',banco:'Banco',erros:'Caderno de erros',formulas:'Fórmulas',painel:'Desempenho',colecao:'Coleção'};
  const options=(items,selected)=>Object.entries(items).map(([key,name])=>`<option value="${esc(key)}" ${String(selected)===key?'selected':''}>${esc(name)}</option>`).join('');
  const button=(action,text,value='',style='outline',attrs='')=>`<button type="button" class="${style}" data-ml="${action}" data-value="${esc(value)}" ${attrs}>${esc(text)}</button>`;
  const badge=text=>`<span class="ml-badge">${esc(text)}</span>`;
@@ -35,7 +35,8 @@
   fatoracao:'a e b são números ou expressões. As igualdades são identidades algébricas, válidas para quaisquer a e b reais.',
   superficie:'A é a área total, r é o raio e h é a altura. Use a mesma unidade para todas as medidas de comprimento.',
  };
- let adapter,bound=false,tab='inicio',gradeTimer='',mentalTimer='',mentalMode='leve',operation='',chapter=1;
+ let adapter,bound=false,tab='inicio',gradeTimer='',mentalTimer='',mentalMode='leve',mentalPace='auto',operation='',chapter=1;
+ let mentalBrowse=false,mentalTransition=false,mentalFull=false;
  let formulaQuery='',formulaOpen='',bankPage=0;
  let filters={skill:'',level:'',year:'',query:'',guided:false},errorFilter='pendentes';
  const root=()=>adapter.getState();
@@ -56,6 +57,10 @@
   return false;
  }
  function view(name,focusTitle=true) {
+  if(name==='calculo'){
+   if(adapter.setView('calculo-mental')!==false&&focusTitle)focus('mlMentalTitle');
+   return;
+  }
   if(!M.own(tabs,name))return;
   if(name==='formulas'&&qid()&&!session().grade&&!session().aid&&!patchQuestion({aid:true},false))return;
   tab=name;
@@ -421,35 +426,43 @@
   const seconds=Math.ceil(ms/1000);
   return Math.floor(seconds/60)+':'+String(seconds%60).padStart(2,'0');
  }
+ const mentalActive=()=>$('calculo-mental')?.classList.contains('active');
+ const motionOff=()=>globalThis.FurgUI?.reducedMotion()===true;
+ const secondsFor=run=>M.mentalSeconds(run.mode,run.level,run.op,run.pace);
+ const timeLeft=(run,now)=>Math.max(0,Math.min(secondsFor(run)*1000,run.deadline-(run.paused||now)));
+
  function setMental(patch) {
   return write({mental:{...state().mental,...patch}});
  }
  function startMental(op,level=1,now=Date.now()) {
-  if(op!=='sobrevivencia'&&(!M.own(operations,op)||!Number.isInteger(level)||level<1||level>score(mentalMode,op).level))return false;
-  const t=M.mentalSeconds(mentalMode,level,op);
-  const run={id:M.uid(),at:now,mode:mentalMode,op,level,seed:(Math.random()*0x100000000)|0,index:0,hits:0,xp:0,
-   deadline:t?now+t*1000:0,done:false,last:'',passed:false};
+  const survival=op==='sobrevivencia';
+  if(!survival&&(!M.own(operations,op)||!Number.isInteger(level)||level<1||level>score(mentalMode,op).level))return false;
+  if(!mentalActive()&&adapter.setView('calculo-mental')===false)return false;
+  const pace=survival?'auto':mentalPace, seconds=M.mentalSeconds(mentalMode,level,op,pace);
+  const run={id:M.uid(),at:now,mode:mentalMode,op,level,seed:(Math.random()*0x100000000)|0,index:0,bank:1,pace,
+   hits:0,xp:0,starts:now,paused:0,deadline:seconds?now+seconds*1000:0,done:false,entry:'',last:'',result:'',passed:false};
   if(!setMental({run}))return false;
   mentalTimer='';
-  mentalPaused=false;
-  view('calculo',false);
+  mentalBrowse=false;
+  renderMental(now);
   focus('mlMentalAnswer');
   return true;
  }
- function mentalAnswer(value,now=Date.now()) {
+ function mentalAnswer(value,now=Date.now(),redraw=true) {
   const run=state().mental.run;
-  if(!run||run.done)return false;
+  if(!run||run.done||run.paused||now<run.starts)return false;
   const expired=run.deadline>0&&now>=run.deadline, parsed=M.numeric(value);
   if(!expired&&!parsed){notify('Escreve um número, decimal ou fração.');return false;}
   const q=M.mentalQuestion(run), correct=!expired&&M.equalNumber(parsed,q);
-  const seconds=M.mentalSeconds(run.mode,run.level,run.op);
-  const remaining=seconds?(run.deadline-now)/(seconds*1000):0;
+  const seconds=secondsFor(run), remaining=seconds?timeLeft(run,now)/(seconds*1000):0;
   const hits=run.hits+Number(correct), xp=run.xp+(correct?(remaining>=0.65?30:remaining>=0.3?20:10):0);
   const survival=run.op==='sobrevivencia', index=run.index+1;
   const done=survival?(!correct||index>=200):index>=10;
-  const next={...run,index,hits,xp,done,passed:!survival&&done&&hits>=8,
-   deadline:done||!seconds?0:now+seconds*1000,
-   last:correct?'Acertou!':(expired?'Tempo esgotado. ':'Resposta correta ')+M.formatNumber(q)+(expired?' era o resultado.':'.')};
+  const starts=now+(done||motionOff()?0:correct?380:760);
+  const result=correct?'ok':expired?'time':'miss';
+  const last=correct?'Acertou!':(expired?'Tempo esgotado. Resposta: ':'Resposta correta: ')+M.formatNumber(q)+'.';
+  const next={...run,index,hits,xp,done,starts,result,last,entry:'',passed:!survival&&done&&hits>=8,
+   deadline:done||!seconds?0:starts+seconds*1000};
   const scores={...state().mental.scores};
   if(done&&!survival){
    const old=score(run.mode,run.op), key=M.scoreKey(run.mode,run.op);
@@ -457,94 +470,202 @@
     xp:Math.min(100000000,old.xp+xp),finished:old.finished||next.passed&&run.level===100,at:now};
   }
   if(!setMental({run:next,scores,best:survival?Math.max(state().mental.best,hits):state().mental.best}))return false;
-  render();
-  focus(done?'mlFocus':'mlMentalAnswer');
+  if(redraw){
+   $('mlMentalAnnounce').textContent=last;
+   renderMental(now);
+   focus(done?'mlMentalFocus':mentalTransition?'mlMentalEquation':'mlMentalAnswer');
+  }
   return true;
  }
 
- function mentalPlay(run) {
-  const survival=run.op==='sobrevivencia', name=survival?'Sobrevivência':operations[run.op].label, seconds=M.mentalSeconds(run.mode,run.level,run.op);
-  if(run.done)return `<section class="ml-speed ml-speed-result">${h2(survival?'Sobrevivência concluída':'Rodada concluída')}
-   <p class="ml-equation">${run.hits}${survival?'':'/10'}</p><p>${esc(run.last)} · ${run.xp} XP na rodada.</p>
-   <p>${survival?'Recorde de '+state().mental.best+' acertos seguidos.':run.passed?(run.level<100?'Próximo nível liberado.':'Nível 100 concluído.'):'A meta para liberar o próximo nível é 8 acertos.'}</p>
-   ${actions((!survival&&run.passed&&run.level<100?button('mental-next','Próximo nível →','','primary'):'')+button('mental-retry','Jogar de novo',run.op)+button('mental-close','Voltar às trilhas'))}</section>`;
-  const item=M.mentalQuestion(run);
-  return `<section class="ml-speed ml-speed-play"><header><div><p class="eyebrow">${esc(modeKeys[run.mode].label)} · ${esc(name)}</p>
-   ${h2(survival?'Sobrevivência':'Nível '+run.level)}<p>Conta ${run.index+1} de ${survival?200:10} · ${run.hits} ${run.hits===1?"acerto":"acertos"}</p></div>
-   <strong>${run.xp} XP</strong></header>
-   <progress class="ml-speed-progress" value="${run.index}" max="${survival?200:10}" aria-label="Progresso da rodada"></progress>
-   ${seconds?`<label class="ml-speed-time">Tempo <strong id="mlMentalClock">${clock(Math.max(0,run.deadline-Date.now()))}</strong>
-    <progress id="mlMentalBar" value="${Math.max(0,run.deadline-Date.now())}" max="${seconds*1000}"></progress></label>`:''}
-   <p class="ml-equation">${esc(item.prompt)}</p><p class="ml-speed-last" aria-live="polite">${esc(run.last)}</p>
-   <form data-ml-form="mental" class="ml-mental-form"><label for="mlMentalAnswer" class="sr-only">Tua resposta</label>
-    <input id="mlMentalAnswer" name="mental" maxlength="24" inputmode="none" autocomplete="off" placeholder="Tua resposta">
-    <div class="ml-keypad" role="group" aria-label="Teclado numérico">
-     ${['1','2','3','4','5','6','7','8','9',',','0','⌫','/','−'].map(key=>button('keypad',key,key,'outline',key==='⌫'?'aria-label="Apagar último caractere"':'')).join('')}
-     <button class="primary" type="submit">Confirmar ↵</button>
-    </div>
-   </form>${button('mental-pause','Voltar ao plano de cálculo','','quiet')}</section>`;
+ function pauseMental(now=Date.now(),redraw=true) {
+  let run=state().mental.run;
+  if(!run||run.done||run.paused)return true;
+  let entry=$('mlMentalAnswer')?.value??run.entry;
+  if(run.deadline&&now>=run.deadline){
+   if(!mentalAnswer('',now,false))return false;
+   run=state().mental.run;
+   entry='';
+  }
+  if(!run.done&&!setMental({run:{...run,paused:now,entry}}))return false;
+  if(redraw){renderMental(now);focus('mlMentalFocus');}
+  return true;
+ }
+ function resumeMental(now=Date.now()) {
+  const run=state().mental.run;
+  if(!run||run.done)return false;
+  const shift=run.paused?Math.max(0,now-run.paused):0;
+  if(run.paused&&!setMental({run:{...run,starts:run.starts+shift,deadline:run.deadline?run.deadline+shift:0,paused:0}}))return false;
+  mentalBrowse=false;
+  renderMental(now);
+  focus(mentalTransition?'mlMentalEquation':'mlMentalAnswer');
+  return true;
+ }
+ function leaveMental() {
+  pauseMental(Date.now(),false);
+  if(mentalFull)toggleFullscreen();
  }
 
+ function mentalTitle(text) {
+  return `<h2 id="mlMentalFocus" tabindex="-1">${esc(text)}</h2>`;
+ }
+ function mentalName(run) {
+  return run.op==='sobrevivencia'?'Sobrevivência':operations[run.op].label;
+ }
+ function mentalPlay(run,now) {
+  const survival=run.op==='sobrevivencia', name=mentalName(run), seconds=secondsFor(run);
+  const count=survival?200:10;
+  if(run.done)return `<section class="ml-speed ml-speed-result">
+   <p class="ml-speed-kicker">${esc(modeKeys[run.mode].label)} · ${esc(name)}</p>
+   ${mentalTitle(survival?'Sobrevivência concluída':'Rodada concluída')}
+   <p class="ml-equation" data-result="${run.result}">${run.hits}${survival?'':'/10'}</p><p>${esc(run.last)} · ${run.xp} XP na rodada.</p>
+   <p>${survival?'Recorde de '+state().mental.best+' acertos seguidos.':run.passed?(run.level<100?'Próximo nível liberado.':'Nível 100 concluído.'):'A meta para liberar o próximo nível é 8 acertos.'}</p>
+   ${actions((!survival&&run.passed&&run.level<100?button('mental-next','Próximo nível →','','primary'):'')+button('mental-retry','Jogar de novo',run.op)+button('mental-home','Operações'))}</section>`;
+  if(run.paused)return `<section class="ml-speed ml-speed-result">
+   <p class="ml-speed-kicker">${esc(name)} · Conta ${run.index+1} de ${count}</p>${mentalTitle('Rodada pausada')}
+   <p>${seconds?clock(timeLeft(run,now))+' no relógio desta conta.':'Teu progresso nesta rodada está salvo.'}</p>
+   ${actions(button('mental-resume','Continuar rodada →','','primary')+button('mental-home','Escolher operação'))}</section>`;
+  const item=M.mentalQuestion(mentalTransition?{...run,index:run.index-1}:run);
+  const number=run.index+(mentalTransition?0:1), left=timeLeft(run,now);
+  return `<section class="ml-speed ml-speed-play">
+   <header class="ml-round-header"><div><p class="ml-speed-kicker">${esc(modeKeys[run.mode].label)} · ${esc(name)}</p>
+    ${mentalTitle(survival?'Sobrevivência':'Nível '+run.level)}
+    <p>Conta ${number} de ${count} · ${run.hits} ${run.hits===1?'acerto':'acertos'}</p></div>
+    <div class="ml-round-tools"><strong class="ml-xp">${run.xp} XP</strong>${button('mental-pause','Pausar','','quiet')}</div></header>
+   ${survival?`<progress class="ml-speed-progress" value="${run.index}" max="${count}" aria-label="Progresso da rodada"></progress>`:
+    `<div class="ml-round-progress" role="progressbar" aria-label="Contas concluídas" aria-valuemin="0" aria-valuenow="${run.index}" aria-valuemax="10">
+     ${Array.from({length:10},(_,i)=>`<span class="${i<run.index?'done':i===run.index?'current':''}"></span>`).join('')}</div>`}
+   ${seconds?`<div class="ml-speed-time" id="mlMentalTime" data-clock="${left<=3000?'urgent':'normal'}">
+    <div><span>Tempo desta conta</span><strong role="timer" id="mlMentalClock">${clock(left)}</strong></div>
+    <div class="ml-clock-rail" aria-hidden="true"><span id="mlMentalBar" style="transform:scaleX(${left/(seconds*1000)})"></span></div></div>`:
+    '<p class="ml-free-time">Sem cronômetro</p>'}
+   <div class="ml-play-grid">
+    <div class="ml-play-stage" data-result="${mentalTransition?run.result:''}">
+     <p class="ml-speed-kicker">${mentalTransition?'Conta conferida':'Calcula de cabeça'}</p>
+     <p class="ml-equation" id="mlMentalEquation" tabindex="-1">${esc(item.prompt)}</p>
+     <p class="ml-speed-last" data-result="${run.result}">${run.last?esc(run.last):'Digita o resultado pra conferir.'}</p>
+    </div>
+    <form data-ml-form="mental" class="ml-mental-form">
+     <fieldset ${mentalTransition?'disabled':''}><label for="mlMentalAnswer" class="sr-only">Tua resposta</label>
+      <input id="mlMentalAnswer" name="mental" maxlength="24" inputmode="none" autocomplete="off" placeholder="Tua resposta" value="${esc(run.entry)}" aria-describedby="mlMentalEquation">
+      <div class="ml-keypad" role="group" aria-label="Teclado numérico">
+       ${['1','2','3','4','5','6','7','8','9',',','0','⌫','/','−'].map(key=>button('keypad',key,key,'outline',key==='⌫'?'aria-label="Apagar último caractere"':key==='/'?'aria-label="Barra de fração"':key==='−'?'aria-label="Sinal negativo"':'')).join('')}
+       <button class="primary" type="submit">Confirmar ↵</button>
+      </div>
+     </fieldset>
+    </form>
+   </div></section>`;
+ }
+
+ function timerChoice() {
+  return `<label class="ml-pace">Tempo por conta<select id="mlMentalPace">${options(M.paces,mentalPace)}</select></label>`;
+ }
  function mentalTracks() {
   const modes=Object.entries(modeKeys).map(([id,m])=>button('mode',m.label,id,'outline',`aria-pressed="${mentalMode===id}"`)).join('');
   const tracks=Object.entries(operations).map(([id,o])=>{
    const s=score(mentalMode,id);
    return `<button type="button" class="ml-operation" data-ml="operation" data-value="${id}">
-    <span class="ml-op-icon" aria-hidden="true">${o.icon}</span><strong>${esc(o.label)}</strong><small>${esc(o.about)}</small>
+    <span class="ml-op-icon" aria-hidden="true">${o.icon}</span><span><strong>${esc(o.label)}</strong><small>${esc(o.about)}</small></span>
     <span class="ml-op-level">${s.finished?'100/100 concluídos':'Nível '+s.level+'/100'} · ${s.xp} XP</span></button>`;
   }).join('');
-  return `<section class="ml-speed">${h2('Cálculo mental')}<p>Escolhe o ritmo e a operação. Cada trilha tem 100 níveis, com 10 contas por rodada.</p>
-   <div class="ml-modes" role="group" aria-label="Ritmo do cálculo">${modes}</div>
-   <p class="ml-muted">${mentalMode==='leve'?'Tranquilo · Sem cronômetro.':'Cronômetro por conta · Ganhas mais XP ao acertar rápido.'}</p>
+  return `<section class="ml-speed ml-speed-home"><div class="ml-speed-intro"><div>
+   <p class="ml-speed-kicker">10 CONTAS POR RODADA · 100 NÍVEIS</p>
+   ${mentalTitle('Escolhe teu ritmo')}
+   <p>Cada rodada sorteia contas do banco do nível.</p>
+   </div><div class="ml-speed-controls"><div class="ml-modes" role="group" aria-label="Ritmo do cálculo">${modes}</div>${timerChoice()}</div></div>
    <div class="ml-operations">${tracks}</div>
-   <article class="ml-survival"><h3>Sobrevivência</h3><p>Quatro operações misturadas, com 20 segundos por conta. Errou ou acabou o tempo, a rodada termina.</p>
-    ${button('mental-start','Começar sobrevivência →','sobrevivencia','primary')}<p>Recorde ${state().mental.best}</p></article>
+   <article class="ml-survival"><div><p class="ml-speed-kicker">RECORDE · ${state().mental.best}</p>
+    <h3>Sobrevivência</h3><p>Quatro operações misturadas. São 20 segundos por conta. Errou ou acabou o tempo, a rodada termina.</p></div>
+    ${button('mental-start','Começar sobrevivência →','sobrevivencia','primary')}</article>
   </section>`;
  }
  function mentalPath() {
   const o=operations[operation], s=score(mentalMode,operation);
   const first=(chapter-1)*5+1, step=Array.from({length:5},(_,i)=>first+i);
-  return `<section class="ml-speed ml-path">${h2(o.label+' · '+modeKeys[mentalMode].label)}
-   <p>Nível ${s.level}/100 · ${s.xp} XP. Acerta pelo menos 8 de 10 para avançar.</p>
+  return `<section class="ml-speed ml-path"><div class="ml-speed-intro"><div>
+   <p class="ml-speed-kicker">${esc(modeKeys[mentalMode].label)} · ${s.xp} XP</p>
+   ${mentalTitle(o.label)}
+   <p>Nível ${s.level}/100. Acerta pelo menos 8 de 10 para avançar.</p></div>${timerChoice()}</div>
    ${actions(button('mental-home','← Operações','','quiet')+button('chapter','Capítulo anterior','-1','outline',chapter===1?'disabled':'')+
     button('chapter','Capítulo seguinte','1','outline',chapter===20?'disabled':''))}
-   <p class="eyebrow ml-chapter">CAPÍTULO ${chapter} DE 20</p>
+   <p class="ml-speed-kicker ml-chapter">CAPÍTULO ${chapter} DE 20</p>
    <div class="ml-path-levels">${step.map(i=>button('mental-start',String(i)+(i>s.level?' · Bloqueado':''),String(i),
     'ml-level'+(i===s.level?' current':''),i>s.level?'disabled':'')).join('')}</div>
    </section>`;
  }
 
- let mentalPaused=false;
- function mental() {
-  const run=state().mental.run;
-  if(run&&!mentalPaused)return mentalPlay(run);
-  const resume=run&&!run.done?actions(button('mental-resume','Retomar conta '+(run.index+1),'','primary')):'';
-  return resume+(operation?mentalPath():mentalTracks());
+ function renderMental(now=Date.now()) {
+  if(!adapter)return;
+  const run=state().mental.run, playing=run&&!mentalBrowse;
+  mentalTransition=Boolean(playing&&!run.done&&!run.paused&&run.starts>now);
+  const resume=run&&!run.done&&!playing?button('mental-resume','Continuar rodada →','','primary'):'';
+  $('mentalRoot').innerHTML=`<div class="ml-arena${motionOff()?' ml-motion-off':''}">
+   <div class="ml-arena-toolbar"><h1 id="mlMentalTitle" tabindex="-1"><span aria-hidden="true">⚡</span> Cálculo mental</h1>
+   <div class="ml-actions">${resume}${button('mental-lab','Laboratório de Matemática','','quiet')}
+   ${button('mental-fullscreen',mentalFull?'Sair da tela cheia':'Tela cheia','','quiet',`id="mlMentalFullscreen" aria-pressed="${mentalFull}"`)}
+   </div></div>
+   ${playing?mentalPlay(run,now):operation?mentalPath():mentalTracks()}
+  </div>`;
  }
- const views={inicio:plan,treino:practice,calculo:mental,banco:bankView,erros:errorsView,formulas:formulasView,painel:panel,colecao:collection};
+ function setMentalFullscreen(enabled) {
+  mentalFull=enabled;
+  $('calculo-mental').classList.toggle('is-immersive',enabled);
+  const header=document.querySelector('.header'), menus=$('navigationMenus');
+  if(header)header.inert=enabled;
+  if(menus)menus.inert=enabled;
+  const b=$('mlMentalFullscreen');
+  if(b){
+   b.textContent=enabled?'Sair da tela cheia':'Tela cheia';
+   b.setAttribute('aria-pressed',String(enabled));
+  }
+ }
+ async function toggleFullscreen() {
+  const arena=$('calculo-mental'), enabled=!mentalFull;
+  setMentalFullscreen(enabled);
+  try {
+   if(enabled&&document.fullscreenEnabled)await arena.requestFullscreen();
+   if(!enabled&&document.fullscreenElement===arena)await document.exitFullscreen();
+  } catch {
+   // The in-page immersive layout also works when native fullscreen is unavailable.
+  }
+ }
+
+ const views={inicio:plan,treino:practice,banco:bankView,erros:errorsView,formulas:formulasView,painel:panel,colecao:collection};
 
  function render() {
   if(!adapter||!$('mathLabRoot'))return;
   $('mathLabRoot').innerHTML=`<div class="ml-tabs" role="group" aria-label="Seções de Matemática">
    ${Object.entries(tabs).map(([key,title])=>button('tab',title,key,'quiet',`aria-pressed="${key===tab}"`)).join('')}
-   </div><div class="ml-content">${views[tab]()}</div>`;
+   ${button('tab','Cálculo mental ↗','calculo','quiet')}</div><div class="ml-content">${views[tab]()}</div>`;
  }
 
  function tick(now=Date.now()) {
-  if(!adapter||!active())return;
-  const s=session();
-  if(tab==='treino'&&qid()&&!s.grade&&s.deadline>0){
-   const el=$('mlQuestionClock');
-   if(el)el.textContent=clock(Math.max(0,s.deadline-now));
-   if(now>=s.deadline&&gradeTimer!==s.id){gradeTimer=s.id;answer(s.draft,now);}
+  if(!adapter)return;
+  if(active()){
+   const s=session();
+   if(tab==='treino'&&qid()&&!s.grade&&s.deadline>0){
+    const el=$('mlQuestionClock');
+    if(el)el.textContent=clock(Math.max(0,s.deadline-now));
+    if(now>=s.deadline&&gradeTimer!==s.id){gradeTimer=s.id;answer(s.draft,now);}
+   }
   }
-  const r=state().mental.run;
-  if(tab!=='calculo'||mentalPaused||!r||r.done||!r.deadline)return;
-  const left=Math.max(0,r.deadline-now), text=$('mlMentalClock'), bar=$('mlMentalBar');
-  if(text)text.textContent=clock(left);
-  if(bar)bar.value=left;
-  const key=r.id+'/'+r.index;
-  if(!left&&mentalTimer!==key){mentalTimer=key;mentalAnswer('',now);}
+  const run=state().mental.run;
+  if(!mentalActive()||mentalBrowse||!run||run.done||run.paused)return;
+  const key=run.id+'/'+run.index;
+  if(run.deadline&&now>=run.deadline){
+   if(mentalTimer!==key){mentalTimer=key;mentalAnswer('',now);}
+   return;
+  }
+  if(mentalTransition&&now>=run.starts){
+   renderMental(now);
+   focus('mlMentalAnswer');
+  }
+  if(!run.deadline)return;
+  const left=timeLeft(run,now), text=$('mlMentalClock'), bar=$('mlMentalBar');
+  if(text&&text.textContent!==clock(left))text.textContent=clock(left);
+  if(bar?.style)bar.style.transform='scaleX('+left/(secondsFor(run)*1000)+')';
+  const timer=$('mlMentalTime');
+  if(timer)timer.dataset.clock=left<=3000?'urgent':'normal';
  }
 
  function openQuestion(id) {
@@ -595,12 +716,12 @@
    case 'bank-page': bankPage+=Number(value);$('mlBankResults').innerHTML=bankResults();break;
    case 'print': globalThis.print?.();break;
    case 'mode':
-    if(M.own(modeKeys,value)){mentalMode=value;render();}
+    if(M.own(modeKeys,value)){mentalMode=value;renderMental();$('mentalRoot').querySelector('[data-ml=mode][aria-pressed=true]')?.focus();}
     break;
    case 'operation':
-    if(M.own(operations,value)){operation=value;chapter=Math.ceil(score(mentalMode,operation).level/5);render();focus('mlFocus');}
+    if(M.own(operations,value)){operation=value;chapter=Math.ceil(score(mentalMode,operation).level/5);renderMental();focus('mlMentalFocus');}
     break;
-   case 'chapter': chapter=Math.max(1,Math.min(20,chapter+Number(value)));render();break;
+   case 'chapter': chapter=Math.max(1,Math.min(20,chapter+Number(value)));renderMental();focus('mlMentalFocus');break;
    case 'mental-start': {
     startMental(value==='sobrevivencia'?value:operation,value==='sobrevivencia'?1:Number(value));
     break;
@@ -608,15 +729,14 @@
    case 'mental-next':
    case 'mental-retry': {
     const old=state().mental.run;
-    if(old){mentalMode=old.mode;startMental(old.op,old.level+Number(action==='mental-next'));}
+    if(old){mentalMode=old.mode;mentalPace=old.pace;startMental(old.op,old.level+Number(action==='mental-next'));}
     break;
    }
-   case 'mental-close':
-    if(setMental({run:null})){mentalPaused=false;render();focus('mlFocus');}
-    break;
-   case 'mental-pause': mentalPaused=true;render();focus('mlFocus');break;
-   case 'mental-resume': mentalPaused=false;render();focus('mlMentalAnswer');tick();break;
-   case 'mental-home': operation='';render();focus('mlFocus');break;
+   case 'mental-pause': pauseMental();break;
+   case 'mental-resume': resumeMental();break;
+   case 'mental-home': mentalBrowse=true;operation='';renderMental();focus('mlMentalFocus');break;
+   case 'mental-lab': adapter.setView('matematica-lab');focus('pageTitle');break;
+   case 'mental-fullscreen': toggleFullscreen();break;
    case 'keypad': {
     const input=$('mlMentalAnswer');
     if(!input)return;
@@ -649,8 +769,8 @@
  function init(value) {
   adapter=value;
   root().mathLab=M.validate(root().mathLab);
-  const host=$('mathLabRoot'),dialog=$('mlDialog');
-  if(bound||!host||!dialog)return;
+  const host=$('mathLabRoot'),dialog=$('mlDialog'),mentalHost=$('mentalRoot');
+  if(bound||!host||!dialog||!mentalHost)return;
   bound=true;
   host.addEventListener('click',handleClick);
   dialog.addEventListener('click',handleClick);
@@ -673,10 +793,27 @@
    const form=event.target.closest('#mlAnswerForm');
    if(form)patchQuestion({draft:M.draft(readAnswer(form))},false);
   });
-  setInterval(tick,250);
+  mentalHost.addEventListener('click',handleClick);
+  mentalHost.addEventListener('submit',handleSubmit);
+  mentalHost.addEventListener('change',event=>{
+   if(event.target.id==='mlMentalPace'&&M.own(M.paces,event.target.value))mentalPace=event.target.value;
+  });
+  mentalHost.addEventListener('keydown',event=>{
+   if(event.key!=='Escape'||document.fullscreenElement)return;
+   if(mentalFull){event.preventDefault();toggleFullscreen();return;}
+   const run=state().mental.run;
+   if(!mentalBrowse&&run&&!run.done&&!run.paused){event.preventDefault();pauseMental();}
+  });
+  document.addEventListener('visibilitychange',()=>{
+   if(document.hidden&&mentalActive())pauseMental();
+  });
+  document.addEventListener('fullscreenchange',()=>{
+   if(mentalFull&&!document.fullscreenElement)setMentalFullscreen(false);
+  });
+  setInterval(tick,100);
  }
 
- globalThis.FurgMathLab={init,render,fresh:M.fresh,validate:M.validate,merge:M.merge,openGuide,openQuestion,openNotebook,
+ globalThis.FurgMathLab={init,render,renderMental,leaveMental,fresh:M.fresh,validate:M.validate,merge:M.merge,openGuide,openQuestion,openNotebook,
   begin,answer,advance,note,startMental,mentalAnswer,saveMark,isSaved:id=>M.marksFor(state(),'q',id),meta:id=>catalog.get(id),tick};
 })();
 

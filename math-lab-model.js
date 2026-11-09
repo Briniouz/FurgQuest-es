@@ -77,7 +77,8 @@
  const draft = s => ({choice:choice(s?.choice)?s.choice:'',confidence:own(confidences,s?.confidence)?s.confidence:'',guess:s?.guess===true,help:s?.help===true});
  const token = s => typeof s==='string'&&/^[a-z0-9-]{3,70}$/.test(s);
  const fresh = () => ({attempts:[],notebook:{},marks:{},session:null,mental:{scores:{},best:0,run:null}});
- const modeKeys = {leve:{label:'Tranquilo',boost:0,seconds:0},veloz:{label:'Velocidade',boost:2,seconds:18},brutal:{label:'Brutal',boost:4,seconds:11}};
+ const modeKeys = {leve:{label:'Tranquilo',boost:0,seconds:30},veloz:{label:'Velocidade',boost:2,seconds:18},brutal:{label:'Brutal',boost:4,seconds:11}};
+ const paces = {auto:'Padrão do ritmo',off:'Sem cronômetro','10s':'10 segundos','15s':'15 segundos','20s':'20 segundos','30s':'30 segundos','45s':'45 segundos'};
  const operations = {
   soma:{icon:'+',label:'Soma',about:'Da ponte do 10 a parcelas maiores'},
   subtracao:{icon:'−',label:'Subtração',about:'Complementos, trocas e diferenças'},
@@ -131,9 +132,12 @@
     Number.isInteger(r.seed) && stamp(r.deadline)){
    const limit=r.op==='sobrevivencia'?200:10;
    const at=int(r.index,0,limit);
-   out.mental.run={id:r.id,at:r.at,mode:r.mode,op:r.op,level:int(r.level,1,100),seed:r.seed|0,index:at,
-    hits:int(r.hits,0,at,0),xp:int(r.xp,0,6000,0),deadline:r.deadline,done:r.done===true||at>=limit,
-    last:clips(r.last,150),passed:r.passed===true};
+   const legacy=r.bank!==1, pace=own(paces,r.pace)?r.pace:legacy&&r.mode==='leve'?'off':'auto';
+   const level=int(r.level,1,100);
+   const starts=stamp(r.starts)?r.starts:r.at, paused=stamp(r.paused)?r.paused:0;
+   out.mental.run={id:r.id,at:r.at,mode:r.mode,op:r.op,level,seed:r.seed|0,index:at,bank:legacy?0:1,pace,
+    starts,paused,hits:int(r.hits,0,at,0),xp:int(r.xp,0,6000,0),deadline:r.deadline,done:r.done===true||at>=limit,
+    entry:clips(r.entry,24),last:clips(r.last,150),result:['ok','miss','time'].includes(r.result)?r.result:'',passed:r.passed===true};
   }
   return out;
  }
@@ -263,17 +267,17 @@
   };
  }
 
- function mentalSeconds(mode,level,op) {
+ function mentalSeconds(mode,level,op,pace='auto') {
   if(op==='sobrevivencia')return 20;
-  const seconds=modeKeys[mode].seconds;
-  return seconds?Math.max(6,seconds-Math.floor((level-1)/14)):0;
+  if(pace==='off')return 0;
+  if(pace!=='auto'&&own(paces,pace))return parseInt(pace,10);
+  return Math.max(6,modeKeys[mode].seconds-Math.floor((level-1)/14));
  }
 
- function mentalQuestion(run) {
-  const r=random(run.seed^Math.imul(run.index+1,0x9e3779b9));
+ function mentalItem(run,index,r,expanded) {
   const survival=run.op==='sobrevivencia';
   const op=survival?['soma','subtracao','multiplicacao','divisao'][r(0,3)]:run.op;
-  const level=survival?Math.min(100,run.index+1):run.level;
+  const level=survival?Math.min(100,index+1):run.level;
   const tier=Math.ceil(level/10)+modeKeys[run.mode].boost, max=8+Math.floor(level*level/7)+tier;
   const item=(prompt,n,d=1)=>({prompt,n,d,op});
   if(op==='soma'||op==='subtracao'){
@@ -285,24 +289,25 @@
    return op==='multiplicacao'?item(a+' × '+b,a*b):item((a*b)+' ÷ '+a,b);
   }
   if(op==='fracoes'){
-   const b=r(2,3+tier),d=tier<4?b:r(2,4+tier),a=r(1,b-1),c=r(1,d-1);
+   const b=r(2,(expanded?5:3)+tier),d=tier<4?b:r(2,4+tier),a=r(1,b-1),c=r(1,d-1);
    return item(a+'/'+b+' + '+c+'/'+d,a*d+c*b,b*d);
   }
   if(op==='porcentagem'){
    const rates=tier<=3?[10,20,25,50]:[5,12,15,20,25,35,40,60,75];
    const p=rates[r(0,rates.length-1)],base=tier<=3?20*r(1,8):r(20,40+8*tier);
-   if(tier>=7 && run.index%3!==0){
-    const increase=run.index%3===1;
+   if(tier>=7 && index%3!==0){
+    const increase=index%3===1;
     return item(base+(increase?' com aumento de ':' com desconto de ')+p+'%',base*(100+(increase?p:-p)),100);
    }
    return item(p+'% de '+base,p*base,100);
   }
   if(op==='potencias'){
-   const base=r(2,Math.min(14,3+tier)),power=r(2,tier<5?2:tier<10?3:4);
+   const maxBase=expanded?Math.min(24,13+tier):Math.min(14,3+tier);
+   const base=r(2,maxBase),power=r(2,tier<5?2:tier<10?3:4);
    return item(base+['','','²','³','⁴'][power],base**power);
   }
   if(op==='raizes'){
-   const a=r(2,6+tier),cube=tier>=6&&r(0,2)===0;
+   const a=r(expanded?1:2,(expanded?13:6)+tier),cube=tier>=6&&r(0,2)===0;
    return cube?item('∛'+a**3,a):item('√'+a**2,a);
   }
   const n=r(2,9+tier), units=tier<=4?
@@ -310,6 +315,44 @@
    [['kg','g',1000,1],['cm','m',1,100],['m²','cm²',10000,1],['m³','L',1000,1],['h','min',60,1],['mL','L',1,1000]];
   const [from,to,num,den]=units[r(0,units.length-1)];
   return item(n+' '+from+' em '+to,n*num,den);
+ }
+
+ function bankDraw(seed) {
+  return (min,max)=>{
+   seed=(seed+0x6d2b79f5)|0;
+   let x=Math.imul(seed^(seed>>>15),seed|1);
+   x^=x+Math.imul(x^(x>>>7),x|61);
+   return min+Math.floor(((x^(x>>>14))>>>0)/0x100000000*(max-min+1));
+  };
+ }
+
+ // Each round draws a reproducible sample from its level's bank.
+ // Legacy rounds keep their original sequence when resumed from a backup.
+ let cachedRound;
+ function mentalQuestion(run) {
+  if(run.bank!==1)return mentalItem(run,run.index,random(run.seed^Math.imul(run.index+1,0x9e3779b9)),false);
+  const key=[run.seed,run.mode,run.op,run.level].join('/');
+  if(cachedRound?.key!==key)cachedRound={key,draw:bankDraw(run.seed),items:[],seen:new Set()};
+  const {draw,items,seen}=cachedRound;
+  while(items.length<=run.index){
+   let item;
+   for(let i=0;i<48;i++){
+    item=mentalItem(run,items.length,draw,true);
+    if(!seen.has(item.prompt))break;
+   }
+   // Enumerate the available operand combinations if the random draws collide.
+   for(let variant=0;seen.has(item.prompt);variant++){
+    let cursor=variant;
+    item=mentalItem(run,items.length,(min,max)=>{
+     const count=max-min+1, value=min+cursor%count;
+     cursor=Math.floor(cursor/count);
+     return value;
+    },true);
+   }
+   seen.add(item.prompt);
+   items.push(item);
+  }
+  return items[run.index];
  }
 
  function numeric(input) {
@@ -334,7 +377,7 @@
  }
 
  globalThis.FurgMathLabModel={content,bank,catalog,topics,formulas,models,guided,valid,skills,reasons,levels,confidences,kinds,
-  modeKeys,operations,scoreKey,mentalSeconds,mentalQuestion,numeric,equalNumber,formatNumber,
+  modeKeys,paces,operations,scoreKey,mentalSeconds,mentalQuestion,numeric,equalNumber,formatNumber,
   fresh,validate,merge,history,due,schedule,adaptiveLevel,similar,choose,stats,markValid,marksFor,uid,own,norm,draft,emptyDraft,DAY,intervals,timeLimit};
 })();
 

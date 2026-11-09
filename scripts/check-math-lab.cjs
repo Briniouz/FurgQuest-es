@@ -27,13 +27,34 @@ module.exports=async function checkMathLab({ctx,$,vm,events,assert,exported}) {
  assert(M.equalNumber(M.numeric('-12/8'),{n:-3,d:2}));
  assert.equal(M.numeric('4/0'),null);
  assert.equal(M.numeric('1e2'),null);
- for(const op of Object.keys(M.operations)){
-  for(const level of [1,42,100]){
-   const item=M.mentalQuestion({op,level,mode:'brutal',index:0,seed:10});
-   assert(item.prompt && Number.isSafeInteger(item.n) && item.d>0);
-   assert(M.equalNumber(M.numeric(M.formatNumber(item)),item));
+ assert.equal(M.mentalSeconds('leve',1,'soma'),30);
+ assert.equal(M.mentalSeconds('brutal',100,'soma'),6);
+ assert.equal(M.mentalSeconds('leve',1,'soma','off'),0);
+ assert.equal(M.mentalSeconds('leve',1,'soma','15s'),15);
+ assert.equal(M.mentalSeconds('brutal',100,'sobrevivencia','off'),20);
+ const prompts=run=>Array.from({length:run.op==='sobrevivencia'?200:10},(_,index)=>M.mentalQuestion({...run,index}));
+ for(const mode of Object.keys(M.modeKeys)){
+  for(const op of Object.keys(M.operations)){
+   for(const level of [1,10,42,100]){
+    const round={op,level,mode,seed:10,bank:1};
+    const items=prompts(round);
+    assert.equal(new Set(items.map(q=>q.prompt)).size,10);
+    assert.notDeepEqual(items.map(q=>q.prompt),prompts({...round,seed:11}).map(q=>q.prompt));
+    assert.deepEqual(items,prompts(round));
+    for(const item of items){
+     assert(Number.isSafeInteger(item.n)&&item.d>0);
+     assert(M.equalNumber(M.numeric(M.formatNumber(item)),item));
+    }
+   }
   }
  }
+ const survival=prompts({op:'sobrevivencia',level:1,mode:'leve',seed:10,bank:1});
+ assert.equal(new Set(survival.map(q=>q.prompt)).size,200);
+ assert.equal(new Set(survival.map(q=>q.op)).size,4);
+ const legacyRun={id:'rodada-antiga',mode:'leve',op:'raizes',level:1,seed:88,index:3,at:9000,deadline:0};
+ const legacyValidated=M.validate({mental:{run:legacyRun}}).mental.run;
+ assert.equal(legacyValidated.pace,'off');
+ assert.deepEqual(M.mentalQuestion(legacyValidated),M.mentalQuestion(legacyRun));
  const t=100000000, D=M.DAY, wrong={correct:false,choice:'A'}, good={correct:true,choice:'B',guess:false,aid:false};
  let review=M.schedule(null,wrong,t);
  assert.equal(review.due,t+D);
@@ -106,13 +127,68 @@ module.exports=async function checkMathLab({ctx,$,vm,events,assert,exported}) {
  assert.equal(get().notebook[get().attempts.at(-1).qid].reason,'tempo');
 
  assert(!lab.startMental('soma',2));
- assert(lab.startMental('soma',1));
+ click({ml:'tab',value:'calculo'});
+ assert.equal(run('view'),'calculo-mental');
+ const game=$('mentalRoot');
+ const mentalClick=(ml,value)=>events['mentalRoot:click'][0]({target:{closest:()=>({dataset:{ml,value}})}});
+ const setPace=value=>events['mentalRoot:change'][0]({target:{id:'mlMentalPace',value}});
+ mentalClick('mental-fullscreen');
+ assert($('calculo-mental').classList.contains('is-immersive'));
+ mentalClick('mental-fullscreen');
+ assert(!$('calculo-mental').classList.contains('is-immersive'));
+ setPace('off');
+ assert(lab.startMental('soma',1,t));
+ assert(game.innerHTML.includes('Sem cronômetro'));
  for(let i=0;i<10;i++){
   const q=M.mentalQuestion(get().mental.run);
-  assert(lab.mentalAnswer(M.formatNumber(q)));
+  assert(lab.mentalAnswer(M.formatNumber(q),t+i+1));
  }
  assert.equal(get().mental.scores['leve/soma'].level,2);
  assert.equal(get().mental.scores['leve/soma'].xp,100);
+ assert(game.innerHTML.includes('Próximo nível liberado'));
+
+ const realDate=ctx.Date, originalMedia=ctx.matchMedia;
+ let now=t+1000;
+ ctx.Date=class extends Date{static now(){return now;}};
+ ctx.matchMedia=()=>({matches:false});
+ setPace('10s');
+ assert(lab.startMental('subtracao',1,now));
+ const first=M.mentalQuestion(get().mental.run);
+ assert.equal(get().mental.run.deadline,now+10000);
+ assert(game.innerHTML.includes('0:10'));
+ now+=2000;
+ assert(lab.mentalAnswer(M.formatNumber(first),now));
+ assert(game.innerHTML.includes('<fieldset disabled>'));
+ assert(!lab.mentalAnswer('1',now));
+ assert.equal(get().mental.run.index,1);
+ now=get().mental.run.starts;
+ assert.equal(get().mental.run.deadline,now+10000,'Next timer lost transition time');
+ lab.tick(now);
+ assert(game.innerHTML.includes('Conta 2 de 10'));
+ assert(!game.innerHTML.includes('<fieldset disabled>'));
+ const next=M.mentalQuestion(get().mental.run);
+ assert.notEqual(first.prompt,next.prompt);
+ const previousDeadline=get().mental.run.deadline;
+ now+=1000;
+ $('mlMentalAnswer').value='3';
+ run("setView('desempenho')");
+ assert.equal(get().mental.run.paused,now);
+ now+=42000;
+ run("setView('calculo-mental')");
+ assert(game.innerHTML.includes('Rodada pausada')&&game.innerHTML.includes('0:09'));
+ assert(!lab.mentalAnswer('3',now));
+ mentalClick('mental-resume');
+ assert.equal(get().mental.run.deadline,previousDeadline+42000);
+ assert(game.innerHTML.includes('value="3"'));
+ now=get().mental.run.deadline;
+ lab.tick(now);
+ lab.tick(now);
+ assert.equal(get().mental.run.index,2);
+ assert(game.innerHTML.includes('Tempo esgotado'));
+ assert.equal(get().mental.run.hits,1);
+ ctx.matchMedia=originalMedia;
+ ctx.Date=realDate;
+
  assert(lab.startMental('sobrevivencia',1,t));
  const q=M.mentalQuestion(get().mental.run);
  assert(lab.mentalAnswer(M.formatNumber(q),t+10));
@@ -145,5 +221,5 @@ module.exports=async function checkMathLab({ctx,$,vm,events,assert,exported}) {
  assert.equal(run('JSON.stringify(state.dia2)'),beforeSecond);
  assert.equal(run('JSON.stringify(state.enem)'),beforeBank);
  assert.equal(run('JSON.stringify(state.skills)'),beforeSkills);
- console.log('PASS: math lab bank, 32 guided keys, clues, strategies, confidence, spaced/adaptive practice, timed grade, mental progress, collection and real backup.');
+ console.log('PASS: math lab bank, 32 guided keys, clues, strategies, confidence, spaced/adaptive practice, timed grade, mental banks, transitions, pause/resume, fullscreen, collection and real backup.');
 };

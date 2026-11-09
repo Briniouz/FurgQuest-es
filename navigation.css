@@ -7,3 +7,11 @@
 .page-back>span:first-child{font-size:19px}.page-back:hover:not(:disabled){background:var(--surface-3)}.page-back:disabled{opacity:.45;cursor:default}.page-back:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
 body{padding-bottom:60px}@media(max-width:600px){.page-back{left:10px;bottom:12px;padding:9px 13px}}
 .brand .brand-study{font-size:16px;font-weight:600;letter-spacing:-.4px;text-transform:none;white-space:nowrap}.brand .brand-study strong{font-weight:800}.brand .brand-mark{object-fit:contain;filter:none}
+
+.header .header-nav nav{justify-content:safe center}
+@media(max-width:1120px){.header .header-nav nav{justify-content:flex-start}}
+@media(max-width:520px){
+ .header .header-nav nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));height:auto;min-height:56px}
+ #mainNavigation :is(.nav-trigger,.nav-top-item){min-width:0;padding:6px 1px;white-space:normal;text-align:center;gap:4px}
+ #mainNavigation button>strong{max-width:100%;white-space:normal;font-size:clamp(8.5px,2.55vw,10.5px)}
+}
