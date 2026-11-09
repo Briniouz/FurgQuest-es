@@ -43,6 +43,7 @@
     estudos:[
      ['aulas','Estudar do zero','Aulas com exemplos, experimentos e prática','↗'],
      ['mapa','Mapa mental','Expande os conceitos e abre as aulas no quadro','⤢'],
+     ['conceitos','Mapa de conceitos','Pistas, fórmulas e questões por matéria','↝'],
      ['formulas','Fórmulas e conceitos','Guia de Matemática, Física, Química e Biologia','ƒ'],
      ['trilhas','Trilhas de estudo','Pré-requisitos, exemplos e exercícios','▥'],
     ],
@@ -55,6 +56,7 @@
   formulas:{view:'dia2',open:()=>globalThis.FurgDia2?.showGuide()},
   exercicios:{view:'dia2',open:()=>globalThis.FurgDia2?.showExercises()},
   mapa:{view:'aulas'},
+  conceitos:{view:'aulas'},
  };
  const views=new Set(['inicio','banco','leve','enem','anatomia','fuvest','evolucao','simulados','desempenho','trilhas','leituras','biblioteca','linguagens','acervo','configuracoes','vespera','dia2','aulas','matematica-lab','calculo-mental']);
  const get=space=>Object.hasOwn(areas,space)?areas[space]:null;

@@ -51,16 +51,20 @@
   </li>`;
  }
 
- function markup(subject,completed,visited,last){
+ function markup(subject,completed,visited,last,concepts){
   const map=maps[subject], resume=byId.get(last);
-  return `<section class="d2-map panel" aria-labelledby="aulaTitle">
+  const otherMap=concepts?'mapa':'conceitos', otherPath=`dia-2/${otherMap}/${subject}`;
+  return `<section class="d2-map panel${concepts?' d2-concepts':''}" aria-labelledby="aulaTitle">
    <header class="d2-map-heading">
-    <h2 id="aulaTitle" tabindex="-1">Mapa mental</h2>
-    ${subjectTabs(subject,'mapa',completed)}
-    <a class="outline d2-map-lessons-link" href="#dia-2/aulas/${subject}" data-study-route="dia-2/aulas/${subject}">Aulas →</a>
+    <h2 id="aulaTitle" tabindex="-1">${concepts?'Conceitos':'Mapa mental'}</h2>
+    ${subjectTabs(subject,concepts?'conceitos':'mapa',completed)}
+    <div class="d2-map-viewlinks d2-map-lessons-link">
+     <a class="outline d2-map-mode-link" href="#${otherPath}" data-study-route="${otherPath}">${concepts?'Mapa de aulas':'Conceitos →'}</a>
+     <a class="outline" href="#dia-2/aulas/${subject}" data-study-route="dia-2/aulas/${subject}">Aulas</a>
+    </div>
    </header>
    <div class="d2-map-tools">
-    <label class="d2-map-search"><span class="sr-only">Buscar aula ou tema em ${escape(map.label)}</span>
+    ${concepts?globalThis.FurgDia2Concepts.toolbar(subject):`<label class="d2-map-search"><span class="sr-only">Buscar aula ou tema em ${escape(map.label)}</span>
      <input type="search" id="d2MapSearch" placeholder="Buscar aula ou tema" autocomplete="off"></label>
     <label class="d2-map-paths"><span class="sr-only">Caminho de estudo</span>
      <select id="d2MapPath">
@@ -69,7 +73,7 @@
      </select>
     </label>
     ${resume?`<a class="outline d2-map-resume" href="#${resume.route}" data-study-route="${resume.route}"
-      title="${escape(resume.title)}">Continuar de onde parei</a>`:''}
+      title="${escape(resume.title)}">Continuar de onde parei</a>`:''}`}
     <div class="d2-map-controls" role="group" aria-label="Controles do quadro">
      <div class="d2-map-zoom" role="group" aria-label="Zoom">
       <button type="button" class="outline" data-map-zoom="out" aria-label="Diminuir zoom">−</button>
@@ -77,7 +81,8 @@
       <button type="button" class="outline" data-map-zoom="in" aria-label="Aumentar zoom">+</button>
       <button type="button" class="outline" data-map-zoom="fit">Enquadrar</button>
      </div>
-     <button type="button" class="outline" id="d2MapExpand">Expandir tudo</button>
+     ${concepts?`<button type="button" class="outline" id="d2ConceptReset" disabled>Reorganizar</button>`:
+      '<button type="button" class="outline" id="d2MapExpand">Expandir tudo</button>'}
      <button type="button" class="outline d2-map-wide" id="d2MapWide" aria-pressed="false">
       <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 2H2v4m8-4h4v4M2 10v4h4m8-4v4h-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
       <span>Tela ampla</span></button>
@@ -87,7 +92,7 @@
     <div class="d2-map-extent">
      <div class="d2-map-world">
       <svg class="d2-map-lines" aria-hidden="true" focusable="false"></svg>
-      <button type="button" class="d2-map-node d2-map-root" id="d2MapRoot" aria-expanded="true" aria-controls="d2MapBranches">
+      ${concepts?'<div id="d2ConceptRows"></div>':`<button type="button" class="d2-map-node d2-map-root" id="d2MapRoot" aria-expanded="true" aria-controls="d2MapBranches">
        <small>CONCEITO DE PARTIDA</small><strong>${escape(map.root.title)}</strong><span>${escape(map.root.description)}</span>
       </button>
       <div class="d2-map-branches" id="d2MapBranches">
@@ -100,14 +105,16 @@
          ${branch.lessons.map(lesson=>lessonCard(lesson,completed,visited)).join('')}
         </ol></section>`).join('')}
       </div>
-      <p class="d2-map-empty" id="d2MapEmpty" hidden>Nenhuma aula encontrada. Tenta outro tema ou caminho.</p>
+      <p class="d2-map-empty" id="d2MapEmpty" hidden>Nenhuma aula encontrada. Tenta outro tema ou caminho.</p>`}
      </div>
     </div>
    </div>
    <div class="d2-map-footer">
-    <p id="d2MapHint"><span class="d2-map-desktop-hint">Arrasta para mover · </span>Prioridade e tempo estimados</p>
+    <p id="d2MapHint">${concepts?'Toca no título pra abrir a ficha · Arrasta pelo ⠿ ou usa as setas · Níveis estimados':
+     '<span class="d2-map-desktop-hint">Arrasta para mover · </span>Prioridade e tempo estimados'}</p>
     <p id="d2MapResults" role="status"></p>
    </div>
+   ${concepts?'<section class="d2-concept-detail" id="d2ConceptDetail" aria-label="Ficha do conceito" hidden></section>':''}
   </section><dialog class="d2-map-dialog" aria-labelledby="aulaTitle"></dialog>`;
  }
 
@@ -117,7 +124,7 @@
   if(!preserveWide)wide=false;
  }
 
- function bind(host,subject){
+ function bind(host,subject,concepts){
   const board=host.querySelector('.d2-map');
   if(!board)return;
   const get=selector=>board.querySelector(selector), all=selector=>[...board.querySelectorAll(selector)];
@@ -134,9 +141,12 @@
   const shown=()=>groups.filter(group=>!group.column.hidden);
   const initialBranches=()=>shown().filter((_,index)=>!mobile.matches||index===0).map(group=>group.data.id);
   let openRoot=true, opened=new Set(initialBranches()), scale=1, autoFit=true, frame, drag;
+  const fit=()=>{autoFit=true;refresh();};
+  const drawConcepts=concepts?globalThis.FurgDia2Concepts.bind(board,subject,{signal,fit,refresh,mobile}):null;
 
   // O CSS faz o layout. As curvas são redesenhadas a partir dos cartões visíveis.
   function draw(){
+   if(drawConcepts){drawConcepts(scale);return;}
    if(mobile.matches)return;
    const origin=world.getBoundingClientRect();
    const box=node=>{
@@ -178,7 +188,7 @@
   function refresh(){
    cancelAnimationFrame(frame);
    frame=requestAnimationFrame(()=>{
-    if(mobile.matches)return;
+    if(mobile.matches){drawConcepts?.(1);return;}
     if(!autoFit){layout();return;}
     // Fora do diálogo o quadro encolhe com o conteúdo, até o limite do CSS.
     const height=dialog.open?viewport.clientHeight:parseFloat(getComputedStyle(viewport).maxHeight)-2;
@@ -318,11 +328,11 @@
     layout(scale+(zoom==='in'?.15:-.15),true);
    }
   },{signal});
-  input.addEventListener('input',()=>{paths.value='';filter();},{signal});
-  paths.addEventListener('change',()=>{input.value='';filter();},{signal});
+  input?.addEventListener('input',()=>{paths.value='';filter();},{signal});
+  paths?.addEventListener('change',()=>{input.value='';filter();},{signal});
 
   viewport.addEventListener('pointerdown',event=>{
-   if(mobile.matches||event.pointerType!=='mouse'||event.button!==0||event.target.closest('button,a,[data-map-lesson]'))return;
+   if(mobile.matches||event.pointerType!=='mouse'||event.button!==0||event.target.closest('button,a,[data-map-lesson],[data-concept-card]'))return;
    drag={id:event.pointerId,x:event.clientX,y:event.clientY,left:viewport.scrollLeft,top:viewport.scrollTop};
    viewport.setPointerCapture(event.pointerId);
    viewport.classList.add('is-panning');
@@ -340,7 +350,7 @@
    },{signal});
   }
   window.addEventListener('resize',refresh,{signal});
-  sync();
+  if(!concepts)sync();
   if(wide)enterWide();
  }
 

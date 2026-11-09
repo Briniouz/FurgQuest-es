@@ -174,6 +174,34 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
   }
  }
  assert.equal(lessonIds.size,36);
+ const concepts=ctx.FURG_DIA2_CONCEPTS, linkedQuestions=new Set();
+ for(const [subject,trails] of Object.entries(concepts)){
+  const route='dia-2/conceitos/'+subject;
+  assert.equal(ctx.FurgStudyAreas.parse('#'+route).path,route);
+  for(const trail of trails){
+   const nodes=trail.rows.flat(), preceding=new Set();
+   for(const node of nodes){
+    const [id,letter,level]=node.exam, q=bank.get(id);
+    assert(node.cue&&node.formula&&node.idea&&!preceding.has(node.id));
+    assert((node.from||[]).every(parent=>preceding.has(parent)));
+    assert(lessons[subject].some(lesson=>lesson.id===node.lesson));
+    assert([2,3].includes(level)&&ctx.FurgEnem.isGradable(id)&&q.quality.keyVerified&&q.answer===letter,id);
+    assert(ctx.FURG_ENEM_SUBJECTS_DATA.questions[id].subjects.includes(subject),id);
+    assert(!linkedQuestions.has(id),id);
+    preceding.add(node.id);
+    linkedQuestions.add(id);
+   }
+  }
+ }
+ assert.equal(linkedQuestions.size,43);
+ const example=ctx.FurgDia2Concepts.workAt(4);
+ assert.equal(example.pull+example.friction,example.total);
+ assert.equal(example.total,24);
+ assert.equal(example.final,28);
+ assert.equal(example.speed,Math.sqrt(28));
+ inApp("openStudyRoute('#dia-2/conceitos/fisica')");
+ assert($('dia2LessonsRoot').innerHTML.includes('Depois do teorema · colisões'));
+ assert($('dia2LessonsRoot').innerHTML.includes('Provas e gabaritos do Inep'));
  assert.equal(lessons.fisica[0].id,'energia');
  assert.equal(Object.keys(ctx.FurgDia2Labs.labs).length,5);
  assert(ctx.FurgDia2Labs.labs.rampa.draw(6).includes('80 J'));
@@ -218,5 +246,6 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  assert(ctx.FurgEnemSim.selectDay('2'));
  assert.equal($('enemExamDay').value,'2');
  console.log('PASS: 96 intact cards, 24 original exercises with linked explanations, 25 fingerprint-checked questions and official keys, draft-safe grading, rollback, notebook, flashcards, high-confidence review, legacy backup, and subject/day links.');
+ console.log('PASS: 43 concept cards with distinct verified ENEM questions, all subject routes and work–energy model.');
  console.log('PASS: 36 complete lessons, four connected maps, five visual labs, valid deep links, progress merge, legacy import and resume.');
 };

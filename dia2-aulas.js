@@ -20,7 +20,7 @@
 
  function switches(subject,mode){
   return `<nav class="aula-mode-tabs" aria-label="Formatos de estudo">
-   ${[['aulas','Aulas'],['mapa','Mapa mental']].map(([id,label])=>{
+   ${[['aulas','Aulas'],['mapa','Mapa mental'],['conceitos','Conceitos']].map(([id,label])=>{
     const path=route(subject,null,id);
     return `<a href="#${path}" data-study-route="${path}" ${id===mode?'aria-current="page"':''}>${label}</a>`;
    }).join('')}
@@ -85,20 +85,23 @@
   const host=$('dia2LessonsRoot');
   if(!adapter||!host)return;
   const subject=valid(selection.subject)?selection.subject:'fisica';
-  const mode=selection.page==='mapa'?'mapa':'aulas', lessons=catalog[subject], completed=validate(adapter.getProgress());
+  const concepts=selection.page==='conceitos', mapView=concepts||selection.page==='mapa';
+  const lessons=catalog[subject], completed=validate(adapter.getProgress());
   const lesson=lessons.find(item=>item.id===selection.lesson)||lessons.find(item=>!completed[item.id])||lessons[0];
   const count=lessons.filter(item=>completed[item.id]).length;
   const {label}=guide.subjects[subject];
   const visits=validateVisits(adapter.getVisits()), latest=latestVisit(visits);
-  const source='<p class="aula-source">Aulas e exercícios autorais. <a href="https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem" target="_blank" rel="noopener noreferrer">Matrizes de Referência do Inep ↗</a></p>';
-  maps.unmount(mode==='mapa');
-  if(mode==='mapa'){
+  const source=concepts?
+   '<p class="aula-source">Fichas e simulação autorais. <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos" target="_blank" rel="noopener noreferrer">Provas e gabaritos do Inep ↗</a></p>':
+   '<p class="aula-source">Aulas e exercícios autorais. <a href="https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem" target="_blank" rel="noopener noreferrer">Matrizes de Referência do Inep ↗</a></p>';
+  maps.unmount(mapView);
+  if(mapView){
    active=null;
    host.innerHTML=`<div class="aula-view" data-subject="${subject}">
-    <h1 id="aulaPageTitle" class="sr-only">Mapa mental do Dia 2</h1>
-    ${maps.markup(subject,completed,visits,latest)}${source}
+    <h1 id="aulaPageTitle" class="sr-only">${concepts?'Mapa de conceitos':'Mapa mental'} do Dia 2</h1>
+    ${maps.markup(subject,completed,visits,latest,concepts)}${source}
    </div>`;
-   maps.bind(host,subject);
+   maps.bind(host,subject,concepts);
    return;
   }
   // A abertura marca a aula como estudando. A conclusão continua sendo explícita.
@@ -113,7 +116,7 @@
      <span id="aulaProgressLabel">${count} de ${lessons.length} estudadas</span>
     </div>
    </header>
-   <div class="aula-nav">${maps.subjectTabs(subject,mode,completed)}${switches(subject,mode)}</div>
+   <div class="aula-nav">${maps.subjectTabs(subject,'aulas',completed)}${switches(subject,'aulas')}</div>
    ${lessonMarkup(subject,lessons,lesson,completed)}${source}
   </div>`;
  }
