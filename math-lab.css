@@ -1,0 +1,204 @@
+body:has(#matematica-lab.active) .study-day-links { display: none; }
+#matematica-lab, #mlDialog { font-size: 14px; line-height: 1.6; }
+#matematica-lab h2 { font-size: clamp(22px,3vw,31px); line-height: 1.2; margin: 0 0 10px; }
+#matematica-lab h3 { font-size: 17px; line-height: 1.35; margin: 2px 0 7px; }
+#matematica-lab h4 { font-size: 15px; margin: 0 0 7px; }
+#matematica-lab p, #mlDialog p { margin: 7px 0 12px; }
+#mlFocus, #mlFeedback, #mlClue { scroll-margin-top: 135px; }
+.ml-tabs, .ml-actions, .ml-chips, .ml-modes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+.ml-tabs { margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.ml-tabs button { border-radius: 8px; padding: 8px 11px; }
+.ml-tabs button[aria-pressed="true"] { background: var(--surface-3); color: var(--blue); font-weight: 700; }
+.ml-overview, .ml-grid, .ml-routes { display: grid; gap: 12px; grid-template-columns: repeat(2,minmax(0,1fr)); }
+.ml-overview { grid-template-columns: minmax(0,1.65fr) minmax(0,1fr); }
+.ml-grid, .ml-list { margin: 13px 0; align-items: start; }
+.ml-list { display: grid; gap: 9px; }
+.ml-panel {
+  min-width: 0;
+  padding: 15px 17px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+.ml-feature { border-top: 3px solid var(--action); background: linear-gradient(120deg,var(--surface-3),var(--surface)); }
+.ml-summary { margin: 10px 0; }
+.ml-summary div { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--line); padding: 7px 0; }
+.ml-summary dd { margin: 0; text-align: right; font-weight: 700; }
+.ml-muted { color: var(--muted); font-size: 12px; }
+.ml-badge { font-size: 11px; line-height: 1.4; padding: 4px 7px; border-radius: 6px; background: var(--surface-3); color: var(--ink); }
+.ml-actions + .ml-list, .ml-list + .ml-actions { margin-top: 9px; }
+.ml-form, .ml-filters, .ml-answer { display: grid; gap: 9px; }
+.ml-filters { grid-template-columns: repeat(4,minmax(0,1fr)); margin: 12px 0; }
+.ml-filters label, .ml-answer label, .ml-form label, .ml-inline-field { display: grid; gap: 3px; color: var(--ink); font-weight: 650; }
+.ml-filters .ml-check, .ml-answer .ml-check { display: flex; gap: 7px; align-items: center; font-weight: 500; }
+.ml-inline-field { max-width: 380px; margin: 12px 0; }
+#matematica-lab :is(input:not([type="radio"],[type="checkbox"]), select, textarea),
+#mlDialog :is(select,textarea) {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+}
+#matematica-lab :is(input[type="radio"],input[type="checkbox"]) { accent-color: var(--action); }
+#matematica-lab :is(button,input,select,summary):focus-visible, #mlDialog :is(button,select,textarea):focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+.ml-form textarea { resize: vertical; }
+.ml-form button { justify-self: start; }
+.ml-question { max-width: 970px; margin: 0 auto; }
+.ml-question > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.ml-question .enem-text { background: transparent; border: 0; padding: 0; }
+.ml-enunciation { overflow-wrap: anywhere; }
+.ml-enunciation img, .ml-option img { max-width: 100%; height: auto; }
+.ml-clock { background: var(--surface-3); padding: 8px 11px; border-radius: 6px; width: fit-content; }
+.ml-clock strong { font-variant-numeric: tabular-nums; margin-left: 5px; }
+.ml-clue { background: var(--surface-2); padding: 10px 12px; border-radius: 8px; }
+.ml-options { min-width: 0; margin: 12px 0; padding: 0; border: 0; }
+.ml-options legend { font-weight: 700; margin-bottom: 4px; }
+.ml-option {
+  display: grid;
+  grid-template-columns: auto 24px minmax(0,1fr);
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.ml-option:has(:checked) { background: var(--surface-3); border-color: var(--blue); }
+.ml-option:has(:disabled) { cursor: default; }
+.ml-option.correct, .ml-feedback.ok { border-color: #388763; }
+.ml-option.incorrect, .ml-feedback.miss { border-color: #b75b68; }
+.ml-answer { padding: 10px 12px; background: var(--surface-2); border-radius: 8px; }
+.ml-answer select { max-width: 265px; }
+.ml-answer button { justify-self: start; }
+.ml-feedback { padding: 12px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface-2); }
+.ml-routes { margin: 7px 0 11px; }
+.ml-routes article { padding: 10px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); min-width: 0; }
+.ml-fig { margin: 12px 0; padding: 10px; background: var(--surface-2); border-radius: 8px; }
+.ml-fig figcaption { font-weight: 650; margin-bottom: 8px; }
+.ml-fig > div { display: flex; gap: 10px; flex-wrap: wrap; }
+.ml-fig > div > div { max-width: 214px; min-width: 130px; flex: 1; }
+.ml-fig svg { width: 100%; height: auto; font-size: 11px; fill: var(--ink); }
+.ml-fig svg circle { fill: var(--blue); }
+.ml-graph-axis { stroke: var(--muted); }
+.ml-graph-grid { stroke: var(--muted); opacity: .42; stroke-dasharray: 3 3; }
+.ml-rule { font-weight: 700; border-left: 3px solid var(--action); padding: 7px 10px; background: var(--surface-3); border-radius: 6px; }
+.ml-defs { margin: 8px 0; }
+.ml-defs dt { font-weight: 700; margin-top: 8px; }
+.ml-defs dd { margin: 1px 0 0; }
+.ml-example { border-radius: 7px; background: var(--surface-2); padding: 8px 10px; margin: 8px 0; }
+.ml-note { white-space: pre-wrap; overflow-wrap: anywhere; }
+.ml-table { overflow-x: auto; }
+.ml-table table { width: 100%; border-collapse: collapse; }
+.ml-table td, .ml-table th { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); }
+.ml-tally { list-style: none; padding: 0; }
+.ml-tally li { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--line); padding: 5px 0; }
+.ml-sheet article { margin: 8px 0; }
+.ml-sheet section { margin-top: 16px; }
+#matematica-lab summary { cursor: pointer; color: var(--blue); font-weight: 700; }
+#mlDialog {
+  box-sizing: border-box;
+  width: min(600px,calc(100vw - 22px));
+  max-height: calc(100dvh - 24px);
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 15px;
+}
+#mlDialog::backdrop { background: #10242995; }
+.ml-dialog-head { display: flex; align-items: start; justify-content: space-between; gap: 10px; }
+.ml-dialog-head h2 { margin: 0 0 10px; font-size: 21px; }
+
+/* O cálculo mental tem um painel próprio, com contraste independente do tema. */
+.ml-speed {
+  --speed-ink: #f6f5ff;
+  --speed-muted: #bdbee0;
+  --speed-accent: #ffce55;
+  --speed-line: #343953;
+  --speed-blue: #5fdbff;
+  min-width: 0;
+  color: var(--speed-ink);
+  background: radial-gradient(ellipse at 50% -30%,#30325e,transparent 70%),#0b1027;
+  padding: clamp(14px,3.5vw,29px);
+  border: 1px solid var(--speed-line);
+  border-radius: 15px;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+.ml-speed .ml-muted, .ml-speed .eyebrow { color: var(--speed-muted); }
+.ml-speed .ml-actions, .ml-modes { justify-content: center; }
+.ml-speed .outline, .ml-speed .quiet { background: #1b213b; color: var(--speed-ink); border-color: var(--speed-line); }
+.ml-speed .primary { background: var(--speed-accent); color: #151324; border-color: var(--speed-accent); }
+.ml-modes button[aria-pressed="true"] { color: var(--speed-accent); border-color: var(--speed-accent); }
+.ml-operations { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; margin: 16px 0; }
+.ml-operation, .ml-level, .ml-survival {
+  background: #121831;
+  border: 1px solid var(--speed-line);
+  border-radius: 10px;
+  color: var(--speed-ink);
+  min-width: 0;
+  padding: 12px 8px;
+}
+.ml-operation { display: grid; justify-items: center; align-content: start; gap: 3px; }
+.ml-operation:hover, .ml-level:hover:not(:disabled) { border-color: var(--speed-blue); }
+.ml-operation small { color: var(--speed-muted); font-size: 11px; }
+.ml-operation strong { font-size: 16px; }
+.ml-op-icon { color: var(--speed-blue); font-weight: 800; font-size: 23px; }
+.ml-op-level { font-size: 11px; color: var(--speed-accent); }
+.ml-path-levels { width: fit-content; margin: 0 auto; display: grid; gap: 12px; position: relative; padding: 0 33px; }
+.ml-path-levels::before { content: ''; border-left: 2px dashed var(--speed-line); position: absolute; left: 50%; inset-block: 10px; }
+.ml-level { position: relative; width: 79px; min-height: 65px; padding: 5px; font-weight: 750; }
+.ml-level:nth-child(even) { transform: translateX(24px); }
+.ml-level:nth-child(odd) { transform: translateX(-24px); }
+.ml-level.current { border-color: var(--speed-accent); color: var(--speed-accent); }
+.ml-level:disabled { opacity: .58; }
+#matematica-lab .ml-chapter { margin: 12px 0; }
+.ml-speed-play header { display: flex; justify-content: space-between; text-align: left; gap: 10px; }
+.ml-speed-play header > strong { color: var(--speed-accent); font-size: 20px; }
+.ml-speed progress { width: 100%; accent-color: var(--speed-blue); display: block; }
+.ml-speed-time { display: block; text-align: left; font-size: 12px; margin-top: 8px; }
+.ml-speed-time progress { accent-color: #77e589; }
+#matematica-lab .ml-equation {
+  font-size: clamp(24px,6vw,57px);
+  line-height: 1.1;
+  font-weight: 800;
+  margin: 18px 0 6px;
+  overflow-wrap: anywhere;
+}
+#matematica-lab .ml-speed-last { min-height: 21px; color: var(--speed-muted); }
+.ml-mental-form { margin: 8px auto 13px; max-width: 355px; }
+#matematica-lab #mlMentalAnswer { background: #080d22; border-color: var(--speed-line); color: var(--speed-ink); text-align: center; font-size: 22px; }
+.ml-keypad { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 7px; margin-top: 9px; }
+.ml-keypad button { min-height: 41px; font-weight: 750; padding: 6px 4px; }
+.ml-speed .ml-keypad button:focus-visible { outline-color: var(--speed-blue) !important; }
+@media (max-width: 670px) {
+  .ml-grid, .ml-overview, .ml-routes { grid-template-columns: minmax(0,1fr); }
+  .ml-filters, .ml-operations { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .ml-tabs { gap: 4px; }
+  .ml-tabs button { padding: 6px 8px; }
+  .ml-panel { padding: 12px; }
+  #matematica-lab :is(input:not([type="checkbox"],[type="radio"]),select), #mlDialog :is(select,textarea) { font-size: 16px; }
+}
+@media print {
+  body:has(#matematica-lab.active .ml-sheet) { background: white; color: black; padding: 0; }
+  body:has(#matematica-lab.active .ml-sheet) :is(.header,.page-heading,.ml-tabs,.ml-noprint,footer,#pageBack,#studyGuideLauncher,#quickLookupLauncher,#lightLauncher) { display: none !important; }
+  body:has(#matematica-lab.active .ml-sheet) main { width: auto; max-width: none; margin: 0; }
+  .ml-sheet .ml-panel { background: white; color: black; box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+  .ml-sheet :is(.ml-muted,.eyebrow,.enem-text) { color: black; }
+}

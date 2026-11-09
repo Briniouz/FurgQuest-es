@@ -334,7 +334,8 @@
    <h2 class="d2-subheading">Escolhe a matéria</h2><div class="d2-subject-grid">${Object.entries(subjects).map(([id,meta]) => `
     <article class="d2-panel d2-subject-card"><span aria-hidden="true" class="d2-symbol">${meta.icon}</span>
     <h3>${esc(meta.label)}</h3><p>${esc(meta.intro)}</p>
-    ${button('subject-guide','Abrir guia · '+search('',id).length+' fichas',attr('subject',id))}</article>`).join('')}</div>
+    ${button('subject-guide','Abrir guia · '+search('',id).length+' fichas',attr('subject',id))}
+    ${id==='matematica'?button('math-lab','Laboratório de Matemática →','','quiet'):''}</article>`).join('')}</div>
    <div class="d2-actions d2-more">${button('exam','Simulado do 2º dia →')}${button('trilhas','Trilhas completas')}</div>`;
  }
 
@@ -508,6 +509,7 @@
    case 'flash-next': flashIndex++; revealed = false; render(); focus('d2Focus'); break;
    case 'bank': globalThis.FurgEnem.openSubject(area); break;
    case 'trilhas': adapter.setView('trilhas'); break;
+   case 'math-lab': adapter.setView('matematica-lab'); break;
    case 'exam':
     adapter.setView('simulados');
     globalThis.FurgEnemSim.selectDay('2');

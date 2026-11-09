@@ -2,7 +2,7 @@
 (() => {
  const $=id=>document.getElementById(id),nav=$('mainNavigation'),previous=$('navScrollPrevious'),next=$('navScrollNext');
  if(!nav||!previous||!next)return;
- const names=['provas','estudos'],owners={banco:'provas',enem:'provas',fuvest:'provas',anatomia:'provas',acervo:'provas',simulados:'provas',evolucao:'estudos',leve:'estudos',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos',desempenho:'estudos',configuracoes:'estudos'};
+ const names=['provas','treinamento','estudos'],owners={vespera:'treinamento',dia2:'treinamento','matematica-lab':'treinamento',banco:'provas',enem:'provas',fuvest:'provas',anatomia:'treinamento',acervo:'provas',simulados:'provas',evolucao:'estudos',leve:'estudos',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos',desempenho:'estudos',configuracoes:'estudos'};
  const topItems=()=>Array.from(nav.querySelectorAll('button'));
  let adapter,opened='',bound=false,currentView='',returning=false;
  const trail=[];
