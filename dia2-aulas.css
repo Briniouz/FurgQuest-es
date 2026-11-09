@@ -42,7 +42,7 @@ html:not([data-design="prisma"]) .study-hub .study-subject-link:hover {
 
 html[data-study-view="aulas"] .page-heading { display: none; }
 .aula-view { max-width: 1160px; margin: 0 auto; }
-.aula-view :is(a,button,summary,input,.d2-map-viewport):focus-visible {
+.aula-view :is(a,button,summary,input,select,.d2-map-viewport):focus-visible {
   outline: 2px solid var(--d2-accent);
   outline-offset: 3px;
 }
@@ -206,23 +206,30 @@ html[data-study-view="aulas"] .page-heading { display: none; }
   line-height: 1.15;
   font-variant-numeric: tabular-nums;
 }
-.d2-map { min-width: 0; padding: clamp(12px,1.75vw,20px); }
-.d2-map-heading { display: flex; flex-wrap: wrap; align-items: center; gap: 9px 14px; margin-bottom: 14px; }
-.d2-map-heading h2 { margin: 3px 0 0; font-size: clamp(23px,3vw,33px); letter-spacing: -.035em; line-height: 1.1; }
-.d2-map-overall { display: grid; gap: 3px; min-width: 126px; margin-left: auto; font-size: 12px; }
-.d2-map-overall strong { color: var(--d2-accent); }
-.d2-map-overall span { color: var(--map-muted); font-variant-numeric: tabular-nums; }
-.d2-map-overall progress { width: 100%; height: 7px; accent-color: var(--d2-accent); }
-.d2-map .d2-map-lessons-link { margin-left: 2px; }
-.d2-map .aula-subjects { height: auto; margin-bottom: 8px; }
-.d2-map-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
-.d2-map-search { flex: 1 1 168px; }
-.d2-map-search input { width: 100%; min-height: 38px; }
+.d2-map { min-width: 0; padding: clamp(8px,1vw,12px); }
+.d2-map-heading {
+  display: grid;
+  grid-template: "title subjects lessons" auto / auto minmax(0,1fr) auto;
+  align-items: center;
+  gap: 6px 11px;
+  margin-bottom: 6px;
+}
+.d2-map-heading h2 { grid-area: title; margin: 0; font-size: 20px; letter-spacing: -.025em; line-height: 1.2; }
+.d2-map-lessons-link { grid-area: lessons; }
+.d2-map .aula-subjects { grid-area: subjects; height: auto; }
+.d2-map .aula-subject-tab { min-height: 32px; padding: 3px 7px; gap: 4px; font-size: 12px; }
+.d2-map .aula-subject-tab small { padding: 1px 4px; }
+.d2-map-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin-bottom: 7px; }
+.d2-map-search { flex: 1 1 148px; max-width: 330px; }
+.d2-map-paths { flex: 0 1 184px; min-width: 0; }
+#d2MapSearch, #d2MapPath { width: 100%; min-height: 32px; height: 32px; padding: 3px 7px; border-radius: 8px; font-size: 12px; }
+#d2MapPath { border-color: var(--d2-border); background: var(--d2-tint); color: var(--d2-accent); }
+:root[data-theme="dark"] #d2MapPath { color-scheme: dark; }
 .d2-map-controls, .d2-map-zoom { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
 .d2-map-controls { margin-left: auto; }
 .d2-map-controls .outline, .d2-map-tools .outline, .d2-map-heading .outline {
-  min-height: 36px;
-  padding: 5px 9px;
+  min-height: 32px;
+  padding: 3px 7px;
   font-size: 12px;
 }
 .d2-map .outline:is(.d2-map-wide,.d2-map-resume) { background: var(--d2-tint); color: var(--d2-accent); border-color: var(--d2-border); }
@@ -232,31 +239,19 @@ html[data-study-view="aulas"] .page-heading { display: none; }
 }
 .d2-map-wide { display: inline-flex; align-items: center; gap: 6px; }
 .d2-map-zoom { margin-right: 3px; padding-right: 7px; border-right: 1px solid var(--line); }
-.d2-map-zoom button:not([data-map-zoom="fit"]) { min-width: 36px; font-size: 16px; }
-.d2-map-zoom output { min-width: 35px; text-align: center; font-size: 11px; font-variant-numeric: tabular-nums; }
-.d2-map-paths { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin: 10px 0; }
-.d2-map-paths > span { color: var(--map-muted); font-size: 12px; font-weight: 690; margin-right: 2px; }
-.d2-map-paths button {
-  min-height: 30px;
-  padding: 3px 9px;
-  border: 1px solid var(--d2-border);
-  border-radius: 9px;
-  background: var(--d2-tint);
-  color: var(--d2-accent);
-  font-size: 12px;
-}
-.d2-map-paths button:is(:hover,[aria-pressed="true"]) { background: var(--d2-selected); border-color: var(--d2-accent); }
+.d2-map-zoom button:not([data-map-zoom="fit"]) { min-width: 30px; font-size: 16px; }
+.d2-map-zoom output { min-width: 31px; text-align: center; font-size: 11px; font-variant-numeric: tabular-nums; }
 
 .d2-map-viewport {
-  height: clamp(390px,63dvh,590px);
+  max-height: clamp(270px,64dvh,540px);
   min-width: 0;
   overflow: auto;
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 12px;
   background:
-    radial-gradient(circle,color-mix(in srgb,var(--map-muted) 40%,transparent) 1px,transparent 1.4px) 0 0 / 18px 18px,
+    radial-gradient(circle,color-mix(in srgb,var(--map-muted) 27%,transparent) 1px,transparent 1.4px) 0 0 / 18px 18px,
     radial-gradient(ellipse at 50% 0%,color-mix(in srgb,var(--d2-tint) 70%,transparent),transparent 67%),
     var(--surface-2);
   background-attachment: local;
@@ -267,8 +262,8 @@ html[data-study-view="aulas"] .page-heading { display: none; }
 .d2-map-world {
   position: absolute;
   inset: 0 auto auto 0;
-  width: calc(var(--map-columns,4) * 270px + 34px);
-  padding: 22px 24px 24px;
+  width: calc(var(--map-columns,4) * 262px + 25px);
+  padding: 12px 16px;
   transform-origin: top left;
 }
 .d2-map-lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
@@ -277,9 +272,9 @@ html[data-study-view="aulas"] .page-heading { display: none; }
   position: relative;
   display: block;
   width: 100%;
-  padding: 10px 28px 10px 12px;
+  padding: 6px 24px 6px 9px;
   border: 1px solid var(--map-wire,var(--d2-border));
-  border-radius: 13px;
+  border-radius: 10px;
   background: var(--map-tint,var(--d2-tint));
   background: linear-gradient(153deg,color-mix(in srgb,var(--map-tint,var(--d2-tint)) 66%,var(--map-paper)),var(--map-tint,var(--d2-tint)));
   color: var(--map-ink);
@@ -292,8 +287,8 @@ html[data-study-view="aulas"] .page-heading { display: none; }
 .d2-map-node::after, .d2-map-card-toggle::after {
   content: '';
   position: absolute;
-  right: 12px;
-  top: 16px;
+  right: 10px;
+  top: 12px;
   width: 7px;
   height: 7px;
   border: solid var(--map-accent,var(--d2-accent));
@@ -301,44 +296,44 @@ html[data-study-view="aulas"] .page-heading { display: none; }
   rotate: -45deg;
 }
 .d2-map-node[aria-expanded="true"]::after, .d2-map-card-toggle[aria-expanded="true"]::after { rotate: 45deg; }
-.d2-map-node strong { display: block; margin: 3px 0; }
-.d2-map-node > span { display: block; color: var(--map-muted); font-size: 13px; }
+.d2-map-node strong { display: block; margin: 1px 0; }
+.d2-map-node > span { display: block; color: var(--map-muted); font-size: 12px; }
 .d2-map-node small { display: block; color: var(--map-accent,var(--d2-accent)); font-size: 11px; font-weight: 720; }
 .d2-map-root {
-  width: min(100%,270px);
+  width: min(100%,248px);
   margin-inline: auto;
-  padding: 13px 26px;
+  padding: 6px 22px;
   background: linear-gradient(140deg,var(--d2-selected),var(--d2-tint));
   text-align: center;
 }
 .d2-map-root small { letter-spacing: .105em; font-size: 10px; }
-.d2-map-root strong { color: var(--d2-accent); font-size: 25px; letter-spacing: -.035em; }
+.d2-map-root strong { color: var(--d2-accent); font-size: 22px; letter-spacing: -.035em; }
 .d2-map-root > span { color: var(--map-ink); }
 .d2-map-branches {
   display: grid;
   grid-template-columns: repeat(var(--map-columns,4),minmax(0,1fr));
   align-items: start;
-  gap: 14px;
-  margin-top: 29px;
+  gap: 10px;
+  margin-top: 19px;
 }
 .d2-map-column { min-width: 0; }
 .d2-map-column h3 { margin: 0; }
-.d2-map-branch { min-height: 108px; }
-.d2-map-branch strong { color: var(--map-accent); font-size: 16px; }
-.d2-map-branch small { margin-top: 7px; }
+.d2-map-branch { min-height: 76px; }
+.d2-map-branch strong { color: var(--map-accent); font-size: 15px; }
+.d2-map-branch small { margin-top: 3px; }
 .d2-map-leaves {
   display: grid;
-  gap: 9px;
-  padding: 0 0 0 13px;
-  margin: 10px 0 0;
+  gap: 5px;
+  padding: 0 0 0 10px;
+  margin: 6px 0 0;
   list-style: none;
 }
 .d2-map-lesson {
   position: relative;
   min-width: 0;
-  padding: 10px;
+  padding: 6px 7px;
   border: 1px solid color-mix(in srgb,var(--map-wire) 48%,var(--map-paper));
-  border-radius: 11px;
+  border-radius: 8px;
   background: linear-gradient(150deg,color-mix(in srgb,var(--map-tint) 45%,var(--map-paper)),var(--map-paper));
   box-shadow: inset 0 1px 0 var(--prisma-edge,#ffffff55),0 3px 9px #120d2117;
   color: var(--map-ink);
@@ -348,14 +343,15 @@ html[data-study-view="aulas"] .page-heading { display: none; }
 .d2-map-card-head h4 { margin: 0; font-size: 14px; line-height: 1.3; }
 .d2-map-priority { flex: none; color: var(--map-accent); font-size: 11px; line-height: 1.5; font-weight: 710; }
 .d2-map-card-toggle { display: none; }
-.d2-map-summary { color: var(--map-muted); margin: 5px 0 8px; font-size: 13px; line-height: 1.4; }
-.d2-map-meta, .d2-map-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 7px; }
-.d2-map-meta { color: var(--map-muted); font-size: 11px; }
+.d2-map-summary { color: var(--map-muted); margin: 2px 0 4px; font-size: 13px; line-height: 1.35; }
+.d2-map-meta, .d2-map-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 3px 6px; }
+.d2-map-meta { color: var(--map-muted); font-size: 11px; line-height: 1.3; }
 .d2-map-number { background: var(--map-tint); color: var(--map-accent); border-radius: 5px; padding: 1px 5px; }
 .d2-map-related { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin: 6px 0; font-size: 11px; color: var(--map-muted,var(--muted)); }
 .d2-map-related a { color: var(--map-accent,var(--d2-accent)); font-weight: 690; text-underline-offset: 2px; }
+.d2-map-meta .d2-map-related { margin: 0; gap: 3px; }
 .aula-lesson > .d2-map-related { margin: 12px 0; font-size: 13px; }
-.d2-map-card-actions { margin-top: 7px; justify-content: space-between; }
+.d2-map-card-actions { margin-top: 4px; justify-content: space-between; }
 .d2-map-state { color: var(--map-muted); font-size: 11px; }
 .d2-map-state[data-map-state="reading"] { color: var(--map-accent); font-weight: 700; }
 .d2-map-state[data-map-state="done"] { color: var(--map-accent); font-weight: 750; }
@@ -365,8 +361,8 @@ html[data-study-view="aulas"] .page-heading { display: none; }
   align-items: center;
   gap: 5px;
   margin-left: auto;
-  min-height: 33px;
-  padding: 3px 8px;
+  min-height: 25px;
+  padding: 1px 6px;
   border: 1px solid color-mix(in srgb,var(--map-wire) 60%,var(--map-paper));
   border-radius: 7px;
   background: var(--map-tint);
@@ -378,7 +374,7 @@ html[data-study-view="aulas"] .page-heading { display: none; }
 .d2-map-study:hover { border-color: var(--map-accent); text-decoration: underline; }
 .d2-map-empty { margin: 18px 0 0; text-align: center; color: var(--map-ink); font-size: 14px; }
 .d2-map-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 3px 10px; color: var(--map-muted); }
-.d2-map-footer p { margin: 6px 0 0; font-size: 11px; }
+.d2-map-footer p { margin: 4px 0 0; font-size: 11px; }
 .d2-map-footer [role="status"]:empty { margin: 0; }
 
 .d2-map-dialog {
@@ -403,24 +399,24 @@ html[data-study-view="aulas"] .page-heading { display: none; }
   border: 0;
   border-radius: inherit;
 }
-.d2-map-dialog .d2-map-viewport { flex: 1 1 auto; min-height: 150px; height: auto; }
-.d2-map-dialog :is(.d2-map-heading,.d2-map-setup,.d2-map-footer) { flex: none; }
+.d2-map-dialog .d2-map-viewport { flex: 1 1 0; min-height: 120px; max-height: none; }
+.d2-map-dialog :is(.d2-map-heading,.d2-map-tools,.d2-map-footer) { flex: none; }
 
 @media (prefers-reduced-motion: no-preference) {
-  .d2-map :is(.d2-map-node,.d2-map-study,.d2-map-paths button,.aula-subject-tab) { transition: background-color .18s ease,border-color .18s ease; }
+  .d2-map :is(.d2-map-node,.d2-map-study,.aula-subject-tab) { transition: border-color .18s ease; }
   .d2-map-leaves:not([hidden]) { animation: d2-map-reveal .18s ease-out; }
   @keyframes d2-map-reveal { from { opacity: .55; } to { opacity: 1; } }
 }
 
 @media (max-width: 899px) {
-  .d2-map-viewport { height: auto; overflow: visible; scrollbar-gutter: auto; cursor: auto; }
+  .d2-map-viewport { max-height: none; overflow: visible; scrollbar-gutter: auto; cursor: auto; }
   .d2-map-dialog .d2-map-viewport { overflow: auto; }
   .d2-map-extent { width: auto !important; height: auto !important; overflow: visible; }
   .d2-map-world { position: relative; width: auto; padding: 12px; transform: none !important; }
   .d2-map-lines, .d2-map-zoom, .d2-map-desktop-hint { display: none; }
-  .d2-map-root { width: 100%; text-align: left; padding: 12px 25px 12px 12px; }
+  .d2-map-root { width: 100%; text-align: left; padding: 8px 24px 8px 10px; }
   .d2-map-branches { grid-template-columns: 1fr; gap: 9px; margin-top: 12px; }
-  .d2-map-branch { min-height: 0; }
+  .d2-map-branch { min-height: 0; padding-block: 8px; }
   .d2-map-leaves { border-left: 2px solid var(--map-wire); margin-left: 9px; padding-left: 9px; }
   .d2-map-lesson { padding: 0; }
   .d2-map-card-head { position: relative; align-items: center; padding: 6px 34px 6px 9px; min-height: 44px; }
@@ -440,16 +436,17 @@ html[data-study-view="aulas"] .page-heading { display: none; }
   .d2-map-card-body { padding: 0 9px 9px; }
   .d2-map-study { min-height: 44px; }
 }
+@media (max-width: 675px) {
+  .d2-map-heading { grid-template: "title lessons" auto "subjects subjects" auto / minmax(0,1fr) auto; }
+  .d2-map .d2-map-lessons-link { justify-self: end; }
+}
 @media (max-width: 560px) {
-  .d2-map .d2-map-heading { gap: 8px; }
-  .d2-map-overall { min-width: 99px; }
-  .d2-map .d2-map-lessons-link { margin-left: 0; }
-  .d2-map-search { flex-basis: 100%; }
-  .d2-map-search input { font-size: 16px; }
+  .d2-map-search, .d2-map-paths { flex: 1 1 136px; max-width: none; }
+  #d2MapSearch, #d2MapPath { min-height: 36px; font-size: 16px; }
   .d2-map .aula-subject-tab { justify-content: space-between; min-width: 0; gap: 4px; padding-inline: 7px; }
   .d2-map .aula-subject-tab small { flex: none; }
   .d2-map-controls { margin-left: 0; }
-  .d2-map-controls .outline, .d2-map-tools .outline, .d2-map-heading .outline { min-height: 38px; }
+  .d2-map-controls .outline, .d2-map-tools .outline, .d2-map-heading .outline { min-height: 36px; }
   .d2-map-dialog { width: calc(100% - 8px); height: calc(100dvh - 8px); border-radius: 13px; }
 }
 

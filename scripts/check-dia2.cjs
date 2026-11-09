@@ -209,7 +209,7 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  assert.equal(inApp('state.dia2.lessonVisits.reacoes'),lastVisit);
  inApp("openStudyRoute('#dia-2/mapa/fisica')");
  assert($('dia2LessonsRoot').innerHTML.includes('data-map-state="done">Concluída'));
- assert($('dia2LessonsRoot').innerHTML.includes('2/9 concluídas'));
+ assert($('dia2LessonsRoot').innerHTML.includes('data-map-progress-label="fisica">2 de 9 concluídas'));
  assert.equal(inApp('JSON.stringify(state.enem)'),oldBank);
  inApp("openStudyRoute('#dia2')");
  assert(ctx.FurgEnem.openSubject('fisica'));

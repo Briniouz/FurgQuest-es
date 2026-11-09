@@ -41,8 +41,9 @@
    </div>
    <div class="d2-map-card-body" id="map-card-${id}">
     <p class="d2-map-summary">${escape(description)}</p>
-    <div class="d2-map-meta"><span class="d2-map-number">Aula ${String(number).padStart(2,'0')}</span><span>${minutes?minutes+' min':'Tempo a definir'}</span></div>
-    ${relatedLinks(id)}
+    <div class="d2-map-meta"><span class="d2-map-number">Aula ${String(number).padStart(2,'0')}</span><span>${minutes?minutes+' min':'Tempo a definir'}</span>
+     ${relatedLinks(id)}
+    </div>
     <div class="d2-map-card-actions"><span class="d2-map-state" data-map-state="${completed[id]?'done':visited[id]?'reading':'new'}">${state}</span>
      <a class="d2-map-study" href="#${route}" data-study-route="${route}" aria-label="Estudar ${escape(title)}">Estudar <span aria-hidden="true">→</span></a>
     </div>
@@ -51,38 +52,35 @@
  }
 
  function markup(subject,completed,visited,last){
-  const map=maps[subject], done=count(map,completed), size=total(map), resume=byId.get(last);
+  const map=maps[subject], resume=byId.get(last);
   return `<section class="d2-map panel" aria-labelledby="aulaTitle">
-   <header class="d2-map-heading"><div><p class="aula-overline">ENEM · DIA 2</p>
-    <h2 id="aulaTitle" tabindex="-1">Mapa mental</h2></div>
-    <div class="d2-map-overall"><strong>${escape(map.label)}</strong>
-     <progress max="${size}" value="${done}" aria-label="Progresso de ${escape(map.label)}"></progress>
-     <span>${done}/${size} concluídas</span></div>
+   <header class="d2-map-heading">
+    <h2 id="aulaTitle" tabindex="-1">Mapa mental</h2>
+    ${subjectTabs(subject,'mapa',completed)}
     <a class="outline d2-map-lessons-link" href="#dia-2/aulas/${subject}" data-study-route="dia-2/aulas/${subject}">Aulas →</a>
    </header>
-   <div class="d2-map-setup">
-    ${subjectTabs(subject,'mapa',completed)}
-    <div class="d2-map-tools">
-     <label class="d2-map-search"><span class="sr-only">Buscar aula ou tema em ${escape(map.label)}</span>
-      <input type="search" id="d2MapSearch" placeholder="Buscar aula ou tema" autocomplete="off"></label>
-     ${resume?`<a class="outline d2-map-resume" href="#${resume.route}" data-study-route="${resume.route}"
-       title="${escape(resume.title)}">Continuar de onde parei</a>`:''}
-     <div class="d2-map-controls" role="group" aria-label="Controles do quadro">
-      <div class="d2-map-zoom" role="group" aria-label="Zoom">
-       <button type="button" class="outline" data-map-zoom="out" aria-label="Diminuir zoom">−</button>
-       <output id="d2MapScale" aria-label="Zoom do mapa">100%</output>
-       <button type="button" class="outline" data-map-zoom="in" aria-label="Aumentar zoom">+</button>
-       <button type="button" class="outline" data-map-zoom="fit">Enquadrar</button>
-      </div>
-      <button type="button" class="outline" id="d2MapExpand">Expandir tudo</button>
-      <button type="button" class="outline d2-map-wide" id="d2MapWide" aria-pressed="false">
-       <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 2H2v4m8-4h4v4M2 10v4h4m8-4v4h-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-       <span>Tela ampla</span></button>
+   <div class="d2-map-tools">
+    <label class="d2-map-search"><span class="sr-only">Buscar aula ou tema em ${escape(map.label)}</span>
+     <input type="search" id="d2MapSearch" placeholder="Buscar aula ou tema" autocomplete="off"></label>
+    <label class="d2-map-paths"><span class="sr-only">Caminho de estudo</span>
+     <select id="d2MapPath">
+      <option value="">Todos os caminhos</option>
+      ${map.paths.map(path=>`<option value="${path.id}">${escape(path.title)}</option>`).join('')}
+     </select>
+    </label>
+    ${resume?`<a class="outline d2-map-resume" href="#${resume.route}" data-study-route="${resume.route}"
+      title="${escape(resume.title)}">Continuar de onde parei</a>`:''}
+    <div class="d2-map-controls" role="group" aria-label="Controles do quadro">
+     <div class="d2-map-zoom" role="group" aria-label="Zoom">
+      <button type="button" class="outline" data-map-zoom="out" aria-label="Diminuir zoom">−</button>
+      <output id="d2MapScale" aria-label="Zoom do mapa">100%</output>
+      <button type="button" class="outline" data-map-zoom="in" aria-label="Aumentar zoom">+</button>
+      <button type="button" class="outline" data-map-zoom="fit">Enquadrar</button>
      </div>
-    </div>
-    <div class="d2-map-paths" role="group" aria-label="Caminhos de estudo">
-     <span>Caminhos</span><button type="button" data-map-path="" aria-pressed="true">Todos</button>
-     ${map.paths.map(path=>`<button type="button" data-map-path="${path.id}" aria-pressed="false">${escape(path.title)}</button>`).join('')}
+     <button type="button" class="outline" id="d2MapExpand">Expandir tudo</button>
+     <button type="button" class="outline d2-map-wide" id="d2MapWide" aria-pressed="false">
+      <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 2H2v4m8-4h4v4M2 10v4h4m8-4v4h-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      <span>Tela ampla</span></button>
     </div>
    </div>
    <div class="d2-map-viewport" tabindex="0" role="region" aria-label="Quadro do mapa mental" aria-describedby="d2MapHint">
@@ -102,12 +100,12 @@
          ${branch.lessons.map(lesson=>lessonCard(lesson,completed,visited)).join('')}
         </ol></section>`).join('')}
       </div>
-      <p class="d2-map-empty" id="d2MapEmpty" hidden>Nenhuma aula encontrada. Tenta outro tema ou volta para Todos.</p>
+      <p class="d2-map-empty" id="d2MapEmpty" hidden>Nenhuma aula encontrada. Tenta outro tema ou caminho.</p>
      </div>
     </div>
    </div>
    <div class="d2-map-footer">
-    <p id="d2MapHint"><span class="d2-map-desktop-hint">Arrasta o fundo para navegar. </span>Prioridade de revisão e tempo são estimativas de estudo.</p>
+    <p id="d2MapHint"><span class="d2-map-desktop-hint">Arrasta para mover · </span>Prioridade e tempo estimados</p>
     <p id="d2MapResults" role="status"></p>
    </div>
   </section><dialog class="d2-map-dialog" aria-labelledby="aulaTitle"></dialog>`;
@@ -126,15 +124,16 @@
   const map=maps[subject], dialog=host.querySelector('.d2-map-dialog');
   const viewport=get('.d2-map-viewport'), extent=get('.d2-map-extent'), world=get('.d2-map-world'), lines=get('.d2-map-lines');
   const branches=get('#d2MapBranches'), root=get('#d2MapRoot'), expand=get('#d2MapExpand'), wideButton=get('#d2MapWide');
-  const input=get('#d2MapSearch'), pathButtons=all('[data-map-path]');
+  const input=get('#d2MapSearch'), paths=get('#d2MapPath');
   const mobile=matchMedia('(max-width: 899px)');
   const controller=new AbortController(), {signal}=controller;
   const groups=all('.d2-map-column').map((column,index)=>({
    column, data:map.branches[index], button:column.querySelector('.d2-map-branch'),
    leaves:column.querySelector('.d2-map-leaves'), cards:[...column.querySelectorAll('[data-map-lesson]')]
   }));
-  let openRoot=true, opened=new Set([groups[0].data.id]), selectedPath='', scale=1, fitMode='width', frame, drag;
   const shown=()=>groups.filter(group=>!group.column.hidden);
+  const initialBranches=()=>shown().filter((_,index)=>!mobile.matches||index===0).map(group=>group.data.id);
+  let openRoot=true, opened=new Set(initialBranches()), scale=1, autoFit=true, frame, drag;
 
   // O CSS faz o layout. As curvas são redesenhadas a partir dos cartões visíveis.
   function draw(){
@@ -162,13 +161,15 @@
   function layout(next=scale,preserveCenter=false){
    if(mobile.matches)return;
    const x=(viewport.scrollLeft+viewport.clientWidth/2)/scale, y=(viewport.scrollTop+viewport.clientHeight/2)/scale;
-   scale=Math.max(.42,Math.min(1.6,next));
+   scale=Math.max(.2,Math.min(1.6,next));
    world.style.transform=`scale(${scale})`;
    extent.style.width=`${Math.ceil(world.offsetWidth*scale)}px`;
    extent.style.height=`${Math.ceil(world.offsetHeight*scale)}px`;
    if(preserveCenter){
     viewport.scrollLeft=x*scale-viewport.clientWidth/2;
     viewport.scrollTop=y*scale-viewport.clientHeight/2;
+   }else if(autoFit){
+    viewport.scrollLeft=viewport.scrollTop=0;
    }
    get('#d2MapScale').textContent=Math.round(scale*100)+'%';
    draw();
@@ -178,9 +179,10 @@
    cancelAnimationFrame(frame);
    frame=requestAnimationFrame(()=>{
     if(mobile.matches)return;
-    const byWidth=viewport.clientWidth/world.offsetWidth;
-    const next=fitMode==='manual'?scale:Math.min(1,byWidth,fitMode==='full'?viewport.clientHeight/world.offsetHeight:1);
-    layout(next);
+    if(!autoFit){layout();return;}
+    // Fora do diálogo o quadro encolhe com o conteúdo, até o limite do CSS.
+    const height=dialog.open?viewport.clientHeight:parseFloat(getComputedStyle(viewport).maxHeight)-2;
+    layout(Math.min(1,(viewport.clientWidth-1)/world.offsetWidth,(height-1)/world.offsetHeight));
    });
   }
 
@@ -201,7 +203,7 @@
 
   function filter(){
    const query=normalize(input.value), words=query.split(/\s+/).filter(Boolean);
-   const path=map.paths.find(item=>item.id===selectedPath), filtering=!!(words.length||path);
+   const path=map.paths.find(item=>item.id===paths.value), filtering=!!(words.length||path);
    let matches=0;
    for(const group of groups){
     let hits=0;
@@ -215,20 +217,18 @@
     group.column.hidden=!hits;
     matches+=hits;
    }
-   if(filtering){
-    openRoot=true;
-    opened=new Set(shown().map(group=>group.data.id));
-   }
+   openRoot=true;
+   opened=new Set(filtering?shown().map(group=>group.data.id):initialBranches());
    get('#d2MapEmpty').hidden=!!matches;
    get('#d2MapResults').textContent=filtering?`${matches} ${matches===1?'aula encontrada':'aulas encontradas'}`:'';
-   for(const button of pathButtons)button.setAttribute('aria-pressed',String(button.dataset.mapPath===selectedPath));
-   viewport.scrollLeft=viewport.scrollTop=0;
-   fitMode='width';
+   autoFit=true;
    sync();
   }
 
   // Mantém o mesmo DOM no diálogo, com foco modal nativo e saída por Esc.
   function enterWide(){
+   autoFit=true;
+   viewport.scrollTop=viewport.scrollLeft=0;
    dialog.append(board);
    dialog.showModal();
    wide=true;
@@ -303,7 +303,6 @@
     sync();
     return;
    }
-   if(button.hasAttribute('data-map-path')){selectedPath=button.dataset.mapPath;input.value='';filter();return;}
    if(button.classList.contains('d2-map-card-toggle')){
     button.setAttribute('aria-expanded',String(button.getAttribute('aria-expanded')!=='true'));
     return;
@@ -312,15 +311,15 @@
    if(group){toggleBranch(group,!opened.has(group.data.id));return;}
    const zoom=button.dataset.mapZoom;
    if(zoom==='fit'){
-    fitMode='full';
-    viewport.scrollLeft=viewport.scrollTop=0;
+    autoFit=true;
     refresh();
    }else if(zoom){
-    fitMode='manual';
+    autoFit=false;
     layout(scale+(zoom==='in'?.15:-.15),true);
    }
   },{signal});
-  input.addEventListener('input',()=>{selectedPath='';filter();},{signal});
+  input.addEventListener('input',()=>{paths.value='';filter();},{signal});
+  paths.addEventListener('change',()=>{input.value='';filter();},{signal});
 
   viewport.addEventListener('pointerdown',event=>{
    if(mobile.matches||event.pointerType!=='mouse'||event.button!==0||event.target.closest('button,a,[data-map-lesson]'))return;
