@@ -617,6 +617,14 @@
   clearTimeout(commentTimer);
   commentTimer = setTimeout(flushComments, 300);
  }
+ function flushPending(){return flushDraft()&&flushComments();}
+ function changeTab(action){
+  if(!Object.hasOwn(views,action)||!flushPending())return false;
+  if(action==='train'&&!unfinished(session())&&unfinished(state().percurso))sessionKey='percurso';
+  tab=action;
+  render();
+  return true;
+ }
  function init(value) {
   adapter = value;
   adapter.getState().vespera = validate(adapter.getState().vespera);
@@ -655,13 +663,7 @@
   $('vesperaRoot').addEventListener('error',e=>{if(e.target.tagName==='IMG'&&current()&&!response()){blockedImage=true;const p=$('eveImageStatus');if(p){p.hidden=false;p.textContent='A imagem não carregou. Abre a prova original ou tenta novamente antes de responder.';}}},true);
   $('vesperaRoot').addEventListener('click',e=>{
    const b=e.target.closest('button[data-eve]');if(!b||b.disabled)return;const action=b.dataset.eve;
-   if (Object.hasOwn(views, action)) {
-    if (!flushDraft() || !flushComments()) return;
-    if (action === 'train' && !unfinished(session()) && unfinished(state().percurso)) sessionKey = 'percurso';
-    tab = action;
-    render();
-    return;
-   }
+   if(Object.hasOwn(views,action)){changeTab(action);return;}
    if(action==='dictionary'){openDictionary();return;}if(action==='term'){openDictionary(entries.get(b.dataset.term)?.title||'');return;}
    if (['start', 'group', 'percurso'].includes(action)) {
     if (flushDraft() && flushComments()) start(action === 'percurso' ? 'percurso' : b.dataset.group || 'mix');
@@ -700,5 +702,5 @@
   });
   $('eveDictSearch').addEventListener('input',e=>{dictionaryQuery=e.target.value;dictionaryResults();});$('eveDictKind').addEventListener('change',e=>{dictionaryKind=e.target.value;dictionaryResults();});$('eveDictClose').onclick=()=>$('eveDictionary').close();$('eveDictionary').addEventListener('close',()=>{$('studyGuideLauncher')?.setAttribute('aria-expanded','false');lastFocus?.focus?.({preventScroll:true});});$('eveDictionary').addEventListener('keydown',e=>{e.stopPropagation();if(e.key==='Escape'){e.preventDefault();$('eveDictionary').close();}});
  }
- globalThis.FurgVespera={fresh,validate,merge,stats,search,init,render,start,record,next,errors,eligible,wasSeen,openDictionary};
+ globalThis.FurgVespera={fresh,validate,merge,stats,search,init,render,start,record,next,errors,eligible,wasSeen,openDictionary,flushPending,showRepertories:()=>changeTab('repertories')};
 })();

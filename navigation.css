@@ -15,3 +15,24 @@ body{padding-bottom:60px}@media(max-width:600px){.page-back{left:10px;bottom:12p
  #mainNavigation :is(.nav-trigger,.nav-top-item){min-width:0;padding:6px 1px;white-space:normal;text-align:center;gap:4px}
  #mainNavigation button>strong{max-width:100%;white-space:normal;font-size:clamp(8.5px,2.55vw,10.5px)}
 }
+
+#mainNavigation [hidden]{display:none!important}
+#navTrigger-areas{margin-right:5px;border:1px solid var(--line);color:var(--blue)}
+#navMenu-areas button[aria-current="true"]{background:var(--surface-3);color:var(--blue)}
+html[data-study-view="inicio"] #mainNavigation{justify-content:flex-end}
+html[data-study-view="inicio"] #mainNavigation :is(.nav-trigger,#navMental),
+html[data-study-space="dia-1"] #navMental{display:none}
+@media(max-width:520px){
+ .header .header-nav nav{grid-template-columns:repeat(6,minmax(0,1fr))}
+ html[data-study-space="dia-1"] .header .header-nav nav{grid-template-columns:repeat(5,minmax(0,1fr))}
+ html[data-study-view="inicio"] .header .header-nav nav{display:flex;min-height:43px}
+ #navTrigger-areas{margin-right:0}
+ #mainNavigation button>strong{font-size:clamp(8.5px,2.4vw,10px)}
+}
+@media(max-width:520px){
+ #mainNavigation #navPerformance>strong{font-size:clamp(8px,2.15vw,9.5px)}
+}
+@media(max-width:360px){
+ html:not([data-study-view="inicio"]) .header .header-nav nav{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #navPerformance{grid-column:-2}
+}

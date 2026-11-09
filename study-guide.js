@@ -54,7 +54,7 @@
   function close(){const panel=$('studyGuidePanel');if(!panel||panel.hidden)return;panel.hidden=true;$('studyGuideLauncher').setAttribute('aria-expanded','false');lastFocus?.focus?.({preventScroll:true});}
   function init(){
     if(bound||!$('studyGuidePanel'))return;bound=true;
-    $('studyGuideLauncher').onclick=()=>{const view=document.querySelector('.view.active')?.id;if(view==='matematica-lab'&&globalThis.FurgMathLab){globalThis.FurgMathLab.openGuide();return;}if(view==='dia2'&&globalThis.FurgDia2){globalThis.FurgDia2.openGuide();return;}if(view==='vespera'&&globalThis.FurgVespera){globalThis.FurgVespera.openDictionary();return;}$('studyGuidePanel').hidden?open():close();};$('studyGuideClose').onclick=close;
+    $('studyGuideLauncher').onclick=()=>{const view=document.querySelector('.view.active')?.id;if(view==='matematica-lab'&&globalThis.FurgMathLab){globalThis.FurgMathLab.openGuide();return;}if((view==='dia2'||globalThis.FurgStudyAreas?.day()==='2')&&globalThis.FurgDia2){globalThis.FurgDia2.openGuide();return;}if(view==='vespera'&&globalThis.FurgVespera){globalThis.FurgVespera.openDictionary();return;}$('studyGuidePanel').hidden?open():close();};$('studyGuideClose').onclick=close;
     $('studyGuideSearch').addEventListener('input',e=>{query=e.target.value;limit=12;clearTimeout(timer);timer=setTimeout(results,120);});
     $('studyGuidePanel').addEventListener('keydown',e=>{e.stopPropagation();if(e.key==='Escape'){e.preventDefault();close();}});
     $('studyGuidePanel').addEventListener('click',e=>{

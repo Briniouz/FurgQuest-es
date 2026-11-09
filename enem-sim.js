@@ -6,12 +6,23 @@
   const empty=()=>({active:null,history:[]}),dayLabel=day=>day==='all'?'Objetiva completa':day+'º dia';
   const gradable=q=>!!q&&!q.canceled&&!q.quality?.blocked&&/^[A-E]$/.test(q.answer);
   let adapter,bound=false,interval=null,resultId=null,confirming=false,reviewIndex=0,reviewOnlyWrong=false;
-  let settings={year:null,day:'1',language:'ingles',minutes:null};
+  const dayOfSpace=()=>globalThis.FurgStudyAreas?.day()||'';
+  const defaultSettings=day=>({year:null,day:day||'1',language:'ingles',minutes:null});
+  const settingsByDay={'':defaultSettings('')};
+  let settings=settingsByDay[''];
   function exam(year,day='all',language='ingles'){
     year=Number(year);if(!Number.isInteger(year)||year<2010||!['1','2','all'].includes(day)||!['ingles','espanhol'].includes(language))return[];
     return questions.filter(q=>q.year===year&&q.application==='regular'&&(!q.language||q.language===language)&&(day==='all'||(day==='1'?q.index<=90:q.index>=91))).sort((a,b)=>a.index-b.index);
   }
   const years=[...new Set(questions.filter(q=>q.year>=2010).map(q=>q.year))].filter(y=>['ingles','espanhol'].every(l=>{const q=exam(y,'all',l);return q.length===180&&new Set(q.map(q=>q.index)).size===180&&q.every(q=>!q.quality?.blocked);})).sort((a,b)=>b-a);
+  const supportedYears={};
+  function yearsFor(day){
+    if(!day)return years;
+    return supportedYears[day]??=years.filter(year=>exam(year,day).every(q=>globalThis.FurgStudyAreas.contains('dia-'+day,q.area)));
+  }
+  function fits(attempt,day){
+    return !day||(attempt.day===day&&yearsFor(day).includes(attempt.year));
+  }
   function minutes(year,day){const first=year<=2016?270:330,second=year<=2016?330:year===2017?270:300;return day==='1'?first:day==='2'?second:first+second;}
   function cleanAttempt(v,finished=false){
     if(!v||typeof v!=='object'||!years.includes(Number(v.year))||!['1','2','all'].includes(v.day)||!['ingles','espanhol'].includes(v.language))return null;
@@ -36,12 +47,21 @@
   function body(q){if(globalThis.FurgEnem.body)return globalThis.FurgEnem.body(q);const seen=(q.context||'')+(q.stem||'')+q.alternatives.map(a=>(a.text||'')+(a.file||'')).join('');return'<div class="enem-text">'+md(q.context)+(q.files||[]).filter(p=>!seen.includes(p)).map(figure).join('')+md(q.stem)+'</div>';}
   function optionMarkup(q,a,review){return'<div class="enem-options">'+q.alternatives.map(o=>`<button class="enem-option ${a.answers[q.id]===o.letter?'selected':''} ${review&&gradable(q)&&o.letter===q.answer?'correct':''} ${review&&gradable(q)&&a.answers[q.id]===o.letter&&o.letter!==q.answer?'wrong':''}" data-enem-sim="choose" data-letter="${o.letter}" aria-pressed="${a.answers[q.id]===o.letter}" ${review?'disabled':''}><b>${o.letter}</b><span>${md(o.text)}${figure(o.file)}</span></button>`).join('')+'</div>';}
   function render(){
-    if(!adapter||!$('enemSimRoot'))return;const s=state();$('furgSimSection').hidden=!!s.active;
-    if(s.active){renderActive();return;}
-    const result=s.history.find(h=>h.id===resultId);if(result){renderResult(result);return;}
-    if(!years.length){$('enemSimRoot').innerHTML='<div class="panel enem-exam-builder"><h2>Simulados por ano do ENEM</h2><p>O pacote completo contém as provas de 2010 em diante.</p></div>';return;}
-    if(!years.includes(settings.year))settings.year=years[0];if(!settings.minutes)settings.minutes=minutes(settings.year,settings.day);
-    $('enemSimRoot').innerHTML=`<div class="panel enem-exam-builder"><p class="eyebrow">SIMULADOS · ENEM 2010–${years[0]}</p><h2>A prova daquele ano. No teu ritmo.</h2><p class="muted">Questões reais na ordem do caderno azul, com as figuras originais e correção só ao terminar.</p><div class="enem-exam-fields"><div class="field"><label for="enemExamYear">Ano da prova</label><select id="enemExamYear">${years.map(y=>`<option value="${y}">ENEM ${y}</option>`).join('')}</select></div><div class="field"><label for="enemExamDay">Qual prova?</label><select id="enemExamDay"><option value="1">1º dia · 90 questões</option><option value="2">2º dia · 90 questões</option><option value="all">Objetiva completa · 180 questões</option></select></div><div class="field"><label for="enemExamLanguage">Língua estrangeira</label><select id="enemExamLanguage"><option value="ingles">Inglês</option><option value="espanhol">Espanhol</option></select></div><div class="field"><label for="enemExamMinutes">Tempo em minutos</label><input id="enemExamMinutes" type="number" min="1" max="660" value="${settings.minutes}"></div></div><div id="enemExamInfo" class="enem-exam-info"></div><div class="enem-exam-start"><button class="primary" data-enem-sim="start">Começar prova →</button><button class="quiet" data-enem-sim="official-time">Usar o tempo oficial</button></div></div><div class="panel enem-exam-history"><h3>Teus simulados do ENEM</h3>${s.history.length?s.history.slice().reverse().map(h=>{const n=score(h);return`<button class="enem-exam-history-row" data-enem-sim="result" data-id="${esc(h.id)}"><span><strong>ENEM ${h.year} · ${dayLabel(h.day)}</strong><small>${new Date(h.finishedAt).toLocaleDateString('pt-BR')} · ${h.language==='ingles'?'Inglês':'Espanhol'}</small></span><b>${n.correct}/${n.graded} <span>↗</span></b></button>`;}).join(''):'<p class="muted">Teu primeiro resultado aparece aqui. O simulado em andamento fica salvo neste navegador.</p>'}</div>`;
+    if(!adapter||!$('enemSimRoot'))return;
+    const s=state(), day=dayOfSpace(), available=yearsFor(day);
+    $('furgSimSection').hidden=!!s.active||!!day;
+    settings=settingsByDay[day]??=defaultSettings(day);
+    if(s.active){
+      if(fits(s.active,day))renderActive();
+      else $('enemSimRoot').innerHTML='<div class="panel enem-exam-builder"><h2>Já tens um simulado em andamento.</h2><p>Abre a Visão geral para continuar a prova que começaste.</p><a class="text-link" href="#simulados" data-study-route="simulados">Abrir simulado na Visão geral ↗</a></div>';
+      return;
+    }
+    const result=s.history.find(h=>h.id===resultId);if(result&&fits(result,day)){renderResult(result);return;}
+    if(!available.length){$('enemSimRoot').innerHTML='<div class="panel enem-exam-builder"><h2>Simulados por ano do ENEM</h2><p>Abre a Visão geral para consultar as provas disponíveis.</p></div>';return;}
+    if(!available.includes(settings.year)){settings.year=available[0];settings.minutes=null;}
+    if(!settings.minutes)settings.minutes=minutes(settings.year,settings.day);
+    const choices=day?[day]:['1','2','all'];
+    $('enemSimRoot').innerHTML=`<div class="panel enem-exam-builder"><p class="eyebrow">SIMULADOS · ENEM ${available.at(-1)}–${available[0]}</p><h2>${day?'Simulado do Dia '+day:'A prova daquele ano. No teu ritmo.'}</h2><p class="muted">Questões reais na ordem do caderno azul, com as figuras originais e correção só ao terminar.</p><div class="enem-exam-fields"><div class="field"><label for="enemExamYear">Ano da prova</label><select id="enemExamYear">${available.map(y=>`<option value="${y}">ENEM ${y}</option>`).join('')}</select></div><div class="field"><label for="enemExamDay">Qual prova?</label><select id="enemExamDay" ${day?'disabled':''}>${choices.map(d=>`<option value="${d}">${dayLabel(d)} · ${d==='all'?180:90} questões</option>`).join('')}</select></div><div class="field" ${day==='2'?'hidden':''}><label for="enemExamLanguage">Língua estrangeira</label><select id="enemExamLanguage"><option value="ingles">Inglês</option><option value="espanhol">Espanhol</option></select></div><div class="field"><label for="enemExamMinutes">Tempo em minutos</label><input id="enemExamMinutes" type="number" min="1" max="660" value="${settings.minutes}"></div></div><div id="enemExamInfo" class="enem-exam-info"></div><div class="enem-exam-start"><button class="primary" data-enem-sim="start">Começar prova →</button><button class="quiet" data-enem-sim="official-time">Usar o tempo oficial</button></div></div><div class="panel enem-exam-history"><h3>Teus simulados do ENEM</h3>${s.history.length?s.history.slice().reverse().map(h=>{const n=score(h);return`<button class="enem-exam-history-row" data-enem-sim="result" data-id="${esc(h.id)}"><span><strong>ENEM ${h.year} · ${dayLabel(h.day)}</strong><small>${new Date(h.finishedAt).toLocaleDateString('pt-BR')} · ${h.language==='ingles'?'Inglês':'Espanhol'}</small></span><b>${n.correct}/${n.graded} <span>↗</span></b></button>`;}).join(''):'<p class="muted">Teu primeiro resultado aparece aqui. O simulado em andamento fica salvo neste navegador.</p>'}</div>`;
     $('enemExamYear').value=String(settings.year);$('enemExamDay').value=settings.day;$('enemExamLanguage').value=settings.language;
     for(const[id,key]of [['enemExamYear','year'],['enemExamDay','day'],['enemExamLanguage','language']])$(id).onchange=()=>{settings[key]=key==='year'?Number($(id).value):$(id).value;if(key!=='language'){settings.minutes=minutes(settings.year,settings.day);$('enemExamMinutes').value=String(settings.minutes);}info();};
     $('enemExamMinutes').oninput=()=>settings.minutes=Number($('enemExamMinutes').value);info();
@@ -49,9 +69,11 @@
   function info(){const list=exam(settings.year,settings.day,settings.language),names=[...new Set(list.map(q=>areas[q.area]))].join(' + '),essayDay=settings.year<=2016?'2':'1',hasEssay=settings.day==='all'||settings.day===essayDay;
     $('enemExamInfo').innerHTML=`<strong>${list.length} questões · ${esc(names)}</strong><p>Tempo oficial ${settings.day==='all'?'somado dos dois dias':'deste dia'}: ${minutes(settings.year,settings.day)} min. ${hasEssay?'Esse tempo inclui a redação. A proposta pode ser consultada no PDF; a redação não é corrigida pelo site.':'Este dia não inclui redação.'}</p>${settings.day==='all'?'<p>As duas provas acontecem em dias separados no exame real. Aqui, o treino reúne as 180 questões objetivas em uma sessão.</p>':''}<p>As respostas ficam ocultas durante a prova. Pode pausar, retomar e marcar questões para revisar.</p><p>${[...new Set(list.map(q=>safeLink(q.source?.pdf)).filter(Boolean))].map((url,i)=>`<a href="${esc(url)}" target="_blank" rel="noopener">Caderno original${settings.day==='all'?' · '+(i+1)+'º dia':''} ↗</a>`).join(' · ')}</p>`;}
   function start(){
+    if(state().active)return;
     if(adapter.getState().activeSim){adapter.toast('Finaliza o simulado da FURG em andamento antes de começar o ENEM.');return;}
     const year=Number($('enemExamYear').value),day=$('enemExamDay').value,language=$('enemExamLanguage').value,duration=Number($('enemExamMinutes').value),list=exam(year,day,language);
-    if(!years.includes(year)||list.length!==(day==='all'?180:90)||!Number.isInteger(duration)||duration<1||duration>660){adapter.toast('Escolhe uma prova completa e um tempo entre 1 e 660 minutos.');return;}
+    const fixedDay=dayOfSpace();
+    if(fixedDay&&day!==fixedDay||!yearsFor(fixedDay).includes(year)||list.length!==(day==='all'?180:90)||!Number.isInteger(duration)||duration<1||duration>660){adapter.toast('Escolhe uma prova completa e um tempo entre 1 e 660 minutos.');return;}
     const s=state();s.active={id:'enem-'+Date.now()+'-'+Math.random().toString(36).slice(2,9),year,day,language,ids:list.map(q=>q.id),index:0,answers:{},marked:{},durationMinutes:duration,remainingMs:duration*60000,endsAt:Date.now()+duration*60000,paused:false,startedAt:new Date().toISOString()};confirming=false;adapter.save();render();
   }
   function renderActive(){const a=state().active;if(!a)return;const q=byId.get(a.ids[a.index]),answered=Object.keys(a.answers).length;
@@ -64,11 +86,13 @@
   function tick(){if(!adapter)return;const a=state().active;if(!a||a.paused)return;const left=remaining(a);if(left<=0){finish(true);return;}if($('enemExamClock'))$('enemExamClock').textContent=clock(left);}
   function go(index){const a=state().active;if(!a||a.paused)return;a.index=Math.max(0,Math.min(a.ids.length-1,index));confirming=false;adapter.save();render();$('enemExamTitle')?.focus({preventScroll:true});$('enemExamTitle')?.scrollIntoView({behavior:globalThis.FurgUI?.reducedMotion()?'auto':'smooth',block:'start'});}
   function choose(letter){const a=state().active;if(!a||a.paused||!/^[A-E]$/.test(letter))return;if(remaining(a)<=0){finish(true);return;}a.answers[a.ids[a.index]]=letter;adapter.save();render();}
-  function handleKey(key){const a=adapter&&state().active;if(!a||a.paused||confirming)return false;if(/^[a-e]$/i.test(key)){choose(key.toUpperCase());return true;}if(key==='ArrowRight'){go(a.index+1);return true;}if(key==='ArrowLeft'){go(a.index-1);return true;}return false;}
+  function handleKey(key){const a=adapter&&state().active;if(!a||a.paused||confirming||!fits(a,dayOfSpace()))return false;if(/^[a-e]$/i.test(key)){choose(key.toUpperCase());return true;}if(key==='ArrowRight'){go(a.index+1);return true;}if(key==='ArrowLeft'){go(a.index-1);return true;}return false;}
   function init(value){adapter=value;adapter.getState().enemSim=validate(adapter.getState().enemSim);if(interval===null)interval=setInterval(tick,1000);if(!bound&&$('enemSimRoot')){bound=true;$('enemSimRoot').addEventListener('click',event=>{const b=event.target.closest('button[data-enem-sim]');if(!b||b.disabled)return;const action=b.dataset.enemSim,a=state().active;if(action==='start'){start();return;}if(action==='official-time'){settings.minutes=minutes(settings.year,settings.day);$('enemExamMinutes').value=String(settings.minutes);return;}if(action==='new'){resultId=null;render();return;}if(action==='result'){resultId=b.dataset.id;reviewIndex=0;reviewOnlyWrong=false;render();return;}if(action==='review-filter'){reviewOnlyWrong=!reviewOnlyWrong;reviewIndex=0;render();return;}if(action==='review-next'||action==='review-previous'){reviewIndex+=action==='review-next'?1:-1;render();return;}if(!a)return;if(action==='choose'){choose(b.dataset.letter);return;}if(action==='previous'||action==='next'){go(a.index+(action==='next'?1:-1));return;}if(action==='jump'){const n=Number(b.dataset.index);if(Number.isInteger(n))go(n);return;}if(action==='finish'){confirming=true;render();return;}if(action==='continue'){confirming=false;render();return;}if(action==='finish-confirm'){finish();return;}if(action==='pause'){if(!a.paused){a.remainingMs=remaining(a);if(a.remainingMs<=0){finish(true);return;}a.paused=true;a.endsAt=null;}else{a.paused=false;a.endsAt=Date.now()+a.remainingMs;}adapter.save();render();return;}if(!a.paused&&action==='mark'){const id=a.ids[a.index];if(a.marked[id])delete a.marked[id];else a.marked[id]=true;adapter.save();render();}if(!a.paused&&action==='blank'){delete a.answers[a.ids[a.index]];adapter.save();render();}});}tick();}
   function selectDay(day){
-    if(!adapter||!['1','2','all'].includes(day)||state().active)return false;
-    settings={...settings,day,minutes:null};resultId=null;render();return true;
+    const fixedDay=dayOfSpace();
+    if(!adapter||!['1','2','all'].includes(day)||state().active||fixedDay&&day!==fixedDay)return false;
+    settings=settingsByDay[fixedDay]??=defaultSettings(fixedDay);
+    Object.assign(settings,{day,minutes:null});resultId=null;render();return true;
   }
   globalThis.FurgEnemSim={selectDay,init,render,validate,merge,exam,years,minutes,score,handleKey,tick};
 })();

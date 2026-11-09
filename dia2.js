@@ -577,6 +577,6 @@
   globalThis.addEventListener?.('pagehide',flushDraft);
  }
 
- globalThis.FurgDia2 = {init, render, fresh, validate, merge, start, record, next, stats, errors, search, openGuide, flushDraft};
+ globalThis.FurgDia2 = {init, render, fresh, validate, merge, start, record, next, stats, errors, search, openGuide, showGuide:()=>changeTab('guia'), flushDraft};
 })();
 
