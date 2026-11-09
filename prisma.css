@@ -115,7 +115,13 @@
     var(--bg);
   background-attachment: fixed;
 }
-[data-design="prisma"] .light-ambient { display: none; }
+:root[data-design="prisma"] .light-ambient span {
+  opacity: .16;
+  background: radial-gradient(ellipse, #aa91d3, transparent 69%);
+}
+:root[data-design="prisma"] .light-ambient span:last-child {
+  background: radial-gradient(ellipse, var(--prisma-glow), transparent 69%);
+}
 
 [data-design="prisma"] .header {
   width: min(calc(100% - 24px), 1300px);
