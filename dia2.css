@@ -1,0 +1,170 @@
+.study-day-links {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.study-day-links .eve-entry-banner { margin: 0; }
+.study-day-links .eve-entry-banner a { height: 100%; box-sizing: border-box; }
+body:has(#vespera.active) .study-day-links,
+body:has(#dia2.active) .study-day-links { display: none; }
+#dia2 { font-size: 14px; line-height: 1.6; }
+#dia2 h2 { margin: 0 0 12px; line-height: 1.2; font-size: clamp(22px,3.5vw,32px); }
+#dia2 h3, #dia2QuickGuide h3 { margin: 0 0 7px; font-size: 16px; line-height: 1.35; }
+#dia2 p, #dia2QuickGuide p { margin: 7px 0 12px; }
+#dia2 [tabindex="-1"] { scroll-margin: 140px; }
+#dia2 :is(button,input,select,textarea):focus-visible,
+#dia2QuickGuide :is(button,input,select,summary):focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+#d2Live:empty { display: none; }
+#d2Live:not(:empty) { background: var(--surface-2); padding: 8px 12px; border-radius: 8px; }
+.d2-muted { font-size: 12px; color: var(--muted); }
+.d2-toolbar, .d2-tabs, .d2-actions, .d2-subjects, .d2-switch {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.d2-toolbar { justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 11px; margin-bottom: 17px; }
+.d2-tabs button, .d2-subjects button { padding: 8px 12px; border-radius: 8px; }
+.d2-tabs [aria-pressed="true"], .d2-subjects [aria-pressed="true"] {
+  background: var(--surface-3);
+  color: var(--blue);
+  font-weight: 700;
+}
+.d2-switch { font-size: 12px; color: var(--muted); cursor: pointer; }
+.d2-switch input { accent-color: var(--action); width: 16px; height: 16px; }
+.d2-overview, .d2-subject-grid, .d2-block-grid, .d2-guide-grid, .d2-error-grid { display: grid; gap: 12px; }
+.d2-overview { grid-template-columns: minmax(0,1.8fr) minmax(230px,1fr); }
+.d2-subject-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.d2-block-grid, .d2-guide-grid, .d2-error-grid { grid-template-columns: repeat(2,minmax(0,1fr)); margin: 12px 0; align-items: start; }
+.d2-panel { padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+.d2-feature {
+  padding: clamp(17px,3vw,28px);
+  background: linear-gradient(115deg,var(--surface-3),var(--surface));
+  border-top: 3px solid var(--action);
+}
+.d2-feature p:not(.eyebrow) { max-width: 62ch; }
+.d2-quick-stats dl { margin: 8px 0; }
+.d2-quick-stats dl div { display: flex; gap: 12px; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); padding: 6px 0; }
+.d2-quick-stats dd { margin: 0; font-size: 18px; font-weight: 700; }
+.d2-subject-card { display: flex; flex-direction: column; align-items: flex-start; }
+.d2-subject-card button { margin-top: auto; }
+.d2-symbol { display: grid; place-items: center; width: 35px; height: 35px; color: var(--blue); border-radius: 8px; background: var(--surface-3); font-size: 20px; margin-bottom: 10px; }
+#dia2 .d2-subheading { margin-top: 23px; font-size: 20px; }
+.d2-more { margin-top: 14px; }
+.d2-controls { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr); gap: 10px; margin: 12px 0 0; }
+.d2-controls label, .d2-reasoning label, .d2-note label, .d2-quick-head label { display: grid; gap: 4px; font-weight: 650; min-width: 0; }
+#dia2 input:not([type="checkbox"],[type="radio"]), #dia2 textarea, #dia2 select,
+#dia2QuickGuide :is(input,select) {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.d2-topic + .d2-topic { margin-top: 21px; }
+.d2-guide-card, .d2-command-list, .d2-hint, .d2-note {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 10px 13px;
+  background: var(--surface);
+}
+.d2-guide-card summary, .d2-command-list summary, .d2-hint summary, .d2-notebook summary { color: var(--blue); font-weight: 650; cursor: pointer; }
+.d2-command-list { margin: 14px 0; }
+.d2-command-list > div { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+#dia2 .d2-rule, #dia2QuickGuide .d2-rule {
+  background: var(--surface-3);
+  border-left: 3px solid var(--action);
+  border-radius: 5px;
+  padding: 9px 12px;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.d2-explain { margin: 10px 0; }
+.d2-explain dt { margin-top: 9px; font-weight: 700; }
+.d2-explain dd { margin: 1px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.d2-example { padding: 10px 12px; background: var(--surface-2); border-radius: 8px; }
+.d2-example ol { margin: 5px 0 0; padding-left: 22px; }
+.d2-trap { border-left: 2px solid var(--line); padding-left: 9px; }
+.d2-trap strong { display: block; }
+.d2-flash { max-width: 800px; margin-top: 13px; }
+.d2-question { max-width: 920px; margin: 0 auto; }
+.d2-question-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; align-items: flex-start; }
+.d2-question-links { font-size: 12px; margin-bottom: 8px; }
+.d2-enunciation { overflow-wrap: anywhere; }
+.d2-enunciation .enem-text { padding: 0; border: 0; background: none; }
+.d2-enunciation .enem-text p { margin: 6px 0 11px; }
+.d2-options { border: 0; padding: 0; margin: 14px 0; min-width: 0; }
+.d2-options legend { font-weight: 700; margin-bottom: 7px; }
+.d2-option {
+  display: grid;
+  grid-template-columns: auto 28px minmax(0,1fr);
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 6px 0;
+  min-height: 46px;
+  padding: 8px 11px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.d2-option input { accent-color: var(--action); margin: 0; }
+.d2-letter { font-weight: 700; }
+.d2-option:has(:checked) { border-color: var(--action); background: var(--surface-3); }
+.d2-option.is-correct, .d2-feedback.good { border-color: #2d9662; }
+.d2-option.is-wrong, .d2-feedback.wrong { border-color: #c2676f; }
+.d2-option:has(:disabled) { cursor: default; }
+.d2-hint { margin: 12px 0; background: var(--surface-2); }
+.d2-reasoning, .d2-note { display: grid; gap: 8px; margin-top: 12px; }
+.d2-reasoning button, .d2-note button { justify-self: start; }
+.d2-reasoning textarea, .d2-note textarea { resize: vertical; }
+.d2-feedback { margin-top: 12px; padding: 13px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface-2); }
+.d2-steps { padding-left: 22px; }
+.d2-steps li { margin: 0 0 10px; }
+#dia2 .d2-steps p { margin: 2px 0 7px; }
+.d2-table { overflow-x: auto; }
+.d2-table table { border-collapse: collapse; width: 100%; }
+.d2-table th, .d2-table td { border-bottom: 1px solid var(--line); text-align: left; padding: 8px 10px; }
+.d2-notebook { margin-bottom: 10px; }
+#dia2QuickGuide {
+  box-sizing: border-box;
+  width: min(470px,calc(100vw - 20px));
+  max-height: calc(100dvh - 24px);
+  margin: auto 10px auto auto;
+  padding: 0;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  font-size: 14px;
+  overflow-y: auto;
+}
+#dia2QuickGuide::backdrop { background: #0d242580; }
+.d2-quick-head { position: sticky; top: 0; z-index: 1; background: var(--surface); padding: 12px 15px 4px; border-bottom: 1px solid var(--line); }
+.d2-quick-head label { margin-top: 8px; }
+.d2-quick-title { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.d2-quick-title h2 { margin: 0; font-size: 20px; }
+.d2-quick-body { padding: 15px; }
+.d2-quick-body .d2-guide-grid { grid-template-columns: 1fr; }
+@media (max-width: 820px) {
+  .d2-subject-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 620px) {
+  .study-day-links, .d2-overview, .d2-guide-grid, .d2-block-grid, .d2-error-grid, .d2-controls { grid-template-columns: minmax(0,1fr); }
+  .study-day-links { gap: 6px; }
+  .d2-toolbar { gap: 9px; }
+  .d2-tabs { gap: 4px; }
+  .d2-tabs button, .d2-subjects button { padding: 7px 9px; }
+  .d2-panel { padding: 13px; }
+  .d2-subject-grid { gap: 8px; }
+  .d2-subject-card button { font-size: 11px; padding: 6px 8px; }
+  #dia2 input:not([type="checkbox"],[type="radio"]), #dia2 textarea, #dia2 select,
+  #dia2QuickGuide :is(input,select) { font-size: 16px; }
+}

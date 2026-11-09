@@ -39,5 +39,11 @@
     practiceGroup={ids:new Set(valid),origin:['biblioteca','linguagens'].includes(origin)?origin:'anatomia',label:String(label||'Questões do levantamento').slice(0,160)};
     adapter.setView?.('enem');render();index=Math.max(0,list.findIndex(q=>q.id===(firstId||valid[0])));choice=null;retry=false;question(true);return true;
   }
-  globalThis.FurgEnem={init,render,refresh:render,validate,metrics,handleKey,markdown,body,practice,isGradable:id=>byId.has(id)&&graded(byId.get(id))};
+  function openSubject(subject){
+    if(!adapter||!['matematica','fisica','quimica','biologia'].includes(subject))return false;
+    clearTimeout(searchTimer);practiceGroup=null;Object.keys(f).forEach(key=>f[key]='');
+    f.application='regular';f.subject=subject;f.area=subject==='matematica'?'matematica':'ciencias-natureza';
+    index=0;choice=null;retry=false;adapter.setView?.('enem');return true;
+  }
+  globalThis.FurgEnem={openSubject,init,render,refresh:render,validate,metrics,handleKey,markdown,body,practice,isGradable:id=>byId.has(id)&&graded(byId.get(id))};
 })();
