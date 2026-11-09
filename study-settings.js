@@ -1,21 +1,31 @@
 'use strict';
 (() => {
   const $ = id => document.getElementById(id);
-  const defaults = () => ({guideLauncher:true,quickCards:true,backButton:true,crossOut:true,hints:true,shortcuts:true,reduceMotion:false,compactEnem:false});
+  const designs = [
+    ['classic','Clássico','O visual que tu já usa.'],
+    ['prisma','Prisma','Liquid Glass, com luz e reflexos suaves.']
+  ];
+  const defaults = () => ({guideLauncher:true,quickCards:true,backButton:true,crossOut:true,hints:true,shortcuts:true,reduceMotion:false,compactEnem:false,design:'classic'});
+  const isDesign = value => designs.some(([key]) => key===value);
   let adapter, bound=false;
-  function validate(value) {
+  function validate(value, fallbackDesign) {
     const out=defaults();
-    for(const key of Object.keys(out))if(typeof value?.[key]==='boolean')out[key]=value[key];
+    for(const [key,initial] of Object.entries(out))if(typeof initial==='boolean'&&typeof value?.[key]==='boolean')out[key]=value[key];
+    if(isDesign(value?.design))out.design=value.design;
+    else out.design=isDesign(fallbackDesign)?fallbackDesign:'classic';
     return out;
   }
   const get=()=>validate(adapter?.getState().preferences);
   function apply() {
     const p=get();
+    const designChanged=document.documentElement.dataset.design!==p.design;
     for(const [key,value] of Object.entries(p))document.documentElement.dataset[key]=String(value);
+    if(designChanged)globalThis.FurgUI?.syncTheme?.();
     if(!p.crossOut)globalThis.FurgElimination?.clearAll();
   }
   function set(key,value) {
-    if(!Object.hasOwn(defaults(),key)||typeof value!=='boolean'||!adapter)return false;
+    if(!adapter||!Object.hasOwn(defaults(),key))return false;
+    if(key==='design'?!isDesign(value):typeof value!=='boolean')return false;
     const previous=adapter.getState().preferences;
     adapter.getState().preferences={...get(),[key]:value};
     if(!adapter.save()){adapter.getState().preferences=previous;return false;}
@@ -37,9 +47,30 @@
       ['reduceMotion','Reduzir movimento','Desativa transições e animações. A preferência de acessibilidade do sistema também é respeitada.']
     ]]
   ];
+  function appearance(design) {
+    return `<section class="settings-appearance panel" aria-labelledby="settingsAppearanceTitle">
+      <div class="settings-appearance-header">
+        <div><h3 id="settingsAppearanceTitle">Aparência</h3><p>Escolhe o design do site e a iluminação que preferes.</p></div>
+        <label class="settings-theme" for="settingsTheme">Tema
+          <select id="settingsTheme"><option value="light">Claro</option><option value="dark">Escuro</option></select>
+        </label>
+      </div>
+      <fieldset class="settings-design">
+        <legend>Design do site</legend>
+        <div class="settings-design-options">
+          ${designs.map(([key,name,description])=>`<label class="settings-design-option">
+            <input type="radio" name="site-design" value="${key}" ${design===key?'checked':''} aria-describedby="design-description-${key}">
+            <span class="settings-design-copy"><strong>${name}</strong><small id="design-description-${key}">${description}</small></span>
+            <span class="settings-design-preview" data-preview="${key}" aria-hidden="true"></span>
+          </label>`).join('')}
+        </div>
+      </fieldset>
+      <p class="settings-design-status" id="settingsDesignStatus" role="status"></p>
+    </section>`;
+  }
   function render() {
     const root=$('settingsRoot');if(!root)return;const p=get();
-    root.innerHTML='<header class="settings-intro"><p class="eyebrow">DO TEU JEITO</p><h2>Menos distração.<br>Mais espaço para estudar.</h2><p>Escolhe o que aparece enquanto tu estuda. As preferências ficam salvas neste navegador e acompanham a exportação do progresso.</p></header><div class="settings-grid">'+groups.map(([title,rows])=>'<section class="settings-section panel"><h3>'+title+'</h3>'+rows.map(([key,label,description])=>'<label class="settings-row" for="setting-'+key+'"><span><strong>'+label+'</strong><small>'+description+'</small></span><input id="setting-'+key+'" type="checkbox" role="switch" data-setting="'+key+'" '+(p[key]?'checked':'')+'></label>').join('')+'</section>').join('')+'<section class="settings-section panel"><h3>Aparência</h3><label class="settings-theme" for="settingsTheme">Tema<select id="settingsTheme"><option value="light">Claro</option><option value="dark">Escuro</option></select></label><p>O tema é o mesmo do botão no topo do site.</p></section></div><div class="settings-actions"><button type="button" class="outline" data-settings-guide>Abrir o guia de consulta ↗</button><button type="button" class="quiet" data-settings-reset>Restaurar preferências</button><p id="settingsStatus" role="status" aria-live="polite"></p></div><aside class="settings-note"><strong>Teu estudo continua guardado.</strong><p>Esses ajustes não apagam respostas, anotações, favoritos, perfil ou simulados. FURG, ENEM, Fuvest, leituras e trilhas continuam disponíveis no site e no aplicativo.</p></aside>';
+    root.innerHTML='<header class="settings-intro"><p class="eyebrow">DO TEU JEITO</p><h2>Menos distração.<br>Mais espaço para estudar.</h2><p>Escolhe o que aparece enquanto tu estuda. As preferências ficam salvas neste navegador e acompanham a exportação do progresso.</p></header>'+appearance(p.design)+'<div class="settings-grid">'+groups.map(([title,rows])=>'<section class="settings-section panel"><h3>'+title+'</h3>'+rows.map(([key,label,description])=>'<label class="settings-row" for="setting-'+key+'"><span><strong>'+label+'</strong><small>'+description+'</small></span><input id="setting-'+key+'" type="checkbox" role="switch" data-setting="'+key+'" '+(p[key]?'checked':'')+'></label>').join('')+'</section>').join('')+'</div><div class="settings-actions"><button type="button" class="outline" data-settings-guide>Abrir o guia de consulta ↗</button><button type="button" class="quiet" data-settings-reset>Restaurar preferências</button><p id="settingsStatus" role="status" aria-live="polite"></p></div><aside class="settings-note"><strong>Teu estudo continua guardado.</strong><p>Respostas, anotações, favoritos, perfil e simulados ficam salvos. FURG, ENEM, Fuvest, leituras e trilhas continuam disponíveis no site e no aplicativo.</p></aside>';
     $('settingsTheme').value=document.documentElement.dataset.theme==='dark'?'dark':'light';
   }
   function refresh(){apply();if(document.querySelector('.view.active')?.id==='configuracoes')render();}
@@ -47,7 +78,13 @@
     adapter=value;adapter.getState().preferences=validate(adapter.getState().preferences);apply();
     if(bound)return;bound=true;
     $('settingsRoot')?.addEventListener('change',e=>{
-      if(e.target.id==='settingsTheme'){globalThis.FurgUI?.setTheme(e.target.value);return;}
+      if(e.target.id==='settingsTheme'){globalThis.FurgUI?.setTheme(e.target.value,e.target);return;}
+      if(e.target.name==='site-design'){
+        const ok=set('design',e.target.value);
+        if(!ok)$('settingsRoot').querySelector('[name="site-design"][value="'+get().design+'"]').checked=true;
+        $('settingsDesignStatus').textContent=ok?'Design salvo.':'Não foi possível salvar. O design anterior foi mantido.';
+        return;
+      }
       const key=e.target.dataset.setting;if(!key)return;
       const ok=set(key,e.target.checked);if(!ok)e.target.checked=get()[key];
       $('settingsStatus').textContent=ok?'Preferência salva.':'Não foi possível salvar. O ajuste anterior foi mantido.';

@@ -30,9 +30,12 @@ for(const entry of c.FURG_STUDY_CONCEPTS){assert(entry.summary&&entry.tip&&entry
  const p=vm.createContext({document:doc,FurgElimination:{clearAll:()=>calls.push('clear')}});vm.runInContext(fs.readFileSync('study-settings.js','utf8'),p);
  p.FurgSettings.init({getState:()=>prefState,save:()=>{saves++;return !fail;}});
  assert.equal(prefState.preferences.guideLauncher,true);assert.equal(prefState.preferences.compactEnem,false);assert.equal(doc.documentElement.dataset.compactEnem,'false');assert.equal(saves,0,'Migration must not save over an older progress file');assert(p.FurgSettings.set('compactEnem',true));assert.equal(doc.documentElement.dataset.compactEnem,'true');
+ assert.equal(doc.documentElement.dataset.design,'classic');
+ assert(p.FurgSettings.set('design','prisma'));assert.equal(doc.documentElement.dataset.design,'prisma');
+ assert(!p.FurgSettings.set('design','unknown'));assert(!p.FurgSettings.set('design',true));
  assert(p.FurgSettings.set('shortcuts',false));assert.equal(doc.documentElement.dataset.shortcuts,'false');
  assert(p.FurgSettings.set('crossOut',false));assert(calls.length);assert(!p.FurgSettings.set('unknown',true));assert(!p.FurgSettings.set('hints','false'));
- const saved=JSON.stringify(prefState);fail=true;assert(!p.FurgSettings.set('hints',false));assert.equal(JSON.stringify(prefState),saved,'Failed preference save did not roll back');
+ const saved=JSON.stringify(prefState);fail=true;assert(!p.FurgSettings.set('hints',false));assert(!p.FurgSettings.set('design','classic'));assert.equal(doc.documentElement.dataset.design,'prisma');assert.equal(JSON.stringify(prefState),saved,'Failed preference save did not roll back');
  assert.equal(prefState.answers.original.choice,'B');assert.equal(prefState.profile.name,'Ana');
  const clean=p.FurgSettings.validate({guideLauncher:'false',quickCards:false,unknown:true});assert.equal(clean.guideLauncher,true);assert.equal(clean.quickCards,false);assert(!Object.hasOwn(clean,'unknown'));
  const html=fs.readFileSync('index.html','utf8'),css=fs.readFileSync('navigation.css','utf8');assert(!html.includes('data-app-only'));assert(!css.includes('html[data-app-mode=web]'));assert(html.includes('id="studyGuideLauncher"'));assert(html.includes('id="configuracoes"'));assert(!html.includes('<script src="study-concepts-data.js'));
@@ -42,9 +45,12 @@ for(const entry of c.FURG_STUDY_CONCEPTS){assert(entry.summary&&entry.tip&&entry
 exports.integration=async function({ctx,$,vm,events,assert,storage,progressKey,exported,document,errors}){
  const snapshot=vm.runInContext('JSON.stringify(state)',ctx),settings=ctx.FurgSettings;
  settings.set('guideLauncher',false);settings.set('quickCards',false);settings.set('shortcuts',false);settings.set('compactEnem',true);
+ assert(settings.set('design','prisma'));
  const expected=JSON.stringify(settings.get());
- $('exportProgress').click();const backup=JSON.parse(await exported.at(-1).text());assert.equal(backup.preferences.guideLauncher,false);assert.equal(backup.preferences.shortcuts,false);assert.equal(backup.preferences.compactEnem,true);
- settings.set('guideLauncher',true);const json=JSON.stringify(backup);await $('progressFile').onchange({target:{files:[{size:Buffer.byteLength(json),text:async()=>json}],value:'preferences.json'}});assert.equal(JSON.stringify(settings.get()),expected);assert.equal(document.documentElement.dataset.guideLauncher,'false');
+ $('exportProgress').click();const backup=JSON.parse(await exported.at(-1).text());assert.equal(backup.preferences.guideLauncher,false);assert.equal(backup.preferences.shortcuts,false);assert.equal(backup.preferences.compactEnem,true);assert.equal(backup.preferences.design,'prisma');
+ settings.set('guideLauncher',true);settings.set('design','classic');const json=JSON.stringify(backup);await $('progressFile').onchange({target:{files:[{size:Buffer.byteLength(json),text:async()=>json}],value:'preferences.json'}});assert.equal(JSON.stringify(settings.get()),expected);assert.equal(document.documentElement.dataset.guideLauncher,'false');assert.equal(document.documentElement.dataset.design,'prisma');
+ const oldPreferences={...backup.preferences};delete oldPreferences.design;
+ const oldBackup=JSON.stringify({version:1,answers:{},preferences:oldPreferences});await $('progressFile').onchange({target:{files:[{size:Buffer.byteLength(oldBackup),text:async()=>oldBackup}],value:'old-preferences.json'}});assert.equal(document.documentElement.dataset.design,'prisma','A backup predating the design option reset it');
  const legacy=JSON.stringify({version:1,answers:{}});await $('progressFile').onchange({target:{files:[{size:legacy.length,text:async()=>legacy}],value:'legacy.json'}});assert.equal(JSON.stringify(settings.get()),expected,'Legacy import reset preferences');
  const saved=JSON.stringify(settings.get()),setItem=ctx.localStorage.setItem;ctx.localStorage.setItem=()=>{throw Error('quota');};assert(!settings.set('hints',false));assert.equal(JSON.stringify(settings.get()),saved);ctx.localStorage.setItem=setItem;
  vm.runInContext("setView('banco')",ctx);const oldChoice=vm.runInContext('selection',ctx);let prevented=false;for(const fn of events['document:keydown']||[])fn({key:'A',target:{closest:()=>null},preventDefault(){prevented=true;}});assert.equal(vm.runInContext('selection',ctx),oldChoice);assert(!prevented);
