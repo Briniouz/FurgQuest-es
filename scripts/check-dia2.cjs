@@ -139,6 +139,40 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  assert.equal(inApp('state.dia2.sessions.percurso.ids.length'),25);
  assert.equal(inApp('JSON.stringify(state.enem)'),oldBank);
  assert.equal(inApp('JSON.stringify(state.vespera)'),oldFirstDay);
+ const lessons=ctx.FURG_DIA2_LESSONS, maps=ctx.FurgDia2Maps.maps;
+ const lessonIds=new Set();
+ for(const [subject,list] of Object.entries(lessons)){
+  assert.equal(list.length,9);
+  assert.deepEqual(Array.from(maps[subject].branches.flatMap(branch=>branch[2])).sort((a,b)=>a-b),[0,1,2,3,4,5,6,7,8]);
+  for(const lesson of list){
+   assert(!lessonIds.has(lesson.id));lessonIds.add(lesson.id);
+   assert.equal(cards.get(lesson.card).subject,subject);
+   assert(lesson.parts.length===3&&lesson.example.length>=4&&lesson.exam);
+   assert(lesson.check.choices.length===3&&lesson.check.choices[lesson.check.correct]?.[1]);
+   if(lesson.lab)assert(ctx.FurgDia2Labs.labs[lesson.lab]);
+  }
+ }
+ assert.equal(lessonIds.size,36);
+ assert.equal(lessons.fisica[0].id,'energia');
+ assert.equal(Object.keys(ctx.FurgDia2Labs.labs).length,5);
+ assert(ctx.FurgDia2Labs.labs.rampa.draw(6).includes('80 J'));
+ assert(ctx.FurgDia2Labs.labs.diluicao.draw(2.5).includes('8 g/L'));
+ assert(ctx.FurgDia2Labs.labs.solidos.draw(2).includes('16 cm³'));
+ assert.equal(ctx.FurgStudyAreas.parse('#dia-2/mapa/nao-existe').path,'dia-2/mapa');
+ inApp("openStudyRoute('#dia-2/mapa/fisica')");
+ assert($('dia2LessonsRoot').innerHTML.includes('dia-2/aulas/fisica/energia'));
+ assert($('dia2LessonsRoot').innerHTML.includes('CONCEITO DE PARTIDA'));
+ inApp("openStudyRoute('#dia-2/aulas/fisica/energia')");
+ assert($('dia2LessonsRoot').innerHTML.includes('Energia e transformações'));
+ assert($('dia2LessonsRoot').innerHTML.includes('Exemplo resolvido'));
+ await importFile({version:1,answers:{},dia2:{lessons:{energia:true,unknown:true,volumes:'true'}}});
+ await importFile({version:1,answers:{},dia2:{lessons:{movimento:true}}});
+ await importFile({version:1,answers:{}});
+ assert.equal(inApp('JSON.stringify(state.dia2.lessons)'),'{"energia":true,"movimento":true}');
+ inApp("openStudyRoute('#dia-2/aulas/fisica')");
+ assert($('dia2LessonsRoot').innerHTML.includes('Forças, trabalho e equilíbrio</h2>'));
+ assert($('dia2LessonsRoot').innerHTML.includes('2 de 9 estudadas'));
+ assert.equal(inApp('JSON.stringify(state.enem)'),oldBank);
  inApp("openStudyRoute('#dia2')");
  assert(ctx.FurgEnem.openSubject('fisica'));
  assert.equal(inApp('view'),'enem');
@@ -146,4 +180,5 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  assert(ctx.FurgEnemSim.selectDay('2'));
  assert.equal($('enemExamDay').value,'2');
  console.log('PASS: 96 intact cards, 24 original exercises with linked explanations, 25 fingerprint-checked questions and official keys, draft-safe grading, rollback, notebook, flashcards, high-confidence review, legacy backup, and subject/day links.');
+ console.log('PASS: 36 complete lessons, four connected maps, five visual labs, valid deep links, progress merge, legacy import and resume.');
 };

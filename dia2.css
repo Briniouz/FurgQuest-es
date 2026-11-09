@@ -167,7 +167,7 @@ body:has(#dia2.active) .study-day-links { display: none; }
   #dia2QuickGuide :is(input,select) { font-size: 16px; }
 }
 
-/* Cores por matéria no guia, nas fichas e na consulta rápida. */
+/* Paleta por matéria nas aulas, no guia e na entrada do Dia 2. */
 #dia2, #dia2QuickGuide {
   --d2-accent: var(--blue);
   --d2-tint: var(--surface-3);
@@ -176,25 +176,25 @@ body:has(#dia2.active) .study-day-links { display: none; }
   --d2-warn-bg: #fbf1df;
   --d2-warn-ink: #724b1e;
 }
-:is(#dia2,#dia2QuickGuide) [data-subject="fisica"] {
+:is(#dia2,#dia2QuickGuide,#aulas,.study-hub) [data-subject="fisica"] {
   --d2-accent: #694611;
   --d2-tint: #fff3d5;
   --d2-selected: #f4cb68;
   --d2-border: #dcb778;
 }
-:is(#dia2,#dia2QuickGuide) [data-subject="quimica"] {
+:is(#dia2,#dia2QuickGuide,#aulas,.study-hub) [data-subject="quimica"] {
   --d2-accent: #684299;
   --d2-tint: #f1e8ff;
   --d2-selected: #e8d8fa;
   --d2-border: #cdb7ec;
 }
-:is(#dia2,#dia2QuickGuide) [data-subject="biologia"] {
+:is(#dia2,#dia2QuickGuide,#aulas,.study-hub) [data-subject="biologia"] {
   --d2-accent: #176442;
   --d2-tint: #e1f4e8;
   --d2-selected: #cdebd9;
   --d2-border: #a4d7ba;
 }
-:is(#dia2,#dia2QuickGuide) [data-subject="matematica"] {
+:is(#dia2,#dia2QuickGuide,#aulas,.study-hub) [data-subject="matematica"] {
   --d2-accent: #245ca1;
   --d2-tint: #e6effe;
   --d2-selected: #d6e6fc;
@@ -204,25 +204,25 @@ body:has(#dia2.active) .study-day-links { display: none; }
   --d2-warn-bg: #362b1c;
   --d2-warn-ink: #ffce89;
 }
-:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="fisica"] {
+:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide,#aulas,.study-hub) [data-subject="fisica"] {
   --d2-accent: #ffda8a;
   --d2-tint: #3d311e;
   --d2-selected: #614725;
   --d2-border: #886837;
 }
-:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="quimica"] {
+:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide,#aulas,.study-hub) [data-subject="quimica"] {
   --d2-accent: #d9b5fc;
   --d2-tint: #392d50;
   --d2-selected: #503968;
   --d2-border: #70588c;
 }
-:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="biologia"] {
+:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide,#aulas,.study-hub) [data-subject="biologia"] {
   --d2-accent: #a1e9be;
   --d2-tint: #203d35;
   --d2-selected: #28513e;
   --d2-border: #48785e;
 }
-:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide) [data-subject="matematica"] {
+:root[data-theme="dark"] :is(#dia2,#dia2QuickGuide,#aulas,.study-hub) [data-subject="matematica"] {
   --d2-accent: #a7d1ff;
   --d2-tint: #253b54;
   --d2-selected: #2c4b71;
@@ -262,9 +262,10 @@ body:has(#dia2.active) .study-day-links { display: none; }
   gap: 7px;
   min-height: 40px;
   padding: 6px 9px;
-  border: 1px solid transparent;
+  border: 1px solid color-mix(in srgb,var(--d2-border) 35%,transparent);
   border-radius: 6px;
-  background: transparent;
+  background: var(--d2-tint);
+  background: color-mix(in srgb,var(--d2-tint) 55%,var(--surface));
   color: var(--d2-accent);
   font-weight: 650;
 }

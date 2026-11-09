@@ -44,7 +44,7 @@
  const allPracticeIds = [...route,...Object.values(authorialBlocks).flatMap(block=>block.ids)];
  const sessionKeys = ['percurso', ...Object.keys(allBlocks), 'revisao'];
  const idsFor = key => key === 'percurso' ? route : allBlocks[key].ids.filter(eligible);
- const fresh = () => ({sessions:{}, attempts:[], cards:{}, seenExercises:{}, hints:true});
+ const fresh = () => ({sessions:{}, attempts:[], cards:{}, seenExercises:{}, lessons:{}, hints:true});
  const emptyDraft = () => ({choice:'', confidence:'', request:'', plan:''});
  const cleanText = (value, size) => typeof value === 'string' ? value.trim().slice(0,size) : '';
  const isChoice = value => typeof value === 'string' && /^[A-E]$/.test(value);
@@ -104,6 +104,7 @@
    if (mark && timestamp(mark.date) && ['again','known'].includes(mark.value)) result.cards[card.id] = {value:mark.value,date:mark.date};
   }
   for(const item of exerciseItems)if(value?.seenExercises?.[item.id]===true)result.seenExercises[item.id]=true;
+  result.lessons=globalThis.FurgDia2Lessons?.validate(value?.lessons)||{};
   return result;
  }
 
@@ -123,7 +124,7 @@
   for (const [id, mark] of Object.entries(b.cards)) {
    if (!marks[id] || Date.parse(mark.date) > Date.parse(marks[id].date)) marks[id] = mark;
   }
-  return validate({sessions, cards:marks, seenExercises:{...a.seenExercises,...b.seenExercises}, attempts:[...attempts.values()].sort((x,y) => Date.parse(x.date) - Date.parse(y.date)), hints:typeof incomingValue?.hints === 'boolean' ? b.hints : a.hints});
+  return validate({sessions, cards:marks, seenExercises:{...a.seenExercises,...b.seenExercises}, lessons:{...a.lessons,...b.lessons}, attempts:[...attempts.values()].sort((x,y) => Date.parse(x.date) - Date.parse(y.date)), hints:typeof incomingValue?.hints === 'boolean' ? b.hints : a.hints});
  }
 
  function status(message) {
@@ -305,6 +306,7 @@
  function guideView() {
   const topics = [...new Set(search('',subject).map(e => e.topic))];
   const exerciseAction = exerciseItems.length ? button('tab','Exercícios autorais →',attr('tab','exercicios'),'outline') : '';
+  const lessonPath = 'dia-2/aulas/'+subject;
   return `<div class="d2-study-view">
    ${studyHeading('Guia de fórmulas e conceitos','Escolhe a matéria e abre uma ficha pra ver a fórmula, o exemplo e o erro comum.',exerciseAction)}
    ${subjectPicker()}
@@ -315,7 +317,7 @@
    <p class="d2-muted d2-result-count" id="d2GuideResultsCount" aria-live="polite"></p><div id="d2GuideResults"></div>
    <details class="d2-command-list"><summary>Dicionário de comandos da prova</summary>
     ${commands.map(e => `<div><h3>${esc(e.title)}</h3><p>${esc(e.meaning)}</p><p class="d2-muted">${esc(e.example)}</p></div>`).join('')}</details>
-   <div class="d2-actions">${button('bank','Questões do ENEM de '+subjects[subject].label,attr('subject',subject))}${button('trilhas','Abrir as trilhas completas')}</div>
+   <div class="d2-actions"><a class="outline" href="#${lessonPath}" data-study-route="${lessonPath}">Estudar ${esc(subjects[subject].label)} do zero →</a>${button('bank','Questões do ENEM de '+subjects[subject].label,attr('subject',subject))}${button('trilhas','Abrir as trilhas completas')}</div>
   </div>`;
  }
 
@@ -397,7 +399,8 @@
    <p>Revisa uma ficha, resolve cinco questões e volta aos erros. O percurso reúne ${route.length} questões reais em cinco blocos, com duas rodadas de Física.</p>
    <div class="d2-actions">${button('start',pending(progress)?'Continuar percurso →':'Começar percurso →',attr('key','percurso'),'primary')}
     ${button('tab','Escolher bloco',attr('tab','treino'))}
-    ${exerciseItems.length?button('tab','Exercícios autorais',attr('tab','exercicios')):''}</div>
+    ${exerciseItems.length?button('tab','Exercícios autorais',attr('tab','exercicios')):''}
+    <a class="outline" href="#dia-2/aulas" data-study-route="dia-2/aulas">Estudar do zero →</a></div>
    ${progress ? `<p class="d2-muted">${progress.index} de ${progress.ids.length} questões concluídas no percurso.</p>` : ''}
    </article><aside class="d2-panel d2-quick-stats" aria-label="Teu progresso">
     <p class="eyebrow">TEU TREINO</p><dl><div><dt>Questões novas</dt><dd>${pairLabel(s.new)}</dd></div>
@@ -628,6 +631,7 @@
   const host = $('dia2Root'), dialog = $('dia2QuickGuide');
   if (bound || !host || !dialog) return;
   bound = true;
+  globalThis.FurgDia2Lessons?.init({getProgress:()=>state().lessons,saveProgress:lessons=>write({lessons})});
   host.addEventListener('click',click);
   host.addEventListener('submit',event => {
    const form = event.target;

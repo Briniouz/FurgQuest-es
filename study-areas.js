@@ -26,7 +26,7 @@
   },
   'dia-2':{
    day:'2', title:'Matemática e Ciências da Natureza', symbol:'∑',
-   subjects:['Matemática','Física','Química','Biologia'],
+   subjects:['matematica','fisica','quimica','biologia'],
    questionAreas:['matematica','ciencias-natureza'],
    menus:{
     provas:[
@@ -41,6 +41,8 @@
      ['evolucao','Level Up','Exercícios progressivos de Matemática','→'],
     ],
     estudos:[
+     ['aulas','Estudar do zero','Aulas com exemplos, experimentos e prática','↗'],
+     ['mapa','Mapa mental','Expande os conceitos e abre as aulas no quadro','⤢'],
      ['formulas','Fórmulas e conceitos','Guia de Matemática, Física, Química e Biologia','ƒ'],
      ['trilhas','Trilhas de estudo','Pré-requisitos, exemplos e exercícios','▥'],
     ],
@@ -52,8 +54,9 @@
   repertorios:{view:'vespera',open:()=>globalThis.FurgVespera?.showRepertories()},
   formulas:{view:'dia2',open:()=>globalThis.FurgDia2?.showGuide()},
   exercicios:{view:'dia2',open:()=>globalThis.FurgDia2?.showExercises()},
+  mapa:{view:'aulas'},
  };
- const views=new Set(['inicio','banco','leve','enem','anatomia','fuvest','evolucao','simulados','desempenho','trilhas','leituras','biblioteca','linguagens','acervo','configuracoes','vespera','dia2','matematica-lab','calculo-mental']);
+ const views=new Set(['inicio','banco','leve','enem','anatomia','fuvest','evolucao','simulados','desempenho','trilhas','leituras','biblioteca','linguagens','acervo','configuracoes','vespera','dia2','aulas','matematica-lab','calculo-mental']);
  const get=space=>Object.hasOwn(areas,space)?areas[space]:null;
  const viewOf=page=>shortcuts[page]?.view||page;
  const contains=(space,questionArea)=>get(space)?.questionAreas.includes(questionArea)??true;
@@ -70,14 +73,32 @@
   if(get(page))return {space:page,page:'area-estudo',view:'area-estudo',path:page};
   const view=viewOf(page);
   if(!views.has(view))return home;
+  if(view==='aulas')space='dia-2';
   if(!get(space)||!allowed(space,page))space='geral';
   return {space,page,view,path:space==='geral'?page:space+'/'+page};
  }
  function parse(hash) {
   const [name,page,...rest]=String(hash||'').replace(/^#/,'').split('/');
+  if(name==='dia-2'&&viewOf(page)==='aulas'&&rest.length){
+   const base=resolve(page,name), [subject,lesson]=rest;
+   const lengthIsValid=rest.length===1||(page==='aulas'&&rest.length===2&&!!lesson);
+   if(lengthIsValid&&globalThis.FurgDia2Lessons?.valid(subject,lesson)){
+    return {...base,subject,lesson,path:base.path+'/'+rest.join('/')};
+   }
+   return base;
+  }
   if(rest.length)return home;
   if(page!==undefined)return get(name)&&allowed(name,page)&&views.has(viewOf(page))?resolve(page,name):resolve(get(name)?name:'inicio','geral');
   return resolve(name,'geral');
+ }
+
+ function hubSubjects(meta) {
+  if(meta.day==='1')return meta.subjects.map(label=>`<span>${label}</span>`).join('');
+  return meta.subjects.map(id=>{
+   const {label,icon}=globalThis.FURG_DIA2_GUIDE.subjects[id];
+   const path='dia-2/mapa/'+id;
+   return `<a class="study-subject-link" data-subject="${id}" href="#${path}" data-study-route="${path}"><b aria-hidden="true">${icon}</b>${label}</a>`;
+  }).join('');
  }
 
  function renderHub(space) {
@@ -87,7 +108,7 @@
     <div>
      <p class="study-kicker">ENEM · DIA ${meta.day}</p>
      <h1 id="studyHubTitle" tabindex="-1">${meta.title}</h1>
-     <div class="study-tags" aria-label="Matérias">${meta.subjects.map(s=>`<span>${s}</span>`).join('')}</div>
+     <div class="study-tags" aria-label="Matérias">${hubSubjects(meta)}</div>
     </div>
     <span class="study-hub-symbol" aria-hidden="true">${meta.symbol}</span>
    </header>
@@ -107,5 +128,5 @@
  }
 
  globalThis.FurgStudyAreas={get,groups,contains,resolve,parse,activate,viewOf,current:()=>current,day:()=>get(current)?.day||'',
-  open:page=>shortcuts[page]?.open()};
+  open:page=>shortcuts[page]?.open?.()};
 })();
