@@ -26,7 +26,69 @@
   const potential=track===4?total*(1-t)**2:20*h;
   return {potential,kinetic:Math.max(0,total-potential),total,angle,h};
  };
+ const heatNumber=new Intl.NumberFormat('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+ const heat=value=>heatNumber.format(Math.abs(value)<.005?0:value);
+ function thermalBalance([vesselCapacity,vesselTemperature,waterMass,waterTemperature,ironMass,ironTemperature]){
+  const bodies=[
+   {name:'Água',kind:'water',capacity:waterMass,temperature:waterTemperature},
+   {name:'Ferro',kind:'iron',capacity:ironMass*.1,temperature:ironTemperature},
+   {name:'Calorímetro',kind:'vessel',capacity:vesselCapacity,temperature:vesselTemperature},
+  ];
+  const totalCapacity=bodies.reduce((sum,body)=>sum+body.capacity,0);
+  const equilibrium=bodies.reduce((sum,body)=>sum+body.capacity*body.temperature,0)/totalCapacity;
+  return {equilibrium,bodies:bodies.map(body=>({...body,heat:body.capacity*(equilibrium-body.temperature)}))};
+ }
+ function thermalChart(bodies,equilibrium){
+  const participating=bodies.filter(body=>body.capacity>0);
+  const upper=Math.max(100,...participating.map(body=>body.temperature));
+  const y=value=>113-90*value/upper;
+  return `<svg class="el-figure el-thermal-chart" viewBox="0 0 300 144" role="img" aria-label="Temperaturas iniciais dos participantes convergem para ${heat(equilibrium)} graus Celsius no equilíbrio">
+   <path class="el-axis" d="M48 23V113H260"/><text x="5" y="27">${n(upper)} °C</text><text x="5" y="113">0 °C</text>
+   ${participating.map(({kind,temperature})=>`<path class="el-heat-line el-heat-${kind}" d="M65 ${y(temperature)} L245 ${y(equilibrium)}"/>`).join('')}
+   <circle class="el-dot" cx="245" cy="${y(equilibrium)}" r="4"/>
+   <text x="51" y="132">Inicial</text><text x="213" y="132">Equilíbrio</text></svg>`;
+ }
+ function drawThermal(values){
+  const {equilibrium,bodies}=thermalBalance(values);
+  if(equilibrium>=100){
+   return `<p class="el-thermal-note"><strong>Limite do modelo</strong> · A conta sem mudança de fase chega a ${heat(equilibrium)} °C. A 1 atm, é preciso considerar a possibilidade de ebulição. Reduz a massa ou a temperatura do ferro para continuar no modelo.</p>`;
+  }
+  const terms=bodies.filter(body=>body.capacity>0);
+  const numerator=terms.map(body=>n(body.capacity)+' × '+n(body.temperature)).join(' + ');
+  const denominator=terms.map(body=>n(body.capacity)).join(' + ');
+  const balance=bodies.reduce((sum,body)=>sum+body.heat,0);
+  return `<div class="el-thermal-results">
+   <div class="el-thermal-answer"><span>Temperatura de equilíbrio</span><strong>${heat(equilibrium)} °C</strong></div>
+   <p>Tₑ = (${numerator}) / (${denominator}) = <strong>${heat(equilibrium)} °C</strong>.</p>
+   ${thermalChart(bodies,equilibrium)}
+   <table class="el-thermal-table"><caption>Balanço térmico por corpo</caption><thead><tr>
+    <th scope="col">Corpo</th><th scope="col">C (cal/°C)</th><th scope="col">Tᵢ (°C)</th><th scope="col">Q (cal)</th>
+   </tr></thead><tbody>${bodies.map(body=>`<tr><th scope="row"><span class="el-heat-swatch el-heat-${body.kind}" aria-hidden="true"></span>${body.name}</th>
+    <td>${n(body.capacity)}</td><td>${n(body.temperature)}</td><td>${body.heat>=.005?'+':''}${heat(body.heat)}</td></tr>`).join('')}</tbody>
+    <tfoot><tr><th scope="row" colspan="3">Soma dos calores</th><td>${heat(balance)}</td></tr></tfoot>
+   </table>
+   <p class="el-thermal-note">${bodies[2].capacity===0?'Com C do calorímetro igual a zero, só água e ferro entram no balanço.':'O calorímetro também troca calor e chega à temperatura de equilíbrio.'} Q positivo indica ganho de calor e Q negativo indica perda. Os valores são arredondados.</p>
+  </div>`;
+ }
  const labs={
+  calorimetria:{
+   title:'Equilíbrio térmico e capacidade térmica',
+   model:'O exemplo do quadro começa com 400 g de água a 20 °C, 200 g de ferro a 400 °C e um calorímetro ideal. O modelo usa paredes adiabáticas, água a 1 atm e calores específicos constantes de 1,0 e 0,1 cal/(g·°C), respectivamente. A conta supõe ausência de evaporação e mudanças de fase.',
+   vars:[
+    control('Capacidade térmica do calorímetro','cal/°C',0,800,10,0),
+    control('Temperatura inicial do calorímetro','°C',5,80,1,20),
+    control('Massa de água','g',100,800,10,400),
+    control('Temperatura inicial da água','°C',5,80,1,20),
+    control('Massa de ferro','g',50,600,10,200),
+    control('Temperatura inicial do ferro','°C',10,400,1,400),
+   ],
+   rule:'C = m · c para cada material · Q = C · (Tₑ − Tᵢ) · ΣQ = 0',
+   draw:drawThermal,
+   resetLabel:'Voltar ao exemplo do quadro',
+   cue:'C mede o calor necessário para elevar o corpo inteiro em 1 °C. Já c mede quanto precisa por grama. A temperatura final fica mais perto das temperaturas iniciais dos corpos com maior C.',
+   task:['Mantém os dados do quadro e aumenta a capacidade do calorímetro para 100 cal/°C. Se ele começa a 20 °C, o equilíbrio vai ficar acima ou abaixo de 38,10 °C?',
+    'Abaixo. O calorímetro também recebe calor. No balanço, Tₑ = (400 × 20 + 20 × 400 + 100 × 20) / 520 ≈ 34,62 °C. Se o calorímetro começar mais quente que o equilíbrio anterior, ele pode elevar a temperatura final.'],
+  },
   conservacao:{
    title:'Transformações de energia',model:'Percurso ideal, sem atrito, com massa de 2 kg e g = 10 m/s². A posição controla o estado do sistema. O controle não mede o tempo da trajetória. Na opção mola, k = 100 N/m e a compressão inicial é 1 m.',
    vars:[{label:'Sistema',unit:'',options:tracks,value:0},control('Posição ao longo do trecho','%',0,100,2,30)],
@@ -172,6 +234,7 @@
     if(c.options)return '<label>'+c.label+'<select data-el-range>'+c.options.map((label,j)=>'<option value="'+j+'"'+(j===c.value?' selected':'')+'>'+label+'</option>').join('')+'</select></label>';
     return '<div class="aula-lab-control"><label for="'+key+'">'+c.label+'</label><output for="'+key+'">'+n(c.value)+' '+c.unit+'</output><input id="'+key+'" type="range" data-el-range min="'+c.min+'" max="'+c.max+'" step="'+c.step+'" value="'+c.value+'" aria-valuetext="'+n(c.value)+' '+c.unit+'"></div>';
    }).join('')+'</div><p class="el-formula">'+l.rule+'</p><div data-el-result>'+l.draw(l.vars.map(c=>c.value))+'</div>'+
+   (l.resetLabel?'<button type="button" class="outline" data-el-reset>'+l.resetLabel+'</button>':'')+
    (id==='conservacao'?'<button type="button" class="outline el-animate" data-el-animate>Reproduzir percurso</button>':'')+'<p>'+l.cue+'</p>'+
    '<details><summary>Desafio autoral</summary><p>'+l.task[0]+'</p><details><summary>Conferir raciocínio</summary><p>'+l.task[1]+'</p></details></details></section>';
  }
@@ -195,6 +258,13 @@
   host.addEventListener('input',run);
   host.addEventListener('change',event=>{if(event.target.tagName==='SELECT')run(event);});
   host.addEventListener('click',event=>{
+   const reset=event.target.closest('[data-el-reset]');
+   if(reset){
+    const controls=[...reset.closest('[data-study-lab]').querySelectorAll('input[data-el-range]')];
+    for(const input of controls)input.value=input.defaultValue;
+    if(controls.length)update(controls[0]);
+    return;
+   }
    const button=event.target.closest('[data-el-animate]');
    if(!button||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
    const stop=playing.get(button);
@@ -219,5 +289,5 @@
    frame=requestAnimationFrame(step);
   });
  }
- globalThis.FurgStudyLabs={labs,markup,update,bind,energy,motion,geometry,trig,conservation};
+ globalThis.FurgStudyLabs={labs,markup,update,bind,energy,motion,geometry,trig,conservation,thermalBalance};
 })();

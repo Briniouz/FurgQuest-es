@@ -267,6 +267,25 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  assert($('dia2Root').innerHTML.includes('Poder calorífico (kcal/kg)'));
  assert.equal(inApp('JSON.stringify(state.dia2.sessions.percurso)'),originalSession);
  assert.equal(mode.validate(JSON.parse(inApp('JSON.stringify(state.dia2)'))).sessions['apostas-fisica'].index,1);
+ const exclusive = ctx.FURG_ENEM_EXCLUSIVAS.day2;
+ assert.equal(exclusive.length,6);
+ assert.equal(new Set(exclusive.map(q=>q.id)).size,exclusive.length);
+ assert.equal(new Set(exclusive.map(q=>cards.get(q.card)?.subject)).size,4);
+ for(const item of exclusive){
+  assert(cards.has(item.card)&&['Média','Difícil'].includes(item.difficulty));
+  assert.equal(new Set(item.options).size,5);
+  assert(/^[A-E]$/.test(item.answer)&&item.steps.length===3);
+ }
+ assert(mode.start('exclusivas'));
+ assert($('dia2Root').innerHTML.includes('O recipiente do laboratório'));
+ assert(!$('dia2Root').innerHTML.includes('Testar no simulador'));
+ assert(mode.record({choice:'A',confidence:'alta',request:'A capacidade térmica do recipiente',plan:'Balanço de calor'}));
+ assert($('dia2Root').innerHTML.includes('1 000/20 = 50 cal/°C'));
+ assert($('dia2Root').innerHTML.includes('Testar no simulador'));
+ assert(mode.errors(true).some(a=>a.questionId==='d2-exc-capacidade'));
+ assert(mode.next());
+ assert.equal(inApp('JSON.stringify(state.dia2.sessions.percurso)'),originalSession);
+ assert.equal(mode.validate(JSON.parse(inApp('JSON.stringify(state.dia2)'))).sessions.exclusivas.index,1);
  const {convert,parse}=ctx.FurgConversions;
  const close=(actual,wanted)=>assert(Math.abs(actual-wanted)<1e-8,`${actual} ≠ ${wanted}`);
  close(convert(-40,'temperatura','°C','°F'),-40);
@@ -291,7 +310,14 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  console.log('PASS: 30 practice bets, separate sessions, legacy progress, temperature scales and intervals, dimensional conversions and lesson links.');
  const course=ctx.FurgStudyCourse, labs=ctx.FurgStudyLabs;
  assert.equal(Object.keys(ctx.FurgStudyData.layers).length,36);
- assert.equal(Object.keys(labs.labs).length,10);
+ assert.equal(Object.keys(labs.labs).length,11);
+ const mix=labs.thermalBalance(labs.labs.calorimetria.vars.map(control=>control.value));
+ assert(Math.abs(mix.equilibrium-38.095238095)<1e-8);
+ assert(Math.abs(mix.bodies.reduce((sum,body)=>sum+body.heat,0))<1e-8);
+ assert.equal(mix.bodies[2].heat,0);
+ const real=labs.thermalBalance([100,20,400,20,200,400]);
+ assert(Math.abs(real.equilibrium-34.615384615)<1e-8&&real.bodies[2].heat>0);
+ assert(labs.labs.calorimetria.draw([0,20,100,80,600,400]).includes('Limite do modelo'));
  assert(labs.labs.conservacao.draw([2,100]).includes('40 J'));
  assert.deepEqual(Array.from(labs.motion([-4,2,4])),[0,4]);
  assert(Math.abs(labs.trig([30,10])[1]-5)<1e-8);
@@ -306,7 +332,7 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  const saved=JSON.parse(inApp('JSON.stringify(state.dia2)'));
  assert.equal(mode.merge(saved,saved).learning.length,1);
  assert.equal(mode.merge(saved,{}).learning.length,1);
- console.log('PASS: 36 lesson extensions, 10 workshop labs, numerical models, spaced review, merge and navigation.');
+ console.log('PASS: 36 lesson extensions, 11 workshop labs, numerical models, spaced review, merge and navigation.');
  inApp("openStudyRoute('#dia2')");
  assert(ctx.FurgEnem.openSubject('fisica'));
  assert.equal(inApp('view'),'enem');

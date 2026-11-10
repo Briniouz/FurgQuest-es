@@ -45,7 +45,12 @@
  const betBlocks = Object.fromEntries(['todos',...Object.keys(subjects)].map(subject=>[
   'apostas-'+subject,{title:'Apostas · Edcley Teixeira',ids:registeredBets.filter(item=>subject==='todos'||item.subject===subject).map(item=>item.id)}
  ]));
- const allBlocks = {...blocks,...authorialBlocks,...betBlocks};
+ const exclusiveIds = (globalThis.FURG_ENEM_EXCLUSIVAS?.day2 || []).filter(item=>{
+  const card = cardsById.get(item.card);
+  return card && addLocalQuestion(item,{subject:card.subject,authorial:true});
+ }).map(item=>item.id);
+ const allBlocks = {...blocks,...authorialBlocks,...betBlocks,
+  exclusivas:{title:'Questões exclusivas · Dia 2',ids:exclusiveIds}};
  const eligible = id => {
   const q = byId.get(id), item = hasKey(questions,id) && questions[id];
   if(item?.authorial||item?.bet)return !!q;
@@ -53,7 +58,7 @@
    official[q.year]?.[q.index] === item.answer && globalThis.FurgEnemLayout?.fingerprint(q) === item.fingerprint);
  };
  const route = Object.values(blocks).flatMap(block => block.ids).filter(eligible);
- const allPracticeIds = [...route,...Object.values(authorialBlocks).flatMap(block=>block.ids),...betBlocks['apostas-todos'].ids];
+ const allPracticeIds = [...route,...Object.values(authorialBlocks).flatMap(block=>block.ids),...betBlocks['apostas-todos'].ids,...exclusiveIds];
  const flexible = new Set(['revisao','agendada','adaptativo']);
  const sessionKeys = ['percurso', ...Object.keys(allBlocks), ...flexible];
  const idsFor = key => key === 'percurso' ? route : allBlocks[key].ids.filter(eligible);
@@ -473,6 +478,7 @@
    <div class="d2-actions">${button('start',pending(progress)?'Continuar percurso →':'Começar percurso →',attr('key','percurso'),'primary')}
     ${button('tab','Escolher bloco',attr('tab','treino'))}
     ${exerciseItems.length?button('tab','Exercícios autorais',attr('tab','exercicios')):''}
+    ${exclusiveButton()}
     <a class="outline" href="#dia-2/aulas" data-study-route="dia-2/aulas">Estudar do zero →</a></div>
    ${progress ? `<p class="d2-muted">${progress.index} de ${progress.ids.length} questões concluídas no percurso.</p>` : ''}
    </article><aside class="d2-panel d2-quick-stats" aria-label="Teu progresso">
@@ -511,6 +517,9 @@
  function trainingHome() {
   return `<h2 id="d2Focus" tabindex="-1">Treino guiado</h2><p>Identifica o que a questão pede, registra teu plano e marca a confiança antes de conferir a resolução.</p>
    ${betsPanel()}
+   ${exclusiveIds.length?`<div class="d2-authorial-callout"><div><strong>Questões exclusivas · Dia 2</strong>
+    <p>Questões autorais de nível médio ou difícil. Em cada uma, o comando muda a grandeza ou a etapa que tu precisa descobrir.</p></div>
+    ${exclusiveButton()}</div>`:''}
    <div class="d2-actions">${button('start',pending(state().sessions.percurso)?'Continuar percurso':'Percurso de '+route.length+' questões',attr('key','percurso'),'primary')}</div>
    <h3 class="d2-subheading">Questões oficiais com resolução</h3>
    <div class="d2-block-grid">${Object.entries(blocks).map(([key,block]) => {
@@ -520,6 +529,11 @@
    }).join('')}</div>
    ${exerciseItems.length?`<div class="d2-authorial-callout"><div><strong>Exercícios autorais</strong><p>Pratica por matéria ou lê as resoluções passo a passo.</p></div>
     ${button('tab','Abrir exercícios →',attr('tab','exercicios'))}</div>`:''}`;
+ }
+
+ function exclusiveButton() {
+  if(!exclusiveIds.length)return '';
+  return button('start',pending(state().sessions.exclusivas)?'Continuar questões exclusivas →':'Treinar '+exclusiveIds.length+' questões exclusivas →',attr('key','exclusivas'));
  }
 
  function betVisual(visual) {
@@ -583,7 +597,8 @@
    <p class="d2-muted">Tua resposta ${a.choice} · Confiança ${confidence[a.confidence].toLowerCase()} · Questão ${a.exposure==='new'?'nova':'repetida'}</p>
    ${solutionSteps(item)}
    <div class="d2-actions">${button('next',session().index + 1 === session().ids.length?'Ver resultado →':'Próxima questão →','','primary')}
-    ${button('card','Consultar ficha',attr('card',item.card))}</div>
+    ${button('card','Consultar ficha',attr('card',item.card))}
+    ${item.reviewRoute?studyLink(item.reviewRoute,item.reviewLabel):''}</div>
    </section>${noteForm(a)}`;
  }
 
@@ -599,7 +614,7 @@
   const a = attemptAt(q), item = questions[q.id], draft = s.draft;
   const block = Object.values(allBlocks).find(group => group.ids.includes(q.id));
   return `<article class="d2-panel d2-question" ${attr('subject',item.subject)} data-d2-question="${esc(q.id)}">
-   <div class="d2-question-head"><div><p class="eyebrow">${esc(block.title)} · ${s.index+1}/${s.ids.length}${item.bet?' · '+item.difficulty:item.authorial?' · '+levels[item.level]:''}</p>
+   <div class="d2-question-head"><div><p class="eyebrow">${esc(block.title)} · ${s.index+1}/${s.ids.length}${item.difficulty?' · '+esc(item.difficulty):item.authorial?' · '+levels[item.level]:''}</p>
    <h2 id="d2Focus" tabindex="-1">${esc(qLabel(q))}</h2></div>${button('training-home','Ver blocos','','quiet')}</div>
    <div class="d2-actions d2-question-links">${button('quick','Guia lateral ↗','','quiet')}
    ${q.authorial||q.bet?button('card','Ver ficha do assunto',attr('card',item.card),'quiet'):`<a href="${esc(q.source?.pdf || officialSources[q.year].exam)}" target="_blank" rel="noopener noreferrer">Caderno azul ↗</a>`}</div>

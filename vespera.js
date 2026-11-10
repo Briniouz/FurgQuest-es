@@ -14,9 +14,19 @@
  const categories={vocabulario:'Vocabulário',comando:'Comando',genero:'Gênero',conteudo:'Conteúdo',extrapolacao:'Extrapolação',generalizacao:'Generalização',informacao:'Informação verdadeira que não responde à pergunta'};
  const confidences=['baixa','media','alta'],confidenceLabels={baixa:'Baixa',media:'Média',alta:'Alta'};
  const bank=new Map((globalThis.FURG_ENEM_DATA?.questions||[]).map(q=>[q.id,q])),entries=new Map(data.entries.map(e=>[e.id,e]));
- const eligible=id=>{const q=bank.get(id),n=data.questions[id];return !!(q&&n&&q.answer===n.answerExpected&&!q.canceled&&!q.quality?.blocked&&globalThis.FurgEnemLayout?.fingerprint(q)===n.fingerprint);};
- const ids=()=>Object.keys(data.questions).filter(eligible),uid=()=>Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,11);
- const fresh = () => ({version: 1, attempts: [], active: null, percurso: null, cards: {}, plan: {}, hints: true});
+ const officialIds = Object.keys(data.questions);
+ const exclusiveIds = [];
+ for (const item of globalThis.FURG_ENEM_EXCLUSIVAS?.day1 || []) {
+  if (bank.has(item.id) || Object.hasOwn(data.questions,item.id)) continue;
+  const {id,area,title,context,stem,options,answer} = item;
+  bank.set(id,{id,area,title,context,stem,answer,authorial:true,
+   alternatives:options.map((text,i)=>({letter:'ABCDE'[i],text}))});
+  data.questions[id] = {...item,answerExpected:answer};
+  exclusiveIds.push(id);
+ }
+ const eligible=id=>{const q=bank.get(id),n=data.questions[id];return !!(q&&n&&q.answer===n.answerExpected&&!q.canceled&&!q.quality?.blocked&&(q.authorial||globalThis.FurgEnemLayout?.fingerprint(q)===n.fingerprint));};
+ const ids=()=>officialIds.filter(eligible),uid=()=>Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,11);
+ const fresh = () => ({version: 1, attempts: [], active: null, percurso: null, exclusivas: null, cards: {}, plan: {}, hints: true});
  let adapter,bound=false,tab='plan',dictionaryQuery='',dictionaryKind='all',lastFocus=null,flashIds=[],flashIndex=0,flashRevealed=false,reviewHigh=false,draftTimer,blockedImage=false;
  let sessionKey = 'active', commentTimer;
  const repertoryFilter = {axis: '', use: '', query: ''};
@@ -82,6 +92,8 @@
   for(const [id,date]of Object.entries(value.plan||{}))if(['dictionary','cards','practice','errors','humanas','redacao'].includes(id)&&typeof date==='string'&&Number.isFinite(Date.parse(date)))out.plan[id]=date;
   out.active = validateSession(value.active, 5);
   out.percurso = validateSession(value.percurso, 25);
+  const exclusive = validateSession(value.exclusivas,exclusiveIds.length);
+  if (exclusive?.ids.every(id=>exclusiveIds.includes(id))) out.exclusivas = exclusive;
   return out;
  }
  function merge(old, incoming) {
@@ -108,6 +120,7 @@
    cards: {...a.cards, ...b.cards}, plan: {...a.plan, ...b.plan},
    active: unfinished(a.active) ? a.active : b.active || a.active,
    percurso: unfinished(a.percurso) ? a.percurso : b.percurso || a.percurso,
+   exclusivas: unfinished(a.exclusivas) ? a.exclusivas : b.exclusivas || a.exclusivas,
    hints: b.hints,
   });
  }
@@ -125,7 +138,7 @@
   for(const a of value.attempts){const s=result[a.exposure];s.total++;if(a.correct)s.correct++;const area=result.areas[bank.get(a.questionId)?.area]?.[a.exposure];if(area){area.total++;if(a.correct)area.correct++;}if(!a.correct&&a.confidence==='alta')result.highErrors++;}return result;
  }
  function errors(high=false){
-  const mode=state(),found=[];for(const id of ids()){
+  const mode=state(),found=[];for(const id of [...ids(),...exclusiveIds]){
    const all=mode.attempts.filter(a=>a.questionId===id),last=all.at(-1),q=bank.get(id),old=adapter.getState().enem?.answers?.[id];
    if(last&&!last.correct&&(!high||last.confidence==='alta'))found.push({...last,legacy:false});
    else if(!last&&old?.choice&&old.choice!==q.answer&&!high)found.push({questionId:id,choice:old.choice,correct:false,confidence:'',category:'',legacy:true});
@@ -138,7 +151,7 @@
   focusQuestion();
  }
  function start(group = 'mix', forced = []) {
-  const key = group === 'percurso' ? 'percurso' : 'active';
+  const key = ['percurso','exclusivas'].includes(group) ? group : 'active';
   if (unfinished(state()[key])) {
    resume(key);
    say('Retomei teu treino com o rascunho salvo.');
@@ -146,7 +159,9 @@
   }
   const g = data.groups.find(item => item.id === group);
   let pool;
-  if (key === 'percurso') {
+  if (key === 'exclusivas') {
+   pool = exclusiveIds;
+  } else if (key === 'percurso') {
    pool = trailItems.map(item => item.id);
    if (pool.length !== 25 || new Set(pool).size !== 25 || !pool.every(eligible)) {
     say('Uma questão do percurso precisa de nova conferência. O bloco de 5 continua disponível.');
@@ -176,7 +191,7 @@
    say('As questões selecionadas precisam de nova conferência.');
    return false;
   }
-  const label = key === 'percurso' ? 'Percurso do primeiro dia' :
+  const label = key === 'exclusivas' ? 'Questões exclusivas · Dia 1' : key === 'percurso' ? 'Percurso do primeiro dia' :
    g?.title || (group === 'errors' ? 'Revisão de erros' : 'Leitura do comando e evidência');
   const next = {id: uid(), ids: pool, index: 0, label, draft: cleanDraft(null, pool[0])};
   if (!write(s => { s[key] = next; })) return false;
@@ -238,6 +253,9 @@
  }
  const button=(action,label,extra='',cls='outline')=>'<button type="button" class="'+cls+'" data-eve="'+action+'" '+extra+'>'+label+'</button>';
  const referenceLinks=q=>'<div class="eve-original"><a href="'+esc(q.source.pdf)+'" target="_blank" rel="noopener">Prova original ↗</a><a href="'+esc(q.source.answerPdf)+'" target="_blank" rel="noopener">Gabarito do caderno azul ↗</a></div>';
+ const questionLabel = q => q.authorial ? q.title : `ENEM ${q.year} · Questão ${q.index}${q.language === 'ingles' ? ' · Inglês' : ''}`;
+ const exclusiveButton = () => exclusiveIds.length ? button('exclusivas',
+  unfinished(state().exclusivas) ? 'Continuar questões exclusivas →' : 'Treinar '+exclusiveIds.length+' questões exclusivas →') : '';
  function summaries(tag,title){const cards=(globalThis.FURG_LIGHT_REVIEW_DATA?.cards||[]).filter(c=>tag==='humanas'?c.tags?.includes('humanas'):c.deck==='agentes').slice(0,6);return '<details class="eve-existing"><summary>'+title+' · resumos existentes</summary>'+cards.map(c=>'<article><h4>'+esc(c.title)+'</h4><p>'+esc(c.answer)+'</p><p>'+esc(c.connection||'')+'</p></article>').join('')+button(tag==='humanas'?'library':'dayone','Abrir a seção completa ↗')+'</details>';}
  function trailOverview(s) {
   if (!trailBlocks.length) return '';
@@ -283,6 +301,10 @@
   </section>
   ${unfinished(v.active) ? `<div class="eve-resume">Bloco em andamento · ${esc(v.active.label)} · ${v.active.index + 1}/${v.active.ids.length} ${button('start','Continuar bloco de 5 →')}</div>` : ''}
   ${trailOverview(v.percurso)}
+  ${exclusiveIds.length ? `<section class="eve-trail panel"><div class="eve-trail-heading">
+   <div><p class="eyebrow">QUESTÕES AUTORAIS · DIA 1</p><h3>Questões exclusivas</h3>
+   <p>Em Linguagens e Humanas, descobre a condição, a evidência que falta ou o efeito de uma palavra.</p></div>
+   ${exclusiveButton()}</div></section>` : ''}
   <div class="eve-blocks">${blocks.map(([id,title,time,desc,act,label]) => `<article class="panel"><div class="eve-block-title"><h3>${title}</h3><small>${time}</small></div><p>${desc}</p>${button(act,label)}${button('mark',v.plan[id]?'✓ Bloco feito':'Marcar bloco feito','data-block="'+id+'"','quiet')}</article>`).join('')}</div>
   <section class="eve-topics"><h3>Revisão pelos teus grupos de dificuldade</h3>
    <p>Os números indicam os grupos da tua apostila. Os itens do treino usam os números dos cadernos oficiais do ENEM.</p>
@@ -400,7 +422,7 @@
   if (!s) return `<div class="eve-empty"><h2>Escolhe teu treino</h2>
    <p>Registra comando, evidência e confiança antes de conferir o gabarito.</p>
    <div class="eve-action-row">${button('percurso', unfinished(state().percurso) ? 'Retomar percurso de 25' : 'Percurso de 25', '', 'primary')}
-    ${button('start','Bloco de 5')}</div></div>`;
+    ${button('start','Bloco de 5')} ${exclusiveButton()}</div></div>`;
   if (!unfinished(s)) {
    const a = state().attempts.filter(a => a.batch === s.id), n = a.filter(a => a.exposure === 'new'), r = a.filter(a => a.exposure === 'repeat');
    return `<section class="eve-summary panel"><h2>${long ? 'Percurso' : 'Bloco'} concluído</h2>
@@ -411,15 +433,15 @@
   }
   const q = current();
   if (!q || !eligible(q.id)) return '<p>Este item precisa de nova conferência antes de ser usado. Teus registros foram mantidos.</p>';
-  const a = response(), d = s.draft, item = long ? trailById.get(q.id) : null;
+  const a = response(), d = s.draft, item = long ? trailById.get(q.id) : q.authorial ? data.questions[q.id] : null;
   blockedImage = false;
   return `<article id="eveQuestion" class="eve-question" data-question-id="${esc(q.id)}">
    <div class="eve-question-top"><p class="eyebrow">${esc(s.label)} · ${s.index + 1}/${s.ids.length}</p>
     ${button('plan','Pausar e voltar ao plano','','quiet')}</div>
-   ${item ? `<div class="eve-stage-caption">Bloco ${item.block + 1}/${trailBlocks.length} · ${esc(trailBlocks[item.block].title)}</div>` : ''}
-   <h2 id="eveQuestionTitle" tabindex="-1">ENEM ${q.year} · Questão ${q.index}${q.language === 'ingles' ? ' · Inglês' : ''} · ${q.area === 'ciencias-humanas' ? 'Humanas' : 'Linguagens'}</h2>
-   <p class="eve-muted">Caderno azul · ${a ? (a.exposure === 'repeat' ? 'Repetida' : 'Nova') : (wasSeen(q.id) ? 'Repetida' : 'Nova neste histórico')}${item && state().hints ? ' · ' + esc(item.skill) : ''}</p>
-   ${referenceLinks(q)}${globalThis.FurgEnem.body(q)}
+   ${long && item ? `<div class="eve-stage-caption">Bloco ${item.block + 1}/${trailBlocks.length} · ${esc(trailBlocks[item.block].title)}</div>` : ''}
+   <h2 id="eveQuestionTitle" tabindex="-1">${esc(questionLabel(q))} · ${q.area === 'ciencias-humanas' ? 'Humanas' : 'Linguagens'}</h2>
+   <p class="eve-muted">${q.authorial ? 'Questão autoral do BriniouzStudy' : 'Caderno azul'} · ${a ? (a.exposure === 'repeat' ? 'Repetida' : 'Nova') : (wasSeen(q.id) ? 'Repetida' : 'Nova neste histórico')}${item?.skill && state().hints ? ' · ' + esc(item.skill) : ''}</p>
+   ${q.authorial ? q.context.split('\n').map(line=>'<p>'+esc(line)+'</p>').join('')+'<p><strong>'+esc(q.stem)+'</strong></p>' : referenceLinks(q)+globalThis.FurgEnem.body(q)}
    <p id="eveImageStatus" class="eve-image-status" role="status" hidden></p>
    ${a ? '' : reasoning(d, item)}
    <h3 class="eve-alternatives-title">Alternativas</h3>
@@ -437,7 +459,7 @@
    <p>Relembra como tu chegou à resposta e o que mudou depois de conferir.</p>
    ${notes.length ? notes.map(a => {
     const q = bank.get(a.questionId);
-    return `<article class="panel"><h3>ENEM ${q.year} · Questão ${q.index}${q.language === 'ingles' ? ' · Inglês' : ''}</h3>
+    return `<article class="panel"><h3>${esc(questionLabel(q))}</h3>
      <p class="eve-muted">${a.correct ? 'Acerto' : 'Erro'} · Confiança ${confidenceLabels[a.confidence].toLowerCase()} · ${new Date(a.date).toLocaleDateString('pt-BR')}</p>
      ${writtenResponse(a)}${commentEditor(a)}
      <details><summary>Reler a resolução comentada</summary><p>Gabarito ${q.answer} · Tua resposta ${a.choice}</p>
@@ -579,7 +601,7 @@
   $('eveRepertoryCount').textContent = count + (count === 1 ? ' eixo temático' : ' eixos temáticos');
   $('eveRepertoryEmpty').hidden = count > 0;
  }
- function errorView(){const items=errors(reviewHigh),st=stats();return '<section class="eve-errors"><h2>Revisar meus erros</h2><label class="eve-switch"><input id="eveReviewHigh" type="checkbox" '+(reviewHigh?'checked':'')+'> Só erros pendentes com confiança alta</label><p>'+st.highErrors+' '+(st.highErrors===1?'erro com confiança alta registrado':'erros com confiança alta registrados')+' no histórico deste modo. A fila usa a tentativa mais recente de cada questão; um acerto posterior retira o item dos pendentes.</p>'+(items.length?button('review-all','Treinar até 5 destes erros','','primary'):'<p>Nenhum erro pendente neste filtro. Os erros antigos do banco aparecem quando a questão pertence ao acervo deste modo.</p>')+items.map(a=>{const q=bank.get(a.questionId),n=data.questions[a.questionId],w=n.wrong[a.choice];return '<article class="eve-error-card"><h3>ENEM '+q.year+' · Questão '+q.index+(q.language==='ingles'?' · Inglês':'')+'</h3><p>'+(a.legacy?'Erro anterior no banco · confiança não registrada':'Confiança '+confidenceLabels[a.confidence].toLowerCase()+' · '+esc(categories[a.category]||'Ainda sem classificação'))+'</p><p><b>Tarefa:</b> '+esc(n.command)+'</p><p>'+esc(w?.why||'Relê o comando e confere as pistas no texto.')+'</p>'+button('review-one','Refazer em leitura guiada','data-question="'+q.id+'"')+' '+button('term','Revisar '+esc(entries.get(n.terms[0]).title),'data-term="'+n.terms[0]+'"','quiet')+'</article>';}).join('')+performanceTable(st)+'</section>';}
+ function errorView(){const items=errors(reviewHigh),st=stats();return '<section class="eve-errors"><h2>Revisar meus erros</h2><label class="eve-switch"><input id="eveReviewHigh" type="checkbox" '+(reviewHigh?'checked':'')+'> Só erros pendentes com confiança alta</label><p>'+st.highErrors+' '+(st.highErrors===1?'erro com confiança alta registrado':'erros com confiança alta registrados')+' no histórico deste modo. A fila usa a tentativa mais recente de cada questão; um acerto posterior retira o item dos pendentes.</p>'+(items.length?button('review-all','Treinar até 5 destes erros','','primary'):'<p>Nenhum erro pendente neste filtro. Os erros antigos do banco aparecem quando a questão pertence ao acervo deste modo.</p>')+items.map(a=>{const q=bank.get(a.questionId),n=data.questions[a.questionId],w=n.wrong[a.choice];return '<article class="eve-error-card"><h3>'+esc(questionLabel(q))+'</h3><p>'+(a.legacy?'Erro anterior no banco · confiança não registrada':'Confiança '+confidenceLabels[a.confidence].toLowerCase()+' · '+esc(categories[a.category]||'Ainda sem classificação'))+'</p><p><b>Tarefa:</b> '+esc(n.command)+'</p><p>'+esc(w?.why||'Relê o comando e confere as pistas no texto.')+'</p>'+button('review-one','Refazer em leitura guiada','data-question="'+q.id+'"')+' '+button('term','Revisar '+esc(entries.get(n.terms[0]).title),'data-term="'+n.terms[0]+'"','quiet')+'</article>';}).join('')+performanceTable(st)+'</section>';}
  function performanceTable(st){return '<h3>Acertos separados por exposição</h3><div class="eve-table-wrap"><table><thead><tr><th>Área</th><th>Novas</th><th>Repetidas</th></tr></thead><tbody>'+Object.entries(st.areas).map(([id,v])=>'<tr><th>'+(id==='linguagens'?'Linguagens':'Humanas')+'</th><td>'+v.new.correct+'/'+v.new.total+'</td><td>'+v.repeat.correct+'/'+v.repeat.total+'</td></tr>').join('')+'</tbody></table></div><p>São contagens deste treino, sem estimativa de TRI. A dificuldade da apostila não é transferida para estas questões.</p>';}
  const views = {plan, train, repertories: repertoryView, notes: notebook, errors: errorView, cards, genres};
  function render() {
@@ -665,8 +687,8 @@
    const b=e.target.closest('button[data-eve]');if(!b||b.disabled)return;const action=b.dataset.eve;
    if(Object.hasOwn(views,action)){changeTab(action);return;}
    if(action==='dictionary'){openDictionary();return;}if(action==='term'){openDictionary(entries.get(b.dataset.term)?.title||'');return;}
-   if (['start', 'group', 'percurso'].includes(action)) {
-    if (flushDraft() && flushComments()) start(action === 'percurso' ? 'percurso' : b.dataset.group || 'mix');
+   if (['start', 'group', 'percurso', 'exclusivas'].includes(action)) {
+    if (flushDraft() && flushComments()) start(['percurso','exclusivas'].includes(action) ? action : b.dataset.group || 'mix');
     return;
    }
    if (action === 'choose' && current() && !response()) {

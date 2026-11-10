@@ -34,3 +34,16 @@
 @media (prefers-reduced-motion: reduce) {
  .el-animate { display: none; }
 }
+.el-thermal-answer { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 5px 12px; padding: 9px 12px; border-radius: 8px; background: var(--surface); }
+.el-thermal-answer strong { font-size: clamp(20px, 4vw, 28px); color: var(--d2-accent); }
+.el-thermal-chart { max-width: 320px; }
+.el-heat-line { fill: none; stroke: currentColor; stroke-width: 2.5; }
+.el-heat-water { color: var(--blue); }
+.el-heat-iron { color: var(--d2-accent); stroke-dasharray: 7 3; }
+.el-heat-vessel { color: var(--muted); stroke-dasharray: 2 3; }
+.el-heat-swatch { display: inline-block; width: .55em; height: .55em; margin-right: .35em; border-radius: 50%; background: currentColor; }
+.el-thermal-table { width: 100%; border-collapse: collapse; font-size: clamp(12px, 2.3vw, 14px); font-variant-numeric: tabular-nums; }
+.el-thermal-table :is(th,td) { padding: 5px clamp(3px, 1vw, 9px); border-bottom: 1px solid var(--line); text-align: right; }
+.el-thermal-table tr > :first-child { text-align: left; }
+.el-thermal-table caption { text-align: left; font-weight: 690; }
+.el-thermal-note { color: var(--muted); font-size: .9rem; }
