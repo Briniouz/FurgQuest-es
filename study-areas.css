@@ -1,7 +1,7 @@
 html:is([data-study-space="dia-1"],[data-study-space="dia-2"]) .study-day-links,
 html:is([data-study-view="inicio"],[data-study-view="area-estudo"]) :is(.page-heading,.study-day-links),
 html[data-study-view="inicio"] :is(#studyGuideLauncher,#quickLookupLauncher,#lightLauncher,#pageBack),
-html[data-study-space="dia-2"] :is(#quickLookupLauncher,#lightLauncher) { display: none; }
+html[data-study-space="dia-2"] #lightLauncher { display: none; }
 
 .study-home,.study-hub { width: min(100%,1240px); margin-inline: auto; }
 .study-home-intro { margin: 0 0 clamp(18px,3vw,32px); }

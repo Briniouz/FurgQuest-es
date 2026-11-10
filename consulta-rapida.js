@@ -8,6 +8,7 @@
   const launcher = $('quickLookupLauncher');
   const input = $('quickLookupQuestion');
   const submit = $('quickLookupSubmit');
+  const remote = $('quickLookupRemote');
   const status = $('quickLookupStatus');
   const output = $('quickLookupResult');
   const hint = $('quickLookupHint');
@@ -45,7 +46,8 @@
     }
     urlField.value = value?.url || '';
     codeField.value = value?.code || '';
-    connectionStatus.textContent = value ? 'Busca do Tavily configurada nesta aba.' : 'A Wikipédia já funciona direto. Conecta teu Worker para usar a busca do Tavily.';
+    connectionStatus.textContent = value ? 'Worker conectado nesta aba. Faz uma pergunta pra testar.' : 'A Wikipédia já funciona direto. Conecta teu Worker para usar o Gemini ou o Tavily.';
+    remote.hidden = !value || wikipediaOnly;
     $('quickLookupDisconnect').hidden = !value;
   }
 
@@ -189,21 +191,29 @@
     });
     const answer = typeof data.answer === 'string' ? data.answer.trim().slice(0, 2500) : '';
     const parts = segmenter ? Array.from(segmenter.segment(answer), p => p.segment.trim()) : (answer.match(/[^.!?]+[.!?]*\s*/g) || []).map(p => p.trim());
-    const leadLength = parts[0]?.length < 65 ? 2 : 1;
-    output.append(node('p', 'RESUMO DA BUSCA', 'eyebrow'));
-    output.append(node('p', sources.length && answer ? parts.slice(0, leadLength).join(' ') :
+    const gemini = data.provider === 'gemini';
+    const leadLength = gemini ? 3 : parts[0]?.length < 65 ? 2 : 1;
+    const detail = gemini && typeof data.detail === 'string' ? data.detail.slice(0, 1400).trim() : '';
+    output.append(node('p', gemini ? 'GEMINI · RESPOSTA DE IA' : 'RESUMO DA BUSCA', 'eyebrow'));
+    output.append(node('p', (gemini || sources.length) && answer ? parts.slice(0, leadLength).join(' ') :
       sources.length ? 'A busca encontrou estas fontes para tu conferir.' : 'A busca não trouxe fontes para essa pergunta.', 'quick-lookup-answer'));
     if (!sources.length) {
+      if (gemini) output.append(node('p', 'Sem fontes encontradas pra esta resposta.'));
       output.append(searchLink(question));
-      return;
+      if (!gemini) return;
+    } else {
+      const links = node('div', '', 'quick-lookup-links');
+      links.append(node('b', gemini ? 'Fontes consultadas' : 'Fontes da busca'), ...sources.map(s => s.link));
+      if (sources.some(s => new URL(s.link.href).origin === wikiOrigin)) {
+        links.append(link('Texto da Wikipédia sob CC BY-SA 4.0', 'https://creativecommons.org/licenses/by-sa/4.0/'));
+      }
+      output.append(links);
     }
-    const links = node('div', '', 'quick-lookup-links');
-    links.append(node('b', 'Fontes da busca'), ...sources.map(s => s.link));
-    output.append(links);
     const rest = parts.slice(leadLength).join(' ');
-    if (rest || sources.some(s => s.excerpt)) {
+    if (rest || detail || sources.some(s => s.excerpt)) {
       const box = details();
       if (rest) box.append(node('p', rest));
+      if (detail) box.append(node('p', detail));
       for (const source of sources) {
         if (source.excerpt) {
           const excerpt = node('p', '', 'quick-lookup-excerpt');
@@ -216,7 +226,9 @@
   }
 
   function unavailable(question, message) {
-    output.append(node('p', message), searchLink(question));
+    const links = node('div', '', 'quick-lookup-links');
+    links.append(wikiSearch(question), searchLink(question));
+    output.append(node('p', message), links);
   }
 
   function open(value, external = false) {
@@ -224,6 +236,7 @@
     if (!external) globalThis.FurgStudyGuide?.close();
     returnFocus = document.activeElement;
     wikipediaOnly = external;
+    remote.hidden = external || !connection;
     hint.textContent = external ? 'Consulta à Wikipédia. Só o termo pesquisado é enviado.' :
       'O acervo vem primeiro. A consulta externa envia o termo pesquisado.';
     if (typeof value === 'string') {
@@ -245,6 +258,7 @@
     pending = null;
     status.textContent = '';
     submit.disabled = false;
+    remote.disabled = false;
     launcher.setAttribute('aria-expanded', 'false');
     (returnFocus || launcher).focus({preventScroll: true});
     returnFocus = null;
@@ -264,7 +278,7 @@
   });
   $('quickLookupDisconnect').addEventListener('click', () => configure(null));
 
-  async function consult() {
+  async function consult(forceRemote = false) {
     const question = input.value.trim();
     if (!question || question.length > 400 || submit.disabled) return;
 
@@ -272,10 +286,11 @@
     output.replaceChildren();
     status.textContent = 'Consultando…';
     submit.disabled = true;
+    remote.disabled = true;
     let timeout;
     const useWikipedia = wikipediaOnly || !connection;
     try {
-      if (!wikipediaOnly) {
+      if (!wikipediaOnly && !forceRemote) {
         const basic = globalThis.FurgStudyBasics?.lookup(question);
         if (basic) {
           displayBasic(basic);
@@ -291,7 +306,7 @@
 
       const controller = new AbortController();
       pending = controller;
-      timeout = setTimeout(() => controller.abort(), useWikipedia ? 8500 : 14500);
+      timeout = setTimeout(() => controller.abort(), useWikipedia ? 8500 : 16500);
       if (useWikipedia) {
         const result = await consultWikipedia(question, controller.signal);
         if (id === requestId) displayWikipedia(result, question);
@@ -300,7 +315,7 @@
       const response = await fetch(connection.url, {
         method: 'POST',
         headers: {'Content-Type': 'application/json', Authorization: 'Bearer ' + connection.code},
-        body: JSON.stringify({question}),
+        body: JSON.stringify({question, term: wikiTerm(question)}),
         signal: controller.signal,
         credentials: 'omit',
         redirect: 'error',
@@ -311,6 +326,8 @@
         unavailable(question, 'A busca atingiu o limite da API. Tenta em outro momento.');
       } else if (response.status === 401) {
         unavailable(question, 'O código de acesso não foi aceito. Confere a configuração da busca.');
+      } else if (response.status === 503) {
+        unavailable(question, 'Falta configurar a chave da API ou o código de acesso no Worker.');
       } else if (!response.ok) {
         unavailable(question, 'A busca está indisponível agora. Confere a configuração do Worker.');
       } else {
@@ -328,13 +345,14 @@
         pending = null;
         status.textContent = '';
         submit.disabled = false;
+        remote.disabled = false;
       }
     }
   }
 
   $('quickLookupForm').addEventListener('submit', event => {
     event.preventDefault();
-    consult();
+    consult(event.submitter === remote);
   });
   globalThis.FurgQuickLookup = {open};
 })();
