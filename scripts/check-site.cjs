@@ -25,7 +25,7 @@ const document={getElementById:$,documentElement:{dataset:{theme:'light'}},body:
 const exported=[];const profileURL={createObjectURL:blob=>{exported.push(blob);return 'blob:local-profile-test';},revokeObjectURL(){}};
 const ctx=vm.createContext({document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},matchMedia:()=>({matches:true}),setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},location:{hash:'#banco',hostname:'127.0.0.1',protocol:'http:',search:''},history:{replaceState(){}},console:{error:e=>errors.push(e)},FURG_OFFLINE_DATA:db,URL:profileURL,Blob,Date,Map,Set,navigator:{}});
 if(previewFile){for(const [i,match]of [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].entries())vm.runInContext(match[1],ctx,{filename:'preview-inline-'+i});}
-else for(const file of ['app-mode.js','study-settings.js','study-guide.js','choice-elimination.js','linguagens-data.js','linguagens.js','skills-data.js','flashcards-data.js','biology-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','portraits-data.js','thinkers.js','prisma.js','experience.js','profile.js','enem-data.js','fuvest-data.js','enem-subjects-data.js','exam-subjects.js','enem-presentation-data.js','enem-layout.js','enem-solutions.js','linguagens-solutions.js','enem.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','study-areas.js','navigation.js','light-review-data.js','day1-practice-data.js','day1-practice.js','light-review.js','enem-anatomy-data.js','enem-anatomy.js','vespera-data.js','vespera-percurso-data.js','vespera-repertorios-data.js','vespera.js','dia2-guia-data.js','dia2-aulas-data.js','dia2-mapas-data.js','dia2-aulas-labs.js','dia2-conceitos-data.js','dia2-conceitos.js','dia2-mapas.js','dia2-aulas.js','dia2-questoes-data.js','dia2-exercicios-data.js','dia2.js','math-lab-data.js','math-lab-model.js','math-lab.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+else for(const file of ['app-mode.js','study-settings.js','study-guide.js','choice-elimination.js','linguagens-data.js','linguagens.js','skills-data.js','flashcards-data.js','biology-data.js','flashcards.js','math-lessons.js','skills.js','readings-data.js','readings.js','portraits-data.js','thinkers.js','prisma.js','experience.js','profile.js','enem-data.js','fuvest-data.js','enem-subjects-data.js','exam-subjects.js','enem-presentation-data.js','enem-layout.js','enem-solutions.js','linguagens-solutions.js','enem.js','fuvest.js','enem-sim.js','levelup-data.js','levelup.js','study-areas.js','navigation.js','light-review-data.js','day1-practice-data.js','day1-practice.js','light-review.js','enem-anatomy-data.js','enem-anatomy.js','vespera-data.js','vespera-percurso-data.js','vespera-repertorios-data.js','vespera.js','dia2-guia-data.js','dia2-aulas-data.js','dia2-mapas-data.js','dia2-aulas-labs.js','dia2-conceitos-data.js','enem-natureza-niveis.js','dia2-conceitos.js','dia2-mapas.js','dia2-aulas.js','dia2-questoes-data.js','dia2-exercicios-data.js','dia2.js','math-lab-data.js','math-lab-model.js','math-lab.js','app.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
 assert.equal(errors.length,0,errors.map(String).join('\n'));assert($('loadError').hidden,'Startup failed');
 const model=ctx.FURG_SKILLS_DATA,math=db.questions.filter(q=>q.subject==='Matemática');
 assert.equal(math.length,180);assert.equal(Object.keys(model.questions).length,765);assert.equal(model.skills.length,144);
@@ -119,6 +119,34 @@ function checkEnem(){
   vm.runInContext("setView('enem')",ctx);assert.equal(vm.runInContext('view',ctx),'enem');assert($('enemRoot').innerHTML.includes('Texto + figuras'));
   function click(action,extra={}){const button={dataset:{enem:action,...extra},disabled:false};for(const fn of events['enemRoot:click']||[])fn({target:{closest:()=>button}});}
   function current(){const id=$('enemQuestionRoot').innerHTML.match(/data-question-id="([^"]+)"/)?.[1];assert(id,'No visible ENEM question');return byId.get(id);}
+  if(!previewFile){
+    const rating=ctx.FurgEnemNatureza.get;
+    for(const item of enem.questions){
+      assert.equal(!!rating(item.id),item.area==='ciencias-natureza'&&ctx.FurgEnem.isGradable(item.id),item.id);
+    }
+    assert.equal(rating('enem-2025-95').method,'caderno');
+    assert.equal(rating('enem-2015-64').method,'ficha');
+    assert.equal(rating('enem-2009-1').method,'estimada');
+    click('area',{area:'ciencias-natureza'});
+    $('enemYear').value='2025';$('enemYear').onchange();
+    $('enemSubject').value='fisica';$('enemSubject').onchange();
+    for(const level of [1,2,3]){
+      $('enemDifficulty').value=String(level);$('enemDifficulty').onchange();
+      const item=current();
+      assert.equal(item.year,2025);
+      assert(item.subjects.includes('fisica'));
+      assert.equal(rating(item.id).level,level);
+      assert($('enemQuestionRoot').innerHTML.includes('data-level="'+level+'"'));
+    }
+    assert(ctx.FurgEnem.openQuestion('enem-2025-95'));
+    assert.equal(current().id,'enem-2025-95');
+    assert.equal($('enemDifficulty').value,'');
+    $('enemDifficulty').value='3';$('enemDifficulty').onchange();
+    click('area',{area:'matematica'});
+    assert($('enemDifficultyField').hidden);
+    assert.equal($('enemDifficulty').value,'');
+    click('clear');
+  }
   $('enemYear').value='2025';$('enemYear').onchange();click('area',{area:'matematica'});let q=current();assert.equal(q.year,2025);assert.equal(q.area,'matematica');
   const wrong=q.answer==='A'?'B':'A';click('choose',{letter:wrong});click('confirm');assert($('enemQuestionRoot').innerHTML.includes('A resposta correta é '+q.answer));assert.equal(ctx.FurgEnem.metrics().correct,0);assert.equal(ctx.FurgEnem.metrics().answered,1);
   click('favorite');$('enemNote').value='Rever a proporção e as unidades.';$('enemNote').oninput();assert.equal(JSON.parse(storage.get(progressKey)).enem.notes[q.id],'Rever a proporção e as unidades.');
