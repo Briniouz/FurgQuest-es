@@ -334,7 +334,7 @@ globalThis.FURG_DIA2_LESSONS = {
  ],
  biologia: [
   {
-   id:'celula', title:'Célula e níveis de organização', card:'membrana',
+   id:'celula', title:'Célula, organelas e níveis de organização', card:'bio-organela',
    lead:'Uma célula mantém um interior diferente do exterior. Isso permite que processos químicos aconteçam em condições controladas.',
    parts:[
     ['Do pequeno ao grande', 'A célula é a unidade básica dos organismos. Em muitos seres multicelulares, células especializadas formam tecidos, tecidos formam órgãos, e órgãos atuam juntos em sistemas. Alguns seres são constituídos por uma única célula.'],
@@ -370,7 +370,7 @@ globalThis.FURG_DIA2_LESSONS = {
    check:{prompt:'No cruzamento Aa × Aa, qual é a chance de obter um heterozigoto?',correct:0,choices:[['1/2','Aa e aA representam o mesmo genótipo e aparecem em dois dos quatro casos.'],['1/4','Um quarto corresponde a cada homozigoto. O heterozigoto pode ser formado de duas maneiras.'],['3/4','Em dominância completa, essa é a chance do fenótipo dominante. Parte desse grupo é AA.']]}
   },
   {
-   id:'evolucao', title:'Evolução, seleção e adaptação', card:'selecao',
+   id:'evolucao', title:'Darwinismo, evolução e adaptação', card:'selecao',
    lead:'Em uma população, nem todo indivíduo tem a mesma característica. Uma mudança no ambiente pode alterar quais características aparecem mais nas gerações seguintes.',
    parts:[
     ['Existe variação', 'Mutações e recombinação contribuem para diferenças entre indivíduos. Parte dessas diferenças é hereditária. Quando uma diferença afeta sobrevivência ou reprodução naquele ambiente, ela pode influenciar quantos descendentes cada indivíduo deixa.'],
@@ -404,6 +404,18 @@ globalThis.FURG_DIA2_LESSONS = {
    example:['Uma lagoa recebe escoamento rico em fertilizantes e, mais tarde, aparecem peixes mortos.', 'O aporte de nutrientes favorece crescimento intenso de algas.', 'A decomposição da biomassa morta aumenta a demanda de oxigênio.', 'A queda do oxigênio dissolvido pode explicar a mortalidade. O cenário deve ser confrontado com os dados da questão.'],
    exam:'Em problemas ambientais, separa causa inicial de consequência imediata. Nutrientes em excesso e queda de oxigênio podem estar em pontos diferentes da cadeia.',
    check:{prompt:'Por que o oxigênio dissolvido pode cair após a morte de uma floração de algas?',correct:0,choices:[['A decomposição aeróbia consome oxigênio','Mais matéria orgânica pode aumentar o consumo de oxigênio por decompositores.'],['Algas mortas fazem fotossíntese mais rápido','Fotossíntese depende de células metabolicamente ativas. A decomposição é central no cenário.'],['O oxigênio vira o próprio fertilizante','O aporte de nutrientes estimula a floração. A queda de oxigênio decorre de processos biológicos posteriores.']]}
+  },
+  {
+   id:'embriologia', title:'Embriologia e folhetos germinativos', card:'bio-embriologia',
+   lead:'Entende como um zigoto dá origem a tecidos diferentes e aprende a identificar ectoderma, mesoderma e endoderma pelo que cada um forma.',
+   parts:[
+    ['Da fecundação às primeiras divisões','A fecundação forma o zigoto. As primeiras divisões, chamadas clivagem ou segmentação, geram células menores. Em mamíferos, uma etapa inicial é o blastocisto, com uma massa celular interna que contribui para formar o embrião.'],
+    ['A gastrulação estabelece os folhetos','Durante a gastrulação, células mudam de posição e se organizam em camadas. Nos vertebrados, formam-se ectoderma, mesoderma e endoderma. Esses folhetos dão origem a tecidos diferentes.'],
+    ['Dos folhetos aos órgãos','O ectoderma dá origem à epiderme e a partes do sistema nervoso. O mesoderma origina muitos tecidos de sustentação, músculos e vasos. O endoderma origina, entre outros tecidos, o epitélio da maior parte do tubo digestório.']
+   ],
+   example:['Um desenho identifica três regiões no intestino delgado de um embrião: o revestimento interno, a musculatura da parede e os vasos sanguíneos.', 'O revestimento interno é um epitélio. Nessa região do tubo digestório, vem do endoderma.', 'O músculo liso e os vasos recebem contribuição mesodérmica.', 'A pergunta sobre a origem de um tecido exige identificar a parte do órgão, porque seus componentes podem vir de folhetos diferentes.'],
+   exam:'Fica atento às palavras epiderme, derme, epitélio e musculatura. O tecido específico costuma decidir a resposta.',
+   check:{prompt:'Durante a neurulação, de qual folheto se origina o tubo neural?',correct:0,choices:[['Ectoderma','Parte do ectoderma forma a placa neural, que se dobra para formar o tubo neural.'],['Mesoderma','O mesoderma forma estruturas como músculos e vértebras. O tubo neural tem outra origem.'],['Endoderma','O endoderma dá origem, por exemplo, a epitélios do tubo digestório. O tubo neural vem do ectoderma.']]}
   },
   {
    id:'fisiologia', title:'Fisiologia e equilíbrio interno', card:'homeostase',

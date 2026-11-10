@@ -34,7 +34,7 @@
      ['simulados','Simulado do Dia 2','Prova do segundo dia por ano','◷'],
     ],
     treinamento:[
-     ['apostas','Apostas do Dia 2','Questões da Parte 15 por matéria, com resolução','✦'],
+     ['apostas','Apostas do Dia 2','Prioridades de Biologia 2026 e questões da Parte 15','✦'],
      ['dia2','Treino guiado do Dia 2','Raciocínio, flashcards e revisão de erros','∑'],
      ['exercicios','Exercícios autorais','Questões por matéria com resolução em etapas','✓'],
      ['matematica-lab','Laboratório de Matemática','Desafios com tempo e caderno de erros','×'],

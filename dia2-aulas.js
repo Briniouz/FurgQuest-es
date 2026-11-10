@@ -6,7 +6,8 @@
  const course=globalThis.FurgStudyCourse, studyLabs=globalThis.FurgStudyLabs;
  const physicsVideo=globalThis.FURG_DIA2_PHYSICS_VIDEO;
  const subjects=Object.keys(catalog), lessonIds=Object.values(catalog).flatMap(group=>group.map(lesson=>lesson.id));
- const cards=new Map(guide.entries.map(card=>[card.id,card]));
+ const cards=new Map([...guide.entries,...(globalThis.FurgStudyBasics?.entries||[])].map(card=>[card.id,card]));
+ const biology=globalThis.FurgDia2Biology;
  const stages=['Base','Conexões','Aplicação'];
  const guidedStages=['Entender','Visualizar','Praticar'];
  const guidedMode='passo-a-passo';
@@ -57,7 +58,7 @@
    <summary>Índice de aulas <span>${lessons.length} no total</span></summary>
    <nav aria-label="Índice de aulas de ${esc(guide.subjects[subject].label)}">
     ${stages.map((stage,i)=>`<div><h3>${stage}</h3><ol>
-     ${lessons.slice(i*3,i*3+3).map((lesson,j)=>{
+     ${lessons.slice(i*3,i===stages.length-1?undefined:i*3+3).map((lesson,j)=>{
       const path=route(subject,lesson.id), done=completed[lesson.id];
       return `<li><a href="#${path}" data-study-route="${path}" ${lesson===selected?'aria-current="page"':''}>
        <small aria-hidden="true">${number(i*3+j)}</small><span>${esc(lesson.title)}</span>
@@ -69,7 +70,21 @@
  }
 
  function readingMarkup(lesson){
-  return `<div class="aula-reading">${lesson.parts.map(([title,body])=>`<section><h3>${esc(title)}</h3><p>${esc(body)}</p></section>`).join('')}</div>`;
+  const modules=biology?.modules[lesson.id];
+  return `<div class="aula-reading">${lesson.parts.map(([title,body])=>`<section><h3>${esc(title)}</h3><p>${esc(body)}</p></section>`).join('')}
+   ${modules?`<section class="el-depth aula-bio-depth"><h3>Aprofundamento</h3>
+    ${modules.map(({title,paragraphs,table},i)=>`<details ${i===0?'open':''}><summary>${esc(title)}</summary>
+     ${paragraphs.map(body=>`<p>${esc(body)}</p>`).join('')}
+     ${table?tableMarkup(table):''}</details>`).join('')}
+    <p class="aula-source">Leitura de apoio · OpenStax Biology 2e ·
+     ${biology.sources[lesson.id].map(([label,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`).join(' · ')}</p></section>`:''}</div>`;
+ }
+
+ function tableMarkup({caption,headers,rows}){
+  return `<div class="aula-bio-table" tabindex="0" role="region" aria-label="${esc(caption)}">
+   <table><caption>${esc(caption)}</caption><thead><tr>${headers.map(title=>`<th scope="col">${esc(title)}</th>`).join('')}</tr></thead>
+   <tbody>${rows.map(([name,...cells])=>`<tr><th scope="row">${esc(name)}</th>${cells.map(cell=>`<td>${esc(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table>
+  </div>`;
  }
 
  function exampleMarkup(lesson){
@@ -94,7 +109,7 @@
  function checkMarkup(check,position){
   const guided=position!==undefined, suffix=guided?'-'+position:'';
   return `<section class="aula-check" aria-labelledby="aulaCheckTitle${suffix}" ${guided?`data-guided-check="${position}"`:''}>
-   <p class="aula-overline">QUESTÃO AUTORAL</p><h3 id="aulaCheckTitle${suffix}">${guided?'Exercício '+(position+1):'Testa a ideia'}</h3>
+   <p class="aula-overline">${check.optional?'QUESTÃO AUTORAL · DESAFIO OPCIONAL':'QUESTÃO AUTORAL'}</p><h3 id="aulaCheckTitle${suffix}">${guided?'Exercício '+(position+1):'Testa a ideia'}</h3>
    <p id="aulaCheckPrompt${suffix}">${esc(check.prompt)}</p>
    <div class="aula-check-options" role="group" aria-labelledby="aulaCheckPrompt${suffix}">
     ${check.choices.map(([label],i)=>`<button type="button" class="outline" data-aula-choice="${i}" aria-pressed="false">
@@ -120,6 +135,7 @@
    <div class="guided-map-heading"><h2>Tua sequência de estudo</h2>
     <div class="d2-actions">
      ${count>0&&pending&&pending!==lessons[0]?link(route(subject,lessons[0].id,guidedMode),'Rever desde o início','outline'):''}
+     ${subject==='biologia'&&biology?link('dia-2/apostas','Apostas de Biologia 2026','outline'):''}
      ${link(route(subject,(pending||lessons[0]).id,guidedMode),count===0?'Começar do zero →':pending?'Continuar na primeira aula pendente →':'Revisar desde o início →','primary')}
     </div></div>
    <ol class="guided-map-list">
@@ -142,6 +158,7 @@
  function guidedLesson(subject,lessons,lesson,completed,questions){
   const index=lessons.indexOf(lesson), done=!!completed[lesson.id];
   const summary=globalThis.FurgStudyData?.layers[lesson.id]?.[3]?.split(' → ')||[];
+  const required=questions.filter(check=>!check.optional).length;
   return `<article class="aula-lesson guided-lesson panel" aria-labelledby="aulaTitle">
    <header class="aula-lesson-intro">
     ${link(route(subject,null,guidedMode),'← Ver a sequência de '+guide.subjects[subject].label,'quiet')}
@@ -166,7 +183,7 @@
    </section>
    <section data-guided-pane="2" aria-labelledby="guidedPractice" hidden>
     <h2 id="guidedPractice" tabindex="-1">Pratica antes de avançar</h2>
-    <p>${done?'Refaz os exercícios se quiser revisar.':'Acerta '+(questions.length>1?'os exercícios':'o exercício')+' pra liberar a próxima aula.'}</p>
+    <p>${done?'Refaz os exercícios se quiser revisar.':'Acerta '+(required>1?'os '+required+' exercícios iniciais':'o primeiro exercício')+' pra liberar a próxima aula.'}</p>
     ${questions.map(checkMarkup).join('')}
     <div class="aula-next">${stageButton(1,'← Rever o exemplo')}
      <button type="button" id="guidedAdvance" class="primary" ${done?'':'disabled'}>
@@ -184,7 +201,7 @@
   return `<div class="aula-layout">
    ${indexMarkup(subject,lessons,lesson,completed)}
    <article class="aula-lesson panel" aria-labelledby="aulaTitle">
-    <header class="aula-lesson-intro"><p class="aula-overline">${esc(stages[Math.floor(index/3)])} · AULA ${number(index)}/${lessons.length}</p>
+    <header class="aula-lesson-intro"><p class="aula-overline">${esc(stages[Math.min(Math.floor(index/3),stages.length-1)])} · AULA ${number(index)}/${lessons.length}</p>
      <h2 id="aulaTitle" tabindex="-1">${esc(lesson.title)}</h2><p class="aula-lead">${esc(lesson.lead)}</p>
      <p id="aulaEvidence" class="d2-muted">${esc(course?.evidence(lesson.id,adapter.getVisits(),completed)||'')}</p></header>
     ${readingMarkup(lesson)}
@@ -296,7 +313,7 @@
   feedback.dataset.result=correct?'correct':'retry';
   feedback.textContent=(correct?'Acertou. ':'Tenta de novo. ')+reason;
   group.querySelector('[data-aula-reason]').hidden=correct||reason===check.choices[check.correct][1];
-  if(correct&&solved.size===questions.length){
+  if(correct&&questions.every(item=>item.optional||solved.has(item.key))){
    $('guidedAdvance').disabled=false;
    $('guidedStatus').textContent='Pronto. Tu já pode avançar.';
   }
@@ -305,7 +322,7 @@
  function advanceGuided(){
   const {subject,lesson,guided}=active, completed=validate(adapter.getProgress());
   if(!completed[lesson.id]){
-   if(guided.solved.size!==guided.questions.length)return;
+   if(guided.questions.some(item=>!item.optional&&!guided.solved.has(item.key)))return;
    if(!adapter.saveProgress({...completed,[lesson.id]:true})){
     $('guidedStatus').textContent='Não foi possível salvar. Tenta de novo.';
     return;

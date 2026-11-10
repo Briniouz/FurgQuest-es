@@ -516,8 +516,23 @@
    </details></section>`;
  }
 
+ function biologyBetsPanel() {
+  const biology=globalThis.FurgDia2Biology;
+  if(!biology)return '';
+  return `<section class="d2-priority d2-priority-full" aria-labelledby="d2BiologyBetsTitle">
+   <div><p class="eyebrow">REVISÃO DO DIA 2 · 2026</p><h3 id="d2BiologyBetsTitle">Apostas de Biologia · ENEM 2026</h3>
+    <p>Prioridades de revisão com base no histórico de 2009 a 2025 e nas habilidades da matriz do Inep. Os temas da prova são desconhecidos.</p></div>
+   <details class="d2-bet-review"><summary>Ver temas prioritários e o que treinar</summary>
+    <ol>${biology.priorities.map(({title,level,lesson,tip})=>`<li>
+     <strong>${esc(title)}</strong> <small class="d2-muted">· ${esc(level)}</small>
+     <p>${esc(tip)}</p>${studyLink('dia-2/passo-a-passo/biologia/'+lesson,'Abrir revisão →','quiet')}</li>`).join('')}</ol>
+    <p class="d2-muted">${biology.prioritySources.map(([label,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`).join(' · ')}</p>
+   </details></section>`;
+ }
+
  function trainingHome() {
   return `<h2 id="d2Focus" tabindex="-1">Treino guiado</h2><p>Identifica o que a questão pede, registra teu plano e marca a confiança antes de conferir a resolução.</p>
+   ${biologyBetsPanel()}
    ${betsPanel()}
    ${exclusiveIds.length?`<div class="d2-authorial-callout"><div><strong>Questões exclusivas · Dia 2</strong>
     <p>Questões autorais de nível médio ou difícil. Em cada uma, o comando muda a grandeza ou a etapa que tu precisa descobrir.</p></div>

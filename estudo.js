@@ -32,12 +32,20 @@
  for(const [id,{check}] of lessons){
   prompts.set('aula-'+id,[check.prompt,check.choices.map(x=>x[0]),check.correct,check.choices[check.correct][1]]);
  }
+ const biologyChecks=globalThis.FurgDia2Biology?.checks||{};
+ const challengeLessons=new Map();
+ for(const [id,checks] of Object.entries(biologyChecks)){
+  for(const {key,prompt,choices,correct} of checks){
+   challengeLessons.set(key,id);
+   prompts.set(key,[prompt,choices.map(([label])=>label),correct,choices[correct][1]]);
+  }
+ }
  function trailExtras(id){
   const keys=id==='calor'?[id,'conveccao']:[id];
   return keys.filter(key=>Object.hasOwn(drills,key)).map(key=>{
    const [prompt,options,correct,reason]=drills[key];
    return {key,prompt,correct,choices:options.map(label=>[label,reason])};
-  });
+  }).concat(biologyChecks[id]||[]);
  }
  function validate(items){
   const map=new Map();
@@ -108,7 +116,8 @@
   if(Object.hasOwn(labs.labs,id)){mode='laboratorios';selectedLab=id;}
  }
  let adapter;
- const groupTitle=id=>id==='dimensoes'?data.dimensions.title:id==='conveccao'?'Convecção':lessons.get(id.replace(/^aula-/,''))?.title||id;
+ const groupTitle=id=>id==='dimensoes'?data.dimensions.title:id==='conveccao'?'Convecção':
+  challengeLessons.has(id)?lessons.get(challengeLessons.get(id)).title+' · Desafio':lessons.get(id.replace(/^aula-/,''))?.title||id;
  const select=(id,label,items,value)=>'<label>'+label+'<select id="'+id+'">'+items.map(([key,text])=>'<option value="'+esc(key)+'"'+(key===value?' selected':'')+'>'+esc(text)+'</option>').join('')+'</select></label>';
  function question(key){
   const [title,options]=prompts.get(key);
@@ -167,7 +176,7 @@
  }
  function evidence(id,visits,completed){
   if(!adapter)return '';
-  const attempts=adapter.get().learning.filter(a=>a.key==='aula-'+id||a.key===id);
+  const attempts=adapter.get().learning.filter(a=>a.key==='aula-'+id||a.key===id||challengeLessons.get(a.key)===id);
   const status=schedule(attempts,work);
   if(status){
    const state=status.ready?'Revisão disponível':!work(status.last)?'Precisa revisar':status.stage>=3?'Acertos em revisões espaçadas':'Compreensão em treino';

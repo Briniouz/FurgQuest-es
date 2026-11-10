@@ -73,24 +73,25 @@
   biologia:subject('biologia','Vida','O que mantém um organismo funcionando?',lesson=>({
    branches:[
     branch('celulas','green','Dentro da célula','Estrutura e energia para funcionar.',[
-     lesson('celula','Entende membrana e organelas.'),
+     lesson('celula','Compara organelas e acompanha a rota de secreção.',{terms:['organelas','retículo','complexo de Golgi','lisossomo']}),
      lesson('metabolismo','Compara três formas de obter energia.',{related:[related('fisica','energia')]})
     ]),
     branch('heranca','violet','Herança e evolução','Da informação genética às populações.',[
      lesson('heranca','Segue a informação de pais a filhos.',{related:[related('matematica','probabilidade')]}),
-     lesson('evolucao','Explica como a seleção atua.')
+     lesson('evolucao','Entende Darwinismo e distingue os mecanismos de evolução.',{terms:['Darwin','seleção natural','deriva','especiação']})
     ]),
     branch('ambiente','cyan','Energia e ambiente','Da cadeia alimentar ao ecossistema.',[
-     lesson('cadeias','Segue a energia entre níveis tróficos.',{related:[related('fisica','energia')]}),
+     lesson('cadeias','Segue a energia e acompanha os ciclos da matéria.',{related:[related('fisica','energia')],terms:['ciclos biogeoquímicos','nitrogênio','fósforo','carbono']}),
      lesson('ecossistemas','Liga impactos às suas consequências.',{related:[related('quimica','solucoes')]})
     ]),
     branch('organismo','amber','Corpo, defesa e tecnologia','Da regulação interna aos usos do DNA.',[
+     lesson('embriologia','Acompanha os folhetos embrionários até os tecidos.',{terms:['ectoderma','mesoderma','endoderma','gastrulação']}),
      lesson('fisiologia','Acompanha os ajustes do corpo.'),
      lesson('imunidade','Distingue as respostas de defesa.'),
      lesson('biotecnologia','Reconhece técnicas que usam DNA.')
     ])
    ],
-   paths:[path('dna','Da célula ao DNA',['celula','heranca','biotecnologia']),path('ambiente','Energia nos ecossistemas',['metabolismo','cadeias','ecossistemas'])]
+   paths:[path('dna','Da célula ao DNA',['celula','heranca','biotecnologia']),path('ambiente','Energia nos ecossistemas',['metabolismo','cadeias','ecossistemas']),path('desenvolvimento','Da célula ao organismo',['celula','embriologia','fisiologia'])]
   })),
   quimica:subject('quimica','Matéria','Do que é feita e como se transforma?',lesson=>({
    branches:[

@@ -163,7 +163,7 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  const lessons=ctx.FURG_DIA2_LESSONS, maps=ctx.FurgDia2Maps.maps;
  const lessonIds=new Set();
  for(const [subject,list] of Object.entries(lessons)){
-  assert.equal(list.length,9);
+  assert.equal(list.length,subject==='biologia'?10:9);
   const map=maps[subject], entries=map.branches.flatMap(branch=>branch.lessons);
   assert(map.root.title&&map.root.description);
   assert.equal(new Set(map.branches.map(branch=>branch.tone)).size,map.branches.length);
@@ -188,13 +188,28 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
   for(const path of map.paths)assert(path.lessons.every(id=>entries.some(item=>item.id===id)));
   for(const lesson of list){
    assert(!lessonIds.has(lesson.id));lessonIds.add(lesson.id);
-   assert.equal(cards.get(lesson.card).subject,subject);
+   assert.equal((cards.get(lesson.card)||bio.find(card=>card.id===lesson.card)).subject,subject);
    assert(lesson.parts.length===3&&lesson.example.length>=4&&lesson.exam);
    assert(lesson.check.choices.length===3&&lesson.check.choices[lesson.check.correct]?.[1]);
    if(lesson.lab)assert(ctx.FurgDia2Labs.labs[lesson.lab]);
   }
  }
- assert.equal(lessonIds.size,36);
+ assert.equal(lessonIds.size,37);
+ const biology=ctx.FurgDia2Biology;
+ const challengeIds=new Set();
+ for(const [id,checks] of Object.entries(biology.checks)){
+  assert(biology.modules[id].length>=2&&biology.sources[id].length);
+  for(const check of checks){
+   assert(check.optional&&check.choices.length===3&&check.choices[check.correct]?.[1]);
+   assert(ctx.FurgStudyCourse.trailExtras(id).some(item=>item.key===check.key));
+   assert(!challengeIds.has(check.key));
+   challengeIds.add(check.key);
+  }
+ }
+ assert.equal(challengeIds.size,9);
+ for(const {lesson} of biology.priorities){
+  assert.equal(ctx.FurgStudyAreas.parse('#dia-2/passo-a-passo/biologia/'+lesson).lesson,lesson);
+ }
  const concepts=ctx.FURG_DIA2_CONCEPTS, linkedQuestions=new Set();
  for(const [subject,trails] of Object.entries(concepts)){
   const route='dia-2/conceitos/'+subject;
@@ -284,6 +299,13 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  const guided=$('dia2LessonsRoot').innerHTML;
  assert(guided.includes('id="hl-aula"')&&guided.includes('por que a água aquecida sobe?'));
  assert.match(guided,/id="guidedAdvance" class="primary" disabled/);
+ inApp("openStudyRoute('#dia-2/passo-a-passo/biologia/celula')");
+ assert($('dia2LessonsRoot').innerHTML.includes('Organelas essenciais'));
+ assert($('dia2LessonsRoot').innerHTML.includes('DESAFIO OPCIONAL'));
+ inApp("openStudyRoute('#dia-2/aulas/biologia/embriologia')");
+ const embryology=$('dia2LessonsRoot').innerHTML;
+ assert(embryology.includes('Ectoderma')&&embryology.includes('Mesoderma')&&embryology.includes('Endoderma'));
+ assert(embryology.includes('dia-2/aulas/biologia/biotecnologia'));
  assert.equal(inApp('JSON.stringify(state.dia2.lessons)'),trailProgress);
  assert.equal(inApp('JSON.stringify(state.enem)'),oldBank);
  const bets=ctx.FURG_DIA2_BETS;
@@ -297,6 +319,7 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  }
  const originalSession=inApp('JSON.stringify(state.dia2.sessions.percurso)');
  inApp("openStudyRoute('#dia-2/apostas')");
+ assert($('dia2Root').innerHTML.includes('Apostas de Biologia · ENEM 2026'));
  assert($('dia2Root').innerHTML.includes('Apostas do Dia 2'));
  assert($('dia2Root').innerHTML.includes('Física · 0/4'));
  assert(mode.start('apostas-fisica'));

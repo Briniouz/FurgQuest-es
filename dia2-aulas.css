@@ -160,6 +160,13 @@ html[data-study-view="aulas"] .page-heading { display: none; }
 .aula-lesson h3 { font-size: 16px; margin: 0 0 4px; line-height: 1.35; }
 .aula-reading section + section { margin-top: 13px; }
 .aula-reading p, .aula-example p, .aula-example li, .aula-exam p { margin: 0; font-size: 15px; line-height: 1.65; }
+.aula-bio-depth summary + p, .aula-bio-depth p + p { margin-top: 8px; }
+.aula-bio-depth .aula-source { margin-top: 9px; font-size: .875rem; }
+.aula-bio-table { overflow-x: auto; margin-top: 12px; }
+.aula-bio-table table { width: 100%; min-width: 26rem; border-collapse: collapse; font-size: .875rem; line-height: 1.5; }
+.aula-bio-table caption { text-align: left; font-weight: 700; margin-bottom: 5px; }
+.aula-bio-table :is(td, th) { padding: 8px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.aula-bio-table thead th { background: var(--d2-tint); }
 .aula-example, .aula-lab, .aula-check {
   padding: clamp(13px,2.3vw,20px);
   border: 1px solid color-mix(in srgb,var(--d2-border) 56%,var(--line));
