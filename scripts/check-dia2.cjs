@@ -17,6 +17,21 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
   assert(exercises.origins[q.card]);
  }
  const bank = new Map(ctx.FURG_ENEM_DATA.questions.map(q => [q.id,q]));
+ const bio = ctx.FurgBiologyConcepts.entries;
+ assert.equal(new Set(bio.map(card=>card.id)).size,bio.length);
+ for(const card of bio){
+  assert(card.meaning&&card.rule&&card.symbols&&card.when&&card.trap&&card.example.length===2,card.id);
+  assert(ctx.FURG_DIA2_LESSONS.biologia.some(lesson=>card.lesson==='dia-2/aulas/biologia/'+lesson.id),card.id);
+  for(const term of [card.title,...card.terms])assert.equal(ctx.FurgStudyBasics.lookup(term),card,term);
+ }
+ assert.equal(mode.search('pra que serve a mitocôndria?','biologia')[0].id,'bio-mitocondria');
+ assert(!mode.search('mitocôndria','fisica').some(card=>card.subject==='biologia'));
+ for(const trails of Object.values(ctx.FURG_DIA2_CONCEPTS))for(const trail of trails)for(const {exam:[id,letter]} of trail.rows.flat()){
+  const question=bank.get(id);
+  assert.equal(question.answer,letter,id);
+  const solution=ctx.FurgEnemLayout.solution(question,text=>text||'');
+  assert(!solution.includes('enem-resolution-pending'),id);
+ }
  assert.equal(guide.entries.length,99);
  assert.equal(new Set(guide.entries.map(e => e.id)).size,99);
  for (const subject of Object.keys(guide.subjects)) assert(mode.search('',subject).length >= 20);

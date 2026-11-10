@@ -4,7 +4,7 @@
   id,title,terms,lesson,rule,meaning,when,symbols,example,trap,
   subject:lesson.split('/')[2],
  });
- const entries=[
+ const basicEntries=[
   {
    id:'joule', title:'Joule (J)', terms:['joule','joules','jaule','jaules','j'],
    lesson:'dia-2/aulas/fisica/energia',
@@ -269,10 +269,12 @@
    ['Uma taxa vai de 20% a 30%.','A diferença é de 10 pontos percentuais. O aumento relativo é 10/20 = 50%.'],
    'Um aumento e um desconto de mesmo percentual normalmente usam bases diferentes.'),
  ].map(entry=>({...entry,id:'basico-'+entry.id,subject:entry.subject||'fisica',topic:'Básico'}));
+ const entries=[...basicEntries,...(globalThis.FurgBiologyConcepts?.entries||[])];
 
  function term(value){
   return String(value??'').trim()
    .replace(/^(?:o que (?:[ée]|significa)(?: (?:um|uma|o|a))?|(?:qual (?:[ée] )?a )?(?:f[oó]rmula|definiç[ãa]o|unidade) d[eoa]|como calcular(?: (?:o|a))?)\s+/i,'')
+   .replace(/^(?:(?:para|pra) que serve|como funciona|me explica)(?: (?:um|uma|o|a))?\s+|^(?:qual (?:[ée] )?a )?funç[ãa]o d(?:a|o|e)\s+/i,'')
    .replace(/[?!.]+$/,'').trim();
  }
  const norm=value=>term(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ');

@@ -141,8 +141,12 @@
     return parts;
   }
   function solution(q,markdown){
-    const candidate=globalThis.FURG_ENEM_SOLUTIONS?.[q.id];
-    const authored=candidate?.answerExpected===q.answer?candidate:null;
+    const guided=globalThis.FURG_DIA2_PRACTICE?.questions?.[q.id];
+    const authored=[
+      globalThis.FURG_ENEM_SOLUTIONS?.[q.id],
+      q.quality?.keyVerified && globalThis.FurgDia2ExampleSolutions?.[q.id],
+      guided && guided.fingerprint===fingerprint(q) && {answerExpected:guided.answer,paragraphs:[...guided.steps,guided.trap]},
+    ].find(candidate=>candidate && candidate.answerExpected===q.answer);
     const correct=(q.alternatives||[]).find(a=>a.letter===q.answer);
     const explanation=authored
       ?'<p class="enem-resolution-credit">Comentário de estudo autoral · separado do conteúdo oficial</p>'+authored.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')

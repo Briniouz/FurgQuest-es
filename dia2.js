@@ -309,7 +309,7 @@
   const direct = basics?.lookup(value);
   const found = references.filter(e => (!area || e.subject === area || e.topic === 'Básico') &&
    (!group || e.topic === group) && words.every(word => searchIndex.get(e.id).includes(word)));
-  if (direct && (!group || group === direct.topic)) {
+  if (direct && (!area || direct.subject === area || direct.topic === 'Básico') && (!group || group === direct.topic)) {
    return words.join(' ').length <= 2 ? [direct] : [direct,...found.filter(e => e !== direct)];
   }
   return found;
@@ -333,11 +333,12 @@
 
  function cardBody(e) {
   const hasExercise = exercisesByCard.has(e.id);
+  const isBiology = e.id.startsWith('bio-');
   return `<div class="d2-card-body" ${attr('subject',e.subject)}>
-   <div class="d2-formula-box"><strong class="d2-block-label">Fórmula ou relação</strong>
+   <div class="d2-formula-box"><strong class="d2-block-label">${isBiology?'Como funciona':'Fórmula ou relação'}</strong>
     ${e.rule.split(' • ').map(rule => `<p class="d2-rule">${esc(rule)}</p>`).join('')}</div>
    <dl class="d2-facts">
-    ${[['O que quer dizer',e.meaning],['Quando usar',e.when],['Símbolos, unidades ou termos',e.symbols]].map(([label,value]) =>
+    ${[['O que quer dizer',e.meaning],[isBiology?'Pista no ENEM':'Quando usar',e.when],[isBiology?'Termos e condições':'Símbolos, unidades ou termos',e.symbols]].map(([label,value]) =>
      `<div class="d2-fact"><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}
    </dl>
    ${origins[e.id]?`<details class="d2-origin"><summary>Por que essa relação funciona?</summary><p>${esc(origins[e.id])}</p></details>`:''}

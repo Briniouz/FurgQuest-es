@@ -100,6 +100,8 @@
     ${check.choices.map(([label],i)=>`<button type="button" class="outline" data-aula-choice="${i}" aria-pressed="false">
      <b aria-hidden="true">${'ABC'[i]}</b><span>${esc(label)}</span></button>`).join('')}
    </div><p id="aulaFeedback${suffix}" class="aula-feedback" role="status"></p>
+   <details class="el-depth" data-aula-reason hidden><summary>Ver raciocínio da resposta</summary>
+    <p>${esc(check.choices[check.correct][1])}</p></details>
   </section>`;
  }
 
@@ -293,6 +295,7 @@
   const feedback=group.querySelector('.aula-feedback');
   feedback.dataset.result=correct?'correct':'retry';
   feedback.textContent=(correct?'Acertou. ':'Tenta de novo. ')+reason;
+  group.querySelector('[data-aula-reason]').hidden=correct||reason===check.choices[check.correct][1];
   if(correct&&solved.size===questions.length){
    $('guidedAdvance').disabled=false;
    $('guidedStatus').textContent='Pronto. Tu já pode avançar.';
@@ -328,6 +331,7 @@
   const feedback=$('aulaFeedback');
   feedback.dataset.result=correct?'correct':'retry';
   feedback.textContent=(correct?'Acertou. ':'Tenta de novo. ')+explanation;
+  feedback.parentElement.querySelector('[data-aula-reason]').hidden=correct;
  }
 
  function mark(){

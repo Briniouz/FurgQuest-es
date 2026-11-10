@@ -9,6 +9,7 @@
   const input = $('quickLookupQuestion');
   const submit = $('quickLookupSubmit');
   const remote = $('quickLookupRemote');
+  const biology = $('quickLookupBiology');
   const status = $('quickLookupStatus');
   const output = $('quickLookupResult');
   const hint = $('quickLookupHint');
@@ -118,14 +119,61 @@
   }
 
   function displayBasic(entry) {
-    output.append(node('p', 'GUIA BÁSICO · ' + entry.title, 'eyebrow'));
+    const isBiology = entry.id.startsWith('bio-');
+    output.append(node('p', isBiology ? 'BIOLOGIA · ' + entry.topic : 'GUIA BÁSICO', 'eyebrow'),
+      node('h3', entry.title, 'quick-lookup-result-title'));
     output.append(node('p', entry.meaning, 'quick-lookup-answer'));
     output.append(node('p', entry.rule));
     const box = details();
-    box.append(node('b', 'Símbolos e unidades'), node('p', entry.symbols),
+    box.append(node('b', isBiology ? 'Termos e condições' : 'Símbolos e unidades'), node('p', entry.symbols),
       node('b', 'Exemplo'), ...entry.example.map(part => node('p', part)),
-      node('b', 'Quando usar'), node('p', entry.when));
+      node('b', isBiology ? 'Pista no ENEM' : 'Quando usar'), node('p', entry.when));
+    if (isBiology) {
+      box.append(node('b', 'Cuidado com este erro'), node('p', entry.trap));
+      const lesson = node('a', 'Ver aula completa →');
+      lesson.href = '#' + entry.lesson;
+      lesson.dataset.studyRoute = entry.lesson;
+      lesson.addEventListener('click', () => modal.close());
+      box.append(lesson);
+    }
     output.append(box);
+  }
+
+  function browseBiology() {
+    const topics = new Map();
+    for (const entry of globalThis.FurgBiologyConcepts.entries) {
+      if (!topics.has(entry.topic)) topics.set(entry.topic, []);
+      topics.get(entry.topic).push(entry);
+    }
+    const sections = [...topics].map(([topic, entries], index) => {
+      const section = node('details', '', 'quick-lookup-details');
+      section.open = index === 0;
+      const list = node('ul', '', 'quick-lookup-biology-list');
+      for (const entry of entries) {
+        const item = node('li');
+        const button = node('button', entry.title, 'quiet');
+        button.type = 'button';
+        button.addEventListener('click', () => {
+          input.value = entry.title;
+          output.replaceChildren();
+          displayBasic(entry);
+          output.querySelector('h3').tabIndex = -1;
+          output.querySelector('h3').focus();
+        });
+        item.append(button);
+        list.append(item);
+      }
+      section.append(node('summary', topic + ' · ' + entries.length), list);
+      return section;
+    });
+    const sources = node('div', '', 'quick-lookup-links');
+    sources.append(node('b', 'Base da seleção de temas'),
+      link('Matrizes do Inep', 'https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem'),
+      link('Raio X ENEM do SAS', 'https://prod-assets-saseducacao.s3.amazonaws.com/public/2026-04/RAIO-X_ENEM%20SAS.pdf?VersionId=1qwKGl_vetiOrP1ROPpo8oO823hRWGF9'));
+    const title = node('h3', 'Biologia do básico ao ENEM', 'quick-lookup-result-title');
+    title.tabIndex = -1;
+    output.replaceChildren(title, ...sections, sources);
+    title.focus();
   }
 
   function wikiTerm(question) {
@@ -237,6 +285,7 @@
     returnFocus = document.activeElement;
     wikipediaOnly = external;
     remote.hidden = external || !connection;
+    biology.hidden = external || !globalThis.FurgBiologyConcepts?.entries.length;
     hint.textContent = external ? 'Consulta à Wikipédia. Só o termo pesquisado é enviado.' :
       'O acervo vem primeiro. A consulta externa envia o termo pesquisado.';
     if (typeof value === 'string') {
@@ -250,6 +299,7 @@
   }
 
   launcher.addEventListener('click', () => open());
+  biology.addEventListener('click', browseBiology);
   $('quickLookupClose').addEventListener('click', () => modal.close());
   modal.addEventListener('keydown', event => event.stopPropagation());
   modal.addEventListener('close', () => {
@@ -259,6 +309,7 @@
     status.textContent = '';
     submit.disabled = false;
     remote.disabled = false;
+    biology.disabled = false;
     launcher.setAttribute('aria-expanded', 'false');
     (returnFocus || launcher).focus({preventScroll: true});
     returnFocus = null;
@@ -287,6 +338,7 @@
     status.textContent = 'Consultando…';
     submit.disabled = true;
     remote.disabled = true;
+    biology.disabled = true;
     let timeout;
     const useWikipedia = wikipediaOnly || !connection;
     try {
@@ -346,6 +398,7 @@
         status.textContent = '';
         submit.disabled = false;
         remote.disabled = false;
+        biology.disabled = false;
       }
     }
   }
