@@ -88,20 +88,6 @@
 
 .quick-lookup-result-title { margin: 4px 0 8px; }
 
-.quick-lookup-biology-list {
-  display: grid;
-  gap: 2px;
-  padding: 0;
-  margin: 6px 0 0;
-  list-style: none;
-}
-
-.quick-lookup-biology-list button {
-  width: 100%;
-  min-height: 38px;
-  text-align: start;
-}
-
 .quick-lookup-answer {
   margin: 5px 0 8px;
   padding: 12px 14px;
