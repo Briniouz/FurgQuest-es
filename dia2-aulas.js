@@ -57,6 +57,7 @@
      <ol>${lesson.example.slice(1).map(step=>`<li>${esc(step)}</li>`).join('')}</ol>
     </section>
     ${lesson.lab?labs.markup(lesson.lab):''}
+    ${lesson.id==='calor'?globalThis.FurgDia2Temperature?.markup()||'':''}
     ${maps.relatedLinks(lesson.id)}
     <aside class="aula-exam"><strong>Na hora da questão</strong><p>${esc(lesson.exam)}</p></aside>
     <section class="aula-check" aria-labelledby="aulaCheckTitle">
@@ -158,6 +159,7 @@
   adapter=value;
   const host=$('dia2LessonsRoot');
   if(!host)return;
+  globalThis.FurgDia2Temperature?.bind(host);
   host.addEventListener('click',event=>{
    const button=event.target.closest('button');
    if(!button||!active)return;

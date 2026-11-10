@@ -284,6 +284,8 @@ body:has(#dia2.active) .study-day-links { display: none; }
 .d2-subject-card .d2-symbol { background: var(--d2-tint); color: var(--d2-accent); }
 .d2-subject-card button.outline { color: var(--d2-accent); border-color: var(--d2-border); }
 #dia2 .d2-result-count { margin: 8px 0 10px; }
+.d2-guide-tools { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 12px; }
+.d2-quick-head .d2-guide-tools p { margin: 0; }
 #dia2 .d2-topic h3, #dia2QuickGuide .d2-topic h3 {
   color: var(--d2-accent);
   font-size: 14px;
@@ -365,6 +367,31 @@ body:has(#dia2.active) .study-day-links { display: none; }
 #dia2QuickGuide .d2-facts { grid-template-columns: minmax(0,1fr); }
 
 .d2-authorial-callout, .d2-exercise-tools { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
+.d2-priority {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ gap: 12px 20px;
+ margin-bottom: 14px;
+ padding: clamp(14px, 2.5vw, 22px);
+ border: 1px solid color-mix(in srgb, var(--action) 42%, var(--line));
+ border-radius: 14px;
+ background: linear-gradient(120deg, color-mix(in srgb, var(--action) 12%, var(--surface)), var(--surface));
+}
+.d2-priority-full { display: grid; }
+#dia2 .d2-priority :is(h2, h3) { margin: 2px 0 5px; }
+#dia2 .d2-priority p { margin: 2px 0; }
+.d2-bet-review { border-top: 1px solid var(--line); padding-top: 10px; }
+.d2-bet-review summary { cursor: pointer; }
+.d2-bet-review ul { margin: 10px 0 0; padding-inline-start: 20px; }
+.d2-bet-review li + li { margin-top: 9px; }
+.d2-bet-figure { max-width: 330px; margin: 12px 0; }
+.d2-bet-figure svg { display: block; width: 100%; color: var(--action); }
+.d2-bet-figure figcaption, .d2-enunciation caption { color: var(--muted); font-size: .875rem; }
+.d2-converter { max-width: 800px; }
+.d2-converter .d2-converter-fields { grid-template-columns: repeat(auto-fit,minmax(min(100%,150px),1fr)); }
+.d2-convert-result { display: block; margin-top: 14px; padding: 12px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 9px; font-weight: 750; overflow-wrap: anywhere; }
 .d2-authorial-callout { padding: 12px 14px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); }
 #dia2 .d2-authorial-callout p { margin: 2px 0 0; }
 .d2-exercise-tools { margin: 10px 0; }

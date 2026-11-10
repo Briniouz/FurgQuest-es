@@ -10,6 +10,8 @@
   const submit = $('quickLookupSubmit');
   const status = $('quickLookupStatus');
   const output = $('quickLookupResult');
+  const hint = $('quickLookupHint');
+  const wikiOrigin = 'https://pt.wikipedia.org';
   const configuration = $('quickLookupSettings');
   const urlField = $('quickLookupURL');
   const codeField = $('quickLookupCode');
@@ -18,6 +20,8 @@
   let connection = null;
   let requestId = 0;
   let pending = null;
+  let wikipediaOnly = false;
+  let returnFocus;
 
   function endpoint(value) {
     try {
@@ -41,7 +45,7 @@
     }
     urlField.value = value?.url || '';
     codeField.value = value?.code || '';
-    connectionStatus.textContent = value ? 'Busca na web configurada nesta aba.' : 'A Biblioteca funciona direto. Conecta teu Worker para buscar na web.';
+    connectionStatus.textContent = value ? 'Busca do Tavily configurada nesta aba.' : 'A Wikipédia já funciona direto. Conecta teu Worker para usar a busca do Tavily.';
     $('quickLookupDisconnect').hidden = !value;
   }
 
@@ -111,6 +115,69 @@
     output.append(list, box);
   }
 
+  function displayBasic(entry) {
+    output.append(node('p', 'GUIA BÁSICO · ' + entry.title, 'eyebrow'));
+    output.append(node('p', entry.meaning, 'quick-lookup-answer'));
+    output.append(node('p', entry.rule));
+    const box = details();
+    box.append(node('b', 'Símbolos e unidades'), node('p', entry.symbols),
+      node('b', 'Exemplo'), ...entry.example.map(part => node('p', part)),
+      node('b', 'Quando usar'), node('p', entry.when));
+    output.append(box);
+  }
+
+  function wikiTerm(question) {
+    const basics = globalThis.FurgStudyBasics;
+    return basics?.lookup(question)?.terms[0] || basics?.term(question) || question;
+  }
+
+  function wikiSearch(question) {
+    const url = new URL('/w/index.php', wikiOrigin);
+    url.searchParams.set('search', wikiTerm(question));
+    return link('Pesquisar direto na Wikipédia', url.href);
+  }
+
+  async function consultWikipedia(question, signal) {
+    const url = new URL('/w/api.php', wikiOrigin);
+    url.search = new URLSearchParams({
+      action:'query', generator:'search', gsrsearch:wikiTerm(question),
+      gsrnamespace:'0', gsrlimit:'3', prop:'extracts', exintro:'1',
+      explaintext:'1', exchars:'420', exlimit:'3', format:'json', formatversion:'2', origin:'*',
+    });
+    const response = await fetch(url, {
+      headers:{'Api-User-Agent':'BriniouzStudy/1.0 (https://github.com/Briniouz/FurgQuest-es)'},
+      signal, credentials:'omit', referrerPolicy:'no-referrer',
+    });
+    if (response.status === 429) return {message:'A Wikipédia pediu uma pausa nas consultas.'};
+    if (!response.ok) throw Error('Consulta à Wikipédia indisponível.');
+    const data = await response.json();
+    if (data.error) throw Error('Consulta à Wikipédia indisponível.');
+    const pages = (Array.isArray(data.query?.pages) ? data.query.pages : [])
+      .filter(page => Number.isSafeInteger(page?.pageid) && page.pageid > 0 && typeof page.title === 'string')
+      .sort((a,b) => (a.index ?? 0) - (b.index ?? 0));
+    return {pages};
+  }
+
+  function displayWikipedia(result, question) {
+    output.append(node('p', 'WIKIPÉDIA · CONSULTA EXTERNA', 'eyebrow'));
+    const pages = result.pages?.slice(0,3) || [];
+    if (!pages.length) {
+      output.append(node('p', result.message || 'Nenhum artigo encontrado pra esse termo.'), wikiSearch(question));
+      return;
+    }
+    const first = pages[0];
+    output.append(node('b', first.title.slice(0,150)));
+    if (typeof first.extract === 'string' && first.extract.trim()) {
+      output.append(node('p', first.extract.trim().slice(0,480), 'quick-lookup-answer'));
+    }
+    const links = node('div', '', 'quick-lookup-links');
+    for (const page of pages) {
+      links.append(link(page.title.slice(0,150), wikiOrigin + '/?curid=' + page.pageid));
+    }
+    links.append(link('Texto sob CC BY-SA 4.0', 'https://creativecommons.org/licenses/by-sa/4.0/'));
+    output.append(links);
+  }
+
   function displayWeb(data, question) {
     const seen = new Set();
     const sources = (Array.isArray(data.sources) ? data.sources : []).slice(0, 3).flatMap(source => {
@@ -152,12 +219,24 @@
     output.append(node('p', message), searchLink(question));
   }
 
-  launcher.addEventListener('click', () => {
-    globalThis.FurgStudyGuide?.close();
+  function open(value, external = false) {
+    if (modal.open) return;
+    if (!external) globalThis.FurgStudyGuide?.close();
+    returnFocus = document.activeElement;
+    wikipediaOnly = external;
+    hint.textContent = external ? 'Consulta à Wikipédia. Só o termo pesquisado é enviado.' :
+      'O acervo vem primeiro. A consulta externa envia o termo pesquisado.';
+    if (typeof value === 'string') {
+      input.value = value.slice(0,400);
+      output.replaceChildren();
+    }
     modal.showModal();
     launcher.setAttribute('aria-expanded', 'true');
     input.focus();
-  });
+    if (external && input.value.trim()) consult();
+  }
+
+  launcher.addEventListener('click', () => open());
   $('quickLookupClose').addEventListener('click', () => modal.close());
   modal.addEventListener('keydown', event => event.stopPropagation());
   modal.addEventListener('close', () => {
@@ -167,7 +246,8 @@
     status.textContent = '';
     submit.disabled = false;
     launcher.setAttribute('aria-expanded', 'false');
-    launcher.focus({preventScroll: true});
+    (returnFocus || launcher).focus({preventScroll: true});
+    returnFocus = null;
   });
 
   $('quickLookupConnect').addEventListener('submit', event => {
@@ -184,8 +264,7 @@
   });
   $('quickLookupDisconnect').addEventListener('click', () => configure(null));
 
-  $('quickLookupForm').addEventListener('submit', async event => {
-    event.preventDefault();
+  async function consult() {
     const question = input.value.trim();
     if (!question || question.length > 400 || submit.disabled) return;
 
@@ -194,21 +273,30 @@
     status.textContent = 'Consultando…';
     submit.disabled = true;
     let timeout;
+    const useWikipedia = wikipediaOnly || !connection;
     try {
-      const entry = await globalThis.FurgLibraryGuide?.lookup(question).catch(() => null);
-      if (id !== requestId) return;
-      if (entry) {
-        displayLocal(entry);
-        return;
-      }
-      if (!connection) {
-        unavailable(question, 'Para uma busca com resumo aqui na caixinha, conecta teu Worker abaixo.');
-        return;
+      if (!wikipediaOnly) {
+        const basic = globalThis.FurgStudyBasics?.lookup(question);
+        if (basic) {
+          displayBasic(basic);
+          return;
+        }
+        const entry = await globalThis.FurgLibraryGuide?.lookup(question).catch(() => null);
+        if (id !== requestId) return;
+        if (entry) {
+          displayLocal(entry);
+          return;
+        }
       }
 
       const controller = new AbortController();
       pending = controller;
-      timeout = setTimeout(() => controller.abort(), 14500);
+      timeout = setTimeout(() => controller.abort(), useWikipedia ? 8500 : 14500);
+      if (useWikipedia) {
+        const result = await consultWikipedia(question, controller.signal);
+        if (id === requestId) displayWikipedia(result, question);
+        return;
+      }
       const response = await fetch(connection.url, {
         method: 'POST',
         headers: {'Content-Type': 'application/json', Authorization: 'Bearer ' + connection.code},
@@ -230,7 +318,10 @@
         if (id === requestId) displayWeb(data, question);
       }
     } catch {
-      if (id === requestId) unavailable(question, 'A busca demorou ou falhou. Dá pra conferir pela pesquisa direta.');
+      if (id === requestId) {
+        if (useWikipedia) displayWikipedia({message:'A Wikipédia demorou ou está indisponível.'}, question);
+        else unavailable(question, 'A busca demorou ou falhou. Dá pra conferir pela pesquisa direta.');
+      }
     } finally {
       clearTimeout(timeout);
       if (id === requestId) {
@@ -239,5 +330,11 @@
         submit.disabled = false;
       }
     }
+  }
+
+  $('quickLookupForm').addEventListener('submit', event => {
+    event.preventDefault();
+    consult();
   });
+  globalThis.FurgQuickLookup = {open};
 })();

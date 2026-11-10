@@ -26,6 +26,12 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  }
  assert(mode.search('pressao','fisica').some(e => e.id === 'densidade'));
  assert.equal(mode.search('meia-vida','biologia').length,0);
+ assert.equal(mode.search('Jaule','biologia')[0].id,'basico-joule');
+ assert.equal(mode.search('O que é um joule?','quimica')[0].id,'basico-joule');
+ assert.equal(mode.search('Qual é a fórmula da potência?','fisica','Básico')[0].id,'basico-potencia');
+ assert(mode.search('Fluxo de água','fisica','Básico').some(e=>e.id==='basico-vazao'));
+ assert.equal(mode.search('Fluxo de água por área','fisica','Básico')[0].id,'basico-fluxo-por-area');
+
  assert.equal(guide.commands.length,10);
  const ids = Object.values(data.blocks).flatMap(block => {
   assert.equal(block.ids.length,5);
@@ -239,6 +245,50 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  assert($('dia2LessonsRoot').innerHTML.includes('data-map-state="done">Concluída'));
  assert($('dia2LessonsRoot').innerHTML.includes('data-map-progress-label="fisica">2 de 9 concluídas'));
  assert.equal(inApp('JSON.stringify(state.enem)'),oldBank);
+ const bets=ctx.FURG_DIA2_BETS;
+ assert.equal(bets.items.length,30);
+ assert.equal(new Set(bets.items.map(q=>q.id)).size,30);
+ assert.deepEqual(Array.from(bets.review,item=>item.number),[1,14,16]);
+ for(const item of bets.items){
+  assert(cards.has(item.card)&&guide.subjects[item.subject]&&item.hint&&item.steps.length===3);
+  assert.equal(new Set(item.options).size,item.options.length);
+  assert(item.options['ABCDE'.indexOf(item.answer)]);
+ }
+ const originalSession=inApp('JSON.stringify(state.dia2.sessions.percurso)');
+ inApp("openStudyRoute('#dia-2/apostas')");
+ assert($('dia2Root').innerHTML.includes('Apostas do Dia 2'));
+ assert($('dia2Root').innerHTML.includes('Física · 0/4'));
+ assert(mode.start('apostas-fisica'));
+ assert($('dia2Root').innerHTML.includes('Da frenagem ao aquecimento'));
+ assert(!$('dia2Root').innerHTML.includes('Gabarito original'));
+ assert(mode.record({choice:'B',confidence:'media',request:'Energia e massa',plan:'Energia cinética e Q = mcΔT'}));
+ assert($('dia2Root').innerHTML.includes('6,52 kg')&&$('dia2Root').innerHTML.includes('Próxima questão'));
+ assert(mode.next());
+ assert($('dia2Root').innerHTML.includes('Poder calorífico (kcal/kg)'));
+ assert.equal(inApp('JSON.stringify(state.dia2.sessions.percurso)'),originalSession);
+ assert.equal(mode.validate(JSON.parse(inApp('JSON.stringify(state.dia2)'))).sessions['apostas-fisica'].index,1);
+ const {convert,parse}=ctx.FurgConversions;
+ const close=(actual,wanted)=>assert(Math.abs(actual-wanted)<1e-8,`${actual} ≠ ${wanted}`);
+ close(convert(-40,'temperatura','°C','°F'),-40);
+ close(convert(0,'temperatura','K','°C'),-273.15);
+ close(convert(-459.67,'temperatura','°F','K'),0);
+ close(convert(41,'temperatura','°F','K'),278.15);
+ assert.equal(convert(-274,'temperatura','°C','K'),null);
+ assert.equal(convert(12,'area','m','m²'),null);
+ close(convert(-10,'variacao-termica','°C','°F'),-18);
+ close(convert(1,'area','m²','cm²'),10000);
+ close(convert(1,'volume','m³','cm³'),1000000);
+ close(convert(1,'energia','kWh','MJ'),3.6);
+ close(convert(parse('0,8'),'densidade','g/cm³','kg/m³'),800);
+ close(convert(72,'velocidade','km/h','m/s'),20);
+ assert(Number.isNaN(parse('1,2,3')));
+ inApp("openStudyRoute('#dia-2/conversoes')");
+ assert($('dia2Root').innerHTML.includes('Laboratório de Grandezas e Conversões'));
+ inApp("openStudyRoute('#dia-2/aulas/fisica/calor')");
+ assert($('dia2LessonsRoot').innerHTML.includes('Uma temperatura, três escalas'));
+ assert($('dia2LessonsRoot').innerHTML.includes('278,15 K'));
+ assert.equal(mode.search('fahrenheit','quimica','Básico')[0].id,'basico-temperatura');
+ console.log('PASS: 30 practice bets, separate sessions, legacy progress, temperature scales and intervals, dimensional conversions and lesson links.');
  inApp("openStudyRoute('#dia2')");
  assert(ctx.FurgEnem.openSubject('fisica'));
  assert.equal(inApp('view'),'enem');

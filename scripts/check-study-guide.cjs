@@ -21,10 +21,15 @@ for(const entry of c.FURG_STUDY_CONCEPTS){assert(entry.summary&&entry.tip&&entry
 (async()=>{
  await c.FurgStudyGuide.ensure();
  const find=(q,type='all')=>c.FurgStudyGuide.select(q,type);
- assert.equal(find('').length,291);assert.equal(find('','profiles').length,224);assert.equal(find('','concepts').length,67);
+ const basics=find('','concepts').filter(entry=>entry.basic);
+ assert.equal(find('').filter(entry=>!entry.basic).length,291);
+ assert.equal(find('','profiles').length,224);assert.equal(find('','concepts').filter(entry=>!entry.basic).length,67);
+ assert.equal(basics.length,21);
+ assert.equal(find('O que é um Jaule?','concepts')[0].id,'basico-joule');
+ assert.equal(find('m','concepts')[0].id,'basico-metro');
  assert.equal(find('ALIENAÇÃO','concepts')[0].title,'Alienação');assert(find('alienacao','profiles').some(p=>p.title==='Karl Marx'));assert.equal(find('Machado','profiles')[0].title,'Machado de Assis');
  assert(find('função poética','concepts').some(p=>p.title==='As seis funções da linguagem'));assert(find('Memórias Póstumas','profiles').some(p=>p.title==='Machado de Assis'));assert(find('Hegel','profiles').some(p=>p.title==='G. W. F. Hegel'));
- for(const entry of find('','concepts')){assert(entry.examFocus.length>=2,entry.title);assert(entry.example&&entry.exampleExplanation,entry.title);}const stoic=find('estoicismo');assert.equal(stoic[0].title,'Estoicismo');assert.equal(stoic[0].examFocus.length,3);assert(find('Sêneca','profiles')[0].example);assert.equal(find('Sêneca','profiles')[0].exampleTopic,'Estoicismo');assert.equal(find('termoqueaindanaoexiste').length,0);assert.equal(JSON.stringify(state),before);
+ for(const entry of find('','concepts')){assert(entry.examFocus.length>=(entry.basic?1:2),entry.title);assert(entry.example&&entry.exampleExplanation,entry.title);}const stoic=find('estoicismo');assert.equal(stoic[0].title,'Estoicismo');assert.equal(stoic[0].examFocus.length,3);assert(find('Sêneca','profiles')[0].example);assert.equal(find('Sêneca','profiles')[0].exampleTopic,'Estoicismo');assert.equal(find('termoqueaindanaoexiste').length,0);assert.equal(JSON.stringify(state),before);
  const prefState={answers:{original:{choice:'B'}},profile:{name:'Ana'}},calls=[];let saves=0,fail=false;
  const doc={getElementById:()=>null,querySelector:()=>null,documentElement:{dataset:{}}};
  const p=vm.createContext({document:doc,FurgElimination:{clearAll:()=>calls.push('clear')}});vm.runInContext(fs.readFileSync('study-settings.js','utf8'),p);

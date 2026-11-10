@@ -4,8 +4,11 @@
  const practice = globalThis.FURG_DIA2_PRACTICE;
  if (!guide || !practice) return;
  const {subjects, entries, commands} = guide;
+ const basics = globalThis.FurgStudyBasics;
+ const references = [...(basics?.entries || []),...entries];
  const {blocks, official, officialSources} = practice;
  const {items:exerciseItems,origins} = globalThis.FURG_DIA2_EXERCISES || {items:[],origins:{}};
+ const {items:betItems,review:betReview} = globalThis.FURG_DIA2_BETS || {items:[],review:[]};
  const $ = id => document.getElementById(id);
  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const norm = value => String(value ?? '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -20,12 +23,16 @@
  const exercisesByCard = new Map();
  const authorialBlocks = Object.fromEntries(Object.entries(subjects).map(([id,meta]) =>
   ['autorais-'+id,{title:'Exercícios autorais · '+meta.label,ids:[]}]));
+ function addLocalQuestion(item,meta) {
+  if(!cardsById.has(item.card)||byId.has(item.id))return false;
+  byId.set(item.id,{id:item.id,title:item.title,stem:item.stem,answer:item.answer,
+   alternatives:item.options.map((text,i)=>({letter:'ABCDE'[i],text})),...meta});
+  questions[item.id]={...item,...meta};
+  return true;
+ }
  for(const item of exerciseItems) {
   const card=cardsById.get(item.card);
-  if(!card||byId.has(item.id))continue;
-  byId.set(item.id,{id:item.id,title:item.title,stem:item.stem,answer:item.answer,
-   alternatives:item.options.map((text,i)=>({letter:'ABCDE'[i],text})),authorial:true});
-  questions[item.id]={...item,subject:card.subject,authorial:true};
+  if(!card||!addLocalQuestion(item,{subject:card.subject,authorial:true}))continue;
   const ids=exercisesByCard.get(item.card)||[];
   ids.push(item.id);
   exercisesByCard.set(item.card,ids);
@@ -33,15 +40,19 @@
  }
  const order = Object.keys(levels);
  for(const block of Object.values(authorialBlocks))block.ids.sort((a,b)=>order.indexOf(questions[a].level)-order.indexOf(questions[b].level));
- const allBlocks = {...blocks,...authorialBlocks};
+ const registeredBets = betItems.filter(item=>addLocalQuestion(item,{subject:item.subject,bet:true}));
+ const betBlocks = Object.fromEntries(['todos',...Object.keys(subjects)].map(subject=>[
+  'apostas-'+subject,{title:'Apostas · Edcley Teixeira',ids:registeredBets.filter(item=>subject==='todos'||item.subject===subject).map(item=>item.id)}
+ ]));
+ const allBlocks = {...blocks,...authorialBlocks,...betBlocks};
  const eligible = id => {
   const q = byId.get(id), item = hasKey(questions,id) && questions[id];
-  if(item?.authorial)return !!q;
+  if(item?.authorial||item?.bet)return !!q;
   return !!(item && q && !q.canceled && !q.quality?.blocked && q.answer === item.answer &&
    official[q.year]?.[q.index] === item.answer && globalThis.FurgEnemLayout?.fingerprint(q) === item.fingerprint);
  };
  const route = Object.values(blocks).flatMap(block => block.ids).filter(eligible);
- const allPracticeIds = [...route,...Object.values(authorialBlocks).flatMap(block=>block.ids)];
+ const allPracticeIds = [...route,...Object.values(authorialBlocks).flatMap(block=>block.ids),...betBlocks['apostas-todos'].ids];
  const sessionKeys = ['percurso', ...Object.keys(allBlocks), 'revisao'];
  const idsFor = key => key === 'percurso' ? route : allBlocks[key].ids.filter(eligible);
  const fresh = () => ({sessions:{}, attempts:[], cards:{}, seenExercises:{}, lessons:{}, lessonVisits:{}, hints:true});
@@ -247,16 +258,23 @@
   return result.reverse();
  }
 
- const searchIndex = new Map(entries.map(e => [e.id,norm([e.id,e.title,e.topic,e.rule,e.meaning,e.when,e.symbols].join(' '))]));
+ const searchIndex = new Map(references.map(e => [e.id,norm([e.id,e.title,e.topic,e.rule,e.meaning,e.when,e.symbols,...(e.terms||[])].join(' '))]));
  function search(value, area = '', group = '') {
-  const words = norm(value).trim().split(/\s+/).filter(Boolean);
-  return entries.filter(e => (!area || e.subject === area) && (!group || e.topic === group) &&
-   words.every(word => searchIndex.get(e.id).includes(word)));
+  const words = norm(basics?.term(value) ?? value).trim().split(/\s+/).filter(Boolean);
+  const direct = basics?.lookup(value);
+  const found = references.filter(e => (!area || e.subject === area || e.topic === 'Básico') &&
+   (!group || e.topic === group) && words.every(word => searchIndex.get(e.id).includes(word)));
+  if (direct && (!group || group === direct.topic)) {
+   return words.join(' ').length <= 2 ? [direct] : [direct,...found.filter(e => e !== direct)];
+  }
+  return found;
  }
 
  const button = (action,label,attrs = '',style = 'outline') => `<button type="button" class="${style}" data-d2="${action}" ${attrs}>${esc(label)}</button>`;
  const attr = (name,value) => `data-${name}="${esc(value)}"`;
- const qLabel = q => q.authorial?q.title:`ENEM ${q.year} · Questão ${q.index}`;
+ const studyLink = (path,label,style = 'outline') => `<a class="${style}" href="#${esc(path)}" ${attr('study-route',path)}>${esc(label)}</a>`;
+ const qLabel = q => q.bet?`Aposta ${String(questions[q.id].number).padStart(2,'0')} · ${q.title}`:
+  q.authorial?q.title:`ENEM ${q.year} · Questão ${q.index}`;
  const focus = id => $(id)?.focus?.();
  const pairLabel = row => row.correct + '/' + row.total;
 
@@ -281,21 +299,24 @@
    <div class="d2-example"><strong class="d2-block-label">Exemplo resolvido</strong><p>${esc(e.example[0])}</p><ol>
     ${e.example.slice(1).map(step => `<li>${esc(step)}</li>`).join('')}</ol></div>
    <div class="d2-trap"><strong class="d2-block-label">Cuidado com este erro</strong><p>${esc(e.trap)}</p></div>
-   ${hasExercise?`<div class="d2-actions d2-card-actions">${button('exercise-card','Ver exercício deste assunto →',attr('card',e.id))}</div>`:''}
+   ${hasExercise||e.lesson?`<div class="d2-actions d2-card-actions">
+    ${hasExercise?button('exercise-card','Ver exercício deste assunto →',attr('card',e.id)):''}
+    ${e.lesson?studyLink(e.lesson,'Ver aula completa →'):''}</div>`:''}
   </div>`;
  }
 
  function guideResults(items, target) {
   const el = $(target);
   if (!el) return;
-  const groups = new Map();
+  const groups = new Map(), quick = target === 'd2QuickResults';
+  const direct = basics?.lookup(quick ? quickQuery : query);
   for (const e of items) {
-   const label = target === 'd2QuickResults' && !quickSubject ? subjects[e.subject].label + ' · ' + e.topic : e.topic;
+   const label = quick && !quickSubject && e.topic !== 'Básico' ? subjects[e.subject].label + ' · ' + e.topic : e.topic;
    if (!groups.has(label)) groups.set(label,[]);
    groups.get(label).push(e);
   }
   el.innerHTML = items.length ? [...groups].map(([label,list]) => `<section class="d2-topic" ${attr('subject',list[0].subject)}>
-   <h3>${esc(label)}</h3><div class="d2-guide-grid">${list.map(e => `<details class="d2-guide-card" ${items.length===1?'open':''}>
+   <h3>${esc(label)}</h3><div class="d2-guide-grid">${list.map(e => `<details class="d2-guide-card" ${items.length===1||e===direct?'open':''}>
     <summary><span>${esc(e.title)}</span><span class="d2-chevron" aria-hidden="true"></span></summary>${cardBody(e)}</details>`).join('')}</div></section>`).join('')
    : '<p>Nenhuma ficha com esses filtros. Tenta buscar outro termo.</p>';
   $(target+'Count').textContent = items.length + (items.length === 1 ? ' ficha' : ' fichas');
@@ -311,13 +332,15 @@
   const exerciseAction = exerciseItems.length ? button('tab','Exercícios autorais →',attr('tab','exercicios'),'outline') : '';
   const lessonPath = 'dia-2/aulas/'+subject;
   return `<div class="d2-study-view">
-   ${studyHeading('Guia de fórmulas e conceitos','Escolhe a matéria e abre uma ficha pra ver a fórmula, o exemplo e o erro comum.',exerciseAction)}
+   ${studyHeading('Guia de fórmulas e conceitos','Começa pelo Básico ou escolhe uma matéria pra ver a fórmula, o exemplo e o erro comum.',
+    '<div class="d2-actions">'+studyLink('dia-2/conversoes','Laboratório de conversões →')+exerciseAction+'</div>')}
    ${subjectPicker()}
    <div class="d2-controls"><label for="d2Search">Buscar nesta matéria
-    <input type="search" id="d2Search" placeholder="Ex. Lei de Ohm, pressão, mitose" value="${esc(query)}"></label>
+    <input type="search" id="d2Search" placeholder="Ex. Joule, vazão, mitose" value="${esc(query)}"></label>
     <label for="d2Topic">Assunto<select id="d2Topic"><option value="">Todos os assuntos</option>
     ${topics.map(name => `<option value="${esc(name)}" ${topic===name?'selected':''}>${esc(name)}</option>`).join('')}</select></label></div>
-   <p class="d2-muted d2-result-count" id="d2GuideResultsCount" aria-live="polite"></p><div id="d2GuideResults"></div>
+   <div class="d2-guide-tools"><p class="d2-muted d2-result-count" id="d2GuideResultsCount" aria-live="polite"></p>
+    ${button('wiki-guide','Consultar na Wikipédia ↗','','quiet')}</div><div id="d2GuideResults"></div>
    <details class="d2-command-list"><summary>Dicionário de comandos da prova</summary>
     ${commands.map(e => `<div><h3>${esc(e.title)}</h3><p>${esc(e.meaning)}</p><p class="d2-muted">${esc(e.example)}</p></div>`).join('')}</details>
    <div class="d2-actions"><a class="outline" href="#${lessonPath}" data-study-route="${lessonPath}">Estudar ${esc(subjects[subject].label)} do zero →</a>${button('bank','Questões do ENEM de '+subjects[subject].label,attr('subject',subject))}${button('trilhas','Abrir as trilhas completas')}</div>
@@ -333,8 +356,10 @@
   dialog.innerHTML = `<div class="d2-quick-head"><div class="d2-quick-title"><h2 id="d2QuickTitle">Guia do 2º dia</h2>
     <button type="button" class="quiet" id="d2QuickClose" aria-label="Fechar guia">×</button></div>
     ${subjectPicker(quickSubject,true)}
-    <label for="d2QuickSearch">Buscar fórmula ou conceito</label><input type="search" id="d2QuickSearch" value="${esc(value)}">
-    <p class="d2-muted" id="d2QuickResultsCount" aria-live="polite"></p></div>
+    <label for="d2QuickSearch">Buscar fórmula ou conceito</label><input type="search" id="d2QuickSearch" placeholder="Ex. deslocamento, watt, fluxo de água" value="${esc(value)}">
+    <div class="d2-guide-tools"><p class="d2-muted" id="d2QuickResultsCount" aria-live="polite"></p>
+     ${studyLink('dia-2/conversoes','Conversões →','quiet')}
+     ${button('wiki-guide','Consultar na Wikipédia ↗','','quiet')}</div></div>
     <div class="d2-quick-body" id="d2QuickResults"></div>`;
   guideResults(search(quickQuery,quickSubject),'d2QuickResults');
   if (!dialog.open) dialog.showModal();
@@ -373,12 +398,12 @@
  }
 
  function flashPool() {
-  return search('',subject).filter(e => !flashReviewOnly || state().cards[e.id]?.value === 'again');
+  return entries.filter(e => e.subject === subject && (!flashReviewOnly || state().cards[e.id]?.value === 'again'));
  }
 
  function flashView() {
   const pool = flashPool(), e = pool[flashIndex % pool.length];
-  const all = search('',subject), known = all.filter(card => state().cards[card.id]?.value === 'known').length;
+  const all = entries.filter(e => e.subject === subject), known = all.filter(card => state().cards[card.id]?.value === 'known').length;
   const heading = `<h2 id="d2Focus" tabindex="-1">Flashcards</h2>${subjectPicker()}
    <label class="d2-switch"><input type="checkbox" id="d2FlashReview" ${flashReviewOnly?'checked':''}> Só fichas marcadas para revisar</label>`;
   if (!e) return heading + '<p>Nenhuma ficha desta matéria marcada para revisão.</p>';
@@ -397,7 +422,12 @@
 
  function planView() {
   const progress = state().sessions.percurso, s = stats(), mistakes = errors(true).length;
-  return `<div class="d2-overview"><article class="d2-panel d2-feature">
+  return `${registeredBets.length?`<div class="d2-priority">
+    <div><p class="eyebrow">PRIORIDADE DE TREINO</p><h2>Apostas do Dia 2</h2>
+     <p>${registeredBets.length} questões da Parte 15 do Edcley Teixeira, com enunciados resumidos e resolução conferida.</p></div>
+    ${button('training-home','Escolher questões →','','primary')}
+   </div>`:''}
+   <div class="d2-overview"><article class="d2-panel d2-feature">
    <p class="eyebrow">PERCURSO DO SEGUNDO DIA</p><h2 id="d2Focus" tabindex="-1">Começa pela Física</h2>
    <p>Revisa uma ficha, resolve cinco questões e volta aos erros. O percurso reúne ${route.length} questões reais em cinco blocos, com duas rodadas de Física.</p>
    <div class="d2-actions">${button('start',pending(progress)?'Continuar percurso →':'Começar percurso →',attr('key','percurso'),'primary')}
@@ -418,8 +448,29 @@
    <div class="d2-actions d2-more">${button('exam','Simulado do 2º dia →')}${button('trilhas','Trilhas completas')}</div>`;
  }
 
+ function betsPanel() {
+  if(!registeredBets.length)return '';
+  const attempted = new Set(state().attempts.map(a=>a.questionId));
+  const selection = ['todos',...Object.keys(subjects)].map(subject=>{
+   const key='apostas-'+subject, ids=idsFor(key), count=ids.filter(id=>attempted.has(id)).length;
+   const label=subjects[subject]?.label||'Todas as matérias';
+   const action=pending(state().sessions[key])?'Continuar '+label.toLowerCase():label;
+   return button('start',`${action} · ${count}/${ids.length}`,attr('key',key),subject==='todos'?'primary':'outline');
+  }).join('');
+  return `<section class="d2-priority d2-priority-full" aria-labelledby="d2BetsTitle">
+   <div><p class="eyebrow">PRIORIDADE DE TREINO</p><h3 id="d2BetsTitle">Apostas do Dia 2</h3>
+    <p>Parte 15 · Edcley Teixeira. As versões resumidas mantêm a numeração do PDF.</p>
+    <p class="d2-muted">Material de preparação independente, com dificuldade estimada pelo site.</p></div>
+   <div class="d2-actions" aria-label="Questões respondidas por matéria">${selection}</div>
+   <details class="d2-bet-review"><summary>${betReview.length} itens para revisar fora da pontuação</summary>
+    <ul>${betReview.map(item=>`<li><strong>Questão ${String(item.number).padStart(2,'0')} · ${esc(item.topic)}</strong><p>${esc(item.reason)}</p>
+    ${button('card','Ver ficha',attr('card',item.card),'quiet')}</li>`).join('')}</ul>
+   </details></section>`;
+ }
+
  function trainingHome() {
   return `<h2 id="d2Focus" tabindex="-1">Treino guiado</h2><p>Identifica o que a questão pede, registra teu plano e marca a confiança antes de conferir a resolução.</p>
+   ${betsPanel()}
    <div class="d2-actions">${button('start',pending(state().sessions.percurso)?'Continuar percurso':'Percurso de '+route.length+' questões',attr('key','percurso'),'primary')}</div>
    <h3 class="d2-subheading">Questões oficiais com resolução</h3>
    <div class="d2-block-grid">${Object.entries(blocks).map(([key,block]) => {
@@ -431,7 +482,26 @@
     ${button('tab','Abrir exercícios →',attr('tab','exercicios'))}</div>`:''}`;
  }
 
+ function betVisual(visual) {
+  if(visual==='quadrilatero')return `<figure class="d2-bet-figure">
+   <svg viewBox="0 0 330 220" role="img" aria-label="Retângulo 20 por 14. P fica na base, Q na direita, R no topo e S na esquerda, nas posições do enunciado.">
+    <rect x="60" y="32" width="210" height="147" fill="none" stroke="currentColor"/>
+    <path d="M123 179L270 95L207 32L60 116Z" fill="currentColor" fill-opacity=".15" stroke="currentColor" stroke-width="2"/>
+    <g fill="currentColor" font-family="system-ui" text-anchor="middle">
+     <g font-size="14" font-weight="700"><text x="123" y="169">P</text><text x="258" y="102">Q</text>
+     <text x="205" y="51">R</text><text x="71" y="116">S</text></g>
+     <g font-size="12"><text x="133" y="22">20 − x</text><text x="240" y="22">x</text><text x="292" y="69">x</text>
+     <text x="298" y="141">14 − x</text><text x="95" y="197">x</text><text x="196" y="197">20 − x</text>
+     <text x="38" y="151">x</text><text x="30" y="77">14 − x</text></g>
+    </g>
+   </svg><figcaption>Esquema de PQRS dentro do retângulo.</figcaption></figure>`;
+  if(!visual)return '';
+  return `<div class="d2-table"><table><caption>Dados da questão</caption><thead><tr>${visual.headers.map(value=>`<th scope="col">${esc(value)}</th>`).join('')}</tr></thead>
+   <tbody>${visual.rows.map(([name,...cells])=>`<tr><th scope="row">${esc(name)}</th>${cells.map(value=>`<td>${esc(value)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+ }
+
  function questionBody(q,item) {
+  if(q.bet)return '<p>'+esc(q.stem)+'</p>'+betVisual(item.visual);
   if(q.authorial)return '<p>'+esc(q.stem)+'</p>';
   if (!item.edits) return globalThis.FurgEnem.body(q);
   const context = item.edits.reduce((text,[before,after]) => text.replace(before,after),q.context);
@@ -489,10 +559,10 @@
   const a = attemptAt(q), item = questions[q.id], draft = s.draft;
   const block = Object.values(allBlocks).find(group => group.ids.includes(q.id));
   return `<article class="d2-panel d2-question" ${attr('subject',item.subject)} data-d2-question="${esc(q.id)}">
-   <div class="d2-question-head"><div><p class="eyebrow">${esc(block.title)} · ${s.index+1}/${s.ids.length}${item.authorial?' · '+levels[item.level]:''}</p>
+   <div class="d2-question-head"><div><p class="eyebrow">${esc(block.title)} · ${s.index+1}/${s.ids.length}${item.bet?' · '+item.difficulty:item.authorial?' · '+levels[item.level]:''}</p>
    <h2 id="d2Focus" tabindex="-1">${esc(qLabel(q))}</h2></div>${button('training-home','Ver blocos','','quiet')}</div>
    <div class="d2-actions d2-question-links">${button('quick','Guia lateral ↗','','quiet')}
-   ${q.authorial?button('card','Ver ficha do assunto',attr('card',item.card),'quiet'):`<a href="${esc(q.source?.pdf || officialSources[q.year].exam)}" target="_blank" rel="noopener noreferrer">Caderno azul ↗</a>`}</div>
+   ${q.authorial||q.bet?button('card','Ver ficha do assunto',attr('card',item.card),'quiet'):`<a href="${esc(q.source?.pdf || officialSources[q.year].exam)}" target="_blank" rel="noopener noreferrer">Caderno azul ↗</a>`}</div>
    <div class="d2-enunciation">${questionBody(q,item)}</div>
    ${a ? choices(q,a) + feedback(q,a,item) : `<form id="d2Answer" data-d2-form="answer">
     ${choices(q,null)}
@@ -506,7 +576,8 @@
       `<option value="${id}" ${id===draft.confidence?'selected':''}>${label}</option>`).join('')}</select>
      <button class="primary" type="submit">Conferir resposta</button>
     </div></form>`}
-   <p class="d2-muted d2-credit">${q.authorial?'Questão e resolução autorais do BriniouzStudy':`Questão oficial do Inep · Resolução autoral
+   <p class="d2-muted d2-credit">${q.bet?'Apostas de Edcley Teixeira · Parte 15 · Versão resumida e resolução do BriniouzStudy':
+    q.authorial?'Questão e resolução autorais do BriniouzStudy':`Questão oficial do Inep · Resolução autoral
     ${a?` · <a href="${officialSources[q.year].key}" target="_blank" rel="noopener noreferrer">Gabarito original ↗</a>`:''}`}</p>
   </article>`;
  }
@@ -543,21 +614,27 @@
    }).join('') : '<p>O caderno aparece depois que tu conferir a primeira questão.</p>'}`;
  }
 
- const views = {plano:planView, guia:guideView, flash:flashView, treino:trainView, exercicios:exerciseView, erros:errorsView, caderno:notebookView};
+ const views = {plano:planView, guia:guideView, conversoes:()=>globalThis.FurgConversions?.markup()||'',
+  flash:flashView, treino:trainView, exercicios:exerciseView, erros:errorsView, caderno:notebookView};
  function render() {
   if (!adapter || !$('dia2Root')) return;
   $('dia2Root').innerHTML = `<div class="d2-toolbar"><div class="d2-tabs" role="group" aria-label="Seções do segundo dia">
-   ${Object.entries(tabs).map(([id,label]) => button('tab',label,`${attr('tab',id)} aria-pressed="${id===tab}"`,'quiet')).join('')}
-   </div>${tab==='guia'||tab==='exercicios'?'':`<label class="d2-switch"><input type="checkbox" id="d2Hints" ${state().hints?'checked':''}> Pistas no treino</label>`}</div>
+   ${Object.entries(tabs).map(([id,label]) => button('tab',label,`${attr('tab',id)} aria-pressed="${id===(tab==='conversoes'?'guia':tab)}"`,'quiet')).join('')}
+   </div>${['guia','exercicios','conversoes'].includes(tab)?'':`<label class="d2-switch"><input type="checkbox" id="d2Hints" ${state().hints?'checked':''}> Pistas no treino</label>`}</div>
    <p id="d2Live" role="status" aria-live="polite"></p><div class="d2-content">${views[tab]()}</div>`;
   if (tab === 'guia') guideResults(search(query,subject,topic),'d2GuideResults');
  }
 
- function changeTab(value) {
-  if (!hasKey(tabs,value) || !flushDraft()) return;
+ function changeTab(value,chooseBlock = false) {
+  if (!hasKey(views,value) || !flushDraft()) return;
+  if(chooseBlock)activeKey='';
   tab = value;
   render();
   focus('d2Focus');
+ }
+
+ function showTraining() {
+  changeTab('treino',true);
  }
 
  function changeSubject(value) {
@@ -602,9 +679,12 @@
    }
    case 'subject-guide': if (changeSubject(area)) changeTab('guia'); break;
    case 'quick': openGuide(); break;
+   case 'wiki-guide':
+    globalThis.FurgQuickLookup?.open($('dia2QuickGuide')?.open ? quickQuery : query,true);
+    break;
    case 'card': { const e = cardsById.get(card); if (e) openGuide(e.subject,e.title); break; }
    case 'start': start(key); break;
-   case 'training-home': if (flushDraft()) { activeKey = ''; changeTab('treino'); } break;
+   case 'training-home': showTraining(); break;
    case 'next': next(); break;
    case 'review': start('revisao',question ? [question] : errors(highOnly).map(a => a.questionId)); break;
    case 'flash-reveal': revealed = true; render(); focus('d2Focus'); break;
@@ -634,6 +714,7 @@
   const host = $('dia2Root'), dialog = $('dia2QuickGuide');
   if (bound || !host || !dialog) return;
   bound = true;
+  globalThis.FurgConversions?.bind(host);
   globalThis.FurgDia2Lessons?.init({
    getProgress:()=>state().lessons, saveProgress:lessons=>write({lessons}),
    getVisits:()=>state().lessonVisits, saveVisits:lessonVisits=>write({lessonVisits:globalThis.FurgDia2Lessons.validateVisits(lessonVisits)}),
@@ -680,7 +761,9 @@
    }
   },true);
   dialog.addEventListener('click',event => {
-   if(event.target.id==='d2QuickClose'||event.target===dialog)dialog.close();
+   const route=event.target.closest?.('[data-study-route]');
+   if(event.target.id==='d2QuickClose'||event.target===dialog||
+      (route&&!event.metaKey&&!event.ctrlKey&&!event.shiftKey&&!event.altKey))dialog.close();
    else click(event);
   });
   dialog.addEventListener('input',event => {
@@ -692,7 +775,8 @@
   globalThis.addEventListener?.('pagehide',flushDraft);
  }
 
- globalThis.FurgDia2 = {init, render, fresh, validate, merge, start, record, next, stats, errors, search, openGuide, showGuide:()=>changeTab('guia'),
+ globalThis.FurgDia2 = {init, render, fresh, validate, merge, start, record, next, stats, errors, search, openGuide, showGuide:()=>changeTab('guia'),showTraining,
+  showConversions:()=>changeTab('conversoes'),
   showExercises:()=>{exerciseCard='';changeTab('exercicios');},flushDraft};
 })();
 
