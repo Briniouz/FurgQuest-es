@@ -39,10 +39,11 @@
    </header>
    <div class="aula-nav">${maps.subjectTabs('fisica','aulas',completed)}${switches('fisica','roteiro-fisica')}</div>
    <ol class="aula-video-list" aria-label="Capítulos em ordem">
-    ${physicsVideo.map(([title,time,lessonId,tip],i)=>`<li class="panel"><details ${i===0?'open':''}>
+    ${physicsVideo.map(([title,time,lessonId,tip,lab],i)=>`<li class="panel"><details ${i===0?'open':''}>
      <summary><span class="aula-video-time">${esc(time)}</span><strong>${esc(title)}</strong></summary>
      <div class="aula-video-notes"><p>${esc(tip)}</p>
-      ${link(route('fisica',lessonId),'Abrir aula relacionada →','outline')}</div>
+      <div class="d2-actions">${link(route('fisica',lessonId),'Abrir aula relacionada →','outline')}
+       ${lab?link(lab,'Abrir simulador →','primary'):''}</div></div>
     </details></li>`).join('')}
    </ol>
   </div>`;
@@ -83,6 +84,7 @@
     ${studyLabs?.markup(globalThis.FurgStudyData?.layers[lesson.id]?.[4],'aula')||''}
     ${lesson.id==='energia'&&studyLabs?`<details class="el-depth"><summary>Compara rampa, queda, pêndulo, montanha-russa e mola</summary>${studyLabs.markup('conservacao','aula')}</details>`:''}
     ${lesson.id==='calor'?globalThis.FurgDia2Temperature?.markup()||'':''}
+    ${lesson.id==='calor'?studyLabs?.markup('transmissao','aula')||'':''}
     ${maps.relatedLinks(lesson.id)}
     <aside class="aula-exam"><strong>Como reconhecer isso no ENEM?</strong><p>${esc(lesson.exam)}</p></aside>
     <section class="aula-check" aria-labelledby="aulaCheckTitle">

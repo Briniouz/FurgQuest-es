@@ -450,7 +450,7 @@ globalThis.FURG_DIA2_PHYSICS_VIDEO = [
  ['Energia e suas transformações','32:00','energia','Segue a energia entre movimento, posição, deformação e aquecimento. Define o sistema antes de escrever o balanço.'],
  ['Potência e eficiência','1:10:50','consumo','Potência é energia por tempo, P = E/Δt. Eficiência compara a energia útil com a energia recebida.'],
  ['Termologia','2:17:12','calor','Distingue temperatura de calor. Para cada corpo, C = mc. Em um sistema isolado sem mudança de fase, soma os termos Q = CΔT e iguala a zero.'],
- ['Transmissão de calor','5:43:27','calor','Na condução, a energia passa pelo material. Na convecção, o fluido se move. Na radiação, ondas eletromagnéticas transportam energia.'],
+ ['Transmissão de calor','5:43:27','calor','Na condução, a energia passa pelo material. Na convecção, o fluido se move. Na radiação, ondas eletromagnéticas transportam energia.','dia-2/transmissao-calor'],
  ['Fluxo de calor','6:41:25','calor','A taxa média de transferência é Φ = Q/Δt, em W. Dividindo essa taxa pela área, obténs o fluxo por unidade de área em W/m².'],
  ['Mudança de fases','7:01:18','calor','Durante a mudança de fase de uma substância pura sob pressão fixa, usa Q = mL. Para aquecer ou esfriar em uma única fase, usa Q = mcΔT.'],
  ['Eletrodinâmica','7:43:00','circuitos','Corrente mede a passagem de carga por tempo. Tensão mede a energia transferida por unidade de carga.'],

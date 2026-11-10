@@ -17,8 +17,8 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
   assert(exercises.origins[q.card]);
  }
  const bank = new Map(ctx.FURG_ENEM_DATA.questions.map(q => [q.id,q]));
- assert.equal(guide.entries.length,96);
- assert.equal(new Set(guide.entries.map(e => e.id)).size,96);
+ assert.equal(guide.entries.length,99);
+ assert.equal(new Set(guide.entries.map(e => e.id)).size,99);
  for (const subject of Object.keys(guide.subjects)) assert(mode.search('',subject).length >= 20);
  for (const e of guide.entries) {
   assert(e.rule && e.meaning && e.when && e.symbols && e.trap);
@@ -324,7 +324,22 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  console.log('PASS: 30 practice bets, separate sessions, legacy progress, temperature scales and intervals, dimensional conversions and lesson links.');
  const course=ctx.FurgStudyCourse, labs=ctx.FurgStudyLabs;
  assert.equal(Object.keys(ctx.FurgStudyData.layers).length,36);
- assert.equal(Object.keys(labs.labs).length,11);
+ assert.equal(Object.keys(labs.labs).length,12);
+ const heat=ctx.FurgHeatLab;
+ assert(mode.search('isolantes térmicos','fisica').some(e=>e.id==='condutores-termicos'));
+ assert(mode.search('água salgada','fisica').some(e=>e.id==='conducao-ionica'));
+ for(const fluid of ['agua','oleo','ar']){
+  assert.equal(heat.convection(0,fluid).bottom,20);
+  const warming=heat.convection(.45,fluid), end=heat.convection(1,fluid);
+  assert(warming.bottom>warming.top&&warming.top>20&&warming.heaterOn);
+  assert(end.top>warming.top&&end.difference<.25&&!end.heaterOn);
+  const before=heat.convection(.64,fluid);
+  assert(Math.abs(before.bottom+before.top-end.bottom-end.top)<1e-8);
+ }
+ assert(heat.rodTemperature(.5,.65,.85)>heat.rodTemperature(.5,.65,.045));
+ inApp("openStudyRoute('#dia-2/transmissao-calor')");
+ assert($('dia2Root').innerHTML.includes('id="hl-oficina"'));
+ assert($('dia2Root').innerHTML.includes('Condutores, isolantes e o papel dos íons'));
  const mix=labs.thermalBalance(labs.labs.calorimetria.vars.map(control=>control.value));
  assert(Math.abs(mix.equilibrium-38.095238095)<1e-8);
  assert(Math.abs(mix.bodies.reduce((sum,body)=>sum+body.heat,0))<1e-8);
@@ -346,14 +361,14 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  const saved=JSON.parse(inApp('JSON.stringify(state.dia2)'));
  assert.equal(mode.merge(saved,saved).learning.length,1);
  assert.equal(mode.merge(saved,{}).learning.length,1);
- console.log('PASS: 36 lesson extensions, 11 workshop labs, numerical models, spaced review, merge and navigation.');
+ console.log('PASS: 36 lesson extensions, 12 workshop labs, numerical models, spaced review, merge and navigation.');
  inApp("openStudyRoute('#dia2')");
  assert(ctx.FurgEnem.openSubject('fisica'));
  assert.equal(inApp('view'),'enem');
  assert.equal($('enemSubject').value,'fisica');
  assert(ctx.FurgEnemSim.selectDay('2'));
  assert.equal($('enemExamDay').value,'2');
- console.log('PASS: 96 intact cards, 24 original exercises with linked explanations, 25 fingerprint-checked questions and official keys, draft-safe grading, rollback, notebook, flashcards, high-confidence review, legacy backup, and subject/day links.');
+ console.log('PASS: 99 guide cards, 24 original exercises with linked explanations, 25 fingerprint-checked questions and official keys, draft-safe grading, rollback, notebook, flashcards, high-confidence review, legacy backup, and subject/day links.');
  console.log('PASS: 43 concept cards with distinct verified ENEM questions, all subject routes and work–energy model.');
  console.log('PASS: 36 complete lessons, four connected maps, five visual labs, valid deep links, progress merge, legacy import and resume.');
 };

@@ -70,7 +70,9 @@
    <p class="el-thermal-note">${bodies[2].capacity===0?'Com C do calorímetro igual a zero, só água e ferro entram no balanço.':'O calorímetro também troca calor e chega à temperatura de equilíbrio.'} Q positivo indica ganho de calor e Q negativo indica perda. Os valores são arredondados.</p>
   </div>`;
  }
+ const heatLab=globalThis.FurgHeatLab;
  const labs={
+  ...(heatLab?{transmissao:heatLab}:{}),
   calorimetria:{
    title:'Equilíbrio térmico e capacidade térmica',
    model:'O exemplo do quadro começa com 400 g de água a 20 °C, 200 g de ferro a 400 °C e um calorímetro ideal. O modelo usa paredes adiabáticas, água a 1 atm e calores específicos constantes de 1,0 e 0,1 cal/(g·°C), respectivamente. A conta supõe ausência de evaporação e mudanças de fase.',
@@ -227,6 +229,7 @@
  function markup(id,scope='main'){
   const l=labs[id];
   if(!l)return '';
+  if(l.markup)return l.markup(scope);
   const heading='el-'+scope+'-'+id;
   return '<section class="aula-lab el-lab" data-study-lab="'+id+'" aria-labelledby="'+heading+'"><p class="aula-overline">EXPLORAÇÃO VISUAL</p><h3 id="'+heading+'">'+l.title+'</h3><p>'+l.model+'</p>'+
    '<div class="el-controls">'+l.vars.map((c,i)=>{
@@ -254,6 +257,7 @@
  }
  const playing=new WeakMap();
  function bind(host){
+  heatLab?.bind(host);
   const run=event=>{if(event.target.hasAttribute?.('data-el-range'))update(event.target);};
   host.addEventListener('input',run);
   host.addEventListener('change',event=>{if(event.target.tagName==='SELECT')run(event);});

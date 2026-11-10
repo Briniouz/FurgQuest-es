@@ -344,9 +344,10 @@
    <div class="d2-example"><strong class="d2-block-label">Exemplo resolvido</strong><p>${esc(e.example[0])}</p><ol>
     ${e.example.slice(1).map(step => `<li>${esc(step)}</li>`).join('')}</ol></div>
    <div class="d2-trap"><strong class="d2-block-label">Cuidado com este erro</strong><p>${esc(e.trap)}</p></div>
-   ${hasExercise||e.lesson?`<div class="d2-actions d2-card-actions">
+   ${hasExercise||e.lesson||e.lab?`<div class="d2-actions d2-card-actions">
     ${hasExercise?button('exercise-card','Ver exercício deste assunto →',attr('card',e.id)):''}
-    ${e.lesson?studyLink(e.lesson,'Ver aula completa →'):''}</div>`:''}
+    ${e.lesson?studyLink(e.lesson,'Ver aula completa →'):''}
+    ${e.lab?studyLink(e.lab,'Abrir simulador →'):''}</div>`:''}
   </div>`;
  }
 
@@ -843,7 +844,7 @@
  }
 
  globalThis.FurgDia2 = {init, render, fresh, validate, merge, start, record, next, stats, errors, search, openGuide, showGuide:()=>changeTab('guia'),showTraining,
-  showConversions:()=>changeTab('conversoes'),showWorkshop:()=>changeTab('oficina'),
+  showConversions:()=>changeTab('conversoes'),showWorkshop:lab=>{if(lab)course?.selectLab(lab);changeTab('oficina');},
   showExercises:()=>{exerciseCard='';changeTab('exercicios');},flushDraft};
 })();
 

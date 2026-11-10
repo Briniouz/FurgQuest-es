@@ -96,6 +96,9 @@
  }
  const modes={laboratorios:'Laboratórios',reconhecimento:'Reconhecimento',deducao:'Dedução',revisao:'Revisão espaçada'};
  let mode='laboratorios', selectedLab='energia', selectedDrill=Object.keys(drills)[0], selectedLesson='energia';
+ function selectLab(id){
+  if(Object.hasOwn(labs.labs,id)){mode='laboratorios';selectedLab=id;}
+ }
  let adapter;
  const groupTitle=id=>id==='dimensoes'?data.dimensions.title:lessons.get(id.replace(/^aula-/,''))?.title||id;
  const select=(id,label,items,value)=>'<label>'+label+'<select id="'+id+'">'+items.map(([key,text])=>'<option value="'+esc(key)+'"'+(key===value?' selected':'')+'>'+esc(text)+'</option>').join('')+'</select></label>';
@@ -202,5 +205,5 @@
    }
   });
  }
- globalThis.FurgStudyCourse={validate,schedule,bind,markup,layers,practiceLinks,evidence,record};
+ globalThis.FurgStudyCourse={validate,schedule,bind,markup,layers,practiceLinks,evidence,record,selectLab};
 })();
