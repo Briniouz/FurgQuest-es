@@ -480,7 +480,7 @@
     ${button('tab','Escolher bloco',attr('tab','treino'))}
     ${exerciseItems.length?button('tab','Exercícios autorais',attr('tab','exercicios')):''}
     ${exclusiveButton()}
-    <a class="outline" href="#dia-2/aulas" data-study-route="dia-2/aulas">Estudar do zero →</a></div>
+    <a class="outline" href="#dia-2/passo-a-passo" data-study-route="dia-2/passo-a-passo">Aprender passo a passo →</a></div>
    ${progress ? `<p class="d2-muted">${progress.index} de ${progress.ids.length} questões concluídas no percurso.</p>` : ''}
    </article><aside class="d2-panel d2-quick-stats" aria-label="Teu progresso">
     <p class="eyebrow">TEU TREINO</p><dl><div><dt>Questões novas</dt><dd>${pairLabel(s.new)}</dd></div>
@@ -783,6 +783,7 @@
   globalThis.FurgDia2Lessons?.init({
    getProgress:()=>state().lessons, saveProgress:lessons=>write({lessons}),
    getVisits:()=>state().lessonVisits, saveVisits:lessonVisits=>write({lessonVisits:globalThis.FurgDia2Lessons.validateVisits(lessonVisits)}),
+   openRoute:path=>adapter.openRoute(path),
   });
   host.addEventListener('submit',event => {
    const form = event.target;

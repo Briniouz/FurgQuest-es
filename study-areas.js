@@ -42,6 +42,7 @@
      ['evolucao','Level Up','Exercícios progressivos de Matemática','→'],
     ],
     estudos:[
+     ['passo-a-passo','Aprender passo a passo','Entende, visualiza e resolve antes de avançar','↪'],
      ['aulas','Estudar do zero','Aulas com exemplos, experimentos e prática','↗'],
      ['roteiro-fisica','Roteiro do vídeo · Física','Da Cinemática à Ondulatória, na ordem do vídeo','▷'],
      ['mapa','Mapa mental','Expande os conceitos e abre as aulas no quadro','⤢'],
@@ -64,6 +65,7 @@
   'transmissao-calor':{view:'dia2',open:()=>globalThis.FurgDia2?.showWorkshop('transmissao')},
   conversoes:{view:'dia2',open:()=>globalThis.FurgDia2?.showConversions()},
   exercicios:{view:'dia2',open:()=>globalThis.FurgDia2?.showExercises()},
+  'passo-a-passo':{view:'aulas'},
   'roteiro-fisica':{view:'aulas'},
   mapa:{view:'aulas'},
   conceitos:{view:'aulas'},
@@ -93,7 +95,8 @@
   const [name,page,...rest]=String(hash||'').replace(/^#/,'').split('/');
   if(name==='dia-2'&&viewOf(page)==='aulas'&&rest.length){
    const base=resolve(page,name), [subject,lesson]=rest;
-   const lengthIsValid=rest.length===1||(page==='aulas'&&rest.length===2&&!!lesson);
+   const lessonPage=page==='aulas'||page==='passo-a-passo';
+   const lengthIsValid=rest.length===1||(lessonPage&&rest.length===2&&!!lesson);
    if(lengthIsValid&&globalThis.FurgDia2Lessons?.valid(subject,lesson)){
     return {...base,subject,lesson,path:base.path+'/'+rest.join('/')};
    }

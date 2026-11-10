@@ -90,6 +90,6 @@ globalThis.FurgMathLab?.init({getState:()=>state,save,toast,setView});
 if(typeof window!=='undefined')window.addEventListener('hashchange',()=>{
  if(openStudyRoute(location.hash)===false)history.replaceState(null,'','#'+studyPath);
 });
-globalThis.FurgDia2?.init({getState:()=>state,save,setView});$('dia2Open')?.addEventListener('click',e=>{e.preventDefault();setView('dia2');$('pageTitle').scrollIntoView({block:'start'});});
+globalThis.FurgDia2?.init({getState:()=>state,save,setView,openRoute:openStudyRoute});$('dia2Open')?.addEventListener('click',e=>{e.preventDefault();setView('dia2');$('pageTitle').scrollIntoView({block:'start'});});
 globalThis.FurgVespera?.init({getState:()=>state,save,toast,setView});$('eveOpen')?.addEventListener('click',e=>{e.preventDefault();setView('vespera');$('pageTitle').scrollIntoView({behavior:globalThis.FurgUI?.reducedMotion()?'auto':'smooth',block:'start'});});globalThis.FurgSettings?.init({getState:()=>state,save,toast,setView});globalThis.FurgStudyGuide?.init();
 load();

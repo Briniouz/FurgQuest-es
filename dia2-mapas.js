@@ -61,6 +61,7 @@
     <h2 id="aulaTitle" tabindex="-1">${concepts?'Conceitos':'Mapa mental'}</h2>
     ${subjectTabs(subject,concepts?'conceitos':'mapa',completed)}
     <div class="d2-map-viewlinks d2-map-lessons-link">
+     <a class="primary" href="#dia-2/passo-a-passo/${subject}" data-study-route="dia-2/passo-a-passo/${subject}">Aprender passo a passo →</a>
      <a class="outline d2-map-mode-link" href="#${otherPath}" data-study-route="${otherPath}">${concepts?'Mapa de aulas':'Conceitos →'}</a>
      <a class="outline" href="#dia-2/aulas/${subject}" data-study-route="dia-2/aulas/${subject}">Aulas</a>
     </div>

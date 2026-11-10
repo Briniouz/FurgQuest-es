@@ -17,6 +17,7 @@
   energia:['Um carrinho de brinquedo é lançado quando uma mola comprimida volta ao comprimento natural. Qual transformação domina no lançamento ideal?',['Elástica em cinética','Gravitacional em elástica','Cinética em gravitacional'],0,'A mola deixa de estar deformada e o carrinho ganha rapidez.'],
   movimento:['Um gráfico v × t passa de valores positivos para negativos. Qual procedimento permite obter a distância total?',['Multiplicar a inclinação pelo tempo','Subtrair as duas áreas','Somar os módulos das áreas em cada sentido'],2,'Distância soma os comprimentos dos trechos. Deslocamento conserva o sinal de cada trecho.'],
   calor:['A temperatura de uma amostra vai de 20 °C a 60 °C. Para calcular calor sensível, que valor corresponde ao intervalo em K?',['40 K','293,15 K','313,15 K'],0,'A diferença é 40 °C. Um intervalo Celsius tem o mesmo tamanho que um intervalo Kelvin.'],
+  conveccao:['Ao aquecer água de 20 °C pelo fundo, por que a água aquecida sobe?',['Porque sua massa aumenta','Porque ela se expande e fica menos densa','Porque a água mais fria evapora primeiro'],1,'A mesma porção de água ocupa mais volume. Sua densidade diminui, e a água mais fria e densa desce, sustentando o ciclo.'],
   circuitos:['Dois resistores têm as extremidades ligadas aos mesmos dois nós. O que é necessariamente igual entre eles?',['A corrente','A tensão','A resistência'],1,'São ramos em paralelo. Os dois componentes compartilham a mesma diferença de potencial.'],
   reacoes:['Ao balancear uma equação, qual mudança conserva a identidade das substâncias?',['Mudar o número de elétrons de todo átomo','Trocar os índices dentro da fórmula','Ajustar os coeficientes antes das fórmulas'],2,'Os coeficientes mudam as quantidades de substância e os índices continuam indicando sua composição.'],
   solucoes:['Adiciona-se apenas água a uma solução de sal e todo o sal continua dissolvido. Qual grandeza conserva o valor?',['Volume final','Massa do sal','Concentração em g/L'],1,'A água altera o volume da solução. A massa do soluto é preservada nessa operação.'],
@@ -30,6 +31,13 @@
  const prompts=new Map([['dimensoes',data.dimensions.check],...Object.entries(drills)]);
  for(const [id,{check}] of lessons){
   prompts.set('aula-'+id,[check.prompt,check.choices.map(x=>x[0]),check.correct,check.choices[check.correct][1]]);
+ }
+ function trailExtras(id){
+  const keys=id==='calor'?[id,'conveccao']:[id];
+  return keys.filter(key=>Object.hasOwn(drills,key)).map(key=>{
+   const [prompt,options,correct,reason]=drills[key];
+   return {key,prompt,correct,choices:options.map(label=>[label,reason])};
+  });
  }
  function validate(items){
   const map=new Map();
@@ -100,7 +108,7 @@
   if(Object.hasOwn(labs.labs,id)){mode='laboratorios';selectedLab=id;}
  }
  let adapter;
- const groupTitle=id=>id==='dimensoes'?data.dimensions.title:lessons.get(id.replace(/^aula-/,''))?.title||id;
+ const groupTitle=id=>id==='dimensoes'?data.dimensions.title:id==='conveccao'?'Convecção':lessons.get(id.replace(/^aula-/,''))?.title||id;
  const select=(id,label,items,value)=>'<label>'+label+'<select id="'+id+'">'+items.map(([key,text])=>'<option value="'+esc(key)+'"'+(key===value?' selected':'')+'>'+esc(text)+'</option>').join('')+'</select></label>';
  function question(key){
   const [title,options]=prompts.get(key);
@@ -205,5 +213,5 @@
    }
   });
  }
- globalThis.FurgStudyCourse={validate,schedule,bind,markup,layers,practiceLinks,evidence,record,selectLab};
+ globalThis.FurgStudyCourse={validate,schedule,bind,markup,layers,practiceLinks,evidence,record,selectLab,trailExtras};
 })();

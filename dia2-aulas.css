@@ -532,3 +532,48 @@ html[data-study-view="aulas"] .page-heading { display: none; }
   .aula-mode-tabs a { flex: 1; min-height: 36px; }
   .aula-check-options button, .aula-lesson-actions button, .aula-next a { min-height: 44px; }
 }
+
+.guided-map { padding: clamp(14px,3vw,28px); }
+.guided-map-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.guided-map-heading h2 { margin: 0; font-size: clamp(19px,3vw,25px); }
+.guided-map-list { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 8px; }
+.guided-map-list a {
+  display: grid;
+  grid-template-columns: 36px minmax(0,1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface-2);
+  color: var(--ink);
+  text-decoration: none;
+}
+.guided-map-list a:hover { border-color: var(--d2-accent); }
+.guided-map-list small { display: block; color: var(--muted); margin-top: 3px; }
+.guided-map-number {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--d2-border);
+  border-radius: 50%;
+  background: var(--d2-tint);
+  color: var(--d2-accent);
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+.guided-map-state { color: var(--d2-accent); font-size: .82rem; font-weight: 650; }
+.guided-lesson { max-width: 940px; margin: 0 auto; }
+.guided-lesson h1 { font-size: clamp(25px,4vw,39px); line-height: 1.13; margin: 5px 0 7px; }
+.guided-lesson .aula-lesson-intro > a { display: inline-block; margin-bottom: 12px; }
+.guided-steps { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0; }
+.guided-steps [aria-current="step"] { border-color: var(--d2-accent); background: var(--d2-tint); }
+[data-guided-pane][hidden] { display: none; }
+.guided-lesson [data-guided-pane] > h2 { font-size: clamp(20px,3vw,27px); scroll-margin: 76px; }
+.guided-lesson .aula-check-options button[aria-pressed="true"] { border-color: var(--d2-accent); }
+#guidedStatus:empty { display: none; }
+@media (max-width: 530px) {
+  .guided-map-list a { grid-template-columns: 36px minmax(0,1fr); }
+  .guided-map-state { grid-column: 2; }
+}

@@ -258,6 +258,18 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  assert.equal(inApp('JSON.stringify(state.dia2.lessonVisits)'),savedVisits);
  inApp("openStudyRoute('#dia-2/aulas/fisica/movimento')");
  assert.match($('dia2LessonsRoot').innerHTML,/dia-2\/aulas\/fisica\/energia[^>]+>Próxima aula →/);
+ assert.equal(ctx.FurgStudyAreas.parse('#dia-2/passo-a-passo/fisica/calor').lesson,'calor');
+ assert.equal(ctx.FurgStudyAreas.parse('#dia-2/passo-a-passo/fisica/fracoes').path,'dia-2/passo-a-passo');
+ const trailProgress=inApp('JSON.stringify(state.dia2.lessons)');
+ inApp("openStudyRoute('#dia-2/passo-a-passo/fisica')");
+ const trail=$('dia2LessonsRoot').innerHTML;
+ assert(trail.includes('Aprender passo a passo')&&trail.includes('2 de 9 concluídas'));
+ assert.match(trail,/dia-2\/passo-a-passo\/fisica\/forcas[^>]+>Continuar na primeira aula pendente/);
+ inApp("openStudyRoute('#dia-2/passo-a-passo/fisica/calor')");
+ const guided=$('dia2LessonsRoot').innerHTML;
+ assert(guided.includes('id="hl-aula"')&&guided.includes('por que a água aquecida sobe?'));
+ assert.match(guided,/id="guidedAdvance" class="primary" disabled/);
+ assert.equal(inApp('JSON.stringify(state.dia2.lessons)'),trailProgress);
  assert.equal(inApp('JSON.stringify(state.enem)'),oldBank);
  const bets=ctx.FURG_DIA2_BETS;
  assert.equal(bets.items.length,30);
