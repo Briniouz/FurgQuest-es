@@ -47,8 +47,8 @@
   fisica:subject('fisica','Energia','De onde vem e para onde vai?',lesson=>({
    branches:[
     branch('mecanica','amber','Energia e movimento','Da altura à velocidade e ao trabalho.',[
-     lesson('energia','Segue a transformação de energia.',{relevance:3,minutes:20,related:[related('matematica','crescimento')],terms:['energia cinética','potencial gravitacional','conservação','rampa']}),
      lesson('movimento','Lê deslocamento e aceleração.',{relevance:3,minutes:22,related:[related('matematica','equacoes')],terms:['cinemática','velocidade','gráficos','MRU','MRUV']}),
+     lesson('energia','Segue a transformação de energia.',{relevance:3,minutes:20,related:[related('matematica','crescimento')],terms:['energia cinética','potencial gravitacional','conservação','rampa']}),
      lesson('forcas','Relaciona forças, trabalho e giro.',{relevance:3,minutes:24,related:[related('matematica','geometria-plana')],terms:['leis de Newton','resultante','torque','atrito']})
     ]),
     branch('fluidos','cyan','Pressão e calor','Da profundidade às trocas térmicas.',[

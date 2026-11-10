@@ -4,6 +4,7 @@
  if(!catalog||!guide)return;
  const maps=globalThis.FurgDia2Maps, labs=globalThis.FurgDia2Labs;
  const course=globalThis.FurgStudyCourse, studyLabs=globalThis.FurgStudyLabs;
+ const physicsVideo=globalThis.FURG_DIA2_PHYSICS_VIDEO;
  const subjects=Object.keys(catalog), lessonIds=Object.values(catalog).flatMap(group=>group.map(lesson=>lesson.id));
  const cards=new Map(guide.entries.map(card=>[card.id,card]));
  const stages=['Base','Conexões','Aplicação'];
@@ -20,12 +21,31 @@
  let adapter, active;
 
  function switches(subject,mode){
+  const tabs=[['aulas','Aulas'],['mapa','Mapa mental'],['conceitos','Conceitos']];
+  if(subject==='fisica')tabs.push(['roteiro-fisica','Roteiro do vídeo']);
   return `<nav class="aula-mode-tabs" aria-label="Formatos de estudo">
-   ${[['aulas','Aulas'],['mapa','Mapa mental'],['conceitos','Conceitos']].map(([id,label])=>{
-    const path=route(subject,null,id);
+   ${tabs.map(([id,label])=>{
+    const path=id==='roteiro-fisica'?'dia-2/roteiro-fisica':route(subject,null,id);
     return `<a href="#${path}" data-study-route="${path}" ${id===mode?'aria-current="page"':''}>${label}</a>`;
    }).join('')}
   </nav>`;
+ }
+
+ function videoMarkup(completed){
+  return `<div class="aula-view" data-subject="fisica">
+   <header class="aula-hero panel">
+    <div><p class="aula-overline">ENEM · DIA 2 · FÍSICA</p><h1 id="aulaTitle" tabindex="-1">Roteiro do vídeo</h1>
+     <p>Segue os capítulos na ordem do vídeo e abre a aula quando quiser praticar.</p></div>
+   </header>
+   <div class="aula-nav">${maps.subjectTabs('fisica','aulas',completed)}${switches('fisica','roteiro-fisica')}</div>
+   <ol class="aula-video-list" aria-label="Capítulos em ordem">
+    ${physicsVideo.map(([title,time,lessonId,tip],i)=>`<li class="panel"><details ${i===0?'open':''}>
+     <summary><span class="aula-video-time">${esc(time)}</span><strong>${esc(title)}</strong></summary>
+     <div class="aula-video-notes"><p>${esc(tip)}</p>
+      ${link(route('fisica',lessonId),'Abrir aula relacionada →','outline')}</div>
+    </details></li>`).join('')}
+   </ol>
+  </div>`;
  }
 
  function indexMarkup(subject,lessons,selected,completed){
@@ -94,6 +114,12 @@
   const subject=valid(selection.subject)?selection.subject:'fisica';
   const concepts=selection.page==='conceitos', mapView=concepts||selection.page==='mapa';
   const lessons=catalog[subject], completed=validate(adapter.getProgress());
+  if(selection.page==='roteiro-fisica'&&physicsVideo){
+   maps.unmount();
+   active=null;
+   host.innerHTML=videoMarkup(completed);
+   return;
+  }
   const lesson=lessons.find(item=>item.id===selection.lesson)||lessons.find(item=>!completed[item.id])||lessons[0];
   const count=lessons.filter(item=>completed[item.id]).length;
   const {label}=guide.subjects[subject];

@@ -43,6 +43,7 @@
     ],
     estudos:[
      ['aulas','Estudar do zero','Aulas com exemplos, experimentos e prática','↗'],
+     ['roteiro-fisica','Roteiro do vídeo · Física','Da Cinemática à Ondulatória, na ordem do vídeo','▷'],
      ['mapa','Mapa mental','Expande os conceitos e abre as aulas no quadro','⤢'],
      ['conceitos','Mapa de conceitos','Pistas, fórmulas e questões por matéria','↝'],
      ['formulas','Fórmulas e conceitos','Guia de Matemática, Física, Química e Biologia','ƒ'],
@@ -61,6 +62,7 @@
   oficina:{view:'dia2',open:()=>globalThis.FurgDia2?.showWorkshop()},
   conversoes:{view:'dia2',open:()=>globalThis.FurgDia2?.showConversions()},
   exercicios:{view:'dia2',open:()=>globalThis.FurgDia2?.showExercises()},
+  'roteiro-fisica':{view:'aulas'},
   mapa:{view:'aulas'},
   conceitos:{view:'aulas'},
  };

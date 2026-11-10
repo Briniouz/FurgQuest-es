@@ -114,18 +114,6 @@ globalThis.FURG_DIA2_LESSONS = {
  ],
  fisica: [
   {
-   id:'energia', title:'Energia e transformações', card:'energia', lab:'rampa',
-   lead:'Uma pilha acende uma lanterna. Uma bicicleta ganha velocidade na descida. Nos dois casos dá pra perguntar de onde veio a energia e para onde ela foi.',
-   parts:[
-    ['A ideia antes da fórmula', 'Energia é uma grandeza que ajuda a descrever as mudanças possíveis em um sistema. Medimos energia em joules (J). Ela pode estar associada ao movimento, à posição, à temperatura, às ligações químicas ou ao núcleo dos átomos. Luz e som podem transportar energia.'],
-    ['Segue a transformação', 'Na lanterna, processos químicos na pilha fornecem energia ao circuito. Na lâmpada, parte vira luz e parte aquece o aparelho. Quando dizemos que a pilha “perdeu” energia, estamos olhando a pilha isoladamente. Ao contar o que foi transferido ao ambiente, a energia total se conserva.'],
-    ['Uma conta de altura e movimento', 'Perto da superfície da Terra, Eₚ = mgh, com massa m em kg, altura h em m e g em m/s². A energia cinética é E꜀ = mv²/2. Numa descida sem atrito, Eₚ diminui e E꜀ aumenta na mesma medida. Com atrito, parte da energia mecânica é transferida para energia interna dos materiais.']
-   ],
-   example:['Um carrinho de 2 kg é solto do repouso a 10 m de altura. Considera g = 10 m/s², o chão como referência e ignora atrito e rotação das rodas.', 'No alto, Eₚ = 2 × 10 × 10 = 200 J. Como está parado, E꜀ = 0.', 'A 6 m de altura, ainda tem 2 × 10 × 6 = 120 J de energia potencial.', 'A diferença virou energia cinética: 200 − 120 = 80 J.'],
-   exam:'Identifica o sistema e marca o que muda entre início e fim. Se houver atrito, procura a transformação em energia térmica antes de igualar as energias mecânicas.',
-   check:{prompt:'Uma lanterna ligada aquece e ilumina. Onde aparece a energia fornecida pela pilha?',correct:1,choices:[['Apenas na luz','A luz é a saída desejada, mas o aquecimento também recebe parte da energia.'],['Na luz e no aquecimento','A pilha fornece energia ao circuito, que transfere energia ao ambiente por luz e aquecimento.'],['Parte desaparece','A energia que sai da pilha é transferida ou transformada. O calor recebido pelo ambiente entra no balanço.']]}
-  },
-  {
    id:'movimento', title:'Movimento, medidas e gráficos', card:'graficos',
    lead:'Dizer “andou 200 metros” e dizer “terminou no ponto de partida” pode descrever o mesmo passeio.',
    parts:[
@@ -136,6 +124,18 @@ globalThis.FURG_DIA2_LESSONS = {
    example:['Uma bicicleta parte de 2 m/s e chega a 8 m/s em 3 s, com aceleração constante.', 'A velocidade aumenta 6 m/s em 3 s. A aceleração é 2 m/s².', 'No gráfico v × t, a área é a de um trapézio. A velocidade média nesse trecho é (2 + 8)/2 = 5 m/s.', 'Multiplica por 3 s. O deslocamento foi 15 m.'],
    exam:'Lê os nomes dos eixos primeiro. Inclinação e área respondem a perguntas diferentes conforme as variáveis do gráfico.',
    check:{prompt:'Um carro anda 60 m, volta 60 m e leva 30 s ao todo. Qual é a rapidez média?',correct:2,choices:[['0 m/s','O deslocamento é zero. A rapidez média usa a distância percorrida, que foi 120 m.'],['2 m/s','Usaste só um dos dois trechos. O tempo corresponde à ida e à volta juntas.'],['4 m/s','A distância soma os dois trechos: 120 m. Divide por 30 s.']]}
+  },
+  {
+   id:'energia', title:'Energia e transformações', card:'energia', lab:'rampa',
+   lead:'Uma pilha acende uma lanterna. Uma bicicleta ganha velocidade na descida. Nos dois casos dá pra perguntar de onde veio a energia e para onde ela foi.',
+   parts:[
+    ['A ideia antes da fórmula', 'Energia é uma grandeza que ajuda a descrever as mudanças possíveis em um sistema. Medimos energia em joules (J). Ela pode estar associada ao movimento, à posição, à temperatura, às ligações químicas ou ao núcleo dos átomos. Luz e som podem transportar energia.'],
+    ['Segue a transformação', 'Na lanterna, processos químicos na pilha fornecem energia ao circuito. Na lâmpada, parte vira luz e parte aquece o aparelho. Quando dizemos que a pilha “perdeu” energia, estamos olhando a pilha isoladamente. Ao contar o que foi transferido ao ambiente, a energia total se conserva.'],
+    ['Uma conta de altura e movimento', 'Perto da superfície da Terra, Eₚ = mgh, com massa m em kg, altura h em m e g em m/s². A energia cinética é E꜀ = mv²/2. Numa descida sem atrito, Eₚ diminui e E꜀ aumenta na mesma medida. Com atrito, parte da energia mecânica é transferida para energia interna dos materiais.']
+   ],
+   example:['Um carrinho de 2 kg é solto do repouso a 10 m de altura. Considera g = 10 m/s², o chão como referência e ignora atrito e rotação das rodas.', 'No alto, Eₚ = 2 × 10 × 10 = 200 J. Como está parado, E꜀ = 0.', 'A 6 m de altura, ainda tem 2 × 10 × 6 = 120 J de energia potencial.', 'A diferença virou energia cinética: 200 − 120 = 80 J.'],
+   exam:'Identifica o sistema e marca o que muda entre início e fim. Se houver atrito, procura a transformação em energia térmica antes de igualar as energias mecânicas.',
+   check:{prompt:'Uma lanterna ligada aquece e ilumina. Onde aparece a energia fornecida pela pilha?',correct:1,choices:[['Apenas na luz','A luz é a saída desejada, mas o aquecimento também recebe parte da energia.'],['Na luz e no aquecimento','A pilha fornece energia ao circuito, que transfere energia ao ambiente por luz e aquecimento.'],['Parte desaparece','A energia que sai da pilha é transferida ou transformada. O calor recebido pelo ambiente entra no balanço.']]}
   },
   {
    id:'forcas', title:'Forças, trabalho e equilíbrio', card:'trabalho',
@@ -443,3 +443,22 @@ globalThis.FURG_DIA2_LESSONS = {
   }
  ]
 };
+
+// Capítulos na ordem do vídeo. Cada um aponta para uma aula do curso.
+globalThis.FURG_DIA2_PHYSICS_VIDEO = [
+ ['Cinemática','Antes de 32:00','movimento','Separa distância de deslocamento. Num gráfico v × t, a inclinação dá a aceleração e a área com sinal dá o deslocamento.'],
+ ['Energia e suas transformações','32:00','energia','Segue a energia entre movimento, posição, deformação e aquecimento. Define o sistema antes de escrever o balanço.'],
+ ['Potência e eficiência','1:10:50','consumo','Potência é energia por tempo, P = E/Δt. Eficiência compara a energia útil com a energia recebida.'],
+ ['Termologia','2:17:12','calor','Distingue temperatura de calor. Para cada corpo, C = mc. Em um sistema isolado sem mudança de fase, soma os termos Q = CΔT e iguala a zero.'],
+ ['Transmissão de calor','5:43:27','calor','Na condução, a energia passa pelo material. Na convecção, o fluido se move. Na radiação, ondas eletromagnéticas transportam energia.'],
+ ['Fluxo de calor','6:41:25','calor','A taxa média de transferência é Φ = Q/Δt, em W. Dividindo essa taxa pela área, obténs o fluxo por unidade de área em W/m².'],
+ ['Mudança de fases','7:01:18','calor','Durante a mudança de fase de uma substância pura sob pressão fixa, usa Q = mL. Para aquecer ou esfriar em uma única fase, usa Q = mcΔT.'],
+ ['Eletrodinâmica','7:43:00','circuitos','Corrente mede a passagem de carga por tempo. Tensão mede a energia transferida por unidade de carga.'],
+ ['Carga total e ampere-hora','7:58:00','circuitos','Com corrente constante, Q = IΔt. Se o tempo está em horas, a carga sai em Ah. Como 1 h = 3 600 s, 1 Ah = 3 600 C.'],
+ ['2ª Lei de Ohm','8:04:28','circuitos','Para um fio uniforme, R = ρℓ/A. Mantendo o material e a temperatura, fios mais longos têm mais resistência e fios mais grossos têm menos.'],
+ ['Circuito simples','8:11:40','circuitos','Identifica fonte, fios e carga. A corrente só circula por um caminho fechado. Num resistor ôhmico, usa U = RI.'],
+ ['Efeitos da corrente','8:25:30','circuitos','Reconhece o efeito pelo aparelho. O chuveiro aquece por efeito Joule, um eletroímã gera campo magnético e a eletrólise envolve transformações químicas.'],
+ ['Potência elétrica','8:34:46','consumo','Em corrente contínua, P = UI. Se P estiver em kW e o tempo em horas, o produto PΔt dá o consumo em kWh.'],
+ ['Ondulatória','9:49:50','ondas','Relaciona velocidade, comprimento de onda e frequência por v = λf. Frequência é o número de oscilações por segundo.'],
+ ['Fenômenos ondulatórios','11:21:10','ondas','No eco há reflexão. Ao mudar de meio com a interface parada, a frequência se mantém. Na difração, a onda se espalha ao passar por uma abertura ou contornar um obstáculo.'],
+];
