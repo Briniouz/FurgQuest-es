@@ -76,8 +76,9 @@
    <p id="aulaTempFeedback" class="aula-feedback" role="status"></p>`;
  }
 
- function markup(){
-  return `<section id="aulaEscalas" class="aula-lab aula-temp" aria-labelledby="aulaTempTitle">
+ const scoped=(html,prefix)=>prefix?html.replace(/\baula(?:Escalas|Temp\w+)\b/g,id=>prefix+id):html;
+ function markup(prefix=''){
+  return scoped(`<section id="aulaEscalas" data-temp-root="${prefix}" class="aula-lab aula-temp" aria-labelledby="aulaTempTitle">
    <header><p class="aula-overline">LABORATÓRIO DE TEMPERATURA</p><h3 id="aulaTempTitle">Uma temperatura, três escalas</h3>
     <p>Temperatura descreve o estado térmico. Se dois corpos estão em equilíbrio térmico, não há troca líquida de calor entre eles. Calor é a energia em trânsito por diferença de temperatura.</p>
     <p>No modelo microscópico, o aquecimento costuma aumentar a agitação das partículas. A energia interna também depende da quantidade de matéria e das interações entre as partículas.</p></header>
@@ -126,7 +127,7 @@
     </div>
     <p class="aula-source">Relações entre escalas. <a href="https://www.nist.gov/pml/owm/si-units-temperature" target="_blank" rel="noopener noreferrer">NIST ↗</a></p>
    </div>
-  </section>`;
+  </section>`,prefix);
  }
 
  function revealNext(button,list,selector){
@@ -135,41 +136,42 @@
   item.hidden=false;
   if(!list.querySelector(selector))button.disabled=true;
  }
+ const part=(root,id)=>root.querySelector('#'+root.dataset.tempRoot+id);
  function bind(host){
   host.addEventListener('input',event=>{
-   if(event.target.id!=='aulaTempRange')return;
-   const root=event.target.closest('#aulaEscalas'), value=Number(event.target.value), values=readings(value);
+   if(!event.target.id?.endsWith('aulaTempRange'))return;
+   const root=event.target.closest('[data-temp-root]'), value=Number(event.target.value), values=readings(value);
    event.target.setAttribute('aria-valuetext',values.join(', '));
-   root.querySelector('#aulaTempReadout').textContent=values[0];
-   root.querySelector('#aulaTempFigure').innerHTML=thermometers(value);
-   root.querySelector('#aulaTempGraph').innerHTML=graph(value);
+   part(root,'aulaTempReadout').textContent=values[0];
+   part(root,'aulaTempFigure').innerHTML=thermometers(value);
+   part(root,'aulaTempGraph').innerHTML=graph(value);
    for(const reading of root.querySelectorAll('[data-temp-reading]'))reading.textContent=values[reading.dataset.tempReading];
   });
   host.addEventListener('click',event=>{
-   const button=event.target.closest('button'), root=button?.closest?.('#aulaEscalas');
+   const button=event.target.closest('button'), root=button?.closest?.('[data-temp-root]');
    if(!root)return;
    const {tempMode,tempStep,tempHint,tempSolution,tempNext}=button.dataset;
    if(tempMode){
-    root.querySelector('#aulaTempExplore').hidden=tempMode!=='explorar';
-    root.querySelector('#aulaTempChallenge').hidden=tempMode!=='desafio';
+    part(root,'aulaTempExplore').hidden=tempMode!=='explorar';
+    part(root,'aulaTempChallenge').hidden=tempMode!=='desafio';
     for(const control of root.querySelectorAll('[data-temp-mode]'))control.setAttribute('aria-pressed',String(control===button));
-    if(tempMode==='desafio')root.querySelector('#aulaTempAnswer').focus();
+    if(tempMode==='desafio')part(root,'aulaTempAnswer').focus();
    }
    if(tempStep!==undefined)revealNext(button,root.querySelector('.aula-temp-derivation'),'li[hidden]');
    if(tempHint!==undefined)revealNext(button,root.querySelector('.aula-temp-hints'),'li[hidden]');
-   if(tempSolution!==undefined)root.querySelector('#aulaTempFeedback').textContent=challenges[tempSolution].solution;
+   if(tempSolution!==undefined)part(root,'aulaTempFeedback').textContent=challenges[tempSolution].solution;
    if(tempNext!==undefined){
-    root.querySelector('#aulaTempChallenge').innerHTML=challenge(Number(tempNext));
-    root.querySelector('#aulaTempAnswer').focus();
+    part(root,'aulaTempChallenge').innerHTML=scoped(challenge(Number(tempNext)),root.dataset.tempRoot);
+    part(root,'aulaTempAnswer').focus();
    }
   });
   host.addEventListener('submit',event=>{
    const {tempAnswer}=event.target.dataset;
    if(tempAnswer===undefined)return;
    event.preventDefault();
-   const root=event.target.closest('#aulaEscalas'), value=parse(root.querySelector('#aulaTempAnswer').value);
+   const root=event.target.closest('[data-temp-root]'), value=parse(part(root,'aulaTempAnswer').value);
    const item=challenges[tempAnswer], correct=Number.isFinite(value)&&Math.abs(value-item.value)<.005;
-   const feedback=root.querySelector('#aulaTempFeedback');
+   const feedback=part(root,'aulaTempFeedback');
    feedback.dataset.result=correct?'correct':'retry';
    feedback.textContent=correct?'Acertou. '+item.solution:
     Number.isFinite(value)?'Confere a origem da escala e o tamanho de cada intervalo. Dá pra tentar de novo.':'Digita o valor numérico, como 12,5.';

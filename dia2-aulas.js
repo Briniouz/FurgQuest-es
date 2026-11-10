@@ -3,6 +3,7 @@
  const catalog=globalThis.FURG_DIA2_LESSONS, guide=globalThis.FURG_DIA2_GUIDE;
  if(!catalog||!guide)return;
  const maps=globalThis.FurgDia2Maps, labs=globalThis.FurgDia2Labs;
+ const course=globalThis.FurgStudyCourse, studyLabs=globalThis.FurgStudyLabs;
  const subjects=Object.keys(catalog), lessonIds=Object.values(catalog).flatMap(group=>group.map(lesson=>lesson.id));
  const cards=new Map(guide.entries.map(card=>[card.id,card]));
  const stages=['Base','Conexões','Aplicação'];
@@ -50,16 +51,20 @@
    ${indexMarkup(subject,lessons,lesson,completed)}
    <article class="aula-lesson panel" aria-labelledby="aulaTitle">
     <header class="aula-lesson-intro"><p class="aula-overline">${esc(stages[Math.floor(index/3)])} · AULA ${number(index)}/${lessons.length}</p>
-     <h2 id="aulaTitle" tabindex="-1">${esc(lesson.title)}</h2><p class="aula-lead">${esc(lesson.lead)}</p></header>
+     <h2 id="aulaTitle" tabindex="-1">${esc(lesson.title)}</h2><p class="aula-lead">${esc(lesson.lead)}</p>
+     <p id="aulaEvidence" class="d2-muted">${esc(course?.evidence(lesson.id,adapter.getVisits(),completed)||'')}</p></header>
     <div class="aula-reading">${lesson.parts.map(([title,body])=>`<section><h3>${esc(title)}</h3><p>${esc(body)}</p></section>`).join('')}</div>
+    ${course?.layers(lesson.id)||''}
     <section class="aula-example" aria-labelledby="aulaExampleTitle">
      <h3 id="aulaExampleTitle">Exemplo resolvido</h3><p>${esc(lesson.example[0])}</p>
      <ol>${lesson.example.slice(1).map(step=>`<li>${esc(step)}</li>`).join('')}</ol>
     </section>
     ${lesson.lab?labs.markup(lesson.lab):''}
+    ${studyLabs?.markup(globalThis.FurgStudyData?.layers[lesson.id]?.[4],'aula')||''}
+    ${lesson.id==='energia'&&studyLabs?`<details class="el-depth"><summary>Compara rampa, queda, pêndulo, montanha-russa e mola</summary>${studyLabs.markup('conservacao','aula')}</details>`:''}
     ${lesson.id==='calor'?globalThis.FurgDia2Temperature?.markup()||'':''}
     ${maps.relatedLinks(lesson.id)}
-    <aside class="aula-exam"><strong>Na hora da questão</strong><p>${esc(lesson.exam)}</p></aside>
+    <aside class="aula-exam"><strong>Como reconhecer isso no ENEM?</strong><p>${esc(lesson.exam)}</p></aside>
     <section class="aula-check" aria-labelledby="aulaCheckTitle">
      <p class="aula-overline">QUESTÃO AUTORAL</p><h3 id="aulaCheckTitle">Testa a ideia</h3><p id="aulaCheckPrompt">${esc(check.prompt)}</p>
      <div class="aula-check-options" role="group" aria-labelledby="aulaCheckPrompt">
@@ -68,6 +73,7 @@
       </button>`).join('')}
      </div><p id="aulaFeedback" class="aula-feedback" role="status"></p>
     </section>
+    ${course?.practiceLinks(lesson.id)||''}
     <div class="aula-lesson-actions">
      <button type="button" id="aulaMark" class="primary" aria-disabled="${done}">${done?'Aula estudada ✓':'Marcar como estudada'}</button>
      <button type="button" class="outline" id="aulaFormula">Consultar ficha relacionada</button>
@@ -127,6 +133,10 @@
   const explanation=check.choices[choice]?.[1];
   if(!explanation)return;
   const correct=choice===check.correct;
+  if(!active.attempted){
+   active.attempted=course?.record('aula-'+active.lesson.id,choice);
+   if(active.attempted)$('aulaEvidence').textContent=course.evidence(active.lesson.id,adapter.getVisits(),adapter.getProgress());
+  }
   for(const option of $('dia2LessonsRoot').querySelectorAll('[data-aula-choice]')){
    option.setAttribute('aria-pressed',String(option===button));
   }
@@ -160,6 +170,7 @@
   const host=$('dia2LessonsRoot');
   if(!host)return;
   globalThis.FurgDia2Temperature?.bind(host);
+  studyLabs?.bind(host);
   host.addEventListener('click',event=>{
    const button=event.target.closest('button');
    if(!button||!active)return;
@@ -167,9 +178,10 @@
    if(button.id==='aulaMark')mark();
    if(button.id==='aulaFormula')globalThis.FurgDia2?.openGuide(active.subject,cards.get(active.lesson.card)?.title||'');
    if(button.id==='aulaBank'&&globalThis.FurgEnem?.openSubject(active.subject))globalThis.FurgNavigation?.afterNavigate();
+   if(button.dataset.studyEnem&&globalThis.FurgEnem?.openQuestion(button.dataset.studyEnem))globalThis.FurgNavigation?.afterNavigate();
   });
   host.addEventListener('input',event=>{
-   if(event.target.id==='aulaLabRange')labs.update(active.lesson.lab,event.target);
+   if(event.target.id==='aulaLabRange'&&active)labs.update(active.lesson.lab,event.target);
   });
  }
  globalThis.FurgDia2Lessons={init,render,valid,validate,validateVisits};

@@ -5,6 +5,7 @@
  if (!guide || !practice) return;
  const {subjects, entries, commands} = guide;
  const basics = globalThis.FurgStudyBasics;
+ const course = globalThis.FurgStudyCourse;
  const references = [...(basics?.entries || []),...entries];
  const {blocks, official, officialSources} = practice;
  const {items:exerciseItems,origins} = globalThis.FURG_DIA2_EXERCISES || {items:[],origins:{}};
@@ -53,10 +54,11 @@
  };
  const route = Object.values(blocks).flatMap(block => block.ids).filter(eligible);
  const allPracticeIds = [...route,...Object.values(authorialBlocks).flatMap(block=>block.ids),...betBlocks['apostas-todos'].ids];
- const sessionKeys = ['percurso', ...Object.keys(allBlocks), 'revisao'];
+ const flexible = new Set(['revisao','agendada','adaptativo']);
+ const sessionKeys = ['percurso', ...Object.keys(allBlocks), ...flexible];
  const idsFor = key => key === 'percurso' ? route : allBlocks[key].ids.filter(eligible);
- const fresh = () => ({sessions:{}, attempts:[], cards:{}, seenExercises:{}, lessons:{}, lessonVisits:{}, hints:true});
- const emptyDraft = () => ({choice:'', confidence:'', request:'', plan:''});
+ const fresh = () => ({sessions:{}, attempts:[], cards:{}, seenExercises:{}, lessons:{}, lessonVisits:{}, learning:[], hints:true});
+ const emptyDraft = () => ({choice:'', confidence:'', request:'', plan:'', assisted:false});
  const cleanText = (value, size) => typeof value === 'string' ? value.trim().slice(0,size) : '';
  const isChoice = value => typeof value === 'string' && /^[A-E]$/.test(value);
  const timestamp = value => typeof value === 'string' && Number.isFinite(Date.parse(value));
@@ -77,7 +79,7 @@
   return {
    choice:isChoice(value?.choice) ? value.choice : '',
    confidence:hasKey(confidence,value?.confidence) ? value.confidence : '',
-   request:cleanText(value?.request,500), plan:cleanText(value?.plan,900),
+   request:cleanText(value?.request,500), plan:cleanText(value?.plan,900), assisted:value?.assisted===true,
   };
  }
 
@@ -104,7 +106,7 @@
    const s = value?.sessions?.[key];
    if (!s || !sessionId(s.id) || !timestamp(s.date) || !Array.isArray(s.ids) ||
        !s.ids.length || new Set(s.ids).size !== s.ids.length || !s.ids.every(eligible)) continue;
-   if (key === 'revisao' ? s.ids.length > 5 : s.ids.join() !== idsFor(key).join()) continue;
+   if (flexible.has(key) ? s.ids.length > 5 : s.ids.join() !== idsFor(key).join()) continue;
    const firstUnanswered = s.ids.findIndex(id => !seen.has(entryId(s.id,id)));
    const max = firstUnanswered < 0 ? s.ids.length : firstUnanswered;
    const index = Math.max(0,Math.min(max,Number.isInteger(s.index) ? s.index : 0));
@@ -115,6 +117,7 @@
    if (mark && timestamp(mark.date) && ['again','known'].includes(mark.value)) result.cards[card.id] = {value:mark.value,date:mark.date};
   }
   for(const item of exerciseItems)if(value?.seenExercises?.[item.id]===true)result.seenExercises[item.id]=true;
+  result.learning=course?.validate(value?.learning)||[];
   result.lessons=globalThis.FurgDia2Lessons?.validate(value?.lessons)||{};
   result.lessonVisits=globalThis.FurgDia2Lessons?.validateVisits(value?.lessonVisits)||{};
   return result;
@@ -138,7 +141,41 @@
   }
   const lessonVisits={...a.lessonVisits};
   for(const [id,stamp] of Object.entries(b.lessonVisits))lessonVisits[id]=Math.max(stamp,lessonVisits[id]||0);
-  return validate({sessions, lessonVisits, cards:marks, seenExercises:{...a.seenExercises,...b.seenExercises}, lessons:{...a.lessons,...b.lessons}, attempts:[...attempts.values()].sort((x,y) => Date.parse(x.date) - Date.parse(y.date)), hints:typeof incomingValue?.hints === 'boolean' ? b.hints : a.hints});
+  return validate({sessions, lessonVisits, learning:[...a.learning,...b.learning], cards:marks, seenExercises:{...a.seenExercises,...b.seenExercises}, lessons:{...a.lessons,...b.lessons}, attempts:[...attempts.values()].sort((x,y) => Date.parse(x.date) - Date.parse(y.date)), hints:typeof incomingValue?.hints === 'boolean' ? b.hints : a.hints});
+ }
+
+ function scheduled() {
+  if(!course)return [];
+  const grouped=new Map();
+  for(const attempt of state().attempts){
+   if(!grouped.has(attempt.questionId))grouped.set(attempt.questionId,[]);
+   grouped.get(attempt.questionId).push({...attempt,at:Date.parse(attempt.date)});
+  }
+  return [...grouped].map(([id,attempts])=>{
+   const plan=course.schedule(attempts,a=>a.correct&&!a.assisted);
+   return plan&&{id,title:qLabel(byId.get(id)),...plan};
+  }).filter(Boolean).sort((a,b)=>a.due-b.due);
+ }
+
+ function adaptiveIds(){
+  const recent=state().attempts.slice().reverse();
+  const unique=[];
+  const seen=new Set();
+  for(const a of recent){
+   if(seen.has(a.questionId))continue;
+   seen.add(a.questionId);
+   unique.push(a);
+  }
+  const focus=unique[0]&&questions[unique[0].questionId];
+  const same=focus?unique.filter(a=>questions[a.questionId].subject===focus.subject).slice(0,3):[];
+  const harder=same.length===3&&same.every(a=>a.correct&&!a.assisted);
+  const rank=id=>{
+   const q=questions[id];
+   const difficulty=q.difficulty||levels[q.level];
+   const hard=difficulty==='Difícil'||difficulty==='Desafio'||globalThis.FurgEnemNatureza?.get(id)?.level===3;
+   return Number(q.card===focus?.card)*4+Number(q.subject===focus?.subject)*2+Number(hard===harder);
+  };
+  return allPracticeIds.filter(id=>!wasSeen(id)).sort((a,b)=>rank(b)-rank(a)).slice(0,5);
  }
 
  function status(message) {
@@ -166,7 +203,7 @@
   if (!sessionKeys.includes(key) || !flushDraft()) return false;
   const old = state().sessions[key];
   if (!pending(old)) {
-   const ids = key === 'revisao' ? [...new Set(reviewIds || [])].filter(eligible).slice(0,5) : idsFor(key);
+   const ids = flexible.has(key) ? [...new Set(reviewIds || [])].filter(eligible).slice(0,5) : idsFor(key);
    if (!ids.length) return false;
    const id = 'd2-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2,10);
    const value = {id,date:now(),ids,index:0,draft:emptyDraft()};
@@ -179,10 +216,13 @@
   return true;
  }
 
+ const sawHint=()=>$('d2Answer')?.dataset.assisted==='true'||$('d2PracticeHint')?.open===true;
+
  function formDraft() {
   return cleanDraft({
    choice:$('d2Answer')?.querySelector('input[name="d2Choice"]:checked')?.value,
    confidence:$('d2Confidence')?.value, request:$('d2Request')?.value, plan:$('d2Plan')?.value,
+   assisted:sawHint(),
   });
  }
 
@@ -199,7 +239,7 @@
  function record(value) {
   const q = current();
   if (!q || attemptAt(q)) return false;
-  const draft = cleanDraft(value);
+  const draft = cleanDraft({...value,assisted:value?.assisted===true||sawHint()});
   if (!draft.choice || !draft.confidence || !draft.request || !draft.plan) {
    status('Marca uma resposta e registra o pedido, teu raciocínio e tua confiança.');
    return false;
@@ -387,7 +427,7 @@
      <div class="d2-exercise-body">
       <p class="d2-exercise-prompt">${esc(q.stem)}</p>
       <ol class="d2-exercise-options" type="A">${q.alternatives.map(option=>`<li>${esc(option.text)}</li>`).join('')}</ol>
-      <details class="d2-hint"><summary>Quero uma pista</summary><p>${esc(item.hint)}</p></details>
+      <details class="d2-hint" id="d2PracticeHint"><summary>Quero uma pista</summary><p>${esc(item.hint)}</p></details>
       <details class="d2-solution" ${attr('d2-solution',q.id)}><summary>Ver resolução passo a passo</summary>
        <div class="d2-worked"><p class="d2-worked-result"><strong>Resposta ${q.answer}</strong> <span>${esc(answer.text)}</span></p>
         ${solutionSteps(item)}
@@ -564,9 +604,9 @@
    <div class="d2-actions d2-question-links">${button('quick','Guia lateral ↗','','quiet')}
    ${q.authorial||q.bet?button('card','Ver ficha do assunto',attr('card',item.card),'quiet'):`<a href="${esc(q.source?.pdf || officialSources[q.year].exam)}" target="_blank" rel="noopener noreferrer">Caderno azul ↗</a>`}</div>
    <div class="d2-enunciation">${questionBody(q,item)}</div>
-   ${a ? choices(q,a) + feedback(q,a,item) : `<form id="d2Answer" data-d2-form="answer">
+   ${a ? choices(q,a) + feedback(q,a,item) : `<form id="d2Answer" data-d2-form="answer" data-assisted="${draft.assisted}">
     ${choices(q,null)}
-    ${state().hints?`<details class="d2-hint"><summary>Quero uma pista</summary><p>${esc(item.hint)}</p></details>`:''}
+    ${state().hints?`<details class="d2-hint" id="d2PracticeHint"><summary>Quero uma pista</summary><p>${esc(item.hint)}</p></details>`:''}
     <div class="d2-reasoning"><label for="d2Request">O que o comando pede?</label>
      <textarea id="d2Request" required maxlength="500" rows="2" placeholder="Registra a grandeza ou o efeito pedido">${esc(draft.request)}</textarea>
      <label for="d2Plan">Qual relação, conta ou ideia vou usar?</label>
@@ -614,13 +654,13 @@
    }).join('') : '<p>O caderno aparece depois que tu conferir a primeira questão.</p>'}`;
  }
 
- const views = {plano:planView, guia:guideView, conversoes:()=>globalThis.FurgConversions?.markup()||'',
+ const views = {plano:planView, guia:guideView, oficina:()=>course?.markup()||'', conversoes:()=>globalThis.FurgConversions?.markup()||'',
   flash:flashView, treino:trainView, exercicios:exerciseView, erros:errorsView, caderno:notebookView};
  function render() {
   if (!adapter || !$('dia2Root')) return;
   $('dia2Root').innerHTML = `<div class="d2-toolbar"><div class="d2-tabs" role="group" aria-label="Seções do segundo dia">
-   ${Object.entries(tabs).map(([id,label]) => button('tab',label,`${attr('tab',id)} aria-pressed="${id===(tab==='conversoes'?'guia':tab)}"`,'quiet')).join('')}
-   </div>${['guia','exercicios','conversoes'].includes(tab)?'':`<label class="d2-switch"><input type="checkbox" id="d2Hints" ${state().hints?'checked':''}> Pistas no treino</label>`}</div>
+   ${Object.entries(tabs).map(([id,label]) => button('tab',label,`${attr('tab',id)} aria-pressed="${id===(['oficina','conversoes'].includes(tab)?'guia':tab)}"`,'quiet')).join('')}
+   </div>${['guia','exercicios','conversoes','oficina'].includes(tab)?'':`<label class="d2-switch"><input type="checkbox" id="d2Hints" ${state().hints?'checked':''}> Pistas no treino</label>`}</div>
    <p id="d2Live" role="status" aria-live="polite"></p><div class="d2-content">${views[tab]()}</div>`;
   if (tab === 'guia') guideResults(search(query,subject,topic),'d2GuideResults');
  }
@@ -715,6 +755,14 @@
   if (bound || !host || !dialog) return;
   bound = true;
   globalThis.FurgConversions?.bind(host);
+  course?.bind(host,{
+   get:state,save:learning=>write({learning:course.validate(learning)}),
+   scheduled,unitErrors:()=>state().attempts.slice(-10).filter(a=>!a.correct&&a.category==='unidade').length,
+   scheduledReady:()=>pending(state().sessions.agendada),
+   startScheduled:()=>start('agendada',scheduled().filter(q=>q.ready).map(q=>q.id)),
+   challengeReady:()=>pending(state().sessions.adaptativo)||adaptiveIds().length>0,
+   startChallenge:()=>start('adaptativo',adaptiveIds()),
+  });
   globalThis.FurgDia2Lessons?.init({
    getProgress:()=>state().lessons, saveProgress:lessons=>write({lessons}),
    getVisits:()=>state().lessonVisits, saveVisits:lessonVisits=>write({lessonVisits:globalThis.FurgDia2Lessons.validateVisits(lessonVisits)}),
@@ -756,6 +804,10 @@
   });
   host.addEventListener('toggle',event => {
    const {open,dataset}=event.target, id=dataset?.d2Solution;
+   if(open&&event.target.id==='d2PracticeHint'&&$('d2Answer')){
+    $('d2Answer').dataset.assisted='true';
+    flushDraft();
+   }
    if(open&&questions[id]?.authorial&&!state().seenExercises[id]){
     write({seenExercises:{...state().seenExercises,[id]:true}});
    }
@@ -776,7 +828,7 @@
  }
 
  globalThis.FurgDia2 = {init, render, fresh, validate, merge, start, record, next, stats, errors, search, openGuide, showGuide:()=>changeTab('guia'),showTraining,
-  showConversions:()=>changeTab('conversoes'),
+  showConversions:()=>changeTab('conversoes'),showWorkshop:()=>changeTab('oficina'),
   showExercises:()=>{exerciseCard='';changeTab('exercicios');},flushDraft};
 })();
 

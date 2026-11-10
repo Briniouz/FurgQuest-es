@@ -1,0 +1,36 @@
+.el-workshop { max-width: 940px; }
+.el-workshop > .d2-actions { margin: 10px 0; }
+.el-workshop button[aria-pressed=true] { border-color: var(--action); background: var(--surface-3); }
+#elBody > * { margin-block: 10px; }
+.el-depth { margin-block: 16px; min-width: 0; }
+.el-depth h3 { margin-bottom: 9px; }
+.el-depth details { padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; }
+.el-depth summary, .el-lab summary { cursor: pointer; font-weight: 680; }
+.el-depth dt { font-weight: 700; }
+.el-depth dd { margin: 0 0 8px; }
+.el-flow { display: flex; flex-wrap: wrap; gap: 6px; margin: 9px 0; padding: 0; list-style: none; }
+.el-flow li { padding: 5px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface-2); }
+.el-flow li + li::before { content: '→ '; color: var(--muted); }
+.el-controls { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,210px),1fr)); gap: 6px 16px; margin-block: 10px; }
+#dia2 .el-controls input[type=range] { padding: 0; border: 0; background: transparent; }
+.el-lab { --d2-accent: var(--action); }
+.aula-view .el-lab { --d2-accent: inherit; }
+.el-lab .el-formula { padding: 8px 10px; border-radius: 8px; background: var(--surface); font-weight: 740; }
+.el-figure { display: block; width: min(100%,370px); max-height: 210px; margin: 8px auto; color: var(--d2-accent); }
+.el-figure text { font: 11px system-ui,sans-serif; fill: var(--ink); }
+.el-axis { stroke: var(--muted); stroke-width: 1.25; fill: none; }
+.el-curve { stroke: currentColor; stroke-width: 2; fill: none; }
+.el-fill { fill: currentColor; fill-opacity: .16; stroke: currentColor; stroke-width: 1.3; }
+.el-dot { fill: currentColor; }
+.el-bar { display: grid; grid-template-columns: minmax(105px,1fr) 2fr auto; gap: 8px; align-items: center; }
+.el-bar meter { width: 100%; accent-color: var(--action); }
+.el-tokens { font-size: clamp(17px,4vw,28px); color: var(--action); display: flex; gap: 5px; flex-wrap: wrap; }
+.el-scale { max-width: 360px; display: flex; justify-content: space-between; border-top: 5px solid var(--action); padding-top: 5px; }
+.el-review { list-style: none; padding: 0; }
+.el-review li { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 10px; border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; margin-block: 5px; }
+.el-review span { color: var(--muted); }
+.el-question [data-study-feedback]:empty { display: none; }
+.el-lab :is(input,summary):focus-visible, .el-depth summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+ .el-animate { display: none; }
+}

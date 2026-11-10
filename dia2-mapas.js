@@ -24,7 +24,9 @@
  function relatedLinks(lessonId){
   const links=byId.get(lessonId)?.related.map(ref=>`<a href="#${ref.route}" data-study-route="${ref.route}"
    aria-label="Também em ${escape(maps[ref.subject].label)}, ${escape(byId.get(ref.id).title)}">${escape(maps[ref.subject].label)}</a>`);
-  return links?.length?`<p class="d2-map-related">Também em${links.join('')}</p>`:'';
+  const related=globalThis.FurgStudyData?.paths[lessonId], next=related&&byId.get(related[1]);
+  const bridge=next?`<p class="d2-map-related">Conexão de estudo <a href="#${next.route}" data-study-route="${next.route}" title="Abre a aula que desenvolve esta relação">${escape(next.title)}</a></p>`:'';
+  return (links?.length?`<p class="d2-map-related">Também em${links.join('')}</p>`:'')+bridge;
  }
 
  function lessonCard(lesson,completed,visited){

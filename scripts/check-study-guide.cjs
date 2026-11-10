@@ -24,7 +24,8 @@ for(const entry of c.FURG_STUDY_CONCEPTS){assert(entry.summary&&entry.tip&&entry
  const basics=find('','concepts').filter(entry=>entry.basic);
  assert.equal(find('').filter(entry=>!entry.basic).length,291);
  assert.equal(find('','profiles').length,224);assert.equal(find('','concepts').filter(entry=>!entry.basic).length,67);
- assert.equal(basics.length,21);
+ assert.equal(basics.length,31);
+ assert.equal(find('mola comprimida','concepts')[0].id,'basico-mola');
  assert.equal(find('O que é um Jaule?','concepts')[0].id,'basico-joule');
  assert.equal(find('m','concepts')[0].id,'basico-metro');
  assert.equal(find('ALIENAÇÃO','concepts')[0].title,'Alienação');assert(find('alienacao','profiles').some(p=>p.title==='Karl Marx'));assert.equal(find('Machado','profiles')[0].title,'Machado de Assis');
