@@ -9,6 +9,13 @@
  }
 
  section('Fundamentos e citologia','celula',[
+  ['citologia','Citologia','citologia|biologia celular|estudo da célula|estudo das células',
+   'É a área da Biologia que estuda as células, suas partes e o que elas fazem.',
+   'Relaciona a estrutura de cada parte com uma tarefa, como controlar trocas, guardar instruções ou produzir moléculas.',
+   'A base é distinguir célula, membrana, material genético e estruturas internas.',
+   'Uma imagem mostra uma célula com muitos ribossomos presos ao retículo.', 'A estrutura é compatível com uma célula que produz muitas proteínas para secreção ou para membranas.',
+   'Se o comando pedir a função de uma estrutura celular, procura o processo que ela permite.',
+   'Citologia estuda células. Histologia estuda como células e outros componentes se organizam em tecidos.'],
   ['vida','O que caracteriza um ser vivo','vida|ser vivo|seres vivos|o que precisa pra existir vida|o que precisa para existir vida|o que precisa pra algo ser vivo|requisitos da vida',
    'Um ser vivo celular é organizado em células, usa matéria e energia e carrega informação hereditária.',
    'A célula mantém condições internas, responde ao ambiente e produz componentes. Populações de seres vivos podem evoluir.',
@@ -159,6 +166,20 @@
  ]);
 
  section('Bioquímica e metabolismo','metabolismo',[
+  ['bioquimica','Bioquímica','bioquímica|química da vida',
+   'É o estudo das moléculas dos seres vivos e das reações que acontecem entre elas.',
+   'Relaciona composição e forma das moléculas com tarefas celulares, como armazenar energia ou transmitir informação.',
+   'Carboidratos, lipídios, proteínas e ácidos nucleicos são grupos centrais. Água e íons também participam das reações.',
+   'Uma enzima funciona melhor em determinada faixa de pH.', 'A bioquímica explica como a acidez pode alterar sua forma e sua atividade.',
+   'Em experimentos, compara o que mudou na molécula, na concentração ou nas condições do meio.',
+   'Bioquímica é a área de estudo. Metabolismo é o conjunto de reações que ela pode investigar.'],
+  ['metabolismo','Metabolismo, anabolismo e catabolismo','metabolismo|anabolismo|catabolismo|metabolismo celular',
+   'Metabolismo é o conjunto de reações químicas que mantém uma célula funcionando.',
+   'Anabolismo monta moléculas e geralmente requer energia. Catabolismo desmonta moléculas e pode fornecer energia aproveitável.',
+   'Enzimas e condições adequadas regulam as vias. Moléculas como ATP podem ligar reações que fornecem energia a tarefas que a consomem.',
+   'Uma célula degrada glicose e monta proteínas.', 'Degradar glicose é catabolismo. Montar proteínas a partir de aminoácidos é anabolismo.',
+   'Separa a transformação pedida da fonte de energia e vê se a reação monta ou degrada moléculas.',
+   'A célula pode ter vias de montagem e degradação ativas ao mesmo tempo.'],
   ['agua','Água e sais minerais','água na célula|sais minerais|água e sais|biomoléculas|componentes químicos da célula',
    'A água é meio para muitas reações celulares. Sais minerais fornecem íons com funções específicas.',
    'Íons ajudam a regular a distribuição de água, a atividade de proteínas e sinais elétricos.',
@@ -232,6 +253,13 @@
  ]);
 
  section('Genética e biotecnologia','heranca',[
+  ['genetica','Genética e hereditariedade','genética|hereditariedade|herança genética',
+   'Genética estuda como a informação biológica é guardada, usada e transmitida.',
+   'Descendentes podem receber versões diferentes de genes. As características também podem depender do ambiente e da interação entre vários genes.',
+   'Distingue gene, alelo, genótipo e fenótipo antes de montar o raciocínio.',
+   'Duas plantas com a mesma variedade genética crescem com quantidades diferentes de luz.', 'A diferença de altura pode refletir o ambiente, mesmo sem diferença genética entre elas.',
+   'Confere se a pergunta pede característica observável, variante genética ou probabilidade de herança.',
+   'Uma diferença de fenótipo por si só não comprova uma diferença de DNA.'],
   ['dna','DNA e RNA','dna|rna|ácidos nucleicos|nucleotídeo|nucleotídeos',
    'O DNA guarda informação hereditária. Vários tipos de RNA ajudam a usar essa informação.',
    'Nucleotídeos formam as cadeias. No DNA, A pareia com T e C com G. No RNA, U costuma ocupar o lugar de T.',
@@ -284,6 +312,13 @@
  ]);
 
  section('Genética e biotecnologia','biotecnologia',[
+  ['biotecnologia','Biotecnologia','biotecnologia|aplicações da biotecnologia',
+   'É o uso de organismos, células ou moléculas biológicas para desenvolver produtos ou processos.',
+   'Pode aproveitar atividades naturais de organismos ou usar técnicas para analisar e modificar moléculas.',
+   'Fermentação, produção de proteínas com microrganismos e testes moleculares são exemplos com objetivos distintos.',
+   'Uma empresa usa leveduras para fazer a massa de pão crescer.', 'Ela aproveita o gás liberado pela fermentação em um processo biotecnológico.',
+   'Identifica qual organismo ou molécula está sendo usado e para qual finalidade.',
+   'Biotecnologia inclui processos tradicionais. Engenharia genética é uma parte do conjunto.'],
   ['pcr','PCR','pcr|reação em cadeia da polimerase|amplificação de dna|rt-pcr',
    'A PCR faz muitas cópias de um trecho definido de DNA.',
    'Ciclos de temperatura separam as fitas, permitem a ligação dos iniciadores e favorecem a extensão das novas cadeias.',
@@ -308,6 +343,13 @@
  ]);
 
  section('Evolução e diversidade','evolucao',[
+  ['evolucao','Evolução biológica','evolução|evolução biológica|teoria da evolução',
+   'É a mudança de características hereditárias de uma população ao longo das gerações.',
+   'Seleção natural, deriva genética, mutação e fluxo gênico podem alterar a composição genética de uma população.',
+   'O raciocínio envolve populações e gerações. O enunciado pode pedir o mecanismo da mudança ou uma evidência de parentesco.',
+   'Uma variante genética passa de rara a comum numa população em várias gerações.', 'A mudança de frequência é um exemplo de evolução biológica.',
+   'Se houve mudança ao longo da vida de um único indivíduo, investiga regulação ou aclimatação.',
+   'A evolução não tem uma meta de tornar as espécies sempre mais complexas.'],
   ['selecao','Seleção natural','seleção natural|darwin|adaptação|darwinismo',
    'Características herdáveis que favorecem reprodução em certo ambiente podem ficar mais comuns ao longo das gerações.',
    'A seleção atua sobre diferenças entre indivíduos. O que muda com as gerações é a composição da população.',
@@ -405,6 +447,13 @@
  ]);
 
  section('Saúde e fisiologia','fisiologia',[
+  ['fisiologia','Fisiologia','fisiologia|fisiologia humana|funcionamento do corpo',
+   'É a área que estuda como células, tecidos, órgãos e sistemas funcionam.',
+   'Acompanha processos como troca de gases, circulação, digestão e regulação por sinais.',
+   'Anatomia descreve estruturas. Fisiologia relaciona essas estruturas às funções.',
+   'O pulmão tem alvéolos com paredes finas e ampla superfície total.', 'Essas características ajudam a explicar a difusão de gases entre ar e sangue.',
+   'Se o comando perguntar como uma estrutura contribui para um efeito, descreve o mecanismo em ordem.',
+   'Nomear um órgão é só parte da resposta quando o item pede como ele funciona.'],
   ['homeostase','Homeostase','homeostase|equilíbrio interno|feedback negativo|retroalimentação negativa',
    'É a manutenção de condições internas dentro de faixas compatíveis com o funcionamento do organismo.',
    'Na retroalimentação negativa, a resposta reduz o desvio que a acionou.',
@@ -450,6 +499,13 @@
  ]);
 
  section('Ecologia','cadeias',[
+  ['ecologia','Ecologia','ecologia|estudo do ambiente|seres vivos e ambiente',
+   'É a área que estuda as relações entre os seres vivos e o ambiente em que vivem.',
+   'Examina como recursos, condições físicas e interações afetam indivíduos, populações e ecossistemas.',
+   'Distingue fatores bióticos, como predadores, de fatores abióticos, como temperatura e luz.',
+   'Uma lagoa recebe muito fertilizante e aumenta a quantidade de algas.', 'A ecologia relaciona o nutriente vindo do ambiente com mudanças nas populações e no oxigênio da água.',
+   'Escolhe a escala do enunciado e liga a intervenção ao efeito observado.',
+   'Ecologia é a área de estudo. Ecossistema é uma unidade que ela pode estudar.'],
   ['ecossistema','População, comunidade e ecossistema','população|comunidade|ecossistema|bioma|biosfera|níveis ecológicos|fator biótico|fator abiótico',
    'População reúne indivíduos da mesma espécie numa área. Comunidade reúne populações. Ecossistema inclui essas populações e o ambiente físico.',
    'Seres vivos interagem entre si e com fatores como água, temperatura e solo.',
