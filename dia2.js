@@ -754,6 +754,7 @@
   const host = $('dia2Root'), dialog = $('dia2QuickGuide');
   if (bound || !host || !dialog) return;
   bound = true;
+  host.addEventListener('click',click);
   globalThis.FurgConversions?.bind(host);
   course?.bind(host,{
    get:state,save:learning=>write({learning:course.validate(learning)}),
@@ -767,7 +768,6 @@
    getProgress:()=>state().lessons, saveProgress:lessons=>write({lessons}),
    getVisits:()=>state().lessonVisits, saveVisits:lessonVisits=>write({lessonVisits:globalThis.FurgDia2Lessons.validateVisits(lessonVisits)}),
   });
-  host.addEventListener('click',click);
   host.addEventListener('submit',event => {
    const form = event.target;
    if (form.dataset.d2Form === 'answer') {
