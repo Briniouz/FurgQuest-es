@@ -163,7 +163,7 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  const lessons=ctx.FURG_DIA2_LESSONS, maps=ctx.FurgDia2Maps.maps;
  const lessonIds=new Set();
  for(const [subject,list] of Object.entries(lessons)){
-  assert.equal(list.length,subject==='biologia'?10:9);
+  assert.equal(list.length,subject==='biologia'?12:9);
   const map=maps[subject], entries=map.branches.flatMap(branch=>branch.lessons);
   assert(map.root.title&&map.root.description);
   assert.equal(new Set(map.branches.map(branch=>branch.tone)).size,map.branches.length);
@@ -194,7 +194,7 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
    if(lesson.lab)assert(ctx.FurgDia2Labs.labs[lesson.lab]);
   }
  }
- assert.equal(lessonIds.size,37);
+ assert.equal(lessonIds.size,39);
  const biology=ctx.FurgDia2Biology;
  const challengeIds=new Set();
  for(const [id,checks] of Object.entries(biology.checks)){
@@ -206,7 +206,7 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
    challengeIds.add(check.key);
   }
  }
- assert.equal(challengeIds.size,9);
+ assert.equal(challengeIds.size,13);
  for(const {lesson} of biology.priorities){
   assert.equal(ctx.FurgStudyAreas.parse('#dia-2/passo-a-passo/biologia/'+lesson).lesson,lesson);
  }
@@ -306,6 +306,14 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  const embryology=$('dia2LessonsRoot').innerHTML;
  assert(embryology.includes('Ectoderma')&&embryology.includes('Mesoderma')&&embryology.includes('Endoderma'));
  assert(embryology.includes('dia-2/aulas/biologia/biotecnologia'));
+ inApp("openStudyRoute('#dia-2/passo-a-passo/biologia/heredogramas')");
+ const heredograms=$('dia2LessonsRoot').innerHTML;
+ assert(heredograms.includes('aula-pedigree-affected')&&heredograms.includes('2/3'));
+ inApp("openStudyRoute('#dia-2/passo-a-passo/biologia/biomas')");
+ const biomes=$('dia2LessonsRoot').innerHTML;
+ for(const name of ['Amazônia','Cerrado','Caatinga','Mata Atlântica','Pantanal','Pampa']){
+  assert(biomes.includes('<th scope="row">'+name+'</th>'),name);
+ }
  assert.equal(inApp('JSON.stringify(state.dia2.lessons)'),trailProgress);
  assert.equal(inApp('JSON.stringify(state.enem)'),oldBank);
  const bets=ctx.FURG_DIA2_BETS;
@@ -320,6 +328,8 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  const originalSession=inApp('JSON.stringify(state.dia2.sessions.percurso)');
  inApp("openStudyRoute('#dia-2/apostas')");
  assert($('dia2Root').innerHTML.includes('Apostas de Biologia · ENEM 2026'));
+ assert($('dia2Root').innerHTML.includes('dia-2/passo-a-passo/biologia/heredogramas'));
+ assert($('dia2Root').innerHTML.includes('dia-2/passo-a-passo/biologia/biomas'));
  assert($('dia2Root').innerHTML.includes('Apostas do Dia 2'));
  assert($('dia2Root').innerHTML.includes('Física · 0/4'));
  assert(mode.start('apostas-fisica'));

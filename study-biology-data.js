@@ -311,6 +311,16 @@
    'Mutação não ocorre sob encomenda da necessidade do organismo.'],
  ]);
 
+ section('Genética e biotecnologia','heredogramas',[
+  ['heredogramas','Heredogramas e padrões de herança','heredograma|heredogramas|como ler um heredograma|herança autossômica|herança autossômica recessiva|herança autossômica dominante|herança ligada ao X|herança recessiva ligada ao X|herança dominante ligada ao X',
+   'Um heredograma representa pessoas da mesma família e mostra quem manifesta uma característica.',
+   'Lê a legenda, identifica o parentesco que descarta um padrão e deduz os genótipos compatíveis.',
+   'O preenchimento costuma indicar o fenótipo. Um símbolo vazio ainda pode representar uma pessoa portadora de um alelo recessivo.',
+   'Pais sem o traço têm uma filha que o manifesta num modelo autossômico recessivo.','Os dois são Aa. A filha recebeu a dos dois e é aa.',
+   'Antes de calcular, separa a chance de nascer com o traço da chance condicionada a um fenótipo que já foi observado.',
+   'Uma família pequena pode ser compatível com mais de um padrão. Usa as condições do enunciado.'],
+ ]);
+
  section('Genética e biotecnologia','biotecnologia',[
   ['biotecnologia','Biotecnologia','biotecnologia|aplicações da biotecnologia',
    'É o uso de organismos, células ou moléculas biológicas para desenvolver produtos ou processos.',
@@ -537,7 +547,7 @@
    'Uma lagoa recebe muito fertilizante e aumenta a quantidade de algas.', 'A ecologia relaciona o nutriente vindo do ambiente com mudanças nas populações e no oxigênio da água.',
    'Escolhe a escala do enunciado e liga a intervenção ao efeito observado.',
    'Ecologia é a área de estudo. Ecossistema é uma unidade que ela pode estudar.'],
-  ['ecossistema','População, comunidade e ecossistema','população|comunidade|ecossistema|bioma|biosfera|níveis ecológicos|fator biótico|fator abiótico',
+  ['ecossistema','População, comunidade e ecossistema','população|comunidade|ecossistema|biosfera|níveis ecológicos|fator biótico|fator abiótico',
    'População reúne indivíduos da mesma espécie numa área. Comunidade reúne populações. Ecossistema inclui essas populações e o ambiente físico.',
    'Seres vivos interagem entre si e com fatores como água, temperatura e solo.',
    'População → comunidade → ecossistema. Um bioma pode reunir vários ecossistemas.',
@@ -593,6 +603,16 @@
    'Um bairro ganha áreas pavimentadas.', 'Em condições semelhantes, menos água pode infiltrar e mais pode escoar pela superfície.',
    'Se o item fala de urbanização, diferencia infiltração, escoamento e evapotranspiração.',
    'Infiltração é a entrada da água no solo. Escoamento superficial ocorre sobre o terreno.'],
+ ]);
+
+ section('Ecologia','biomas',[
+  ['biomas','Biomas brasileiros','bioma|biomas|biomas brasileiros|amazônia|cerrado|caatinga|mata atlântica|pantanal|pampa',
+   'O IBGE delimita seis biomas terrestres no Brasil. Cada um reúne paisagens com características regionais relacionadas.',
+   'Compara o clima, a vegetação e a água. No Pantanal, por exemplo, a alternância de cheias e secas estrutura muitos ambientes.',
+   'Os seis são Amazônia, Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa.',
+   'Um enunciado descreve campos nativos na metade sul do Rio Grande do Sul.','A localização e a vegetação ajudam a identificar o Pampa brasileiro.',
+   'Cruza a localização no mapa com as pistas de clima, água e vegetação.',
+   'Cada bioma pode reunir vários ecossistemas. Um tipo de vegetação isolado raramente basta para identificar o bioma.'],
  ]);
 
  section('Ecologia','ecossistemas',[

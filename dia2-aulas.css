@@ -167,6 +167,14 @@ html[data-study-view="aulas"] .page-heading { display: none; }
 .aula-bio-table caption { text-align: left; font-weight: 700; margin-bottom: 5px; }
 .aula-bio-table :is(td, th) { padding: 8px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
 .aula-bio-table thead th { background: var(--d2-tint); }
+.aula-pedigree { max-width: 360px; margin: 10px 0; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.aula-pedigree svg { display: block; width: 100%; color: var(--ink); }
+.aula-pedigree-lines, .aula-pedigree svg g { stroke: currentColor; stroke-width: 2; }
+.aula-pedigree-lines { fill: none; }
+.aula-pedigree-affected, .aula-pedigree text { fill: currentColor; }
+.aula-pedigree-unaffected { fill: var(--surface); }
+.aula-pedigree text { font-size: 13px; }
+.aula-pedigree figcaption { font-size: .875rem; line-height: 1.5; }
 .aula-example, .aula-lab, .aula-check {
   padding: clamp(13px,2.3vw,20px);
   border: 1px solid color-mix(in srgb,var(--d2-border) 56%,var(--line));

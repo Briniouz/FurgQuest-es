@@ -78,11 +78,13 @@
     ]),
     branch('heranca','violet','Herança e evolução','Da informação genética às populações.',[
      lesson('heranca','Segue a informação de pais a filhos.',{related:[related('matematica','probabilidade')]}),
+     lesson('heredogramas','Lê famílias, elimina padrões incompatíveis e calcula chances.',{terms:['heredograma','autossômica','ligada ao X']}),
      lesson('evolucao','Entende Darwinismo e distingue os mecanismos de evolução.',{terms:['Darwin','seleção natural','deriva','especiação']})
     ]),
     branch('ambiente','cyan','Energia e ambiente','Da cadeia alimentar ao ecossistema.',[
      lesson('cadeias','Segue a energia e acompanha os ciclos da matéria.',{related:[related('fisica','energia')],terms:['ciclos biogeoquímicos','nitrogênio','fósforo','carbono']}),
-     lesson('ecossistemas','Liga impactos às suas consequências.',{related:[related('quimica','solucoes')]})
+     lesson('ecossistemas','Liga impactos às suas consequências.',{related:[related('quimica','solucoes')]}),
+     lesson('biomas','Distingue os seis biomas brasileiros pelo clima, água e vegetação.',{terms:['Pampa','Amazônia','Cerrado','Mata Atlântica','Pantanal','Caatinga']})
     ]),
     branch('organismo','amber','Corpo, defesa e tecnologia','Da regulação interna aos usos do DNA.',[
      lesson('embriologia','Acompanha os folhetos embrionários até os tecidos.',{terms:['ectoderma','mesoderma','endoderma','gastrulação']}),
@@ -91,7 +93,7 @@
      lesson('biotecnologia','Reconhece técnicas que usam DNA.')
     ])
    ],
-   paths:[path('dna','Da célula ao DNA',['celula','heranca','biotecnologia']),path('ambiente','Energia nos ecossistemas',['metabolismo','cadeias','ecossistemas']),path('desenvolvimento','Da célula ao organismo',['celula','embriologia','fisiologia'])]
+   paths:[path('dna','Da célula ao DNA',['celula','heranca','heredogramas','biotecnologia']),path('ambiente','Dos ecossistemas aos biomas',['metabolismo','cadeias','ecossistemas','biomas']),path('desenvolvimento','Da célula ao organismo',['celula','embriologia','fisiologia'])]
   })),
   quimica:subject('quimica','Matéria','Do que é feita e como se transforma?',lesson=>({
    branches:[

@@ -73,10 +73,11 @@
   const modules=biology?.modules[lesson.id];
   return `<div class="aula-reading">${lesson.parts.map(([title,body])=>`<section><h3>${esc(title)}</h3><p>${esc(body)}</p></section>`).join('')}
    ${modules?`<section class="el-depth aula-bio-depth"><h3>Aprofundamento</h3>
-    ${modules.map(({title,paragraphs,table},i)=>`<details ${i===0?'open':''}><summary>${esc(title)}</summary>
+    ${modules.map(({title,paragraphs,table,pedigree},i)=>`<details ${i===0?'open':''}><summary>${esc(title)}</summary>
+     ${pedigree?pedigreeMarkup(pedigree):''}
      ${paragraphs.map(body=>`<p>${esc(body)}</p>`).join('')}
      ${table?tableMarkup(table):''}</details>`).join('')}
-    <p class="aula-source">Leitura de apoio · OpenStax Biology 2e ·
+    <p class="aula-source">Leitura de apoio ·
      ${biology.sources[lesson.id].map(([label,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`).join(' · ')}</p></section>`:''}</div>`;
  }
 
@@ -85,6 +86,22 @@
    <table><caption>${esc(caption)}</caption><thead><tr>${headers.map(title=>`<th scope="col">${esc(title)}</th>`).join('')}</tr></thead>
    <tbody>${rows.map(([name,...cells])=>`<tr><th scope="row">${esc(name)}</th>${cells.map(cell=>`<td>${esc(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table>
   </div>`;
+ }
+
+ function pedigreeMarkup({title,description,people}){
+  const positions=[[104,28],[216,28],[104,96],[216,96]];
+  return `<figure class="aula-pedigree">
+   <svg viewBox="0 0 320 133" role="img" aria-label="${esc(description)}">
+    <path class="aula-pedigree-lines" d="M104 28H216 M160 28V70 M104 96V70H216V96"/>
+    ${people.map(([label,shape,affected],i)=>{
+     const [x,y]=positions[i], name=affected?'aula-pedigree-affected':'aula-pedigree-unaffected';
+     const symbol=shape==='círculo'? `<circle cx="${x}" cy="${y}" r="11"/>`:
+      `<rect x="${x-11}" y="${y-11}" width="22" height="22"/>`;
+     return `<g class="${name}">${symbol}</g><text x="${x}" y="${y+26}" text-anchor="middle">${esc(label)}</text>`;
+    }).join('')}
+   </svg>
+   <figcaption><strong>${esc(title)}</strong><br>Quadrado · homem. Círculo · mulher. Preenchido · manifesta o traço.</figcaption>
+  </figure>`;
  }
 
  function exampleMarkup(lesson){
@@ -111,6 +128,7 @@
   return `<section class="aula-check" aria-labelledby="aulaCheckTitle${suffix}" ${guided?`data-guided-check="${position}"`:''}>
    <p class="aula-overline">${check.optional?'QUESTÃO AUTORAL · DESAFIO OPCIONAL':'QUESTÃO AUTORAL'}</p><h3 id="aulaCheckTitle${suffix}">${guided?'Exercício '+(position+1):'Testa a ideia'}</h3>
    <p id="aulaCheckPrompt${suffix}">${esc(check.prompt)}</p>
+   ${check.pedigree?pedigreeMarkup(check.pedigree):''}
    <div class="aula-check-options" role="group" aria-labelledby="aulaCheckPrompt${suffix}">
     ${check.choices.map(([label],i)=>`<button type="button" class="outline" data-aula-choice="${i}" aria-pressed="false">
      <b aria-hidden="true">${'ABC'[i]}</b><span>${esc(label)}</span></button>`).join('')}

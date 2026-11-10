@@ -370,6 +370,21 @@ globalThis.FURG_DIA2_LESSONS = {
    check:{prompt:'No cruzamento Aa × Aa, qual é a chance de obter um heterozigoto?',correct:0,choices:[['1/2','Aa e aA representam o mesmo genótipo e aparecem em dois dos quatro casos.'],['1/4','Um quarto corresponde a cada homozigoto. O heterozigoto pode ser formado de duas maneiras.'],['3/4','Em dominância completa, essa é a chance do fenótipo dominante. Parte desse grupo é AA.']]}
   },
   {
+   id:'heredogramas', title:'Heredogramas e padrões de herança', card:'bio-heredogramas',
+   lead:'Lê a família geração por geração, identifica o padrão compatível e só então calcula as chances.',
+   parts:[
+    ['Começa pela legenda','Nos desenhos desta aula, quadrados representam homens, círculos representam mulheres e símbolos preenchidos indicam quem manifesta a característica. Os algarismos romanos mostram a geração. I-2 é a segunda pessoa da primeira geração.'],
+    ['Procura o parentesco que decide','Segue a linha do casal até a linha dos filhos. No modelo escolar com penetrância completa e sem mutações novas, pais que não manifestam a característica e têm um filho que a manifesta sugerem herança recessiva. Se a filha manifesta e o pai não, esse ramo é incompatível com o modelo recessivo ligado ao X.'],
+    ['Só depois faz a conta','Em um padrão autossômico recessivo, uma pessoa sem o traço pode ser AA ou Aa. Identifica primeiro os genótipos certos, depois lista as possibilidades restantes. Se a questão já diz que o filho não manifesta o traço, tira da conta o caso aa.']
+   ],
+   example:['Um casal sem o traço tem uma filha que o manifesta. A questão admite herança autossômica recessiva e pergunta a chance de o irmão dela, que não manifesta o traço, ser portador.', 'A filha é aa. Cada genitor transmitiu um a. Como nenhum deles manifesta o traço, os dois são Aa.', 'Em Aa × Aa, os resultados do cruzamento são AA, Aa, aA e aa. Como o irmão não manifesta o traço, exclui aa.', 'Dois dos três resultados que restam representam portadores. A chance é 2/3.'],
+   exam:'Separa “qual a chance de nascer” de “qual a chance sabendo que já nasceu sem o traço”. O segundo comando muda o conjunto de possibilidades.',
+   check:{prompt:'Em um modelo autossômico recessivo, dois pais sem o traço têm uma filha aa. Quais são os genótipos dos pais?',correct:1,choices:[
+    ['AA e Aa','Quem é AA só fornece A. A filha aa precisou receber a de ambos.'],
+    ['Aa e Aa','Cada genitor forneceu um a à filha. Como ambos são fenotipicamente sem o traço, carregam também um A.'],
+    ['Aa e aa','No modelo recessivo, um genitor aa manifestaria a característica.']]}
+  },
+  {
    id:'evolucao', title:'Darwinismo, evolução e adaptação', card:'selecao',
    lead:'Em uma população, nem todo indivíduo tem a mesma característica. Uma mudança no ambiente pode alterar quais características aparecem mais nas gerações seguintes.',
    parts:[
@@ -404,6 +419,21 @@ globalThis.FURG_DIA2_LESSONS = {
    example:['Uma lagoa recebe escoamento rico em fertilizantes e, mais tarde, aparecem peixes mortos.', 'O aporte de nutrientes favorece crescimento intenso de algas.', 'A decomposição da biomassa morta aumenta a demanda de oxigênio.', 'A queda do oxigênio dissolvido pode explicar a mortalidade. O cenário deve ser confrontado com os dados da questão.'],
    exam:'Em problemas ambientais, separa causa inicial de consequência imediata. Nutrientes em excesso e queda de oxigênio podem estar em pontos diferentes da cadeia.',
    check:{prompt:'Por que o oxigênio dissolvido pode cair após a morte de uma floração de algas?',correct:0,choices:[['A decomposição aeróbia consome oxigênio','Mais matéria orgânica pode aumentar o consumo de oxigênio por decompositores.'],['Algas mortas fazem fotossíntese mais rápido','Fotossíntese depende de células metabolicamente ativas. A decomposição é central no cenário.'],['O oxigênio vira o próprio fertilizante','O aporte de nutrientes estimula a floração. A queda de oxigênio decorre de processos biológicos posteriores.']]}
+  },
+  {
+   id:'biomas', title:'Biomas brasileiros', card:'bio-biomas',
+   lead:'Compara os seis biomas pelo clima, pela vegetação, pelo regime de água e pelos impactos que aparecem nas questões.',
+   parts:[
+    ['O que separa um bioma de um ecossistema','Um bioma é um recorte amplo, associado a padrões regionais de clima, vegetação e história da paisagem. Dentro de um mesmo bioma há diferentes ecossistemas. Um banhado e um campo, por exemplo, podem coexistir no Pampa.'],
+    ['Reconhece a combinação de pistas','Árvores de casca grossa, estação seca e savana sugerem Cerrado. Plantas adaptadas ao semiárido sugerem Caatinga. Uma planície cujo funcionamento depende da alternância de cheia e seca aponta para o Pantanal. Usa a combinação de pistas, porque várias características se repetem entre os biomas.'],
+    ['Liga o impacto à função perdida','A substituição de campos nativos pode reduzir o habitat de espécies campestres. A fragmentação de florestas pode isolar populações. A alteração do regime de cheias pode mudar onde peixes e aves encontram alimento e abrigo.']
+   ],
+   example:['Uma obra regulariza a vazão de um rio, reduzindo as cheias que conectavam a planície alagável a lagoas laterais no Pantanal.', 'A pista do enunciado é a perda da conexão entre rio e planície na cheia.', 'Menos áreas alagadas ficam acessíveis a espécies que usam a planície para alimentação, abrigo ou reprodução.', 'A consequência está ligada à mudança no pulso de inundação, mesmo que a obra fique rio acima.'],
+   exam:'Em mapas, lê a legenda e cruza a localização com a descrição ambiental. Em questões de conservação, escolhe uma ação que preserve o processo ecológico afetado.',
+   check:{prompt:'Qual combinação é a melhor pista para reconhecer o Pantanal em um enunciado?',correct:2,choices:[
+    ['Semiárido e perda de folhas na seca','Essa combinação aponta para adaptações comuns na Caatinga.'],
+    ['Campos nativos do sul do Rio Grande do Sul','Essa pista ajuda a reconhecer o Pampa brasileiro.'],
+    ['Planície alagável com alternância de cheias e secas','O pulso de inundação conecta rio e planície e organiza muitos ambientes do Pantanal.']]}
   },
   {
    id:'embriologia', title:'Embriologia e folhetos germinativos', card:'bio-embriologia',

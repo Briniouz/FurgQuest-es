@@ -8,6 +8,18 @@
   evolucao:[['Entendendo a evolução','18-1-understanding-evolution'],['Evolução das populações','19-1-population-evolution']],
   cadeias:[['Ciclos biogeoquímicos','46-3-biogeochemical-cycles']],
  };
+ const pedigrees={
+  recessivo:{
+   title:'Família 1 · modelo autossômico recessivo',
+   description:'I-1 e I-2 não manifestam o traço. Seus filhos são II-1, uma filha que manifesta o traço, e II-2, um filho que não o manifesta.',
+   people:[['I-1','quadrado',false],['I-2','círculo',false],['II-1','círculo',true],['II-2','quadrado',false]],
+  },
+  ligadoX:{
+   title:'Família 2 · modelo recessivo ligado ao X',
+   description:'I-1 e I-2 não manifestam o traço. Seus filhos são II-1, um filho que manifesta o traço, e II-2, uma filha que não o manifesta.',
+   people:[['I-1','quadrado',false],['I-2','círculo',false],['II-1','quadrado',true],['II-2','círculo',false]],
+  },
+ };
  const modules={
   celula:[
    {title:'Organelas essenciais', paragraphs:[
@@ -51,6 +63,44 @@
     'Num modelo autossômico recessivo, um casal sem o traço com um filho aa tem genótipos Aa × Aa. Para um outro filho, se já sabemos que ele não expressa o traço, restam AA, Aa e aA entre os casos equiprováveis. A chance condicional de ser portador passa a 2/3.',
     'Em herança recessiva ligada ao X, um pai XY transmite X às filhas e Y aos filhos. Uma mãe heterozigota e um pai sem o traço têm 1/2 de chance de transmiti-lo a um filho já identificado como menino. Se a pergunta pede a chance de nascer um menino com o traço, multiplica pela chance de o bebê ser menino no modelo dado.',
     'Na dominância incompleta, o heterozigoto tem fenótipo intermediário. Na codominância, aparecem produtos dos dois alelos, como os antígenos A e B no sangue AB. Um heredograma pequeno pode admitir mais de um padrão. Usa as hipóteses do enunciado e elimina os padrões incompatíveis.',
+   ]},
+  ],
+  heredogramas:[
+   {title:'Compara os padrões de herança', paragraphs:[
+    'Testa as hipóteses uma por uma. Estas pistas usam o modelo escolar com penetrância completa e sem mutações novas. Uma característica que aparece em todas as gerações pode sugerir dominância. Uma que pula gerações pode sugerir recessividade. Para decidir, procura o ramo familiar que torna um padrão impossível.',
+   ],table:{caption:'Pistas e testes para cada padrão de herança',headers:['Padrão','Pista no desenho','Teste que ajuda a decidir'],rows:[
+    ['Autossômica dominante','Uma cópia do alelo já permite manifestar o traço. Pessoas sem o traço são aa no modelo.','Dois genitores aa só podem gerar descendentes aa, também sem o traço.'],
+    ['Autossômica recessiva','Pais sem o traço podem ter filhos ou filhas que o manifestam.','Um descendente aa recebeu um a de cada genitor. Se os dois pais não manifestam, ambos são Aa.'],
+    ['Recessiva ligada ao X','Um menino pode manifestar o traço mesmo com pai sem o traço.','Um filho recebe seu X da mãe. Uma filha que manifesta precisa receber o alelo também do pai, que manifestaria o traço nesse modelo.'],
+    ['Dominante ligada ao X','Um pai que manifesta o traço transmite seu X a todas as filhas.','O pai transmite Y aos filhos. Se a mãe também não tem o alelo, os filhos homens não manifestam o traço.'],
+   ]}},
+   {title:'Caso 1 · filha afetada e pais sem o traço',pedigree:pedigrees.recessivo,paragraphs:[
+    'Começa por II-1, que manifesta a característica. Sob o padrão autossômico recessivo, ela é aa. Logo, cada genitor forneceu um a. Os símbolos vazios em I-1 e I-2 mostram ausência do fenótipo. Os pais são Aa.',
+    'O símbolo vazio de II-2 exclui aa. Sobram AA, Aa e aA, três resultados equiprováveis, dos quais dois representam heterozigotos. A chance de II-2 ser portador é 2/3. A chance de um próximo bebê nascer aa é outra pergunta e vale 1/4.',
+   ]},
+   {title:'Caso 2 · filho afetado e pai sem o traço',pedigree:pedigrees.ligadoX,paragraphs:[
+    'O enunciado deste caso informa que a herança é recessiva ligada ao X. II-1 é XᵃY. O Y veio do pai. O Xᵃ veio da mãe, que tem o traço ausente e, portanto, é XᴬXᵃ. I-1 é XᴬY.',
+    'Cada filha recebe Xᴬ do pai. Uma filha pode ser XᴬXᴬ ou XᴬXᵃ, com 1/2 de chance para cada caso. Se o padrão de herança não viesse informado, esse desenho, sozinho, também admitiria herança autossômica recessiva.',
+   ]},
+  ],
+  biomas:[
+   {title:'Os seis biomas lado a lado',paragraphs:[
+    'A divisão do IBGE usa condições regionais e a história da paisagem. Na questão, compara o conjunto de pistas, especialmente vegetação, sazonalidade e água. Um campo nativo pode ocorrer em mais de um bioma.',
+   ],table:{caption:'Biomas brasileiros e como reconhecer cada um',headers:['Bioma','Pistas de clima, vegetação e água','O que ligar à conservação'],rows:[
+    ['Amazônia','Predomina clima quente e úmido. Há florestas de terra firme e florestas inundáveis, como várzeas e igapós.','A perda de cobertura reduz habitat. A vegetação também participa da reciclagem de umidade por evapotranspiração.'],
+    ['Cerrado','Estação seca e chuvosa bem marcadas. Há campos, savanas e formações florestais. Em muitas plantas, casca espessa e órgãos subterrâneos favorecem sobrevivência ou rebrota após fogo.','Efeitos do fogo dependem da época, frequência, intensidade e formação vegetal. Uma adaptação ao fogo não protege todas as espécies de qualquer queimada.'],
+    ['Caatinga','Predomina o semiárido, com chuvas irregulares. Há plantas que perdem as folhas na seca e espécies que armazenam água.','A queda de folhas pode reduzir a perda de água. A degradação do solo aumenta a vulnerabilidade à erosão.'],
+    ['Mata Atlântica','Conjunto de formações florestais com grande variação regional, incluindo florestas úmidas e matas com araucária.','Fragmentos isolados dificultam deslocamento e fluxo gênico. Corredores podem reconectar áreas, conforme a espécie e a paisagem.'],
+    ['Pantanal','Planície da bacia do Alto Paraguai, marcada pela alternância entre áreas inundadas e secas.','Alterar a duração, época ou amplitude das cheias pode afetar a conexão entre rios e áreas de abrigo e reprodução.'],
+    ['Pampa','No Brasil, ocorre no Rio Grande do Sul. Campos nativos são marcantes e coexistem com banhados e outras formações.','Conservar espécies campestres exige preservar a vegetação de campo. Converter o campo em lavoura ou silvicultura modifica seu habitat.'],
+   ]}},
+   {title:'Compara as pistas que mais confundem',paragraphs:[
+    'Cerrado e Caatinga podem apresentar estação seca e plantas resistentes à falta de água. No Cerrado, procura a paisagem de savana e as pistas de fogo e rebrota. Na Caatinga, dá peso ao semiárido, à irregularidade das chuvas e a adaptações como perda de folhas na seca. Essas características ajudam quando aparecem em conjunto.',
+    'O Pantanal tem ambientes sazonalmente alagados. A Amazônia também tem florestas inundáveis. No Pantanal, a pista-chave costuma ser o pulso de inundação da planície. Na Amazônia, o enunciado pode contrastar a floresta inundável com a de terra firme.',
+   ]},
+   {title:'Pampa no Rio Grande do Sul',paragraphs:[
+    'Olha a cobertura original antes de propor recuperação. Num campo nativo do Pampa, gramíneas e outras plantas herbáceas sustentam fauna campestre. Plantar árvores em todo o campo pode descaracterizar esse habitat, mesmo que aumente a cobertura arbórea.',
+    'Em um mapa de uso do solo, distingue campo nativo, lavoura, pastagem plantada e silvicultura. Todas podem parecer áreas abertas em certos momentos. Para decidir se houve perda de campo nativo, acompanha a classe original e o que a substituiu.',
    ]},
   ],
   embriologia:[
@@ -127,6 +177,26 @@
     ['1/2','É a chance de expressar o traço dado que o bebê já é menino. O item pede as duas condições juntas.'],
     ['0','Um filho recebe Y do pai e um X da mãe. Pode receber dela o X com o alelo recessivo.']]),
   ],
+  heredogramas:[
+   {...check('heredograma-condicional','Na família 1, pais sem o traço têm uma filha que o manifesta, II-1. Admitindo herança autossômica recessiva, qual é a chance de o irmão dela, II-2, ser portador, sabendo que ele não manifesta o traço?',2,[
+    ['1/4','Esse valor corresponde a AA ou aa entre todos os quatro resultados do cruzamento. A ausência do traço exclui aa.'],
+    ['1/2','Essa é a chance antes de saber o fenótipo. O enunciado restringe a conta aos resultados sem o traço.'],
+    ['2/3','Entre AA, Aa e aA, dois dos três resultados representam portadores.']]),pedigree:pedigrees.recessivo},
+   check('heredograma-x','Num modelo dominante ligado ao X, o pai manifesta a característica e a mãe não tem o alelo. Quem herda o alelo do pai?',1,[
+    ['Todos os filhos homens','Filhos homens recebem Y do pai no modelo dado. Seu X vem da mãe.'],
+    ['Todas as filhas','Todas as filhas recebem o X do pai. Como o alelo é dominante no modelo, elas manifestam o traço.'],
+    ['Metade das filhas e metade dos filhos','A chance depende de receber X ou Y do pai. Para cada filha, o X paterno é certo.']]),
+  ],
+  biomas:[
+   check('biomas-pampa','Uma área de campo nativo na metade sul do RS é convertida em uma plantação de árvores. Que impacto se espera para espécies dependentes de ambientes campestres?',0,[
+    ['Redução de habitat campestre','A substituição de gramíneas e outras plantas nativas por uma formação arbórea muda a estrutura do habitat.'],
+    ['Aumento do campo nativo pela presença de árvores','Uma plantação arbórea é outra cobertura. A presença de vegetação não indica a conservação do campo original.'],
+    ['Restauração do pulso de inundação do Pantanal','O caso descreve substituição da cobertura vegetal no sul do RS. Não há alteração de um rio no Pantanal.']]),
+   check('biomas-cerrado','Um levantamento descreve vegetação de savana, estação seca marcada e árvores de casca grossa com capacidade de rebrota após o fogo. Qual bioma é mais compatível?',1,[
+    ['Caatinga','A Caatinga também tem plantas adaptadas à seca, mas o conjunto de savana, sazonalidade e rebrota após fogo é uma pista típica do Cerrado.'],
+    ['Cerrado','A combinação de vegetação savânica, estação seca e adaptações ao fogo em muitas plantas é coerente com o Cerrado.'],
+    ['Pantanal','O Pantanal abriga diferentes formações vegetais. Num enunciado que quer identificá-lo, a alternância de cheias e secas é a pista mais característica.']]),
+  ],
   embriologia:[
    check('intestino','Num experimento, células endodérmicas são marcadas durante a gastrulação. Que estrutura deve apresentar descendentes das células marcadas?',1,[
     ['Músculo da parede intestinal','O músculo liso da parede intestinal tem origem mesodérmica.'],
@@ -156,15 +226,21 @@
  };
  const priorities=[
   {title:'Impactos ambientais e ciclos', level:'Revisa primeiro', lesson:'cadeias', tip:'Treina a relação entre fertilizante, floração de algas e queda de oxigênio. Revisa também as setas dos ciclos do carbono, nitrogênio e fósforo.'},
-  {title:'DNA, herança e biotecnologia', level:'Revisa primeiro', lesson:'heranca', tip:'Faz um heredograma com probabilidade condicional e distingue replicar DNA, transcrever RNA e traduzir proteína.'},
+  {title:'DNA, herança e biotecnologia', level:'Revisa primeiro', lesson:'heranca', tip:'Distingue replicar DNA, transcrever RNA e traduzir proteína. Revisa como a meiose separa alelos.'},
   {title:'Organelas e metabolismo', level:'Revisa primeiro', lesson:'celula', tip:'Segue a rota de uma proteína até a secreção. Depois distingue digestão, produção de ATP e fotossíntese pelo que o enunciado bloqueia ou mede.'},
   {title:'Viroses, vetores e imunidade', level:'Revisa primeiro', lesson:'imunidade', tip:'Separa agente, vetor e via de transmissão. Compara vacina, anticorpos prontos e memória imunológica.'},
   {title:'Seleção natural e resistência', level:'Treina a aplicação', lesson:'evolucao', tip:'Explica um caso de resistência passando por variação herdável, reprodução diferencial e mudança de frequência.'},
+  {title:'Heredogramas e probabilidade', level:'Treina a aplicação', lesson:'heredogramas', tip:'Identifica quem recebeu cada alelo e compara uma probabilidade geral com a chance condicionada ao fenótipo.'},
+  {title:'Biomas brasileiros e conservação', level:'Revisão complementar', lesson:'biomas', tip:'Treina pistas para distinguir Cerrado e Caatinga. Liga o pulso de cheias ao Pantanal e a conservação de campos nativos ao Pampa.'},
   {title:'Folhetos embrionários', level:'Revisão complementar', lesson:'embriologia', tip:'Distingue epiderme de derme e compara o revestimento do intestino com sua musculatura.'},
  ];
  globalThis.FurgDia2Biology={
   modules,checks,priorities,
-  sources:Object.fromEntries(Object.entries(sources).map(([id,links])=>[id,links.map(([label,path])=>[label,openStax+path])])),
+  sources:{
+   ...Object.fromEntries(Object.entries(sources).map(([id,links])=>[id,links.map(([label,path])=>['OpenStax · '+label,openStax+path])])),
+   heredogramas:[['MedlinePlus Genetics · Padrões de herança','https://medlineplus.gov/genetics/understanding/inheritance/inheritancepatterns/']],
+   biomas:[['IBGE Educa · Biomas brasileiros','https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18307-biomas-brasileiros.html'],['IBGE · Mapas e delimitações dos biomas','https://www.ibge.gov.br/geociencias/cartas-e-mapas/informacoes-ambientais/15842-biomas.html'],['Embrapa · O Pantanal','https://www.embrapa.br/web/pantanal/apresentacao/o-pantanal']],
+  },
   prioritySources:[
    ['Raio X ENEM 2009–2025 · SAS Educação','https://prod-assets-saseducacao.s3.amazonaws.com/public/2026-04/RAIO-X_ENEM%20SAS.pdf?VersionId=1qwKGl_vetiOrP1ROPpo8oO823hRWGF9'],
    ['Matrizes de Referência · Inep','https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/matrizes-de-referencia-enem'],
