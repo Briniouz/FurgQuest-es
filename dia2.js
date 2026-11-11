@@ -574,18 +574,18 @@
  function questionBody(q,item) {
   if(q.bet)return '<p>'+esc(q.stem)+'</p>'+betVisual(item.visual);
   if(q.authorial)return '<p>'+esc(q.stem)+'</p>';
-  if (!item.edits) return globalThis.FurgEnem.body(q);
+  if (!item.edits||globalThis.FurgEnemLayout.review(q)?.corrections?.context) return globalThis.FurgEnem.body(q);
   const context = item.edits.reduce((text,[before,after]) => text.replace(before,after),q.context);
   return globalThis.FurgEnem.body({...q,context});
  }
 
  function choices(q,a) {
-  return `<fieldset class="d2-options"><legend>Alternativas</legend>${q.alternatives.map(option => {
+  return `<fieldset class="d2-options"><legend>Alternativas</legend>${globalThis.FurgEnemLayout.displayQuestion(q).alternatives.map(option => {
    const selected = option.letter === (a ? a.choice : session().draft.choice);
    const correct = a && option.letter === q.answer, wrong = a && selected && !a.correct;
    return `<label class="d2-option ${correct?'is-correct':''} ${wrong?'is-wrong':''}">
     <input type="radio" name="d2Choice" value="${option.letter}" ${selected?'checked':''} ${a?'disabled':'required'}>
-    <span class="d2-letter">${option.letter}</span><span>${globalThis.FurgEnem.markdown(option.text).replace(/<\/?p>/g,'')}</span>
+    <span class="d2-letter">${option.letter}</span><span>${globalThis.FurgEnem.markdown(option.text).replace(/<\/?p>/g,'')}${option.file?globalThis.FurgEnem.markdown('![Alternativa '+option.letter+']('+option.file+')'):''}</span>
     ${correct?'<span class="sr-only">Resposta correta</span>':wrong?'<span class="sr-only">Resposta incorreta</span>':''}
    </label>`;
   }).join('')}</fieldset>`;

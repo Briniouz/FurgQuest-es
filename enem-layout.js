@@ -1,5 +1,5 @@
 'use strict';
-/* Presentation only. No mutations, edits or summaries of official questions. */
+/* PDF-verified display corrections leave the imported bank and its IDs intact. */
 (() => {
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const publication=/(?:https?:\/\/|www\.|\bIn\s*[:.]|Dispon[ií]vel em|Acesso em|[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+(?:[A-ZÀ-Ý][a-zà-ÿ]+|de|do)){0,3}\s*:\s*[A-ZÀ-Ý]|\b(?:Revista|Cadernos|Afro-Ásia)\b|\b[vmnV]\.\s*\d)/;
@@ -65,10 +65,27 @@
     if(cursor<text.length)parts.push({type:'support',text:text.slice(cursor)});
     return parts.length?parts:[{type:'support',text}];
   }
-  function body(q,markdown,image){
-    const parts=structure(q);
+  function review(q){
+    const item=globalThis.FURG_ENEM_NATUREZA_REVISAO?.[q.id];
+    return item&&item.answerExpected===q.answer&&item.fingerprint===fingerprint(q)?item:null;
+  }
+  function displayQuestion(q){
+    const item=review(q), repair=item?.corrections;
+    if(!item)return q;
+    const {figures,alternatives,...fields}=repair||{};
+    return {...q,...fields,
+      source:{...q.source,page:item.sourcePage, ...(item.answerPdf?{answerPdf:item.answerPdf}:{})},
+      alternatives:alternatives?.length?q.alternatives.map(option=>{
+        const correction=alternatives.find(value=>value.letter===option.letter);
+        return correction?{...option,...correction}:option;
+      }):q.alternatives
+    };
+  }
+  function body(original,markdown,image){
+    const q=displayQuestion(original),parts=structure(q,original);
     const seen=(q.context||'')+(q.stem||'')+(q.alternatives||[]).map(a=>(a.text||'')+(a.file||'')).join('');
-    const extra=(q.files||[]).filter(path=>!seen.includes(path));
+    const placed=new Set(parts.filter(part=>part.type==='figure').map(part=>part.file));
+    const extra=(q.files||[]).filter(path=>!seen.includes(path)&&!placed.has(path));
     let support=0;
     const figures=extra.length?'<section class="enem-support enem-support-figures" aria-label="Figuras da questão"><h4>Figuras da questão</h4>'+extra.map(p=>image(p)).join('')+'</section>':'';
     let figuresPlaced=false;
@@ -82,9 +99,9 @@
     }).join('');
     return'<div class="enem-text enem-structured-text">'+context+(figuresPlaced?'':figures)+'</div>';
   }
-  function structure(q){
+  function structure(q,original=q){
     const parts=partition(q.context);
-    if(q.stem){parts.push({type:'prompt',text:q.stem,field:'stem'});return presentation(q,parts);}
+    if(q.stem){parts.push({type:'prompt',text:q.stem,field:'stem'});return presentation(original,q,parts);}
     const last=parts.at(-1),before=parts.at(-2);
     // Relabel an unambiguous tail after a bibliographic source. Text is kept
     // byte-for-byte in its original order, including punctuation and spacing.
@@ -108,22 +125,22 @@
     }
     // Short standalone questions need no invented supporting text.
     if(parts.length===1&&parts[0].type==='support'&&parts[0].text.length<450&&command.test(parts[0].text))parts[0].type='prompt';
-    return presentation(q,parts);
+    return presentation(original,q,parts);
   }
   function fingerprint(q){
     const raw=JSON.stringify([q.context||'',q.stem||'',q.alternatives||[]]);
     let hash=2166136261;for(let i=0;i<raw.length;i++)hash=Math.imul(hash^raw.charCodeAt(i),16777619);
     return(hash>>>0).toString(16).padStart(8,'0');
   }
-  function presentation(q,parts){
-    const repair=globalThis.FURG_ENEM_PRESENTATION?.questions?.[q.id];
-    if(!repair||repair.fingerprint!==fingerprint(q))return parts;
-    if(repair.contextSpill){
+  function presentation(original,q,parts){
+    const existing=globalThis.FURG_ENEM_PRESENTATION?.questions?.[q.id];
+    const repair=existing?.fingerprint===fingerprint(original)?existing:null;
+    if(repair?.contextSpill){
       // Explicit, PDF-verified imports of a previous question's choices.
       // Retain every raw character in structure(), but don't display the spill.
       if(q.context===repair.contextSpill)for(const part of parts)if(part.field!=='stem')part.type='transcription-spill';
     }
-    for(const figure of repair.figures||[]){
+    for(const figure of [...(repair?.figures||[]),...(review(original)?.corrections?.figures||[])]){
       const field=figure.field||'context',raw=String(q[field]||''),at=raw.indexOf(figure.before);
       if(at<0||raw.indexOf(figure.before,at+1)>=0)continue;
       let offset=0;
@@ -140,18 +157,19 @@
     }
     return parts;
   }
-  function solution(q,markdown){
+  function solution(q,markdown,image=()=>''){
     const guided=globalThis.FURG_DIA2_PRACTICE?.questions?.[q.id];
     const authored=[
+      review(q),
       globalThis.FURG_ENEM_SOLUTIONS?.[q.id],
       q.quality?.keyVerified && globalThis.FurgDia2ExampleSolutions?.[q.id],
       guided && guided.fingerprint===fingerprint(q) && {answerExpected:guided.answer,paragraphs:[...guided.steps,guided.trap]},
     ].find(candidate=>candidate && candidate.answerExpected===q.answer);
-    const correct=(q.alternatives||[]).find(a=>a.letter===q.answer);
+    const correct=displayQuestion(q).alternatives?.find(a=>a.letter===q.answer);
     const explanation=authored
       ?'<p class="enem-resolution-credit">Comentário de estudo autoral · separado do conteúdo oficial</p>'+authored.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')
       :'<p class="enem-resolution-pending">Este item ainda não tem resolução comentada autoral. O gabarito e a alternativa correta estão disponíveis para conferência com a prova original.</p>';
-    return'<section class="enem-resolution" aria-label="Explicação e resolução"><h4>Explicação e resolução</h4><p class="enem-resolution-key"><strong>Gabarito oficial: '+esc(q.answer)+'</strong></p>'+(correct?'<details class="enem-correct-text"><summary>Conferir o texto da alternativa correta</summary>'+markdown(correct.text)+'</details>':'')+explanation+'<a class="text-link" href="#biblioteca" data-knowledge-question="'+esc(q.id)+'">Explorar autores e conceitos desta questão ↗</a></section>';
+    return'<section class="enem-resolution" aria-label="Explicação e resolução"><h4>Explicação e resolução</h4><p class="enem-resolution-key"><strong>Gabarito oficial: '+esc(q.answer)+'</strong></p>'+(correct?'<details class="enem-correct-text"><summary>Conferir o texto da alternativa correta</summary>'+markdown(correct.text)+image(correct.file,'Alternativa '+correct.letter)+'</details>':'')+explanation+'<a class="text-link" href="#biblioteca" data-knowledge-question="'+esc(q.id)+'">Explorar autores e conceitos desta questão ↗</a></section>';
   }
-  globalThis.FurgEnemLayout={partition,structure,body,solution,fingerprint};
+  globalThis.FurgEnemLayout={partition,structure,body,solution,fingerprint,review,displayQuestion};
 })();
