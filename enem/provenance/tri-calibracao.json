@@ -1,0 +1,814 @@
+{
+  "origem": "Microdados do Inep, tabelas ITENS_PROVA de 2009 a 2025",
+  "catalogo": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem",
+  "espelho": "https://github.com/HenriqueLindemann/analise-enem/tree/master/src/tri_enem/data/itens",
+  "arvore_espelho": "be01112ebaae1cded4b585021dec917f0fe0a5af",
+  "conversao_empirica": "https://github.com/HenriqueLindemann/analise-enem/blob/master/docs/SCORE_RECALCULATION.md",
+  "escopo": "Aplicação regular, caderno azul. O sorteio temático usa o recorte 2021–2025 da Anatomia do ENEM.",
+  "metodo": "3PL com EAP, prior normal padrão e 40 nós em [-4, 4]. Cotejo de parâmetros por área, edição, caderno, posição, idioma e gabarito. Cada linha incluída tem os três parâmetros publicados.",
+  "faixas_didaticas": [
+    "b < 1",
+    "1 ≤ b < 2",
+    "b ≥ 2"
+  ],
+  "edicoes": {
+    "2025": {
+      "sha256": "b3cbe87dab85e2811b3136c7c801450de3d6658556af03f0055b4d4f0cb0ca73",
+      "areas": {
+        "CH": {
+          "code": 1447,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 1483,
+          "offset": 0,
+          "included": 42,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2025-123": "anulada",
+            "enem-2025-125": "abandonada",
+            "enem-2025-132": "anulada"
+          }
+        },
+        "LC": {
+          "code": 1459,
+          "offset": 0,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {}
+        },
+        "MT": {
+          "code": 1471,
+          "offset": 0,
+          "included": 43,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2025-172": "abandonada",
+            "enem-2025-174": "anulada"
+          }
+        }
+      }
+    },
+    "2024": {
+      "sha256": "6e36141d806f3e67e9d842f92672d7f3fd305048b4ee6ae019f6bdaba682fd3c",
+      "areas": {
+        "CH": {
+          "code": 1383,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 1419,
+          "offset": 0,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2024-129": "anulada"
+          }
+        },
+        "LC": {
+          "code": 1395,
+          "offset": 0,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {}
+        },
+        "MT": {
+          "code": 1407,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        }
+      }
+    },
+    "2023": {
+      "sha256": "53e7dcec6ce95f8fac8bb7ff4df7a7e95630a5233fd19e0245dd9d36ed00aae9",
+      "areas": {
+        "CH": {
+          "code": 1191,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 1221,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "LC": {
+          "code": 1201,
+          "offset": 0,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {}
+        },
+        "MT": {
+          "code": 1211,
+          "offset": 0,
+          "included": 43,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2023-161": "abandonada",
+            "enem-2023-164": "anulada"
+          }
+        }
+      }
+    },
+    "2022": {
+      "sha256": "200c8f27f4e400c8a60d3b6a0842e411de208264ba06b09fa1bfc10ace4e8693",
+      "areas": {
+        "CH": {
+          "code": 1055,
+          "offset": 0,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2022-64": "abandonada"
+          }
+        },
+        "CN": {
+          "code": 1085,
+          "offset": 0,
+          "included": 41,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2022-112": "abandonada",
+            "enem-2022-113": "abandonada",
+            "enem-2022-119": "abandonada",
+            "enem-2022-134": "abandonada"
+          }
+        },
+        "LC": {
+          "code": 1065,
+          "offset": 0,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {}
+        },
+        "MT": {
+          "code": 1075,
+          "offset": 0,
+          "included": 43,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2022-141": "abandonada",
+            "enem-2022-157": "anulada"
+          }
+        }
+      }
+    },
+    "2021": {
+      "sha256": "0bf2e0bb2c4faa4fd2bb60835523864d1333e759d81d084a600c38736773bf26",
+      "areas": {
+        "CH": {
+          "code": 879,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 909,
+          "offset": 0,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2021-118": "abandonada"
+          }
+        },
+        "LC": {
+          "code": 889,
+          "offset": 0,
+          "included": 48,
+          "officialRows": 50,
+          "excluded": {
+            "enem-2021-24": "abandonada",
+            "enem-2021-43": "abandonada"
+          }
+        },
+        "MT": {
+          "code": 899,
+          "offset": 0,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2021-138": "anulada"
+          }
+        }
+      }
+    },
+    "2020": {
+      "sha256": "8dd629c9524df5f72f1080653ad3eac697ddf2ffe21ebe2bb22d729cf0b69345",
+      "areas": {
+        "CH": {
+          "code": 567,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 597,
+          "offset": 0,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2020-135": "anulada"
+          }
+        },
+        "LC": {
+          "code": 577,
+          "offset": 0,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {}
+        },
+        "MT": {
+          "code": 587,
+          "offset": 0,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2020-157": "anulada"
+          }
+        }
+      }
+    },
+    "2019": {
+      "sha256": "2c7af4a732917d896944860f8c4a04fccb62094eea74fa0c3a343a4e4cc8ccc5",
+      "areas": {
+        "CH": {
+          "code": 507,
+          "offset": 0,
+          "included": 43,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2019-48": "abandonada",
+            "enem-2019-90": "abandonada"
+          }
+        },
+        "CN": {
+          "code": 503,
+          "offset": 0,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2019-122": "abandonada"
+          }
+        },
+        "LC": {
+          "code": 511,
+          "offset": 0,
+          "included": 49,
+          "officialRows": 50,
+          "excluded": {
+            "enem-2019-33": "abandonada"
+          }
+        },
+        "MT": {
+          "code": 515,
+          "offset": 0,
+          "included": 13,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2019-139": "associação de curva divergente",
+            "enem-2019-145": "abandonada",
+            "enem-2019-146": "associação de curva divergente",
+            "enem-2019-147": "associação de curva divergente",
+            "enem-2019-148": "associação de curva divergente",
+            "enem-2019-149": "associação de curva divergente",
+            "enem-2019-150": "associação de curva divergente",
+            "enem-2019-151": "associação de curva divergente",
+            "enem-2019-152": "associação de curva divergente",
+            "enem-2019-153": "associação de curva divergente",
+            "enem-2019-154": "associação de curva divergente",
+            "enem-2019-155": "associação de curva divergente",
+            "enem-2019-156": "associação de curva divergente",
+            "enem-2019-157": "associação de curva divergente",
+            "enem-2019-158": "associação de curva divergente",
+            "enem-2019-159": "associação de curva divergente",
+            "enem-2019-160": "associação de curva divergente",
+            "enem-2019-161": "associação de curva divergente",
+            "enem-2019-162": "associação de curva divergente",
+            "enem-2019-163": "associação de curva divergente",
+            "enem-2019-164": "associação de curva divergente",
+            "enem-2019-165": "associação de curva divergente",
+            "enem-2019-166": "associação de curva divergente",
+            "enem-2019-167": "associação de curva divergente",
+            "enem-2019-168": "associação de curva divergente",
+            "enem-2019-169": "associação de curva divergente",
+            "enem-2019-173": "associação de curva divergente",
+            "enem-2019-174": "associação de curva divergente",
+            "enem-2019-175": "associação de curva divergente",
+            "enem-2019-176": "associação de curva divergente",
+            "enem-2019-177": "associação de curva divergente",
+            "enem-2019-178": "associação de curva divergente"
+          }
+        }
+      }
+    },
+    "2018": {
+      "sha256": "330d2a26ba963ba84519f4c0783a06298e17818bd6069f5ad7dcef21319184c5",
+      "areas": {
+        "CH": {
+          "code": 451,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 447,
+          "offset": 0,
+          "included": 40,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2018-121": "associação de curva divergente",
+            "enem-2018-122": "associação de curva divergente",
+            "enem-2018-123": "associação de curva divergente",
+            "enem-2018-124": "associação de curva divergente",
+            "enem-2018-128": "associação de curva divergente"
+          }
+        },
+        "LC": {
+          "code": 455,
+          "offset": 0,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {}
+        },
+        "MT": {
+          "code": 459,
+          "offset": 0,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2018-163": "anulada"
+          }
+        }
+      }
+    },
+    "2017": {
+      "sha256": "29c093322011ac235744334166f0e30e109dc4b8b87b3f0b15f422572c8166f0",
+      "areas": {
+        "CH": {
+          "code": 395,
+          "offset": 45,
+          "included": 22,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2017-68": "associação de curva divergente",
+            "enem-2017-69": "associação de curva divergente",
+            "enem-2017-70": "associação de curva divergente",
+            "enem-2017-71": "associação de curva divergente",
+            "enem-2017-72": "associação de curva divergente",
+            "enem-2017-73": "associação de curva divergente",
+            "enem-2017-74": "associação de curva divergente",
+            "enem-2017-75": "associação de curva divergente",
+            "enem-2017-76": "associação de curva divergente",
+            "enem-2017-77": "associação de curva divergente",
+            "enem-2017-78": "associação de curva divergente",
+            "enem-2017-79": "associação de curva divergente",
+            "enem-2017-80": "associação de curva divergente",
+            "enem-2017-81": "associação de curva divergente",
+            "enem-2017-82": "associação de curva divergente",
+            "enem-2017-83": "associação de curva divergente",
+            "enem-2017-84": "associação de curva divergente",
+            "enem-2017-85": "associação de curva divergente",
+            "enem-2017-86": "associação de curva divergente",
+            "enem-2017-87": "associação de curva divergente",
+            "enem-2017-88": "associação de curva divergente",
+            "enem-2017-89": "associação de curva divergente",
+            "enem-2017-90": "associação de curva divergente"
+          }
+        },
+        "CN": {
+          "code": 391,
+          "offset": 90,
+          "included": 20,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2017-106": "associação de curva divergente",
+            "enem-2017-107": "associação de curva divergente",
+            "enem-2017-108": "associação de curva divergente",
+            "enem-2017-110": "associação de curva divergente",
+            "enem-2017-111": "associação de curva divergente",
+            "enem-2017-112": "associação de curva divergente",
+            "enem-2017-117": "associação de curva divergente",
+            "enem-2017-118": "associação de curva divergente",
+            "enem-2017-119": "associação de curva divergente",
+            "enem-2017-120": "associação de curva divergente",
+            "enem-2017-121": "associação de curva divergente",
+            "enem-2017-122": "associação de curva divergente",
+            "enem-2017-123": "associação de curva divergente",
+            "enem-2017-124": "associação de curva divergente",
+            "enem-2017-125": "associação de curva divergente",
+            "enem-2017-126": "associação de curva divergente",
+            "enem-2017-127": "associação de curva divergente",
+            "enem-2017-128": "associação de curva divergente",
+            "enem-2017-129": "associação de curva divergente",
+            "enem-2017-130": "associação de curva divergente",
+            "enem-2017-131": "associação de curva divergente",
+            "enem-2017-132": "associação de curva divergente",
+            "enem-2017-133": "associação de curva divergente",
+            "enem-2017-134": "associação de curva divergente",
+            "enem-2017-135": "associação de curva divergente"
+          }
+        },
+        "LC": {
+          "code": 399,
+          "offset": -5,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {},
+          "offsetIngles": 0
+        },
+        "MT": {
+          "code": 403,
+          "offset": 135,
+          "included": 13,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2017-143": "associação de curva divergente",
+            "enem-2017-144": "associação de curva divergente",
+            "enem-2017-145": "associação de curva divergente",
+            "enem-2017-146": "associação de curva divergente",
+            "enem-2017-147": "associação de curva divergente",
+            "enem-2017-148": "associação de curva divergente",
+            "enem-2017-149": "associação de curva divergente",
+            "enem-2017-152": "associação de curva divergente",
+            "enem-2017-153": "associação de curva divergente",
+            "enem-2017-154": "associação de curva divergente",
+            "enem-2017-155": "associação de curva divergente",
+            "enem-2017-156": "associação de curva divergente",
+            "enem-2017-157": "associação de curva divergente",
+            "enem-2017-158": "associação de curva divergente",
+            "enem-2017-159": "associação de curva divergente",
+            "enem-2017-160": "associação de curva divergente",
+            "enem-2017-161": "associação de curva divergente",
+            "enem-2017-162": "associação de curva divergente",
+            "enem-2017-163": "associação de curva divergente",
+            "enem-2017-164": "associação de curva divergente",
+            "enem-2017-165": "associação de curva divergente",
+            "enem-2017-166": "associação de curva divergente",
+            "enem-2017-167": "associação de curva divergente",
+            "enem-2017-168": "associação de curva divergente",
+            "enem-2017-169": "associação de curva divergente",
+            "enem-2017-170": "associação de curva divergente",
+            "enem-2017-171": "associação de curva divergente",
+            "enem-2017-172": "associação de curva divergente",
+            "enem-2017-173": "associação de curva divergente",
+            "enem-2017-174": "associação de curva divergente",
+            "enem-2017-175": "associação de curva divergente",
+            "enem-2017-176": "associação de curva divergente"
+          }
+        }
+      }
+    },
+    "2016": {
+      "sha256": "43e6006cd2af0ceb443e7ea036d0853319b8eefdc8b66581b16919b27fb5f2d7",
+      "areas": {
+        "CH": {
+          "code": 295,
+          "offset": -45,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2016-25": "abandonada"
+          }
+        },
+        "CN": {
+          "code": 291,
+          "offset": -45,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "LC": {
+          "code": 299,
+          "offset": 90,
+          "included": 48,
+          "officialRows": 50,
+          "excluded": {
+            "enem-2016-113": "abandonada",
+            "enem-2016-129": "abandonada"
+          }
+        },
+        "MT": {
+          "code": 303,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        }
+      }
+    },
+    "2015": {
+      "sha256": "c294729aa33d931dba12953c110a564857db3f30fb44ba9540e42b9729d99eeb",
+      "areas": {
+        "CH": {
+          "code": 231,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 235,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "LC": {
+          "code": 241,
+          "offset": 0,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {}
+        },
+        "MT": {
+          "code": 245,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        }
+      }
+    },
+    "2014": {
+      "sha256": "7db923724d32c11a6b75a54090e55b33da2843649d365db9e56ab6cccd5aeff7",
+      "areas": {
+        "CH": {
+          "code": 195,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 199,
+          "offset": 0,
+          "included": 43,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2014-51": "abandonada",
+            "enem-2014-53": "abandonada"
+          }
+        },
+        "LC": {
+          "code": 205,
+          "offset": 0,
+          "included": 49,
+          "officialRows": 50,
+          "excluded": {
+            "enem-2014-126": "abandonada"
+          }
+        },
+        "MT": {
+          "code": 209,
+          "offset": 0,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2014-159": "abandonada"
+          }
+        }
+      }
+    },
+    "2013": {
+      "sha256": "892aaa9127821d4f34a6a6f90771c7f84df431b4c2649433bdbd7967a86c41fc",
+      "areas": {
+        "CH": {
+          "code": 167,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 171,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "LC": {
+          "code": 177,
+          "offset": 0,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {}
+        },
+        "MT": {
+          "code": 181,
+          "offset": 0,
+          "included": 31,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2013-140": "associação de curva divergente",
+            "enem-2013-141": "associação de curva divergente",
+            "enem-2013-142": "associação de curva divergente",
+            "enem-2013-143": "associação de curva divergente",
+            "enem-2013-167": "associação de curva divergente",
+            "enem-2013-168": "associação de curva divergente",
+            "enem-2013-169": "associação de curva divergente",
+            "enem-2013-174": "associação de curva divergente",
+            "enem-2013-175": "associação de curva divergente",
+            "enem-2013-176": "associação de curva divergente",
+            "enem-2013-177": "associação de curva divergente",
+            "enem-2013-178": "associação de curva divergente",
+            "enem-2013-179": "associação de curva divergente",
+            "enem-2013-180": "associação de curva divergente"
+          }
+        }
+      }
+    },
+    "2012": {
+      "sha256": "f943c4557ce78704c15620a031b95d867c0781559935d5060b311ab2f8698a72",
+      "areas": {
+        "CH": {
+          "code": 137,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 141,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "LC": {
+          "code": 147,
+          "offset": 0,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {}
+        },
+        "MT": {
+          "code": 151,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        }
+      }
+    },
+    "2011": {
+      "sha256": "13fe428f16f75c3ec0819ef15e61e8541a2aaaf8474679fe83564a517f71b4a5",
+      "areas": {
+        "CH": {
+          "code": 117,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 121,
+          "offset": 0,
+          "included": 27,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2011-71": "abandonada",
+            "enem-2011-74": "associação de curva divergente",
+            "enem-2011-75": "associação de curva divergente",
+            "enem-2011-76": "associação de curva divergente",
+            "enem-2011-77": "associação de curva divergente",
+            "enem-2011-78": "associação de curva divergente",
+            "enem-2011-79": "associação de curva divergente",
+            "enem-2011-80": "associação de curva divergente",
+            "enem-2011-81": "associação de curva divergente",
+            "enem-2011-82": "associação de curva divergente",
+            "enem-2011-83": "associação de curva divergente",
+            "enem-2011-84": "associação de curva divergente",
+            "enem-2011-85": "associação de curva divergente",
+            "enem-2011-86": "associação de curva divergente",
+            "enem-2011-87": "associação de curva divergente",
+            "enem-2011-88": "associação de curva divergente",
+            "enem-2011-89": "associação de curva divergente",
+            "enem-2011-90": "associação de curva divergente"
+          }
+        },
+        "LC": {
+          "code": 127,
+          "offset": 0,
+          "included": 50,
+          "officialRows": 50,
+          "excluded": {}
+        },
+        "MT": {
+          "code": 131,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        }
+      }
+    },
+    "2010": {
+      "sha256": "ae70ffe310b5e9f9bfa5d8fd3a952c7977ab55018c680e638e92da86ccd75938",
+      "areas": {
+        "CH": {
+          "code": 85,
+          "offset": 0,
+          "included": 42,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2010-21": "abandonada",
+            "enem-2010-22": "abandonada",
+            "enem-2010-25": "abandonada"
+          }
+        },
+        "CN": {
+          "code": 89,
+          "offset": 0,
+          "included": 41,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2010-55": "abandonada",
+            "enem-2010-67": "abandonada",
+            "enem-2010-70": "abandonada",
+            "enem-2010-72": "abandonada"
+          }
+        },
+        "LC": {
+          "code": 95,
+          "offset": 0,
+          "included": 47,
+          "officialRows": 50,
+          "excluded": {
+            "enem-2010-114": "abandonada",
+            "enem-2010-117": "abandonada",
+            "enem-2010-128": "abandonada"
+          }
+        },
+        "MT": {
+          "code": 99,
+          "offset": 0,
+          "included": 41,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2010-138": "gabarito divergente",
+            "enem-2010-152": "abandonada",
+            "enem-2010-163": "abandonada",
+            "enem-2010-180": "abandonada"
+          }
+        }
+      }
+    },
+    "2009": {
+      "sha256": "39646b0adca6fe2a1ecc2964416e91052a70293364e53ed7d5b7c7340198713d",
+      "areas": {
+        "CH": {
+          "code": 53,
+          "offset": 0,
+          "included": 45,
+          "officialRows": 45,
+          "excluded": {}
+        },
+        "CN": {
+          "code": 49,
+          "offset": 0,
+          "included": 43,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2009-27": "abandonada",
+            "enem-2009-31": "abandonada"
+          }
+        },
+        "LC": {
+          "code": 59,
+          "offset": 0,
+          "included": 44,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2009-101": "anulada"
+          }
+        },
+        "MT": {
+          "code": 63,
+          "offset": 0,
+          "included": 43,
+          "officialRows": 45,
+          "excluded": {
+            "enem-2009-171": "abandonada",
+            "enem-2009-180": "abandonada"
+          }
+        }
+      }
+    }
+  }
+}

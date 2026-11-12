@@ -68,6 +68,7 @@ function renderEnemPerformance(){
  const area=studyAreas.get(performanceSpace), label=area?'ENEM · Dia '+area.day:'ENEM';
  const accuracy=summary.graded?' · '+Math.round(summary.correct/summary.graded*100)+'%':'';
  $('enemStats').textContent=label+': '+summary.answered+'/'+summary.total+' questões praticadas · '+summary.correct+' acertos na primeira tentativa'+accuracy+' · '+summary.favorites+' favoritas.';
+ globalThis.FurgEnemTri?.renderPerformance(state.enem,performanceSpace);
  for(const [id,space] of [['performanceAll','geral'],['performanceDayOne','dia-1'],['performanceDayTwo','dia-2']]){
   const button=$(id);
   button.setAttribute('aria-pressed',String(performanceSpace===space));
