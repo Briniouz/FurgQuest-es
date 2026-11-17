@@ -114,7 +114,7 @@
    <dl id="d2ConvertWhy" class="d2-explain">${explain(groups.comprimento)}</dl>
    <div class="d2-actions">
     <a class="outline" href="#dia-2/aulas/fisica/calor" data-study-route="dia-2/aulas/fisica/calor">Aula de escalas térmicas →</a>
-    <a class="quiet" href="#dia-2/apostas" data-study-route="dia-2/apostas">Praticar nas apostas →</a>
+    <a class="quiet" href="#dia-2/exercicios" data-study-route="dia-2/exercicios">Praticar conversões →</a>
    </div>
   </article>`;
  }

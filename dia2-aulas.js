@@ -178,7 +178,6 @@
    <div class="guided-map-heading"><h2>Tua sequência de estudo</h2>
     <div class="d2-actions">
      ${count>0&&pending&&pending!==lessons[0]?link(route(subject,lessons[0].id,guidedMode),'Rever desde o início','outline'):''}
-     ${subject==='biologia'&&biology?link('dia-2/apostas','Apostas de Biologia 2026','outline'):''}
      ${link(route(subject,(pending||lessons[0]).id,guidedMode),count===0?'Começar do zero →':pending?'Continuar na primeira aula pendente →':'Revisar desde o início →','primary')}
     </div></div>
    <ol class="guided-map-list">

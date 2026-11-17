@@ -326,12 +326,11 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
   assert(item.options['ABCDE'.indexOf(item.answer)]);
  }
  const originalSession=inApp('JSON.stringify(state.dia2.sessions.percurso)');
- inApp("openStudyRoute('#dia-2/apostas')");
- assert($('dia2Root').innerHTML.includes('Apostas de Biologia · ENEM 2026'));
- assert($('dia2Root').innerHTML.includes('dia-2/passo-a-passo/biologia/heredogramas'));
- assert($('dia2Root').innerHTML.includes('dia-2/passo-a-passo/biologia/biomas'));
- assert($('dia2Root').innerHTML.includes('Apostas do Dia 2'));
- assert($('dia2Root').innerHTML.includes('Física · 0/4'));
+ inApp("openStudyRoute('#dia-2/dia2')");
+ mode.showTraining();
+ assert(!$('dia2Root').innerHTML.includes('Apostas do Dia 2'));
+ assert(!$('dia2Root').innerHTML.includes('Apostas de Biologia'));
+ assert.equal(ctx.FurgStudyAreas.parse('#dia-2/apostas').view,'area-estudo');
  assert(mode.start('apostas-fisica'));
  assert($('dia2Root').innerHTML.includes('Da frenagem ao aquecimento'));
  assert(!$('dia2Root').innerHTML.includes('Gabarito original'));
@@ -381,7 +380,7 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  assert($('dia2LessonsRoot').innerHTML.includes('Uma temperatura, três escalas'));
  assert($('dia2LessonsRoot').innerHTML.includes('278,15 K'));
  assert.equal(mode.search('fahrenheit','quimica','Básico')[0].id,'basico-temperatura');
- console.log('PASS: 30 practice bets, separate sessions, legacy progress, temperature scales and intervals, dimensional conversions and lesson links.');
+ console.log('PASS: removed bets from visible training, preserved old attempt validation, temperature scales and intervals, dimensional conversions and lesson links.');
  const course=ctx.FurgStudyCourse, labs=ctx.FurgStudyLabs;
  assert.equal(Object.keys(ctx.FurgStudyData.layers).length,36);
  assert.equal(Object.keys(labs.labs).length,12);

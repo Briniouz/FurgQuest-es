@@ -107,8 +107,8 @@
  }
  function practiceLinks(id){
   const official=questionLinks(id);
-  return '<section class="el-depth"><h3>Aplica em outro problema</h3><p>Começa pela questão autoral acima. Depois, resolve uma questão da mesma ideia ou segue pelas apostas.</p><div class="d2-actions">'+
-   official+link('dia-2/apostas','Apostas do Dia 2 →')+'</div><p class="d2-muted">A dificuldade das questões oficiais é uma estimativa de estudo.</p></section>';
+  return '<section class="el-depth"><h3>Aplica em outro problema</h3><p>Começa pela questão autoral acima. Depois, resolve uma questão da mesma ideia no banco do ENEM.</p><div class="d2-actions">'+
+   official+'</div><p class="d2-muted">A dificuldade das questões oficiais é uma estimativa de estudo.</p></section>';
  }
  const modes={laboratorios:'Laboratórios',reconhecimento:'Reconhecimento',deducao:'Dedução',revisao:'Revisão espaçada'};
  let mode='laboratorios', selectedLab='energia', selectedDrill=Object.keys(drills)[0], selectedLesson='energia';
@@ -166,7 +166,7 @@
  function markup(){
   return '<section class="el-workshop"><h2 id="d2Focus" tabindex="-1">Oficina de estudo do Dia 2</h2><p>Testa uma relação no laboratório, reconhece o comando e volta aos conceitos no teu ritmo.</p>'+
    '<div class="d2-actions" role="group" aria-label="Modos da oficina">'+Object.entries(modes).map(([id,label])=>'<button type="button" class="outline" aria-pressed="'+(mode===id)+'" data-study-mode="'+id+'">'+label+'</button>').join('')+'</div>'+
-   '<div id="elBody">'+body()+'</div><div class="d2-actions">'+link('dia-2/aulas','Aprender do zero')+link('dia-2/formulas','Revisão rápida')+link('dia-2/simulados','Modo prova')+link('dia-2/apostas','Treino por matéria')+'</div></section>';
+   '<div id="elBody">'+body()+'</div><div class="d2-actions">'+link('dia-2/aulas','Aprender do zero')+link('dia-2/formulas','Revisão rápida')+link('dia-2/simulados','Modo prova')+link('dia-2/exercicios','Treino por matéria')+'</div></section>';
  }
  function record(key,choice){
   const p=prompts.get(key);

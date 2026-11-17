@@ -17,7 +17,7 @@ module.exports=function({ctx,$,vm,events,assert,document,errors,html}){
  navigate('geral');assert($('studyHubRoot').innerHTML.includes('O que vamos estudar hoje?'));
  assert($('studyHubRoot').innerHTML.includes('Aprender do zero'));
  assert($('navGeneral-estudos').innerHTML.includes('Aprender passo a passo'));
- navigate('dia-2');assert($('studyHubRoot').innerHTML.includes('Polinômios'));
+ navigate('dia-2');assert.equal(areas.parse('dia-2/apostas').view,'area-estudo');assert(!$('studyHubRoot').innerHTML.includes('Apostas do Dia 2'));assert(!areas.menusFor('dia-2').treinamento.some(([page])=>page==='apostas'));navigate('dia-2/dia2');ctx.FurgDia2.showTraining();assert(!$('dia2Root').innerHTML.includes('Apostas do Dia 2'));assert(!$('dia2Root').innerHTML.includes('Apostas de Biologia'));navigate('dia-2');assert($('studyHubRoot').innerHTML.includes('Polinômios'));
  assert($('studyHubRoot').innerHTML.includes('Bioquímica'));
  assert($('studyHubRoot').innerHTML.includes('Mais opções de estudar'));
  // Accent-insensitive search finds lessons, and escapes typed markup by not interpolating it.

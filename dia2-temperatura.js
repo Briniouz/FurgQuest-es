@@ -123,7 +123,7 @@
     <p><strong>Antes de marcar como estudada</strong> Tenta explicar por que a fórmula tem +32, por que ele some em ΔT e por que uma lei de gás pede Kelvin.</p>
     <div class="aula-temp-actions">
      <a class="outline" href="#dia-2/conversoes" data-study-route="dia-2/conversoes">Mais conversões →</a>
-     <a class="outline" href="#dia-2/apostas" data-study-route="dia-2/apostas">Abrir as apostas do Dia 2 →</a>
+     <a class="outline" href="#dia-2/exercicios" data-study-route="dia-2/exercicios">Praticar em exercícios →</a>
     </div>
     <p class="aula-source">Relações entre escalas. <a href="https://www.nist.gov/pml/owm/si-units-temperature" target="_blank" rel="noopener noreferrer">NIST ↗</a></p>
    </div>

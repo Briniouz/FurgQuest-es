@@ -34,7 +34,6 @@
      ['simulados','Simulado do Dia 2','Prova do segundo dia por ano','◷'],
     ],
     treinamento:[
-     ['apostas','Apostas do Dia 2','Prioridades de Biologia 2026 e questões da Parte 15','✦'],
      ['dia2','Treino guiado do Dia 2','Raciocínio, flashcards e revisão de erros','∑'],
      ['exercicios','Exercícios autorais','Questões por matéria com resolução em etapas','✓'],
      ['matematica-lab','Laboratório de Matemática','Desafios com tempo e caderno de erros','×'],
@@ -114,7 +113,6 @@
   aquecimento:{view:'leve',open:()=>globalThis.FurgLightReview?.showDayOne()},
   repertorios:{view:'vespera',open:()=>globalThis.FurgVespera?.showRepertories()},
   formulas:{view:'dia2',open:()=>globalThis.FurgDia2?.showGuide()},
-  apostas:{view:'dia2',open:()=>globalThis.FurgDia2?.showTraining()},
   oficina:{view:'dia2',open:()=>globalThis.FurgDia2?.showWorkshop()},
   'transmissao-calor':{view:'dia2',open:()=>globalThis.FurgDia2?.showWorkshop('transmissao')},
   conversoes:{view:'dia2',open:()=>globalThis.FurgDia2?.showConversions()},
