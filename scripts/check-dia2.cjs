@@ -194,7 +194,7 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
    if(lesson.lab)assert(ctx.FurgDia2Labs.labs[lesson.lab]);
   }
  }
- assert.equal(lessonIds.size,39);
+ assert.equal(lessonIds.size,43);
  const biology=ctx.FurgDia2Biology;
  const challengeIds=new Set();
  for(const [id,checks] of Object.entries(biology.checks)){

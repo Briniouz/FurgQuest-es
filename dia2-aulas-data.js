@@ -64,54 +64,6 @@ globalThis.FURG_DIA2_LESSONS = {
    check:{prompt:'A altura de uma bola é h(t) = −5t² + 20t, com t em segundos. Em que instante ela atinge o ponto mais alto?',correct:2,choices:[['0 s','Em t = 0, a bola está no início da trajetória, com altura zero.'],['4 s','Em 4 s, a função volta a dar altura zero. O máximo fica entre os dois zeros.'],['2 s','A parábola tem máximo no vértice. −20/(2 × −5) = 2 s.']]}
   },
   {
-   id:'geometria-plana', title:'Geometria plana e triângulos', card:'areas',
-   lead:'Uma cerca acompanha o contorno. Uma pintura cobre uma superfície. Descobrir o que vai ser medido já escolhe metade do caminho.',
-   parts:[
-    ['Contorno e superfície', 'Perímetro é comprimento da borda. Área é medida da superfície. Para um retângulo, P = 2(b + h) e A = b × h. Um triângulo de mesma base e mesma altura tem metade dessa área.'],
-    ['A altura é perpendicular', 'Em um triângulo retângulo, a hipotenusa fica diante do ângulo de 90°. O teorema de Pitágoras relaciona seus lados: hipotenusa² = cateto₁² + cateto₂². Seno, cosseno e tangente comparam lados em relação ao ângulo escolhido.'],
-    ['Recorta ou completa', 'Se o contorno tem formato irregular, divide a figura em partes conhecidas ou completa um retângulo e subtrai o recorte. No círculo, área é πr² e contorno é 2πr. Confere se a medida dada é raio ou diâmetro.']
-   ],
-   example:['Um terreno retangular mede 12 m por 8 m. Um canteiro triangular ocupa um canto, com base de 6 m e altura perpendicular de 4 m.', 'Área do terreno: 12 × 8 = 96 m².', 'Área do canteiro: 6 × 4 ÷ 2 = 12 m².', 'A área restante é 96 − 12 = 84 m².'],
-   exam:'Se a figura for uma vista inclinada, procura a altura perpendicular marcada. O lado inclinado pode ter outro comprimento.',
-   check:{prompt:'Os catetos de um triângulo retângulo medem 6 m e 8 m. Quanto mede a hipotenusa?',correct:0,choices:[['10 m','6² + 8² = 36 + 64 = 100. A raiz quadrada de 100 é 10.'],['14 m','A relação usa os quadrados dos lados. Somar os catetos daria o comprimento dos dois trechos percorridos.'],['100 m','O resultado 100 é o quadrado da hipotenusa, em m². Extrai a raiz para voltar a metros.']]}
-  },
-  {
-   id:'volumes', title:'Volumes e capacidade', card:'volumes', lab:'solidos',
-   lead:'Imagina empilhar fatias de mesma área. Esse raciocínio ajuda a ver por que volume de caixa e volume de cilindro usam área da base vezes altura.',
-   parts:[
-    ['Identifica a base e a altura', 'A base de um cubo de lado a mede a², e a altura mede a, então V = a³. Para o cilindro, a base é um círculo: V = πr²h. A altura é perpendicular à base.'],
-    ['Cone e pirâmide', 'Um cone tem um terço do volume do cilindro de mesma base e altura. Uma pirâmide tem um terço do volume do prisma correspondente. Se o diâmetro for dado, divide por dois para achar o raio.'],
-    ['Soma ou subtrai o que o comando pede', 'Para calcular o sólido restante, subtrai os volumes das cavidades efetivamente retiradas. Se o pedido for capacidade, calcula o espaço interno. Para converter, 1 dm³ = 1 L e 1 cm³ = 1 mL.']
-   ],
-   example:['Num cubo de lado 4 cm é retirada uma cavidade cônica de raio 2 cm e altura 4 cm. Usa π = 3.', 'Cubo: 4 × 4 × 4 = 64 cm³.', 'Cone: 3 × 2² × 4 ÷ 3 = 16 cm³.', 'A cavidade é a única retirada. Restam 64 − 16 = 48 cm³.'],
-   exam:'Marca o que é material e o que é vazio no desenho. Uma peça pode ter medidas repetidas que pertencem a regiões diferentes.',
-   check:{prompt:'Um cone e um cilindro têm o mesmo raio e a mesma altura. O cilindro tem 90 cm³. Qual é o volume do cone?',correct:1,choices:[['90 cm³','A área da base e a altura coincidem, mas as fatias do cone diminuem em direção ao vértice.'],['30 cm³','O cone tem um terço de πr²h. Então 90 ÷ 3 = 30 cm³.'],['270 cm³','Multiplicar por três serve para ir do volume do cone ao do cilindro correspondente.']]}
-  },
-  {
-   id:'estatistica', title:'Estatística e leitura de gráficos', card:'mediana',
-   lead:'Um único número resume uma lista, mas cada resumo responde a uma pergunta diferente.',
-   parts:[
-    ['Lê o gráfico antes da conta', 'Confere o título, as unidades, a legenda e onde começa a escala. O tamanho visual de uma barra pode exagerar uma diferença quando o eixo começa acima de zero. Usa os valores do eixo para comparar.'],
-    ['Média e mediana', 'A média distribui a soma igualmente pelos dados. A mediana é o centro da lista ordenada. Com quantidade par de dados, faz a média dos dois centrais. Valores extremos podem mudar bastante a média e pouco a mediana.'],
-    ['Pesos e frequência', 'Se uma nota vale peso 2, ela entra duas vezes no total ponderado. Multiplica cada valor pelo peso, soma e divide pela soma dos pesos. Em tabelas de frequência, a quantidade de ocorrências faz esse papel.']
-   ],
-   example:['Quatro tempos de viagem foram 20, 25, 25 e 90 min. Qual medida descreve melhor um tempo típico desses quatro dias?', 'Média = (20 + 25 + 25 + 90) ÷ 4 = 40 min.', 'Mediana = (25 + 25) ÷ 2 = 25 min.', 'Se o interesse é o centro da lista com menor influência do dia atípico, usa 25 min.'],
-   exam:'Decide se a comparação pede valor total, taxa por pessoa ou proporção do grupo. Os três podem ordenar os dados de formas diferentes.',
-   check:{prompt:'Qual é a média de 7 com peso 2 e 4 com peso 1?',correct:2,choices:[['5,5','Essa média dá o mesmo peso às duas notas. O 7 conta duas vezes.'],['9','Dividir 18 por 2 usa o número de notas. O denominador correto é a soma dos pesos, 3.'],['6','O total ponderado é 7 × 2 + 4 × 1 = 18. A soma dos pesos é 3.']]}
-  },
-  {
-   id:'probabilidade', title:'Contagem e probabilidade', card:'probabilidade',
-   lead:'Antes de usar uma fórmula, lista o que pode acontecer e decide quando duas situações representam o mesmo resultado.',
-   parts:[
-    ['Conta pelas etapas', 'Se tens três camisetas e duas calças, cada camiseta pode combinar com duas calças. Há 3 × 2 = 6 combinações. Se a ordem importa, os resultados A–B e B–A são diferentes.'],
-    ['Possíveis e favoráveis', 'Com resultados igualmente prováveis, P = casos favoráveis ÷ casos possíveis. Com cartas ou objetos retirados sem devolução, o total e o número de favoráveis podem mudar na segunda retirada.'],
-    ['Usa o complemento quando ajuda', 'Para calcular “pelo menos um”, pode ser mais rápido calcular a chance de nenhum e subtrair de 1. Confere as condições de independência. Se o problema já informa uma característica, restringe o grupo antes de dividir.']
-   ],
-   example:['Uma caixa tem 3 fichas verdes e 2 azuis. Duas serão retiradas ao acaso, sem devolução. Qual é a chance de ambas serem verdes?', 'Primeira verde: 3/5.', 'Com uma verde retirada, restam duas verdes entre quatro fichas. A chance condicional é 2/4.', 'Para as duas etapas acontecerem, multiplica 3/5 × 2/4 = 3/10, ou 30%.'],
-   exam:'Distingue “com reposição”, “sem reposição”, “pelo menos” e “sabendo que”. Essas expressões mudam quais casos entram na conta.',
-   check:{prompt:'Qual é a chance de sair pelo menos uma cara em dois lançamentos independentes de uma moeda justa?',correct:0,choices:[['3/4','O único caso sem cara é coroa–coroa, de chance 1/4. O complemento é 3/4.'],['1/2','Essa é a chance de cara em um só lançamento. Aqui basta uma cara em qualquer um dos dois.'],['1/4','Essa é a chance de duas caras, ou de duas coroas. O pedido inclui todos os resultados com uma ou duas caras.']]}
-  },
-  {
     "id": "polinomios",
     "title": "Polinômios: termos, grau e operações",
     "card": "polinomios-base",
@@ -200,6 +152,54 @@ globalThis.FURG_DIA2_LESSONS = {
         ]
       ]
     }
+  },
+  {
+   id:'geometria-plana', title:'Geometria plana e triângulos', card:'areas',
+   lead:'Uma cerca acompanha o contorno. Uma pintura cobre uma superfície. Descobrir o que vai ser medido já escolhe metade do caminho.',
+   parts:[
+    ['Contorno e superfície', 'Perímetro é comprimento da borda. Área é medida da superfície. Para um retângulo, P = 2(b + h) e A = b × h. Um triângulo de mesma base e mesma altura tem metade dessa área.'],
+    ['A altura é perpendicular', 'Em um triângulo retângulo, a hipotenusa fica diante do ângulo de 90°. O teorema de Pitágoras relaciona seus lados: hipotenusa² = cateto₁² + cateto₂². Seno, cosseno e tangente comparam lados em relação ao ângulo escolhido.'],
+    ['Recorta ou completa', 'Se o contorno tem formato irregular, divide a figura em partes conhecidas ou completa um retângulo e subtrai o recorte. No círculo, área é πr² e contorno é 2πr. Confere se a medida dada é raio ou diâmetro.']
+   ],
+   example:['Um terreno retangular mede 12 m por 8 m. Um canteiro triangular ocupa um canto, com base de 6 m e altura perpendicular de 4 m.', 'Área do terreno: 12 × 8 = 96 m².', 'Área do canteiro: 6 × 4 ÷ 2 = 12 m².', 'A área restante é 96 − 12 = 84 m².'],
+   exam:'Se a figura for uma vista inclinada, procura a altura perpendicular marcada. O lado inclinado pode ter outro comprimento.',
+   check:{prompt:'Os catetos de um triângulo retângulo medem 6 m e 8 m. Quanto mede a hipotenusa?',correct:0,choices:[['10 m','6² + 8² = 36 + 64 = 100. A raiz quadrada de 100 é 10.'],['14 m','A relação usa os quadrados dos lados. Somar os catetos daria o comprimento dos dois trechos percorridos.'],['100 m','O resultado 100 é o quadrado da hipotenusa, em m². Extrai a raiz para voltar a metros.']]}
+  },
+  {
+   id:'volumes', title:'Volumes e capacidade', card:'volumes', lab:'solidos',
+   lead:'Imagina empilhar fatias de mesma área. Esse raciocínio ajuda a ver por que volume de caixa e volume de cilindro usam área da base vezes altura.',
+   parts:[
+    ['Identifica a base e a altura', 'A base de um cubo de lado a mede a², e a altura mede a, então V = a³. Para o cilindro, a base é um círculo: V = πr²h. A altura é perpendicular à base.'],
+    ['Cone e pirâmide', 'Um cone tem um terço do volume do cilindro de mesma base e altura. Uma pirâmide tem um terço do volume do prisma correspondente. Se o diâmetro for dado, divide por dois para achar o raio.'],
+    ['Soma ou subtrai o que o comando pede', 'Para calcular o sólido restante, subtrai os volumes das cavidades efetivamente retiradas. Se o pedido for capacidade, calcula o espaço interno. Para converter, 1 dm³ = 1 L e 1 cm³ = 1 mL.']
+   ],
+   example:['Num cubo de lado 4 cm é retirada uma cavidade cônica de raio 2 cm e altura 4 cm. Usa π = 3.', 'Cubo: 4 × 4 × 4 = 64 cm³.', 'Cone: 3 × 2² × 4 ÷ 3 = 16 cm³.', 'A cavidade é a única retirada. Restam 64 − 16 = 48 cm³.'],
+   exam:'Marca o que é material e o que é vazio no desenho. Uma peça pode ter medidas repetidas que pertencem a regiões diferentes.',
+   check:{prompt:'Um cone e um cilindro têm o mesmo raio e a mesma altura. O cilindro tem 90 cm³. Qual é o volume do cone?',correct:1,choices:[['90 cm³','A área da base e a altura coincidem, mas as fatias do cone diminuem em direção ao vértice.'],['30 cm³','O cone tem um terço de πr²h. Então 90 ÷ 3 = 30 cm³.'],['270 cm³','Multiplicar por três serve para ir do volume do cone ao do cilindro correspondente.']]}
+  },
+  {
+   id:'estatistica', title:'Estatística e leitura de gráficos', card:'mediana',
+   lead:'Um único número resume uma lista, mas cada resumo responde a uma pergunta diferente.',
+   parts:[
+    ['Lê o gráfico antes da conta', 'Confere o título, as unidades, a legenda e onde começa a escala. O tamanho visual de uma barra pode exagerar uma diferença quando o eixo começa acima de zero. Usa os valores do eixo para comparar.'],
+    ['Média e mediana', 'A média distribui a soma igualmente pelos dados. A mediana é o centro da lista ordenada. Com quantidade par de dados, faz a média dos dois centrais. Valores extremos podem mudar bastante a média e pouco a mediana.'],
+    ['Pesos e frequência', 'Se uma nota vale peso 2, ela entra duas vezes no total ponderado. Multiplica cada valor pelo peso, soma e divide pela soma dos pesos. Em tabelas de frequência, a quantidade de ocorrências faz esse papel.']
+   ],
+   example:['Quatro tempos de viagem foram 20, 25, 25 e 90 min. Qual medida descreve melhor um tempo típico desses quatro dias?', 'Média = (20 + 25 + 25 + 90) ÷ 4 = 40 min.', 'Mediana = (25 + 25) ÷ 2 = 25 min.', 'Se o interesse é o centro da lista com menor influência do dia atípico, usa 25 min.'],
+   exam:'Decide se a comparação pede valor total, taxa por pessoa ou proporção do grupo. Os três podem ordenar os dados de formas diferentes.',
+   check:{prompt:'Qual é a média de 7 com peso 2 e 4 com peso 1?',correct:2,choices:[['5,5','Essa média dá o mesmo peso às duas notas. O 7 conta duas vezes.'],['9','Dividir 18 por 2 usa o número de notas. O denominador correto é a soma dos pesos, 3.'],['6','O total ponderado é 7 × 2 + 4 × 1 = 18. A soma dos pesos é 3.']]}
+  },
+  {
+   id:'probabilidade', title:'Contagem e probabilidade', card:'probabilidade',
+   lead:'Antes de usar uma fórmula, lista o que pode acontecer e decide quando duas situações representam o mesmo resultado.',
+   parts:[
+    ['Conta pelas etapas', 'Se tens três camisetas e duas calças, cada camiseta pode combinar com duas calças. Há 3 × 2 = 6 combinações. Se a ordem importa, os resultados A–B e B–A são diferentes.'],
+    ['Possíveis e favoráveis', 'Com resultados igualmente prováveis, P = casos favoráveis ÷ casos possíveis. Com cartas ou objetos retirados sem devolução, o total e o número de favoráveis podem mudar na segunda retirada.'],
+    ['Usa o complemento quando ajuda', 'Para calcular “pelo menos um”, pode ser mais rápido calcular a chance de nenhum e subtrair de 1. Confere as condições de independência. Se o problema já informa uma característica, restringe o grupo antes de dividir.']
+   ],
+   example:['Uma caixa tem 3 fichas verdes e 2 azuis. Duas serão retiradas ao acaso, sem devolução. Qual é a chance de ambas serem verdes?', 'Primeira verde: 3/5.', 'Com uma verde retirada, restam duas verdes entre quatro fichas. A chance condicional é 2/4.', 'Para as duas etapas acontecerem, multiplica 3/5 × 2/4 = 3/10, ou 30%.'],
+   exam:'Distingue “com reposição”, “sem reposição”, “pelo menos” e “sabendo que”. Essas expressões mudam quais casos entram na conta.',
+   check:{prompt:'Qual é a chance de sair pelo menos uma cara em dois lançamentos independentes de uma moeda justa?',correct:0,choices:[['3/4','O único caso sem cara é coroa–coroa, de chance 1/4. O complemento é 3/4.'],['1/2','Essa é a chance de cara em um só lançamento. Aqui basta uma cara em qualquer um dos dois.'],['1/4','Essa é a chance de duas caras, ou de duas coroas. O pedido inclui todos os resultados com uma ou duas caras.']]}
   }
  ],
  fisica: [

@@ -111,12 +111,10 @@
      lesson('solucoes','Entende concentração e diluição.',{related:[related('matematica','proporcao')]}),
      lesson('ph','Compara acidez e basicidade.')
     ]),
-    branch('transformacoes','green','Energia e materiais','Da reação aos circuitos e polímeros.',[
+    branch('transformacoes','green','Energia, orgânica e bioquímica','Das reações às biomoléculas.',[
      lesson('termoquimica','Separa calor, velocidade e equilíbrio.',{related:[related('fisica','calor')]}),
      lesson('eletroquimica','Segue os elétrons numa pilha.',{related:[related('fisica','circuitos')]}),
-     lesson('organica','Reconhece grupos e cadeias de carbono.')
-    ]),
-    branch('bioquimica','cyan','Bioquímica','Das ligações químicas ao metabolismo.',[
+     lesson('organica','Reconhece grupos e cadeias de carbono.'),
      lesson('bioquimica','Relaciona estrutura e função das biomoléculas.',{related:[related('biologia','celula')],terms:['carboidratos','lipídios','proteínas','DNA','hidrólise']}),
      lesson('enzimas-atp','Lê a ação de enzimas e entende o ATP.',{related:[related('biologia','metabolismo')],terms:['enzimas','energia de ativação','ATP','metabolismo']})
     ])
