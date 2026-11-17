@@ -55,7 +55,7 @@
    },
   },
   engenharias:{
-   label:'Engenharias',title:'Da Trigonometria ao Cálculo',symbol:'∫',
+   label:'Engenharias',title:'Engenharias',symbol:'∫',
    subjects:['Trigonometria','Geometria Analítica','Limites','Derivadas','Integrais'],questionAreas:[],
    menus:{
     estudos:[
@@ -89,7 +89,7 @@
  areas['dia-2'].menus.estudos[1][1]='Todas as aulas';
  const generalMenus={
   estudos:[
-   ['engenharias/passo-a-passo','Engenharias passo a passo','Trigonometria, Geometria Analítica e Cálculo','∫'],
+   ['engenharias/passo-a-passo','Engenharias','Trigonometria, Geometria Analítica e Cálculo','∫'],
    ['dia-2/passo-a-passo','Aprender passo a passo','Matemática, Física, Química e Biologia, desde a base','↪'],
    ['dia-1/linguagens','Guias de Linguagens','Interpretação, literatura e língua','Aa'],
    ['dia-1/repertorios','Redação e repertórios','Referências, argumentos e exemplos','✎'],

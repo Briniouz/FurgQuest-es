@@ -10,22 +10,22 @@ html[data-study-space="engenharias"] :is(#lightLauncher,#studyGuideLauncher,#qui
 html[data-study-space="engenharias"] .page-heading { display:none; }
 @media(max-width:950px) { .study-choices {grid-template-columns:repeat(2,minmax(0,1fr));}.study-choice[data-day="engineering"]{grid-column:1/-1;min-height:230px;} }
 @media(max-width:590px) { .study-choices {grid-template-columns:1fr;}.study-choice[data-day="engineering"]{grid-column:auto;min-height:212px;} }
-#engineering { width:min(100%,1050px);margin-inline:auto;color:var(--ink); }
-#engineering h1,#engineering h2,#engineering h3,#engineering h4 { line-height:1.16;letter-spacing:-.025em; }
-#engineering h1 { font-size:clamp(31px,4.1vw,54px);margin:0 0 13px; }
-#engineering h2 { font-size:clamp(22px,2.4vw,29px);margin:0 0 8px; }
-#engineering p { line-height:1.65; }
-#engineering a { text-decoration:none; }
-#engineering a:focus-visible,#engineering button:focus-visible,#engineering summary:focus-visible,#engineering input:focus-visible { outline:3px solid var(--blue);outline-offset:3px; }
+#engenharias { width:min(100%,1050px);margin-inline:auto;color:var(--ink); }
+#engenharias h1,#engenharias h2,#engenharias h3,#engenharias h4 { line-height:1.16;letter-spacing:-.025em; }
+#engenharias h1 { font-size:clamp(31px,4.1vw,54px);margin:0 0 13px; }
+#engenharias h2 { font-size:clamp(22px,2.4vw,29px);margin:0 0 8px; }
+#engenharias p { line-height:1.65; }
+#engenharias a { text-decoration:none; }
+#engenharias a:focus-visible,#engenharias button:focus-visible,#engenharias summary:focus-visible,#engenharias input:focus-visible { outline:3px solid var(--blue);outline-offset:3px; }
 .eng-intro,.eng-section-heading,.eng-lesson-header { margin-bottom:22px; }
 .eng-intro>p:not(.study-kicker),.eng-section-heading>p:not(.study-kicker),.eng-lesson-header>p:not(.study-kicker) { max-width:68ch;color:var(--muted);font-size:clamp(15px,1.6vw,18px);margin:0 0 12px; }
 .eng-intro .eng-source { font-size:13px!important;border-left:3px solid var(--blue);padding-left:12px;margin-top:17px!important; }
 .eng-pill { display:inline-flex;border-radius:99px;border:1px solid var(--line);background:var(--surface-2);padding:5px 11px;font-size:12px;color:var(--blue);font-weight:750; }
 .eng-start { display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 25px;margin-bottom:25px; }
 .eng-start h2 { margin:12px 0 2px!important; }.eng-start p { margin:0;color:var(--muted); }
-#engineering a.primary,#engineering a.outline { display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 15px;border-radius:10px;white-space:nowrap; }
-#engineering a.primary { background:var(--blue);color:#fff; }
-#engineering a.outline { border:1px solid var(--line);color:var(--ink);background:var(--surface); }
+#engenharias a.primary,#engenharias a.outline { display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 15px;border-radius:10px;white-space:nowrap; }
+#engenharias a.primary { background:var(--blue);color:#fff; }
+#engenharias a.outline { border:1px solid var(--line);color:var(--ink);background:var(--surface); }
 .eng-chapters { display:grid;gap:22px; }
 .eng-chapter,.eng-progress-chapter,.eng-practice-group { border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:clamp(16px,2.5vw,25px); }
 .eng-chapter>header { display:flex;align-items:flex-start;gap:15px;margin-bottom:17px; }
@@ -64,3 +64,69 @@ html[data-study-space="engenharias"] .page-heading { display:none; }
 .eng-progress-chapter h2 { margin-bottom:12px!important; }.eng-progress-chapter ul { padding:0;margin:0;list-style:none;display:grid;gap:10px; }.eng-progress-chapter li { display:flex;align-items:center;gap:10px; }.eng-progress-chapter li span { color:var(--blue);font-weight:800; }.eng-progress-chapter li a { color:var(--ink); }.eng-empty { padding:25px; }
 @media(max-width:760px) { .eng-lesson-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }.eng-visual { grid-template-columns:1fr; }.eng-visual-art svg { max-width:260px; }.eng-start { align-items:flex-start;flex-direction:column; } }
 @media(max-width:520px) { .eng-lesson-grid { grid-template-columns:1fr; }.eng-lesson-card { min-height:115px; }.eng-step-tabs { gap:4px; }.eng-step-tabs button { font-size:12px;padding:10px 5px; }.eng-lesson-footer { flex-wrap:wrap; }.eng-lesson-footer a { flex:1 1 auto; }.eng-practice-group>header { align-items:flex-start;flex-direction:column; } }
+
+/* Engenharias usa o mesmo ritmo visual do índice e das aulas do Dia 2. */
+#engenharias { width:min(100%,1160px); }
+#engenharias .eng-view { --d2-accent:var(--blue);--d2-border:var(--line);--d2-tint:var(--surface-2);--d2-selected:var(--surface-3); }
+#engenharias .eng-hero { margin-bottom:16px; }
+#engenharias .eng-hero h1 { font-size:clamp(28px,4.8vw,48px);margin:4px 0 7px; }
+#engenharias .eng-nav { display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin:0 0 16px; }
+#engenharias .eng-chapter-tabs { display:flex;gap:6px;flex-wrap:wrap; }
+#engenharias .eng-chapter-tab { display:inline-flex;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font-size:12px;font-weight:680; }
+#engenharias .eng-chapter-tab:hover,#engenharias .eng-chapter-tab.is-active { color:var(--blue);background:var(--surface-2);border-color:var(--blue); }
+#engenharias .aula-mode-tabs { margin:0; }
+#engenharias .eng-mode-tab { color:var(--ink);white-space:nowrap; }
+#engenharias .eng-mode-tab.is-active { background:var(--surface);color:var(--blue);font-weight:760; }
+#engenharias .eng-index { min-width:0; }
+#engenharias .eng-index nav { gap:10px; }
+#engenharias .eng-index ol { display:block; }
+#engenharias .eng-index a { display:grid;grid-template-columns:27px minmax(0,1fr) 17px;white-space:normal; }
+#engenharias .eng-article { min-width:0; }
+#engenharias .eng-article h2 { font-size:clamp(26px,4vw,40px);margin:6px 0 8px; }
+#engenharias .eng-article h3 { font-size:19px;line-height:1.3;margin:0 0 10px; }
+#engenharias .eng-chapter-source { color:var(--muted);font-size:13px;margin:7px 0 0; }
+#engenharias .guided-steps { margin:20px 0; }
+#engenharias .guided-steps button.outline { min-height:38px;padding:7px 12px; }
+#engenharias .eng-reading,#engenharias .eng-example-section { scroll-margin-top:115px;margin:22px 0 28px; }
+#engenharias .eng-reading p { margin:0;line-height:1.7; }
+#engenharias .eng-question-guide { border-left:3px solid var(--blue);padding:8px 14px;margin-top:18px;background:var(--surface-2); }
+#engenharias .eng-question-guide p { color:var(--muted);margin:2px 0 0; }
+#engenharias .eng-example-section .eng-visual { margin:14px 0 15px; }
+#engenharias .eng-solved { margin-bottom:24px;border:1px solid var(--line);border-radius:12px;padding:12px 17px; }
+#engenharias .eng-solved summary,#engenharias .eng-hint summary,#engenharias .eng-feedback summary { cursor:pointer;color:var(--blue);font-weight:720; }
+#engenharias .eng-solved section { border-top:1px solid var(--line);margin-top:12px;padding-top:10px; }
+#engenharias .eng-solved h4 { margin:0 0 5px; }
+#engenharias .eng-solved p { margin:3px 0;font-size:14px; }
+#engenharias .eng-map { margin:0; }
+#engenharias .eng-map-group { border-top:1px solid var(--line);padding:18px 0 8px; }
+#engenharias .eng-map-group:first-of-type { margin-top:15px; }
+#engenharias .eng-map-group h3 { margin:0 0 4px;font-size:18px; }
+#engenharias .eng-map-group h3 small { font-weight:450;color:var(--muted);font-size:12px; }
+#engenharias .eng-map-group p { margin:0;color:var(--muted);font-size:14px; }
+#engenharias .eng-map-group .guided-map-list { margin:12px 0; }
+#engenharias .eng-map-group .guided-map-list a { min-height:56px; }
+#engenharias .eng-quiz { scroll-margin-top:115px;margin:24px 0;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2); }
+#engenharias .eng-quiz h3 { margin:8px 0 16px; }
+#engenharias .eng-options { display:grid;gap:8px; }
+#engenharias .eng-options button { display:flex;gap:12px;align-items:center;min-height:48px;text-align:left;background:var(--surface); }
+#engenharias .eng-options button b { color:var(--blue); }
+#engenharias .eng-options button[aria-pressed="true"] { border-color:var(--blue);background:var(--surface-3); }
+#engenharias .eng-options button.is-correct { border-color:#26845a;background:color-mix(in srgb,#26845a 13%,var(--surface)); }
+#engenharias .eng-options button.is-wrong { border-color:#bc5749;background:color-mix(in srgb,#bc5749 12%,var(--surface)); }
+#engenharias .eng-options button:disabled { opacity:1;cursor:default; }
+#engenharias .eng-hint { margin:14px 0; }.eng-hint p { margin:7px 0;color:var(--muted);font-size:14px; }
+#engenharias .eng-feedback { min-height:0;margin-top:18px;padding:15px;border:1px solid var(--line);border-radius:12px;background:var(--surface); }
+#engenharias .eng-feedback[hidden] { display:none; }
+#engenharias .eng-feedback h4 { margin:0 0 7px;font-size:17px; }
+#engenharias .eng-feedback p { font-size:15px;margin:8px 0; }
+#engenharias .eng-feedback details { margin:12px 0; }
+#engenharias .eng-feedback li { padding:3px 0; }
+#engenharias .eng-feedback button { margin-top:8px; }
+#engenharias .eng-quiz-progress { margin:12px 0 0;font-size:12px;color:var(--muted); }
+#engenharias .eng-bank progress { width:100%;accent-color:var(--blue);margin:12px 0; }
+#engenharias .eng-bank>p:not(.aula-overline):not(.aula-lead) { color:var(--muted); }
+#engenharias .eng-lesson-footer { border-top:1px solid var(--line);padding-top:16px; }
+#engenharias .eng-lesson-footer a { white-space:normal; }
+#engenharias .aula-source { margin:16px 0; }
+@media(max-width:899px){ #engenharias .eng-index { max-height:280px; } }
+@media(max-width:600px){ #engenharias .eng-nav { display:block; }#engenharias .eng-chapter-tabs { flex-wrap:nowrap;overflow:auto;padding-bottom:8px; }#engenharias .eng-chapter-tab { flex:none; }#engenharias .aula-mode-tabs { display:flex; }#engenharias .eng-options button { min-height:50px; } }
