@@ -36,3 +36,10 @@ html[data-study-space="dia-1"] #navMental{display:none}
  html:not([data-study-view="inicio"]) .header .header-nav nav{grid-template-columns:repeat(3,minmax(0,1fr))}
  #navPerformance{grid-column:-2}
 }
+
+/* Five visible destinations fit on mobile; secondary tools live in the menus. */
+@media(max-width:520px){
+ html:not([data-study-view="inicio"]) .header .header-nav nav{grid-template-columns:repeat(5,minmax(0,1fr))}
+ #mainNavigation button>strong{font-size:clamp(9px,2.6vw,11px)}
+}
+html[data-study-view="inicio"] .header-nav{display:none}

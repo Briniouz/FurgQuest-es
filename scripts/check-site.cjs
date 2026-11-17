@@ -1,5 +1,5 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
-const previewFile=process.argv[2],progressKey=previewFile?'furg-questoes-enem-preview-v1':'furg-questoes-progress-v1',html=fs.readFileSync(previewFile||'index.html','utf8'),markup=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g,''),ids=[...markup.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
+const previewFile=process.argv[2]==='--navigation-only'?undefined:process.argv[2],progressKey=previewFile?'furg-questoes-enem-preview-v1':'furg-questoes-progress-v1',html=fs.readFileSync(previewFile||'index.html','utf8'),markup=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g,''),ids=[...markup.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
 assert.equal(new Set(ids).size,ids.length,'Duplicate HTML ID');
 for(const[,file]of html.matchAll(/(?:src|href)="([^"?#]+\.(?:js|css))(?:\?[^"]*)?"/g))assert(fs.existsSync(file),file);
 const db=JSON.parse(fs.readFileSync('data.json','utf8')),refs=new Set();
@@ -201,7 +201,8 @@ async function checkEnemSimulations(){
   vm.runInContext('state='+snapshot,ctx);vm.runInContext('globalThis.FurgEnemSim.init({getState:()=>state,save,toast})',ctx);
   assert.equal(errors.length,0);console.log('PASS: annual ENEM simulations 2010+, both days/languages, original order, hidden keys, pause/resume, persisted answers, export/import, completion, annulments, review and time expiry.');
 }
-checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).then(checkExamSubjectEditing).then(checkLightReview).then(checkAnatomy).then(checkDayOne).then(checkGroupedNavigation).then(()=>require('./check-study-guide.cjs').integration(studyAdditionContext())).then(checkVesperaBackup).then(()=>ctx.FurgDia2 && require('./check-dia2.cjs')(studyAdditionContext())).then(()=>ctx.FurgMathLab && require('./check-math-lab.cjs')(studyAdditionContext())).catch(error=>{console.error(error);process.exitCode=1;});
+if(process.argv.includes('--navigation-only')){Promise.resolve().then(checkGroupedNavigation).catch(error=>{console.error(error);process.exitCode=1;});}
+else checkProfile().then(checkEnemSimulations).then(checkLevelUp).then(checkFuvest).then(checkBiologyAndSubjects).then(checkExamSubjectEditing).then(checkLightReview).then(checkAnatomy).then(checkDayOne).then(checkGroupedNavigation).then(()=>require('./check-study-guide.cjs').integration(studyAdditionContext())).then(checkVesperaBackup).then(()=>ctx.FurgDia2 && require('./check-dia2.cjs')(studyAdditionContext())).then(()=>ctx.FurgMathLab && require('./check-math-lab.cjs')(studyAdditionContext())).catch(error=>{console.error(error);process.exitCode=1;});
 
 async function checkLevelUp(){return require('./check-levelup-rounds.cjs')({ctx,$,vm,events,assert,storage,progressKey,exported,fs,errors});}
 

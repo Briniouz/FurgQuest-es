@@ -142,7 +142,7 @@
         <b>${result.correct}/${result.graded} <span>↗</span></b>
       </button>`;
     });
-    return '<div class="panel enem-exam-history"><div class="enem-exam-review-actions"><h3>Teus simulados do ENEM</h3><button class="outline" data-enem-sim="mistakes">Caderno de erros</button></div>'+
+    return '<div class="panel enem-exam-history" id="enemSimHistory"><div class="enem-exam-review-actions"><h3>Teus simulados do ENEM</h3><button class="outline" data-enem-sim="mistakes">Caderno de erros</button></div>'+
       (rows.join('')||'<p class="muted">Teu primeiro resultado aparece aqui. O simulado em andamento fica salvo neste navegador.</p>')+'</div>';
   }
 
@@ -434,7 +434,7 @@
   function renderMistakes(day){
     const ids=Object.entries(state().mistakes).sort(([,a],[,b])=>b.date.localeCompare(a.date))
       .map(([id])=>id).filter(id=>!day||globalThis.FurgStudyAreas.contains('dia-'+day,tri.areaOf(byId.get(id))));
-    $('enemSimRoot').innerHTML=`<section class="panel enem-exam-history">
+    $('enemSimRoot').innerHTML=`<section class="panel enem-exam-history" id="enemSimHistory">
       <div class="enem-exam-review-actions"><h2>Caderno de erros</h2><button class="outline" data-enem-sim="back-mistakes">← Voltar</button></div>
       <p>${ids.length?ids.length+' questões guardadas neste navegador.':'Na correção do simulado, usa “Salvar erros no caderno”.'}</p>
       ${topicsMarkup(mistakeGroups(ids))}
@@ -564,5 +564,5 @@
     settings=settingsByDay[fixedDay]??=defaultSettings(fixedDay);
     Object.assign(settings,{mode:'year',day,minutes:null});resultId=null;reviewingMistakes=false;render();return true;
   }
-  globalThis.FurgEnemSim={selectDay,init,render,validate,merge,exam,years,minutes,score,handleKey,tick};
+  globalThis.FurgEnemSim={showBuilder:()=>{resultId=null;reviewingMistakes=false;render();},showMistakes:()=>{resultId=null;reviewingMistakes=true;render();},showSaved:()=>{resultId=null;reviewingMistakes=false;render();document.querySelector('.enem-exam-history')?.scrollIntoView({block:'start'});},selectDay,init,render,validate,merge,exam,years,minutes,score,handleKey,tick};
 })();

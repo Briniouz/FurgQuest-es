@@ -860,7 +860,7 @@
   globalThis.addEventListener?.('pagehide',flushDraft);
  }
 
- globalThis.FurgDia2 = {init, render, fresh, validate, merge, start, record, next, stats, errors, search, openGuide, showGuide:()=>changeTab('guia'),showTraining,
+ globalThis.FurgDia2 = {init, render, fresh, validate, merge, start, record, next, stats, errors, search, openGuide, showErrors:()=>changeTab('erros'),showGuide:()=>changeTab('guia'),showTraining,
   showConversions:()=>changeTab('conversoes'),showWorkshop:lab=>{if(lab)course?.selectLab(lab);changeTab('oficina');},
   showExercises:()=>{exerciseCard='';changeTab('exercicios');},flushDraft};
 })();

@@ -724,5 +724,5 @@
   });
   $('eveDictSearch').addEventListener('input',e=>{dictionaryQuery=e.target.value;dictionaryResults();});$('eveDictKind').addEventListener('change',e=>{dictionaryKind=e.target.value;dictionaryResults();});$('eveDictClose').onclick=()=>$('eveDictionary').close();$('eveDictionary').addEventListener('close',()=>{$('studyGuideLauncher')?.setAttribute('aria-expanded','false');lastFocus?.focus?.({preventScroll:true});});$('eveDictionary').addEventListener('keydown',e=>{e.stopPropagation();if(e.key==='Escape'){e.preventDefault();$('eveDictionary').close();}});
  }
- globalThis.FurgVespera={fresh,validate,merge,stats,search,init,render,start,record,next,errors,eligible,wasSeen,openDictionary,flushPending,showRepertories:()=>changeTab('repertories')};
+ globalThis.FurgVespera={fresh,validate,merge,stats,search,init,render,start,record,next,errors,eligible,wasSeen,openDictionary,flushPending,showErrors:()=>changeTab('errors'),showRepertories:()=>changeTab('repertories')};
 })();

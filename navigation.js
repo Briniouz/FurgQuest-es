@@ -2,8 +2,8 @@
 (() => {
  const $=id=>document.getElementById(id),nav=$('mainNavigation'),previous=$('navScrollPrevious'),next=$('navScrollNext');
  if(!nav||!previous||!next)return;
- const groups={provas:'Provas',treinamento:'Treinamento',estudos:'Estudos'};
- const names=['areas',...Object.keys(groups)],owners={vespera:'treinamento',dia2:'treinamento','matematica-lab':'treinamento',banco:'provas',enem:'provas',fuvest:'provas',anatomia:'treinamento',acervo:'provas',simulados:'provas',evolucao:'estudos',leve:'estudos',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos',configuracoes:'estudos'};
+ const groups={estudos:'Estudar',treinamento:'Praticar',provas:'Provas',revisao:'Revisar'};
+ const names=['areas',...Object.keys(groups)],owners={vespera:'treinamento',dia2:'treinamento','matematica-lab':'treinamento',banco:'treinamento',enem:'treinamento',fuvest:'treinamento',anatomia:'treinamento',acervo:'provas',simulados:'provas',desempenho:'revisao',evolucao:'treinamento',leve:'treinamento',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos',configuracoes:'estudos'};
  const topItems=()=>Array.from(nav.querySelectorAll('button')).filter(button=>!button.hidden);
  let adapter,opened='',bound=false,currentView='',returning=false,context='',routePath='';
  const trail=[];
@@ -26,7 +26,6 @@
   trigger('areas').hidden=landing;
   trigger('areas').setAttribute('aria-label','Trocar área de estudo · '+spaceLabel);
   $('navSpaceLabel').textContent=spaceLabel;
-  $('navMental').hidden=landing||space==='dia-1';
   for(const [id,label] of Object.entries(groups)){
    const button=trigger(id), title=button.querySelector('strong');
    button.hidden=landing;
@@ -34,10 +33,11 @@
    const general=$('navGeneral-'+id), scoped=$('navScoped-'+id);
    general.hidden=!!area;
    scoped.hidden=!area;
-   if(context!==space)scoped.innerHTML=area?area.menus[id].map(([page,title,detail,icon])=>
-    `<button type="button" class="nav" data-view="${study.viewOf(page)}" data-study-route="${space}/${page}">
-      <span class="nav-item-icon" aria-hidden="true">${icon}</span><span><strong>${title}</strong><small>${detail}</small></span>
-      <i aria-hidden="true">→</i></button>`).join(''):'';
+   if(context!==space){
+    const target=area?scoped:general;
+    target.innerHTML=study.menusFor(space)[id].map(([page,title,detail,icon])=>
+     `<button type="button" data-view="${study.viewOf(page,space)}" data-study-route="${study.routeFor(space,page)}"><span class="nav-item-icon" aria-hidden="true">${icon}</span><span><strong>${title}</strong><small>${detail}</small></span><i aria-hidden="true">→</i></button>`).join('');
+   }
   }
   context=space;
   for(const button of menu('areas').querySelectorAll('button')){
@@ -51,11 +51,12 @@
   const study=globalThis.FurgStudyAreas, area=study?.get(context);
   const direct=topItems().find(b=>b.dataset.view===current);
   let owner=owners[current];
-  if(area){
-   const section=match=>Object.keys(groups).find(id=>area.menus[id].some(([page])=>match(page)));
-   owner=section(page=>context+'/'+page===routePath)||section(page=>study.viewOf(page)===current);
+  {
+   const rows=study?.menusFor(context);
+   const section=match=>Object.keys(groups).find(id=>rows[id].some(([page])=>match(page)));
+   owner=section(page=>study.routeFor(context,page)===routePath)||section(page=>study.viewOf(page,context)===current)||owner;
    for(const id of Object.keys(groups)){
-    for(const button of $('navScoped-'+id).querySelectorAll('button')){
+    for(const button of $( (area?'navScoped-':'navGeneral-')+id).querySelectorAll('button')){
      const selected=button.dataset.studyRoute===routePath;
      button.classList.toggle('active',selected);
      if(selected)button.setAttribute('aria-current','page');
@@ -74,7 +75,7 @@
   update();
  }
  function afterNavigate(button) {
-  const target=button?.dataset.section, el=target?$(target):pageTitle();
+  const target=button?.dataset.section||(routePath.endsWith('simulados-salvos')?'enemSimHistory':''), el=target?$(target):pageTitle();
   if(el&&!el.hidden){el.setAttribute('tabindex','-1');el.focus({preventScroll:true});}
   if(target&&el&&!el.hidden)el.scrollIntoView({behavior:behavior(),block:'start'});
   else if(typeof window!=='undefined')window.scrollTo({top:0,behavior:behavior()});
