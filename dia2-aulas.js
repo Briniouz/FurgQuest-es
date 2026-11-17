@@ -111,6 +111,31 @@
   </section>`;
  }
 
+ function exerciseListMarkup(subject,lesson,mode='aulas'){
+  const list=globalThis.FURG_DIA2_EXERCISE_LISTS?.[lesson.id];
+  if(!list)return '';
+  let index=list.start;
+  const groups=list.groups.map(([title,questions])=>{
+   const start=index;
+   index+=questions.length;
+   return `<div class="aula-exercise-group">
+    <h4>${esc(title)}</h4>
+    <ol start="${start}">${questions.map(([prompt,solution])=>`<li>
+     <p>${esc(prompt)}</p>
+     <details><summary>Ver resolução</summary><p>${esc(solution)}</p></details>
+    </li>`).join('')}</ol>
+   </div>`;
+  }).join('');
+  const otherLesson=list.next||list.previous;
+  const otherLink=link(route(subject,otherLesson,mode),list.next?'Exercícios 7 a 12 →':'← Exercícios 1 a 6','quiet');
+  return `<section class="aula-exercise-list" aria-labelledby="aulaExerciseListTitle">
+   <h3 id="aulaExerciseListTitle">Lista progressiva · ${list.start} a ${index-1}</h3>
+   <p>Exercícios autorais. Tenta resolver antes de abrir a explicação.</p>
+   ${groups}
+   ${otherLink}
+  </section>`;
+ }
+
  function experimentMarkup(lesson,guided=false){
   const primary=`${lesson.lab?labs.markup(lesson.lab):''}
    ${studyLabs?.markup(globalThis.FurgStudyData?.layers[lesson.id]?.[4],'aula')||''}`;
@@ -208,6 +233,7 @@
       ${index+1===lessons.length?'Concluir e voltar à trilha →':done?'Próxima aula →':'Concluir e avançar →'}
      </button></div>
     <p id="guidedStatus" role="status"></p>
+    ${exerciseListMarkup(subject,lesson,guidedMode)}
     <aside class="aula-exam"><strong>Como reconhecer isso no ENEM?</strong><p>${esc(lesson.exam)}</p></aside>
     <details class="el-depth"><summary>Quero praticar mais</summary>${course?.practiceLinks(lesson.id)||''}</details>
    </section>
@@ -228,6 +254,7 @@
     ${maps.relatedLinks(lesson.id)}
     <aside class="aula-exam"><strong>Como reconhecer isso no ENEM?</strong><p>${esc(lesson.exam)}</p></aside>
     ${checkMarkup(check)}
+    ${exerciseListMarkup(subject,lesson)}
     ${course?.practiceLinks(lesson.id)||''}
     <div class="aula-lesson-actions">
      <button type="button" id="aulaMark" class="primary" aria-disabled="${done}">${done?'Aula estudada ✓':'Marcar como estudada'}</button>

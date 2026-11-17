@@ -684,3 +684,67 @@ globalThis.FURG_DIA2_PHYSICS_VIDEO = [
  ['Ondulatória','9:49:50','ondas','Relaciona velocidade, comprimento de onda e frequência por v = λf. Frequência é o número de oscilações por segundo.'],
  ['Fenômenos ondulatórios','11:21:10','ondas','No eco há reflexão. Ao mudar de meio com a interface parada, a frequência se mantém. Na difração, a onda se espalha ao passar por uma abertura ou contornar um obstáculo.'],
 ];
+
+// Exercícios autorais por aula, com numeração contínua dentro de cada assunto.
+globalThis.FURG_DIA2_EXERCISE_LISTS = {
+ "polinomios": {
+  start: 1, next: "raizes-polinomios",
+  groups: [
+   ["Reconhece as peças", [
+    ["Escreve os três termos de 3x² − 5x + 7, com o sinal de cada um.","Os termos são 3x², −5x e +7. O 7 é o termo constante porque não depende de x."],
+    ["Em −x³ + 4x − 2, qual é o coeficiente de x³? Qual é o grau do polinômio?","O coeficiente é −1, pois −x³ = (−1)x³. O maior expoente que aparece com coeficiente diferente de zero é 3, então o grau é 3."],
+    ["Para P(x) = 2x² − 3x + 1, calcula P(−2).","Coloca −2 entre parênteses em cada lugar de x. Assim, P(−2) = 2·4 + 6 + 1 = 15."]
+   ]],
+   ["Opera com os termos", [
+    ["Simplifica 4x² + 3x − x² + 5x − 2.","Junta os termos com a mesma potência. (4 − 1)x² + (3 + 5)x − 2 = 3x² + 8x − 2."],
+    ["Calcula (3x² + x − 4) − (x² − 2x + 1).","O sinal de menos muda todos os sinais do segundo parêntese. Fica 3x² + x − 4 − x² + 2x − 1 = 2x² + 3x − 5."],
+    ["Desenvolve (x + 2)(x − 3).","Distribui cada termo do primeiro parêntese pelos dois do segundo. Isso dá x² − 3x + 2x − 6 = x² − x − 6."]
+   ]]
+  ]
+ },
+ "raizes-polinomios": {
+  start: 7, previous: "polinomios",
+  groups: [
+   ["Fatora e encontra raízes", [
+    ["Fatora 3x² − 12x e encontra todos os valores de x que zeram a expressão.","Coloca 3x em evidência. O produto 3x(x − 4) zera quando x = 0 ou x = 4."],
+    ["Fatora x² − 25 e encontra as raízes.","É a diferença dos quadrados x² e 5². O produto (x − 5)(x + 5) zera quando x = 5 ou x = −5."],
+    ["Um retângulo tem lados x + 2 e x + 4 metros, com x ≥ 0. Quanto vale x se a área é 15 m²?","Multiplica os lados e iguala a 15. Isso dá x² + 6x − 7 = (x + 7)(x − 1) = 0. As raízes são −7 e 1. A condição x ≥ 0 deixa x = 1, com lados 3 m e 5 m."]
+   ]],
+   ["Conecta resto, divisão e sinal", [
+    ["Qual é o resto da divisão de P(x) = x³ − 2x + 1 por x − 2?","Pelo teorema do resto, basta calcular P(2) = 8 − 4 + 1 = 5."],
+    ["Divide x³ − 6x² + 11x − 6 por x − 1 usando Ruffini. Depois acha as três raízes do polinômio.","Usa 1 e os coeficientes 1, −6, 11, −6. Baixa 1 e soma os produtos sucessivos para obter −5, 6 e resto 0. O quociente é x² − 5x + 6 = (x − 2)(x − 3). As raízes são 1, 2 e 3."],
+    ["Sem desenhar, diz em quais intervalos P(x) = (x − 1)(x − 3)² é positivo ou negativo. O sinal muda ao passar por x = 3?","Fora das raízes, (x − 3)² é positivo. O sinal depende de x − 1. P(x) é negativo para x < 1 e positivo para 1 < x < 3 e x > 3. Em x = 1 e x = 3, vale zero. Em 3 o sinal fica positivo dos dois lados."]
+   ]]
+  ]
+ },
+ "bioquimica": {
+  start: 1, next: "enzimas-atp",
+  groups: [
+   ["Reconhece as moléculas", [
+    ["Glucose (glicose), óleo vegetal e colágeno pertencem a quais grupos de biomoléculas?","Glicose é um carboidrato simples, óleo vegetal é formado principalmente por lipídios e colágeno é uma proteína."],
+    ["O amido é feito de muitas unidades. Quais são elas?","São unidades de glicose. Muitas unidades ligadas formam o polissacarídeo amido."],
+    ["Uma proteína é construída com aminoácidos ou nucleotídeos? E o DNA?","Proteínas são cadeias de aminoácidos ligados por ligações peptídicas. O DNA é formado por nucleotídeos, cada um com açúcar, fosfato e base nitrogenada."]
+   ]],
+   ["Liga estrutura e função", [
+    ["Por que óleo e água formam duas camadas mesmo depois de mexer?","A água é polar e o óleo é predominantemente apolar. As interações entre eles não favorecem a mistura. Ao mexer, gotas se dispersam e se juntam de novo com o tempo."],
+    ["Um fosfolipídio tem cabeça polar e caudas apolares. Numa membrana em contato com água dos dois lados, para onde ficam as cabeças e as caudas?","As cabeças ficam voltadas para os meios aquosos dos dois lados. As caudas ficam voltadas umas para as outras, no interior da bicamada."],
+    ["Na digestão, moléculas de amido passam a formar açúcares menores. Se a quebra das ligações consome água, o processo é hidrólise ou condensação?","É hidrólise. A água participa da quebra de ligações entre as unidades. A digestão do amido pode ocorrer em etapas até liberar glicose."]
+   ]]
+  ]
+ },
+ "enzimas-atp": {
+  start: 7, previous: "bioquimica",
+  groups: [
+   ["Entende enzimas e ATP", [
+    ["Duas amostras iguais contêm o mesmo substrato. Uma recebe uma enzima compatível e a outra fica sem enzima. Qual forma produto mais rápido no início?","A amostra com enzima, nas condições adequadas. A enzima oferece um caminho com menor energia de ativação e acelera a reação."],
+    ["Duas enzimas têm maior atividade em pH 2 e em pH 7, respectivamente. Qual delas é uma candidata para atuar em meio bastante ácido?","A primeira, que tem atividade máxima em pH 2. Quanto menor o pH, mais ácido é o meio."],
+    ["Quais são os produtos da hidrólise do ATP na reação ATP + H₂O → ADP + Pᵢ? Para que a célula pode usar essa reação?","Os produtos são ADP e fosfato inorgânico (Pᵢ). A célula pode acoplar a hidrólise a processos que exigem energia, como transportar certas substâncias contra o gradiente."]
+   ]],
+   ["Interpreta experimentos", [
+    ["Uma enzima tem atividade relativa 20 a 20 °C, 100 a 37 °C e 10 a 60 °C. Em qual das temperaturas testadas ela funciona melhor? O que pode explicar a queda a 60 °C?","Entre as temperaturas testadas, a atividade é maior a 37 °C. A alta temperatura pode alterar a forma da enzima por desnaturação, reduzindo a atividade. Os dados isolados não confirmam a causa."],
+    ["Duas amostras com amido ficam no mesmo pH. A recebe amilase e B recebe amilase previamente fervida e depois resfriada. Após o mesmo tempo, em qual tende a sobrar mais amido?","Na B. A fervura pode desnaturar a amilase e o resfriamento pode não restaurar sua estrutura. Com menor atividade, menos ligações do amido são quebradas."],
+    ["Num cultivo de leveduras, a maior parte do ATP vem da respiração aeróbia. O oxigênio se esgota, mas ainda há glicose. Como elas podem seguir produzindo ATP e por que o rendimento por glicose cai?","A glicólise ainda produz ATP. A fermentação alcoólica regenera o NAD⁺ ao formar etanol, permitindo que a glicólise continue. Sem a respiração aeróbia, o saldo nesse caminho é de apenas 2 ATP por glicose."]
+   ]]
+  ]
+ }
+};

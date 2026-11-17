@@ -592,3 +592,28 @@ html[data-study-view="aulas"] .page-heading { display: none; }
   .guided-map-list a { grid-template-columns: 36px minmax(0,1fr); }
   .guided-map-state { grid-column: 2; }
 }
+
+.aula-exercise-list {
+  margin: 16px 0;
+  padding: clamp(12px, 2vw, 20px);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.aula-exercise-list > p { margin: 0; color: var(--muted); font-size: 14px; }
+.aula-exercise-group { margin: 14px 0; }
+.aula-exercise-group h4 { margin: 0 0 6px; color: var(--d2-accent); font-size: 15px; }
+.aula-exercise-group ol { margin: 0; padding-inline-start: 28px; display: grid; gap: 8px; }
+.aula-exercise-group li { padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; }
+.aula-exercise-group li::marker { font-weight: 700; color: var(--d2-accent); }
+.aula-exercise-group p { margin: 0; line-height: 1.55; overflow-wrap: anywhere; }
+.aula-exercise-group summary {
+  width: fit-content;
+  min-height: 44px;
+  padding-block: 11px;
+  color: var(--d2-accent);
+  cursor: pointer;
+  font-weight: 700;
+}
+.aula-exercise-group summary:focus-visible { outline: 2px solid var(--d2-accent); outline-offset: 2px; }
+.aula-exercise-group details p { padding: 8px 10px; background: var(--d2-tint); border-radius: 8px; }
