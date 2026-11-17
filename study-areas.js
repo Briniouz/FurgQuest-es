@@ -54,14 +54,31 @@
     ],
    },
   },
+  engenharias:{
+   label:'Engenharias',title:'Da Trigonometria ao Cálculo',symbol:'∫',
+   subjects:['Trigonometria','Geometria Analítica','Limites','Derivadas','Integrais'],questionAreas:[],
+   menus:{
+    estudos:[
+     ['passo-a-passo','Trilha passo a passo','Entender → visualizar → praticar, desde Trigonometria','↪'],
+     ['fundamentos','Trigonometria e Geometria','A base antes de entrar no Cálculo','△'],
+     ['calculo','Cálculo Diferencial e Integral','Funções, limites, derivadas e integrais','∫'],
+    ],
+    treinamento:[['exercicios','Exercícios autorais','Pistas e soluções explicadas por assunto','✓']],
+    provas:[['desafios','Desafios de aplicação','Problemas para conectar as ideias','◇']],
+    revisao:[
+     ['progresso','Meu progresso','Aulas concluídas e próximos passos','◴'],
+     ['revisar','Revisar meus erros','Volta às ideias que exigiram outra tentativa','↺'],
+    ],
+   },
+  },
  };
- // One vocabulary for the general dashboard and both study areas.
+ // One vocabulary for the general dashboard and study areas.
  const reviewRows=[
   ['erros-simulados','Erros dos simulados','Questões salvas, reunidas por assunto','↺'],
   ['simulados-salvos','Simulados salvos','Retoma resultados e refaz as mesmas questões','◷'],
   ['desempenho','Meu desempenho e TRI','Acertos, evolução e estimativa de nota','◴'],
  ];
- for(const meta of Object.values(areas)){
+ for(const meta of [areas['dia-1'],areas['dia-2']]){
   const bank=meta.menus.provas.shift();
   meta.menus.treinamento.unshift(bank);
   meta.menus.provas[0][1]='Fazer simulado';
@@ -72,6 +89,7 @@
  areas['dia-2'].menus.estudos[1][1]='Todas as aulas';
  const generalMenus={
   estudos:[
+   ['engenharias/passo-a-passo','Engenharias passo a passo','Trigonometria, Geometria Analítica e Cálculo','∫'],
    ['dia-2/passo-a-passo','Aprender passo a passo','Matemática, Física, Química e Biologia, desde a base','↪'],
    ['dia-1/linguagens','Guias de Linguagens','Interpretação, literatura e língua','Aa'],
    ['dia-1/repertorios','Redação e repertórios','Referências, argumentos e exemplos','✎'],
@@ -122,9 +140,9 @@
   mapa:{view:'aulas'},
   conceitos:{view:'aulas'},
  };
- const views=new Set(['inicio','banco','leve','enem','anatomia','fuvest','evolucao','simulados','desempenho','trilhas','leituras','biblioteca','linguagens','acervo','configuracoes','vespera','dia2','aulas','matematica-lab','calculo-mental']);
+ const views=new Set(['inicio','banco','leve','enem','anatomia','fuvest','evolucao','simulados','desempenho','trilhas','leituras','biblioteca','linguagens','acervo','configuracoes','vespera','dia2','aulas','matematica-lab','calculo-mental','engenharias']);
  const get=space=>Object.hasOwn(areas,space)?areas[space]:null;
- const viewOf=(page,space=current)=>page==='erros-treino'&&space==='dia-1'?'vespera':shortcuts[page]?.view||page;
+ const viewOf=(page,space=current)=>space==='engenharias'?'engenharias':page==='erros-treino'&&space==='dia-1'?'vespera':shortcuts[page]?.view||page;
  const contains=(space,questionArea)=>get(space)?.questionAreas.includes(questionArea)??true;
  const home={space:'geral',page:'inicio',view:'inicio',path:'inicio'};
  let current='geral';
@@ -145,6 +163,11 @@
  }
  function parse(hash) {
   const [name,page,...rest]=String(hash||'').replace(/^#/,'').split('/');
+  if(name==='engenharias'&&page==='aula'){
+   const lesson=rest.length===1&&globalThis.FurgEngineering?.lessons.find(item=>item.id===rest[0]);
+   if(lesson)return {space:name,page,view:'engenharias',lesson:lesson.id,path:name+'/aula/'+lesson.id};
+   return resolve(name,'geral');
+  }
   if(name==='dia-2'&&viewOf(page)==='aulas'&&rest.length){
    const base=resolve(page,name), [subject,lesson]=rest;
    const lessonPage=page==='aulas'||page==='passo-a-passo';
@@ -161,6 +184,7 @@
 
  function hubSubjects(meta) {
   if(meta.day==='1')return meta.subjects.map(label=>`<span>${label}</span>`).join('');
+  if(meta.label==='Engenharias')return meta.subjects.map(label=>`<span>${escape(label)}</span>`).join('');
   return meta.subjects.map(id=>{
    const {label,icon}=globalThis.FURG_DIA2_GUIDE.subjects[id];
    const path='dia-2/mapa/'+id;
@@ -174,11 +198,12 @@
  function searchMarkup(id){return `<div class="study-search"><label for="${id}">Encontra uma aula ou ferramenta</label><div class="study-search-field"><span aria-hidden="true">⌕</span><input type="search" id="${id}" autocomplete="off" placeholder="Ex.: polinômios, bioquímica, simulado…" aria-controls="${id}Results"></div><div id="${id}Results" class="study-search-results" hidden></div><p id="${id}Status" class="study-search-status" role="status" aria-live="polite"></p></div>`;}
  function searchItems(){
   const items=[],seen=new Set();
-  for(const space of ['geral','dia-1','dia-2'])for(const [group,rows] of Object.entries(menusFor(space)))for(const[page,title,detail,icon]of rows){
+  for(const space of ['geral','dia-1','dia-2','engenharias'])for(const [group,rows] of Object.entries(menusFor(space)))for(const[page,title,detail,icon]of rows){
    const path=routeFor(space,page);if(seen.has(path))continue;seen.add(path);
-   items.push({path,title,detail:(space==='geral'?'Geral':'Dia '+get(space).day)+' · '+groups[group]+' · '+detail,icon});
+   items.push({path,title,detail:(space==='geral'?'Geral':get(space).label||'Dia '+get(space).day)+' · '+groups[group]+' · '+detail,icon});
   }
   for(const [subject,lessons]of Object.entries(globalThis.FURG_DIA2_LESSONS||{}))for(const lesson of lessons)items.push({path:'dia-2/aulas/'+subject+'/'+lesson.id,title:lesson.title,detail:'Aula · '+globalThis.FURG_DIA2_GUIDE.subjects[subject].label+' · '+lesson.lead,icon:'↗'});
+  for(const lesson of globalThis.FurgEngineering?.lessons||[])items.push({path:'engenharias/aula/'+lesson.id,title:lesson.title,detail:'Engenharias · Aula · '+lesson.lead,icon:'∫'});
   return items;
  }
  function bindSearch(id){
@@ -197,6 +222,10 @@
    ['dia-2/passo-a-passo','Aprender do zero','Aulas, visuais e exercícios em sequência','↪'],
    ['enem','Resolver questões','Escolhe a matéria e pratica no teu ritmo','✓'],
    ['simulados','Fazer simulado','Escolhe a prova ou monta teu próprio bloco','◷'],
+  ]:space==='engenharias'?[
+   ['engenharias/passo-a-passo','Começar pela Trigonometria','Segue a trilha na ordem, com exemplos e prática','△'],
+   ['engenharias/exercicios','Resolver exercícios','Pistas e soluções em texto por assunto','✓'],
+   ['engenharias/progresso','Acompanhar progresso','Retoma aulas e revisa teus erros','◴'],
   ]:meta.day==='2'?[
    ['dia-2/passo-a-passo','Aprender do zero','Entender → visualizar → praticar','↪'],
    ['dia-2/enem','Resolver questões','Matemática e Ciências da Natureza','✓'],
@@ -206,25 +235,25 @@
    ['dia-1/enem','Resolver questões','Linguagens e Ciências Humanas','✓'],
    ['dia-1/simulados','Fazer simulado','Treina com tempo e confere a correção','◷'],
   ];
-  root.innerHTML=`<div class="study-hub" data-day="${meta?.day||'geral'}">
-   <header class="study-hub-hero"><div><p class="study-kicker">${general?'TEU PAINEL DE ESTUDOS':'ENEM · DIA '+meta.day}</p><h1 id="studyHubTitle" tabindex="-1">${meta?.title||'O que vamos estudar hoje?'}</h1>${meta?'<div class="study-tags" aria-label="Matérias">'+hubSubjects(meta)+'</div>':'<p>Escolhe uma ação para começar. Todos os recursos estão organizados abaixo.</p>'}</div><span class="study-hub-symbol" aria-hidden="true">${meta?.symbol||'B'}</span></header>
+  root.innerHTML=`<div class="study-hub" data-day="${space==='engenharias'?'engineering':meta?.day||'geral'}">
+   <header class="study-hub-hero"><div><p class="study-kicker">${general?'TEU PAINEL DE ESTUDOS':space==='engenharias'?'ENGENHARIAS · DA BASE AO CÁLCULO':'ENEM · DIA '+meta.day}</p><h1 id="studyHubTitle" tabindex="-1">${meta?.title||'O que vamos estudar hoje?'}</h1>${meta?'<div class="study-tags" aria-label="Matérias">'+hubSubjects(meta)+'</div>':'<p>Escolhe uma ação para começar. Todos os recursos estão organizados abaixo.</p>'}</div><span class="study-hub-symbol" aria-hidden="true">${meta?.symbol||'B'}</span></header>
    <section class="study-primary-actions" aria-label="Por onde começar">${actions.map(([path,title,detail,icon])=>routeLink(path,title,detail,icon,'study-action')).join('')}</section>
-   <div class="study-panel-tools">${searchMarkup('studyHubSearch')}<a href="#${general?'desempenho':space+'/desempenho'}" data-study-route="${general?'desempenho':space+'/desempenho'}" class="study-progress-link">Meu desempenho e TRI ↗</a></div>
-   ${space!=='dia-1'?'<div class="study-featured" aria-label="Atalhos para as listas progressivas"><span>Listas do básico à aplicação</span>'+routeLink('dia-2/aulas/matematica/polinomios','Polinômios','12 exercícios progressivos','∑')+routeLink('dia-2/aulas/quimica/bioquimica','Bioquímica','12 exercícios progressivos','⚗')+'</div>':''}
+   <div class="study-panel-tools">${searchMarkup('studyHubSearch')}<a href="#${space==='engenharias'?'engenharias/progresso':general?'desempenho':space+'/desempenho'}" data-study-route="${space==='engenharias'?'engenharias/progresso':general?'desempenho':space+'/desempenho'}" class="study-progress-link">${space==='engenharias'?'Meu progresso ↗':'Meu desempenho e TRI ↗'}</a></div>
+   ${space!=='dia-1'&&space!=='engenharias'?'<div class="study-featured" aria-label="Atalhos para as listas progressivas"><span>Listas do básico à aplicação</span>'+routeLink('dia-2/aulas/matematica/polinomios','Polinômios','12 exercícios progressivos','∑')+routeLink('dia-2/aulas/quimica/bioquimica','Bioquímica','12 exercícios progressivos','⚗')+'</div>':''}
    <div class="study-hub-grid">${Object.entries(groups).map(([id,title],index)=>{
     const rows=menusFor(space)[id],markup=items=>items.map(([page,label,detail,icon])=>'<li>'+routeLink(routeFor(space,page),label,detail,icon)+'</li>').join('');
-    return `<section class="study-hub-group"><p class="study-kicker">0${index+1}</p><h2>${title}</h2><p class="study-group-description">${{estudos:'Entende a base e conecta as ideias.',treinamento:'Aplica o que aprendeu, uma questão por vez.',provas:'Treina com tempo e consulta os originais.',revisao:'Volta aos erros e acompanha teu progresso.'}[id]}</p><ul>${markup(rows.slice(0,3))}</ul>${rows.length>3?'<details class="study-more"><summary>Mais opções de '+title.toLowerCase()+' ('+(rows.length-3)+')</summary><ul>'+markup(rows.slice(3))+'</ul></details>':''}</section>`;
+    return `<section class="study-hub-group"><p class="study-kicker">0${index+1}</p><h2>${space==='engenharias'&&id==='provas'?'Desafios':title}</h2><p class="study-group-description">${space==='engenharias'&&id==='provas'?'Problemas para juntar as ideias.':{estudos:'Entende a base e conecta as ideias.',treinamento:'Aplica o que aprendeu, uma questão por vez.',provas:'Treina com tempo e consulta os originais.',revisao:'Volta aos erros e acompanha teu progresso.'}[id]}</p><ul>${markup(rows.slice(0,3))}</ul>${rows.length>3?'<details class="study-more"><summary>Mais opções de '+title.toLowerCase()+' ('+(rows.length-3)+')</summary><ul>'+markup(rows.slice(3))+'</ul></details>':''}</section>`;
    }).join('')}</div></div>`;
   bindSearch('studyHubSearch');
  }
  function renderBreadcrumb(route){
   const root=$('studyBreadcrumb');if(!root)return;root.hidden=route.view==='inicio';if(root.hidden)return;
   const area=get(route.space),home=area?route.space:'geral',parts=[routeLink('inicio','Início','','⌂')];
-  if(route.view==='area-estudo')parts.push('<span aria-current="page">'+(area?'Painel do Dia '+area.day:'Visão geral')+'</span>');
+  if(route.view==='area-estudo')parts.push('<span aria-current="page">'+(area?(area.label||'Painel do Dia '+area.day):'Visão geral')+'</span>');
   else{
-   parts.push(routeLink(home,area?'Painel do Dia '+area.day:'Visão geral','',''));
+   parts.push(routeLink(home,area?(area.label||'Painel do Dia '+area.day):'Visão geral','',''));
    const row=Object.values(menusFor(route.space)).flat().find(([page])=>page===route.page);
-   const lesson=globalThis.FURG_DIA2_LESSONS?.[route.subject]?.find(x=>x.id===route.lesson);
+   const lesson=route.space==='engenharias'?globalThis.FurgEngineering?.lessons.find(x=>x.id===route.lesson):globalThis.FURG_DIA2_LESSONS?.[route.subject]?.find(x=>x.id===route.lesson);
    parts.push('<span aria-current="page">'+escape(lesson?.title||row?.[1]||({aulas:'Todas as aulas',configuracoes:'Configurações',desempenho:'Meu desempenho'})[route.page]||'Estudo')+'</span>');
   }
   root.innerHTML=parts.join('<span aria-hidden="true" class="study-breadcrumb-separator">/</span>');
@@ -240,5 +269,5 @@
  }
 
  globalThis.FurgStudyAreas={get,groups,menusFor,routeFor,contains,resolve,parse,activate,viewOf,current:()=>current,day:()=>get(current)?.day||'',
-  open:page=>shortcuts[page]?.open?.()};
+  open:page=>current==='engenharias'?undefined:shortcuts[page]?.open?.()};
 })();

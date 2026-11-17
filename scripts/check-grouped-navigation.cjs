@@ -9,7 +9,7 @@ module.exports=function({ctx,$,vm,events,assert,document,errors,html}){
  assert.equal(areas.parse('').view,'inicio');assert.equal(areas.parse('geral').view,'area-estudo');
  assert.equal(areas.parse('dia-1/calculo-mental').view,'area-estudo');
  // Every destination in the new catalogue resolves without silently returning home.
- for(const space of ['geral','dia-1','dia-2'])for(const rows of Object.values(areas.menusFor(space)))for(const [page] of rows){
+ for(const space of ['geral','dia-1','dia-2','engenharias'])for(const rows of Object.values(areas.menusFor(space)))for(const [page] of rows){
   const path=areas.routeFor(space,page),route=areas.parse(path);
   assert.notEqual(route.view,'inicio',path);assert.equal(route.path,path,path);
  }
@@ -17,6 +17,19 @@ module.exports=function({ctx,$,vm,events,assert,document,errors,html}){
  navigate('geral');assert($('studyHubRoot').innerHTML.includes('O que vamos estudar hoje?'));
  assert($('studyHubRoot').innerHTML.includes('Aprender do zero'));
  assert($('navGeneral-estudos').innerHTML.includes('Aprender passo a passo'));
+ navigate('engenharias');assert($('studyHubRoot').innerHTML.includes('Da Trigonometria ao Cálculo'));
+ assert($('studyHubRoot').innerHTML.includes('Começar pela Trigonometria'));
+ assert.equal($('navSpaceLabel').textContent,'Engenharias');
+ assert.equal(areas.parse('engenharias/aula/razoes').lesson,'razoes');
+ assert.equal(areas.parse('engenharias/aula/inexistente').view,'area-estudo');
+ navigate('engenharias/passo-a-passo');assert($('engineeringRoot').innerHTML.includes('engChapter-trigonometria'));
+ assert($('engineeringRoot').innerHTML.indexOf('engChapter-trigonometria')<$('engineeringRoot').innerHTML.indexOf('engChapter-geometria'));
+ navigate('engenharias/aula/razoes');assert($('engineeringRoot').innerHTML.includes('1 · Entender'));
+ assert($('engineeringRoot').innerHTML.includes('5/12'));
+ navigate('engenharias/exercicios');assert($('engineeringRoot').innerHTML.includes('Exercícios com pistas'));
+ navigate('engenharias/progresso');assert($('engineeringRoot').innerHTML.includes('aulas concluídas'));
+ navigate('engenharias/revisar');assert($('engineeringRoot').innerHTML.includes('CADERNO DE ERROS'));
+ assert.equal(ctx.FurgEngineering.valid({completed:{razoes:true,other:true},attempts:{razoes:{wrong:2,correct:true}}}).completed.other,undefined);
  navigate('dia-2');assert.equal(areas.parse('dia-2/apostas').view,'area-estudo');assert(!$('studyHubRoot').innerHTML.includes('Apostas do Dia 2'));assert(!areas.menusFor('dia-2').treinamento.some(([page])=>page==='apostas'));navigate('dia-2/dia2');ctx.FurgDia2.showTraining();assert(!$('dia2Root').innerHTML.includes('Apostas do Dia 2'));assert(!$('dia2Root').innerHTML.includes('Apostas de Biologia'));navigate('dia-2');assert($('studyHubRoot').innerHTML.includes('Polinômios'));
  assert($('studyHubRoot').innerHTML.includes('Bioquímica'));
  assert($('studyHubRoot').innerHTML.includes('Mais opções de estudar'));

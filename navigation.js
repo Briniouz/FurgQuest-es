@@ -11,7 +11,7 @@
  function beforeNavigate(name){if(!name||name===currentView)return;if(currentView&&!returning){trail.push({view:currentView,y:typeof window!=='undefined'?window.scrollY||0:0});if(trail.length>40)trail.shift();}currentView=name;syncBack();}
  function back(){const last=trail.pop();if(!last||!adapter)return false;returning=true;let moved;try{moved=openRoute(last.view);}finally{returning=false;}if(moved===false){trail.push(last);syncBack();return false;}syncBack();pageTitle()?.focus({preventScroll:true});const restore=()=>{if(typeof window!=='undefined'&&window.scrollTo)window.scrollTo({top:last.y,behavior:'auto'});};if(typeof requestAnimationFrame==='function')requestAnimationFrame(restore);else restore();return true;}
  const openRoute=path=>adapter?.openRoute?adapter.openRoute(path):adapter?.setView(path);
- const pageTitle=()=> $(({inicio:'studyHomeTitle','area-estudo':'studyHubTitle','calculo-mental':'mlMentalTitle',aulas:'aulaTitle'})[document.querySelector('.view.active')?.id]||'pageTitle');
+ const pageTitle=()=> $(({inicio:'studyHomeTitle','area-estudo':'studyHubTitle','calculo-mental':'mlMentalTitle',aulas:'aulaTitle',engenharias:'engineeringTitle'})[document.querySelector('.view.active')?.id]||'pageTitle');
  const behavior=()=>globalThis.FurgUI?.reducedMotion()?'auto':'smooth';
  const trigger=id=>$('navTrigger-'+id),menu=id=>$('navMenu-'+id);
  const items=id=>Array.from(menu(id)?.querySelectorAll('button')||[]).filter(b=>!b.hidden&&!b.closest?.('[hidden]'));
@@ -22,14 +22,14 @@
  function configure(route) {
   const {space,view,path}=route, study=globalThis.FurgStudyAreas, area=study.get(space);
   routePath=path.split('/').slice(0,2).join('/');
-  const landing=view==='inicio', spaceLabel=area?'Dia '+area.day:'Geral';
+  const landing=view==='inicio', spaceLabel=area?(area.label||'Dia '+area.day):'Geral';
   trigger('areas').hidden=landing;
   trigger('areas').setAttribute('aria-label','Trocar área de estudo · '+spaceLabel);
   $('navSpaceLabel').textContent=spaceLabel;
   for(const [id,label] of Object.entries(groups)){
    const button=trigger(id), title=button.querySelector('strong');
    button.hidden=landing;
-   if(title)title.textContent=area?study.groups[id]:label;
+   if(title)title.textContent=space==='engenharias'&&id==='provas'?'Desafios':area?study.groups[id]:label;
    const general=$('navGeneral-'+id), scoped=$('navScoped-'+id);
    general.hidden=!!area;
    scoped.hidden=!area;
