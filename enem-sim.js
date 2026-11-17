@@ -4,9 +4,9 @@
   const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const areas={linguagens:'Linguagens','ciencias-humanas':'Ciências Humanas','ciencias-natureza':'Ciências da Natureza',matematica:'Matemática'};
   const tri=globalThis.FurgEnemTri, planner=globalThis.FurgEnemSimPlan;
-  const empty=()=>({active:null,history:[]}),dayLabel=day=>day==='all'?'Objetiva completa':day+'º dia';
+  const empty=()=>({active:null,history:[],mistakes:{}}),dayLabel=day=>day==='all'?'Objetiva completa':day+'º dia';
   const gradable=tri.gradable;
-  let adapter,bound=false,interval=null,resultId=null,confirming=false,reviewIndex=0,reviewOnlyWrong=false;
+  let adapter,bound=false,interval=null,resultId=null,confirming=false,reviewIndex=0,reviewOnlyWrong=false,reviewingMistakes=false;
   const dayOfSpace=()=>globalThis.FurgStudyAreas?.day()||'';
   const defaultSettings=day=>({
     mode:'year',year:null,day:day||'1',language:'ingles',minutes:null,
@@ -50,10 +50,38 @@
     const remaining=Number(v.remainingMs),endsAt=Number(v.endsAt),paused=!!v.paused;
     if(!Number.isFinite(remaining)||remaining<0||remaining>duration*60000||!finished&&!paused&&(!Number.isFinite(endsAt)||endsAt<=0))return null;
     if(finished&&!Number.isFinite(Date.parse(v.finishedAt)))return null;
-    return{id:v.id,...format,day:v.day,language:v.language,ids,index:Math.max(0,Math.min(ids.length-1,Number.isInteger(v.index)?v.index:0)),answers,marked,durationMinutes:duration,remainingMs:remaining,endsAt:paused||finished?null:endsAt,paused:finished?false:paused,startedAt:new Date(v.startedAt).toISOString(),...(finished?{finishedAt:new Date(v.finishedAt).toISOString(),expired:!!v.expired}:{})};
+    return{id:v.id,...format,day:v.day,language:v.language,ids,index:Math.max(0,Math.min(ids.length-1,Number.isInteger(v.index)?v.index:0)),answers,marked,durationMinutes:duration,remainingMs:remaining,endsAt:paused||finished?null:endsAt,paused:finished?false:paused,startedAt:new Date(v.startedAt).toISOString(),...(finished?{finishedAt:new Date(v.finishedAt).toISOString(),expired:!!v.expired,...(v.saved===true?{saved:true}:{})}:{})};
   }
-  function validate(v){const history=[];for(const a of Array.isArray(v?.history)?v.history.slice(-50):[]){const item=cleanAttempt(a,true);if(item&&!history.some(h=>h.id===item.id))history.push(item);}return{active:cleanAttempt(v?.active),history};}
-  function merge(current,incoming){const a=validate(current),b=validate(incoming),h=new Map(a.history.map(h=>[h.id,h]));for(const x of b.history)if(!h.has(x.id))h.set(x.id,x);return{active:a.active||b.active,history:[...h.values()].sort((a,b)=>Date.parse(a.finishedAt)-Date.parse(b.finishedAt)).slice(-50)};}
+  function keepHistory(attempts){
+    const recent=new Set(attempts.filter(attempt=>!attempt.saved).slice(-50).map(attempt=>attempt.id));
+    return attempts.filter(attempt=>attempt.saved||recent.has(attempt.id));
+  }
+  function validate(v){
+    const history=new Map(), mistakes={};
+    for(const entry of Array.isArray(v?.history)?v.history:[]){
+      const attempt=cleanAttempt(entry,true);
+      if(attempt&&!history.has(attempt.id))history.set(attempt.id,attempt);
+    }
+    for(const [id,entry] of Object.entries(v?.mistakes||{})){
+      const q=byId.get(id);
+      if(gradable(q)&&/^[A-E]$/.test(entry?.choice)&&entry.choice!==q.answer&&Number.isFinite(Date.parse(entry.date))){
+        mistakes[id]={choice:entry.choice,date:new Date(entry.date).toISOString()};
+      }
+    }
+    return{active:cleanAttempt(v?.active),history:keepHistory([...history.values()]),mistakes};
+  }
+  function merge(current,incoming){
+    const a=validate(current),b=validate(incoming),history=new Map(a.history.map(h=>[h.id,h]));
+    for(const attempt of b.history){
+      const old=history.get(attempt.id);
+      if(!old)history.set(attempt.id,attempt);
+      else if(attempt.saved)old.saved=true;
+    }
+    for(const[id,entry]of Object.entries(b.mistakes)){
+      if(!a.mistakes[id]||entry.date>a.mistakes[id].date)a.mistakes[id]=entry;
+    }
+    return{active:a.active||b.active,history:keepHistory([...history.values()].sort((x,y)=>Date.parse(x.finishedAt)-Date.parse(y.finishedAt))),mistakes:a.mistakes};
+  }
   const state=()=>adapter.getState().enemSim||(adapter.getState().enemSim=empty());
   const remaining=a=>a.paused?a.remainingMs:Math.max(0,a.endsAt-Date.now());
   function score(a){const out={total:a.ids.length,correct:0,wrong:0,blank:0,annulled:0,graded:0,areas:{}};for(const id of a.ids){const q=byId.get(id),area=tri.areaOf(q);const part=out.areas[area]||=( {total:0,correct:0,wrong:0,blank:0,annulled:0,graded:0});const status=!gradable(q)?'annulled':!a.answers[id]?'blank':a.answers[id]===q.answer?'correct':'wrong';out[status]++;part[status]++;part.total++;if(gradable(q)){out.graded++;part.graded++;}}return out;}
@@ -83,6 +111,7 @@
       else $('enemSimRoot').innerHTML='<div class="panel enem-exam-builder"><h2>Já tens um simulado em andamento.</h2><p>Abre a Visão geral para continuar a prova que começaste.</p><a class="text-link" href="#simulados" data-study-route="simulados">Abrir simulado na Visão geral ↗</a></div>';
       return;
     }
+    if(reviewingMistakes){renderMistakes(day);return;}
     const result=s.history.find(h=>h.id===resultId);
     if(result&&fits(result,day)){renderResult(result);return;}
     if(available.length&&!available.includes(settings.year)){settings.year=available[0];settings.minutes=null;}
@@ -101,7 +130,7 @@
   }
 
   function historyMarkup(history,day){
-    const attempts=history.filter(a=>fits(a,day)).slice().reverse();
+    const attempts=history.filter(a=>fits(a,day)).slice().reverse().sort((a,b)=>Number(!!b.saved)-Number(!!a.saved));
     const rows=attempts.map(a=>{
       const result=score(a);
       const includesLanguage=a.mode==='custom'
@@ -109,11 +138,11 @@
         :a.day==='all'||a.day===(a.year<=2016?'2':'1');
       const language=includesLanguage?' · '+(a.language==='ingles'?'Inglês':'Espanhol'):'';
       return `<button class="enem-exam-history-row" data-enem-sim="result" data-id="${esc(a.id)}">
-        <span><strong>${esc(attemptTitle(a))}</strong><small>${new Date(a.finishedAt).toLocaleDateString('pt-BR')}${language}</small></span>
+        <span><strong>${esc(attemptTitle(a))}</strong><small>${new Date(a.finishedAt).toLocaleDateString('pt-BR')}${language}${a.saved?' · Salvo':''}</small></span>
         <b>${result.correct}/${result.graded} <span>↗</span></b>
       </button>`;
     });
-    return '<div class="panel enem-exam-history"><h3>Teus simulados do ENEM</h3>'+
+    return '<div class="panel enem-exam-history"><div class="enem-exam-review-actions"><h3>Teus simulados do ENEM</h3><button class="outline" data-enem-sim="mistakes">Caderno de erros</button></div>'+
       (rows.join('')||'<p class="muted">Teu primeiro resultado aparece aqui. O simulado em andamento fica salvo neste navegador.</p>')+'</div>';
   }
 
@@ -316,7 +345,7 @@
       selected:a.answers[q.id],locked:!!a.paused,onClear:()=>{delete a.answers[q.id];adapter.save();render();}
     });
   }
-  function finish(expired=false){const s=state(),a=s.active;if(!a)return;a.remainingMs=remaining(a);a.finishedAt=new Date().toISOString();a.expired=expired;a.endsAt=null;a.paused=false;s.history.push(a);s.history=s.history.slice(-50);s.active=null;resultId=a.id;reviewIndex=0;reviewOnlyWrong=false;confirming=false;
+  function finish(expired=false){const s=state(),a=s.active;if(!a)return;a.remainingMs=remaining(a);a.finishedAt=new Date().toISOString();a.expired=expired;a.endsAt=null;a.paused=false;s.history.push(a);s.history=keepHistory(s.history);s.active=null;resultId=a.id;reviewIndex=0;reviewOnlyWrong=false;confirming=false;
     const progress=adapter.getState().enem||(adapter.getState().enem={answers:{},favorites:{},notes:{}});for(const[id,choice]of Object.entries(a.answers)){const old=progress.answers[id];progress.answers[id]={choice,firstChoice:old?.firstChoice||choice,attempts:(old?.attempts||0)+1,viewed:true,date:a.finishedAt};}
     adapter.save();render();if(expired)adapter.toast('Tempo encerrado. Teu simulado foi corrigido e salvo.');}
   function renderResult(a){
@@ -344,7 +373,14 @@
         <p class="muted">Estimativa de treino por área. A nota oficial é publicada pelo Inep.</p>
         ${tri.cards(estimates)}${tri.method({exam:true})}
       </section>
-      <button class="outline" data-enem-sim="new">Escolher outra prova</button>
+      <div class="enem-exam-review-actions">
+        <button class="outline" data-enem-sim="save-attempt" ${a.saved?'disabled':''}>${a.saved?'Simulado salvo':'Salvar simulado'}</button>
+        ${a.saved?'<button class="outline" data-enem-sim="repeat">Refazer as mesmas questões</button>':''}
+        <button class="outline" data-enem-sim="save-mistakes" ${n.wrong?'':'disabled'}>Salvar erros no caderno</button>
+        <button class="quiet" data-enem-sim="mistakes">Caderno de erros</button>
+        <button class="quiet" data-enem-sim="new">Escolher outra prova</button>
+      </div>
+      ${topicsMarkup(mistakeGroups(a.ids.filter(id=>wrongAnswer(id,a.answers[id]))),true)}
     </div>
     <div class="enem-exam-review-head"><h3>Confere teu raciocínio.</h3><button class="outline" data-enem-sim="review-filter" aria-pressed="${reviewOnlyWrong}">${reviewOnlyWrong?'Ver todas as questões':'Revisar erros e questões em branco'}</button></div>
     ${q?reviewMarkup(q,a,pool.length):'<div class="panel enem-empty"><p>Nenhum erro ou questão em branco para revisar.</p></div>'}`;
@@ -368,6 +404,53 @@
       <div class="enem-navigation"><button class="quiet" data-enem-sim="review-previous" ${reviewIndex===0?'disabled':''}>← Anterior</button><button class="outline" data-enem-sim="review-next" ${reviewIndex===total-1?'disabled':''}>Próxima →</button></div>
     </article>`;
   }
+
+  function wrongAnswer(id,choice){
+    const q=byId.get(id);
+    return gradable(q)&&!!choice&&choice!==q.answer;
+  }
+  function mistakeGroups(ids){
+    const groups=new Map();
+    for(const id of ids){
+      const q=byId.get(id),area=areas[tri.areaOf(q)];
+      const verified=globalThis.FurgEnemLayout?.review(q)?.topic;
+      const topic=planner.topicOf(id)||verified||area||'Outros assuntos';
+      const key=area===topic?topic:area+' · '+topic;
+      if(!groups.has(key))groups.set(key,[]);
+      groups.get(key).push(id);
+    }
+    return [...groups].sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0],'pt-BR'));
+  }
+  function topicsMarkup(groups,summary=false){
+    if(!groups.length)return '';
+    return `<section class="enem-mistake-topics"><h3>O que revisar primeiro</h3>
+      ${groups.map(([topic,ids])=>`<details${summary?'':' open'}><summary>${esc(topic)} · ${ids.length} ${ids.length===1?'questão':'questões'}</summary>
+        <ul>${ids.map(id=>{
+          const q=byId.get(id),entry=state().mistakes[id];
+          return `<li><button class="text-link" data-enem-sim="${summary?'review-question':'open-mistake'}" data-id="${esc(id)}">ENEM ${q.year} · questão ${q.index}</button>${!summary&&entry?`<small> Marcaste ${entry.choice}</small>`:''}</li>`;
+        }).join('')}</ul>
+      </details>`).join('')}</section>`;
+  }
+  function renderMistakes(day){
+    const ids=Object.entries(state().mistakes).sort(([,a],[,b])=>b.date.localeCompare(a.date))
+      .map(([id])=>id).filter(id=>!day||globalThis.FurgStudyAreas.contains('dia-'+day,tri.areaOf(byId.get(id))));
+    $('enemSimRoot').innerHTML=`<section class="panel enem-exam-history">
+      <div class="enem-exam-review-actions"><h2>Caderno de erros</h2><button class="outline" data-enem-sim="back-mistakes">← Voltar</button></div>
+      <p>${ids.length?ids.length+' questões guardadas neste navegador.':'Na correção do simulado, usa “Salvar erros no caderno”.'}</p>
+      ${topicsMarkup(mistakeGroups(ids))}
+    </section>`;
+  }
+  function saveMistakes(attempt){
+    const s=state(), previous=s.mistakes;
+    const mistakes={...previous};
+    for(const id of attempt.ids){
+      const choice=attempt.answers[id],date=attempt.finishedAt;
+      if(wrongAnswer(id,choice)&&(!mistakes[id]||date>=mistakes[id].date))mistakes[id]={choice,date};
+    }
+    s.mistakes=mistakes;
+    if(!adapter.save()){s.mistakes=previous;return;}
+    adapter.toast('Erros salvos no caderno.');
+  }
   function tick(){if(!adapter)return;const a=state().active;if(!a||a.paused)return;const left=remaining(a);if(left<=0){finish(true);return;}if($('enemExamClock'))$('enemExamClock').textContent=clock(left);}
   function go(index){const a=state().active;if(!a||a.paused)return;a.index=Math.max(0,Math.min(a.ids.length-1,index));confirming=false;adapter.save();render();$('enemExamTitle')?.focus({preventScroll:true});$('enemExamTitle')?.scrollIntoView({behavior:globalThis.FurgUI?.reducedMotion()?'auto':'smooth',block:'start'});}
   function choose(letter){const a=state().active;if(!a||a.paused||!/^[A-E]$/.test(letter))return;if(remaining(a)<=0){finish(true);return;}a.answers[a.ids[a.index]]=letter;adapter.save();render();}
@@ -376,6 +459,7 @@
     const button=event.target.closest('button[data-enem-sim]');
     if(!button||button.disabled)return;
     const action=button.dataset.enemSim,a=state().active;
+    const result=()=>state().history.find(attempt=>attempt.id===resultId);
     switch(action){
       case 'mode-year':
       case 'mode-custom':{
@@ -397,7 +481,35 @@
         settings.custom.percentages=null;
         percentFields.forEach((id,i)=>{$(id).value=String(percentagesOf(settings.custom)[i]);});
         customInfo();return;
-      case 'new': resultId=null;render();return;
+      case 'new': resultId=null;reviewingMistakes=false;render();return;
+      case 'mistakes': reviewingMistakes=true;render();$('enemSimRoot').scrollIntoView({block:'start'});return;
+      case 'back-mistakes': reviewingMistakes=false;render();return;
+      case 'open-mistake': globalThis.FurgEnem?.openQuestion(button.dataset.id);return;
+      case 'review-question':{
+        const at=result()?.ids.indexOf(button.dataset.id);
+        if(at>=0){reviewOnlyWrong=false;reviewIndex=at;render();$('enemExamTitle')?.scrollIntoView({block:'start'});}
+        return;
+      }
+      case 'save-attempt':{
+        const attempt=result();
+        if(!attempt||attempt.saved)return;
+        attempt.saved=true;
+        if(!adapter.save()){delete attempt.saved;return;}
+        render();adapter.toast('Simulado salvo.');
+        return;
+      }
+      case 'save-mistakes':{
+        const attempt=result();
+        if(attempt)saveMistakes(attempt);
+        return;
+      }
+      case 'repeat':{
+        const attempt=result();
+        if(!attempt?.saved)return;
+        const format=attempt.mode==='custom'?{mode:'custom',scope:attempt.scope}:{year:attempt.year};
+        begin(attempt.ids.slice(),{...format,day:attempt.day,language:attempt.language},attempt.durationMinutes);
+        return;
+      }
       case 'result': resultId=button.dataset.id;reviewIndex=0;reviewOnlyWrong=false;render();return;
       case 'review-filter': reviewOnlyWrong=!reviewOnlyWrong;reviewIndex=0;render();return;
       case 'review-next':
@@ -450,7 +562,7 @@
     const fixedDay=dayOfSpace();
     if(!adapter||!['1','2','all'].includes(day)||state().active||fixedDay&&day!==fixedDay)return false;
     settings=settingsByDay[fixedDay]??=defaultSettings(fixedDay);
-    Object.assign(settings,{mode:'year',day,minutes:null});resultId=null;render();return true;
+    Object.assign(settings,{mode:'year',day,minutes:null});resultId=null;reviewingMistakes=false;render();return true;
   }
   globalThis.FurgEnemSim={selectDay,init,render,validate,merge,exam,years,minutes,score,handleKey,tick};
 })();

@@ -31,7 +31,9 @@
     ]),
     branch('modelos','violet','Modelar relações','Da expressão à forma do gráfico.',[
      lesson('equacoes','Lê a inclinação e o valor inicial.'),
-     lesson('crescimento','Compara sequências e parábolas.',{related:[related('fisica','energia')],terms:['função quadrática','pa','pg']})
+     lesson('crescimento','Compara sequências e parábolas.',{related:[related('fisica','energia')],terms:['função quadrática','pa','pg']}),
+     lesson('polinomios','Organiza termos, calcula o grau e opera expressões.',{terms:['polinômios','coeficientes','produto notável']}),
+     lesson('raizes-polinomios','Fatora, encontra raízes e usa Briot–Ruffini.',{terms:['raízes','fatoração','teorema do resto','Briot–Ruffini']})
     ]),
     branch('geometria','cyan','Medir formas','Da superfície à capacidade.',[
      lesson('geometria-plana','Calcula contornos, áreas e lados.'),
@@ -42,7 +44,7 @@
      lesson('probabilidade','Conta casos e calcula chances.',{related:[related('biologia','heranca')]})
     ])
    ],
-   paths:[path('precos','Preços e escalas',['fracoes','proporcao','porcentagens']),path('graficos','Da fórmula ao gráfico',['equacoes','crescimento','estatistica'])]
+   paths:[path('precos','Preços e escalas',['fracoes','proporcao','porcentagens']),path('graficos','Da fórmula ao gráfico',['equacoes','crescimento','estatistica']),path('polinomios','Da expressão às raízes',['polinomios','raizes-polinomios'])]
   })),
   fisica:subject('fisica','Energia','De onde vem e para onde vai?',lesson=>({
    branches:[
@@ -113,9 +115,13 @@
      lesson('termoquimica','Separa calor, velocidade e equilíbrio.',{related:[related('fisica','calor')]}),
      lesson('eletroquimica','Segue os elétrons numa pilha.',{related:[related('fisica','circuitos')]}),
      lesson('organica','Reconhece grupos e cadeias de carbono.')
+    ]),
+    branch('bioquimica','cyan','Bioquímica','Das ligações químicas ao metabolismo.',[
+     lesson('bioquimica','Relaciona estrutura e função das biomoléculas.',{related:[related('biologia','celula')],terms:['carboidratos','lipídios','proteínas','DNA','hidrólise']}),
+     lesson('enzimas-atp','Lê a ação de enzimas e entende o ATP.',{related:[related('biologia','metabolismo')],terms:['enzimas','energia de ativação','ATP','metabolismo']})
     ])
    ],
-   paths:[path('mol','Do mol à reação',['mol','reacoes','termoquimica']),path('agua','Da água à solução',['materia','solucoes','ph'])]
+   paths:[path('mol','Do mol à reação',['mol','reacoes','termoquimica']),path('agua','Da água à solução',['materia','solucoes','ph']),path('bioquimica','Da orgânica ao metabolismo',['organica','bioquimica','enzimas-atp'])]
   }))
  };
 })();

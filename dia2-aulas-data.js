@@ -110,6 +110,96 @@ globalThis.FURG_DIA2_LESSONS = {
    example:['Uma caixa tem 3 fichas verdes e 2 azuis. Duas serão retiradas ao acaso, sem devolução. Qual é a chance de ambas serem verdes?', 'Primeira verde: 3/5.', 'Com uma verde retirada, restam duas verdes entre quatro fichas. A chance condicional é 2/4.', 'Para as duas etapas acontecerem, multiplica 3/5 × 2/4 = 3/10, ou 30%.'],
    exam:'Distingue “com reposição”, “sem reposição”, “pelo menos” e “sabendo que”. Essas expressões mudam quais casos entram na conta.',
    check:{prompt:'Qual é a chance de sair pelo menos uma cara em dois lançamentos independentes de uma moeda justa?',correct:0,choices:[['3/4','O único caso sem cara é coroa–coroa, de chance 1/4. O complemento é 3/4.'],['1/2','Essa é a chance de cara em um só lançamento. Aqui basta uma cara em qualquer um dos dois.'],['1/4','Essa é a chance de duas caras, ou de duas coroas. O pedido inclui todos os resultados com uma ou duas caras.']]}
+  },
+  {
+    "id": "polinomios",
+    "title": "Polinômios: termos, grau e operações",
+    "card": "polinomios-base",
+    "lead": "Organiza uma expressão pela potência de x. Isso mostra quais termos podem ser somados e ajuda a conferir uma multiplicação.",
+    "parts": [
+      [
+        "Termos e grau",
+        "Em 4x³ − 2x + 7, os coeficientes são 4, −2 e 7. O 7 é o termo constante, equivalente a 7x⁰. O grau é 3, o maior expoente com coeficiente não nulo. Escreve 0x² se precisares alinhar todos os graus. Expoentes das variáveis são inteiros não negativos num polinômio."
+      ],
+      [
+        "Soma e subtração",
+        "Agrupa apenas termos que têm a mesma potência. Em (2x² + x) − (x² − 3x), a subtração troca o sinal dos dois termos do segundo parêntese. Fica x² + 4x."
+      ],
+      [
+        "Produto e valor numérico",
+        "Distribui cada termo de um fator pelos termos do outro. No produto de potências de mesma base, soma os expoentes. Para calcular P(−2), substitui x por (−2): x² vale 4, enquanto x³ vale −8."
+      ]
+    ],
+    "example": [
+      "Simplifica (x + 2)(x − 3) e calcula o valor em x = −1.",
+      "Distribui: x² − 3x + 2x − 6.",
+      "Junta os termos semelhantes: P(x) = x² − x − 6.",
+      "Em x = −1, P(−1) = 1 + 1 − 6 = −4."
+    ],
+    "exam": "Ao montar uma área ou uma receita algébrica, escreve a expressão antes de agrupar as potências.",
+    "check": {
+      "prompt": "Qual é o grau de (x³ + 2x²) − (x³ − 5)?",
+      "correct": 1,
+      "choices": [
+        [
+          "3",
+          "Os termos x³ se cancelam."
+        ],
+        [
+          "2",
+          "Sobra 2x² + 5, cujo maior expoente é 2."
+        ],
+        [
+          "5",
+          "O 5 é um coeficiente do termo constante."
+        ]
+      ]
+    }
+  },
+  {
+    "id": "raizes-polinomios",
+    "title": "Raízes, fatoração e divisão de polinômios",
+    "card": "polinomios-raizes",
+    "lead": "Uma raiz é um valor que zera o polinômio. Acha uma raiz, retira seu fator e resolve um problema de grau menor.",
+    "parts": [
+      [
+        "Fatora o que der para reconhecer",
+        "Em x³ − 9x, põe x em evidência. O que sobra é uma diferença de quadrados: x² − 9 = (x − 3)(x + 3). Assim, o produto zera em 0, 3 e −3."
+      ],
+      [
+        "Teorema do resto e Briot–Ruffini",
+        "O resto da divisão de P(x) por x − a é P(a). Se o resto é zero, x − a divide P(x). Para usar Briot–Ruffini, alinha os coeficientes em ordem e escreve zero nos graus ausentes. Baixa o primeiro coeficiente e repete: multiplica por a, depois soma ao próximo coeficiente."
+      ],
+      [
+        "Raiz repetida e gráfico",
+        "Se (x − a) aparece m vezes na fatoração, a tem multiplicidade m. Num gráfico real, o sinal muda ao passar por uma raiz de multiplicidade ímpar. Com multiplicidade par, o gráfico toca o eixo x e mantém o sinal dos dois lados próximos."
+      ]
+    ],
+    "example": [
+      "Sabendo que P(x) = x³ − 6x² + 11x − 6 zera em 1, encontra as outras raízes.",
+      "Divide por x − 1 com os coeficientes 1, −6, 11, −6. A linha final fica 1, −5, 6, 0.",
+      "O quociente é x² − 5x + 6 = (x − 2)(x − 3).",
+      "As raízes são 1, 2 e 3. P(x) = (x − 1)(x − 2)(x − 3)."
+    ],
+    "exam": "Se a questão pede onde uma quantidade zera, resolve P(x) = 0. Se pede onde está positiva, verifica o sinal entre as raízes.",
+    "check": {
+      "prompt": "Qual é o resto da divisão de x³ + 2x − 5 por x + 1?",
+      "correct": 2,
+      "choices": [
+        [
+          "−2",
+          "Esse é P(1). O divisor x + 1 corresponde a a = −1."
+        ],
+        [
+          "0",
+          "Substitui x por −1 para testar se o divisor é fator."
+        ],
+        [
+          "−8",
+          "P(−1) = −1 − 2 − 5 = −8."
+        ]
+      ]
+    }
   }
  ],
  fisica: [
@@ -330,6 +420,96 @@ globalThis.FURG_DIA2_LESSONS = {
    example:['Compara etanol (CH₃CH₂OH) e etano (CH₃CH₃). Qual pode formar ligações de hidrogênio entre moléculas da própria substância?', 'O etanol tem um grupo –OH e seu oxigênio tem pares de elétrons disponíveis.', 'Essa estrutura permite interações do tipo ligação de hidrogênio entre moléculas de etanol.', 'O etano é um hidrocarboneto e, nesse caso, não forma essas ligações entre si.'],
    exam:'Identifica o grupo funcional pela vizinhança dos átomos. Um –OH dentro de –COOH faz parte da carboxila.',
    check:{prompt:'A fórmula CH₃COOH representa qual função orgânica?',correct:0,choices:[['Ácido carboxílico','O final –COOH tem uma carbonila e um –OH no mesmo carbono. É uma carboxila.'],['Álcool','O –OH aqui está no mesmo carbono da carbonila. A função é determinada pelo grupo inteiro.'],['Hidrocarboneto','A molécula contém oxigênio. Hidrocarbonetos têm apenas C e H.']]}
+  },
+  {
+    "id": "bioquimica",
+    "title": "Bioquímica: carboidratos, lipídios, proteínas e DNA",
+    "card": "bioquimica-moleculas",
+    "lead": "As estruturas químicas ajudam a explicar por que um açúcar dissolve em água, um óleo se separa e uma proteína muda com o calor.",
+    "parts": [
+      [
+        "Carboidratos e lipídios",
+        "A glicose é um monossacarídeo. Em amido, glicogênio e celulose, moléculas de glicose estão ligadas de formas que mudam a função e a digestão. Óleos e gorduras comuns contêm triacilgliceróis, ésteres de glicerol com ácidos graxos. Fosfolipídios têm regiões que interagem de maneira diferente com a água e formam bicamadas."
+      ],
+      [
+        "Proteínas e nucleotídeos",
+        "Aminoácidos se ligam por ligações peptídicas. A sequência e as interações entre suas partes ajudam a definir a forma da proteína. Um nucleotídeo tem açúcar, fosfato e base nitrogenada. DNA e RNA são cadeias de nucleotídeos unidas por ligações fosfodiéster."
+      ],
+      [
+        "Condensação e hidrólise",
+        "Ao representar a formação de uma ligação peptídica a partir de dois aminoácidos livres, o balanço inclui a saída de uma molécula de água. Na hidrólise, entra água para romper uma ligação. Pela digestão, proteínas podem originar peptídeos menores e aminoácidos."
+      ]
+    ],
+    "example": [
+      "Uma cadeia linear tem quatro aminoácidos. Quantas ligações peptídicas há entre eles?",
+      "Imagina os quatro resíduos em fila.",
+      "Cada par vizinho está ligado: 1–2, 2–3 e 3–4.",
+      "São três ligações. Uma cadeia linear com n resíduos tem n − 1 ligações peptídicas entre eles."
+    ],
+    "exam": "Procura qual ligação o enunciado está discutindo. Ligação peptídica indica proteína, enquanto ligação glicosídica pode unir açúcares.",
+    "check": {
+      "prompt": "Que componente ocorre em todo nucleotídeo de DNA?",
+      "correct": 0,
+      "choices": [
+        [
+          "Desoxirribose",
+          "É o açúcar do DNA, ligado a uma base e a um grupo fosfato."
+        ],
+        [
+          "Aminoácido",
+          "Aminoácidos são unidades das proteínas."
+        ],
+        [
+          "Glicerol",
+          "Glicerol participa da estrutura de vários lipídios."
+        ]
+      ]
+    }
+  },
+  {
+    "id": "enzimas-atp",
+    "title": "Bioquímica: enzimas, ATP e metabolismo",
+    "card": "bioquimica-enzimas",
+    "lead": "Enzimas mudam a velocidade de reações. O ATP ajuda a acoplar reações que liberam energia a processos que precisam dela.",
+    "parts": [
+      [
+        "Catálise e energia de ativação",
+        "A enzima oferece um caminho com uma barreira de ativação menor. Num gráfico de energia, o pico fica mais baixo, enquanto estados inicial e final continuam com a mesma diferença de energia. A reação pode atingir o equilíbrio mais rápido, com a mesma posição de equilíbrio nas mesmas condições."
+      ],
+      [
+        "Temperatura, pH e atividade",
+        "Em uma faixa moderada, subir a temperatura pode acelerar uma reação. Acima da faixa adequada, a estrutura de muitas enzimas pode se alterar e a atividade cair. O pH também muda a carga de grupos químicos e pode afetar a ligação com o substrato."
+      ],
+      [
+        "ATP e reações acopladas",
+        "Em muitas condições celulares, a hidrólise de ATP a ADP e fosfato libera energia livre. A célula pode acoplar essa reação à síntese de moléculas, ao movimento ou ao transporte. A respiração celular ajuda a repor ATP. Na fermentação, o ATP vem da glicólise e a regeneração de NAD⁺ permite que a glicólise continue."
+      ]
+    ],
+    "example": [
+      "Em três tubos, a mesma enzima é testada em igual concentração de substrato. A atividade é 2, 10 e 1 unidades em pH 3, 7 e 11. Qual pH teve melhor resultado?",
+      "Compara as atividades, pois as outras variáveis são iguais.",
+      "O maior valor medido foi 10.",
+      "Entre os pHs testados, 7 deu maior atividade. Seriam necessárias medidas adicionais para estimar o ótimo com mais precisão."
+    ],
+    "exam": "Em um gráfico, separa velocidade de reação, quantidade de produto e concentração no equilíbrio. Cada eixo muda a leitura.",
+    "check": {
+      "prompt": "Ao adicionar uma enzima a uma reação reversível, o que pode mudar?",
+      "correct": 1,
+      "choices": [
+        [
+          "A posição do equilíbrio",
+          "Nas mesmas condições, a enzima acelera a chegada ao equilíbrio."
+        ],
+        [
+          "A energia de ativação",
+          "A catálise permite um caminho com menor barreira de ativação."
+        ],
+        [
+          "A diferença de energia entre reagentes e produtos",
+          "O saldo energético da reação se mantém."
+        ]
+      ]
+    }
   }
  ],
  biologia: [

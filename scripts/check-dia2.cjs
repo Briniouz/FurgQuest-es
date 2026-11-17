@@ -32,8 +32,8 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
   const solution=ctx.FurgEnemLayout.solution(question,text=>text||'');
   assert(!solution.includes('enem-resolution-pending'),id);
  }
- assert.equal(guide.entries.length,99);
- assert.equal(new Set(guide.entries.map(e => e.id)).size,99);
+ assert.equal(guide.entries.length,103);
+ assert.equal(new Set(guide.entries.map(e => e.id)).size,103);
  for (const subject of Object.keys(guide.subjects)) assert(mode.search('',subject).length >= 20);
  for (const e of guide.entries) {
   assert(e.rule && e.meaning && e.when && e.symbols && e.trap);
@@ -163,7 +163,7 @@ module.exports = async function checkDia2({ctx,$,vm,events,assert,exported}) {
  const lessons=ctx.FURG_DIA2_LESSONS, maps=ctx.FurgDia2Maps.maps;
  const lessonIds=new Set();
  for(const [subject,list] of Object.entries(lessons)){
-  assert.equal(list.length,subject==='biologia'?12:9);
+  assert.equal(list.length,{matematica:11,fisica:9,quimica:11,biologia:12}[subject]);
   const map=maps[subject], entries=map.branches.flatMap(branch=>branch.lessons);
   assert(map.root.title&&map.root.description);
   assert.equal(new Set(map.branches.map(branch=>branch.tone)).size,map.branches.length);

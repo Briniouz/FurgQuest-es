@@ -116,3 +116,13 @@
   .enem-exam-modes button { padding: 10px; }
   .enem-exam-pace { font-size: 10px; }
 }
+
+.enem-exam-review-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:12px 0}
+.enem-exam-review-actions>h2,.enem-exam-review-actions>h3{flex:1;margin:0}
+.enem-mistake-topics{margin:20px 0 6px;padding:14px 16px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px}
+.enem-mistake-topics h3{margin:0 0 10px;font-size:16px}
+.enem-mistake-topics details{padding:8px 0;border-top:1px solid var(--line)}
+.enem-mistake-topics summary{cursor:pointer;font-size:13px}
+.enem-mistake-topics ul{margin:4px 0 0;padding:0;list-style:none}
+.enem-mistake-topics li{padding:3px 0}
+.enem-mistake-topics small{color:var(--muted);font-size:11px}

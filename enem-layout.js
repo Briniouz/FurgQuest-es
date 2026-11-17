@@ -159,8 +159,12 @@
   }
   function solution(q,markdown,image=()=>''){
     const guided=globalThis.FURG_DIA2_PRACTICE?.questions?.[q.id];
+    const math=globalThis.FURG_MATH_LAB_DATA?.models?.[q.id];
+    const mathComment=math&&math.key===q.answer&&math.fingerprint===fingerprint(q)
+      ?{answerExpected:math.key,paragraphs:math.routes.map(route=>route.title+'. '+route.text)}:null;
     const authored=[
       review(q),
+      mathComment,
       globalThis.FURG_ENEM_SOLUTIONS?.[q.id],
       q.quality?.keyVerified && globalThis.FurgDia2ExampleSolutions?.[q.id],
       guided && guided.fingerprint===fingerprint(q) && {answerExpected:guided.answer,paragraphs:[...guided.steps,guided.trap]},
