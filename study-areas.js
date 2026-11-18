@@ -41,13 +41,13 @@
      ['evolucao','Level Up','Exercícios progressivos de Matemática','→'],
     ],
     estudos:[
-     ['passo-a-passo','Aprender passo a passo','Entende, visualiza e resolve antes de avançar','↪'],
-     ['aulas','Estudar do zero','Aulas com exemplos, experimentos e prática','↗'],
-     ['roteiro-fisica','Roteiro do vídeo · Física','Da Cinemática à Ondulatória, na ordem do vídeo','▷'],
-     ['mapa','Mapa mental','Expande os conceitos e abre as aulas no quadro','⤢'],
-     ['conceitos','Mapa de conceitos','Pistas, fórmulas e questões por matéria','↝'],
-     ['formulas','Fórmulas e conceitos','Guia de Matemática, Física, Química e Biologia','ƒ'],
+     ['passo-a-passo','Aprender do zero','Uma matéria por vez, na ordem: entende, visualiza e pratica','↪'],
+     ['aulas','Todas as aulas','Escolhe qualquer aula, em qualquer ordem','↗'],
+     ['formulas','Fórmulas e conceitos','Consulta rápida de Matemática, Física, Química e Biologia','ƒ'],
+     ['mapa','Mapa mental','Vê como os conceitos se ligam e abre a aula direto no quadro','⤢'],
+     ['conceitos','Conceitos por matéria','Pistas, fórmulas e questões, matéria por matéria','↝'],
      ['oficina','Oficina de estudo','Simuladores, dedução e revisão espaçada','◈'],
+     ['roteiro-fisica','Roteiro do vídeo · Física','Da Cinemática à Ondulatória, na ordem do vídeo','▷'],
      ['transmissao-calor','Transmissão de calor','Convecção, condução e radiação animadas','≈'],
      ['conversoes','Grandezas e conversões','Unidades, fatores e exemplos passo a passo','⇄'],
      ['trilhas','Trilhas de estudo','Pré-requisitos, exemplos e exercícios','▥'],
@@ -59,7 +59,7 @@
    subjects:['Trigonometria','Geometria Analítica','Limites','Derivadas','Integrais'],questionAreas:[],
    menus:{
     estudos:[
-     ['passo-a-passo','Trilha passo a passo','Entender → visualizar → praticar, desde Trigonometria','↪'],
+     ['passo-a-passo','Aprender do zero','Entender → visualizar → praticar, desde a Trigonometria','↪'],
      ['fundamentos','Trigonometria e Geometria','A base antes de entrar no Cálculo','△'],
      ['calculo','Cálculo Diferencial e Integral','Funções, limites, derivadas e integrais','∫'],
     ],
@@ -86,11 +86,10 @@
   meta.menus.revisao=[...reviewRows,['erros-treino','Erros do treino guiado','Retoma as questões que precisas revisar','✓']];
  }
  areas['dia-1'].menus.estudos.push(areas['dia-1'].menus.treinamento.splice(3,1)[0]);
- areas['dia-2'].menus.estudos[1][1]='Todas as aulas';
  const generalMenus={
   estudos:[
    ['engenharias/passo-a-passo','Engenharias','Trigonometria, Geometria Analítica e Cálculo','∫'],
-   ['dia-2/passo-a-passo','Aprender passo a passo','Matemática, Física, Química e Biologia, desde a base','↪'],
+   ['dia-2/passo-a-passo','Aprender do zero','Matemática, Física, Química e Biologia, desde a base','↪'],
    ['dia-1/linguagens','Guias de Linguagens','Interpretação, literatura e língua','Aa'],
    ['dia-1/repertorios','Redação e repertórios','Referências, argumentos e exemplos','✎'],
    ['dia-1/biblioteca','Biblioteca ENEM','Autores, obras e conceitos','◈'],
@@ -195,7 +194,7 @@
  const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const normalize=value=>String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
  const routeLink=(path,title,detail,icon='→',cls='')=>`<a class="${cls}" href="#${path}" data-study-route="${path}"><span class="study-hub-icon" aria-hidden="true">${icon}</span><span><strong>${escape(title)}</strong><small>${escape(detail)}</small></span><i aria-hidden="true">→</i></a>`;
- function searchMarkup(id){return `<div class="study-search"><label for="${id}">Encontra uma aula ou ferramenta</label><div class="study-search-field"><span aria-hidden="true">⌕</span><input type="search" id="${id}" autocomplete="off" placeholder="Ex.: polinômios, bioquímica, simulado…" aria-controls="${id}Results"></div><div id="${id}Results" class="study-search-results" hidden></div><p id="${id}Status" class="study-search-status" role="status" aria-live="polite"></p></div>`;}
+ function searchMarkup(id){return `<div class="study-search"><label for="${id}">Busca tudo: aulas, fórmulas, questões e ferramentas</label><div class="study-search-field"><span aria-hidden="true">⌕</span><input type="search" id="${id}" autocomplete="off" placeholder="Ex.: polinômios, bioquímica, ENEM 2019, simulado…" aria-controls="${id}Results"></div><div id="${id}Results" class="study-search-results" hidden></div><p id="${id}Status" class="study-search-status" role="status" aria-live="polite"></p></div>`;}
  function searchItems(){
   const items=[],seen=new Set();
   for(const space of ['geral','dia-1','dia-2','engenharias'])for(const [group,rows] of Object.entries(menusFor(space)))for(const[page,title,detail,icon]of rows){
@@ -208,13 +207,36 @@
  }
  function bindSearch(id){
   const input=$(id);if(!input)return;
+  let shown=[];
+  const hide=()=>{const r=$(id+'Results');r.hidden=true;r.innerHTML='';$(id+'Status').textContent='';shown=[];};
   input.addEventListener('input',()=>{
+   const text=input.value.trim(),root=$(id+'Results'),search=globalThis.FurgSearch;
+   if(!text){hide();return;}
+   if(!search){legacySearch(input,id);return;}
+   const found=search.query(text,{limit:5}),qs=(found.questions||[]).slice(0,2);
+   shown=[...found,...qs];
+   root.hidden=false;
+   root.innerHTML=shown.map((x,i)=>`<a href="#${escape(x.path||'enem')}" data-search-i="${i}"><span class="study-hub-icon" aria-hidden="true">${escape(x.icon||'→')}</span><span><strong>${escape(x.title)}</strong><small>${escape(x.crumb||x.detail)}</small></span><i aria-hidden="true">→</i></a>`).join('')
+    +`<a href="#" data-search-all class="study-search-all"><span class="study-hub-icon" aria-hidden="true">⌕</span><span><strong>${shown.length?'Ver todos os resultados':'Nada por aqui. Abrir a busca completa'}</strong><small>Inclui questões, fórmulas e consulta na Wikipédia · Ctrl+K</small></span><i aria-hidden="true">→</i></a>`;
+   $(id+'Status').textContent=shown.length?shown.length+' resultados. Enter abre o primeiro.':'Nenhum resultado direto.';
+  });
+  input.addEventListener('keydown',event=>{
+   if(event.key==='Enter'&&input.value.trim()){event.preventDefault();const search=globalThis.FurgSearch;if(shown[0])search?.open(shown[0]);else search?.show(input.value.trim());}
+   else if(event.key==='Escape'&&input.value){input.value='';hide();}
+  });
+  $(id+'Results').addEventListener('click',event=>{
+   const all=event.target.closest('[data-search-all]');
+   if(all){event.preventDefault();globalThis.FurgSearch?.show(input.value.trim());return;}
+   const row=event.target.closest('[data-search-i]');
+   if(row){event.preventDefault();event.stopPropagation();globalThis.FurgSearch?.open(shown[Number(row.dataset.searchI)]);hide();input.value='';}
+  });
+ }
+ function legacySearch(input,id){
    const terms=normalize(input.value.trim()).split(/\s+/).filter(Boolean),root=$(id+'Results');
    root.hidden=!terms.length;$(id+'Status').textContent='';if(!terms.length){root.innerHTML='';return;}
    const items=searchItems().filter(x=>terms.every(term=>normalize(x.title+' '+x.detail).includes(term))).sort((a,b)=>Number(b.path.startsWith(current+'/'))-Number(a.path.startsWith(current+'/'))||Number(normalize(b.title).includes(terms.join(' ')))-Number(normalize(a.title).includes(terms.join(' '))));
    root.innerHTML=items.slice(0,8).map(x=>routeLink(x.path,x.title,x.detail.split(' · ').slice(0,2).join(' · '),x.icon)).join('')||'<p>Nenhum resultado. Tenta o nome da matéria ou do assunto.</p>';
    $(id+'Status').textContent=items.length?(items.length>8?'8 de '+items.length:items.length)+' resultados. Usa Tab para escolher.':'Nenhum resultado.';
-  });
  }
  function renderHub(space) {
   const meta=get(space),root=$('studyHubRoot'),general=!meta;
@@ -240,8 +262,9 @@
    <section class="study-primary-actions" aria-label="Por onde começar">${actions.map(([path,title,detail,icon])=>routeLink(path,title,detail,icon,'study-action')).join('')}</section>
    <div class="study-panel-tools">${searchMarkup('studyHubSearch')}<a href="#${space==='engenharias'?'engenharias/progresso':general?'desempenho':space+'/desempenho'}" data-study-route="${space==='engenharias'?'engenharias/progresso':general?'desempenho':space+'/desempenho'}" class="study-progress-link">${space==='engenharias'?'Meu progresso ↗':'Meu desempenho e TRI ↗'}</a></div>
    ${space!=='dia-1'&&space!=='engenharias'?'<div class="study-featured" aria-label="Atalhos para as listas progressivas"><span>Listas do básico à aplicação</span>'+routeLink('dia-2/aulas/matematica/polinomios','Polinômios','12 exercícios progressivos','∑')+routeLink('dia-2/aulas/quimica/bioquimica','Bioquímica','12 exercícios progressivos','⚗')+'</div>':''}
+   <p class="study-flow"><b>Ordem sugerida:</b> <span>1 · Estudar</span> a ideia <i aria-hidden="true">→</i> <span>2 · Praticar</span> com questões <i aria-hidden="true">→</i> <span>3 · Provas</span> para medir o nível <i aria-hidden="true">→</i> <span>4 · Revisar</span> o que errou. Pode entrar por qualquer bloco.</p>
    <div class="study-hub-grid">${Object.entries(groups).map(([id,title],index)=>{
-    const rows=menusFor(space)[id],markup=items=>items.map(([page,label,detail,icon])=>'<li>'+routeLink(routeFor(space,page),label,detail,icon)+'</li>').join('');
+    const all=menusFor(space)[id],topo=new Set(actions.map(a=>a[0])),extra=all.filter(r=>!topo.has(routeFor(space,r[0]))),rows=extra.length?extra:all,markup=items=>items.map(([page,label,detail,icon])=>'<li>'+routeLink(routeFor(space,page),label,detail,icon)+'</li>').join('');
     return `<section class="study-hub-group"><p class="study-kicker">0${index+1}</p><h2>${space==='engenharias'&&id==='provas'?'Desafios':title}</h2><p class="study-group-description">${space==='engenharias'&&id==='provas'?'Problemas para juntar as ideias.':{estudos:'Entende a base e conecta as ideias.',treinamento:'Aplica o que aprendeu, uma questão por vez.',provas:'Treina com tempo e consulta os originais.',revisao:'Volta aos erros e acompanha teu progresso.'}[id]}</p><ul>${markup(rows.slice(0,3))}</ul>${rows.length>3?'<details class="study-more"><summary>Mais opções de '+title.toLowerCase()+' ('+(rows.length-3)+')</summary><ul>'+markup(rows.slice(3))+'</ul></details>':''}</section>`;
    }).join('')}</div></div>`;
   bindSearch('studyHubSearch');

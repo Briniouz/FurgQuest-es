@@ -476,7 +476,7 @@
     ${button('tab','Escolher bloco',attr('tab','treino'))}
     ${exerciseItems.length?button('tab','Exercícios autorais',attr('tab','exercicios')):''}
     ${exclusiveButton()}
-    <a class="outline" href="#dia-2/passo-a-passo" data-study-route="dia-2/passo-a-passo">Aprender passo a passo →</a></div>
+    <a class="outline" href="#dia-2/passo-a-passo" data-study-route="dia-2/passo-a-passo">Aprender do zero →</a></div>
    ${progress ? `<p class="d2-muted">${progress.index} de ${progress.ids.length} questões concluídas no percurso.</p>` : ''}
    </article><aside class="d2-panel d2-quick-stats" aria-label="Teu progresso">
     <p class="eyebrow">TEU TREINO</p><dl><div><dt>Questões novas</dt><dd>${pairLabel(s.new)}</dd></div>

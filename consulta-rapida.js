@@ -259,7 +259,7 @@
     if (external && input.value.trim()) consult();
   }
 
-  launcher.addEventListener('click', () => open());
+  launcher.addEventListener('click', () => { if (!globalThis.FurgSearch?.show()) open(); });
   $('quickLookupClose').addEventListener('click', () => modal.close());
   modal.addEventListener('keydown', event => event.stopPropagation());
   modal.addEventListener('close', () => {

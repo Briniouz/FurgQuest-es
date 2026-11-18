@@ -166,7 +166,7 @@
  function markup(){
   return '<section class="el-workshop"><h2 id="d2Focus" tabindex="-1">Oficina de estudo do Dia 2</h2><p>Testa uma relação no laboratório, reconhece o comando e volta aos conceitos no teu ritmo.</p>'+
    '<div class="d2-actions" role="group" aria-label="Modos da oficina">'+Object.entries(modes).map(([id,label])=>'<button type="button" class="outline" aria-pressed="'+(mode===id)+'" data-study-mode="'+id+'">'+label+'</button>').join('')+'</div>'+
-   '<div id="elBody">'+body()+'</div><div class="d2-actions">'+link('dia-2/aulas','Aprender do zero')+link('dia-2/formulas','Revisão rápida')+link('dia-2/simulados','Modo prova')+link('dia-2/exercicios','Treino por matéria')+'</div></section>';
+   '<div id="elBody">'+body()+'</div><div class="d2-actions">'+link('dia-2/aulas','Todas as aulas')+link('dia-2/formulas','Revisão rápida')+link('dia-2/simulados','Modo prova')+link('dia-2/exercicios','Treino por matéria')+'</div></section>';
  }
  function record(key,choice){
   const p=prompts.get(key);

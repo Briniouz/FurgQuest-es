@@ -168,7 +168,7 @@
   const pending=lessons.find(lesson=>!completed[lesson.id]);
   return `<section class="aula-hero panel">
    <div><p class="aula-overline">ENEM · DIA 2 · ${esc(guide.subjects[subject].label)}</p>
-    <h1 id="aulaTitle" tabindex="-1">Aprender passo a passo</h1>
+    <h1 id="aulaTitle" tabindex="-1">Aprender do zero</h1>
     <p>Escolhe uma matéria. Em cada aula, entende a ideia, vê um exemplo e resolve antes de avançar.</p></div>
    <div class="aula-progress"><strong>${count} de ${lessons.length} concluídas</strong>
     <progress max="${lessons.length}" value="${count}" aria-label="Aulas concluídas"></progress></div>
@@ -316,8 +316,8 @@
   }
   host.innerHTML=`<div class="aula-view" data-subject="${subject}">
    <header class="aula-hero panel">
-    <div><p class="aula-overline">ENEM · DIA 2</p><h1 id="aulaPageTitle">Estudar do zero</h1>
-     <p>Do primeiro conceito às questões. Escolhe uma matéria e segue no teu ritmo.</p></div>
+    <div><p class="aula-overline">ENEM · DIA 2</p><h1 id="aulaPageTitle">Todas as aulas</h1>
+     <p>Escolhe qualquer aula, em qualquer ordem. Prefere uma sequência guiada? Usa <a href="#dia-2/passo-a-passo" data-study-route="dia-2/passo-a-passo">Aprender do zero</a>.</p></div>
     <div class="aula-progress"><strong>${esc(label)}</strong>
      <progress id="aulaProgress" max="${lessons.length}" value="${count}" aria-label="Aulas estudadas em ${esc(label)}"></progress>
      <span id="aulaProgressLabel">${count} de ${lessons.length} estudadas</span>

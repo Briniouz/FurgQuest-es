@@ -2,17 +2,18 @@
 (() => {
   const $ = id => document.getElementById(id);
   const designs = [
-    ['classic','Clássico','O visual que tu já usa.'],
-    ['prisma','Prisma','Liquid Glass, com luz e reflexos suaves.']
+    ['classic','Clássico','Mais sóbrio, sem vidro nem reflexos.'],
+    ['prisma','Prisma · Liquid Glass (padrão)','Vidro translúcido, com luz e reflexos suaves.']
   ];
-  const defaults = () => ({guideLauncher:true,quickCards:true,backButton:true,crossOut:true,hints:true,shortcuts:true,reduceMotion:false,compactEnem:false,design:'classic'});
+  const defaults = () => ({guideLauncher:true,quickCards:true,backButton:true,crossOut:true,hints:true,shortcuts:true,reduceMotion:false,compactEnem:false,designPicked:false,design:'prisma'});
   const isDesign = value => designs.some(([key]) => key===value);
   let adapter, bound=false;
   function validate(value, fallbackDesign) {
     const out=defaults();
     for(const [key,initial] of Object.entries(out))if(typeof initial==='boolean'&&typeof value?.[key]==='boolean')out[key]=value[key];
-    if(isDesign(value?.design))out.design=value.design;
-    else out.design=isDesign(fallbackDesign)?fallbackDesign:'classic';
+    // Liquid Glass (Prisma) é o padrão. O Clássico só vale se a pessoa o escolheu de propósito.
+    if(isDesign(value?.design)&&(value.design!=='classic'||out.designPicked))out.design=value.design;
+    else out.design=isDesign(fallbackDesign)?fallbackDesign:'prisma';
     return out;
   }
   const get=()=>validate(adapter?.getState().preferences);
@@ -27,7 +28,7 @@
     if(!adapter||!Object.hasOwn(defaults(),key))return false;
     if(key==='design'?!isDesign(value):typeof value!=='boolean')return false;
     const previous=adapter.getState().preferences;
-    adapter.getState().preferences={...get(),[key]:value};
+    adapter.getState().preferences={...get(),[key]:value,...(key==='design'?{designPicked:true}:{})};
     if(!adapter.save()){adapter.getState().preferences=previous;return false;}
     apply();return true;
   }

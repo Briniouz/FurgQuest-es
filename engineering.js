@@ -50,7 +50,7 @@
  function hero(state){
   const done=totalDone(state);
   return `<header class="aula-hero panel eng-hero"><div><p class="aula-overline">ENGENHARIAS · DO ZERO AO CÁLCULO</p>
-   <h1 id="engineeringTitle" tabindex="-1">Estudar do zero</h1><p>Trigonometria → Geometria Analítica → Cálculo. Segue a ordem ou abre a aula que precisas.</p></div>
+   <h1 id="engineeringTitle" tabindex="-1">Aprender do zero</h1><p>Trigonometria → Geometria Analítica → Cálculo. Segue a ordem ou abre a aula que precisas.</p></div>
    <div class="aula-progress"><strong>${done} de ${lessons.length} aulas concluídas</strong><progress max="${lessons.length}" value="${done}" aria-label="Aulas de Engenharias concluídas"></progress></div></header>`;
  }
  function chapterTabs(active,state){
@@ -109,15 +109,14 @@
      <h2 id="engLessonTitle" tabindex="-1">${esc(lesson.title)}</h2><p class="aula-lead">${esc(lesson.lead)}</p>
      <p class="eng-chapter-source">No livro: ${esc(chapter.source)}</p></header>
     <nav class="guided-steps" aria-label="Passos desta aula"><button type="button" class="outline" data-eng-scroll="engEntender">1. Entender</button><button type="button" class="outline" data-eng-scroll="engVisualizar">2. Visualizar</button><button type="button" class="outline" data-eng-scroll="engPraticar">3. Praticar</button></nav>
-    <section class="aula-reading eng-reading" id="engEntender"><h3>1 · Entende a ideia</h3><p>${esc(lesson.idea)}</p>
-     <div class="eng-question-guide"><strong>Antes da conta</strong><p>${esc(lesson.lead)}</p></div></section>
+    <section class="aula-reading eng-reading" id="engEntender"><h3>1 · Entende a ideia</h3><p>${esc(lesson.idea)}</p></section>
     <section class="eng-example-section" id="engVisualizar"><h3>2 · Visualiza e acompanha</h3>${visualMarkup(lesson)}${worked(lesson)}</section>
     <div class="eng-solved"><details><summary>Mais dois exemplos resolvidos</summary>
      ${lesson.practice.map((exercise,i)=>`<section><h4>${i+1}. ${esc(exercise.prompt)}</h4><p><strong>Pista:</strong> ${esc(exercise.hint)}</p><p><strong>Resolução:</strong> ${esc(exercise.solution)}</p></section>`).join('')}</details></div>
     <div id="engPraticar">${quiz(lesson,'lesson')}</div>
     <div class="aula-next eng-lesson-footer">${prev?a(lessonPath(prev.id),'← Aula anterior'):a('engenharias/passo-a-passo','← Ver trilha')}
      ${next?a(lessonPath(next.id),'Próxima aula →','outline'):a('engenharias/progresso','Ver meu progresso →','outline')}</div>
-    <p class="aula-source">Explicações, exemplos e exercícios autorais. Vídeo de resolução: será adicionado quando os arquivos estiverem disponíveis.</p>
+    <p class="aula-source">Explicações, exemplos e exercícios autorais.</p>
    </article></div></div>`;
   updateLive();
  }
