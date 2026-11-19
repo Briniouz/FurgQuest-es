@@ -22,8 +22,8 @@
  const SCOPE = {'dia-1': ['linguagens', 'humanas', 'redacao'], 'dia-2': ['matematica', 'fisica', 'quimica', 'biologia'], engenharias: ['calculo']};
  const LEVELS = {1: 'Básico', 2: 'Intermediário', 3: 'Avançado'};
  const ORIGINS = {novas: 'Inéditas no estilo ENEM', aulas: 'Revisão das aulas', autorais: 'Exercícios autorais', apostas: 'Apostas do Dia 2',
-  exclusivas: 'Questões exclusivas', dia1: 'Treino do Dia 1'};
- const ORIGIN_TAG = {novas: 'Inédita', aulas: 'Revisão de aula', autorais: 'Autoral', apostas: 'Aposta do Dia 2', exclusivas: 'Exclusiva', dia1: 'Treino do Dia 1'};
+  exclusivas: 'Questões exclusivas', dia1: 'Treino do Dia 1', listas: 'Listas de aula'};
+ const ORIGIN_TAG = {novas: 'Inédita', aulas: 'Revisão de aula', autorais: 'Autoral', apostas: 'Aposta do Dia 2', exclusivas: 'Exclusiva', dia1: 'Treino do Dia 1', listas: 'Lista de aula'};
  // Ordem pedagógica de cada trilha: do mais básico ao mais avançado.
  const TRACK = {
   matematica: ['Grandezas e unidades', 'Razão e proporção', 'Porcentagem', 'Escalas', 'Múltiplos e divisores', 'Estatística', 'Matemática financeira',
@@ -122,7 +122,9 @@
  };
  const DONE = .7;
  const fresh = () => ({answers: {}, favorites: {}, notes: {}});
- const emptyFilters = () => ({subject: '', topic: '', level: '', origin: '', status: '', search: ''});
+ const emptyFilters = () => ({subject: '', topic: '', level: '', origin: '', status: '', search: '', list: ''});
+ const LISTS = () => globalThis.FURG_LISTAS || [];
+ const listInfo = id => LISTS().find(l => l.id === id);
 
  let qs = null, byId = new Map(), adapter = null, bound = false;
  let list = [], index = 0, choice = null, retry = false, hintOpen = false, searchTimer, noteTimer, pending = null;
@@ -153,7 +155,7 @@
    add({id, s, t, lv: 1, title: lesson.title, ctx: '', stem: check.prompt, opts: choices.map(c => c[0]), ans: LETTERS[correct],
     hint: lesson.lead || '', steps: [choices[correct]?.[1]], why, origin: 'aulas', lessonRoute: path, lessonTitle: lesson.title});
   };
-  for (const q of globalThis.FURG_EXERCICIOS?.items || []) add({...q, origin: 'novas'});
+  for (const q of globalThis.FURG_EXERCICIOS?.items || []) add({...q, origin: q.origin || 'novas'});
   for (const [subject, lessons] of Object.entries(globalThis.FURG_DIA2_LESSONS || {})) {
    for (const lesson of lessons || []) fromCheck('aula-' + subject + '-' + lesson.id, subject, LESSON_TOPIC[lesson.id] || lesson.title, lesson,
     lesson.check, lesson.check?.choices, lesson.check?.correct, 'dia-2/aulas/' + subject + '/' + lesson.id);
@@ -249,7 +251,7 @@
  /* ---------- filtros do modo "todos" ---------- */
  function matches(q, f) {
   const a = progress().answers[q.id];
-  if (f.subject && q.s !== f.subject || f.topic && q.t !== f.topic || f.level && String(q.lv) !== f.level || f.origin && q.origin !== f.origin) return false;
+  if (f.subject && q.s !== f.subject || f.topic && q.t !== f.topic || f.level && String(q.lv) !== f.level || f.origin && q.origin !== f.origin || f.list && q.list !== f.list) return false;
   if (f.search && !norm(f.search).split(/\s+/).filter(Boolean).every(term => q.hay.includes(term))) return false;
   switch (f.status) {
    case 'unanswered': return !a?.choice;
@@ -265,6 +267,7 @@
   for (const [key, id] of Object.entries({topic: 'exTopic', level: 'exLevel', origin: 'exOrigin', status: 'exStatus', search: 'exSearch'})) if ($(id)) f[key] = $(id).value.trim();
   const old = list[index]?.id;
   list = pool(space).filter(q => matches(q, f));
+  if (f.list) list.sort((a, b) => (a.n || 0) - (b.n || 0));
   index = reset ? 0 : Math.max(0, list.findIndex(q => q.id === old));
   const target = pending?.id;
   if (target) { const at = list.findIndex(q => q.id === target); if (at >= 0) index = at; }
@@ -305,7 +308,7 @@
   const area = globalThis.FurgStudyAreas?.get(space);
   const scope = space === 'engenharias' ? 'ENGENHARIAS' : area?.day ? 'ENEM · DIA ' + area.day : 'TODAS AS MATÉRIAS';
   const topics = subjectsOf(space).reduce((n, s) => n + topicsOf(s).length, 0);
-  const tabs = [['trilha', 'Do básico ao avançado'], ['todos', 'Todos os exercícios'], ['outros', 'Outros tipos de treino']];
+  const tabs = [['trilha', 'Do básico ao avançado'], ['todos', 'Todos os exercícios'], ...(items.some(q => q.origin === 'listas') ? [['listas', 'Listas de aula']] : []), ['outros', 'Outros tipos de treino']];
   $('exRoot').innerHTML = `<div class="enem-hero panel ex-hero"><div><p class="eyebrow">EXERCÍCIOS · ${scope}</p>
    <h2>Do básico ao avançado,<br>um nível de cada vez.</h2>
    <p>${space === 'engenharias' ? 'A trilha começa na Trigonometria e chega às Integrais.' : 'Escolhe a matéria e segue a trilha de assuntos.'} Cada assunto tem até três níveis: Básico, Intermediário e Avançado. Acerta ${Math.round(DONE * 100)}% de um nível para concluí-lo e seguir para o próximo. No fim da trilha, treina com questões de prova.</p>
@@ -314,7 +317,7 @@
    ${next ? `<button class="primary ex-continue" data-ex="continue">${sum.done || m.answered ? 'Continuar' : 'Começar'}: ${esc(next.topic)} · ${LEVELS[next.lv]} →</button>` : '<p class="ex-all-done">Trilha completa. Que tal as questões de prova?</p>'}</div></div>
    <div class="ex-modes" role="tablist" aria-label="Como tu quer treinar">${tabs.map(([id, label]) => `<button role="tab" data-ex="mode" data-mode="${id}" aria-selected="${current === id || current === 'stage' && id === 'trilha'}">${label}</button>`).join('')}</div>
    <div id="exModeRoot"></div>`;
-  ({trilha: renderTrack, todos: renderAll, outros: renderOther, stage: renderStage}[current] || renderTrack)(space);
+  ({trilha: renderTrack, todos: renderAll, listas: renderLists, outros: renderOther, stage: renderStage}[current] || renderTrack)(space);
  }
  function subjectChips(space, active, action) {
   const subjects = subjectsOf(space).filter(id => build().some(q => q.s === id));
@@ -343,6 +346,21 @@
      <div class="ex-levels">${final[0] === 'real' ? `<button class="ex-level-pill ex-real" data-ex="real" data-subject="${subject}"><span>${esc(final[1])}</span><small>→</small></button>` : `<a class="ex-level-pill ex-real" ${route(final[0])}><span>${esc(final[1])}</span><small>→</small></a>`}</div></div></li>` : ''}
     </ol></section>`;
  }
+ function renderLists(space) {
+  const s = progress(), items = pool(space).filter(q => q.origin === 'listas');
+  const lists = LISTS().map(l => ({...l, qs: items.filter(q => q.list === l.id).sort((a, b) => (a.n || 0) - (b.n || 0))})).filter(l => l.qs.length);
+  if (!lists.length) { modeBy[space] = 'todos'; renderAll(space); return; }
+  $('exModeRoot').innerHTML = `<section class="ex-lists-wrap" aria-labelledby="exListsTitle"><h3 id="exListsTitle" class="ex-section-title" tabindex="-1">Listas de aula</h3>
+   <p class="muted ex-section-lead">Exercícios que vieram das listas da escola, na ordem da lista. Cada um também aparece na trilha, dentro do assunto dele.</p>
+   <div class="ex-lists">${lists.map(l => {
+    const answered = l.qs.filter(q => s.answers[q.id]?.choice).length, right = l.qs.filter(q => s.answers[q.id]?.choice === q.ans).length, pct = Math.round(answered / l.qs.length * 100);
+    const topics = l.qs.map(q => q.t).filter((t, i, all) => all.indexOf(t) === i);
+    return `<button class="ex-list-card panel" data-ex="list" data-list="${esc(l.id)}"><span class="ex-list-icon" aria-hidden="true">${SUBJECTS[l.s]?.icon || '✎'}</span>
+     <span class="ex-list-copy"><strong>${esc(l.title)}</strong><small>${esc(l.detail || '')}</small><em>${l.qs.length} questões · ${topics.map(esc).join(' · ')}</em>
+     <span class="ex-bar" aria-hidden="true"><i style="width:${pct}%"></i></span><small>${answered ? `${answered} de ${l.qs.length} respondidas · ${right} certas` : 'Ainda não começou'}</small></span>
+     <b>${answered && answered < l.qs.length ? 'Continuar' : answered ? 'Revisar' : 'Resolver'} →</b></button>`;
+   }).join('')}</div></section>`;
+ }
  function renderOther(space) {
   const cards = OTHER[space] || OTHER.geral;
   $('exModeRoot').innerHTML = `<section class="ex-other-wrap" aria-labelledby="exOtherTitle"><h3 id="exOtherTitle" class="ex-section-title" tabindex="-1">Outros tipos de treino ${space === 'geral' ? 'do site' : 'desta área'}</h3>
@@ -357,6 +375,7 @@
     <div class="field"><label for="exLevel">Nível</label><select id="exLevel"><option value="">Todos os níveis</option>${Object.entries(LEVELS).map(([v, l]) => `<option value="${v}">${l}</option>`).join('')}</select></div>
     <div class="field"><label for="exOrigin">Origem</label><select id="exOrigin"><option value="">Todas as origens</option>${Object.entries(ORIGINS).filter(([id]) => items.some(q => q.origin === id)).map(([id, l]) => `<option value="${id}">${l}</option>`).join('')}</select></div>
     <div class="field"><label for="exStatus">Minha revisão</label><select id="exStatus"><option value="">Todas as questões</option><option value="unanswered">Ainda não respondi</option><option value="answered">Já respondi</option><option value="wrong">Revisar erros</option><option value="correct">Acertei</option><option value="favorites">Favoritas</option></select></div></div>
+   ${f.list && listInfo(f.list) ? `<div class="ex-list-active"><span>Lista de aula: <strong>${esc(listInfo(f.list).title)}</strong></span><button class="quiet" data-ex="list-exit">Sair da lista</button><button class="text-link" data-ex="mode" data-mode="listas">← Todas as listas</button></div>` : ''}
    <div class="enem-session"><strong id="exCount"></strong><div><button class="quiet" data-ex="clear">Limpar filtros</button><button class="text-link" data-ex="random">Sortear questão ↗</button></div></div>
    <div id="exQuestionRoot"></div>`;
   for (const [key, id] of Object.entries({level: 'exLevel', origin: 'exOrigin', status: 'exStatus', search: 'exSearch'})) $(id).value = f[key];
@@ -383,6 +402,14 @@
    <div class="ex-stage-name"><small>${SUBJECTS[stage.subject].label} · ${esc(stage.topic)}</small><strong>Nível ${LEVELS[stage.lv]}</strong></div>
    <div class="ex-dots" aria-label="${info.answered} de ${info.total} respondidos">${list.map((q, i) => { const a = s.answers[q.id]?.choice; return `<button data-ex="jump" data-index="${i}" class="${a ? a === q.ans ? 'is-correct' : 'is-wrong' : ''}${i === index ? ' is-current' : ''}" aria-label="Exercício ${i + 1}${a ? a === q.ans ? ', certo' : ', errado' : ''}"></button>`; }).join('')}</div>
    <span class="ex-stage-count">${info.right}/${info.total} certos</span>`;
+ }
+ // A figura entra logo depois da primeira frase do contexto, antes dos itens.
+ function context(q) {
+  const fig = q.img ? `<figure class="ex-figure"><img src="${esc(q.img)}" alt="${esc(q.imgAlt || '')}" loading="lazy"></figure>` : '';
+  if (!q.ctx) return fig;
+  const cut = fig ? q.ctx.indexOf('\n') : -1;
+  if (cut < 0) return `<p>${text(q.ctx)}</p>${fig}`;
+  return `<p>${text(q.ctx.slice(0, cut))}</p>${fig}<p>${text(q.ctx.slice(cut + 1))}</p>`;
  }
  function table(rows) {
   if (!Array.isArray(rows) || rows.length < 2) return '';
@@ -422,9 +449,9 @@
   const map = inStage ? '' : `<div class="enem-map">${list.slice(start, start + 7).map((item, i) => `<button data-ex="jump" data-index="${start + i}" ${start + i === index ? 'aria-current="step"' : ''} aria-label="Exercício ${start + i + 1}" class="${s.answers[item.id]?.choice ? s.answers[item.id].choice === item.ans ? 'is-correct' : 'is-wrong' : ''}">${start + i + 1}</button>`).join('')}</div>`;
   root.innerHTML = `<article class="enem-question panel ex-question" data-question-id="${esc(q.id)}">
    <div class="enem-toolbar"><span>${inStage ? 'Exercício' : 'Questão'} ${index + 1} de ${list.length.toLocaleString('pt-BR')}</span><button class="quiet" data-ex="favorite" aria-pressed="${!!s.favorites[q.id]}">${s.favorites[q.id] ? '★ Favorita' : '☆ Favoritar'}</button></div>
-   <div class="enem-meta"><span class="tag">${SUBJECTS[q.s].label}</span><span class="tag">${esc(q.t)}</span><span class="tag ex-level" data-level="${q.lv}">${LEVELS[q.lv]}</span><span>${ORIGIN_TAG[q.origin]}</span></div>
+   <div class="enem-meta"><span class="tag">${SUBJECTS[q.s].label}</span><span class="tag">${esc(q.t)}</span><span class="tag ex-level" data-level="${q.lv}">${LEVELS[q.lv]}</span><span>${ORIGIN_TAG[q.origin]}${q.list && listInfo(q.list) ? ' · ' + esc(listInfo(q.list).title) : ''}</span></div>
    <h3 id="exTitle" tabindex="-1">${esc(q.title)}</h3>
-   <div class="enem-text ex-text">${q.ctx ? `<p>${text(q.ctx)}</p>` : ''}${table(q.table)}<p class="ex-stem">${text(q.stem)}</p></div>
+   <div class="enem-text ex-text">${context(q)}${table(q.table)}<p class="ex-stem">${text(q.stem)}</p></div>
    <p class="enem-answer-label">Qual alternativa tu escolhe?</p>
    <div class="enem-options">${q.opts.map((o, i) => { const l = letters[i]; return `<button class="enem-option ${selected === l ? 'selected' : ''} ${show && l === q.ans ? 'correct' : ''} ${show && answered && selected === l && !correct ? 'wrong' : ''}" data-ex="choose" data-letter="${l}" aria-pressed="${selected === l}" ${answered ? 'disabled' : ''}><b>${l}</b><span>${text(o)}</span></button>`; }).join('')}</div>
    <div class="enem-submit"><button class="primary" id="exConfirm" data-ex="confirm" ${answered || !choice ? 'disabled' : ''}>${answered ? 'Resposta registrada' : 'Confirmar resposta'}</button>${q.hint && !show ? `<button class="quiet" data-ex="hint" aria-expanded="${hintOpen}">${hintOpen ? 'Esconder pista' : 'Ver pista'}</button>` : ''}<button class="quiet" data-ex="show" ${show ? 'disabled' : ''}>Ver resolução</button><small>${letters[0]}–${letters.at(-1)} para marcar · Enter para responder</small></div>
@@ -502,6 +529,9 @@
   if (!b || b.disabled) return;
   const action = b.dataset.ex, q = list[index], space = currentSpace(), f = filters(space);
   if (action === 'mode') { modeBy[space] = b.dataset.mode; render(); $('exRoot').querySelector(`[role="tab"][data-mode="${b.dataset.mode}"]`)?.focus(); return; }
+  if (action === 'list') { const s = progress(); Object.assign(f, emptyFilters(), {origin: 'listas', list: b.dataset.list}); modeBy[space] = 'todos'; render();
+   const first = list.findIndex(x => !s.answers[x.id]?.choice); if (first > 0) go(first); focusTitle(); return; }
+  if (action === 'list-exit') { Object.assign(f, {list: '', origin: ''}); render(); return; }
   if (action === 'track') { trackBy[space] = b.dataset.subject; renderTrack(space); return; }
   if (action === 'stage') { startStage(space, {subject: b.dataset.subject, topic: b.dataset.topic, lv: Number(b.dataset.level)}); return; }
   if (action === 'continue') { startStage(space, continueTarget(space)); return; }

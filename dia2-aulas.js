@@ -71,7 +71,7 @@
 
  function readingMarkup(lesson){
   const modules=biology?.modules[lesson.id];
-  return `<div class="aula-reading">${lesson.parts.map(([title,body])=>`<section><h3>${esc(title)}</h3><p>${esc(body)}</p></section>`).join('')}
+  return `<div class="aula-reading">${lesson.parts.map(([title,body,figure])=>`<section><h3>${esc(title)}</h3><p>${esc(body)}</p>${figure?`<figure class="aula-figure rx-wrap">${figure}</figure>`:''}</section>`).join('')}
    ${modules?`<section class="el-depth aula-bio-depth"><h3>Aprofundamento</h3>
     ${modules.map(({title,paragraphs,table,pedigree},i)=>`<details ${i===0?'open':''}><summary>${esc(title)}</summary>
      ${pedigree?pedigreeMarkup(pedigree):''}

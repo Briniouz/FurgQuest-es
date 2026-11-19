@@ -268,3 +268,21 @@
   .ex-step { width: 32px; height: 32px; border-radius: 10px; }
   .ex-stage::before { left: 25px; }
 }
+
+/* ---------- Listas de aula ---------- */
+.ex-lists { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+.ex-list-card { display: grid; grid-template-columns: auto 1fr auto; align-items: start; gap: 12px; padding: 16px; text-align: left; color: inherit; font: inherit; cursor: pointer; border-radius: 14px; }
+.ex-list-card:hover { border-color: var(--accent, #6b8afd); }
+.ex-list-icon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 10px; background: color-mix(in srgb, currentColor 8%, transparent); font-size: 1.05rem; }
+.ex-list-copy { display: grid; gap: 4px; min-width: 0; }
+.ex-list-copy strong { font-size: 1rem; }
+.ex-list-copy small { color: var(--muted, #8a8f98); font-size: .8rem; }
+.ex-list-copy em { font-style: normal; font-size: .84rem; }
+.ex-list-copy .ex-bar { margin: 4px 0 0; }
+.ex-list-card > b { font-size: .85rem; white-space: nowrap; align-self: center; }
+.ex-list-active { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 10px 0 0; padding: 10px 14px; border-radius: 12px; border: 1px solid color-mix(in srgb, currentColor 14%, transparent); font-size: .9rem; }
+.ex-list-active span { flex: 1 1 auto; }
+.ex-figure { margin: 10px 0; }
+.ex-figure img { display: block; max-width: 100%; height: auto; max-height: 300px; }
+:root[data-theme="dark"] .ex-figure img { filter: invert(1); }
+@media (max-width: 560px) { .ex-list-card { grid-template-columns: 1fr; } .ex-list-icon { display: none; } .ex-figure img { max-height: none; } }

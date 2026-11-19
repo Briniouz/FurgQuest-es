@@ -617,3 +617,24 @@ html[data-study-view="aulas"] .page-heading { display: none; }
 }
 .aula-exercise-group summary:focus-visible { outline: 2px solid var(--d2-accent); outline-offset: 2px; }
 .aula-exercise-group details p { padding: 8px 10px; background: var(--d2-tint); border-radius: 8px; }
+
+/* Esquemas de reações (dia2-figuras-reacoes.js): logo abaixo de cada parte da aula */
+.rx-wrap { margin: 12px 0 6px; padding: 12px 14px 10px; border: 1px solid var(--line); border-radius: 14px; background: color-mix(in srgb, var(--surface-2) 65%, transparent); overflow-x: auto; }
+.rx-figure { display: block; width: 100%; max-width: var(--rx-w); min-width: min(var(--rx-w), 560px); height: auto; margin: 0 auto; color: var(--ink); }
+.rx-figure text { font-family: inherit; text-anchor: middle; dominant-baseline: central; }
+.rx-atom { fill: currentColor; font-size: 15px; font-weight: 600; }
+.rx-note { fill: var(--muted); font-size: 11.5px; font-weight: 500; }
+.rx-cond { fill: var(--muted); font-size: 12px; font-style: italic; }
+.rx-row { fill: var(--muted); font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-anchor: start !important; dominant-baseline: hanging !important; text-transform: uppercase; }
+.rx-bond, .rx-arrow { stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; fill: none; }
+.rx-arrow { stroke: var(--muted); }
+.rx-in { fill: #2563eb; stroke: #2563eb; }
+:root[data-theme="dark"] .rx-in { fill: #7aa7ff; stroke: #7aa7ff; }
+:root[data-theme="dark"] .rx-out { fill: #f59e4b; stroke: #f59e4b; }
+:root[data-theme="dark"] .rx-alt { fill: #5fd08c; stroke: #5fd08c; }
+.rx-out { fill: #d9730d; stroke: #d9730d; }
+.rx-alt { fill: #2f9e5b; stroke: #2f9e5b; }
+line.rx-in, line.rx-out, line.rx-alt { fill: none; stroke-width: 2.2; }
+.rx-chain { fill: none; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.rx-chain-oil { stroke: #d9730d; }
+.rx-wrap figcaption { margin-top: 8px; color: var(--muted); font-size: 13px; line-height: 1.5; }
