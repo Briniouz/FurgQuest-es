@@ -461,6 +461,7 @@
    <div class="enem-note"><label for="exNote">Meu raciocínio <small id="exNoteStatus">Salvo neste navegador</small></label><textarea id="exNote" rows="2" maxlength="20000" placeholder="Uma ideia, uma conta ou algo para revisar…"></textarea></div>
    <div class="enem-navigation"><button class="quiet" data-ex="previous" ${index === 0 ? 'disabled' : ''}>← Anterior</button>${map}${nextButton}</div>
   </article>`;
+  globalThis.FurgElimination?.decorate(root, {scope: 'exercicios', id: q.id, selector: '[data-ex="choose"]', selected, locked: show, onClear: () => { choice = null; question(); }});
   const note = $('exNote');
   note.value = s.notes[q.id] || '';
   note.oninput = () => {
