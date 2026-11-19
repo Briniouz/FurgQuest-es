@@ -1,0 +1,96 @@
+/* =========================================================
+   Questões compactas (padrão) — ENEM, Fuvest e Exercícios.
+   Com html[data-large-questions="true"] (botão "Ampliar" ou
+   Configurações › Questões ampliadas) volta o formato grande.
+   ========================================================= */
+.enem-question, .enem-question > h3 { scroll-margin-top: 100px; }
+.q-size-toggle { margin-left: auto; margin-right: 6px; font-size: 13px; white-space: nowrap; }
+.q-size-toggle span { font-size: 14px; }
+
+html:not([data-large-questions="true"]) .enem-question { padding: 16px 22px 14px; }
+html:not([data-large-questions="true"]) .enem-question .enem-toolbar { padding-bottom: 8px; margin-bottom: 8px; min-height: 0; }
+html:not([data-large-questions="true"]) .enem-question .enem-meta { gap: 6px; margin: 0 0 4px; }
+html:not([data-large-questions="true"]) .enem-question .enem-meta .tag { padding-top: 2px; padding-bottom: 2px; }
+html:not([data-large-questions="true"]) .enem-question > h3 { font-size: 19px; line-height: 1.3; margin: 6px 0 6px; }
+html:not([data-large-questions="true"]) .enem-question .exam-subject-editor { margin: 4px 0; }
+
+/* Texto de apoio, fonte e comando */
+html:not([data-large-questions="true"]) .enem-question .enem-text { font-size: 15px; line-height: 1.55; }
+html:not([data-large-questions="true"]) .enem-question .enem-support { margin: 10px 0; padding-left: 12px; font-size: 15px; line-height: 1.55; }
+html:not([data-large-questions="true"]) .enem-question .enem-support p,
+html:not([data-large-questions="true"]) .enem-question .enem-prompt p,
+html:not([data-large-questions="true"]) .enem-question .ex-text p { font-size: 15px; line-height: 1.55; margin-bottom: 8px; }
+html:not([data-large-questions="true"]) .enem-question :is(.enem-support, .enem-prompt, .enem-bibliography) h4 { font-size: 11px; margin: 0 0 4px; letter-spacing: .08em; }
+html:not([data-large-questions="true"]) .enem-question .enem-prompt { margin: 10px 0 4px; padding: 10px 14px; border-radius: 12px; }
+html:not([data-large-questions="true"]) .enem-question .enem-bibliography { margin: 8px 0; padding: 6px 10px; font-size: 12px; line-height: 1.4; }
+html:not([data-large-questions="true"]) .enem-question .enem-bibliography p { font-size: 12px; line-height: 1.4; }
+html:not([data-large-questions="true"]) .enem-question .ex-text .ex-stem { margin-top: 8px; }
+
+/* Figuras: inteiras, mas sem ocupar a tela toda */
+html:not([data-large-questions="true"]) .enem-question .enem-text .enem-figure,
+html:not([data-large-questions="true"]) .enem-question .enem-structured-text .enem-figure {
+  width: auto;
+  max-width: 100%;
+  max-height: min(36vh, 300px);
+  margin: 6px auto 8px;
+  padding: 4px;
+}
+html:not([data-large-questions="true"]) .enem-question .enem-option .enem-figure { max-height: 180px; margin: 2px 0; }
+html:not([data-large-questions="true"]) .enem-question .enem-table table { font-size: 13px; }
+html:not([data-large-questions="true"]) .enem-question .enem-table :is(th, td) { padding: 6px 10px; }
+
+/* Alternativas */
+html:not([data-large-questions="true"]) .enem-question .enem-answer-label { margin: 10px 0 6px; }
+html:not([data-large-questions="true"]) .enem-question .enem-options { gap: 6px; }
+html:not([data-large-questions="true"]) .enem-question .enem-option {
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  padding: 7px 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.45;
+}
+html:not([data-large-questions="true"]) .enem-question .enem-option > b { width: 24px; height: 24px; min-width: 24px; margin-top: 0; }
+html:not([data-large-questions="true"]) .enem-question .enem-option p { margin-bottom: 4px; }
+
+/* Ações e rodapé da questão */
+html:not([data-large-questions="true"]) .enem-question .enem-submit { margin-top: 10px; gap: 8px; }
+html:not([data-large-questions="true"]) .enem-question .enem-submit :is(.primary, .quiet, .outline) { min-height: 38px; }
+html:not([data-large-questions="true"]) .enem-question .enem-feedback { margin-top: 10px; padding: 10px 14px; }
+html:not([data-large-questions="true"]) .enem-question .enem-feedback p { margin: 2px 0 4px; }
+html:not([data-large-questions="true"]) .enem-question :is(.enem-resolution, .ex-solution) { margin-top: 10px; }
+html:not([data-large-questions="true"]) .enem-question .enem-note { margin-top: 12px; }
+html:not([data-large-questions="true"]) .enem-question .enem-note textarea { min-height: 52px; height: 56px; }
+html:not([data-large-questions="true"]) .enem-question .enem-source { margin-top: 8px; padding-top: 8px; font-size: 12px; }
+html:not([data-large-questions="true"]) .enem-question .enem-navigation { margin-top: 10px; padding-top: 10px; }
+
+/* Duas colunas em telas largas: o texto à esquerda, as alternativas à direita e sempre à vista */
+@media (min-width: 1180px) {
+  html:not([data-large-questions="true"]) .q-split.is-tall {
+    display: grid;
+    grid-template-columns: minmax(0, 1.12fr) minmax(340px, .88fr);
+    gap: 0 28px;
+    align-items: start;
+  }
+  html:not([data-large-questions="true"]) .q-split.is-tall .q-col-answer {
+    position: sticky;
+    top: 92px;
+    max-height: calc(100vh - 176px);
+    overflow: auto;
+    overscroll-behavior: contain;
+    padding: 2px 4px 8px 2px;
+    scrollbar-width: thin;
+  }
+  html:not([data-large-questions="true"]) .q-split.is-tall .q-col-answer > .enem-answer-label { margin-top: 10px; }
+  html:not([data-large-questions="true"]) .q-split.is-tall .q-col-answer > .enem-prompt { margin-top: 6px; }
+  html:not([data-large-questions="true"]) .q-split.is-tall .q-col-answer > .ex-stem { margin: 6px 0 0; font-size: 15px; line-height: 1.5; }
+  html:not([data-large-questions="true"]) .q-split.is-tall .q-col-text > :first-child { margin-top: 6px; }
+  html:not([data-large-questions="true"]) .q-split.is-tall .enem-submit { flex-wrap: wrap; }
+}
+@media (max-width: 640px) {
+  html:not([data-large-questions="true"]) .enem-question { padding: 14px 14px 12px; }
+  html:not([data-large-questions="true"]) .enem-question > h3 { font-size: 18px; }
+  html:not([data-large-questions="true"]) .enem-question .enem-text .enem-figure { max-height: 34vh; }
+  .q-size-toggle { font-size: 12px; padding-left: 8px; padding-right: 8px; }
+}

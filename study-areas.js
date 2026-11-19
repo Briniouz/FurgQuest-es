@@ -1,7 +1,7 @@
 'use strict';
 (() => {
  const $=id=>document.getElementById(id);
- const groups={estudos:'Estudar',treinamento:'Praticar',provas:'Provas',revisao:'Revisar'};
+ const groups={estudos:'Estudar',treinamento:'Exercícios',provas:'Provas',revisao:'Revisar'};
  const areas={
   'dia-1':{
    day:'1', title:'Linguagens, Humanas e Redação', symbol:'Aa',
@@ -13,6 +13,7 @@
      ['simulados','Simulado do Dia 1','Prova do primeiro dia por ano','◷'],
     ],
     treinamento:[
+     ['exercicios','Todos os exercícios','Linguagens, Humanas e Redação do básico ao avançado, com resolução','✓'],
      ['vespera','Modo Véspera','Treino guiado, flashcards e revisão de erros','✦'],
      ['aquecimento','Aquecimento','Exercícios de leitura e vocabulário','→'],
      ['repertorios','Redação e repertórios','Modelos de desenvolvimento e referências','✎'],
@@ -34,8 +35,8 @@
      ['simulados','Simulado do Dia 2','Prova do segundo dia por ano','◷'],
     ],
     treinamento:[
+     ['exercicios','Todos os exercícios','Matemática e Natureza do básico ao avançado, por assunto, com resolução','✓'],
      ['dia2','Treino guiado do Dia 2','Raciocínio, flashcards e revisão de erros','∑'],
-     ['exercicios','Exercícios autorais','Questões por matéria com resolução em etapas','✓'],
      ['matematica-lab','Laboratório de Matemática','Desafios com tempo e caderno de erros','×'],
      ['calculo-mental','Cálculo mental','Rodadas rápidas por nível','⚡'],
      ['evolucao','Level Up','Exercícios progressivos de Matemática','→'],
@@ -63,7 +64,7 @@
      ['fundamentos','Trigonometria e Geometria','A base antes de entrar no Cálculo','△'],
      ['calculo','Cálculo Diferencial e Integral','Funções, limites, derivadas e integrais','∫'],
     ],
-    treinamento:[['exercicios','Exercícios autorais','Pistas e soluções explicadas por assunto','✓']],
+    treinamento:[['questoes','Todos os exercícios','Da Trigonometria às Integrais, do básico ao avançado','✓'],['exercicios','Exercícios abertos','Resolve no caderno e confere a solução por assunto','✎']],
     provas:[['desafios','Desafios de aplicação','Problemas para conectar as ideias','◇']],
     revisao:[
      ['progresso','Meu progresso','Aulas concluídas e próximos passos','◴'],
@@ -99,10 +100,10 @@
    ['leituras','Resumos literários','Obras, contexto e exercícios','▥'],
   ],
   treinamento:[
+   ['exercicios','Todos os exercícios','Todas as matérias do básico ao avançado, com resolução','✓'],
    ['enem','Questões do ENEM','Filtra por matéria, ano e dificuldade','▤'],
    ['banco','Questões da FURG','Banco organizado por matéria e ano','▤'],
    ['fuvest','Questões da Fuvest','Primeira fase, desde 2010','◇'],
-   ['dia-2/exercicios','Exercícios autorais','Resoluções em etapas por matéria','✓'],
    ['dia-1/vespera','Treino guiado · Dia 1','Leitura, pistas e raciocínio','✦'],
    ['dia-2/dia2','Treino guiado · Dia 2','Matemática e Ciências da Natureza','∑'],
    ['calculo-mental','Cálculo mental','Rodadas rápidas por nível','⚡'],
@@ -133,15 +134,16 @@
   oficina:{view:'dia2',open:()=>globalThis.FurgDia2?.showWorkshop()},
   'transmissao-calor':{view:'dia2',open:()=>globalThis.FurgDia2?.showWorkshop('transmissao')},
   conversoes:{view:'dia2',open:()=>globalThis.FurgDia2?.showConversions()},
-  exercicios:{view:'dia2',open:()=>globalThis.FurgDia2?.showExercises()},
+  exercicios:{view:'exercicios'},
+  questoes:{view:'exercicios'},
   'passo-a-passo':{view:'aulas'},
   'roteiro-fisica':{view:'aulas'},
   mapa:{view:'aulas'},
   conceitos:{view:'aulas'},
  };
- const views=new Set(['inicio','banco','leve','enem','anatomia','fuvest','evolucao','simulados','desempenho','trilhas','leituras','biblioteca','linguagens','acervo','configuracoes','vespera','dia2','aulas','matematica-lab','calculo-mental','engenharias']);
+ const views=new Set(['inicio','exercicios','banco','leve','enem','anatomia','fuvest','evolucao','simulados','desempenho','trilhas','leituras','biblioteca','linguagens','acervo','configuracoes','vespera','dia2','aulas','matematica-lab','calculo-mental','engenharias']);
  const get=space=>Object.hasOwn(areas,space)?areas[space]:null;
- const viewOf=(page,space=current)=>space==='engenharias'?'engenharias':page==='erros-treino'&&space==='dia-1'?'vespera':shortcuts[page]?.view||page;
+ const viewOf=(page,space=current)=>space==='engenharias'?(page==='questoes'?'exercicios':'engenharias'):page==='erros-treino'&&space==='dia-1'?'vespera':shortcuts[page]?.view||page;
  const contains=(space,questionArea)=>get(space)?.questionAreas.includes(questionArea)??true;
  const home={space:'geral',page:'inicio',view:'inicio',path:'inicio'};
  let current='geral';
@@ -246,7 +248,7 @@
    ['simulados','Fazer simulado','Escolhe a prova ou monta teu próprio bloco','◷'],
   ]:space==='engenharias'?[
    ['engenharias/passo-a-passo','Começar pela Trigonometria','Segue a trilha na ordem, com exemplos e prática','△'],
-   ['engenharias/exercicios','Resolver exercícios','Pistas e soluções em texto por assunto','✓'],
+   ['engenharias/questoes','Exercícios','Da Trigonometria às Integrais, do básico ao avançado','✓'],
    ['engenharias/progresso','Acompanhar progresso','Retoma aulas e revisa teus erros','◴'],
   ]:meta.day==='2'?[
    ['dia-2/passo-a-passo','Aprender do zero','Entender → visualizar → praticar','↪'],
@@ -260,9 +262,10 @@
   root.innerHTML=`<div class="study-hub" data-day="${space==='engenharias'?'engineering':meta?.day||'geral'}">
    <header class="study-hub-hero"><div><p class="study-kicker">${general?'TEU PAINEL DE ESTUDOS':space==='engenharias'?'ENGENHARIAS · DA BASE AO CÁLCULO':'ENEM · DIA '+meta.day}</p><h1 id="studyHubTitle" tabindex="-1">${meta?.title||'O que vamos estudar hoje?'}</h1>${meta?'<div class="study-tags" aria-label="Matérias">'+hubSubjects(meta)+'</div>':'<p>Escolhe uma ação para começar. Todos os recursos estão organizados abaixo.</p>'}</div><span class="study-hub-symbol" aria-hidden="true">${meta?.symbol||'B'}</span></header>
    <section class="study-primary-actions" aria-label="Por onde começar">${actions.map(([path,title,detail,icon])=>routeLink(path,title,detail,icon,'study-action')).join('')}</section>
+   ${globalThis.FurgExercicios?.hubBanner(general?'geral':space)||''}
    <div class="study-panel-tools">${searchMarkup('studyHubSearch')}<a href="#${space==='engenharias'?'engenharias/progresso':general?'desempenho':space+'/desempenho'}" data-study-route="${space==='engenharias'?'engenharias/progresso':general?'desempenho':space+'/desempenho'}" class="study-progress-link">${space==='engenharias'?'Meu progresso ↗':'Meu desempenho e TRI ↗'}</a></div>
    ${space!=='dia-1'&&space!=='engenharias'?'<div class="study-featured" aria-label="Atalhos para as listas progressivas"><span>Listas do básico à aplicação</span>'+routeLink('dia-2/aulas/matematica/polinomios','Polinômios','12 exercícios progressivos','∑')+routeLink('dia-2/aulas/quimica/bioquimica','Bioquímica','12 exercícios progressivos','⚗')+'</div>':''}
-   <p class="study-flow"><b>Ordem sugerida:</b> <span>1 · Estudar</span> a ideia <i aria-hidden="true">→</i> <span>2 · Praticar</span> com questões <i aria-hidden="true">→</i> <span>3 · Provas</span> para medir o nível <i aria-hidden="true">→</i> <span>4 · Revisar</span> o que errou. Pode entrar por qualquer bloco.</p>
+   <p class="study-flow"><b>Ordem sugerida:</b> <span>1 · Estudar</span> a ideia <i aria-hidden="true">→</i> <span>2 · Exercícios</span> do básico ao avançado <i aria-hidden="true">→</i> <span>3 · Provas</span> para medir o nível <i aria-hidden="true">→</i> <span>4 · Revisar</span> o que errou. Pode entrar por qualquer bloco.</p>
    <div class="study-hub-grid">${Object.entries(groups).map(([id,title],index)=>{
     const all=menusFor(space)[id],topo=new Set(actions.map(a=>a[0])),extra=all.filter(r=>!topo.has(routeFor(space,r[0]))),rows=extra.length?extra:all,markup=items=>items.map(([page,label,detail,icon])=>'<li>'+routeLink(routeFor(space,page),label,detail,icon)+'</li>').join('');
     return `<section class="study-hub-group"><p class="study-kicker">0${index+1}</p><h2>${space==='engenharias'&&id==='provas'?'Desafios':title}</h2><p class="study-group-description">${space==='engenharias'&&id==='provas'?'Problemas para juntar as ideias.':{estudos:'Entende a base e conecta as ideias.',treinamento:'Aplica o que aprendeu, uma questão por vez.',provas:'Treina com tempo e consulta os originais.',revisao:'Volta aos erros e acompanha teu progresso.'}[id]}</p><ul>${markup(rows.slice(0,3))}</ul>${rows.length>3?'<details class="study-more"><summary>Mais opções de '+title.toLowerCase()+' ('+(rows.length-3)+')</summary><ul>'+markup(rows.slice(3))+'</ul></details>':''}</section>`;

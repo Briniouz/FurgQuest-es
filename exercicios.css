@@ -1,0 +1,270 @@
+/* Banco de exercícios: reaproveita o visual do banco do ENEM e acrescenta
+   pista, resolução passo a passo, armadilha e a faixa de destaque dos painéis. */
+
+.ex-text .ex-stem { font-weight: 600; color: var(--ink); }
+.ex-text p + .ex-stem, .ex-table + .ex-stem { margin-top: 14px; }
+.ex-table { margin: 14px 0 4px; }
+.ex-table table { font-size: 14px; }
+.ex-table th[scope="row"] { font-weight: 600; color: var(--ink); }
+.ex-table thead th { color: var(--muted); font-size: 13px; white-space: nowrap; }
+.ex-table td:first-child { min-width: 0; }
+.ex-table th[scope="row"] { min-width: 7.5em; }
+@media (max-width: 640px) {
+  .ex-table th, .ex-table td { padding: 8px 8px; }
+  .ex-table table { font-size: 13px; }
+}
+
+.ex-level[data-level="1"] { color: #1f8a5b; border-color: color-mix(in srgb, #1f8a5b 45%, var(--line)); background: color-mix(in srgb, #1f8a5b 10%, transparent); }
+.ex-level[data-level="2"] { color: #b7791f; border-color: color-mix(in srgb, #d69e2e 45%, var(--line)); background: color-mix(in srgb, #d69e2e 10%, transparent); }
+.ex-level[data-level="3"] { color: #c53030; border-color: color-mix(in srgb, #e53e3e 45%, var(--line)); background: color-mix(in srgb, #e53e3e 10%, transparent); }
+:root[data-theme="dark"] .ex-level[data-level="1"] { color: #68d391; }
+:root[data-theme="dark"] .ex-level[data-level="2"] { color: #f6c35b; }
+:root[data-theme="dark"] .ex-level[data-level="3"] { color: #fc8181; }
+
+.ex-hint {
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border: 1px solid color-mix(in srgb, var(--blue) 35%, var(--line));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--blue) 9%, transparent);
+  color: var(--ink);
+  line-height: 1.55;
+}
+.ex-hint b { color: var(--blue); }
+
+.ex-solution {
+  margin-top: 14px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--surface-2) 70%, transparent);
+}
+.ex-solution h4 { margin: 0 0 10px; font-size: 15px; }
+.ex-solution ol { margin: 0; padding-left: 22px; display: grid; gap: 8px; line-height: 1.6; }
+.ex-solution li::marker { color: var(--blue); font-weight: 700; }
+.ex-command, .ex-evidence { margin: 0 0 10px; color: var(--muted); line-height: 1.55; }
+.ex-command b, .ex-evidence b { color: var(--ink); }
+.ex-evidence { margin: 12px 0 0; }
+.ex-trap {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-left: 3px solid #d69e2e;
+  border-radius: 0 10px 10px 0;
+  background: color-mix(in srgb, #d69e2e 10%, transparent);
+}
+.ex-trap b { display: block; margin-bottom: 4px; font-size: 13px; color: var(--ink); }
+.ex-trap p { margin: 0; line-height: 1.55; }
+.ex-why { margin-top: 12px; }
+.ex-why summary { cursor: pointer; color: var(--blue); font-weight: 600; }
+.ex-why ul { margin: 10px 0 0; padding-left: 0; list-style: none; display: grid; gap: 8px; line-height: 1.55; }
+.ex-why li b { display: inline-grid; place-items: center; width: 22px; height: 22px; margin-right: 6px; border-radius: 6px; background: var(--surface-3); font-size: 12px; }
+
+.ex-question .enem-map button.is-correct { box-shadow: inset 0 -3px 0 #38a169; }
+.ex-question .enem-map button.is-wrong { box-shadow: inset 0 -3px 0 #e53e3e; }
+
+/* ---------- Faixa do banco nos painéis de cada área ---------- */
+.ex-hub {
+  display: grid;
+  gap: 10px;
+  margin: 4px 0 18px;
+  padding: 10px;
+  border: 1px solid color-mix(in srgb, var(--blue) 30%, var(--line));
+  border-radius: 20px;
+  background:
+    radial-gradient(130% 120% at 0% 0%, color-mix(in srgb, var(--blue) 16%, transparent), transparent 60%),
+    linear-gradient(160deg, color-mix(in srgb, var(--surface) 86%, transparent), color-mix(in srgb, var(--surface-2) 70%, transparent));
+  -webkit-backdrop-filter: blur(16px) saturate(1.3);
+  backdrop-filter: blur(16px) saturate(1.3);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, #fff 22%, transparent), var(--shadow);
+}
+.ex-hub-main {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color .18s ease;
+}
+.ex-hub-main:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+.ex-hub-main:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.ex-hub-icon {
+  display: grid; place-items: center;
+  width: 46px; height: 46px;
+  border-radius: 14px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 22px;
+  box-shadow: inset 0 1px 0 #ffffff55, 0 6px 16px color-mix(in srgb, var(--blue) 40%, transparent);
+}
+.ex-hub-copy { display: grid; gap: 3px; min-width: 0; }
+.ex-hub-copy small { color: var(--blue); font-size: 12px; font-weight: 700; letter-spacing: .08em; }
+.ex-hub-copy strong { font-size: 19px; line-height: 1.25; }
+.ex-hub-copy em { font-style: normal; color: var(--muted); font-size: 14px; line-height: 1.45; }
+.ex-hub-go { color: var(--blue); font-size: 14px; white-space: nowrap; }
+.ex-hub-subjects { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 4px 4px; }
+.ex-hub-subjects a {
+  display: inline-flex; align-items: center; gap: 7px;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  color: var(--ink);
+  font-size: 13px; font-weight: 600;
+  text-decoration: none;
+}
+.ex-hub-subjects a:hover { border-color: var(--blue); }
+.ex-hub-subjects a span { color: var(--blue); }
+.ex-hub-subjects small { color: var(--muted); font-weight: 500; font-size: 12px; }
+
+/* Atalho para o banco no fim das aulas */
+.ex-lesson-link {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--blue) 30%, var(--line));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--blue) 7%, transparent);
+  color: var(--ink);
+  text-decoration: none;
+}
+.ex-lesson-link span { display: grid; gap: 2px; }
+.ex-lesson-link small { color: var(--muted); font-size: 13px; }
+.ex-lesson-link b { color: var(--blue); white-space: nowrap; }
+
+@media (max-width: 640px) {
+  .ex-hub-main { grid-template-columns: auto minmax(0, 1fr); gap: 12px; padding: 10px; }
+  .ex-hub-go { grid-column: 1 / -1; justify-self: start; }
+  .ex-hub-copy strong { font-size: 17px; }
+  .ex-hub-icon { width: 40px; height: 40px; font-size: 19px; }
+  .ex-solution { padding: 14px; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .ex-hub { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--surface); }
+}
+
+/* ---------- Aba Exercícios: modos, trilha e níveis ---------- */
+.ex-score .ex-continue { margin-top: 12px; width: 100%; min-height: 42px; justify-content: center; text-align: center; white-space: normal; line-height: 1.3; }
+.ex-all-done { margin: 10px 0 0; color: var(--muted); }
+.ex-modes {
+  display: flex; flex-wrap: wrap; gap: 4px;
+  margin: 18px 0 14px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--surface) 75%, transparent);
+  width: fit-content; max-width: 100%;
+}
+.ex-modes button {
+  min-height: 38px; padding: 0 16px;
+  border: 0; border-radius: 10px;
+  background: transparent; color: var(--muted);
+  font: inherit; font-size: 14px; font-weight: 600;
+}
+.ex-modes button:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.ex-modes button[aria-selected="true"] { background: var(--blue); color: #fff; box-shadow: 0 4px 12px color-mix(in srgb, var(--blue) 35%, transparent); }
+.ex-modes button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+.ex-track-wrap { padding: 20px 22px; }
+.ex-track-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 18px; margin-bottom: 14px; }
+.ex-track-head h3 { margin: 4px 0 4px; font-size: 20px; }
+.ex-track-head .muted { margin: 0; font-size: 14px; }
+.ex-track-progress { display: grid; gap: 4px; min-width: 190px; text-align: right; }
+.ex-track-progress strong { font-size: 26px; line-height: 1; }
+.ex-track-progress small { color: var(--muted); font-size: 13px; }
+.ex-bar { height: 6px; border-radius: 99px; background: var(--surface-3); overflow: hidden; }
+.ex-bar i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), #38a169); }
+
+.ex-track { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: none; }
+.ex-stage {
+  position: relative;
+  display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 12px; align-items: center;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+}
+.ex-stage::before { content: ''; position: absolute; left: 31px; top: -9px; height: 9px; width: 2px; background: var(--line); }
+.ex-stage:first-child::before { display: none; }
+.ex-step {
+  display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px;
+  background: var(--surface-3); color: var(--muted); font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.ex-stage.is-next { border-color: color-mix(in srgb, var(--blue) 60%, var(--line)); background: color-mix(in srgb, var(--blue) 8%, var(--surface)); box-shadow: 0 6px 18px color-mix(in srgb, var(--blue) 14%, transparent); }
+.ex-stage.is-next .ex-step { background: var(--blue); color: #fff; }
+.ex-stage.is-done .ex-step { background: color-mix(in srgb, #38a169 22%, var(--surface)); color: #2f855a; }
+:root[data-theme="dark"] .ex-stage.is-done .ex-step { color: #68d391; }
+.ex-stage-body { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; min-width: 0; }
+.ex-stage-title { display: grid; gap: 2px; min-width: 0; }
+.ex-stage-title strong { font-size: 15px; }
+.ex-stage-title small { color: var(--muted); font-size: 13px; }
+.ex-stage-title b { color: var(--blue); }
+.ex-levels { display: flex; flex-wrap: wrap; gap: 6px; }
+.ex-level-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 36px; padding: 0 12px;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--surface); color: var(--ink);
+  font: inherit; font-size: 13px; font-weight: 600; text-decoration: none;
+}
+.ex-level-pill small { color: var(--muted); font-weight: 500; font-variant-numeric: tabular-nums; }
+.ex-level-pill:hover { border-color: var(--blue); }
+.ex-level-pill:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.ex-level-pill[data-status="progress"] { border-color: color-mix(in srgb, var(--blue) 50%, var(--line)); }
+.ex-level-pill[data-status="review"] { border-color: color-mix(in srgb, #d69e2e 60%, var(--line)); background: color-mix(in srgb, #d69e2e 9%, var(--surface)); }
+.ex-level-pill[data-status="done"] { border-color: color-mix(in srgb, #38a169 55%, var(--line)); background: color-mix(in srgb, #38a169 11%, var(--surface)); }
+.ex-level-pill[data-status="done"] small { color: #2f855a; }
+:root[data-theme="dark"] .ex-level-pill[data-status="done"] small { color: #68d391; }
+.ex-final { border-style: dashed; }
+.ex-final .ex-step { background: color-mix(in srgb, #d69e2e 22%, var(--surface)); color: #b7791f; }
+.ex-real { background: var(--blue); border-color: var(--blue); color: #fff; }
+.ex-real small { color: #fff; }
+
+.ex-section-title { margin: 4px 0 4px; font-size: 20px; }
+.ex-section-lead { margin: 0 0 14px; }
+.ex-other-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+.ex-other {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center;
+  padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px;
+  background: color-mix(in srgb, var(--surface) 80%, transparent); color: var(--ink); text-decoration: none;
+}
+.ex-other:hover { border-color: var(--blue); }
+.ex-other-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: var(--surface-3); color: var(--blue); font-size: 17px; }
+.ex-other strong { display: block; font-size: 15px; }
+.ex-other small { display: block; margin-top: 2px; color: var(--muted); font-size: 13px; line-height: 1.4; }
+.ex-other i { color: var(--blue); font-style: normal; }
+
+.ex-stage-bar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px;
+  margin-bottom: 10px; padding: 10px 14px;
+  -webkit-backdrop-filter: blur(18px) saturate(1.4); backdrop-filter: blur(18px) saturate(1.4);
+}
+.ex-stage-name { display: grid; gap: 1px; margin-right: auto; }
+.ex-stage-name small { color: var(--muted); font-size: 12px; }
+.ex-stage-name strong { font-size: 15px; }
+.ex-dots { display: flex; flex-wrap: wrap; gap: 5px; }
+.ex-dots button { width: 14px; height: 14px; min-height: 0; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--surface-3); }
+.ex-dots button.is-correct { background: #38a169; border-color: #38a169; }
+.ex-dots button.is-wrong { background: #e53e3e; border-color: #e53e3e; }
+.ex-dots button.is-current { outline: 2px solid var(--blue); outline-offset: 2px; }
+.ex-stage-count { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.ex-stage-done { margin-top: 12px; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); }
+.ex-stage-done strong { display: block; }
+.ex-stage-done p { margin: 4px 0 10px; color: var(--muted); }
+.ex-stage-done.is-done { border-color: color-mix(in srgb, #38a169 50%, var(--line)); background: color-mix(in srgb, #38a169 9%, transparent); }
+.ex-stage-done.is-review { border-color: color-mix(in srgb, #d69e2e 50%, var(--line)); background: color-mix(in srgb, #d69e2e 9%, transparent); }
+.ex-lesson-back { margin: 12px 0 0; }
+
+@media (max-width: 640px) {
+  .ex-modes { width: 100%; }
+  .ex-modes button { flex: 1 1 auto; padding: 0 10px; font-size: 13px; }
+  .ex-track-wrap { padding: 14px; }
+  .ex-track-head { flex-direction: column; align-items: stretch; }
+  .ex-track-progress { text-align: left; min-width: 0; }
+  .ex-stage { grid-template-columns: 32px minmax(0, 1fr); gap: 10px; padding: 10px; }
+  .ex-step { width: 32px; height: 32px; border-radius: 10px; }
+  .ex-stage::before { left: 25px; }
+}

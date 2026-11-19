@@ -419,6 +419,7 @@
   const action = button('tab','Voltar ao guia →',attr('tab','guia'));
   return `<div class="d2-study-view">
    ${studyHeading('Exercícios autorais','Tenta resolver primeiro. A pista e a resolução ficam em blocos separados.',action)}
+   ${globalThis.FurgExercicios?`<a class="ex-lesson-link" href="#dia-2/exercicios" data-study-route="dia-2/exercicios" data-ex-subject="${subject}"><span><strong>Estes exercícios agora também estão na aba Exercícios</strong><small>Junto com as questões novas, numa trilha do básico ao avançado</small></span><b>Abrir Exercícios →</b></a>`:''}
    ${subjectPicker()}
    <div class="d2-exercise-tools">
     <p class="d2-muted">${exerciseCard?esc(cardsById.get(exerciseCard).title):ids.length+' exercícios · '+esc(subjects[subject].label)}</p>

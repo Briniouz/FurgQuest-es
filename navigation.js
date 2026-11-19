@@ -2,8 +2,8 @@
 (() => {
  const $=id=>document.getElementById(id),nav=$('mainNavigation'),previous=$('navScrollPrevious'),next=$('navScrollNext');
  if(!nav||!previous||!next)return;
- const groups={estudos:'Estudar',treinamento:'Praticar',provas:'Provas',revisao:'Revisar'};
- const names=['areas',...Object.keys(groups)],owners={vespera:'treinamento',dia2:'treinamento','matematica-lab':'treinamento',banco:'treinamento',enem:'treinamento',fuvest:'treinamento',anatomia:'treinamento',acervo:'provas',simulados:'provas',desempenho:'revisao',evolucao:'treinamento',leve:'treinamento',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos',configuracoes:'estudos'};
+ const groups={estudos:'Estudar',treinamento:'Exercícios',provas:'Provas',revisao:'Revisar'};
+ const names=['areas',...Object.keys(groups)],owners={exercicios:'treinamento',vespera:'treinamento',dia2:'treinamento','matematica-lab':'treinamento',banco:'treinamento',enem:'treinamento',fuvest:'treinamento',anatomia:'treinamento',acervo:'provas',simulados:'provas',desempenho:'revisao',evolucao:'treinamento',leve:'treinamento',trilhas:'estudos',leituras:'estudos',biblioteca:'estudos',linguagens:'estudos',configuracoes:'estudos'};
  const topItems=()=>Array.from(nav.querySelectorAll('button')).filter(button=>!button.hidden);
  let adapter,opened='',bound=false,currentView='',returning=false,context='',routePath='';
  const trail=[];

@@ -12,10 +12,10 @@
  };
  const groupTitle = {
   recente: 'Recentes', atalho: 'Atalhos', pagina: 'Páginas e ferramentas', aula: 'Aulas',
-  conceito: 'Fórmulas e conceitos', leitura: 'Leituras e repertórios', questao: 'Questões do ENEM',
+  exercicio: 'Exercícios', conceito: 'Fórmulas e conceitos', leitura: 'Leituras e repertórios', questao: 'Questões do ENEM',
   procurar: 'Não achou? Procura em…',
  };
- const order = ['pagina', 'aula', 'conceito', 'leitura', 'questao'];
+ const order = ['pagina', 'aula', 'exercicio', 'conceito', 'leitura', 'questao'];
  const perGroup = 5;
  let index = null, questions = null, dialog, field, listEl, statusEl, hintEl;
  let rows = [], active = -1, returnFocus = null, keepFocus = false;
@@ -32,7 +32,7 @@
    'dia-2': 'Painel do Dia 2 · Matemática e Natureza', engenharias: 'Painel de Engenharias'};
   out.push(item('pagina', 'Início', 'Escolhe por onde começar', 'Site', 'inicio', '⌂'));
   for (const [space, label] of spaces) {
-   out.push(item('pagina', hubs[space], 'Tudo da área organizado em Estudar, Praticar, Provas e Revisar', label, space, '◈'));
+   out.push(item('pagina', hubs[space], 'Tudo da área organizado em Estudar, Exercícios, Provas e Revisar', label, space, '◈'));
    for (const [group, list] of Object.entries(S.menusFor(space))) {
     for (const [page, title, detail, icon] of list) {
      const path = S.routeFor(space, page), key = norm(title);
@@ -55,6 +55,11 @@
    out.push(item('aula', lesson.title, lesson.lead || '', 'Engenharias › Aulas › ' + (chapters[lesson.chapter] || ''),
     'engenharias/aula/' + lesson.id, '∫'));
   }
+  for (const r of globalThis.FurgExercicios?.searchRows() || []) {
+   const row = item('exercicio', r.title, r.detail, r.crumb, r.path, '✓', r.extra);
+   row.exerciseId = r.id;
+   out.push(row);
+  }
   for (const entry of globalThis.FURG_DIA2_GUIDE?.entries || []) {
    const row = item('conceito', entry.title, entry.rule || entry.meaning || '',
     'Dia 2 › Fórmulas e conceitos › ' + (subjects[entry.subject]?.label || '') + ' · ' + (entry.topic || ''),
@@ -64,7 +69,7 @@
   }
   for (const level of globalThis.FURG_LEVELUP_DATA || []) {
    out.push(item('pagina', 'Level Up · ' + level.title, 'Nível ' + level.level + ' de Matemática · ' + (level.label || ''),
-    'Praticar › Level Up', 'evolucao', '→', 'nivel exercicios progressivos'));
+    'Exercícios › Level Up', 'evolucao', '→', 'nivel exercicios progressivos'));
   }
   for (const book of globalThis.FURG_READING_DATA || []) {
    out.push(item('leitura', book.title, (book.author ? book.author + ' · ' : '') + (book.tagline || ''),
@@ -106,7 +111,7 @@
    else if (t.includes(term)) total += 45;
    else total += 12;
   }
-  return total - Math.min(row.title.length, 80) / 20 + ({pagina: 8, aula: 6, conceito: 4, leitura: 3, questao: 0}[row.type] || 0);
+  return total - Math.min(row.title.length, 80) / 20 + ({pagina: 8, aula: 6, conceito: 4, leitura: 3, exercicio: 2, questao: 0}[row.type] || 0);
  }
  function query(text, {limit = 40, questionsToo = true} = {}) {
   const terms = termsOf(text);
@@ -131,8 +136,8 @@
  function remember(row) {
   if (!row.path && !row.questionId) return;
   const entry = {type: row.type, title: row.title, detail: row.detail, crumb: row.crumb, path: row.path, icon: row.icon,
-   prefill: row.prefill, questionId: row.questionId};
-  const list = [entry, ...recent().filter(x => !(x.title === entry.title && x.path === entry.path && x.questionId === entry.questionId))].slice(0, 6);
+   prefill: row.prefill, questionId: row.questionId, exerciseId: row.exerciseId};
+  const list = [entry, ...recent().filter(x => !(x.title === entry.title && x.path === entry.path && x.questionId === entry.questionId && x.exerciseId === entry.exerciseId))].slice(0, 6);
   try { localStorage.setItem(RECENT_KEY, JSON.stringify(list)); } catch {}
  }
  function fill(term, tries = 0) {
@@ -164,6 +169,7 @@
   }
   remember(row);
   if (row.questionId) { globalThis.FurgEnem?.openQuestion(row.questionId); return; }
+  if (row.exerciseId && globalThis.FurgExercicios?.open(row.exerciseId)) return;
   go(row.path, row.prefill);
  }
 
@@ -225,7 +231,7 @@
   return html + esc(title.slice(pos));
  }
  function shortcutRows() {
-  const wanted = ['dia-2/aulas', 'enem', 'simulados', 'dia-2/formulas', 'engenharias/passo-a-passo', 'desempenho', 'configuracoes'];
+  const wanted = ['dia-2/aulas', 'exercicios', 'enem', 'simulados', 'dia-2/formulas', 'engenharias/passo-a-passo', 'desempenho', 'configuracoes'];
   const byPath = new Map();
   for (const r of all()) if (r.type === 'pagina' && !byPath.has(r.path)) byPath.set(r.path, r);
   return wanted.map(p => byPath.get(p)).filter(Boolean).map(r => ({...r, group: 'atalho'}));
@@ -234,7 +240,7 @@
   const t = text.trim();
   const make = (title, path, icon, extra = {}) => ({type: 'procurar', group: 'procurar', title, detail: '“' + t + '”', path, icon, prefill: t, ...extra});
   return [
-   make('Questões do ENEM', 'enem', '▤'), make('Questões da FURG', 'banco', '▤'),
+   make('Exercícios', 'exercicios', '✓'), make('Questões do ENEM', 'enem', '▤'), make('Questões da FURG', 'banco', '▤'),
    make('Fórmulas e conceitos', 'dia-2/formulas', 'ƒ'), make('Biblioteca ENEM', 'dia-1/biblioteca', '◈'),
    {type: 'perguntar', group: 'procurar', title: 'Perguntar na Consulta rápida', detail: 'Wikipédia ou IA · envia só “' + t + '”', icon: '?', term: t},
   ];
@@ -247,11 +253,12 @@
    if (list.length) groups.push(['recente', list]);
    groups.push(['atalho', shortcutRows()]);
   } else {
-   const found = query(text, {limit: 120});
+   const found = query(text, {limit: 400});
    for (const type of order) {
     if (type === 'questao') continue;
-    const list = found.filter(r => r.type === type).slice(0, perGroup);
-    if (list.length) groups.push([type, list.map(r => ({...r, group: type}))]);
+    const all = found.filter(r => r.type === type), list = all.slice(0, type === 'exercicio' ? 4 : perGroup).map(r => ({...r, group: type}));
+    if (type === 'exercicio' && all.length > 4) list.push({type: 'procurar', group: type, title: 'Ver os ' + all.length + ' exercícios', detail: 'Abre o banco já filtrado por “' + text.trim() + '”', path: 'exercicios', icon: '→', prefill: text.trim()});
+    if (list.length) groups.push([type, list]);
    }
    const qs = found.questions || [];
    if (qs.length) {

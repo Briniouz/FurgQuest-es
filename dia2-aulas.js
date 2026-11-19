@@ -233,6 +233,7 @@
      </button></div>
     <p id="guidedStatus" role="status"></p>
     ${exerciseListMarkup(subject,lesson,guidedMode)}
+    ${globalThis.FurgExercicios?.lessonLink(subject,lesson.card,lesson.id)||''}
     <aside class="aula-exam"><strong>Como reconhecer isso no ENEM?</strong><p>${esc(lesson.exam)}</p></aside>
     <details class="el-depth"><summary>Quero praticar mais</summary>${course?.practiceLinks(lesson.id)||''}</details>
    </section>
@@ -255,6 +256,7 @@
     ${checkMarkup(check)}
     ${exerciseListMarkup(subject,lesson)}
     ${course?.practiceLinks(lesson.id)||''}
+    ${globalThis.FurgExercicios?.lessonLink(subject,lesson.card,lesson.id)||''}
     <div class="aula-lesson-actions">
      <button type="button" id="aulaMark" class="primary" aria-disabled="${done}">${done?'Aula estudada ✓':'Marcar como estudada'}</button>
      <button type="button" class="outline" id="aulaFormula">Consultar ficha relacionada</button>

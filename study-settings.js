@@ -5,7 +5,7 @@
     ['classic','Clássico','Mais sóbrio, sem vidro nem reflexos.'],
     ['prisma','Prisma · Liquid Glass (padrão)','Vidro translúcido, com luz e reflexos suaves.']
   ];
-  const defaults = () => ({guideLauncher:true,quickCards:true,backButton:true,crossOut:true,hints:true,shortcuts:true,reduceMotion:false,compactEnem:false,designPicked:false,design:'prisma'});
+  const defaults = () => ({guideLauncher:true,quickCards:true,backButton:true,crossOut:true,hints:true,shortcuts:true,reduceMotion:false,compactEnem:false,largeQuestions:false,designPicked:false,design:'prisma'});
   const isDesign = value => designs.some(([key]) => key===value);
   let adapter, bound=false;
   function validate(value, fallbackDesign) {
@@ -44,7 +44,7 @@
       ['shortcuts','Atalhos para responder questões','Permite usar A–E, Enter e as setas nos bancos de questões e treinos compatíveis.']
     ]],
     ['Conforto',[
-      ['compactEnem','Enunciado compacto (ENEM)','Diminui a fonte, as entrelinhas e os espaços do texto de apoio e do comando. Fontes bibliográficas, imagens e alternativas mantêm o formato atual.'],
+      ['largeQuestions','Questões ampliadas','Letra, imagens e alternativas maiores, em uma coluna. Desligado (padrão), a questão fica compacta para caber inteira na tela e, em telas largas, as alternativas ficam ao lado do texto. Também dá para trocar pelo botão “Ampliar” de cada questão.'],
       ['reduceMotion','Reduzir movimento','Desativa transições e animações. A preferência de acessibilidade do sistema também é respeitada.']
     ]]
   ];

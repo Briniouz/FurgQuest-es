@@ -104,6 +104,7 @@
      lesson('atomos','Identifica átomos, íons e ligações.')
     ]),
     branch('quantidades','amber','Quantidades e reações','Do mol à proporção de uma reação.',[
+     lesson('reacoes-quimicas','Reconhece, classifica e balanceia reações.',{related:[related('quimica','eletroquimica')],terms:['síntese','decomposição','simples troca','dupla troca','combustão']}),
      lesson('mol','Converte massa em quantidade.'),
      lesson('reacoes','Balanceia e calcula proporções.',{related:[related('matematica','proporcao')],terms:['estequiometria','reagente limitante']})
     ]),
