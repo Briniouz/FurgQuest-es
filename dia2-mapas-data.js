@@ -116,6 +116,7 @@
      lesson('termoquimica','Separa calor, velocidade e equilíbrio.',{related:[related('fisica','calor')]}),
      lesson('eletroquimica','Segue os elétrons numa pilha.',{related:[related('fisica','circuitos')]}),
      lesson('organica','Reconhece grupos e cadeias de carbono.'),
+     lesson('reacoes-organicas','Prevê produtos de adição, substituição, oxidação e esterificação.',{terms:['adição','substituição','eliminação','esterificação','saponificação','polimerização']}),
      lesson('bioquimica','Relaciona estrutura e função das biomoléculas.',{related:[related('biologia','celula')],terms:['carboidratos','lipídios','proteínas','DNA','hidrólise']}),
      lesson('enzimas-atp','Lê a ação de enzimas e entende o ATP.',{related:[related('biologia','metabolismo')],terms:['enzimas','energia de ativação','ATP','metabolismo']})
     ])
