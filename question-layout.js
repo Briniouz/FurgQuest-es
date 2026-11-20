@@ -26,7 +26,7 @@
   bar.insertBefore(button, bar.lastElementChild);
  }
  function split(article) {
-  if (article.querySelector(':scope > .q-split')) return;
+  if (article.hasAttribute('data-no-split') || article.querySelector(':scope > .q-split')) return;
   const kids = [...article.children];
   // Tudo o que vem antes do texto (barra, etiquetas, título, ferramentas) fica no topo, em largura total.
   let start = kids.findIndex(k => k.classList?.contains('enem-text'));

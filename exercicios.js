@@ -121,10 +121,13 @@
   redacao: ['dia-1/repertorios', 'Redação completa com repertórios'], calculo: ['engenharias/desafios', 'Desafios de aplicação de Engenharias'],
  };
  const DONE = .7;
- const fresh = () => ({answers: {}, favorites: {}, notes: {}});
+ const fresh = () => ({answers: {}, favorites: {}, notes: {}, essays: {}});
  const emptyFilters = () => ({subject: '', topic: '', level: '', origin: '', status: '', search: '', list: ''});
  const LISTS = () => globalThis.FURG_LISTAS || [];
  const listInfo = id => LISTS().find(l => l.id === id);
+ const DISC = () => globalThis.FURG_DISCURSIVAS || {items: []};
+ const discIndex = {}, discPeek = new Set();
+ let discTimer = null;
 
  let qs = null, byId = new Map(), adapter = null, bound = false;
  let list = [], index = 0, choice = null, retry = false, hintOpen = false, searchTimer, noteTimer, pending = null;
@@ -190,6 +193,7 @@
  const currentSpace = () => globalThis.FurgStudyAreas?.current() || 'geral';
  const subjectsOf = space => SCOPE[space] || Object.keys(SUBJECTS);
  const pool = space => build().filter(q => subjectsOf(space).includes(q.s));
+ const discOf = space => DISC().items.filter(d => subjectsOf(space).includes(d.s));
  const progress = () => adapter.getState().exercicios || (adapter.getState().exercicios = fresh());
  const filters = space => filtersBy[space] || (filtersBy[space] = emptyFilters());
  const mode = space => modeBy[space] || 'trilha';
@@ -205,6 +209,12 @@
   }
   for (const [id, yes] of Object.entries(value?.favorites || {})) if (byId.has(id) && yes) out.favorites[id] = true;
   for (const [id, n] of Object.entries(value?.notes || {})) if (byId.has(id) && typeof n === 'string') out.notes[id] = n.slice(0, 20000);
+  const discIds = new Set(DISC().items.map(d => d.id));
+  for (const [id, e] of Object.entries(value?.essays || {})) {
+   if (!discIds.has(id) || !e || typeof e !== 'object') continue;
+   out.essays[id] = {text: typeof e.text === 'string' ? e.text.slice(0, 6000) : '', done: !!e.done, at: typeof e.at === 'string' ? e.at.slice(0, 40) : '',
+    checks: Array.isArray(e.checks) ? e.checks.filter(n => Number.isInteger(n) && n >= 0 && n < 40).slice(0, 40) : []};
+  }
   return out;
  }
  function metrics(space = 'geral') {
@@ -308,7 +318,7 @@
   const area = globalThis.FurgStudyAreas?.get(space);
   const scope = space === 'engenharias' ? 'ENGENHARIAS' : area?.day ? 'ENEM · DIA ' + area.day : 'TODAS AS MATÉRIAS';
   const topics = subjectsOf(space).reduce((n, s) => n + topicsOf(s).length, 0);
-  const tabs = [['trilha', 'Do básico ao avançado'], ['todos', 'Todos os exercícios'], ...(items.some(q => q.origin === 'listas') ? [['listas', 'Listas de aula']] : []), ['outros', 'Outros tipos de treino']];
+  const tabs = [['trilha', 'Do básico ao avançado'], ['todos', 'Todos os exercícios'], ...(discOf(space).length ? [['discursivas', 'Discursivas FURG']] : []), ...(items.some(q => q.origin === 'listas') || discOf(space).length ? [['listas', 'Listas de aula']] : []), ['outros', 'Outros tipos de treino']];
   $('exRoot').innerHTML = `<div class="enem-hero panel ex-hero"><div><p class="eyebrow">EXERCÍCIOS · ${scope}</p>
    <h2>Do básico ao avançado,<br>um nível de cada vez.</h2>
    <p>${space === 'engenharias' ? 'A trilha começa na Trigonometria e chega às Integrais.' : 'Escolhe a matéria e segue a trilha de assuntos.'} Cada assunto tem até três níveis: Básico, Intermediário e Avançado. Acerta ${Math.round(DONE * 100)}% de um nível para concluí-lo e seguir para o próximo. No fim da trilha, treina com questões de prova.</p>
@@ -317,7 +327,7 @@
    ${next ? `<button class="primary ex-continue" data-ex="continue">${sum.done || m.answered ? 'Continuar' : 'Começar'}: ${esc(next.topic)} · ${LEVELS[next.lv]} →</button>` : '<p class="ex-all-done">Trilha completa. Que tal as questões de prova?</p>'}</div></div>
    <div class="ex-modes" role="tablist" aria-label="Como tu quer treinar">${tabs.map(([id, label]) => `<button role="tab" data-ex="mode" data-mode="${id}" aria-selected="${current === id || current === 'stage' && id === 'trilha'}">${label}</button>`).join('')}</div>
    <div id="exModeRoot"></div>`;
-  ({trilha: renderTrack, todos: renderAll, listas: renderLists, outros: renderOther, stage: renderStage}[current] || renderTrack)(space);
+  ({trilha: renderTrack, todos: renderAll, listas: renderLists, discursivas: renderDisc, outros: renderOther, stage: renderStage}[current] || renderTrack)(space);
  }
  function subjectChips(space, active, action) {
   const subjects = subjectsOf(space).filter(id => build().some(q => q.s === id));
@@ -348,11 +358,18 @@
  }
  function renderLists(space) {
   const s = progress(), items = pool(space).filter(q => q.origin === 'listas');
-  const lists = LISTS().map(l => ({...l, qs: items.filter(q => q.list === l.id).sort((a, b) => (a.n || 0) - (b.n || 0))})).filter(l => l.qs.length);
+  const lists = LISTS().map(l => ({...l, qs: (l.mode === 'discursivas' ? discOf(space) : items).filter(q => q.list === l.id).sort((a, b) => (a.n || 0) - (b.n || 0))})).filter(l => l.qs.length);
   if (!lists.length) { modeBy[space] = 'todos'; renderAll(space); return; }
   $('exModeRoot').innerHTML = `<section class="ex-lists-wrap" aria-labelledby="exListsTitle"><h3 id="exListsTitle" class="ex-section-title" tabindex="-1">Listas de aula</h3>
    <p class="muted ex-section-lead">Exercícios que vieram das listas da escola, na ordem da lista. Cada um também aparece na trilha, dentro do assunto dele.</p>
    <div class="ex-lists">${lists.map(l => {
+    if (l.mode === 'discursivas') {
+     const done = l.qs.filter(d => s.essays?.[d.id]?.done).length, pct = Math.round(done / l.qs.length * 100);
+     return `<button class="ex-list-card panel" data-ex="mode" data-mode="discursivas"><span class="ex-list-icon" aria-hidden="true">✎</span>
+      <span class="ex-list-copy"><strong>${esc(l.title)}</strong><small>${esc(l.detail || '')}</small><em>${l.qs.length} propostas discursivas · ${esc(SUBJECTS[l.s]?.label || '')}</em>
+      <span class="ex-bar" aria-hidden="true"><i style="width:${pct}%"></i></span><small>${done ? `${done} de ${l.qs.length} escritas` : 'Ainda não começou'}</small></span>
+      <b>${done && done < l.qs.length ? 'Continuar' : done ? 'Revisar' : 'Escrever'} →</b></button>`;
+    }
     const answered = l.qs.filter(q => s.answers[q.id]?.choice).length, right = l.qs.filter(q => s.answers[q.id]?.choice === q.ans).length, pct = Math.round(answered / l.qs.length * 100);
     const topics = l.qs.map(q => q.t).filter((t, i, all) => all.indexOf(t) === i);
     return `<button class="ex-list-card panel" data-ex="list" data-list="${esc(l.id)}"><span class="ex-list-icon" aria-hidden="true">${SUBJECTS[l.s]?.icon || '✎'}</span>
@@ -360,6 +377,85 @@
      <span class="ex-bar" aria-hidden="true"><i style="width:${pct}%"></i></span><small>${answered ? `${answered} de ${l.qs.length} respondidas · ${right} certas` : 'Ainda não começou'}</small></span>
      <b>${answered && answered < l.qs.length ? 'Continuar' : answered ? 'Revisar' : 'Resolver'} →</b></button>`;
    }).join('')}</div></section>`;
+ }
+ /* ---------- discursivas (5 a 10 linhas) ---------- */
+ function discLines(value) {
+  const per = DISC().lines?.perLine || 75;
+  return String(value || '').split('\n').reduce((n, p) => n + (p.trim() ? Math.max(1, Math.ceil(p.length / per)) : 0), 0);
+ }
+ function lineState(n) {
+  const {min = 5, max = 10} = DISC().lines || {};
+  if (!n) return ['', `0 de ${max} linhas`];
+  if (n < min) return ['is-short', `≈ ${n} de ${max} linhas · faltam ${min - n} para o mínimo`];
+  if (n > max) return ['is-over', `≈ ${n} de ${max} linhas · passou ${n - max} do limite`];
+  return ['is-ok', `≈ ${n} de ${max} linhas · dentro do limite`];
+ }
+ const discText = v => text(v).replace(/\*([^*]+)\*/g, '<em>$1</em>');
+ function renderDisc(space) {
+  const s = progress(), items = discOf(space);
+  if (!items.length) { modeBy[space] = 'trilha'; renderTrack(space); return; }
+  s.essays ||= {};
+  const at = Math.min(Math.max(0, discIndex[space] || 0), items.length - 1), d = items[at], e = s.essays[d.id] || {}, g = DISC().guide || {};
+  const done = items.filter(x => s.essays[x.id]?.done).length, open = !!e.done || discPeek.has(d.id);
+  const checks = [...d.expect, ...(DISC().checks || [])], [cls, label] = lineState(discLines(e.text));
+  $('exModeRoot').innerHTML = `<section class="ex-disc" aria-labelledby="exDiscTop">
+   <div class="ex-disc-head"><div><h3 id="exDiscTop" class="ex-section-title" tabindex="-1">Discursivas FURG</h3>
+    <p class="muted ex-section-lead">Respostas de ${DISC().lines?.min || 5} a ${DISC().lines?.max || 10} linhas, como na prova da FURG. Escreve primeiro, confere o checklist e só depois compara com a resposta modelo.</p></div>
+    <span class="ex-disc-count">${done} de ${items.length} escritas</span></div>
+   <details class="ex-disc-guide panel"><summary>Guia rápido: o que a banca exige <span aria-hidden="true">⌄</span></summary>
+    <p>${esc(g.intro || '')}</p>
+    <dl>${(g.rows || []).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+    <div class="enem-table ex-table"><table><thead><tr><th>Tipo</th><th>Objetivo</th><th>Postura</th><th>Verbos no comando</th><th>Estrutura</th></tr></thead><tbody>${(g.kinds || []).map(r => `<tr>${r.map((c, i) => i ? `<td>${esc(c)}</td>` : `<th>${esc(c)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>
+   </details>
+   <div class="ex-disc-map" aria-label="Propostas">${items.map((x, i) => `<button data-ex="disc-jump" data-index="${i}" class="${s.essays[x.id]?.done ? 'is-done' : s.essays[x.id]?.text ? 'is-draft' : ''}" ${i === at ? 'aria-current="step"' : ''} aria-label="Proposta ${i + 1}: ${esc(x.title)}${s.essays[x.id]?.done ? ', escrita' : ''}">${i + 1}</button>`).join('')}</div>
+   <article class="enem-question panel ex-question ex-disc-q" data-no-split data-question-id="${esc(d.id)}">
+    <div class="enem-toolbar"><span>Proposta ${at + 1} de ${items.length}</span></div>
+    <div class="enem-meta"><span class="tag">${esc(SUBJECTS[d.s]?.label || '')}</span><span class="tag">Discursiva</span><span class="tag">${esc(d.kind)}</span><span>Lista de aula · ${esc(listInfo(d.list)?.title || '')}</span></div>
+    <h3 id="exDiscTitle" tabindex="-1">${esc(d.title)}</h3>
+    <div class="enem-text ex-text">${d.texts.map(x => `<div class="ex-disc-text"><strong>${esc(x.label)}</strong><p>${discText(x.body)}</p></div>`).join('')}${table(d.table)}</div>
+    <div class="ex-disc-cmd"><small>COMANDO</small><p>${discText(d.cmd)}</p></div>
+    <label class="enem-answer-label" for="exDiscAnswer">Tua resposta</label>
+    <textarea id="exDiscAnswer" class="ex-disc-paper" rows="10" maxlength="6000" spellcheck="true" placeholder="Escreve aqui como se fosse na folha de resposta…">${esc(e.text || '')}</textarea>
+    <div class="ex-disc-meter"><strong id="exDiscLines" class="${cls}">${label}</strong><small>Conta ≈ ${DISC().lines?.perLine || 75} caracteres por linha da folha.</small><small id="exDiscSaved">${e.text ? 'Salvo neste navegador' : ''}</small></div>
+    <div class="enem-submit"><button class="primary" data-ex="disc-done">${e.done ? 'Atualizar e ver orientação' : 'Terminei: ver orientação'}</button>${open ? '' : '<button class="quiet" data-ex="disc-peek">Ver orientação antes de escrever</button>'}</div>
+    ${open ? `<div class="ex-disc-review" role="region" aria-label="Orientação da proposta">
+     <div><h4>O que a banca espera: confere tua resposta <small id="exDiscCheckCount">${(e.checks || []).length} de ${checks.length}</small></h4>
+      <ul class="ex-disc-checks">${checks.map((x, i) => `<li><label><input type="checkbox" data-disc-check="${i}" ${(e.checks || []).includes(i) ? 'checked' : ''}> <span>${esc(x)}</span></label></li>`).join('')}</ul></div>
+     <div class="ex-trap"><strong>Erros que derrubam a nota</strong><ul>${d.traps.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
+     <details class="ex-disc-model"${e.done ? '' : ''}><summary>Resposta modelo · ≈ ${discLines(d.model)} linhas</summary><p>${esc(d.model)}</p><small class="muted">Uma resposta possível. A tua pode seguir outro caminho e estar igualmente certa.</small></details>
+     ${e.text ? '<button class="text-link" data-ex="disc-redo">Apagar e reescrever do zero</button>' : ''}
+    </div>` : ''}
+    <div class="enem-navigation"><button class="quiet" data-ex="disc-prev" ${at === 0 ? 'disabled' : ''}>← Anterior</button><span class="muted">${esc(d.title)}</span><button class="outline" data-ex="disc-next" ${at === items.length - 1 ? 'disabled' : ''}>Próxima proposta →</button></div>
+   </article></section>`;
+  const area = $('exDiscAnswer');
+  area.addEventListener('input', () => {
+   const [c, l] = lineState(discLines(area.value)), out = $('exDiscLines');
+   out.className = c; out.textContent = l; $('exDiscSaved').textContent = 'Salvando…';
+   clearTimeout(discTimer);
+   discTimer = setTimeout(() => { const cur = s.essays[d.id] || {}; if (area.value || cur.done) s.essays[d.id] = {...cur, text: area.value, at: new Date().toISOString()}; else delete s.essays[d.id]; adapter.save(); $('exDiscSaved').textContent = 'Salvo neste navegador'; }, 400);
+  });
+  $('exModeRoot').querySelectorAll('[data-disc-check]').forEach(box => box.addEventListener('change', () => {
+   const cur = s.essays[d.id] || (s.essays[d.id] = {text: area.value, done: false, at: new Date().toISOString(), checks: []}), i = Number(box.dataset.discCheck);
+   cur.checks = (cur.checks || []).filter(n => n !== i); if (box.checked) cur.checks.push(i);
+   adapter.save(); $('exDiscCheckCount').textContent = `${cur.checks.length} de ${checks.length}`;
+  }));
+ }
+ function discAction(action, b, space) {
+  const s = progress(), items = discOf(space), at = Math.min(Math.max(0, discIndex[space] || 0), items.length - 1), d = items[at];
+  s.essays ||= {};
+  const go = i => { discIndex[space] = Math.max(0, Math.min(items.length - 1, i)); render(); $('exDiscTitle')?.focus({preventScroll: true}); $('exDiscTitle')?.scrollIntoView({block: 'start', behavior: globalThis.FurgUI?.reducedMotion() ? 'auto' : 'smooth'}); };
+  if (action === 'disc-jump') return go(Number(b.dataset.index));
+  if (action === 'disc-prev') return go(at - 1);
+  if (action === 'disc-next') return go(at + 1);
+  if (action === 'disc-peek') { discPeek.add(d.id); render(); $('exModeRoot').querySelector('.ex-disc-review')?.scrollIntoView({block: 'nearest'}); return; }
+  if (action === 'disc-done') {
+   clearTimeout(discTimer);
+   const value = $('exDiscAnswer')?.value || '';
+   if (!value.trim()) { discPeek.add(d.id); render(); return; }
+   s.essays[d.id] = {...(s.essays[d.id] || {}), text: value, done: true, at: new Date().toISOString()};
+   adapter.save(); render(); $('exModeRoot').querySelector('.ex-disc-review')?.scrollIntoView({block: 'start', behavior: 'smooth'}); return;
+  }
+  if (action === 'disc-redo') { delete s.essays[d.id]; discPeek.delete(d.id); adapter.save(); render(); $('exDiscAnswer')?.focus(); }
  }
  function renderOther(space) {
   const cards = OTHER[space] || OTHER.geral;
@@ -514,7 +610,7 @@
  }
  function handleKey(key) {
   const q = list[index], current = mode(currentSpace());
-  if (!q || current === 'trilha' || current === 'outros') return false;
+  if (!q || ['trilha', 'outros', 'listas', 'discursivas'].includes(current)) return false;
   if (/^[a-e]$/i.test(key) && LETTERS.indexOf(key.toUpperCase()) < q.opts.length) { choose(key.toUpperCase()); return true; }
   if (key === 'Enter') {
    if (choice) confirm();
@@ -529,6 +625,7 @@
   const b = e.target.closest('button[data-ex]');
   if (!b || b.disabled) return;
   const action = b.dataset.ex, q = list[index], space = currentSpace(), f = filters(space);
+  if (action.startsWith('disc-')) { discAction(action, b, space); return; }
   if (action === 'mode') { modeBy[space] = b.dataset.mode; render(); $('exRoot').querySelector(`[role="tab"][data-mode="${b.dataset.mode}"]`)?.focus(); return; }
   if (action === 'list') { const s = progress(); Object.assign(f, emptyFilters(), {origin: 'listas', list: b.dataset.list}); modeBy[space] = 'todos'; render();
    const first = list.findIndex(x => !s.answers[x.id]?.choice); if (first > 0) go(first); focusTitle(); return; }
