@@ -84,6 +84,7 @@
   meta.menus.treinamento.unshift(bank);
   meta.menus.provas[0][1]='Fazer simulado';
   meta.menus.provas[0][2]='Por ano ou personalizado, com tempo e correção';
+  meta.menus.provas.push(['vestibular-furg','Vestibular FURG','Simulado completo com as 14 matérias e o PDF','◎']);
   meta.menus.revisao=[...reviewRows,['erros-treino','Erros do treino guiado','Retoma as questões que precisas revisar','✓']];
  }
  areas['dia-1'].menus.estudos.push(areas['dia-1'].menus.treinamento.splice(3,1)[0]);
@@ -113,6 +114,7 @@
   ],
   provas:[
    ['simulados','Fazer simulado','ENEM por ano, personalizado e FURG','◷'],
+   ['vestibular-furg','Vestibular FURG','Simulado completo: 14 matérias, 2 discursivas e PDF','◎'],
    ['anatomia','Anatomia ENEM','Assuntos frequentes e padrões de comando','◉'],
    ['acervo','Provas e gabaritos','Consulta os arquivos originais','↓'],
   ],
@@ -125,6 +127,7 @@
  const routeFor=(space,page)=>get(space)?space+'/'+page:page;
  const shortcuts={
   simulados:{view:'simulados',open:()=>globalThis.FurgEnemSim?.showBuilder()},
+  'vestibular-furg':{view:'simulados',open:()=>globalThis.FurgVestibular?.show()},
   'erros-simulados':{view:'simulados',open:()=>globalThis.FurgEnemSim?.showMistakes()},
   'simulados-salvos':{view:'simulados',open:()=>globalThis.FurgEnemSim?.showSaved()},
   'erros-treino':{view:'dia2',open:()=>current==='dia-1'?globalThis.FurgVespera?.showErrors():globalThis.FurgDia2?.showErrors()},

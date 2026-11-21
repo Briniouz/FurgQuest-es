@@ -22,8 +22,8 @@
  const SCOPE = {'dia-1': ['linguagens', 'humanas', 'redacao'], 'dia-2': ['matematica', 'fisica', 'quimica', 'biologia'], engenharias: ['calculo']};
  const LEVELS = {1: 'Básico', 2: 'Intermediário', 3: 'Avançado'};
  const ORIGINS = {novas: 'Inéditas no estilo ENEM', aulas: 'Revisão das aulas', autorais: 'Exercícios autorais', apostas: 'Apostas do Dia 2',
-  exclusivas: 'Questões exclusivas', dia1: 'Treino do Dia 1', listas: 'Listas de aula'};
- const ORIGIN_TAG = {novas: 'Inédita', aulas: 'Revisão de aula', autorais: 'Autoral', apostas: 'Aposta do Dia 2', exclusivas: 'Exclusiva', dia1: 'Treino do Dia 1', listas: 'Lista de aula'};
+  exclusivas: 'Questões exclusivas', dia1: 'Treino do Dia 1', listas: 'Listas de aula', furg: 'Simulados FURG (autorais)'};
+ const ORIGIN_TAG = {novas: 'Inédita', aulas: 'Revisão de aula', autorais: 'Autoral', apostas: 'Aposta do Dia 2', exclusivas: 'Exclusiva', dia1: 'Treino do Dia 1', listas: 'Lista de aula', furg: 'Simulado FURG · Versão B'};
  // Ordem pedagógica de cada trilha: do mais básico ao mais avançado.
  const TRACK = {
   matematica: ['Grandezas e unidades', 'Razão e proporção', 'Porcentagem', 'Escalas', 'Múltiplos e divisores', 'Estatística', 'Matemática financeira',
@@ -135,6 +135,20 @@
 
  /* ---------- dados ---------- */
  const level = v => typeof v === 'number' ? v : /dif|desafio|avan/.test(norm(v)) ? 3 : /med|aplic|inter/.test(norm(v)) ? 2 : 1;
+ // Simulado FURG · Versão B: cada questão entra no assunto equivalente da trilha.
+ const VEST_TOPIC = {'Dinâmica': 'Leis de Newton', 'Termologia': 'Dilatação térmica', 'Eletricidade': 'Circuitos elétricos', 'Misturas e separação': 'Separação de misturas',
+  'Ligações e geometria': 'Polaridade e solubilidade', 'Soluções': 'Concentração e diluição', 'Equilíbrio e pH': 'pH', 'Sistemas lineares': 'Matrizes e sistemas',
+  'Lançamento horizontal': 'Cinemática', 'Movimento circular': 'Cinemática', 'Quantidade de movimento': 'Impulso e quantidade de movimento', 'Modelos atômicos': 'Estrutura atômica',
+  'Polímeros': 'Química orgânica', 'Matrizes e determinantes': 'Matrizes e sistemas'};
+ function vestTopic(sec, q) {
+  if (sec.s === 'humanas') return sec.label;
+  if (sec.id === 'portugues') return ['Interpretação de texto', 'Sentido em contexto'].includes(q.t) ? 'Leitura e interpretação' : q.t === 'Figuras de linguagem' ? 'Efeitos de sentido' : 'Língua e linguagem';
+  if (sec.id === 'literatura') return 'Literatura';
+  if (sec.lang) return 'Língua estrangeira';
+  if (sec.id === 'artes' || sec.id === 'educacao-fisica') return 'Artes e práticas corporais';
+  if (q.id === 'vf-bio-02') return 'Membrana e osmose';
+  return VEST_TOPIC[q.t] || q.t;
+ }
  function build() {
   if (qs) return qs;
   const out = [];
@@ -146,7 +160,7 @@
    if (!/^[A-E]$/.test(x.ans || '') || LETTERS.indexOf(x.ans) >= x.opts.length) return;
    x.t = TOPIC_ALIAS[x.t] || x.t || 'Outros assuntos';
    x.steps = (x.steps || []).filter(Boolean);
-   x.hay = norm([x.title, x.t, x.ctx, x.stem, ...x.opts, ...(x.table || []).flat()].join(' '));
+   x.hay = norm([x.title, x.t, x.ctx, x.text?.body, x.stem, ...x.opts, ...(x.table || []).flat()].join(' '));
    byId.set(x.id, x); out.push(x);
   };
   const fromCard = (q, origin) => ({id: q.id, s: q.subject || subjectOf(q.card), t: topicOf(q.card), lv: level(q.difficulty || q.level),
@@ -159,6 +173,9 @@
     hint: lesson.lead || '', steps: [choices[correct]?.[1]], why, origin: 'aulas', lessonRoute: path, lessonTitle: lesson.title});
   };
   for (const q of globalThis.FURG_EXERCICIOS?.items || []) add({...q, origin: q.origin || 'novas'});
+  for (const sim of globalThis.FURG_VESTIBULARES || []) for (const sec of sim.sections || []) for (const q of sec.questions || []) add({id: q.id, s: sec.s, t: vestTopic(sec, q), lv: q.lv,
+   title: `${sec.label} ${q.n} · ${q.t}`, ctx: q.ctx || '', text: q.text, fig: q.fig, figColor: sec.color, table: q.table, stem: q.stem, opts: q.opts, ans: q.ans,
+   steps: [q.why], origin: 'furg', simTag: `Simulado FURG · Versão ${sim.version}`});
   for (const [subject, lessons] of Object.entries(globalThis.FURG_DIA2_LESSONS || {})) {
    for (const lesson of lessons || []) fromCheck('aula-' + subject + '-' + lesson.id, subject, LESSON_TOPIC[lesson.id] || lesson.title, lesson,
     lesson.check, lesson.check?.choices, lesson.check?.correct, 'dia-2/aulas/' + subject + '/' + lesson.id);
@@ -501,7 +518,12 @@
  }
  // A figura entra logo depois da primeira frase do contexto, antes dos itens.
  function context(q) {
-  const fig = q.img ? `<figure class="ex-figure"><img src="${esc(q.img)}" alt="${esc(q.imgAlt || '')}" loading="lazy"></figure>` : '';
+  const svg = q.fig && globalThis.FURG_VEST_FIGS?.[q.fig];
+  const fig = svg ? `<figure class="ex-figure vf-fig" style="--vf-acc:${esc(q.figColor || '#6b8afd')}">${svg}</figure>`
+   : q.img ? `<figure class="ex-figure"><img src="${esc(q.img)}" alt="${esc(q.imgAlt || '')}" loading="lazy"></figure>` : '';
+  const box = q.text ? `<div class="vf-textbox"><strong>${esc(q.text.title)}</strong>${String(q.text.body).split('\n').map(p => `<p>${esc(p)}</p>`).join('')}<small>${esc(q.text.source || '')}</small></div>` : '';
+  if (box) return box + (q.ctx ? `<p>${text(q.ctx)}</p>` : '') + fig;
+  if (svg) return (q.ctx ? `<p>${text(q.ctx)}</p>` : '') + fig;
   if (!q.ctx) return fig;
   const cut = fig ? q.ctx.indexOf('\n') : -1;
   if (cut < 0) return `<p>${text(q.ctx)}</p>${fig}`;
@@ -545,7 +567,7 @@
   const map = inStage ? '' : `<div class="enem-map">${list.slice(start, start + 7).map((item, i) => `<button data-ex="jump" data-index="${start + i}" ${start + i === index ? 'aria-current="step"' : ''} aria-label="Exercício ${start + i + 1}" class="${s.answers[item.id]?.choice ? s.answers[item.id].choice === item.ans ? 'is-correct' : 'is-wrong' : ''}">${start + i + 1}</button>`).join('')}</div>`;
   root.innerHTML = `<article class="enem-question panel ex-question" data-question-id="${esc(q.id)}">
    <div class="enem-toolbar"><span>${inStage ? 'Exercício' : 'Questão'} ${index + 1} de ${list.length.toLocaleString('pt-BR')}</span><button class="quiet" data-ex="favorite" aria-pressed="${!!s.favorites[q.id]}">${s.favorites[q.id] ? '★ Favorita' : '☆ Favoritar'}</button></div>
-   <div class="enem-meta"><span class="tag">${SUBJECTS[q.s].label}</span><span class="tag">${esc(q.t)}</span><span class="tag ex-level" data-level="${q.lv}">${LEVELS[q.lv]}</span><span>${ORIGIN_TAG[q.origin]}${q.list && listInfo(q.list) ? ' · ' + esc(listInfo(q.list).title) : ''}</span></div>
+   <div class="enem-meta"><span class="tag">${SUBJECTS[q.s].label}</span><span class="tag">${esc(q.t)}</span><span class="tag ex-level" data-level="${q.lv}">${LEVELS[q.lv]}</span><span>${q.simTag || ORIGIN_TAG[q.origin]}${q.list && listInfo(q.list) ? ' · ' + esc(listInfo(q.list).title) : ''}</span></div>
    <h3 id="exTitle" tabindex="-1">${esc(q.title)}</h3>
    <div class="enem-text ex-text">${context(q)}${table(q.table)}<p class="ex-stem">${text(q.stem)}</p></div>
    <p class="enem-answer-label">Qual alternativa tu escolhe?</p>
