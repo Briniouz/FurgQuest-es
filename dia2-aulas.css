@@ -638,3 +638,23 @@ line.rx-in, line.rx-out, line.rx-alt { fill: none; stroke-width: 2.2; }
 .rx-chain { fill: none; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
 .rx-chain-oil { stroke: #d9730d; }
 .rx-wrap figcaption { margin-top: 8px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+
+/* Ciclos biogeoquímicos */
+.cyc-figure text { font-family: inherit; text-anchor: middle; dominant-baseline: central; }
+.cyc-node rect { fill: color-mix(in srgb, var(--cyc) 11%, transparent); stroke: color-mix(in srgb, var(--cyc) 55%, transparent); stroke-width: 1.3; }
+.cyc-node.is-fossil rect { fill: color-mix(in srgb, currentColor 8%, transparent); stroke: color-mix(in srgb, currentColor 35%, transparent); }
+.cyc-step rect { fill: color-mix(in srgb, currentColor 5%, transparent); stroke: color-mix(in srgb, currentColor 22%, transparent); }
+.cyc-step.is-end rect { fill: color-mix(in srgb, var(--cyc) 13%, transparent); stroke: color-mix(in srgb, var(--cyc) 55%, transparent); }
+.cyc-title { fill: currentColor; font-size: 14px; font-weight: 700; }
+.cyc-sub, .cyc-note { fill: var(--muted); font-size: 11.5px; }
+.cyc-note { font-style: italic; paint-order: stroke; stroke: var(--surface-2); stroke-width: 5px; stroke-linejoin: round; }
+.cyc-step-t { fill: currentColor; font-size: 12.5px; font-weight: 500; }
+.cyc-lab { fill: var(--muted); font-size: 12px; font-weight: 600; paint-order: stroke; stroke: var(--surface-2); stroke-width: 5px; stroke-linejoin: round; }
+.cyc-ar { fill: none; stroke: var(--muted); stroke-width: 1.7; stroke-linecap: round; }
+.cyc-head { fill: var(--muted); }
+.cyc-ar.g { stroke: #2f9e5b; } .cyc-head.g, .cyc-lab.g { fill: #2f9e5b; }
+.cyc-ar.o { stroke: #d9730d; } .cyc-head.o, .cyc-lab.o { fill: #d9730d; }
+.cyc-ar.r { stroke: #c93a3a; } .cyc-head.r, .cyc-lab.r, .cyc-title.r { fill: #c93a3a; }
+:root[data-theme="dark"] .cyc-ar.g { stroke: #5fd08c; } :root[data-theme="dark"] :is(.cyc-head, .cyc-lab).g { fill: #5fd08c; }
+:root[data-theme="dark"] .cyc-ar.o { stroke: #f59e4b; } :root[data-theme="dark"] :is(.cyc-head, .cyc-lab).o { fill: #f59e4b; }
+:root[data-theme="dark"] .cyc-ar.r { stroke: #f07171; } :root[data-theme="dark"] :is(.cyc-head, .cyc-lab, .cyc-title).r { fill: #f07171; }
