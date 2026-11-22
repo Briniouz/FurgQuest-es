@@ -336,3 +336,18 @@
 .ex-disc-model small { display: block; padding-bottom: 12px; }
 .ex-disc-q .enem-navigation > span { flex: 1; text-align: center; font-size: .85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 @media (max-width: 560px) { .ex-disc-guide dl div { grid-template-columns: 1fr; gap: 0; } .ex-disc-q .enem-navigation > span { display: none; } .ex-disc-head { flex-direction: column; } .ex-disc-count { padding-top: 0; } }
+
+/* Estruturas de 10 linhas nas discursivas */
+.ex-struct-intro { padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: color-mix(in srgb, var(--surface-2) 70%, transparent); margin-bottom: 12px; }
+.ex-struct-intro p { margin: 4px 0 6px; }
+.ex-struct-intro ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: .92rem; }
+.ex-struct-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; padding-bottom: 16px; }
+.ex-struct { border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.ex-struct header h4 { margin: 6px 0 2px; font-size: 1.02rem; }
+.ex-struct header small { color: var(--muted); }
+.ex-struct ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.ex-struct li { display: grid; grid-template-columns: 52px 1fr; column-gap: 8px; row-gap: 2px; font-size: .92rem; line-height: 1.45; }
+.ex-struct li b { grid-row: span 2; font-variant-numeric: tabular-nums; color: var(--accent, currentColor); }
+.ex-struct li em { color: var(--muted); font-size: .87rem; border-left: 2px solid var(--line); padding-left: 8px; }
+.ex-struct p { margin: 0; font-size: .9rem; line-height: 1.45; }
+.ex-struct-avoid { color: var(--muted); }

@@ -424,6 +424,12 @@
     <dl>${(g.rows || []).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
     <div class="enem-table ex-table"><table><thead><tr><th>Tipo</th><th>Objetivo</th><th>Postura</th><th>Verbos no comando</th><th>Estrutura</th></tr></thead><tbody>${(g.kinds || []).map(r => `<tr>${r.map((c, i) => i ? `<td>${esc(c)}</td>` : `<th>${esc(c)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>
    </details>
+   ${g.structures ? `<details class="ex-disc-guide panel ex-disc-struct"><summary>Estruturas de 10 linhas: o que escrever em cada linha <span aria-hidden="true">⌄</span></summary>
+    ${g.intro10 ? `<div class="ex-struct-intro"><strong>${esc(g.intro10.title)}</strong><p>${esc(g.intro10.rule)}</p><ul>${g.intro10.tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+    <div class="ex-struct-grid">${g.structures.map(st => `<article class="ex-struct"><header><span class="tag">${esc(st.kind)}</span><h4>${esc(st.title)}</h4><small>Quando o comando diz: ${esc(st.when)}</small></header>
+     <ol>${st.lines.map(([l, f, ex]) => `<li><b>${esc(l)}</b><span>${esc(f)}</span><em>${esc(ex)}</em></li>`).join('')}</ol>
+     <p class="ex-struct-start"><strong>Como começar:</strong> ${st.starts.map(esc).join(' · ')}</p><p class="ex-struct-avoid"><strong>Evita:</strong> ${esc(st.avoid)}</p></article>`).join('')}</div>
+   </details>` : ''}
    <div class="ex-disc-map" aria-label="Propostas">${items.map((x, i) => `<button data-ex="disc-jump" data-index="${i}" class="${s.essays[x.id]?.done ? 'is-done' : s.essays[x.id]?.text ? 'is-draft' : ''}" ${i === at ? 'aria-current="step"' : ''} aria-label="Proposta ${i + 1}: ${esc(x.title)}${s.essays[x.id]?.done ? ', escrita' : ''}">${i + 1}</button>`).join('')}</div>
    <article class="enem-question panel ex-question ex-disc-q" data-no-split data-question-id="${esc(d.id)}">
     <div class="enem-toolbar"><span>Proposta ${at + 1} de ${items.length}</span></div>

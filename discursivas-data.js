@@ -133,3 +133,80 @@ globalThis.FURG_DISCURSIVAS = {
    model: 'Critérios éticos e impessoais são essenciais na saúde pública porque garantem que, diante da falta de recursos, as decisões salvem o maior número de vidas sem favoritismos. Sem protocolos claros, a escolha de quem recebe um leito de UTI poderia depender de influência ou renda. Um exemplo do cotidiano é a classificação de risco nas emergências: quem chega com dor no peito é atendido antes de quem tem um corte leve, mesmo tendo chegado depois. Contudo, a triagem não pode virar rotina. Cabe ao Estado investir em leitos, equipes e insumos, para que esses dilemas sejam exceção.'},
  ],
 };
+
+// Estruturas de 10 linhas: o que fazer em cada faixa de linhas, para cada tipo de comando.
+globalThis.FURG_DISCURSIVAS.guide.intro10 = {
+ title: 'A introdução cabe em 1 ou 2 linhas',
+ rule: 'Primeira frase = resposta direta ao comando + palavra-chave do tema + tese ou anúncio do que vem depois. Quem lê só essa frase já sabe o que tu vai defender ou explicar.',
+ tips: [
+  'Retoma as palavras do comando: se ele diz “explique o que são bolhas de informação”, começa com “Bolhas de informação são…”.',
+  'O texto precisa se entender sozinho: não começa com “Isso acontece porque…” nem com “Como diz o texto…” sem dizer o assunto.',
+  'Evita aberturas vazias: “Hoje em dia”, “Desde os primórdios”, “Neste texto irei falar”, perguntas retóricas.',
+  'Em 10 linhas não sobra espaço para contextualizar muito: no máximo meia frase de contexto antes da ideia central.',
+ ],
+};
+globalThis.FURG_DISCURSIVAS.guide.structures = [
+ {kind: 'Expositivo', title: 'Explicar um fenômeno ou conceito', when: 'Explique, conceitue, descreva, esclareça',
+  lines: [
+   ['L1–2', 'Introdução: define o tema e responde ao comando de forma direta.', 'Bolhas de informação são ambientes digitais em que o usuário recebe, sobretudo, conteúdos que confirmam o que já pensa.'],
+   ['L3–5', 'Causa ou mecanismo: como e por que acontece, com informação do Texto I.', 'Isso ocorre porque os algoritmos usam curtidas e buscas para oferecer conteúdos parecidos e manter o usuário conectado.'],
+   ['L6–8', 'Consequência ou exemplo, com informação do Texto II.', 'Como resultado, o contato com opiniões diferentes diminui, e notícias falsas circulam sem contestação.'],
+   ['L9–10', 'Fechamento: retoma a ideia central em uma síntese, sem opinião pessoal.', 'Assim, a bolha não é escolha consciente, mas efeito do funcionamento das plataformas.'],
+  ],
+  starts: ['“[Tema] é / consiste em ___, o que ___.”', '“[Fenômeno] ocorre quando ___.”'],
+  avoid: 'Dar opinião (“eu acho”, “é um absurdo”) quando o comando é só explicar.'},
+ {kind: 'Argumentativo', title: 'Posicionar-se sobre uma questão', when: 'Posicione-se, defenda, discuta, argumente, opine',
+  lines: [
+   ['L1–2', 'Tese explícita: o que tu defende + o motivo geral.', 'O tráfego de veículos na faixa de areia do Cassino deve ser permitido apenas com restrições, pois o acesso livre põe pessoas e fauna em risco.'],
+   ['L3–5', 'Argumento principal desenvolvido: por quê + dado ou exemplo dos textos.', 'Carros circulando perto dos banhistas aumentam o risco de atropelamentos e destroem ninhos de aves na areia.'],
+   ['L6–7', 'Segundo argumento ou contra-argumento rebatido (“Embora…, …”).', 'Embora a praia seja extensa e o carro facilite o acesso, isso não exige tráfego em toda a faixa.'],
+   ['L8–10', 'Conclusão: reafirma a tese e fecha com proposta ou consequência.', 'Logo, faixas delimitadas, limite de velocidade e fiscalização garantem o acesso sem sacrificar a segurança.'],
+  ],
+  starts: ['“É necessário / É inadequado ___, uma vez que ___.”', '“___ deve ___, pois ___.”', '“Diferentemente do que propõe o Texto II, ___.”'],
+  avoid: 'Deixar a tese para o fim, ficar em cima do muro ou só resumir os textos.'},
+ {kind: 'Argumentativo', title: 'Propor uma solução', when: 'Proponha, sugira, apresente uma medida, como resolver',
+  lines: [
+   ['L1–2', 'Problema + causa principal.', 'A evasão escolar no ensino médio decorre, sobretudo, da necessidade de muitos jovens trabalharem.'],
+   ['L3–4', 'Por que resolver: a consequência do problema.', 'Sem concluir os estudos, esses jovens ficam presos a empregos de baixa renda.'],
+   ['L5–8', 'Proposta completa: quem faz, o que faz, como faz e para quê.', 'Cabe ao governo estadual ampliar bolsas de permanência e turnos flexíveis, em parceria com as escolas, para que o estudo caiba na rotina de quem trabalha.'],
+   ['L9–10', 'Resultado esperado.', 'Desse modo, a escola deixa de competir com a renda da família.'],
+  ],
+  starts: ['“O problema de ___ decorre, principalmente, de ___.”', '“Para reduzir ___, é preciso ___.”'],
+  avoid: 'Proposta vaga (“conscientizar a população”, “o governo deve fazer algo”) sem agente e sem meio.'},
+ {kind: 'Expositivo', title: 'Comparar dois textos ou posições', when: 'Compare, relacione, aponte semelhanças e diferenças, confronte',
+  lines: [
+   ['L1–2', 'Introdução: os dois textos tratam do mesmo tema, mas divergem em um ponto.', 'Os textos I e II tratam do uso de celulares na escola, mas divergem quanto à proibição.'],
+   ['L3–5', 'Posição ou abordagem do Texto I, com o argumento central dele.', 'O Texto I defende a proibição, argumentando que o aparelho reduz a atenção nas aulas.'],
+   ['L6–8', 'Posição do Texto II, com conector de contraste (já, por outro lado).', 'Já o Texto II propõe o uso orientado, pois o celular pode servir como ferramenta de pesquisa.'],
+   ['L9–10', 'Síntese da diferença principal (ou do ponto em comum, se pedido).', 'Assim, ambos reconhecem o impacto do celular, mas discordam sobre como lidar com ele.'],
+  ],
+  starts: ['“Os textos I e II abordam ___, porém divergem quanto a ___.”', '“Enquanto o Texto I ___, o Texto II ___.”'],
+  avoid: 'Falar de um texto só, ou resumir um e depois o outro sem nunca comparar.'},
+ {kind: 'Expositivo', title: 'Apontar causas ou fatores e explicar', when: 'Cite dois, aponte, identifique e explique, quais fatores',
+  lines: [
+   ['L1–2', 'Introdução que anuncia os itens pedidos.', 'Dois fatores explicam o aumento das enchentes urbanas: a impermeabilização do solo e a ocupação de várzeas.'],
+   ['L3–5', 'Fator 1 + explicação de como ele causa o efeito.', 'Com asfalto e concreto, a água da chuva não infiltra e escoa rapidamente para os rios.'],
+   ['L6–8', 'Fator 2 + explicação (“Além disso, …”).', 'Além disso, construções em áreas de várzea ocupam o espaço que o rio usa nas cheias.'],
+   ['L9–10', 'Fechamento que relaciona os dois fatores.', 'Juntos, esses fatores fazem chuvas comuns virarem inundações.'],
+  ],
+  starts: ['“Dois fatores explicam ___: ___ e ___.”', '“Entre as causas de ___, destacam-se ___ e ___.”'],
+  avoid: 'Citar os fatores em lista sem explicar, ou citar três quando o comando pediu dois.'},
+ {kind: 'Expositivo', title: 'Resumir ou sintetizar um texto', when: 'Resuma, sintetize, apresente a ideia central, com tuas palavras',
+  lines: [
+   ['L1–2', 'Texto + ideia central do autor, com verbo de dizer.', 'No artigo, a autora defende que o tempo de tela afeta mais o sono dos adolescentes do que o desempenho escolar.'],
+   ['L3–7', 'Principais argumentos, em ordem lógica (afirma, aponta, ressalta).', 'Ela aponta que a luz das telas atrasa a produção de melatonina e ressalta que o sono curto prejudica a memória.'],
+   ['L8–10', 'Conclusão ou proposta do próprio autor.', 'Por fim, sugere desligar os aparelhos uma hora antes de dormir.'],
+  ],
+  starts: ['“No texto, [autor] defende / mostra que ___.”', '“O texto trata de ___ e conclui que ___.”'],
+  avoid: 'Opinar, copiar frases do texto ou incluir exemplos que o autor não deu.'},
+ {kind: 'Gênero', title: 'Carta, e-mail ou comentário', when: 'Escreva uma carta / um e-mail / um comentário dirigido a…',
+  lines: [
+   ['L1', 'Vocativo adequado ao destinatário.', 'Prezado(a) Secretário(a) de Educação,'],
+   ['L2–3', 'Quem escreve (sem nome real, se a prova proibir) e o motivo.', 'Como estudante da rede pública, escrevo para solicitar a ampliação do transporte escolar noturno.'],
+   ['L4–8', 'Argumentos ou relato que justificam o pedido.', 'Hoje, muitos alunos do turno da noite voltam a pé por ruas sem iluminação, o que aumenta a evasão.'],
+   ['L9', 'Pedido ou proposta final, claro.', 'Peço, por isso, a criação de uma linha extra às 22h30.'],
+   ['L10', 'Despedida.', 'Atenciosamente, um estudante.'],
+  ],
+  starts: ['“Prezado(a) ___, escrevo para ___.”'],
+  avoid: 'Esquecer o vocativo ou a despedida: são marcas do gênero e a banca confere.'},
+];
